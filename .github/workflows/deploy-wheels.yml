@@ -69,9 +69,20 @@ jobs:
       - name: "Upload artifact"
         uses: actions/upload-artifact@v2
         with:
-          name: wheels
           path: ./wheelhouse/*.whl
           if-no-files-found: error
+              
+  #check_dist:
+  #  name: Check dist
+  #  needs: [sdist_win, wheels]
+  #  runs-on: ubuntu-20.04
+  #  steps:
+  #    - uses: actions/download-artifact@v2
+  #      with:
+  #        name: artifact
+  #        path: dist
+  #
+  #    - run: pipx run twine check --strict dist/*              
                
   upload_pypi_test:
     name: Upload to PyPI test

@@ -8,8 +8,8 @@ try:
       _bdist_wheel.finalize_options(self)
       self.root_is_pure = False
 except ImportError:
-  bdist_wheel = None 
- 
+  bdist_wheel = None
+  
 #Find sys/machine file
 def buildfilepath():
   ossys = platform.system()
@@ -25,7 +25,10 @@ def buildfilepath():
     else:
       #Win x86
       platmacshort = "Win32"
-
+  
+  #sfilename = "DelphiVCL.pyd"
+  #platmacshort = "Win64"
+  
   if not platmacshort:
     raise ValueError("Undetermined platform.")
     
@@ -39,10 +42,7 @@ def copylibfiletopkg(slibfile, spkgfile):
   if not os.path.exists(spkgdirname):
     os.makedirs(spkgdirname)
   shutil.copy(slibfile, spkgfile)
-  
-  #libdirname = os.path.dirname(slibfile)
-  #shutil.rmtree(libdirname)
-  
+
 #Validate lib paths
 def validatelibpaths(slibdir, slibfile):
   print(f"Check for lib dir: {slibdir}")    
@@ -51,13 +51,13 @@ def validatelibpaths(slibdir, slibfile):
     
   print(f"Check for lib path: {slibfile}")
   if not os.path.exists(slibfile):
-    raise ValueError(f"Invalid lib path: {slibfile}")
+    raise ValueError(f"File not found: {slibfile}")
   
 #Validate pkg paths
 def validatepkgpaths(spkgfile):
   print(f"Check for pkg path: {spkgfile}")
   if not os.path.exists(spkgfile):
-    raise ValueError(f"Invalid pkg path: {spkgfile}")
+    raise ValueError(f"File not found {spkgfile}")
     
 #Clear pkg files (trash)
 def clearpkgtrashfiles():
@@ -68,27 +68,21 @@ def clearpkgtrashfiles():
     fpath = os.path.join(sdir, file)
     print("Removing trash file:", fpath)
     os.remove(fpath)
-  
-def isdistprocess():  
-  sdistdir = os.path.join(os.curdir, "dist")
-  slibdir = os.path.join(os.curdir, "lib")
-  
-  return os.path.exists(sdistdir) and not os.path.exists(slibdir)
-  
-def distprocess():
+    
+def finddistfile():
   sdir = os.path.join(os.curdir, "delphivcl")  
   for fname in os.listdir(sdir):
     if 'DelphiVCL' in fname:
       return os.path.basename(fname)
   return None  
     
-def buildprocess():
+def copylibfile():
   spath = buildfilepath()
   sfilename = os.path.basename(spath)
-  
+
   slibdir = os.path.join(os.curdir, "lib")
   slibfile = os.path.join(slibdir, spath)
-
+  
   spkgdir = os.path.join(os.curdir, "delphivcl")
   spkgfile = os.path.join(spkgdir, sfilename)
  
@@ -97,30 +91,8 @@ def buildprocess():
   copylibfiletopkg(slibfile, spkgfile)
   validatepkgpaths(spkgfile)     
   
-  return sfilename
-     
-sfilename = None  
-print("Check for process type") 
-if isdistprocess(): 
-  print("Found a distribution process")
-  sfilename = distprocess()
-else:
-  print("Found a build process")  
-  sfilename = buildprocess()  
- 
-print("Working with file: ", sfilename)  
+  return sfilename   
   
-"""def list_files(startpath):
-    for root, dirs, files in os.walk(startpath):
-        level = root.replace(startpath, '').count(os.sep)
-        indent = ' ' * 4 * (level)
-        print('{}{}/'.format(indent, os.path.basename(root)))
-        subindent = ' ' * 4 * (level + 1)
-        for f in files:
-            print('{}{}'.format(subindent, f))
-            
-list_files(f"{os.curdir}")"""  
-
 def get_release_version():
     """Creates a new version incrementing by 1 the number of build specified in the
     DelphiVCL-0-01/__version__.py file."""
@@ -131,6 +103,20 @@ def get_release_version():
         retvalue = exec(opffilecontents, gbals, lcals)
     versorigstr = lcals["__version__"]
     return versorigstr
+
+extra_args = {}
+#We don't want to share the compiled files via sdist (we don't have them)
+if not ("sdist" in sys.argv):  
+  slibdir = os.path.join(os.curdir, "lib")
+  #Binary distribution
+  if ("bdist_wheel" in sys.argv) and os.path.exists(slibdir):
+    bdata = copylibfile()
+    extra_args = {'package_data': {"delphivcl": [bdata]}}
+  else:
+    #Final user installation
+    bdata = finddistfile()
+    if bdata:
+      extra_args = {'package_data': {"delphivcl": [bdata]}}      
     
 versnewstr = get_release_version()   
 
@@ -145,8 +131,7 @@ setuptools.setup(
   author_email="lucas.belo@live.com",
   long_description=long_description,
   long_description_content_type="text/markdown",
-  packages=["delphivcl"],
-  package_data={"delphivcl": [sfilename]},
+  packages=["delphivcl"],    
   classifiers=[
             'Development Status :: 1 - Planning',
             'Intended Audience :: Developers',
@@ -162,4 +147,5 @@ setuptools.setup(
             'Operating System :: Microsoft :: Windows',                        
         ],		
   cmdclass={'bdist_wheel': bdist_wheel},
+  **extra_args
 )
