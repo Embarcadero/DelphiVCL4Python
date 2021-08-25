@@ -69,15 +69,12 @@ def clearpkgtrashfiles():
     print("Removing trash file:", fpath)
     os.remove(fpath)
     
+def isbuildprocess():
+  return "bdist_wheel" in sys.argv or "sdist" in sys.argv    
+    
 def isdistprocess():  
   sdistdir = os.path.join(os.curdir, "dist")
   return os.path.exists(sdistdir)
-  
-  """sdir = os.path.join(os.curdir, "delphivcl")
-  for fname in os.listdir(sdir):
-    if 'DelphiVCL' in fname:
-      return True
-  return False"""
   
 def distprocess():
   sdir = os.path.join(os.curdir, "delphivcl")  
@@ -105,12 +102,14 @@ def buildprocess():
      
 sfilename = None  
 print("Check for process type") 
-if isdistprocess():
-  print("Found a distribution process")
-  sfilename = distprocess()
-else:  
+if isbuildprocess():  
   print("Found a build process")  
   sfilename = buildprocess()
+elif isdistprocess():  
+  print("Found a distribution process")
+  sfilename = distprocess()
+else:
+  raise ValueError("Undetermined process type")  
   
 print("Working with file: ", sfilename)  
   
