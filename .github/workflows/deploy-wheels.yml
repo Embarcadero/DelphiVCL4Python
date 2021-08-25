@@ -14,36 +14,6 @@ on:
   workflow_dispatch:
   
 jobs:    
-  sdist_win:
-    name: Build ${{ matrix.arch }} SOURCE on ${{ matrix.os }} for Python ${{ matrix.python-version }}
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        python-version: [3.6, 3.7, 3.8, 3.9]
-        include:
-          - os: windows-2019
-            arch: "AMD64"
-            use_qemu: false         
-          - os: windows-2019
-            arch: "x86"
-            use_qemu: false    
-    steps:
-    - name: Check out repository
-      uses: actions/checkout@v2
-      
-    - name: Set up Python ${{ matrix.python-version }}
-      uses: actions/setup-python@v2
-      with:
-        python-version: ${{ matrix.python-version }}
-            
-    - name: Build sdist
-      run: python setup.py sdist
-      
-    - name: Save sdist
-      uses: actions/upload-artifact@v2
-      with:
-        path: dist/*.tar.gz
-            
   wheels:
     name: Build ${{ matrix.arch }} WHEELS on ${{ matrix.os }}
     runs-on: ${{ matrix.os }}    

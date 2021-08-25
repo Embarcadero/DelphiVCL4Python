@@ -68,10 +68,7 @@ def clearpkgtrashfiles():
     fpath = os.path.join(sdir, file)
     print("Removing trash file:", fpath)
     os.remove(fpath)
-    
-def isbuildprocess():
-  return "bdist_wheel" in sys.argv or "sdist" in sys.argv    
-    
+  
 def isdistprocess():  
   sdistdir = os.path.join(os.curdir, "dist")
   return os.path.exists(sdistdir)
@@ -102,15 +99,13 @@ def buildprocess():
      
 sfilename = None  
 print("Check for process type") 
-if isbuildprocess():  
-  print("Found a build process")  
-  sfilename = buildprocess()
-elif isdistprocess():  
+if isdistprocess(): 
   print("Found a distribution process")
   sfilename = distprocess()
 else:
-  raise ValueError("Undetermined process type")  
-  
+  print("Found a build process")  
+  sfilename = buildprocess()  
+ 
 print("Working with file: ", sfilename)  
   
 """def list_files(startpath):
