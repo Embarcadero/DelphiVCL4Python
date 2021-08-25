@@ -14,8 +14,8 @@ def findmodule():
           
 def new_import(dirbname):
     modulefullpath = os.path.join(dirbname, findmodule())
-    loader = importlib.machinery.ExtensionFileLoader("delphivcl", modulefullpath)
-    spec = importlib.util.spec_from_file_location("delphivcl", modulefullpath,
+    loader = importlib.machinery.ExtensionFileLoader("DelphiVCL", modulefullpath)
+    spec = importlib.util.spec_from_file_location("DelphiVCL", modulefullpath,
         loader=loader, submodule_search_locations=None)
     #print("spec", spec, spec.loader, modulefullpath, __file__)
     ld = loader.create_module(spec)
