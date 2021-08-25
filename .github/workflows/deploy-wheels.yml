@@ -15,7 +15,7 @@ on:
   
 jobs:   
   sdist_win:
-    name: Build ${{ matrix.arch }} SOURCE on ${{ matrix.os }} for Python ${{ matrix.python-version }}
+    name: Build ${{ matrix.architecture }} SOURCE on ${{ matrix.os }} for Python ${{ matrix.python-version }}
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
