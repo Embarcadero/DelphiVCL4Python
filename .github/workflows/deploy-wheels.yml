@@ -14,7 +14,7 @@ on:
   workflow_dispatch:
   
 jobs:   
-  sdist_win:
+  sdist:
     name: Build ${{ matrix.architecture }} SOURCE on ${{ matrix.os }} for Python ${{ matrix.python-version }}
     runs-on: ${{ matrix.os }}
     strategy:
@@ -42,7 +42,7 @@ jobs:
   wheels:
     name: Build ${{ matrix.arch }} WHEELS on ${{ matrix.os }}
     runs-on: ${{ matrix.os }}    
-    needs: [sdist_win]
+    needs: [sdist]
     strategy:      
       #https://github.com/scikit-build/cmake-python-distributions/blob/master/.github/workflows/build.yml
       matrix:
