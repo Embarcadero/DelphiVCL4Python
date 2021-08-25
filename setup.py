@@ -25,10 +25,7 @@ def buildfilepath():
     else:
       #Win x86
       platmacshort = "Win32"
-  
-  #sfilename = "DelphiVCL.pyd"
-  #platmacshort = "Win64"
-  
+    
   if not platmacshort:
     raise ValueError("Undetermined platform.")
     
