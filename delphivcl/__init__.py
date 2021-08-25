@@ -3,14 +3,8 @@ import importlib, importlib.util
 
 dirbname_full = os.path.dirname(__file__)
 
-print("difull", dirbname_full, "name", __name__)
+#print("difull", dirbname_full, "name", __name__)
 
-def imp_import(dirbname):
-    modulefullpath = os.path.join(dirbname, "DelphiVCL")
-    organiserfind = imp.find_module(modulefullpath)
-    package = imp.load_module("DelphiVCL", *organiserfind)
-    return package
-    
 def findmodule():
   sdir = os.path.join(os.curdir, dirbname_full)  
   for fname in os.listdir(sdir):
@@ -20,14 +14,14 @@ def findmodule():
           
 def new_import(dirbname):
     modulefullpath = os.path.join(dirbname, findmodule())
-    loader = importlib.machinery.ExtensionFileLoader("DelphiVCL", modulefullpath)
-    spec = importlib.util.spec_from_file_location("DelphiVCL", modulefullpath,
+    loader = importlib.machinery.ExtensionFileLoader("delphivcl", modulefullpath)
+    spec = importlib.util.spec_from_file_location("delphivcl", modulefullpath,
         loader=loader, submodule_search_locations=None)
     #print("spec", spec, spec.loader, modulefullpath, __file__)
     ld = loader.create_module(spec)
     #print("ld", ld)
     package = importlib.util.module_from_spec(spec)
-    sys.modules["DelphiVCL"] = package
+    sys.modules["delphivcl"] = package
     #print("cmodelq", delphifmx)
     spec.loader.exec_module(package)
     #print("cmodli", delphifmx)
