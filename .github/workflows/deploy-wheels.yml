@@ -20,13 +20,7 @@ jobs:
     strategy:
       matrix:
         python-version: [3.6, 3.7, 3.8, 3.9]
-        include:
-          - os: windows-2019
-            arch: "AMD64"
-            use_qemu: false         
-          - os: windows-2019
-            arch: "x86"
-            use_qemu: false    
+        architecture: [x86, x64]   
     steps:
     - name: Check out repository
       uses: actions/checkout@v2
@@ -35,6 +29,7 @@ jobs:
       uses: actions/setup-python@v2
       with:
         python-version: ${{ matrix.python-version }}
+        architecture: ${{ matrix.architecture }}
             
     - name: Build sdist
       run: python setup.py sdist
