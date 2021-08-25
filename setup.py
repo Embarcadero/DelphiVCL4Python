@@ -71,7 +71,9 @@ def clearpkgtrashfiles():
   
 def isdistprocess():  
   sdistdir = os.path.join(os.curdir, "dist")
-  return os.path.exists(sdistdir)
+  slibdir = os.path.join(os.curdir, "lib")
+  
+  return os.path.exists(sdistdir) and not os.path.exists(slibdir)
   
 def distprocess():
   sdir = os.path.join(os.curdir, "delphivcl")  
