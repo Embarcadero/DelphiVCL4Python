@@ -16,6 +16,7 @@ def buildfilepath():
   platmac = platform.machine()
   platmacshort = ""
   sfilename = ""
+  print("OS:", ossys, "Machine", platmac)
   if ossys == "Windows":
     sfilename = "DelphiVCL.pyd"
     if platmac.endswith('64'):
@@ -24,7 +25,10 @@ def buildfilepath():
     else:
       #Win x86
       platmacshort = "Win32"
-  
+
+  if not platmacshort:
+    raise ValueError("Undetermined platform.")
+    
   pyversionstrshort = f"{sys.version_info.major}{sys.version_info.minor}"
 
   return f"DelphiVCL_{platmacshort}_{pyversionstrshort}{os.sep}{sfilename}"
@@ -55,19 +59,32 @@ def validatepkgpaths(spkgfile):
   if not os.path.exists(spkgfile):
     raise ValueError(f"Invalid pkg path: {spkgfile}")
     
-def isdistprocess():
+#Clear pkg files (trash)
+def clearpkgtrashfiles():
   sdir = os.path.join(os.curdir, "delphivcl")
+  files = os.listdir(sdir)
+  filtered_files = [file for file in files if file.endswith(".so") or file.endswith(".pyd")]
+  for file in filtered_files:
+    fpath = os.path.join(sdir, file)
+    print("Removing trash file:", fpath)
+    os.remove(fpath)
+    
+def isdistprocess():  
+  sdistdir = os.path.join(os.curdir, "dist")
+  return os.path.exists(sdistdir)
+  
+  """sdir = os.path.join(os.curdir, "delphivcl")
   for fname in os.listdir(sdir):
     if 'DelphiVCL' in fname:
       return True
-  return False
+  return False"""
   
 def distprocess():
   sdir = os.path.join(os.curdir, "delphivcl")  
   for fname in os.listdir(sdir):
     if 'DelphiVCL' in fname:
       return os.path.basename(fname)
-  return None    
+  return None  
     
 def buildprocess():
   spath = buildfilepath()
@@ -79,6 +96,7 @@ def buildprocess():
   spkgdir = os.path.join(os.curdir, "delphivcl")
   spkgfile = os.path.join(spkgdir, sfilename)
  
+  clearpkgtrashfiles()	  
   validatelibpaths(slibdir, slibfile)
   copylibfiletopkg(slibfile, spkgfile)
   validatepkgpaths(spkgfile)     
@@ -90,8 +108,8 @@ print("Check for process type")
 if isdistprocess():
   print("Found a distribution process")
   sfilename = distprocess()
-else: 
-  print("Found a build process")
+else:  
+  print("Found a build process")  
   sfilename = buildprocess()
   
 print("Working with file: ", sfilename)  
