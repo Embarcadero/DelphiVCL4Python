@@ -5,7 +5,7 @@ Installation:
 
     pip install delphivcl
    
-Supports 
+Supports:
 * Win32 & Win64 x86 architecturtes
 * Python cp36, cp37, cp38, cp39
 
