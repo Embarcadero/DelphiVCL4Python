@@ -41,7 +41,6 @@ class ActivityIndicatorForm(Form):
         self.cbx_vcl_style.SetProps(Parent = self, Left = 20, Top = 145, Width = 197, Height = 23, Style = "csDropDownList", TabOrder = 2, OnChange = self.__cbx_vcl_style_change)
         self.cbx_form_color.SetProps(Parent = self, Left = 245, Top = 145, Width = 188, Height = 22, TabOrder = 3, OnChange = self.__cbx_form_color_change)
 
-
         self.grp_indicator_type.SetProps(Parent = self, Left = 20, Top = 193, Width = 145, Height = 117, Caption = 'Indicator Type', TabOrder = 4, OnClick = self.__grp_indicator_type_click)
         self.grp_indicator_type.Items.Add('aitMomentumDots')
         self.grp_indicator_type.Items.Add('aitRotatingSector')
@@ -89,16 +88,6 @@ class ActivityIndicatorForm(Form):
 
     def __cbx_form_color_change(self, sender):
         self.Color = self.cbx_form_color.Selected
-
-    def __def_evts(self):
-        self.OnCreate = self.__on_form_create
-        self.chk_animate.OnClick = self.__chk_animate_click
-        self.trk_frame_delay.OnChange = self.__trk_frame_delay_change
-        self.grp_indicator_type.OnClick = self.__grp_indicator_type_click
-        self.grp_indicator_size.OnClick = self.__grp_indicator_size_click
-        self.grp_indicator_color.OnClick = self.__grp_indicator_color_click
-        self.cbx_vcl_style.OnChange = self.__cbx_style_change
-        self.cbx_form_color.OnChange = self.__cbx_form_color_change
 
 def main():
     Application.Initialize()
