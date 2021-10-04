@@ -1,5 +1,5 @@
-VCL.ActivityIndicator Sample[]()
-# VCL.ActivityIndicator Sample 
+DelphiVCL4Python - VCL.ActivityIndicator Sample[]()
+# DelphiVCL4Python - VCL.ActivityIndicator Sample 
 
 
 This is a sample that shows the use of the [TActivityIndicator](http://docwiki.embarcadero.com/Libraries/en/Vcl.WinXCtrls.TActivityIndicator) control directly from a Python script.
@@ -12,7 +12,7 @@ This is a sample that shows the use of the [TActivityIndicator](http://docwiki.e
 * [3 How to Use the Sample](#How_to_Use_the_Sample)
 * [4 Implementation](#Implementation)
 
-* [4.1 TActivityIndicatorForm](#TActivityIndicatorForm)
+* [4.1 ActivityIndicatorForm](#TActivityIndicatorForm)
 
 * [5 Uses](#Uses)
 * [6 See Also](#See_Also)
@@ -22,11 +22,11 @@ This is a sample that shows the use of the [TActivityIndicator](http://docwiki.e
 
 You can find the **ActivityIndicator** sample project at:
 
-* **GitHub Repository for DelphiVCL4Python:**[https://github.com/Embarcadero/DelphiVCL4Python/tree/main/samples/ActivityIndicator](https://github.com/Embarcadero/DelphiVCL4Python/tree/main/samples/ActivityIndicator)
+* **GitHub Repository for DelphiVCL4Python:** [https://github.com/Embarcadero/DelphiVCL4Python/tree/main/samples/ActivityIndicator](https://github.com/Embarcadero/DelphiVCL4Python/tree/main/samples/ActivityIndicator)
 
 ## Description 
 
-This application demonstrates the [TActivityIndicator](http://docwiki.embarcadero.com/Libraries/en/Vcl.WinXCtrls.TActivityIndicator) control and shows how to modify its various properties.The application uses the following controls:
+This application demonstrates the [ActivityIndicator](http://docwiki.embarcadero.com/Libraries/en/Vcl.WinXCtrls.TActivityIndicator) control and shows how to modify its various properties directly from a Python script. The application uses the following controls:
 
 * `ai`: The activity indicator.
 * `grp_indicator_size`: Sets the [size](http://docwiki.embarcadero.com/Libraries/en/Vcl.WinXCtrls.TActivityIndicator.IndicatorSize) of the activity indicator.
@@ -40,18 +40,18 @@ This application demonstrates the [TActivityIndicator](http://docwiki.embarcader
 ## How to Use the Sample 
 
 
-1. We strongly recomend using PyScripter IDE: 
+1. We strongly recommend using PyScripter IDE: 
 
 * SourceForge: https://sourceforge.net/projects/pyscripter/
 * GitHub: https://github.com/pyscripter/pyscripter
 
 2. Navigate to the location given above and open:
 
-*  PyScripter: **activityindicator.py**.
+*  PyScripter IDE: **activityindicator.py**.
 
 3. Under **Tools->Tools** choose **Install Packages with pip**.
 
-4. In the dialog box **Package Name** set delphivcl.
+4. In the dialog box **Package Name** type **delphivcl**.
 
 5.  Press **Ctrl + F9** or choose **Run > Run**.
 
@@ -60,7 +60,7 @@ This application demonstrates the [TActivityIndicator](http://docwiki.embarcader
 ## Implementation 
 
 
-### TActivityIndicatorForm 
+### ActivityIndicatorForm 
 
 On initialization **__init__**, the `__create_comps` creates all the visual components and attatch them to the `ActivityIndicatorForm` form. The `__config_comps` set all visual components properties. The application defines the following event handlers: 
 
