@@ -5,8 +5,8 @@
 # Author:      lmbelo
 #
 # Created:     28/09/2021
-# Copyright:   (c) User 2021
-# Licence:     <your licence>
+# Copyright:   1995-2021 Embarcadero Technologies, Inc.
+#              All rights reserved
 #-------------------------------------------------------------------------------
 
 from delphivcl import *
