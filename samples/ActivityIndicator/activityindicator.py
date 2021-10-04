@@ -31,7 +31,7 @@ class ActivityIndicatorForm(Form):
         self.lbl_form_color = Label(self)
 
     def __config_comps(self):
-        self.SetProps(ClientHeight = 328, ClientWidth = 452, Position = "poScreenCenter")
+        self.SetProps(ClientHeight = 328, ClientWidth = 452, Position = "poScreenCenter", OnClose = self.__on_form_close)
         self.lbl_frame_delay.SetProps(Parent = self, Left = 245, Top = 55, Width = 88, Height = 15, Caption = 'Fame Delay (50)')
         self.lbl_vcl_style.SetProps(Parent = self, Left = 20, Top = 124, Width = 49, Height = 15, Alignment = "taRightJustify", Caption = 'VCL Style')
         self.lbl_form_color.SetProps(Parent = self, Left = 245, Top = 126, Width = 176, Height = 15, Caption = 'Form Color (Windows Style Only)')
