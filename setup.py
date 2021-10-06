@@ -128,7 +128,9 @@ setuptools.setup(
   author_email="lucas.belo@live.com",
   long_description=long_description,
   long_description_content_type="text/markdown",
+  license="Other/Proprietary License",
   license_files=["LICENSE.md"],
+  url = "https://github.com/Embarcadero/DelphiVCL4Python",
   packages=["delphivcl"],    
   classifiers=[
             'Development Status :: 1 - Planning',
