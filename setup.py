@@ -128,7 +128,7 @@ setuptools.setup(
   author_email="lucas.belo@live.com",
   long_description=long_description,
   long_description_content_type="text/markdown",
-  license_files=["LICENSE.md"]
+  license_files=["LICENSE.md"],
   packages=["delphivcl"],    
   classifiers=[
             'Development Status :: 1 - Planning',
