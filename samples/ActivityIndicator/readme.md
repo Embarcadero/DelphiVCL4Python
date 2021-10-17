@@ -55,7 +55,7 @@ This application demonstrates the [ActivityIndicator](http://docwiki.embarcadero
 
 5.  Press **Ctrl + F9** or choose **Run > Run**.
 
-6.  Change the different options on the form and test the functionlity of the activity indicator. Modify color, size, animation speed and the type of the activity indicator.
+6.  Change the different options on the form and test the functionality of the activity indicator. Modify color, size, animation speed and the type of the activity indicator.
 
 ## Implementation 
 
