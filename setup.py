@@ -33,14 +33,15 @@ def buildfilepath():
 
   return f"DelphiVCL_{platmacshort}_{pyversionstrshort}{os.sep}{sfilename}"
 
-#Copy target file from lib to pkg folder
+# Copy target file from lib to pkg folder
 def copylibfiletopkg(slibfile, spkgfile): 
   spkgdirname = os.path.dirname(spkgfile)
   if not os.path.exists(spkgdirname):
     os.makedirs(spkgdirname)
   shutil.copy(slibfile, spkgfile)
 
-#Validate lib paths
+
+# Validate lib paths
 def validatelibpaths(slibdir, slibfile):
   print(f"Check for lib dir: {slibdir}")    
   if not os.path.exists(f"{slibdir}"):
@@ -49,14 +50,16 @@ def validatelibpaths(slibdir, slibfile):
   print(f"Check for lib path: {slibfile}")
   if not os.path.exists(slibfile):
     raise ValueError(f"File not found: {slibfile}")
-  
-#Validate pkg paths
+
+
+# Validate pkg paths
 def validatepkgpaths(spkgfile):
   print(f"Check for pkg path: {spkgfile}")
   if not os.path.exists(spkgfile):
     raise ValueError(f"File not found {spkgfile}")
-    
-#Clear pkg files (trash)
+
+
+# Clear pkg files (trash)
 def clearpkgtrashfiles():
   sdir = os.path.join(os.curdir, "delphivcl")
   files = os.listdir(sdir)
@@ -87,8 +90,8 @@ def copylibfile():
   validatelibpaths(slibdir, slibfile)
   copylibfiletopkg(slibfile, spkgfile)
   validatepkgpaths(spkgfile)     
-  
-  return sfilename   
+
+  return sfilename
   
 def get_release_version():
     """Creates a new version incrementing by 1 the number of build specified in the
@@ -98,8 +101,11 @@ def get_release_version():
     with open(os.path.join(os.getcwd(), "delphivcl", "__version__.py"), "rt") as opf:
         opffilecontents = opf.read()
         retvalue = exec(opffilecontents, gbals, lcals)
-    versorigstr = lcals["__version__"]
-    return versorigstr
+    version_orig_str = lcals["__version__"]
+    return version_orig_str
+
+def get_package_name():
+    return os.environ.get("PACKAGE_NAME", "delphivcl")
 
 extra_args = {}
 #We don't want to share the compiled files via sdist (we don't have them)
@@ -113,15 +119,16 @@ if not ("sdist" in sys.argv):
     #Final user installation
     bdata = finddistfile()
     if bdata:
-      extra_args = {'package_data': {"delphivcl": [bdata]}}      
+      extra_args = {'package_data': {"delphivcl": [bdata]}}
     
 versnewstr = get_release_version()   
 
 with open("README.md", "r") as fh:
   long_description = fh.read()    
 
+package_name = get_package_name()
 setuptools.setup(
-  name="delphivcl",
+  name=package_name,
   version=versnewstr,
   description="Delphi VCL for Python",
   author="Lucas Belo, Jim McKeeth",
@@ -131,7 +138,7 @@ setuptools.setup(
   license="Other/Proprietary License",
   license_files=["LICENSE.md"],
   url = "https://github.com/Embarcadero/DelphiVCL4Python",
-  packages=["delphivcl"],    
+  packages=["delphivcl"],
   classifiers=[
             'Development Status :: 1 - Planning',
             'Intended Audience :: Developers',

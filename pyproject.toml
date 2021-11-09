@@ -22,6 +22,8 @@ authors = ["Jim McKeth", "Lucas Belo<lucas.belo@live.com>", "Lucio Montero<lucio
 
 [tool.poetry.dependencies]
 python = ">=3.6<3.10"
+python-dotenv = "^0.19.1"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.2.5"
+
