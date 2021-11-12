@@ -99,8 +99,10 @@ def copylibfile():
 
 
 def get_release_version():
-    """Creates a new version incrementing by 1 the number of build specified in the
-    DelphiVCL-0-01/__version__.py file."""
+    """Gets the version from the delphivcl/__version__.py file, or from the FORCE_VERSION
+    environment variable (this planned for develpoment only)."""
+    if "FORCE_VERSION" in os.environ:
+        return os.environ["FORCE_VERSION"]
     lcals = locals()
     gbals = globals()
     with open(os.path.join(os.getcwd(), "delphivcl", "__version__.py"), "rt") as opf:
@@ -134,6 +136,7 @@ with open("README.md", "r") as fh:
   long_description = fh.read()    
 
 package_name = get_package_name()
+print("ppn", package_name)
 setuptools.setup(
   name=package_name,
   version=versnewstr,
