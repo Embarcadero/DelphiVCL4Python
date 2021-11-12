@@ -141,7 +141,7 @@ setuptools.setup(
   name=package_name,
   version=versnewstr,
   description="Delphi VCL for Python",
-  author="Lucas Belo, Jim McKeeth",
+  author="Lucas Belo, Lucio Montero, Jim McKeeth",
   author_email="lucas.belo@live.com",
   long_description=long_description,
   long_description_content_type="text/markdown",
