@@ -1,6 +1,6 @@
 import setuptools, os, sys, platform, shutil
 
-#Force platform wheel
+# Force platform wheel
 try:
   from wheel.bdist_wheel import bdist_wheel as _bdist_wheel
   class bdist_wheel(_bdist_wheel):
@@ -9,8 +9,9 @@ try:
       self.root_is_pure = False
 except ImportError:
   bdist_wheel = None
-  
-#Find sys/machine file
+
+
+# Find sys/machine file
 def buildfilepath():
   ossys = platform.system()
   platmac = platform.machine()
@@ -20,10 +21,10 @@ def buildfilepath():
   if ossys == "Windows":
     sfilename = "DelphiVCL.pyd"
     if platmac.endswith('64'):
-      #Win x64	
+      # Win x64
       platmacshort = "Win64"
     else:
-      #Win x86
+      # Win x86
       platmacshort = "Win32"
     
   if not platmacshort:
@@ -32,6 +33,7 @@ def buildfilepath():
   pyversionstrshort = f"{sys.version_info.major}{sys.version_info.minor}"
 
   return f"DelphiVCL_{platmacshort}_{pyversionstrshort}{os.sep}{sfilename}"
+
 
 # Copy target file from lib to pkg folder
 def copylibfiletopkg(slibfile, spkgfile): 
@@ -68,14 +70,16 @@ def clearpkgtrashfiles():
     fpath = os.path.join(sdir, file)
     print("Removing trash file:", fpath)
     os.remove(fpath)
-    
+
+
 def finddistfile():
   sdir = os.path.join(os.curdir, "delphivcl")  
   for fname in os.listdir(sdir):
     if 'DelphiVCL' in fname:
       return os.path.basename(fname)
   return None  
-    
+
+
 def copylibfile():
   spath = buildfilepath()
   sfilename = os.path.basename(spath)
@@ -92,7 +96,8 @@ def copylibfile():
   validatepkgpaths(spkgfile)     
 
   return sfilename
-  
+
+
 def get_release_version():
     """Creates a new version incrementing by 1 the number of build specified in the
     DelphiVCL-0-01/__version__.py file."""
@@ -104,14 +109,16 @@ def get_release_version():
     version_orig_str = lcals["__version__"]
     return version_orig_str
 
+
 def get_package_name():
     return os.environ.get("PACKAGE_NAME", "delphivcl")
 
+
 extra_args = {}
-#We don't want to share the compiled files via sdist (we don't have them)
+# We don't want to share the compiled files via sdist (we don't have them)
 if not ("sdist" in sys.argv):  
   slibdir = os.path.join(os.curdir, "lib")
-  #Binary distribution
+  # Binary distribution
   if ("bdist_wheel" in sys.argv) and os.path.exists(slibdir):
     bdata = copylibfile()
     extra_args = {'package_data': {"delphivcl": [bdata]}}
