@@ -4,10 +4,11 @@ import logging
 logger = logging.getLogger(__name__)
 
 
-def new_import(internal_name="DelphiVCL", module_full_path=None):
+def new_import(internal_name="DelphiVCL", module_full_path=None,
+               pyd_file_basename="DelphiVCL.pyd", external_name="delphivcl"):
     if module_full_path is None:
         dirbname_full = os.path.dirname(os.path.abspath(__file__))
-        module_full_path = os.path.join(dirbname_full, "DelphiVCL.pyd")
+        module_full_path = os.path.join(dirbname_full, pyd_file_basename)
     loader = importlib.machinery.ExtensionFileLoader(internal_name, module_full_path)
     spec = importlib.util.spec_from_file_location(internal_name, module_full_path,
         loader=loader, submodule_search_locations=None)
@@ -15,12 +16,12 @@ def new_import(internal_name="DelphiVCL", module_full_path=None):
         package = importlib.util.module_from_spec(spec)
     except Exception:
         raise Exception(f"Error when loading the extension file: {module_full_path}")
-    sys.modules["delphivcl"] = package
+    sys.modules[external_name] = package
     spec.loader.exec_module(package)
     return package
 
 
-def find_module():
+def find_module(internal_name="DelphiVCL"):
     platmac = platform.machine()
     if platmac.endswith('64'):
       # Win x64
@@ -29,11 +30,13 @@ def find_module():
       # Win x86
       platmacshort = "Win32"
 
-    dir_last_level = f"DelphiVCL_{platmacshort}_{sys.version_info.major}{sys.version_info.minor}"
+    dir_last_level = f"{internal_name}_{platmacshort}_{sys.version_info.major}{sys.version_info.minor}"
     my_folder = os.path.dirname(os.path.abspath(os.path.join(os.getcwd(), __file__)))
     dirbname_full = os.path.normpath(os.path.join(my_folder, "..", "lib", dir_last_level))
+    internal_name_lower = internal_name.lower()
 
     for fname in os.listdir(dirbname_full):
-        if 'delphivcl' in fname.lower():
+        #Do a case-insensitive search for the .pyd file
+        if internal_name_lower in fname.lower():
             return os.path.join(dirbname_full, fname)
     return None
