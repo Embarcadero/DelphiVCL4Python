@@ -73,11 +73,11 @@ def clearpkgtrashfiles():
 
 
 def finddistfile():
-  sdir = os.path.join(os.curdir, "delphivcl")  
+  sdir = os.path.join(os.curdir, "delphivcl")
   for fname in os.listdir(sdir):
     if 'DelphiVCL' in fname:
       return os.path.basename(fname)
-  return None  
+  return None
 
 
 def copylibfile():
@@ -86,11 +86,11 @@ def copylibfile():
 
   slibdir = os.path.join(os.curdir, "lib")
   slibfile = os.path.join(slibdir, spath)
-  
+
   spkgdir = os.path.join(os.curdir, "delphivcl")
   spkgfile = os.path.join(spkgdir, sfilename)
  
-  clearpkgtrashfiles()	  
+  clearpkgtrashfiles()
   validatelibpaths(slibdir, slibfile)
   copylibfiletopkg(slibfile, spkgfile)
   validatepkgpaths(spkgfile)     
@@ -111,11 +111,6 @@ def get_release_version():
     version_orig_str = lcals["__version__"]
     return version_orig_str
 
-
-def get_package_name():
-    return os.environ.get("PACKAGE_NAME", "delphivcl")
-
-
 extra_args = {}
 # We don't want to share the compiled files via sdist (we don't have them)
 if not ("sdist" in sys.argv):  
@@ -135,8 +130,8 @@ versnewstr = get_release_version()
 with open("README.md", "r") as fh:
   long_description = fh.read()    
 
-package_name = get_package_name()
-print("ppn", package_name)
+package_name = os.environ.get("PACKAGE_NAME", "delphivcl")
+
 setuptools.setup(
   name=package_name,
   version=versnewstr,
