@@ -7,7 +7,7 @@ Installation:
    
 Supports:
 * Win32 & Win64 x86 architecturtes
-* Python cp36, cp37, cp38, cp39
+* Python cp36, cp37, cp38, cp39, cp310
 
 For other platforms, check out [DelphiFMX4Python](https://github.com/Embarcadero/DelphiFMX4Python).
 
