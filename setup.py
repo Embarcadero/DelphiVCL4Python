@@ -16,7 +16,7 @@ def buildfilepath():
   platmac = platform.machine()
   platmacshort = ""
   sfilename = ""
-  print("OS:", ossys, "Machine", platmac)
+  #print("OS:", ossys, "Machine", platmac)
   if ossys == "Windows":
     sfilename = "DelphiVCL.pyd"
     if platmac.endswith('64'):
@@ -29,9 +29,7 @@ def buildfilepath():
   if not platmacshort:
     raise ValueError("Undetermined platform.")
     
-  pyversionstrshort = f"{sys.version_info.major}{sys.version_info.minor}"
-
-  return f"DelphiVCL_{platmacshort}_{pyversionstrshort}{os.sep}{sfilename}"
+  return f"DelphiVCL_{platmacshort}{os.sep}{sfilename}"
 
 #Copy target file from lib to pkg folder
 def copylibfiletopkg(slibfile, spkgfile): 
@@ -42,17 +40,17 @@ def copylibfiletopkg(slibfile, spkgfile):
 
 #Validate lib paths
 def validatelibpaths(slibdir, slibfile):
-  print(f"Check for lib dir: {slibdir}")    
+  #print(f"Check for lib dir: {slibdir}")    
   if not os.path.exists(f"{slibdir}"):
     raise ValueError(f"Invalid lib path: {slibdir}")
     
-  print(f"Check for lib path: {slibfile}")
+  #print(f"Check for lib path: {slibfile}")
   if not os.path.exists(slibfile):
     raise ValueError(f"File not found: {slibfile}")
   
 #Validate pkg paths
 def validatepkgpaths(spkgfile):
-  print(f"Check for pkg path: {spkgfile}")
+  #print(f"Check for pkg path: {spkgfile}")
   if not os.path.exists(spkgfile):
     raise ValueError(f"File not found {spkgfile}")
     
@@ -63,7 +61,7 @@ def clearpkgtrashfiles():
   filtered_files = [file for file in files if file.endswith(".so") or file.endswith(".pyd")]
   for file in filtered_files:
     fpath = os.path.join(sdir, file)
-    print("Removing trash file:", fpath)
+    #print("Removing trash file:", fpath)
     os.remove(fpath)
     
 def finddistfile():
