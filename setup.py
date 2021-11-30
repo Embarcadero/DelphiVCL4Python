@@ -1,5 +1,7 @@
 import setuptools, os, sys, platform, shutil
 
+pkgname = "delphivcl"
+
 #Force platform wheel
 try:
   from wheel.bdist_wheel import bdist_wheel as _bdist_wheel
@@ -56,7 +58,7 @@ def validatepkgpaths(spkgfile):
     
 #Clear pkg files (trash)
 def clearpkgtrashfiles():
-  sdir = os.path.join(os.curdir, "delphivcl")
+  sdir = os.path.join(os.curdir, pkgname)
   files = os.listdir(sdir)
   filtered_files = [file for file in files if file.endswith(".so") or file.endswith(".pyd")]
   for file in filtered_files:
@@ -65,7 +67,7 @@ def clearpkgtrashfiles():
     os.remove(fpath)
     
 def finddistfile():
-  sdir = os.path.join(os.curdir, "delphivcl")  
+  sdir = os.path.join(os.curdir, pkgname)  
   for fname in os.listdir(sdir):
     if 'DelphiVCL' in fname:
       return os.path.basename(fname)
@@ -78,7 +80,7 @@ def copylibfile():
   slibdir = os.path.join(os.curdir, "lib")
   slibfile = os.path.join(slibdir, spath)
   
-  spkgdir = os.path.join(os.curdir, "delphivcl")
+  spkgdir = os.path.join(os.curdir, pkgname)
   spkgfile = os.path.join(spkgdir, sfilename)
  
   clearpkgtrashfiles()	  
@@ -93,7 +95,7 @@ def get_release_version():
     DelphiVCL-0-01/__version__.py file."""
     lcals = locals()
     gbals = globals()
-    with open(os.path.join(os.getcwd(), "delphivcl", "__version__.py"), "rt") as opf:
+    with open(os.path.join(os.getcwd(), pkgname, "__version__.py"), "rt") as opf:
         opffilecontents = opf.read()
         retvalue = exec(opffilecontents, gbals, lcals)
     versorigstr = lcals["__version__"]
@@ -106,12 +108,12 @@ if not ("sdist" in sys.argv):
   #Binary distribution
   if ("bdist_wheel" in sys.argv) and os.path.exists(slibdir):
     bdata = copylibfile()
-    extra_args = {'package_data': {"delphivcl": [bdata]}}
+    extra_args = {'package_data': {pkgname: [bdata]}}
   else:
     #Final user installation
     bdata = finddistfile()
     if bdata:
-      extra_args = {'package_data': {"delphivcl": [bdata]}}      
+      extra_args = {'package_data': {pkgname: [bdata]}}      
     
 versnewstr = get_release_version()   
 
@@ -119,7 +121,7 @@ with open("README.md", "r") as fh:
   long_description = fh.read()    
 
 setuptools.setup(
-  name="delphivcl",
+  name=pkgname,
   version=versnewstr,
   description="Delphi VCL for Python",
   author="Lucas Belo, Jim McKeeth",
@@ -128,8 +130,9 @@ setuptools.setup(
   long_description_content_type="text/markdown",
   license="Other/Proprietary License",
   license_files=["LICENSE.md"],
-  url = "https://github.com/Embarcadero/DelphiVCL4Python",
-  packages=["delphivcl"],    
+  url="https://github.com/Embarcadero/DelphiVCL4Python",
+  python_requires=">=3.3<=3.10",
+  packages=[pkgname],    
   classifiers=[
             'Development Status :: 1 - Planning',
             'Intended Audience :: Developers',

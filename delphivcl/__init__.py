@@ -3,7 +3,8 @@ import importlib, importlib.util
 
 def init_module_defs():
     pyversionstrshort = f"{sys.version_info.major}.{sys.version_info.minor}"
-    with io.open("moduledefs.json", "w+") as moduledefs:
+    dirbname_full = os.path.dirname(os.path.abspath(__file__))
+    with io.open(os.path.join(dirbname_full, "moduledefs.json"), "w+") as moduledefs:
         moduledefs.write(r'{"python_ver":  "@ver"}'.replace('@ver', pyversionstrshort))
    
 def new_import():  
