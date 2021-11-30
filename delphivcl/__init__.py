@@ -1,5 +1,5 @@
 import sys, platform, os, sys, io
-import importlib, importlib.util
+import importlib, importlib.machinery, importlib.util
 
 def init_module_defs():
     pyversionstrshort = f"{sys.version_info.major}.{sys.version_info.minor}"
