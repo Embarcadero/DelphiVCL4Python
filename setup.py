@@ -15,13 +15,14 @@ except ImportError:
 #Find sys/machine file
 def buildfilepath():
   ossys = platform.system()
-  platmac = platform.machine()
   platmacshort = ""
   sfilename = ""
   #print("OS:", ossys, "Machine", platmac)
   if ossys == "Windows":
     sfilename = "DelphiVCL.pyd"
-    if platmac.endswith('64'):
+    #On Mac OS (and perhaps other platforms), executable files may be universal files containing multiple architectures.
+    #it is more reliable to query the sys.maxsize attribute.
+    if (sys.maxsize > 2**32): 
       #Win x64	
       platmacshort = "Win64"
     else:
