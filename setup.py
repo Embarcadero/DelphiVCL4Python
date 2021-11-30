@@ -133,8 +133,7 @@ setuptools.setup(
   url="https://github.com/Embarcadero/DelphiVCL4Python",
   python_requires=">=3.3<=3.10",
   packages=[pkgname],    
-  classifiers=[
-            'Development Status :: 1 - Planning',
+  classifiers=[            
             'Intended Audience :: Developers',
             'Topic :: Software Development',
             'License :: Other/Proprietary License',
@@ -144,6 +143,7 @@ setuptools.setup(
             'Programming Language :: Python :: 3.6',
             'Programming Language :: Python :: 3.8',
             'Programming Language :: Python :: 3.9',
+            'Programming Language :: Python :: 3.10',
             'Programming Language :: Python :: 3 :: Only',
             'Operating System :: Microsoft :: Windows',                        
         ],		
