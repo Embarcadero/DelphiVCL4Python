@@ -308,7 +308,7 @@ contained herein, the parties hereto also agree as follows:
     constitute publication or otherwise impair their confidential nature
     of such information. If an unauthorized use or disclosure of the
     disclosing party’s Confidential Information occurs within the
-    recipient party’s enterprise, the recipient party will immed­iately
+    recipient party’s enterprise, the recipient party will immediately
     notify the disclosing party or its authorized representative and
     take, at recipient party’s expense, all steps which may be available
     to recover such Confidential Information and to prevent its
