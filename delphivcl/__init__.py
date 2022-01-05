@@ -1,16 +1,35 @@
-import sys, platform, os, sys, io
+import sys, os, sys, platform
+from os import environ
 import importlib, importlib.machinery, importlib.util
+from delphivcl import moduledefs
 
-def init_module_defs():
-    pyversionstrshort = f"{sys.version_info.major}.{sys.version_info.minor}"
-    dirbname_full = os.path.dirname(os.path.abspath(__file__))
-    with io.open(os.path.join(dirbname_full, "moduledefs.json"), "w+") as moduledefs:
-        moduledefs.write(r'{"python_ver":  "@ver"}'.replace('@ver', pyversionstrshort))
-   
-def new_import():  
-    dirbname_full = os.path.dirname(os.path.abspath(__file__))    
-    loader = importlib.machinery.ExtensionFileLoader("DelphiVCL", os.path.join(dirbname_full, "DelphiVCL.pyd"))
-    spec = importlib.util.spec_from_file_location("DelphiVCL", os.path.join(dirbname_full, "DelphiVCL.pyd"),
+def findmodule():
+  ossys = platform.system()
+  platmac = platform.machine()
+  libdir = None
+  if ossys == "Windows":
+    if (sys.maxsize > 2**32):
+      #Win x64
+      libdir = "Win64"
+    else:
+      #Win x86
+      libdir = "Win32"
+
+  if libdir:
+    sdir = os.path.join(os.path.dirname(os.path.abspath(__file__)), libdir)
+    if not os.path.exists(sdir):
+      raise ValueError("DelphiVCL module not found. Try to reinstall the delphivcl package or check for support compatibility.")
+    for fname in os.listdir(sdir):
+      if 'DelphiVCL' in fname:
+        return os.path.join(sdir, os.path.basename(fname))
+    raise ValueError("DelphiVCL module not found. Try to reinstall the delphivcl package.")
+  else:
+    raise ValueError("Unsupported platform.")
+
+def new_import():
+    modulefullpath = findmodule()
+    loader = importlib.machinery.ExtensionFileLoader("DelphiVCL", modulefullpath)
+    spec = importlib.util.spec_from_file_location("DelphiVCL", modulefullpath,
         loader=loader, submodule_search_locations=None)
     ld = loader.create_module(spec)
     package = importlib.util.module_from_spec(spec)
@@ -18,5 +37,8 @@ def new_import():
     spec.loader.exec_module(package)
     return package
 
-init_module_defs()
+#Setup moduledefs.json
+if moduledefs.get_auto_load_defs():
+  moduledefs.try_load_defs(False)
+#Import the shared lib
 package = new_import()
