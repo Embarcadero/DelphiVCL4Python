@@ -3,10 +3,17 @@ from os import environ
 import importlib, importlib.machinery, importlib.util
 from delphivcl import moduledefs
 
+class PyVerNotSupported(Exception):
+  pass
+
 def findmodule():
+  pyver = f"{sys.version_info.major}.{sys.version_info.minor}"
   ossys = platform.system()
-  platmac = platform.machine()
   libdir = None
+
+  if not (pyver in ["3.6", "3.7", "3.8", "3.9", "3.10"]): 
+    raise PyVerNotSupported(f"DelphiVCL doesn't support Python{pyver}.")
+
   if ossys == "Windows":
     if (sys.maxsize > 2**32):
       #Win x64
