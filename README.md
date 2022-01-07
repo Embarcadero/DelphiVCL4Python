@@ -7,7 +7,7 @@ Installation:
    
 <b>Supports:</b>
 * Win32 & Win64 x86 architecturtes
-* Python cp36, cp37, cp38, cp39, cp310
+* Python cp3.6, cp3.7, cp3.8, cp3.9 and cp3.10
 
 <b>Conda support:</b>
 * Win x86 and x64 from Python cp3.6 to cp3.10
