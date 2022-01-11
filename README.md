@@ -6,7 +6,7 @@ Installation:
     pip install delphivcl
    
 <b>Supports:</b>
-* Win32 & Win64 x86 architecturtes
+* Win32 & Win64 x86 architectures
 * Python cp3.6, cp3.7, cp3.8, cp3.9 and cp3.10
 
 <b>Conda support:</b>
