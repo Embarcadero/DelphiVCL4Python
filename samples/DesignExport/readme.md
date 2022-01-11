@@ -37,7 +37,7 @@ This application demonstrates the [Export to Python](https://github.com/Embarcad
 
 7. Don't forget to include the app initialization in your module:
 
-.. code:: python
+```
 
     def main():
         Application.Initialize()        
@@ -50,5 +50,9 @@ This application demonstrates the [Export to Python](https://github.com/Embarcad
 
     if __name__ == '__main__':
         main()
+        
+```        
+        
+--------------------        
 
 ![alt text](https://github.com/Embarcadero/DelphiVCL4Python/blob/main/images/design_export/export_to_python.png)
