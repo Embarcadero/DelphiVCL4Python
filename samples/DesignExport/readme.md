@@ -23,7 +23,7 @@ This application demonstrates the [Export to Python](https://github.com/Embarcad
 
 1. Open the Experts folder and install the **dclDelphiVCLExperts** component: 
 
-* SourceForge: https://github.com/Embarcadero/DelphiVCL4Python/tree/main/experts
+* Experts: https://github.com/Embarcadero/DelphiVCL4Python/tree/main/experts
 
 2. Once installed, now you're able to export any TForm descendant.
 
@@ -49,4 +49,4 @@ This application demonstrates the [Export to Python](https://github.com/Embarcad
     if __name__ == '__main__':
         main()
 
-8. # DelphiVCL for Export for Python <a href="https://github.com/Embarcadero/DelphiVCL4Python/"><img align="right" alt="DelphiVCL4Python" src="images/design_export/export_to_python.png"></a>        
+# DelphiVCL for Export for Python <a href="https://github.com/Embarcadero/DelphiVCL4Python/"><img align="right" alt="DelphiVCL4Python" src="images/design_export/export_to_python.png"></a>        
