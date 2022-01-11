@@ -49,4 +49,4 @@ This application demonstrates the [Export to Python](https://github.com/Embarcad
     if __name__ == '__main__':
         main()
 
-# DelphiVCL for Export for Python <a href="https://github.com/Embarcadero/DelphiVCL4Python/"><img align="right" alt="DelphiVCL4Python" src="images/design_export/export_to_python.png"></a>        
+![alt text](https://github.com/Embarcadero/DelphiVCL4Python/blob/main/images/design_export/export_to_python.png)
