@@ -55,4 +55,5 @@ This application demonstrates the [Export to Python](https://github.com/Embarcad
         
 --------------------        
 
-![alt text](https://github.com/Embarcadero/DelphiVCL4Python/blob/main/images/design_export/export_to_python.png)
+![alt text](https://github.com/Embarcadero/DelphiVCL4Python/tree/main/samples/DesignExport/images/export_to_python.png)
+![alt text](https://github.com/Embarcadero/DelphiVCL4Python/tree/main/samples/DesignExport/images/exported_files.png)
