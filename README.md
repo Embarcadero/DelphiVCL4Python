@@ -1,4 +1,4 @@
-# DelphiVCL4Python
+# DelphiVCL for Python <a href="https://github.com/Embarcadero/DelphiVCL4Python/"><img align="right" alt="DelphiVCL4Python" src="images/DelphiVCL4Python(256px).png"></a>
 Delphi's VCL library as a Python module for building Windows GUI
 
 Installation:
