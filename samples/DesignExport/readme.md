@@ -34,3 +34,19 @@ This application demonstrates the [Export to Python](https://github.com/Embarcad
 5. Press **right click** and choose **Export to Delphi**.
 
 6. An save dialog is displayed. Save with the same of the form (by default) - a .py and .pydfm file will be created.
+
+7. Don't forget to include the app initialization in your module:
+
+    def main():
+        Application.Initialize()
+        Application.Title = "DelphiVCLDesignExport"
+        MainForm = sampleform(Application)
+        MainForm.Show()
+        FreeConsole()
+        Application.Run()
+        MainForm.Destroy()
+
+    if __name__ == '__main__':
+        main()
+
+8. # DelphiVCL for Export for Python <a href="https://github.com/Embarcadero/DelphiVCL4Python/"><img align="right" alt="DelphiVCL4Python" src="images/design_export/export_to_python.png"></a>        
