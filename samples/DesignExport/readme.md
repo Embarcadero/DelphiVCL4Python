@@ -37,8 +37,10 @@ This application demonstrates the [Export to Python](https://github.com/Embarcad
 
 7. Don't forget to include the app initialization in your module:
 
+.. code:: python
+
     def main():
-        Application.Initialize()
+        Application.Initialize()        
         Application.Title = "DelphiVCLDesignExport"
         MainForm = sampleform(Application)
         MainForm.Show()
