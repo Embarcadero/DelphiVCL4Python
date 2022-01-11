@@ -118,6 +118,7 @@ begin
   except
     on E: Exception do  begin
       FreeAndNil(Result);
+      raise;
     end;
   end;
 end;
