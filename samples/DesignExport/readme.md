@@ -33,7 +33,7 @@ This application demonstrates the [Export to Python](https://github.com/Embarcad
 
 5. Press **right click** and choose **Export to Delphi**.
 
-6. An save dialog is displayed. Save with the same of the form (by default) - a .py and .pydfm file will be created.
+6. A save dialog is displayed. Save it with the same name of the form (by default) - a .py and .pydfm file will be created.
 
 7. Don't forget to include the app initialization onto your module:
 
