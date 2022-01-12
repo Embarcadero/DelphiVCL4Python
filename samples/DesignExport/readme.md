@@ -1,17 +1,17 @@
-DelphiVCL4Python - VCL.DesignExport Sample[]()
-# DelphiVCL4Python - VCL.DesignExport Sample 
+DelphiVCL4Python - VCL.DesignExport Samples[]()
+# DelphiVCL4Python - VCL.DesignExport Samples 
 
 
-This is a sample that shows the use of the [Export to Python](https://github.com/Embarcadero/DelphiVCL4Python/tree/main/samples/DesignExport) directly from a Delphi form.
+This is a sample set that shows the use of the [Export to Python](https://github.com/Embarcadero/DelphiVCL4Python/tree/main/samples/DesignExport) directly from a Delphi form.
 ## Contents
 
 * [1 Location](#Location)
 * [2 Description](#Description)
-* [3 How to Use the Sample](#How_to_Use_the_Sample)
+* [3 How to Use Samples](#How_to_Use_Samples)
 
 ## Location 
 
-You can find the **DesignExport** sample project at:
+You can find the **DesignExport** samples at:
 
 * **GitHub Repository for DelphiVCL4Python:** [https://github.com/Embarcadero/DelphiVCL4Python/tree/main/samples/DesignExport](https://github.com/Embarcadero/DelphiVCL4Python/tree/main/samples/DesignExport)
 
@@ -27,15 +27,15 @@ This application demonstrates the [Export to Python](https://github.com/Embarcad
 
 2. Once installed, now you're able to export any TForm descendant.
 
-3. Under **DesignExport/SampleFormDesignExport** open the given project.
+3. Under **DesignExport/** choose a sample and open the given project.
 
-4. Using the Form View, left window **Structure->sampleform** or on the Form Design.
+4. Using the Form View, left window **Structure->||FORM_NAME||** or on the Form Design.
 
 5. Press **right click** and choose **Export to Delphi**.
 
 6. An save dialog is displayed. Save with the same of the form (by default) - a .py and .pydfm file will be created.
 
-7. Don't forget to include the app initialization in your module:
+7. Don't forget to include the app initialization onto your module:
 
 ```
 
@@ -54,6 +54,3 @@ This application demonstrates the [Export to Python](https://github.com/Embarcad
 ```        
         
 --------------------        
-
-![alt text](https://github.com/Embarcadero/DelphiVCL4Python/blob/main/samples/DesignExport/images/export_to_python.png)
-![alt text](https://github.com/Embarcadero/DelphiVCL4Python/blob/main/samples/DesignExport/images/export_to_python_files.png)
