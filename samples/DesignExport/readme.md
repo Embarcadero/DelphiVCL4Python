@@ -7,7 +7,7 @@ This is a sample set that shows the use of the [Export to Python](https://github
 
 * [1 Location](#Location)
 * [2 Description](#Description)
-* [3 Using_Samples](#Using_Samples)
+* [3 Using Samples](#Using_Samples)
 
 ## Location 
 
