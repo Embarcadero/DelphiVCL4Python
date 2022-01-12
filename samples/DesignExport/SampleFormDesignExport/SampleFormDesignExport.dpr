@@ -2,13 +2,13 @@ program SampleFormDesignExport;
 
 uses
   Vcl.Forms,
-  uSampleForm in 'uSampleForm.pas' {sampleform};
+  uMainForm in 'uMainForm.pas' {MainForm};
 
 {$R *.res}
 
 begin
   Application.Initialize;
   Application.MainFormOnTaskbar := True;
-  Application.CreateForm(Tsampleform, sampleform);
+  Application.CreateForm(TMainForm, MainForm);
   Application.Run;
 end.
