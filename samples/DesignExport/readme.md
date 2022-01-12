@@ -19,7 +19,7 @@ You can find the **DesignExport** samples at:
 
 This application demonstrates the [Export to Python](https://github.com/Embarcadero/DelphiVCL4Python/tree/main/samples/DesignExport) routine and shows how to export a Delphi Design form to Python:
 
-## How to Use the Sample 
+## How to Use Samples
 
 1. Open the Experts folder and install the **dclDelphiVCLExperts** component: 
 
