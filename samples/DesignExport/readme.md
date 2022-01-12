@@ -41,8 +41,8 @@ This application demonstrates the [Export to Python](https://github.com/Embarcad
 
     def main():
         Application.Initialize()        
-        Application.Title = "DelphiVCLDesignExport"
-        MainForm = sampleform(Application)
+        Application.Title = "DelphiDesignExport"
+        MainForm = MainForm(Application)
         MainForm.Show()
         FreeConsole()
         Application.Run()
