@@ -37,6 +37,7 @@ class ActivityIndicatorForm(Form):
         self.lbl_form_color = Label(self)
 
     def __config_comps(self):
+        self.caption = "Activity Indicator sample"
         self.SetProps(ClientHeight = 328, ClientWidth = 452, Position = "poScreenCenter", OnClose = self.__on_form_close)
         self.SetProps(Menu = self.mm_menu)
         #Configure the menu items
@@ -119,20 +120,16 @@ class ActivityIndicatorForm(Form):
         self.ai.IndicatorColor = self.grp_indicator_color.Items[self.grp_indicator_color.ItemIndex]
 
     def __cbx_vcl_style_change(self, sender):
-        Application.Minimize()
         self.__sm.SetStyle(self.cbx_vcl_style.Text)
         self.lbl_form_color.Enabled = StyleServices().IsSystemStyle
         self.cbx_form_color.Enabled = StyleServices().IsSystemStyle
-        Application.Restore
-        self.BringToFront()
-        Application.BringToFront()
 
     def __cbx_form_color_change(self, sender):
         self.Color = self.cbx_form_color.Selected
 
 def main():
     Application.Initialize()
-    Application.Title = "ActivityIndicator"
+    Application.Title = "Activity Indicator"
     MainForm = ActivityIndicatorForm(Application)
     MainForm.Show()
     FreeConsole()
