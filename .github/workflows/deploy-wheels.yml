@@ -30,8 +30,9 @@ jobs:
     - name: Set up Python ${{ matrix.python }}
       uses: actions/setup-python@v2
       with:
-        python-version: ${{ matrix.python }}     
-            
+        python-version: ${{ matrix.python }}
+        architecture: "x86"
+
     - name: Build bdist
       run: |        
         python -m pip install setuptools --upgrade
@@ -60,7 +61,8 @@ jobs:
     - name: Set up Python ${{ matrix.python }}
       uses: actions/setup-python@v2
       with:
-        python-version: ${{ matrix.python }}     
+        python-version: ${{ matrix.python }}
+        architecture: "x64"
             
     - name: Build bdist wheel
       run: |        
