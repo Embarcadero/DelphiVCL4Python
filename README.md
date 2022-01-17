@@ -1,4 +1,4 @@
-# DelphiVCL for Python <a href="https://github.com/Embarcadero/DelphiVCL4Python/"><img align="right" alt="DelphiVCL4Python" src="images/DelphiVCL4Python(256px).png"></a>
+# DelphiVCL for Python <a href="https://github.com/Embarcadero/DelphiVCL4Python/"><img align="right" alt="DelphiVCL4Python" src="https://github.com/Embarcadero/DelphiVCL4Python/raw/main/images/DelphiVCL4Python(256px).png"></a>
 Delphi's VCL library as a Python module for building Windows GUI
 
 Installation:
@@ -14,4 +14,4 @@ Installation:
 
 For other platforms, check out [DelphiFMX4Python](https://github.com/Embarcadero/DelphiFMX4Python).
 
-Powered by [Embarcadero Delphi](https://www.embarcadero.com/products/delphi) and the [Python4Delphi library](https://github.com/pyscripter/python4delphi).
+Powered by the Best [Windows IDE](https://www.embarcadero.com/products/delphi) Embarcadero Delphi and the [Python4Delphi library](https://github.com/pyscripter/python4delphi).
