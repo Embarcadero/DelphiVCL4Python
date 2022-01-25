@@ -1,4 +1,4 @@
-unit FormEditor;
+unit VCL.FormEditor;
 
 interface
 

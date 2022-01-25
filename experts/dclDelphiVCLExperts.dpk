@@ -36,6 +36,6 @@ requires
   vcl;
 
 contains
-  FormEditor in 'FormEditor.pas';
+  VCL.FormEditor in 'VCL.FormEditor.pas';
 
 end.
