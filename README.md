@@ -72,9 +72,10 @@ def main():
     FreeConsole()
     Application.Run()
     app.Destroy()
-
+    
 main()
 ```
+
 As you save and run the above code, you should get the following GUI as a result:
 
 ![TODO_GUI_image](images/Quickstart_TODO_GUI_1.png)
@@ -94,8 +95,7 @@ Let's look at other lines of code of the `main()` function;
     app.Show()
     FreeConsole()
     Application.Run()
-    app.Destroy().Run()
-app.Destroy()
+    app.Destroy()
 ```
 
 Above, We instantiated the `TodoApp` class with `Application` as the `Owner`. We can show the GUI application on the screen using the `app.show()` method. GUI applications run in interaction with the command window (console). To make the GUI perform better without lags, we use `FreeConsole()` to give primary control to the GUI interface. `Application.Run()` starts the GUI interaction loop between the GUI and the user of the GUI application. When we close the GUI application, `app.Destroy()` takes care of not crashing it.
