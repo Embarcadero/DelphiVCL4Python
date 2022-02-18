@@ -18,37 +18,17 @@ In the above output list, we have `delphivcl` as part of the available names in 
 ```python
 >>> from delphivcl import *
 >>> dir()
+>>> dir()[0:45]
 ['Abort', 'Action', 'ActionList', 'ActivityIndicator', 'Application', 'BasicAction', 'Bevel', 'BitBtn', 'Bitmap',
 'BoundLabel', 'Button', 'Canvas', 'CheckBox', 'Collection', 'ColorBox', 'ComboBox', 'Component', 'ContainedAction',
 'ContainedActionList', 'Control', 'ControlBar', 'CreateComponent', 'CustomAction', 'CustomActionList',
-'CustomActivityIndicator', 'CustomControl', 'CustomDrawGrid', 'CustomEdit', 'CustomForm', 'CustomGrid', 'CustomMemo',
-'CustomStyleServices', 'CustomTabControl', 'CustomToggleSwitch', 'DateTimePicker', 'DelphiDefaultContainer',
-'DelphiDefaultIterator', 'DelphiMethod', 'DrawGrid', 'Edit', 'FileOpenDialog', 'Form', 'FreeConsole', 'Graphic',
-'GroupBox', 'Header', 'IDABORT', 'IDCANCEL', 'IDCLOSE', 'IDCONTINUE', 'IDHELP', 'IDIGNORE', 'IDNO', 'IDOK', 'IDRETRY',
-'IDTRYAGAIN', 'IDYES', 'Icon', 'Image', 'Label', 'LabeledEdit', 'ListBox', 'MB_ABORTRETRYIGNORE', 'MB_APPLMODAL',
-'MB_DEFBUTTON1', 'MB_DEFBUTTON2', 'MB_DEFBUTTON3', 'MB_DEFBUTTON4', 'MB_HELP', 'MB_ICONASTERISK', 'MB_ICONERROR',
-'MB_ICONEXCLAMATION', 'MB_ICONHAND', 'MB_ICONINFORMATION', 'MB_ICONQUESTION', 'MB_ICONSTOP', 'MB_ICONWARNING',
-'MB_NOFOCUS', 'MB_OK', 'MB_OKCANCEL', 'MB_RETRYCANCEL', 'MB_SYSTEMMODAL', 'MB_TASKMODAL', 'MB_YESNO', 'MB_YESNOCANCEL',
-'MainMenu', 'Memo', 'Menu', 'MenuItem', 'Metafile', 'Monitor', 'Notebook', 'Object', 'OpenDialog', 'Page', 'PageControl',
-'PaintBox', 'Panel', 'PascalInterface', 'PascalRecord', 'Persistent', 'Picture', 'Point', 'PopupMenu', 'RadioButton',
-'RadioGroup', 'Rect', 'Screen', 'ScrollBar', 'Shape', 'ShowMessage', 'Size', 'SpeedButton', 'SpinButton', 'SpinEdit',
-'Splitter', 'StaticText', 'StringGrid', 'Strings', 'StyleInfo', 'StyleManager', 'StyleServices', 'TabControl',
-'TabSheet', 'Timer', 'ToggleSwitch', 'ToolBar', 'ToolButton', 'TrackBar', 'VarParameter', 'WinControl', '__annotations__',
-'__builtins__', '__doc__', '__loader__', '__name__', '__package__', '__spec__', 'bkAbort', 'bkAll', 'bkCancel', 'bkClose',
-'bkCustom', 'bkHelp', 'bkIgnore', 'bkNo', 'bkOK', 'bkRetry', 'bkYes', 'caFree', 'caHide', 'caMinimize', 'caNone',
-'cl3DDkShadow', 'cl3DLight', 'clActiveBorder', 'clActiveCaption', 'clAppWorkSpace', 'clAqua', 'clBackground', 'clBlack',
-'clBlue', 'clBtnFace', 'clBtnHighlight', 'clBtnShadow', 'clBtnText', 'clCaptionText', 'clCream', 'clDefault', 'clDkGray',
-'clFuchsia', 'clGradientActiveCaption', 'clGradientInactiveCaption', 'clGray', 'clGrayText', 'clGreen', 'clHighlight',
-'clHighlightText', 'clHotLight', 'clInactiveBorder', 'clInactiveCaption', 'clInactiveCaptionText', 'clInfoBk',
-'clInfoText', 'clLime', 'clLtGray', 'clMaroon', 'clMedGray', 'clMenu', 'clMenuBar', 'clMenuHighlight', 'clMenuText',
-'clMoneyGreen', 'clNavy', 'clNone', 'clOlive', 'clPurple', 'clRed', 'clScrollBar', 'clSilver', 'clSkyBlue', 'clTeal',
-'clWhite', 'clWindow', 'clWindowFrame', 'clWindowText', 'clYellow', 'fsBorder', 'fsSurface', 'gdFixed', 'gdFocused',
-'gdSelected', 'mdNearest', 'mdNull', 'mdPrimary', 'mrAbort', 'mrAll', 'mrCancel', 'mrIgnore', 'mrNo', 'mrNoToAll',
-'mrNone', 'mrOk', 'mrRetry', 'mrYes', 'mrYesToAll', 'ssAlt', 'ssCtrl', 'ssDouble', 'ssLeft', 'ssMiddle', 'ssRight',
-'ssShift']
+'CustomActivityIndicator', 'CustomControl', 'CustomDrawGrid', 'CustomEdit', 'CustomForm', 'CustomGrid',
+'CustomMemo', 'CustomStyleServices', 'CustomTabControl', 'CustomToggleSwitch', 'DateTimePicker',
+'DelphiDefaultContainer', 'DelphiDefaultIterator', 'DelphiMethod', 'DrawGrid', 'Edit', 'FileOpenDialog', 'Form',
+'FreeConsole', 'Graphic', 'GroupBox']
 ```
 
-From the above `dir()` output, let's check for a few available classes, functions, and objects.
+To avoid an enormous list of names, we checked for the first 46 elements only using `dir()[0:45]`. Let's check for a few available classes, functions, and objects.
 
 ```python
 >>> CreateComponent
@@ -90,7 +70,7 @@ from delphivcl import *
 Application.Initialize()
 Application.Title = "Hello Delphi VCL"
 ```
-At first, we import everything from `delphivcl`. Then, we initialized the application and set a title for it. Later, we createe the GUI Application window using the following code;
+At first, we import everything from `delphivcl`. Then, we initialized the application and set a title for it. Later, we create the GUI Application window using the following code;
 
 ```python
 app = Form(Application)
