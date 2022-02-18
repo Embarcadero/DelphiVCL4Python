@@ -60,7 +60,8 @@ app.Destroy()
 
 Using the above code, we just create an empty GUI app. Please save the above code and run it to see the following output:
 
-[**Image to be inserted**]
+![Simplest-quickstart](https://user-images.githubusercontent.com/17174106/154675584-761a3076-8b0d-45a9-a2e6-2e439c724ca1.png)
+
 
 Let's explore and understand the functionality of the code;
 
