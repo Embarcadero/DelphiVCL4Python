@@ -1,7 +1,6 @@
 import sys, os, sys, platform
 from os import environ
 import importlib, importlib.machinery, importlib.util
-from delphivcl import moduledefs
 
 class PyVerNotSupported(Exception):
   pass
@@ -44,8 +43,5 @@ def new_import():
     spec.loader.exec_module(package)
     return package
 
-#Setup moduledefs.json
-if moduledefs.get_auto_load_defs():
-  moduledefs.try_load_defs(False)
 #Import the shared lib
 package = new_import()
