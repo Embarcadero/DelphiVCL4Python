@@ -14,6 +14,10 @@ Delphi's VCL library as a Python module for building native Windows GUI Applicat
 
 * Win x86 and x64 from Python cp3.6 to cp3.10
 
+### Venv support: ###
+
+* Win x86 and x64 from Python cp3.6 to cp3.10
+
 For other platforms, check out [DelphiFMX4Python](https://github.com/Embarcadero/DelphiFMX4Python).
 
 Powered by the Best [Windows IDE](https://www.embarcadero.com/products/delphi) Embarcadero Delphi and the [Python4Delphi library](https://github.com/pyscripter/python4delphi).
