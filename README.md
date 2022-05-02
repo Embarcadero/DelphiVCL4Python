@@ -3,7 +3,7 @@ Delphi's VCL library as a Python module for building native Windows GUI Applicat
 
 ## Quick Start Guide & VLC Styles ##
 
-There is a [Quick Start Guide](https://lp.embarcadero.com/QuickStartDelphiVCLPython) with a bundle of VCL Styles available as a free download.
+There is a [Quick Start Guide](https://embt.co/delphivcl-qsg) with a bundle of VCL Styles available as a free download.
 
 ## Installation: ##
 
