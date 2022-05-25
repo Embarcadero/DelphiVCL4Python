@@ -1,10 +1,12 @@
-# DelphiVCL for Python <a href="https://github.com/Embarcadero/DelphiVCL4Python/"><img align="right" alt="DelphiVCL4Python" src="https://github.com/Embarcadero/DelphiVCL4Python/raw/main/images/DelphiVCL4Python(256px).png"></a>
+# <a href="https://github.com/Embarcadero/DelphiVCL4Python/">DelphiVCL for Python <img align="right" alt="DelphiVCL4Python" src="https://github.com/Embarcadero/DelphiVCL4Python/raw/main/images/DelphiVCL4Python(256px).png"></a>
 Delphi's VCL library as a Python module for building native Windows GUI Applications
 
-## Quick Start Guide & VLC Styles ##
+## [eBook and Styles Bundle](https://embt.co/PythonGUIBundle)
 
-There is a [Quick Start Guide](https://embt.co/delphivcl-qsg) with a bundle of VCL Styles available as a free download.
+There is an free [eBook and styles bundle](https://embt.co/PythonGUIBundle) with 29 custom styles and 50 pages of content.
 
+ <a href="https://embt.co/PythonGUIBundle"><img alt="Download the free eBook and Python styles bundle." src="https://github.com/Embarcadero/PythonFMXBuilder/blob/main/images/30_Banner_Ebook_GGetting Started with Python GUI_830x256.jpg"></a>
+ 
 ## Installation: ##
 
     pip install delphivcl   
