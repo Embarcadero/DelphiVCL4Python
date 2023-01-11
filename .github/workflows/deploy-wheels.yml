@@ -106,7 +106,7 @@ jobs:
           path: dist
           
       - name: Publish package to PyPI      
-        uses: pypa/gh-action-pypi-publish@master
+        uses: pypa/gh-action-pypi-publish@release/v1
         with:
           user: ${{ secrets.pypi_username }}
           password: ${{ secrets.pypi_password }}               
