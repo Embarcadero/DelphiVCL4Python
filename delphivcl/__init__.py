@@ -10,7 +10,7 @@ def findmodule():
   ossys = platform.system()
   libdir = None
 
-  if not (pyver in ["3.6", "3.7", "3.8", "3.9", "3.10"]): 
+  if not (pyver in ["3.6", "3.7", "3.8", "3.9", "3.10", "3.11"]): 
     raise PyVerNotSupported(f"DelphiVCL doesn't support Python{pyver}.")
 
   if ossys == "Windows":
