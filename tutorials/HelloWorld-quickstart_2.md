@@ -35,7 +35,7 @@ As you save the above code in a Python file and run it, you'll get the following
 In the following line of the code;
 
 ```python
-    app = FirstGUIApp(Application)
+    app = GUIApp(Application)
 ```
 
 Instead of instantiating the `Form` directly, we instantiated a class - `GUIApp` that inherited the `Form` class. Let's investigate the code in the `GUIApp` class:
