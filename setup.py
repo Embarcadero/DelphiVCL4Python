@@ -81,7 +81,7 @@ setuptools.setup(
   license="Other/Proprietary License",
   license_files=["LICENSE.md"],
   url="https://github.com/Embarcadero/DelphiVCL4Python",
-  python_requires=">=3.3<=3.11",
+  python_requires=">=3.7",
   packages=[pkgname],
   package_data={pkgname: pkgdata},
   classifiers=[            
