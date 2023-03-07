@@ -98,7 +98,7 @@ jobs:
     needs: [build_wheels_win_32, build_wheels_win_64]
     runs-on: ubuntu-latest
     # upload to PyPI test on every tag starting with 'v'
-    if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags/v')
+    # if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags/v')
     steps:                       
       - uses: actions/download-artifact@v2
         with:
