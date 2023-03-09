@@ -1,0 +1,213 @@
+﻿ToolBar
+=======
+
+Qualified name: ``delphivcl.ToolBar``
+
+.. currentmodule:: delphivcl
+
+.. autoclass:: ToolBar
+   :show-inheritance:
+   :members:
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+      
+      ~ToolBar.Assign
+      ~ToolBar.BindMethodsToEvents
+      ~ToolBar.BringToFront
+      ~ToolBar.CanFocus
+      ~ToolBar.ClientToScreen
+      ~ToolBar.Create
+      ~ToolBar.Destroy
+      ~ToolBar.FlipChildren
+      ~ToolBar.Free
+      ~ToolBar.GetChildren
+      ~ToolBar.GetEnumerator
+      ~ToolBar.GetNamePath
+      ~ToolBar.GetParentComponent
+      ~ToolBar.HasParent
+      ~ToolBar.Hide
+      ~ToolBar.InheritsFrom
+      ~ToolBar.Invalidate
+      ~ToolBar.Repaint
+      ~ToolBar.ScreenToClient
+      ~ToolBar.SendToBack
+      ~ToolBar.SetBounds
+      ~ToolBar.SetFocus
+      ~ToolBar.SetProps
+      ~ToolBar.Show
+      ~ToolBar.ToList
+      ~ToolBar.ToTuple
+      ~ToolBar.TrackMenu
+      ~ToolBar.Update
+
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+     
+     ~ToolBar.Action
+     ~ToolBar.Actions
+     ~ToolBar.Align
+     ~ToolBar.AlignDisabled
+     ~ToolBar.AlignWithMargins
+     ~ToolBar.AllowTextButtons
+     ~ToolBar.Anchors
+     ~ToolBar.AutoSize
+     ~ToolBar.BiDiMode
+     ~ToolBar.BorderWidth
+     ~ToolBar.BoundsRect
+     ~ToolBar.Brush
+     ~ToolBar.ButtonCount
+     ~ToolBar.ButtonHeight
+     ~ToolBar.ButtonWidth
+     ~ToolBar.Canvas
+     ~ToolBar.Caption
+     ~ToolBar.ClassName
+     ~ToolBar.ClientHeight
+     ~ToolBar.ClientOrigin
+     ~ToolBar.ClientRect
+     ~ToolBar.ClientWidth
+     ~ToolBar.Color
+     ~ToolBar.ComObject
+     ~ToolBar.ComponentCount
+     ~ToolBar.ComponentIndex
+     ~ToolBar.ComponentState
+     ~ToolBar.ComponentStyle
+     ~ToolBar.Components
+     ~ToolBar.Constraints
+     ~ToolBar.ControlCount
+     ~ToolBar.ControlState
+     ~ToolBar.ControlStyle
+     ~ToolBar.Controls
+     ~ToolBar.Ctl3D
+     ~ToolBar.CurrentPPI
+     ~ToolBar.Cursor
+     ~ToolBar.CustomHint
+     ~ToolBar.Customizable
+     ~ToolBar.CustomizeKeyName
+     ~ToolBar.CustomizeValueName
+     ~ToolBar.DesignInfo
+     ~ToolBar.DisabledImages
+     ~ToolBar.DockClientCount
+     ~ToolBar.DockManager
+     ~ToolBar.DockOrientation
+     ~ToolBar.DockSite
+     ~ToolBar.DoubleBuffered
+     ~ToolBar.DragCursor
+     ~ToolBar.DragKind
+     ~ToolBar.DragMode
+     ~ToolBar.DrawingStyle
+     ~ToolBar.EdgeBorders
+     ~ToolBar.EdgeInner
+     ~ToolBar.EdgeOuter
+     ~ToolBar.Enabled
+     ~ToolBar.ExplicitHeight
+     ~ToolBar.ExplicitLeft
+     ~ToolBar.ExplicitTop
+     ~ToolBar.ExplicitWidth
+     ~ToolBar.Flat
+     ~ToolBar.Floating
+     ~ToolBar.FloatingDockSiteClass
+     ~ToolBar.Focused
+     ~ToolBar.Font
+     ~ToolBar.GradientDirection
+     ~ToolBar.GradientDrawingOptions
+     ~ToolBar.GradientEndColor
+     ~ToolBar.GradientStartColor
+     ~ToolBar.Handle
+     ~ToolBar.HandleAllocated
+     ~ToolBar.Height
+     ~ToolBar.HelpContext
+     ~ToolBar.HelpKeyword
+     ~ToolBar.HelpType
+     ~ToolBar.HideClippedButtons
+     ~ToolBar.Hint
+     ~ToolBar.HostDockSite
+     ~ToolBar.HotImages
+     ~ToolBar.HotTrackColor
+     ~ToolBar.Images
+     ~ToolBar.Indent
+     ~ToolBar.IsDrawingLocked
+     ~ToolBar.LRDockWidth
+     ~ToolBar.Left
+     ~ToolBar.List
+     ~ToolBar.Margins
+     ~ToolBar.Menu
+     ~ToolBar.MouseInClient
+     ~ToolBar.Name
+     ~ToolBar.Observers
+     ~ToolBar.OnAdvancedCustomDraw
+     ~ToolBar.OnAdvancedCustomDrawButton
+     ~ToolBar.OnClick
+     ~ToolBar.OnContextPopup
+     ~ToolBar.OnCustomDraw
+     ~ToolBar.OnCustomDrawButton
+     ~ToolBar.OnCustomizeAdded
+     ~ToolBar.OnCustomizeCanDelete
+     ~ToolBar.OnCustomizeCanInsert
+     ~ToolBar.OnCustomizeDelete
+     ~ToolBar.OnCustomizeNewButton
+     ~ToolBar.OnCustomizeReset
+     ~ToolBar.OnCustomized
+     ~ToolBar.OnCustomizing
+     ~ToolBar.OnDblClick
+     ~ToolBar.OnDockDrop
+     ~ToolBar.OnDockOver
+     ~ToolBar.OnDragDrop
+     ~ToolBar.OnDragOver
+     ~ToolBar.OnEndDock
+     ~ToolBar.OnEndDrag
+     ~ToolBar.OnEnter
+     ~ToolBar.OnExit
+     ~ToolBar.OnGesture
+     ~ToolBar.OnGetSiteInfo
+     ~ToolBar.OnMouseActivate
+     ~ToolBar.OnMouseDown
+     ~ToolBar.OnMouseEnter
+     ~ToolBar.OnMouseLeave
+     ~ToolBar.OnMouseMove
+     ~ToolBar.OnMouseUp
+     ~ToolBar.OnResize
+     ~ToolBar.OnStartDock
+     ~ToolBar.OnStartDrag
+     ~ToolBar.OnUnDock
+     ~ToolBar.Owner
+     ~ToolBar.Padding
+     ~ToolBar.Parent
+     ~ToolBar.ParentColor
+     ~ToolBar.ParentCustomHint
+     ~ToolBar.ParentDoubleBuffered
+     ~ToolBar.ParentFont
+     ~ToolBar.ParentShowHint
+     ~ToolBar.ParentWindow
+     ~ToolBar.PixelsPerInch
+     ~ToolBar.PopupMenu
+     ~ToolBar.RedrawDisabled
+     ~ToolBar.RowCount
+     ~ToolBar.ScaleFactor
+     ~ToolBar.ShowCaptions
+     ~ToolBar.ShowHint
+     ~ToolBar.Showing
+     ~ToolBar.StyleElements
+     ~ToolBar.StyleName
+     ~ToolBar.TBDockHeight
+     ~ToolBar.TabOrder
+     ~ToolBar.TabStop
+     ~ToolBar.Tag
+     ~ToolBar.Top
+     ~ToolBar.Touch
+     ~ToolBar.Transparent
+     ~ToolBar.UndockHeight
+     ~ToolBar.UndockWidth
+     ~ToolBar.UseDockManager
+     ~ToolBar.VCLComObject
+     ~ToolBar.Visible
+     ~ToolBar.VisibleDockClientCount
+     ~ToolBar.Width
+     ~ToolBar.WindowProc
+     ~ToolBar.Wrapable
+   

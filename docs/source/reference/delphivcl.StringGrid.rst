@@ -1,0 +1,212 @@
+﻿StringGrid
+==========
+
+Qualified name: ``delphivcl.StringGrid``
+
+.. currentmodule:: delphivcl
+
+.. autoclass:: StringGrid
+   :show-inheritance:
+   :members:
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+      
+      ~StringGrid.Assign
+      ~StringGrid.BindMethodsToEvents
+      ~StringGrid.BringToFront
+      ~StringGrid.CanFocus
+      ~StringGrid.ClientToScreen
+      ~StringGrid.Create
+      ~StringGrid.Destroy
+      ~StringGrid.Free
+      ~StringGrid.GetCell
+      ~StringGrid.GetNamePath
+      ~StringGrid.GetParentComponent
+      ~StringGrid.HasParent
+      ~StringGrid.Hide
+      ~StringGrid.InheritsFrom
+      ~StringGrid.Invalidate
+      ~StringGrid.Repaint
+      ~StringGrid.ScreenToClient
+      ~StringGrid.SendToBack
+      ~StringGrid.SetBounds
+      ~StringGrid.SetCell
+      ~StringGrid.SetFocus
+      ~StringGrid.SetProps
+      ~StringGrid.Show
+      ~StringGrid.ToList
+      ~StringGrid.ToTuple
+      ~StringGrid.Update
+
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+     
+     ~StringGrid.Action
+     ~StringGrid.Align
+     ~StringGrid.AlignDisabled
+     ~StringGrid.AlignWithMargins
+     ~StringGrid.Anchors
+     ~StringGrid.BevelEdges
+     ~StringGrid.BevelInner
+     ~StringGrid.BevelKind
+     ~StringGrid.BevelOuter
+     ~StringGrid.BevelWidth
+     ~StringGrid.BiDiMode
+     ~StringGrid.BorderStyle
+     ~StringGrid.BoundsRect
+     ~StringGrid.Brush
+     ~StringGrid.Canvas
+     ~StringGrid.ClassName
+     ~StringGrid.ClientHeight
+     ~StringGrid.ClientOrigin
+     ~StringGrid.ClientRect
+     ~StringGrid.ClientWidth
+     ~StringGrid.Col
+     ~StringGrid.ColCount
+     ~StringGrid.ColWidths
+     ~StringGrid.Color
+     ~StringGrid.ComObject
+     ~StringGrid.ComponentCount
+     ~StringGrid.ComponentIndex
+     ~StringGrid.ComponentState
+     ~StringGrid.ComponentStyle
+     ~StringGrid.Components
+     ~StringGrid.Constraints
+     ~StringGrid.ControlCount
+     ~StringGrid.ControlState
+     ~StringGrid.ControlStyle
+     ~StringGrid.Controls
+     ~StringGrid.Ctl3D
+     ~StringGrid.CurrentPPI
+     ~StringGrid.Cursor
+     ~StringGrid.CustomHint
+     ~StringGrid.DefaultColAlignment
+     ~StringGrid.DefaultColWidth
+     ~StringGrid.DefaultDrawing
+     ~StringGrid.DefaultRowHeight
+     ~StringGrid.DesignInfo
+     ~StringGrid.DockClientCount
+     ~StringGrid.DockManager
+     ~StringGrid.DockOrientation
+     ~StringGrid.DockSite
+     ~StringGrid.DoubleBuffered
+     ~StringGrid.DragCursor
+     ~StringGrid.DragKind
+     ~StringGrid.DragMode
+     ~StringGrid.DrawingStyle
+     ~StringGrid.EditorMode
+     ~StringGrid.Enabled
+     ~StringGrid.ExplicitHeight
+     ~StringGrid.ExplicitLeft
+     ~StringGrid.ExplicitTop
+     ~StringGrid.ExplicitWidth
+     ~StringGrid.FixedColor
+     ~StringGrid.FixedCols
+     ~StringGrid.FixedRows
+     ~StringGrid.Floating
+     ~StringGrid.FloatingDockSiteClass
+     ~StringGrid.Focused
+     ~StringGrid.Font
+     ~StringGrid.GradientEndColor
+     ~StringGrid.GradientStartColor
+     ~StringGrid.GridHeight
+     ~StringGrid.GridLineWidth
+     ~StringGrid.GridWidth
+     ~StringGrid.Handle
+     ~StringGrid.HandleAllocated
+     ~StringGrid.Height
+     ~StringGrid.HelpContext
+     ~StringGrid.HelpKeyword
+     ~StringGrid.HelpType
+     ~StringGrid.Hint
+     ~StringGrid.HostDockSite
+     ~StringGrid.IsDrawingLocked
+     ~StringGrid.IsUpdating
+     ~StringGrid.LRDockWidth
+     ~StringGrid.Left
+     ~StringGrid.LeftCol
+     ~StringGrid.Margins
+     ~StringGrid.MouseInClient
+     ~StringGrid.Name
+     ~StringGrid.Observers
+     ~StringGrid.OnClick
+     ~StringGrid.OnColumnMoved
+     ~StringGrid.OnContextPopup
+     ~StringGrid.OnDblClick
+     ~StringGrid.OnDragDrop
+     ~StringGrid.OnDragOver
+     ~StringGrid.OnDrawCell
+     ~StringGrid.OnEndDock
+     ~StringGrid.OnEndDrag
+     ~StringGrid.OnEnter
+     ~StringGrid.OnExit
+     ~StringGrid.OnFixedCellClick
+     ~StringGrid.OnGesture
+     ~StringGrid.OnGetEditMask
+     ~StringGrid.OnGetEditText
+     ~StringGrid.OnKeyDown
+     ~StringGrid.OnKeyPress
+     ~StringGrid.OnKeyUp
+     ~StringGrid.OnMouseActivate
+     ~StringGrid.OnMouseDown
+     ~StringGrid.OnMouseEnter
+     ~StringGrid.OnMouseLeave
+     ~StringGrid.OnMouseMove
+     ~StringGrid.OnMouseUp
+     ~StringGrid.OnMouseWheelDown
+     ~StringGrid.OnMouseWheelUp
+     ~StringGrid.OnRowMoved
+     ~StringGrid.OnSelectCell
+     ~StringGrid.OnSetEditText
+     ~StringGrid.OnStartDock
+     ~StringGrid.OnStartDrag
+     ~StringGrid.OnTopLeftChanged
+     ~StringGrid.Options
+     ~StringGrid.Owner
+     ~StringGrid.Padding
+     ~StringGrid.Parent
+     ~StringGrid.ParentBiDiMode
+     ~StringGrid.ParentColor
+     ~StringGrid.ParentCtl3D
+     ~StringGrid.ParentCustomHint
+     ~StringGrid.ParentDoubleBuffered
+     ~StringGrid.ParentFont
+     ~StringGrid.ParentShowHint
+     ~StringGrid.ParentWindow
+     ~StringGrid.PixelsPerInch
+     ~StringGrid.PopupMenu
+     ~StringGrid.RedrawDisabled
+     ~StringGrid.Row
+     ~StringGrid.RowCount
+     ~StringGrid.RowHeights
+     ~StringGrid.ScaleFactor
+     ~StringGrid.ScrollBars
+     ~StringGrid.Selection
+     ~StringGrid.ShowHint
+     ~StringGrid.Showing
+     ~StringGrid.StyleElements
+     ~StringGrid.StyleName
+     ~StringGrid.TBDockHeight
+     ~StringGrid.TabOrder
+     ~StringGrid.TabStop
+     ~StringGrid.Tag
+     ~StringGrid.Top
+     ~StringGrid.TopRow
+     ~StringGrid.Touch
+     ~StringGrid.UndockHeight
+     ~StringGrid.UndockWidth
+     ~StringGrid.UseDockManager
+     ~StringGrid.VCLComObject
+     ~StringGrid.Visible
+     ~StringGrid.VisibleColCount
+     ~StringGrid.VisibleDockClientCount
+     ~StringGrid.VisibleRowCount
+     ~StringGrid.Width
+     ~StringGrid.WindowProc
+   

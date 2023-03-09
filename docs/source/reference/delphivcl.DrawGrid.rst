@@ -1,0 +1,208 @@
+﻿DrawGrid
+========
+
+Qualified name: ``delphivcl.DrawGrid``
+
+.. currentmodule:: delphivcl
+
+.. autoclass:: DrawGrid
+   :show-inheritance:
+   :members:
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+      
+      ~DrawGrid.Assign
+      ~DrawGrid.BindMethodsToEvents
+      ~DrawGrid.BringToFront
+      ~DrawGrid.CanFocus
+      ~DrawGrid.ClientToScreen
+      ~DrawGrid.Free
+      ~DrawGrid.GetNamePath
+      ~DrawGrid.GetParentComponent
+      ~DrawGrid.HasParent
+      ~DrawGrid.Hide
+      ~DrawGrid.InheritsFrom
+      ~DrawGrid.Invalidate
+      ~DrawGrid.Repaint
+      ~DrawGrid.ScreenToClient
+      ~DrawGrid.SendToBack
+      ~DrawGrid.SetBounds
+      ~DrawGrid.SetFocus
+      ~DrawGrid.SetProps
+      ~DrawGrid.Show
+      ~DrawGrid.ToList
+      ~DrawGrid.ToTuple
+      ~DrawGrid.Update
+
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+     
+     ~DrawGrid.Action
+     ~DrawGrid.Align
+     ~DrawGrid.AlignDisabled
+     ~DrawGrid.AlignWithMargins
+     ~DrawGrid.Anchors
+     ~DrawGrid.BevelEdges
+     ~DrawGrid.BevelInner
+     ~DrawGrid.BevelKind
+     ~DrawGrid.BevelOuter
+     ~DrawGrid.BevelWidth
+     ~DrawGrid.BiDiMode
+     ~DrawGrid.BorderStyle
+     ~DrawGrid.BoundsRect
+     ~DrawGrid.Brush
+     ~DrawGrid.Canvas
+     ~DrawGrid.ClassName
+     ~DrawGrid.ClientHeight
+     ~DrawGrid.ClientOrigin
+     ~DrawGrid.ClientRect
+     ~DrawGrid.ClientWidth
+     ~DrawGrid.Col
+     ~DrawGrid.ColCount
+     ~DrawGrid.ColWidths
+     ~DrawGrid.Color
+     ~DrawGrid.ComObject
+     ~DrawGrid.ComponentCount
+     ~DrawGrid.ComponentIndex
+     ~DrawGrid.ComponentState
+     ~DrawGrid.ComponentStyle
+     ~DrawGrid.Components
+     ~DrawGrid.Constraints
+     ~DrawGrid.ControlCount
+     ~DrawGrid.ControlState
+     ~DrawGrid.ControlStyle
+     ~DrawGrid.Controls
+     ~DrawGrid.Ctl3D
+     ~DrawGrid.CurrentPPI
+     ~DrawGrid.Cursor
+     ~DrawGrid.CustomHint
+     ~DrawGrid.DefaultColAlignment
+     ~DrawGrid.DefaultColWidth
+     ~DrawGrid.DefaultDrawing
+     ~DrawGrid.DefaultRowHeight
+     ~DrawGrid.DesignInfo
+     ~DrawGrid.DockClientCount
+     ~DrawGrid.DockManager
+     ~DrawGrid.DockOrientation
+     ~DrawGrid.DockSite
+     ~DrawGrid.DoubleBuffered
+     ~DrawGrid.DragCursor
+     ~DrawGrid.DragKind
+     ~DrawGrid.DragMode
+     ~DrawGrid.DrawingStyle
+     ~DrawGrid.EditorMode
+     ~DrawGrid.Enabled
+     ~DrawGrid.ExplicitHeight
+     ~DrawGrid.ExplicitLeft
+     ~DrawGrid.ExplicitTop
+     ~DrawGrid.ExplicitWidth
+     ~DrawGrid.FixedColor
+     ~DrawGrid.FixedCols
+     ~DrawGrid.FixedRows
+     ~DrawGrid.Floating
+     ~DrawGrid.FloatingDockSiteClass
+     ~DrawGrid.Focused
+     ~DrawGrid.Font
+     ~DrawGrid.GradientEndColor
+     ~DrawGrid.GradientStartColor
+     ~DrawGrid.GridHeight
+     ~DrawGrid.GridLineWidth
+     ~DrawGrid.GridWidth
+     ~DrawGrid.Handle
+     ~DrawGrid.HandleAllocated
+     ~DrawGrid.Height
+     ~DrawGrid.HelpContext
+     ~DrawGrid.HelpKeyword
+     ~DrawGrid.HelpType
+     ~DrawGrid.Hint
+     ~DrawGrid.HostDockSite
+     ~DrawGrid.IsDrawingLocked
+     ~DrawGrid.IsUpdating
+     ~DrawGrid.LRDockWidth
+     ~DrawGrid.Left
+     ~DrawGrid.LeftCol
+     ~DrawGrid.Margins
+     ~DrawGrid.MouseInClient
+     ~DrawGrid.Name
+     ~DrawGrid.Observers
+     ~DrawGrid.OnClick
+     ~DrawGrid.OnColumnMoved
+     ~DrawGrid.OnContextPopup
+     ~DrawGrid.OnDblClick
+     ~DrawGrid.OnDragDrop
+     ~DrawGrid.OnDragOver
+     ~DrawGrid.OnDrawCell
+     ~DrawGrid.OnEndDock
+     ~DrawGrid.OnEndDrag
+     ~DrawGrid.OnEnter
+     ~DrawGrid.OnExit
+     ~DrawGrid.OnFixedCellClick
+     ~DrawGrid.OnGesture
+     ~DrawGrid.OnGetEditMask
+     ~DrawGrid.OnGetEditText
+     ~DrawGrid.OnKeyDown
+     ~DrawGrid.OnKeyPress
+     ~DrawGrid.OnKeyUp
+     ~DrawGrid.OnMouseActivate
+     ~DrawGrid.OnMouseDown
+     ~DrawGrid.OnMouseEnter
+     ~DrawGrid.OnMouseLeave
+     ~DrawGrid.OnMouseMove
+     ~DrawGrid.OnMouseUp
+     ~DrawGrid.OnMouseWheelDown
+     ~DrawGrid.OnMouseWheelUp
+     ~DrawGrid.OnRowMoved
+     ~DrawGrid.OnSelectCell
+     ~DrawGrid.OnSetEditText
+     ~DrawGrid.OnStartDock
+     ~DrawGrid.OnStartDrag
+     ~DrawGrid.OnTopLeftChanged
+     ~DrawGrid.Options
+     ~DrawGrid.Owner
+     ~DrawGrid.Padding
+     ~DrawGrid.Parent
+     ~DrawGrid.ParentBiDiMode
+     ~DrawGrid.ParentColor
+     ~DrawGrid.ParentCtl3D
+     ~DrawGrid.ParentCustomHint
+     ~DrawGrid.ParentDoubleBuffered
+     ~DrawGrid.ParentFont
+     ~DrawGrid.ParentShowHint
+     ~DrawGrid.ParentWindow
+     ~DrawGrid.PixelsPerInch
+     ~DrawGrid.PopupMenu
+     ~DrawGrid.RedrawDisabled
+     ~DrawGrid.Row
+     ~DrawGrid.RowCount
+     ~DrawGrid.RowHeights
+     ~DrawGrid.ScaleFactor
+     ~DrawGrid.ScrollBars
+     ~DrawGrid.Selection
+     ~DrawGrid.ShowHint
+     ~DrawGrid.Showing
+     ~DrawGrid.StyleElements
+     ~DrawGrid.StyleName
+     ~DrawGrid.TBDockHeight
+     ~DrawGrid.TabOrder
+     ~DrawGrid.TabStop
+     ~DrawGrid.Tag
+     ~DrawGrid.Top
+     ~DrawGrid.TopRow
+     ~DrawGrid.Touch
+     ~DrawGrid.UndockHeight
+     ~DrawGrid.UndockWidth
+     ~DrawGrid.UseDockManager
+     ~DrawGrid.VCLComObject
+     ~DrawGrid.Visible
+     ~DrawGrid.VisibleColCount
+     ~DrawGrid.VisibleDockClientCount
+     ~DrawGrid.VisibleRowCount
+     ~DrawGrid.Width
+     ~DrawGrid.WindowProc
+   
