@@ -1,9 +1,15 @@
 name: Docs
 on: 
+  push:
+    tags:
+      - '*'
+  
   # Manual run
   workflow_dispatch:
+
 permissions:
   contents: write
+  
 jobs:
   docs:
     runs-on: windows-latest
@@ -20,8 +26,7 @@ jobs:
         run: |
           sphinx-build docs/source _build
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        # if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
+        uses: peaceiris/actions-gh-pages@v3        
         with:
           publish_branch: gh-pages
           github_token: ${{ secrets.GITHUB_TOKEN }}
