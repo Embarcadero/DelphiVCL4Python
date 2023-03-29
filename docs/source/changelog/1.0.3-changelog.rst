@@ -20,5 +20,4 @@ the following contributors.
 Enhancements
 ------------
 
-* Bytes manipulation with streams (`#68 <https://github.com/Embarcadero/DelphiFMX4Python/issues/68>`_).
-* Including the TLinkLabel wrapper (`#44 <https://github.com/Embarcadero/DelphiVCL4Python/issues/44>`_).
+* Method arguments and return type docstr for Sphinx.
