@@ -9,3 +9,4 @@ Changelog
     changelog/1.0.0-changelog
     changelog/1.0.1-changelog
     changelog/1.0.2-changelog
+    changelog/1.0.3-changelog
