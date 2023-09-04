@@ -78,6 +78,11 @@ jobs:
     name: Upload to PyPI test
     needs: [build_wheels_win_32, build_wheels_win_64]
     runs-on: ubuntu-latest
+    environment: 
+      name: pypi
+      url: https://test.pypi.org/project/delphivcl           
+    permissions:
+      id-token: write
     # upload to PyPI test only for pushes to 'deploy-pypi-test' 
     if: github.event_name == 'push' && github.ref == 'refs/heads/deploy-pypi-test'
     steps:                       
@@ -87,16 +92,19 @@ jobs:
           path: dist
           
       - name: Publish package to TestPyPI      
-        uses: pypa/gh-action-pypi-publish@master
+        uses: pypa/gh-action-pypi-publish@release/v1
         with:
-          user: ${{ secrets.test_pypi_username }}
-          password: ${{ secrets.test_pypi_password }}
-          repository_url: https://test.pypi.org/legacy/    
+          repository_url: https://test.pypi.org/legacy/
           
   upload_pypi:
     name: Upload to PyPI
     needs: [build_wheels_win_32, build_wheels_win_64]
     runs-on: ubuntu-latest
+    environment: 
+      name: pypi
+      url: https://pypi.org/project/delphivcl/         
+    permissions:
+      id-token: write
     # upload to PyPI only for pushes to 'deploy-pypi' 
     if: github.event_name == 'push' && github.ref == 'refs/heads/deploy-pypi'
     steps:                       
@@ -106,7 +114,4 @@ jobs:
           path: dist
           
       - name: Publish package to PyPI      
-        uses: pypa/gh-action-pypi-publish@master
-        with:
-          user: ${{ secrets.pypi_username }}
-          password: ${{ secrets.pypi_password }}               
+        uses: pypa/gh-action-pypi-publish@release/v1
