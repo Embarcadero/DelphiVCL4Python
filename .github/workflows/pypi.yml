@@ -2,11 +2,6 @@ name: Build
 
 on: 
   push:
-    branches:      
-      - deploy-pypi-test
-      - deploy-pypi
-      # Release branches
-      #- "[0-9]+.[0-9]+.X"
       
   # Manual run
   workflow_dispatch:
@@ -83,8 +78,7 @@ jobs:
       url: https://test.pypi.org/project/delphivcl           
     permissions:
       id-token: write
-    # upload to PyPI test only for pushes to 'deploy-pypi-test' 
-    if: github.event_name == 'push' && github.ref == 'refs/heads/deploy-pypi-test'
+    if: github.ref == 'refs/heads/main'
     steps:                       
       - uses: actions/download-artifact@v2
         with:
@@ -105,8 +99,7 @@ jobs:
       url: https://pypi.org/project/delphivcl/         
     permissions:
       id-token: write
-    # upload to PyPI only for pushes to 'deploy-pypi' 
-    if: github.event_name == 'push' && github.ref == 'refs/heads/deploy-pypi'
+    if: startsWith(github.ref, 'refs/tags/v')
     steps:                       
       - uses: actions/download-artifact@v2
         with:

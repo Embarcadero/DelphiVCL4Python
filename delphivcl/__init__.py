@@ -1,47 +1,58 @@
-import sys, os, sys, platform
-from os import environ
-import importlib, importlib.machinery, importlib.util
+import sys
+import os
+import sys
+import platform
+import importlib
+import importlib.machinery
+import importlib.util
 
-class PyVerNotSupported(Exception):
-  pass
 
-def findmodule():
-  pyver = f"{sys.version_info.major}.{sys.version_info.minor}"
-  ossys = platform.system()
-  libdir = None
+def find_extension_module():
+    py_ver = f"{sys.version_info.major}.{sys.version_info.minor}"
+    plat_sys = platform.system()
+    lib_dir = None
 
-  if not (pyver in ["3.6", "3.7", "3.8", "3.9", "3.10", "3.11"]): 
-    raise PyVerNotSupported(f"DelphiVCL doesn't support Python{pyver}.")
+    if not (py_ver in ["3.6", "3.7", "3.8", "3.9", "3.10", "3.11"]):
+        raise ValueError(f"DelphiVCL doesn't support Python{py_ver}.")
 
-  if ossys == "Windows":
-    if (sys.maxsize > 2**32):
-      #Win x64
-      libdir = "Win64"
+    if plat_sys == "Windows":
+        if (sys.maxsize > 2**32):
+            # Win x64
+            lib_dir = "Win64"
+        else:
+            # Win x86
+            lib_dir = "Win32"
+
+    if lib_dir:
+        lib_dir = os.path.join(os.path.dirname(
+            os.path.abspath(__file__)), lib_dir)
+        if not os.path.exists(lib_dir):
+            raise ValueError(
+                "DelphiVCL module not found. \
+                Try to reinstall the delphivcl package or check for support compatibility.")
+
+        for file_name in os.listdir(lib_dir):
+            if 'DelphiVCL' in file_name:
+                return os.path.join(lib_dir, os.path.basename(file_name))
+        raise ValueError(
+            "DelphiVCL module not found. Try to reinstall the delphivcl package.")
     else:
-      #Win x86
-      libdir = "Win32"
+        raise ValueError("Unsupported platform.")
 
-  if libdir:
-    sdir = os.path.join(os.path.dirname(os.path.abspath(__file__)), libdir)
-    if not os.path.exists(sdir):
-      raise ValueError("DelphiVCL module not found. Try to reinstall the delphivcl package or check for support compatibility.")
-    for fname in os.listdir(sdir):
-      if 'DelphiVCL' in fname:
-        return os.path.join(sdir, os.path.basename(fname))
-    raise ValueError("DelphiVCL module not found. Try to reinstall the delphivcl package.")
-  else:
-    raise ValueError("Unsupported platform.")
 
 def new_import():
-    modulefullpath = findmodule()
-    loader = importlib.machinery.ExtensionFileLoader("DelphiVCL", modulefullpath)
-    spec = importlib.util.spec_from_file_location("DelphiVCL", modulefullpath,
-        loader=loader, submodule_search_locations=None)
-    ld = loader.create_module(spec)
+    lib_path = find_extension_module()
+    loader = importlib.machinery.ExtensionFileLoader("DelphiVCL", lib_path)
+    spec = importlib.util.spec_from_file_location("DelphiVCL",
+                                                  lib_path,
+                                                  loader=loader,
+                                                  submodule_search_locations=None)
+    loader.create_module(spec)
     package = importlib.util.module_from_spec(spec)
     sys.modules["delphivcl"] = package
     spec.loader.exec_module(package)
     return package
 
-#Import the shared lib
+
+# Import the extension module
 package = new_import()
