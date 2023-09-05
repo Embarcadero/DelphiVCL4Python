@@ -1,27 +1,14 @@
 [build-system]
-requires = ["setuptools>=40.9.0", "wheel"]
+requires = [
+    "setuptools >= 54",
+    "setuptools_scm[toml] >= 4, <6",
+    "setuptools_scm_git_archive",
+    "wheel >= 0.29.0",
+]
+build-backend = 'setuptools.build_meta'
 
-[tool.cibuildwheel]
-build = ["cp36-win*", "cp37-win*", "cp38-win*", "cp39-win*", "cp310-win*"]
-skip = "pp*"
-#archs = ["auto"]
-#repair-wheel-command = ""
-
-[tool.cibuildwheel.windows]
-archs = ["x86", "AMD64"]
-
-[tool.isort]
-profile = "black"
-multi_line_output = 3
-
-[tool.poetry]
-name = "delphivcl"
-version = "0.1.18"
-description = ""
-authors = ["Jim McKeth", "Lucas Belo<lucas.belo@live.com>", "Lucio Montero<lucioric2000@hotmail.com>"]
-
-[tool.poetry.dependencies]
-python = ">=3.6<=3.10"
-
-[tool.poetry.dev-dependencies]
-pytest = "^6.2.5"
+[tool.setuptools_scm]
+version_scheme = "post-release"
+local_scheme = "no-local-version"
+write_to = "delphivcl/__version__.py"
+git_describe_command = "git describe --dirty --tags --long --match v* --first-parent"
