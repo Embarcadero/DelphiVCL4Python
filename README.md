@@ -12,7 +12,7 @@ Delphi's VCL library allows for building native Windows GUI Applications.
 
 There is a free [eBook and styles bundle](https://embt.co/PythonGUIBundle) with 29 custom styles and 50 pages of content.
 
- <a href="https://embt.co/PythonGUIBundle"><img alt="Download the free eBook and Python styles bundle." src="https://github.com/Embarcadero/PythonFMXBuilder/blob/main/images/30_Banner_Ebook_GGetting Started with Python GUI_830x256.jpg"></a>
+ <a href="https://embt.co/PythonGUIBundle"><img alt="Download the free eBook and Python styles bundle." src="https://github.com/Embarcadero/DelphiVCL4Python/blob/main/images/30_Banner_Ebook_Getting_Started_with_Python_GUI_830x256.jpg?raw=true"></a>
  
 ## Installation: ##
 
