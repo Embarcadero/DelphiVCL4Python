@@ -1,10 +1,7 @@
 import sys
 import os
-import sys
 import platform
 import importlib
-import importlib.machinery
-import importlib.util
 
 
 def find_extension_module():
@@ -23,21 +20,22 @@ def find_extension_module():
             # Win x86
             lib_dir = "Win32"
 
-    if lib_dir:
-        lib_dir = os.path.join(os.path.dirname(
-            os.path.abspath(__file__)), lib_dir)
-        if not os.path.exists(lib_dir):
-            raise ValueError(
-                "DelphiVCL module not found. \
-                Try to reinstall the delphivcl package or check for support compatibility.")
-
-        for file_name in os.listdir(lib_dir):
-            if 'DelphiVCL' in file_name:
-                return os.path.join(lib_dir, os.path.basename(file_name))
-        raise ValueError(
-            "DelphiVCL module not found. Try to reinstall the delphivcl package.")
-    else:
+    if not lib_dir:
         raise ValueError("Unsupported platform.")
+
+    lib_dir = os.path.join(os.path.dirname(
+        os.path.abspath(__file__)), lib_dir)
+    if not os.path.exists(lib_dir):
+        raise ValueError(
+            "DelphiVCL module not found. \
+            Try to reinstall the delphivcl package or check for support compatibility.")
+
+    for file_name in os.listdir(lib_dir):
+        if 'DelphiVCL' in file_name:
+            return os.path.join(lib_dir, os.path.basename(file_name))
+
+    raise ValueError(
+        "DelphiVCL module not found. Try to reinstall the delphivcl package.")
 
 
 def new_import():
