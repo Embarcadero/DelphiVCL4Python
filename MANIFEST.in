@@ -1,2 +1,3 @@
 recursive-include delphivcl *.pyd
+recursive-include delphivcl *.pyi
 recursive-include delphivcl docs.xml
