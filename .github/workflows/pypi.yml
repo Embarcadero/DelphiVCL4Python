@@ -42,6 +42,7 @@ jobs:
       with:
         path: .\delphivcl\__init__.pyi
         key: ${{ runner.os }}-stubs
+        save-always: true
         
   build_wheels_win_32:
     name: Build Windows x86 wheels for Python ${{ matrix.python }}
