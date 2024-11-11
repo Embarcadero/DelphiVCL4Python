@@ -34,8 +34,7 @@ jobs:
     - name: Build Stubs
       run: |
         python -m mypy.stubgen -m delphivcl -o .\delphivcl --include-docstrings
-        ren .\delphivcl\delphivcl.pyi __init__.pyi
-        type .\delphivcl\__init__.pyi
+        ren .\delphivcl\delphivcl.pyi __init__.pyi        
 
     - name: Cache Stubs
       id: cache-stubs
@@ -117,7 +116,8 @@ jobs:
         architecture: "x64"
             
     - name: Build bdist wheel
-      run: |        
+      run: |
+        type .\delphivcl\__init__.pyi
         python -m pip install setuptools --upgrade
         python -m pip install wheel --upgrade                
         python setup.py bdist_wheel --plat-name=win_amd64
