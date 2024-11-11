@@ -41,8 +41,7 @@ jobs:
       uses: actions/cache@v4
       with:
         path: .\delphivcl\__init__.pyi
-        key: ${{ runner.os }}-stubs
-        save-always: true
+        key: ${{ runner.os }}-${{ hashFiles('**/lockfiles') }}
         
   build_wheels_win_32:
     name: Build Windows x86 wheels for Python ${{ matrix.python }}
@@ -65,7 +64,7 @@ jobs:
       uses: actions/cache@v4
       with:
         path: .\delphivcl\__init__.pyi
-        key: ${{ runner.os }}-stubs
+        key: ${{ runner.os }}-${{ hashFiles('**/lockfiles') }}
       
     - name: Set up Python ${{ matrix.python }}
       uses: actions/setup-python@v3
@@ -108,7 +107,7 @@ jobs:
       uses: actions/cache@v4
       with:
         path: .\delphivcl\__init__.pyi
-        key: ${{ runner.os }}-stubs
+        key: ${{ runner.os }}-${{ hashFiles('**/lockfiles') }}
       
     - name: Set up Python ${{ matrix.python }}
       uses: actions/setup-python@v3
