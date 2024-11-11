@@ -38,7 +38,7 @@ jobs:
 
     - name: Cache Stubs
       id: cache-stubs
-      uses: actions/cache@v3
+      uses: actions/cache@v4
       with:
         path: .\delphivcl\__init__.pyi
         key: ${{ runner.os }}-stubs
@@ -61,7 +61,7 @@ jobs:
 
     - name: Restore Cached Stubs
       id: cache-stubs
-      uses: actions/cache@v3
+      uses: actions/cache@v4
       with:
         path: .\delphivcl\__init__.pyi
         key: ${{ runner.os }}-stubs
@@ -81,7 +81,7 @@ jobs:
     - name: Save wheel
       uses: actions/upload-artifact@v4
       with:
-        name: artifacts-win32-${{ matrix.python }}
+        name: artifacts-${{ runner.os }}-${{ matrix.python }}
         path: dist/*.whl
         if-no-files-found: error
         overwrite: true
@@ -104,7 +104,7 @@ jobs:
 
     - name: Restore Cached Stubs
       id: cache-stubs
-      uses: actions/cache@v3
+      uses: actions/cache@v4
       with:
         path: .\delphivcl\__init__.pyi
         key: ${{ runner.os }}-stubs
@@ -125,7 +125,7 @@ jobs:
     - name: Save wheel
       uses: actions/upload-artifact@v4
       with:
-        name: artifacts-win64-${{ matrix.python }}
+        name: artifacts-${{ runner.os }}-${{ matrix.python }}
         path: dist/*.whl
         if-no-files-found: error
         overwrite: true
