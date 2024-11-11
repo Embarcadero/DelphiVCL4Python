@@ -35,6 +35,7 @@ jobs:
       run: |
         python -m mypy.stubgen -m delphivcl -o .\delphivcl --include-docstrings
         ren .\delphivcl\delphivcl.pyi __init__.pyi
+        type .\delphivcl\__init__.pyi
 
     - name: Cache Stubs
       id: cache-stubs
