@@ -34,14 +34,15 @@ jobs:
     - name: Build Stubs
       run: |
         python -m mypy.stubgen -m delphivcl -o .\delphivcl --include-docstrings
-        ren .\delphivcl\delphivcl.pyi __init__.pyi        
+        ren .\delphivcl\delphivcl.pyi __init__.pyi
+        type .\delphivcl\__init__.pyi
 
     - name: Cache Stubs
       id: cache-stubs
       uses: actions/cache@v4
       with:
         path: .\delphivcl\__init__.pyi
-        key: ${{ runner.os }}-${{ hashFiles('**/lockfiles') }}
+        key: ${{ runner.os }}-stubs
         
   build_wheels_win_32:
     name: Build Windows x86 wheels for Python ${{ matrix.python }}
@@ -64,7 +65,11 @@ jobs:
       uses: actions/cache@v4
       with:
         path: .\delphivcl\__init__.pyi
-        key: ${{ runner.os }}-${{ hashFiles('**/lockfiles') }}
+        key: ${{ runner.os }}-stubs
+
+    - name: Test cache
+      run: |
+        type .\delphivcl\__init__.pyi
       
     - name: Set up Python ${{ matrix.python }}
       uses: actions/setup-python@v3
@@ -107,7 +112,7 @@ jobs:
       uses: actions/cache@v4
       with:
         path: .\delphivcl\__init__.pyi
-        key: ${{ runner.os }}-${{ hashFiles('**/lockfiles') }}
+        key: ${{ runner.os }}-stubs
       
     - name: Set up Python ${{ matrix.python }}
       uses: actions/setup-python@v3
