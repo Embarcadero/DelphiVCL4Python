@@ -83,7 +83,8 @@ jobs:
       with:
         name: artifacts-win32-${{ matrix.python }}
         path: dist/*.whl
-        if-no-files-found: error      
+        if-no-files-found: error
+        overwrite: true
 
   build_wheels_win_64:
     name: Build Windows x64 wheels for Python ${{ matrix.python }}
@@ -125,7 +126,8 @@ jobs:
       with:
         name: artifacts-win64-${{ matrix.python }}
         path: dist/*.whl
-        if-no-files-found: error   
+        if-no-files-found: error
+        overwrite: true
 
   upload_pypi_test:
     name: Upload to PyPI test
