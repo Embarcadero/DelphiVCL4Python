@@ -1,0 +1,164 @@
+﻿MediaPlayer
+===========
+
+Qualified name: ``delphivcl.MediaPlayer``
+
+.. currentmodule:: delphivcl
+
+.. autoclass:: MediaPlayer
+   :show-inheritance:
+   :members:
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+      
+      ~MediaPlayer.Back
+      ~MediaPlayer.BringToFront
+      ~MediaPlayer.ClientToScreen
+      ~MediaPlayer.Close
+      ~MediaPlayer.Eject
+      ~MediaPlayer.Hide
+      ~MediaPlayer.Invalidate
+      ~MediaPlayer.Next
+      ~MediaPlayer.Open
+      ~MediaPlayer.Pause
+      ~MediaPlayer.PauseOnly
+      ~MediaPlayer.Play
+      ~MediaPlayer.Previous
+      ~MediaPlayer.Repaint
+      ~MediaPlayer.Resume
+      ~MediaPlayer.Rewind
+      ~MediaPlayer.Save
+      ~MediaPlayer.ScreenToClient
+      ~MediaPlayer.SendToBack
+      ~MediaPlayer.SetBounds
+      ~MediaPlayer.Show
+      ~MediaPlayer.StartRecording
+      ~MediaPlayer.Step
+      ~MediaPlayer.Stop
+      ~MediaPlayer.Update
+
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+     
+     ~MediaPlayer.Action
+     ~MediaPlayer.Align
+     ~MediaPlayer.AlignDisabled
+     ~MediaPlayer.AlignWithMargins
+     ~MediaPlayer.Anchors
+     ~MediaPlayer.AutoEnable
+     ~MediaPlayer.AutoOpen
+     ~MediaPlayer.AutoRewind
+     ~MediaPlayer.BiDiMode
+     ~MediaPlayer.BoundsRect
+     ~MediaPlayer.Brush
+     ~MediaPlayer.Capabilities
+     ~MediaPlayer.ClassName
+     ~MediaPlayer.ClientHeight
+     ~MediaPlayer.ClientOrigin
+     ~MediaPlayer.ClientRect
+     ~MediaPlayer.ClientWidth
+     ~MediaPlayer.ColoredButtons
+     ~MediaPlayer.ComObject
+     ~MediaPlayer.ComponentCount
+     ~MediaPlayer.ComponentIndex
+     ~MediaPlayer.ComponentState
+     ~MediaPlayer.ComponentStyle
+     ~MediaPlayer.Components
+     ~MediaPlayer.Constraints
+     ~MediaPlayer.ControlCount
+     ~MediaPlayer.ControlState
+     ~MediaPlayer.ControlStyle
+     ~MediaPlayer.Controls
+     ~MediaPlayer.CurrentPPI
+     ~MediaPlayer.Cursor
+     ~MediaPlayer.CustomHint
+     ~MediaPlayer.DesignInfo
+     ~MediaPlayer.DeviceID
+     ~MediaPlayer.DeviceType
+     ~MediaPlayer.Display
+     ~MediaPlayer.DisplayRect
+     ~MediaPlayer.DockClientCount
+     ~MediaPlayer.DockClients
+     ~MediaPlayer.DockManager
+     ~MediaPlayer.DockOrientation
+     ~MediaPlayer.DockSite
+     ~MediaPlayer.DoubleBuffered
+     ~MediaPlayer.DoubleBufferedMode
+     ~MediaPlayer.Enabled
+     ~MediaPlayer.EnabledButtons
+     ~MediaPlayer.EndPos
+     ~MediaPlayer.Error
+     ~MediaPlayer.ErrorMessage
+     ~MediaPlayer.ExplicitHeight
+     ~MediaPlayer.ExplicitLeft
+     ~MediaPlayer.ExplicitTop
+     ~MediaPlayer.ExplicitWidth
+     ~MediaPlayer.FileName
+     ~MediaPlayer.Floating
+     ~MediaPlayer.FloatingDockSiteClass
+     ~MediaPlayer.Focused
+     ~MediaPlayer.Frames
+     ~MediaPlayer.Handle
+     ~MediaPlayer.HandleAllocated
+     ~MediaPlayer.Height
+     ~MediaPlayer.HelpContext
+     ~MediaPlayer.HelpKeyword
+     ~MediaPlayer.HelpType
+     ~MediaPlayer.Hint
+     ~MediaPlayer.HostDockSite
+     ~MediaPlayer.IsDrawingLocked
+     ~MediaPlayer.LRDockWidth
+     ~MediaPlayer.Left
+     ~MediaPlayer.Length
+     ~MediaPlayer.Margins
+     ~MediaPlayer.Mode
+     ~MediaPlayer.MouseInClient
+     ~MediaPlayer.Name
+     ~MediaPlayer.Notify
+     ~MediaPlayer.NotifyValue
+     ~MediaPlayer.Observers
+     ~MediaPlayer.Owner
+     ~MediaPlayer.Padding
+     ~MediaPlayer.Parent
+     ~MediaPlayer.ParentCustomHint
+     ~MediaPlayer.ParentDoubleBuffered
+     ~MediaPlayer.ParentShowHint
+     ~MediaPlayer.ParentWindow
+     ~MediaPlayer.PixelsPerInch
+     ~MediaPlayer.PopupMenu
+     ~MediaPlayer.Position
+     ~MediaPlayer.RedrawDisabled
+     ~MediaPlayer.ScaleFactor
+     ~MediaPlayer.Shareable
+     ~MediaPlayer.ShowHint
+     ~MediaPlayer.Showing
+     ~MediaPlayer.Start
+     ~MediaPlayer.StartPos
+     ~MediaPlayer.StyleElements
+     ~MediaPlayer.StyleName
+     ~MediaPlayer.TBDockHeight
+     ~MediaPlayer.TabOrder
+     ~MediaPlayer.TabStop
+     ~MediaPlayer.Tag
+     ~MediaPlayer.TimeFormat
+     ~MediaPlayer.Top
+     ~MediaPlayer.Touch
+     ~MediaPlayer.TrackLength
+     ~MediaPlayer.TrackPosition
+     ~MediaPlayer.Tracks
+     ~MediaPlayer.UndockHeight
+     ~MediaPlayer.UndockWidth
+     ~MediaPlayer.UseDockManager
+     ~MediaPlayer.VCLComObject
+     ~MediaPlayer.Visible
+     ~MediaPlayer.VisibleButtons
+     ~MediaPlayer.VisibleDockClientCount
+     ~MediaPlayer.Wait
+     ~MediaPlayer.Width
+   

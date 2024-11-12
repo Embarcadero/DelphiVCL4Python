@@ -1,0 +1,1674 @@
+<!doctype html>
+<html class="no-js" lang="en" data-content_root="../">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="CustomForm" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://github.com/Embarcadero/reference/delphivcl.CustomForm.html" />
+<meta property="og:site_name" content="DelphiVCL | Documentation" />
+<meta property="og:description" content="Qualified name: delphivcl.CustomForm" />
+<meta property="og:image" content="https://github.com/Embarcadero/DelphiVCL4Python/blob/main/images/DelphiVCL4Python(256px).png" />
+<meta property="og:image:alt" content="DelphiVCL | Documentation" />
+<meta name="description" content="Qualified name: delphivcl.CustomForm" />
+<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="CustomStatusBar" href="delphivcl.CustomStatusBar.html" /><link rel="prev" title="CustomEdit" href="delphivcl.CustomEdit.html" />
+
+    <link rel="shortcut icon" href="../_static/favicon.ico"/><!-- Generated with Sphinx 8.1.3 and Furo 2024.08.06 -->
+        <title>CustomForm - DelphiVCL Documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=354aac6f" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=4ae1632d" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?v=302659d7" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=93c9b8cc" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  --color-content-foreground: #000000;
+  --color-background-primary: #ffffff;
+  --color-background-border: #ffffff;
+  --color-sidebar-background: #f8f9fb;
+  --color-brand-content: #1c00e3;
+  --color-brand-primary: #192bd0;
+  --color-link: #c93434;
+  --color-link--hover: #5b0000;
+  --color-inline-code-background: #f6f6f6;;
+  --color-foreground-secondary: #000;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  --color-content-foreground: #ffffffd9;
+  --color-background-primary: #131416;
+  --color-background-border: #303335;
+  --color-sidebar-background: #1a1c1e;
+  --color-brand-content: #2196f3;
+  --color-brand-primary: #007fff;
+  --color-link: #51ba86;
+  --color-link--hover: #9cefc6;
+  --color-inline-code-background: #262626;
+  --color-foreground-secondary: #ffffffd9;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  --color-content-foreground: #ffffffd9;
+  --color-background-primary: #131416;
+  --color-background-border: #303335;
+  --color-sidebar-background: #1a1c1e;
+  --color-brand-content: #2196f3;
+  --color-brand-primary: #007fff;
+  --color-link: #51ba86;
+  --color-link--hover: #9cefc6;
+  --color-inline-code-background: #262626;
+  --color-foreground-secondary: #ffffffd9;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-with-moon" viewBox="0 0 24 24">
+    <title>Auto light/dark, in light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path style="opacity: 50%" d="M 5.411 14.504 C 5.471 14.504 5.532 14.504 5.591 14.504 C 3.639 16.319 4.383 19.569 6.931 20.352 C 7.693 20.586 8.512 20.551 9.25 20.252 C 8.023 23.207 4.056 23.725 2.11 21.184 C 0.166 18.642 1.702 14.949 4.874 14.536 C 5.051 14.512 5.231 14.5 5.411 14.5 L 5.411 14.504 Z"/>
+      <line x1="14.5" y1="3.25" x2="14.5" y2="1.25"/>
+      <line x1="14.5" y1="15.85" x2="14.5" y2="17.85"/>
+      <line x1="10.044" y1="5.094" x2="8.63" y2="3.68"/>
+      <line x1="19" y1="14.05" x2="20.414" y2="15.464"/>
+      <line x1="8.2" y1="9.55" x2="6.2" y2="9.55"/>
+      <line x1="20.8" y1="9.55" x2="22.8" y2="9.55"/>
+      <line x1="10.044" y1="14.006" x2="8.63" y2="15.42"/>
+      <line x1="19" y1="5.05" x2="20.414" y2="3.636"/>
+      <circle cx="14.5" cy="9.55" r="3.6"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon-with-sun" viewBox="0 0 24 24">
+    <title>Auto light/dark, in dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path d="M 8.282 7.007 C 8.385 7.007 8.494 7.007 8.595 7.007 C 5.18 10.184 6.481 15.869 10.942 17.24 C 12.275 17.648 13.706 17.589 15 17.066 C 12.851 22.236 5.91 23.143 2.505 18.696 C -0.897 14.249 1.791 7.786 7.342 7.063 C 7.652 7.021 7.965 7 8.282 7 L 8.282 7.007 Z"/>
+      <line style="opacity: 50%" x1="18" y1="3.705" x2="18" y2="2.5"/>
+      <line style="opacity: 50%" x1="18" y1="11.295" x2="18" y2="12.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="4.816" x2="14.464" y2="3.964"/>
+      <line style="opacity: 50%" x1="20.711" y1="10.212" x2="21.563" y2="11.063"/>
+      <line style="opacity: 50%" x1="14.205" y1="7.5" x2="13.001" y2="7.5"/>
+      <line style="opacity: 50%" x1="21.795" y1="7.5" x2="23" y2="7.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="10.184" x2="14.464" y2="11.036"/>
+      <line style="opacity: 50%" x1="20.711" y1="4.789" x2="21.563" y2="3.937"/>
+      <circle style="opacity: 50%" cx="18" cy="7.5" r="2.169"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-pencil" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-pencil-code">
+      <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+      <path d="M13.5 6.5l4 4" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+  <symbol id="svg-eye" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-eye-code">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+      <path
+        d="M11.11 17.958c-3.209 -.307 -5.91 -2.293 -8.11 -5.958c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6c-.21 .352 -.427 .688 -.647 1.008" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+<a class="skip-to-content muted-link" href="#furo-main-content">Skip to content</a>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../index.html"><div class="brand">DelphiVCL Documentation</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+          <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../index.html">
+  
+  <div class="sidebar-logo-container">
+    <img class="sidebar-logo only-light" src="../_static/DelphiVCL4Python-sidebar.svg" alt="Light Logo"/>
+    <img class="sidebar-logo only-dark" src="../_static/DelphiVCL4Python-sidebar-dark.svg" alt="Dark Logo"/>
+  </div>
+  
+  <span class="sidebar-brand-text">DelphiVCL Documentation</span>
+  
+</a><form class="sidebar-search-container" method="get" action="../search.html" role="search">
+  <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../tutorials_guides.html">Tutorials &amp; Guides</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of Tutorials &amp; Guides</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../quickstart.html">Quickstart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples.html">Example Gallery</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq.html">Frequently Asked Questions</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current has-children"><a class="reference internal" href="../reference.html">Reference Manual</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle navigation of Reference Manual</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l2 current has-children"><a class="reference internal" href="../reference_index/delphivcl_classes.html">DelphiVCL</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle navigation of DelphiVCL</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Object.html">Object</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.StyleManager.html">StyleManager</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Stream.html">Stream</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Monitor.html">Monitor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomStyleServices.html">CustomStyleServices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Persistent.html">Persistent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Strings.html">Strings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Picture.html">Picture</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Collection.html">Collection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Canvas.html">Canvas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Graphic.html">Graphic</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Bitmap.html">Bitmap</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Icon.html">Icon</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Metafile.html">Metafile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Component.html">Component</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Timer.html">Timer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.OpenDialog.html">OpenDialog</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.MenuItem.html">MenuItem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Menu.html">Menu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.FileOpenDialog.html">FileOpenDialog</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ContainedActionList.html">ContainedActionList</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Control.html">Control</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomBindingsList.html">CustomBindingsList</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BasicBindComponent.html">BasicBindComponent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BasicAction.html">BasicAction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BaseBindScopeComponent.html">BaseBindScopeComponent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BaseLinkingBindSource.html">BaseLinkingBindSource</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ContainedAction.html">ContainedAction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BindingsList.html">BindingsList</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BoundLabel.html">BoundLabel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomControl.html">CustomControl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Label.html">Label</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.WinControl.html">WinControl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomActionList.html">CustomActionList</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.MainMenu.html">MainMenu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.PopupMenu.html">PopupMenu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.SaveDialog.html">SaveDialog</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ActionList.html">ActionList</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.MediaPlayer.html">MediaPlayer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomToggleSwitch.html">CustomToggleSwitch</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomActivityIndicator.html">CustomActivityIndicator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomAction.html">CustomAction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Action.html">Action</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BaseObjectBindSource.html">BaseObjectBindSource</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomPrototypeBindSource.html">CustomPrototypeBindSource</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ActivityIndicator.html">ActivityIndicator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ToggleSwitch.html">ToggleSwitch</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.PrototypeBindSource.html">PrototypeBindSource</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ContainedBindComponent.html">ContainedBindComponent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BindComponentDelegate.html">BindComponentDelegate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.LinkPropertyToFieldDelegate.html">LinkPropertyToFieldDelegate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.LinkControlDelegate.html">LinkControlDelegate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomLinkPropertyToField.html">CustomLinkPropertyToField</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.LinkControlToFieldDelegate.html">LinkControlToFieldDelegate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.LinkPropertyToField.html">LinkPropertyToField</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomLinkControlToField.html">CustomLinkControlToField</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomLinkListControlToField.html">CustomLinkListControlToField</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.LinkControlToField.html">LinkControlToField</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.LinkListControlToField.html">LinkListControlToField</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BitBtn.html">BitBtn</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Button.html">Button</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CheckBox.html">CheckBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ColorBox.html">ColorBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ComboBox.html">ComboBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ControlBar.html">ControlBar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomGrid.html">CustomGrid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomEdit.html">CustomEdit</a></li>
+<li class="toctree-l3 current current-page"><a class="current reference internal" href="#">CustomForm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomStatusBar.html">CustomStatusBar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomTabControl.html">CustomTabControl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.DateTimePicker.html">DateTimePicker</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.GroupBox.html">GroupBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Header.html">Header</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.LabeledEdit.html">LabeledEdit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ListBox.html">ListBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Notebook.html">Notebook</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Page.html">Page</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.PageControl.html">PageControl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Panel.html">Panel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.RadioButton.html">RadioButton</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.RadioGroup.html">RadioGroup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ScrollBar.html">ScrollBar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.SpinButton.html">SpinButton</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.StaticText.html">StaticText</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.TabSheet.html">TabSheet</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ToolBar.html">ToolBar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.TrackBar.html">TrackBar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomDrawGrid.html">CustomDrawGrid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomMemo.html">CustomMemo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomNumberBox.html">CustomNumberBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Edit.html">Edit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.SpinEdit.html">SpinEdit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Form.html">Form</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.StatusBar.html">StatusBar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.TabControl.html">TabControl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.DrawGrid.html">DrawGrid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Memo.html">Memo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.NumberBox.html">NumberBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.StringGrid.html">StringGrid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomMemoryStream.html">CustomMemoryStream</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.HandleStream.html">HandleStream</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.MemoryStream.html">MemoryStream</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ResourceStream.html">ResourceStream</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.FileStream.html">FileStream</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BytesStream.html">BytesStream</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BufferedFileStream.html">BufferedFileStream</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.StringStream.html">StringStream</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../changelog.html">Changelog</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle navigation of Changelog</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../changelog/0.1.40-changelog.html">v0.1.40</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../changelog/1.0.0-changelog.html">v1.0.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../changelog/1.0.1-changelog.html">v1.0.1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../changelog/1.0.2-changelog.html">v1.0.2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../changelog/1.0.3-changelog.html">v1.0.3</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing.html">Contributing</a></li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+              <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role="main" id="furo-main-content">
+          <section id="customform">
+<h1>CustomForm<a class="headerlink" href="#customform" title="Link to this heading">¶</a></h1>
+<p>Qualified name: <code class="docutils literal notranslate"><span class="pre">delphivcl.CustomForm</span></code></p>
+<dl class="py class">
+<dt class="sig sig-object py" id="delphivcl.CustomForm">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">CustomForm</span></span><a class="headerlink" href="#delphivcl.CustomForm" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="delphivcl.WinControl.html#delphivcl.WinControl" title="delphivcl.WinControl"><code class="xref py py-class docutils literal notranslate"><span class="pre">WinControl</span></code></a></p>
+<p>TCustomForm is the base class from which to derive a window such as a form or dialog.
+Derive from TCustomForm to create a custom window. The TCustomForm descendant can contain other objects, such as TButton, TCheckBox, and TComboBox objects.</p>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.CustomForm.AfterConstruction" title="delphivcl.CustomForm.AfterConstruction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AfterConstruction</span></code></a></p></td>
+<td><p>Construction event dispatcher.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.CustomForm.BeforeDestruction" title="delphivcl.CustomForm.BeforeDestruction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BeforeDestruction</span></code></a></p></td>
+<td><p>Destruction event dispatcher.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.CustomForm.Close" title="delphivcl.CustomForm.Close"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Close</span></code></a></p></td>
+<td><p>Closes the wrapped Form</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.CustomForm.CloseQuery" title="delphivcl.CustomForm.CloseQuery"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CloseQuery</span></code></a></p></td>
+<td><p>Asked the wrapped Form if it can close</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.CustomForm.DefaultHandler" title="delphivcl.CustomForm.DefaultHandler"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DefaultHandler</span></code></a></p></td>
+<td><p>Provides message handling for all messages that the form does not fully process.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.CustomForm.DefocusControl" title="delphivcl.CustomForm.DefocusControl"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DefocusControl</span></code></a></p></td>
+<td><p>Removes focus from a control on the form.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.CustomForm.DisableAutoRange" title="delphivcl.CustomForm.DisableAutoRange"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DisableAutoRange</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.CustomForm.Dock" title="delphivcl.CustomForm.Dock"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Dock</span></code></a></p></td>
+<td><p>Handles automatic docking of the form into other windows.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.CustomForm.EnableAutoRange" title="delphivcl.CustomForm.EnableAutoRange"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EnableAutoRange</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.CustomForm.EnableImmersiveDarkMode" title="delphivcl.CustomForm.EnableImmersiveDarkMode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EnableImmersiveDarkMode</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.CustomForm.FocusControl" title="delphivcl.CustomForm.FocusControl"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FocusControl</span></code></a></p></td>
+<td><p>Sets focus to a control on the form.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.CustomForm.GetChildren" title="delphivcl.CustomForm.GetChildren"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GetChildren</span></code></a></p></td>
+<td><p>Returns the &quot;child&quot; components of the form; that is, those components that return the form from their GetParentComponent method.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.CustomForm.GetFormImage" title="delphivcl.CustomForm.GetFormImage"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GetFormImage</span></code></a></p></td>
+<td><p>Returns a bitmap of the form.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.CustomForm.Hide" title="delphivcl.CustomForm.Hide"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Hide</span></code></a></p></td>
+<td><p>Hides the form.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.CustomForm.IsShortCut" title="delphivcl.CustomForm.IsShortCut"><code class="xref py py-obj docutils literal notranslate"><span class="pre">IsShortCut</span></code></a></p></td>
+<td><p>Processes shortcut keys when the form has focus.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.CustomForm.LoadProps" title="delphivcl.CustomForm.LoadProps"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LoadProps</span></code></a></p></td>
+<td><p>Load properties from a .pydfm file</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.CustomForm.MakeFullyVisible" title="delphivcl.CustomForm.MakeFullyVisible"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MakeFullyVisible</span></code></a></p></td>
+<td><p>Ensures that the form is fully visible on a specified monitor.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.CustomForm.MouseWheelHandler" title="delphivcl.CustomForm.MouseWheelHandler"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MouseWheelHandler</span></code></a></p></td>
+<td><p>Directs mouse wheel messages to the appropriate control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.CustomForm.Print" title="delphivcl.CustomForm.Print"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Print</span></code></a></p></td>
+<td><p>Prints the form.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.CustomForm.RecreateAsPopup" title="delphivcl.CustomForm.RecreateAsPopup"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RecreateAsPopup</span></code></a></p></td>
+<td><p>Embarcadero Technologies does not currently have any additional information.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.CustomForm.Release" title="delphivcl.CustomForm.Release"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Release</span></code></a></p></td>
+<td><p>Releases (destroys) the wrapped Form</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.CustomForm.ScaleForCurrentDPI" title="delphivcl.CustomForm.ScaleForCurrentDPI"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ScaleForCurrentDPI</span></code></a></p></td>
+<td><p>Checks if there is a change in Dpi and performs the necessary changes to scale all the controls for the new Dpi.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.CustomForm.ScaleForPPI" title="delphivcl.CustomForm.ScaleForPPI"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ScaleForPPI</span></code></a></p></td>
+<td><p>Embarcadero Technologies does not currently have any additional information.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.CustomForm.ScrollInView" title="delphivcl.CustomForm.ScrollInView"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ScrollInView</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.CustomForm.SendCancelMode" title="delphivcl.CustomForm.SendCancelMode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SendCancelMode</span></code></a></p></td>
+<td><p>Cancels modes on the form.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.CustomForm.SetFocus" title="delphivcl.CustomForm.SetFocus"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SetFocus</span></code></a></p></td>
+<td><p>Sets focus to the form.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.CustomForm.SetFocusedControl" title="delphivcl.CustomForm.SetFocusedControl"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SetFocusedControl</span></code></a></p></td>
+<td><p>Sets focus to a control on the form.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.CustomForm.Show" title="delphivcl.CustomForm.Show"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Show</span></code></a></p></td>
+<td><p>Shows the form.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.CustomForm.ShowModal" title="delphivcl.CustomForm.ShowModal"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ShowModal</span></code></a></p></td>
+<td><p>Shows the wrapped Form as a modal form</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.CustomForm.UpdateDesignerCaption" title="delphivcl.CustomForm.UpdateDesignerCaption"><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateDesignerCaption</span></code></a></p></td>
+<td><p>Embarcadero Technologies does not currently have any additional information.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.CustomForm.WantChildKey" title="delphivcl.CustomForm.WantChildKey"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WantChildKey</span></code></a></p></td>
+<td><p>Indicates whether the form processes keyboard input for a control it owns.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.CustomForm.set_PopupParent" title="delphivcl.CustomForm.set_PopupParent"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_PopupParent</span></code></a></p></td>
+<td><p>Embarcadero Technologies does not currently have any additional information.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="rubric">Attributes</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.CustomForm.Action" title="delphivcl.CustomForm.Action"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Action</span></code></a></p></td>
+<td><p>Specifies the action associated with the control.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.CustomForm.Active" title="delphivcl.CustomForm.Active"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Active</span></code></a></p></td>
+<td><p>Specifies whether the form has focus.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.CustomForm.ActiveControl" title="delphivcl.CustomForm.ActiveControl"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ActiveControl</span></code></a></p></td>
+<td><p>Specifies the control that has focus on the form.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.CustomForm.ActiveOleControl" title="delphivcl.CustomForm.ActiveOleControl"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ActiveOleControl</span></code></a></p></td>
+<td><p>Specifies the OLE control on the form that reacts to changes in focus.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Align</span></code></p></td>
+<td><p>Determines how the control aligns within its container (parent control).</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">AlignDisabled</span></code></p></td>
+<td><p>Indicates child control realignment disabled.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">AlignWithMargins</span></code></p></td>
+<td><p>Specifies whether a control should be constrained by margins.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Anchors</span></code></p></td>
+<td><p>Specifies how the control is anchored to its parent.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">BiDiMode</span></code></p></td>
+<td><p>Specifies the bidirectional mode for the control.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.CustomForm.BorderStyle" title="delphivcl.CustomForm.BorderStyle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BorderStyle</span></code></a></p></td>
+<td><p>Specifies the appearance and behavior of the form border.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">BoundsRect</span></code></p></td>
+<td><p>Specifies the bounding rectangle of the control, expressed in the coordinate system of the parent control.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Brush</span></code></p></td>
+<td><p>Determines the color and pattern used for painting the background of the control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.CustomForm.Canvas" title="delphivcl.CustomForm.Canvas"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Canvas</span></code></a></p></td>
+<td><p>Provides access to the drawing area of the form.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.CustomForm.Caption" title="delphivcl.CustomForm.Caption"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Caption</span></code></a></p></td>
+<td><p>Specifies a text string that identifies the control to the user.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ClassName</span></code></p></td>
+<td><p>Returns the TObject.ClassName</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ClientHeight</span></code></p></td>
+<td><p>Specifies the height of the control's client area in pixels.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ClientOrigin</span></code></p></td>
+<td><p>Specifies the screen coordinates (in pixels) of the upper-left corner of a control's client area.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ClientRect</span></code></p></td>
+<td><p>Specifies the size of a control's client area in pixels.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ClientWidth</span></code></p></td>
+<td><p>Specifies the horizontal size of the control's client area in pixels.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.CustomForm.Color" title="delphivcl.CustomForm.Color"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Color</span></code></a></p></td>
+<td><p>Specifies the background color of the control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ComObject</span></code></p></td>
+<td><p>Specifies the interface reference implemented by the component.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ComponentCount</span></code></p></td>
+<td><p>Returns the owned component count</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ComponentIndex</span></code></p></td>
+<td><p>Indicates the position of the component in its owner's Components property array.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ComponentState</span></code></p></td>
+<td><p>Describes the current state of the component, indicating when a component needs to avoid certain actions.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ComponentStyle</span></code></p></td>
+<td><p>Governs the behavior of the component.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Components</span></code></p></td>
+<td><p>Returns an iterator over the owned components</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Constraints</span></code></p></td>
+<td><p>Specifies the size constraints for the control.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ControlCount</span></code></p></td>
+<td><p>Returns the count of contained controls</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ControlState</span></code></p></td>
+<td><p>Specifies the current state of a control at run time.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ControlStyle</span></code></p></td>
+<td><p>Determines style characteristics of the control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Controls</span></code></p></td>
+<td><p>Returns an iterator over contained controls</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">CurrentPPI</span></code></p></td>
+<td><p>Embarcadero Technologies does not currently have any additional information.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cursor</span></code></p></td>
+<td><p>Specifies the image used to represent the mouse pointer when it passes into the region covered by the control.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">CustomHint</span></code></p></td>
+<td><p>CustomHint is a custom hint for the control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.CustomForm.CustomTitleBar" title="delphivcl.CustomForm.CustomTitleBar"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CustomTitleBar</span></code></a></p></td>
+<td><p>Embarcadero Technologies does not currently have any additional information.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">DesignInfo</span></code></p></td>
+<td><p>Contains information used by the Form designer.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.CustomForm.Designer" title="delphivcl.CustomForm.Designer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Designer</span></code></a></p></td>
+<td><p>Specifies the designer interface for the form.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">DockClientCount</span></code></p></td>
+<td><p>Specifies the number of controls that are docked on the windowed control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">DockClients</span></code></p></td>
+<td><p>Control:</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">DockManager</span></code></p></td>
+<td><p>Specifies the control's docking manager interface.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">DockOrientation</span></code></p></td>
+<td><p>DockOrientation specifies how the control is docked relative to other controls docked in the same parent.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">DockSite</span></code></p></td>
+<td><p>Specifies whether the control can be the target of drag-and-dock operations.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">DoubleBuffered</span></code></p></td>
+<td><p>Determines whether the control's image is rendered directly to the window or painted to an in-memory bitmap first.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">DoubleBufferedMode</span></code></p></td>
+<td><p>DoubleBufferedMode:</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.CustomForm.DropTarget" title="delphivcl.CustomForm.DropTarget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DropTarget</span></code></a></p></td>
+<td><p>Specifies whether the form is the target of a drag-and-drop operation.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Enabled</span></code></p></td>
+<td><p>Controls whether the control responds to mouse, keyboard, and timer events.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ExplicitHeight</span></code></p></td>
+<td><p>Specifies the explicit vertical size of the control in pixels.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ExplicitLeft</span></code></p></td>
+<td><p>Specifies the explicit horizontal pixel coordinate of the left edge of a component relative to its parent.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ExplicitTop</span></code></p></td>
+<td><p>Specifies the explicit vertical pixel coordinate of the top edge of a component relative to its parent.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ExplicitWidth</span></code></p></td>
+<td><p>Specifies the explicit horizontal size of the control in pixels.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Floating</span></code></p></td>
+<td><p>Specifies whether the control is floating.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">FloatingDockSiteClass</span></code></p></td>
+<td><p>Specifies the class of the temporary control that hosts the control when it is floating.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Focused</span></code></p></td>
+<td><p>Determines whether the control has input focus.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.CustomForm.Font" title="delphivcl.CustomForm.Font"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Font</span></code></a></p></td>
+<td><p>Specifies the attributes of text written on or in the control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.CustomForm.FormState" title="delphivcl.CustomForm.FormState"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FormState</span></code></a></p></td>
+<td><p>Indicates transitional state information about the form.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.CustomForm.GlassFrame" title="delphivcl.CustomForm.GlassFrame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GlassFrame</span></code></a></p></td>
+<td><p>Accesses the Glass Frame under Windows Vista, Windows 7, or later Windows operating systems.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Handle</span></code></p></td>
+<td><p>Provides access to the underlying Windows screen object for the control.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">HandleAllocated</span></code></p></td>
+<td><p>Reports whether a screen object handle exists for the control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Height</span></code></p></td>
+<td><p>Specifies the vertical size of the control in pixels.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">HelpContext</span></code></p></td>
+<td><p>The HelpContext property contains the numeric context ID that identifies the Help topic for the control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.CustomForm.HelpFile" title="delphivcl.CustomForm.HelpFile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HelpFile</span></code></a></p></td>
+<td><p>Specifies the name of the Help file the form uses to display the Help from.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">HelpKeyword</span></code></p></td>
+<td><p>The HelpKeyword property contains the keyword string that identifies the Help topic for the control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">HelpType</span></code></p></td>
+<td><p>Specifies whether the control's context-sensitive Help topic is identified by a context ID or by keyword.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Hint</span></code></p></td>
+<td><p>Hint contains the text string that appears when the user moves the mouse over the control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.CustomForm.HorzScrollBar" title="delphivcl.CustomForm.HorzScrollBar"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HorzScrollBar</span></code></a></p></td>
+<td><p>ControlScrollBar:</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">HostDockSite</span></code></p></td>
+<td><p>Specifies the control in which the control is docked.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">IsDrawingLocked</span></code></p></td>
+<td><p>IsDrawingLocked property returns True when redrawing for this control is locked.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.CustomForm.KeyPreview" title="delphivcl.CustomForm.KeyPreview"><code class="xref py py-obj docutils literal notranslate"><span class="pre">KeyPreview</span></code></a></p></td>
+<td><p>Specifies whether the form should receive keyboard events before the active control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">LRDockWidth</span></code></p></td>
+<td><p>Specifies the width of the control when it is docked horizontally.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.CustomForm.Left" title="delphivcl.CustomForm.Left"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Left</span></code></a></p></td>
+<td><p>Specifies the horizontal coordinate of the left edge of a component relative to its parent.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Margins</span></code></p></td>
+<td><p>Specifies the margins of the control.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.CustomForm.Menu" title="delphivcl.CustomForm.Menu"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Menu</span></code></a></p></td>
+<td><p>Specifies the form's main menu.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.CustomForm.ModalResult" title="delphivcl.CustomForm.ModalResult"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModalResult</span></code></a></p></td>
+<td><p>Represents the return value of a form that is used as a modal dialog.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.CustomForm.Monitor" title="delphivcl.CustomForm.Monitor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Monitor</span></code></a></p></td>
+<td><p>Provides access to the monitor on which the form appears.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">MouseInClient</span></code></p></td>
+<td><p>Indicates whether the mouse pointer is currently in the client area of the control.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Name</span></code></p></td>
+<td><p>Specifies the name of the component as referenced in code.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Observers</span></code></p></td>
+<td><p>Indicates the TObservers object added to the TComponent.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.CustomForm.OleFormObject" title="delphivcl.CustomForm.OleFormObject"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OleFormObject</span></code></a></p></td>
+<td><p>Specifies the IOleForm interface for an in-place OLE object contained in the form.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.CustomForm.OnAlignInsertBefore" title="delphivcl.CustomForm.OnAlignInsertBefore"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OnAlignInsertBefore</span></code></a></p></td>
+<td><p>Callable[[WinControl, Control, Control], bool]:</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.CustomForm.OnAlignPosition" title="delphivcl.CustomForm.OnAlignPosition"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OnAlignPosition</span></code></a></p></td>
+<td><p>Callable[[WinControl, Control, int, int, int, int, Rect, AlignInfo], None]:</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Owner</span></code></p></td>
+<td><p>Returns the Component Owner</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Padding</span></code></p></td>
+<td><p>Specifies the padding of a control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Parent</span></code></p></td>
+<td><p>Returns/Sets the Control Parent</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ParentCustomHint</span></code></p></td>
+<td><p>Specifies where a control looks for its custom hint.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ParentDoubleBuffered</span></code></p></td>
+<td><p>ParentDoubleBuffered defers the DoubleBuffered property of this component to the value of the parent's DoubleBuffered property.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ParentWindow</span></code></p></td>
+<td><p>Reference to parent's underlying control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">PixelsPerInch</span></code></p></td>
+<td><p>Embarcadero Technologies does not currently have any additional information.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.CustomForm.PopupMode" title="delphivcl.CustomForm.PopupMode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PopupMode</span></code></a></p></td>
+<td><p>Controls how the top-level form behaves with respect to Window's WS_POPUP style.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.CustomForm.PopupParent" title="delphivcl.CustomForm.PopupParent"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PopupParent</span></code></a></p></td>
+<td><p>Sets an order for stacked forms that users cannot change.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">RedrawDisabled</span></code></p></td>
+<td><p>RedrawDisabled property returns True when redrawing for this control is locked.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.CustomForm.RoundedCorners" title="delphivcl.CustomForm.RoundedCorners"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RoundedCorners</span></code></a></p></td>
+<td><p>RoundedCornerType:</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ScaleFactor</span></code></p></td>
+<td><p>Embarcadero Technologies does not currently have any additional information.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.CustomForm.Scaled" title="delphivcl.CustomForm.Scaled"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Scaled</span></code></a></p></td>
+<td><p>Specifies whether the form is sized according to the value of the PixelsPerInch property.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.CustomForm.ScreenSnap" title="delphivcl.CustomForm.ScreenSnap"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ScreenSnap</span></code></a></p></td>
+<td><p>Specifies whether form snaps to edge of screen.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ShowHint</span></code></p></td>
+<td><p>ShowHint specifies whether to show the Help Hint when the mouse pointer moves over the control.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Showing</span></code></p></td>
+<td><p>Indicates whether the control is showing on the screen.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.CustomForm.SnapBuffer" title="delphivcl.CustomForm.SnapBuffer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SnapBuffer</span></code></a></p></td>
+<td><p>Specifies distance for screen snap.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">StyleElements</span></code></p></td>
+<td><p>Specifies the style elements that are used by the control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">StyleName</span></code></p></td>
+<td><p>Embarcadero Technologies does not currently have any additional information.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">TBDockHeight</span></code></p></td>
+<td><p>Specifies the height of the control when it is docked vertically.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">TabOrder</span></code></p></td>
+<td><p>Indicates the position of the control in its parent's tab order.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">TabStop</span></code></p></td>
+<td><p>Determines whether the user can tab to a control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Tag</span></code></p></td>
+<td><p>Stores a NativeInt integral value as a part of a component.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.CustomForm.TaskbarHandler" title="delphivcl.CustomForm.TaskbarHandler"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TaskbarHandler</span></code></a></p></td>
+<td><p>Embarcadero Technologies does not currently have any additional information.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.CustomForm.Top" title="delphivcl.CustomForm.Top"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Top</span></code></a></p></td>
+<td><p>Specifies the Y coordinate of the upper-left corner of a control, relative to its parent or containing control in pixels.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Touch</span></code></p></td>
+<td><p>Specifies the touch manager component associated with the control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">UndockHeight</span></code></p></td>
+<td><p>Specifies the height of the control when it is floating.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">UndockWidth</span></code></p></td>
+<td><p>Specifies the width of the control when it is floating.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">UseDockManager</span></code></p></td>
+<td><p>Specifies whether the docking manager is used in drag-and-dock operations.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">VCLComObject</span></code></p></td>
+<td><p>Represents information used internally by components that support COM.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.CustomForm.VertScrollBar" title="delphivcl.CustomForm.VertScrollBar"><code class="xref py py-obj docutils literal notranslate"><span class="pre">VertScrollBar</span></code></a></p></td>
+<td><p>ControlScrollBar:</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Visible</span></code></p></td>
+<td><p>Specifies whether the component appears onscreen.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">VisibleDockClientCount</span></code></p></td>
+<td><p>Specifies the number of visible controls that are docked on the windowed control.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Width</span></code></p></td>
+<td><p>Specifies the horizontal size of the control or form in pixels.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.CustomForm.WindowState" title="delphivcl.CustomForm.WindowState"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WindowState</span></code></a></p></td>
+<td><p>Represents how the form appears on the screen.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.CustomForm.Action">
+<span class="sig-name descname"><span class="pre">Action</span></span><a class="headerlink" href="#delphivcl.CustomForm.Action" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the action associated with the control.
+Action is the action object that is associated with the control. Actions allow an application to centralize the response to user commands. When a control is associated with an action, the action determines the appropriate properties and events of the control (such as whether the control is enabled or how it responds to an OnClick event).
+To create actions at design time, place an action list component on a form or data module. Double-click the action list to bring up the action list editor. Add actions in the editor using its context menu. Once the actions have been added using the Action List editor, they appear in the drop-down list for the Action property in the Object Inspector.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="delphivcl.BasicAction.html#delphivcl.BasicAction" title="delphivcl.BasicAction">BasicAction</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.CustomForm.Active">
+<span class="sig-name descname"><span class="pre">Active</span></span><a class="headerlink" href="#delphivcl.CustomForm.Active" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies whether the form has focus.
+Use Active to determine whether the form has focus. The Active Form receives all keyboard input. If it has a title bar, it is drawn using the active colors specified in the Control panel.
+If Active is true , the form has focus; if Active is false, the form does not have focus.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.CustomForm.ActiveControl">
+<span class="sig-name descname"><span class="pre">ActiveControl</span></span><a class="headerlink" href="#delphivcl.CustomForm.ActiveControl" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the control that has focus on the form.
+Use ActiveControl to get or set the control that has focus on the form. Only one control can have focus at a given time in an application.
+If the form does not have focus, ActiveControl is the control on the form that will receive focus when the form receives focus.</p>
+<p>Note:  When focus shifts to another control, ActiveControl is updated before the OnExit event occurs.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="delphivcl.WinControl.html#delphivcl.WinControl" title="delphivcl.WinControl">WinControl</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.CustomForm.ActiveOleControl">
+<span class="sig-name descname"><span class="pre">ActiveOleControl</span></span><a class="headerlink" href="#delphivcl.CustomForm.ActiveOleControl" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the OLE control on the form that reacts to changes in focus.
+Use ActiveOleControl to get or set an OLE control on the form that reacts to changes in focus.
+If ActiveOleControl is not nil (Delphi) or NULL (C++), the user interface for the specified OLE control is deactivated when it is not focused. Also, when the form receives or loses focus, the document window for the specified OLE control is activated or deactivated respectively.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="delphivcl.WinControl.html#delphivcl.WinControl" title="delphivcl.WinControl">WinControl</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.CustomForm.AfterConstruction">
+<span class="sig-name descname"><span class="pre">AfterConstruction</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.CustomForm.AfterConstruction" title="Link to this definition">¶</a></dt>
+<dd><p>Construction event dispatcher.
+AfterConstruction is the dispatcher for the event that occurs immediately after the form object’s construction. As implemented in TCustomForm, AfterConstruction calls the OnCreate event handler, provided the OldCreateOrder property is false.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.CustomForm.BeforeDestruction">
+<span class="sig-name descname"><span class="pre">BeforeDestruction</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.CustomForm.BeforeDestruction" title="Link to this definition">¶</a></dt>
+<dd><p>Destruction event dispatcher.
+BeforeDestruction is the dispatcher for the event that occurs immediately before the form object’s destruction. As implemented in TCustomForm, BeforeDestruction calls the OnDestroy event handler, provided the OldCreateOrder property is false.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.CustomForm.BorderStyle">
+<span class="sig-name descname"><span class="pre">BorderStyle</span></span><a class="headerlink" href="#delphivcl.CustomForm.BorderStyle" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the appearance and behavior of the form border.
+Use BorderStyle to get or set the appearance and behavior of the form border. BorderStyle can be any of the following TForm BorderStyle values:</p>
+<p>Value</p>
+<p>Meaning</p>
+<p>bsDialog</p>
+<p>Not resizable; no minimize/maximize menu</p>
+<p>bsSingle</p>
+<p>Not resizable; minimize/maximize menu</p>
+<p>bsNone</p>
+<p>Not resizable; no visible border line</p>
+<p>bsSizeable</p>
+<p>Standard resizable border</p>
+<p>bsToolWindow</p>
+<p>like bsSingle but with a smaller caption</p>
+<p>bsSizeToolWin</p>
+<p>like bsSizeable with a smaller caption</p>
+<p>Note:  Changing the border style of an MDI child form to bsDialog or bsNone has no effect.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>FormBorderStyle</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.CustomForm.Canvas">
+<span class="sig-name descname"><span class="pre">Canvas</span></span><a class="headerlink" href="#delphivcl.CustomForm.Canvas" title="Link to this definition">¶</a></dt>
+<dd><p>Provides access to the drawing area of the form.
+Use TCanvas to draw on the client area of the form. Canvas is often used in the OnPaint event handler.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="delphivcl.Canvas.html#delphivcl.Canvas" title="delphivcl.Canvas">Canvas</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.CustomForm.Caption">
+<span class="sig-name descname"><span class="pre">Caption</span></span><a class="headerlink" href="#delphivcl.CustomForm.Caption" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies a text string that identifies the control to the user.
+Use Caption to specify the text string that labels the control.
+To underline a character in a Caption that labels a component, include an ampersand (&amp;) before the character. This type of character is called an accelerator character. The user can then select the component by pressing ALT while typing the underlined character. To display an ampersand character in the caption, use two ampersands (&amp;&amp;).</p>
+<p>Notes:
+Controls that display text use either the Caption property or the Text property to specify the text value. The property that is used depends on the type of control. In general, Caption is used for text that appears as a window title or label, while Text is used for text that appears as the content of a control.
+For some controls, such as TButton, it is not possible to change the color of the Caption. If you want to change the color of a button caption, you should use an alternate button type such as TSpeedButton or TBitBtn instead of TButton. With either TSpeedButton or TBitBtn, you can change the color of the Caption property by using the Font property.
+For TLinkLabel, an HTML tag is declared inside the Caption property either at run time or at design time.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.CustomForm.Close">
+<span class="sig-name descname"><span class="pre">Close</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.CustomForm.Close" title="Link to this definition">¶</a></dt>
+<dd><p>Closes the wrapped Form</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.CustomForm.CloseQuery">
+<span class="sig-name descname"><span class="pre">CloseQuery</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.CustomForm.CloseQuery" title="Link to this definition">¶</a></dt>
+<dd><p>Asked the wrapped Form if it can close</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.CustomForm.Color">
+<span class="sig-name descname"><span class="pre">Color</span></span><a class="headerlink" href="#delphivcl.CustomForm.Color" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the background color of the control.
+Use Color to read or change the background color of the control.
+If a control’s Vcl.Controls.TControl.ParentColor property is True, then changing the Color property of the control’s parent automatically changes the Color property of the control. When the value of the Color property is changed, the control’s ParentColor property is automatically set to False.
+The Color of a TLabel is always the color of the background unless you set TLabel.Transparent to False.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.CustomForm.CustomTitleBar">
+<span class="sig-name descname"><span class="pre">CustomTitleBar</span></span><a class="headerlink" href="#delphivcl.CustomForm.CustomTitleBar" title="Link to this definition">¶</a></dt>
+<dd><p>Embarcadero Technologies does not currently have any additional information.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>TitleBar</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.CustomForm.DefaultHandler">
+<span class="sig-name descname"><span class="pre">DefaultHandler</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Message</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#delphivcl.CustomForm.DefaultHandler" title="Link to this definition">¶</a></dt>
+<dd><p>Provides message handling for all messages that the form does not fully process.
+Override DefaultHandler to change the default message handling for the form. This is seldom necessary because messages can be handled by creating message methods.
+DefaultHandler passes any otherwise-unhandled messages to the form’s window procedure by calling the CallWindowProc OS function.</p>
+<p>Note:  In Delphi code, calling inherited in a message-handling method results in a call to the ancestor’s DefaultHandler method unless that ancestor specifies a handler for the message.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.CustomForm.DefocusControl">
+<span class="sig-name descname"><span class="pre">DefocusControl</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Control</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="delphivcl.WinControl.html#delphivcl.WinControl" title="delphivcl.WinControl"><span class="pre">WinControl</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">Removing</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#delphivcl.CustomForm.DefocusControl" title="Link to this definition">¶</a></dt>
+<dd><p>Removes focus from a control on the form.
+Use DefocusControl to remove focus from a control on the form. This method is used internally by the VCL.
+Control is the control from which to remove focus. If Control is the form’s active control, DefocusControl sets the form’s ActiveControl property to nil (Delphi) or NULL (C++).
+Removing specifies whether to set focus to the control’s parent.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.CustomForm.Designer">
+<span class="sig-name descname"><span class="pre">Designer</span></span><a class="headerlink" href="#delphivcl.CustomForm.Designer" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the designer interface for the form.
+The Designer property is used internally at design time. Never assign a value to this property. This is done automatically by the form designer. Only use this property when designing classes for use in the form designer, such as property editors and component editors.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>IDesignerHook</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.CustomForm.DisableAutoRange">
+<span class="sig-name descname"><span class="pre">DisableAutoRange</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.CustomForm.DisableAutoRange" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.CustomForm.Dock">
+<span class="sig-name descname"><span class="pre">Dock</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">NewDockSite</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="delphivcl.WinControl.html#delphivcl.WinControl" title="delphivcl.WinControl"><span class="pre">WinControl</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">ARect</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Rect</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#delphivcl.CustomForm.Dock" title="Link to this definition">¶</a></dt>
+<dd><p>Handles automatic docking of the form into other windows.
+Do not call Dock in application code. It is called automatically when the form is released on a docking site that will accept it. To dock a form programmatically, use the ManualDock method instead.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.CustomForm.DropTarget">
+<span class="sig-name descname"><span class="pre">DropTarget</span></span><a class="headerlink" href="#delphivcl.CustomForm.DropTarget" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies whether the form is the target of a drag-and-drop operation.
+Use DropTarget to determine whether the form is currently the target of a drag-and-drop operation.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.CustomForm.EnableAutoRange">
+<span class="sig-name descname"><span class="pre">EnableAutoRange</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.CustomForm.EnableAutoRange" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.CustomForm.EnableImmersiveDarkMode">
+<span class="sig-name descname"><span class="pre">EnableImmersiveDarkMode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Enable</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#delphivcl.CustomForm.EnableImmersiveDarkMode" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.CustomForm.FocusControl">
+<span class="sig-name descname"><span class="pre">FocusControl</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Control</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="delphivcl.WinControl.html#delphivcl.WinControl" title="delphivcl.WinControl"><span class="pre">WinControl</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#delphivcl.CustomForm.FocusControl" title="Link to this definition">¶</a></dt>
+<dd><p>Sets focus to a control on the form.
+Use FocusControl to set focus to a control on the form.
+Control is a TWinControl object encapsulating the control on which to set focus. FocusControl sets the ActiveControl property.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.CustomForm.Font">
+<span class="sig-name descname"><span class="pre">Font</span></span><a class="headerlink" href="#delphivcl.CustomForm.Font" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the attributes of text written on or in the control.
+To change to a new font, specify a new TFont object. To modify a font, change the value of the Charset, Color, Height, Name , Pitch, Size, or Style of the TFont object.</p>
+<p>Note: Changing the font color of the Caption is not supported for some controls (such as TButton). In most cases, there is an alternate control you can use whose Font property will change the color of the caption or text (such as TBitBtn or TSpeedButton).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Font</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.CustomForm.FormState">
+<span class="sig-name descname"><span class="pre">FormState</span></span><a class="headerlink" href="#delphivcl.CustomForm.FormState" title="Link to this definition">¶</a></dt>
+<dd><p>Indicates transitional state information about the form.
+Read FormState to determine the state of the form. FormState indicates when the form is in various transitional states or when certain Windows operations have occurred. The following table lists the values that can be included in a form’s state:</p>
+<p>Value</p>
+<p>Meaning</p>
+<p>fsCreating</p>
+<p>The form’s constructor is currently executing.</p>
+<p>fsVisible</p>
+<p>The form’s window is visible. This state is used to update the Visible property.</p>
+<p>fsShowing</p>
+<p>The form’s WindowState property is changing. This state is used to prevent WindowState changes from interfering with a transition that is in progress.</p>
+<p>fsModal</p>
+<p>The form was created as a modal window.</p>
+<p>fsCreatedMDIChild</p>
+<p>The form is an MDI parent window. This state is only set once the MDI client window has been created.</p>
+<p>fsActivated</p>
+<p>The form has received a CM_ACTIVATE message (because it received focus or the application became active) but has not yet called the Activate method to generate an OnActivate event.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>FormState</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.CustomForm.GetChildren">
+<span class="sig-name descname"><span class="pre">GetChildren</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Proc</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="delphivcl.Component.html#delphivcl.Component" title="delphivcl.Component"><span class="pre">Component</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">None</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Root</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="delphivcl.Component.html#delphivcl.Component" title="delphivcl.Component"><span class="pre">Component</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#delphivcl.CustomForm.GetChildren" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the “child” components of the form; that is, those components that return the form from their GetParentComponent method.
+The component streaming system calls GetChildren to request that the form execute a callback for every child component in the form. The callback must execute in creation order (the order the child components appear in the form file). A child component is defined as any component that returns this form from its GetParentComponent method.
+Proc is the callback to execute for every child component.
+Root specifies the top-level component (such as a form or data module) that is currently being loaded or saved.
+In TCustomForm, GetChildren first calls the inherited method, which executes Proc for every control that lists the form as its Parent. Then, if the Root parameter identifies this form, GetChildren executes Proc for every child component that does not have a Parent.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.CustomForm.GetFormImage">
+<span class="sig-name descname"><span class="pre">GetFormImage</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.CustomForm.GetFormImage" title="Link to this definition">¶</a></dt>
+<dd><p>Returns a bitmap of the form.
+Use the GetFormImage method to obtain a bitmap of the form.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.CustomForm.GlassFrame">
+<span class="sig-name descname"><span class="pre">GlassFrame</span></span><a class="headerlink" href="#delphivcl.CustomForm.GlassFrame" title="Link to this definition">¶</a></dt>
+<dd><p>Accesses the Glass Frame under Windows Vista, Windows 7, or later Windows operating systems.
+Use GlassFrame to make your forms Windows Vista or Windows 7 Aero-compatible, displaying a glass effect.
+GlassFrame is a property of a TGlassFrame object created automatically for any form.</p>
+<p>Note: The property is only available for Windows Vista or Windows 7 with Aero. Otherwise, the Glass Frame is ignored.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>GlassFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.CustomForm.HelpFile">
+<span class="sig-name descname"><span class="pre">HelpFile</span></span><a class="headerlink" href="#delphivcl.CustomForm.HelpFile" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the name of the Help file the form uses to display the Help from.
+If your form should have a Help file different from the default Help file of the application specified using the TApplication.HelpFile property of the global TApplication type object, then use the HelpFile property of the form to specify the name of the Help file the form will use to display the Help from.
+The Help system specified by TApplication.HelpSystem displays Help topics from the Help file specified by the HelpFile property of the form when the form has the focus.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.CustomForm.Hide">
+<span class="sig-name descname"><span class="pre">Hide</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.CustomForm.Hide" title="Link to this definition">¶</a></dt>
+<dd><p>Hides the form.
+Hide sets the Visible property to false.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.CustomForm.HorzScrollBar">
+<span class="sig-name descname"><span class="pre">HorzScrollBar</span></span><a class="headerlink" href="#delphivcl.CustomForm.HorzScrollBar" title="Link to this definition">¶</a></dt>
+<dd><p>ControlScrollBar:</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.CustomForm.IsShortCut">
+<span class="sig-name descname"><span class="pre">IsShortCut</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Message</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">WMKey</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#delphivcl.CustomForm.IsShortCut" title="Link to this definition">¶</a></dt>
+<dd><p>Processes shortcut keys when the form has focus.
+IsShortCut is called automatically when the user presses a key while the form has focus. It allows the form to dispatch shortcut keys and bypass the standard keystroke processing (OnKeyDown, OnKeyPress, and OnKeyUp events).
+The Message parameter encapsulates the Windows message describing the keypress. If a shortcut for the key exists, IsShortCut executes the appropriate command and returns true. Otherwise IsShortCut returns false.
+IsShortCut generates an OnShortCut event to allow the developer to insert shortcuts for the form. If the keystroke is not handled in an OnShortCut event handler, IsShortCut checks for any shortcuts associated with the form’s menus and actions.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.CustomForm.KeyPreview">
+<span class="sig-name descname"><span class="pre">KeyPreview</span></span><a class="headerlink" href="#delphivcl.CustomForm.KeyPreview" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies whether the form should receive keyboard events before the active control.
+If KeyPreview is true, keyboard events occur on the form before they occur on the active control. (The active control is specified by the ActiveControl property.)
+If KeyPreview is false, keyboard events occur only on the active control.
+Navigation keys (Tab, BackTab, the arrow keys, and so on) are unaffected by KeyPreview because they do not generate keyboard events. Similarly, when a button has focus or when its Default property is true, the Enter key is unaffected by KeyPreview because it does not generate a keyboard events.
+KeyPreview is false by default.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.CustomForm.Left">
+<span class="sig-name descname"><span class="pre">Left</span></span><a class="headerlink" href="#delphivcl.CustomForm.Left" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the horizontal coordinate of the left edge of a component relative to its parent.
+Vcl.Forms.TCustomForm.Left inherits from Vcl.Controls.TControl.Left. All content below this line refers to Vcl.Controls.TControl.Left.
+Specifies the horizontal coordinate of the left edge of a component relative to its parent.
+Use the Left property to determine where the left side of the control begins or to reposition the left side of the control.
+If the control is contained in another control, the Left and Top properties are relative to the parent control. If the control is contained directly by the form, the property values are relative to the form. For forms, the value of the Left property is relative to the screen in pixels.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.CustomForm.LoadProps">
+<span class="sig-name descname"><span class="pre">LoadProps</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.CustomForm.LoadProps" title="Link to this definition">¶</a></dt>
+<dd><p>Load properties from a .pydfm file</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.CustomForm.MakeFullyVisible">
+<span class="sig-name descname"><span class="pre">MakeFullyVisible</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">AMonitor</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="delphivcl.Monitor.html#delphivcl.Monitor" title="delphivcl.Monitor"><span class="pre">Monitor</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#delphivcl.CustomForm.MakeFullyVisible" title="Link to this definition">¶</a></dt>
+<dd><p>Ensures that the form is fully visible on a specified monitor.
+Call MakeFullyVisible to ensure that the form does not appear split over more than one monitor in a multi-monitor application.
+AMonitor is the monitor on which the form should appear. If AMonitor is nil (Delphi) or NULL (C++), MakeFullyVisible uses the Monitor property.
+MakeFullyVisible checks whether the form fits entirely on the specified monitor. If not, it repositions the form so that it fits, if possible.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.CustomForm.Menu">
+<span class="sig-name descname"><span class="pre">Menu</span></span><a class="headerlink" href="#delphivcl.CustomForm.Menu" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the form’s main menu.
+Use Menu to get or set the form’s main menu. At design time, Menu is set to the first TMainMenu component added to the form.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="delphivcl.MainMenu.html#delphivcl.MainMenu" title="delphivcl.MainMenu">MainMenu</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.CustomForm.ModalResult">
+<span class="sig-name descname"><span class="pre">ModalResult</span></span><a class="headerlink" href="#delphivcl.CustomForm.ModalResult" title="Link to this definition">¶</a></dt>
+<dd><p>Represents the return value of a form that is used as a modal dialog.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.CustomForm.Monitor">
+<span class="sig-name descname"><span class="pre">Monitor</span></span><a class="headerlink" href="#delphivcl.CustomForm.Monitor" title="Link to this definition">¶</a></dt>
+<dd><p>Provides access to the monitor on which the form appears.
+Use Monitor to access information about the monitor on which the form appears if the application runs on a multi-monitor system. The monitor is determined by the DefaultMonitor property.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="delphivcl.Monitor.html#delphivcl.Monitor" title="delphivcl.Monitor">Monitor</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.CustomForm.MouseWheelHandler">
+<span class="sig-name descname"><span class="pre">MouseWheelHandler</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Message</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Message</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#delphivcl.CustomForm.MouseWheelHandler" title="Link to this definition">¶</a></dt>
+<dd><p>Directs mouse wheel messages to the appropriate control.
+MouseWheelHandler is called automatically when the form or any windowed control contained in the form receives a message from a mouse wheel. The Message parameter encapsulates the message.
+As implemented in TCustomForm, MouseWheelHandler performs no special processing, but simply redirects the message to the active control by calling its Perform method. By default, the Perform method generates the appropriate mouse wheel events.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.CustomForm.OleFormObject">
+<span class="sig-name descname"><span class="pre">OleFormObject</span></span><a class="headerlink" href="#delphivcl.CustomForm.OleFormObject" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the IOleForm interface for an in-place OLE object contained in the form.
+OleFormObject is used to communicate resize and destroy notifications when a form is used as a frame for an in-place OLE object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>IOleForm</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.CustomForm.OnAlignInsertBefore">
+<span class="sig-name descname"><span class="pre">OnAlignInsertBefore</span></span><a class="headerlink" href="#delphivcl.CustomForm.OnAlignInsertBefore" title="Link to this definition">¶</a></dt>
+<dd><p>Callable[[WinControl, Control, Control], bool]:</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.CustomForm.OnAlignPosition">
+<span class="sig-name descname"><span class="pre">OnAlignPosition</span></span><a class="headerlink" href="#delphivcl.CustomForm.OnAlignPosition" title="Link to this definition">¶</a></dt>
+<dd><p>Callable[[WinControl, Control, int, int, int, int, Rect, AlignInfo], None]:</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.CustomForm.PopupMode">
+<span class="sig-name descname"><span class="pre">PopupMode</span></span><a class="headerlink" href="#delphivcl.CustomForm.PopupMode" title="Link to this definition">¶</a></dt>
+<dd><p>Controls how the top-level form behaves with respect to Window’s WS_POPUP style.
+The PopupMode property controls how the top-level form behaves with respect to Window’s WS_POPUP style. A window that has the WS_POPUP style is always above its “owner” in Z-order. You can use the PopupMode property in conjunction with the PopupParent property to avoid the appearance of a hung application caused by a modal dialog showing up behind another form on the screen.</p>
+<p>Note: Using the PopupMode property is similar to specifying fsStayOnTop for the FormStyle property, but allows better control over the layering.
+The PopupMode property is automatically set to pmAuto when the ShowModal method is called. However, this causes the window handle to be recreated, which is not usually desirable. To avoid the re-creation of window handles, you can explicitly set the PopupMode property to pmAuto prior to calling the ShowModal method (such as at design time).
+Set the PopupMode property to pmExplicit for non-modal design windows such as tool palettes and other floating tool windows. This causes the windows to always remain on top of the main form. In the case of a snapped together design (in which the window is docked to the main form), the design window remains on top of the designer.</p>
+<p>Note: For undocked windows, the design window remains above the main form, allowing other top-level forms to obscure the design window.
+Set the PopupMode property to pmNone if you want the pop-up window to have the pre-Delphi 8 behavior (except for the ShowModal item mentioned above).
+You can force the Z-Ordering of your forms and create a “stacked” appearance that the user cannot change by setting the PopupParent property to an explicit TCustomForm. If the PopupMode property is pmExplicit and PopupParent is nil, then the Application.MainForm is implicitly used as the PopupParent. If no Application.MainForm is assigned, then Application.Handle is used as the PopupParent. If the PopupMode property is set to pmAuto, Screen.ActiveForm is used as the PopupParent.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>PopupMode</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.CustomForm.PopupParent">
+<span class="sig-name descname"><span class="pre">PopupParent</span></span><a class="headerlink" href="#delphivcl.CustomForm.PopupParent" title="Link to this definition">¶</a></dt>
+<dd><p>Sets an order for stacked forms that users cannot change.
+If the PopupMode property is set to pmExplicit and PopupParent is nil, then the Application.MainForm is implicitly used as the PopupParent. If no Application.MainForm is assigned, then Application.Handle is used as the PopupParent.
+If the PopupMode property is set to pmAuto, Screen.ActiveForm is used as the PopupParent property.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="#delphivcl.CustomForm" title="delphivcl.CustomForm">CustomForm</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.CustomForm.Print">
+<span class="sig-name descname"><span class="pre">Print</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.CustomForm.Print" title="Link to this definition">¶</a></dt>
+<dd><p>Prints the form.
+Call Print to print the form. Print uses the GetFormImage method to obtain a bitmap of the form and draws that to the printer’s HDC.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.CustomForm.RecreateAsPopup">
+<span class="sig-name descname"><span class="pre">RecreateAsPopup</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">AWindowHandle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#delphivcl.CustomForm.RecreateAsPopup" title="Link to this definition">¶</a></dt>
+<dd><p>Embarcadero Technologies does not currently have any additional information.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.CustomForm.Release">
+<span class="sig-name descname"><span class="pre">Release</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.CustomForm.Release" title="Link to this definition">¶</a></dt>
+<dd><p>Releases (destroys) the wrapped Form</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.CustomForm.RoundedCorners">
+<span class="sig-name descname"><span class="pre">RoundedCorners</span></span><a class="headerlink" href="#delphivcl.CustomForm.RoundedCorners" title="Link to this definition">¶</a></dt>
+<dd><p>RoundedCornerType:</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.CustomForm.ScaleForCurrentDPI">
+<span class="sig-name descname"><span class="pre">ScaleForCurrentDPI</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ForceScaling</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#delphivcl.CustomForm.ScaleForCurrentDPI" title="Link to this definition">¶</a></dt>
+<dd><p>Checks if there is a change in Dpi and performs the necessary changes to scale all the controls for the new Dpi.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.CustomForm.ScaleForPPI">
+<span class="sig-name descname"><span class="pre">ScaleForPPI</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">NewPPI</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#delphivcl.CustomForm.ScaleForPPI" title="Link to this definition">¶</a></dt>
+<dd><p>Embarcadero Technologies does not currently have any additional information.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.CustomForm.Scaled">
+<span class="sig-name descname"><span class="pre">Scaled</span></span><a class="headerlink" href="#delphivcl.CustomForm.Scaled" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies whether the form is sized according to the value of the PixelsPerInch property.
+Scaled determines whether the form adjusts itself to differences between the font used at design time and the current system font used by a system at runtime. If Scaled is true, the form resizes itself and all its child controls to maintain the relationship between the size of controls and the height of text displayed in the default font. If Scaled is false, no such resizing occurs.
+By setting Scaled to true, the form can adjust to fonts that are not scalable (that is, fonts that only supply discrete point sizes) or to differences such as forms designed using small fonts at design time that are run on systems that use large fonts.
+The degree of resizing is determined by the PixelsPerInch property, which measures the proportion of the font on the system used when designing the form.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.CustomForm.ScreenSnap">
+<span class="sig-name descname"><span class="pre">ScreenSnap</span></span><a class="headerlink" href="#delphivcl.CustomForm.ScreenSnap" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies whether form snaps to edge of screen.
+ScreenSnap determines whether the edges of the form snap to the edge of the screen when the user moves the form. To control the snap distance, set the SnapBuffer property.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.CustomForm.ScrollInView">
+<span class="sig-name descname"><span class="pre">ScrollInView</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">AControl</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="delphivcl.Control.html#delphivcl.Control" title="delphivcl.Control"><span class="pre">Control</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#delphivcl.CustomForm.ScrollInView" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.CustomForm.SendCancelMode">
+<span class="sig-name descname"><span class="pre">SendCancelMode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sender</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="delphivcl.Control.html#delphivcl.Control" title="delphivcl.Control"><span class="pre">Control</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#delphivcl.CustomForm.SendCancelMode" title="Link to this definition">¶</a></dt>
+<dd><p>Cancels modes on the form.
+Use SendCancelMode to release the mouse capture and cancel scroll bar input and menu processing on the form.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.CustomForm.SetFocus">
+<span class="sig-name descname"><span class="pre">SetFocus</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.CustomForm.SetFocus" title="Link to this definition">¶</a></dt>
+<dd><p>Sets focus to the form.
+Use SetFocus to give the form input focus. SetFocus calls the SetFocus method of the active control, if one exists. To determine whether the form has focus, use the Active property.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.CustomForm.SetFocusedControl">
+<span class="sig-name descname"><span class="pre">SetFocusedControl</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Control</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="delphivcl.WinControl.html#delphivcl.WinControl" title="delphivcl.WinControl"><span class="pre">WinControl</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#delphivcl.CustomForm.SetFocusedControl" title="Link to this definition">¶</a></dt>
+<dd><p>Sets focus to a control on the form.
+Use SetFocusedControl to give a control on the form input focus. SetFocusedControl returns false if the Control specified by the Control parameter was already in the process of receiving focus, true otherwise.</p>
+<p>Note:  A return value of true does not indicate the control has successfully received input focus. If the Control can’t have focus (for example, if it is not visible), SetFocusedControl will still return true, indicating that an attempt was made.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.CustomForm.Show">
+<span class="sig-name descname"><span class="pre">Show</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.CustomForm.Show" title="Link to this definition">¶</a></dt>
+<dd><p>Shows the form.
+Use Show to set the form’s Visible property to true and to bring the form to the front of other forms on the screen.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.CustomForm.ShowModal">
+<span class="sig-name descname"><span class="pre">ShowModal</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.CustomForm.ShowModal" title="Link to this definition">¶</a></dt>
+<dd><p>Shows the wrapped Form as a modal form</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.CustomForm.SnapBuffer">
+<span class="sig-name descname"><span class="pre">SnapBuffer</span></span><a class="headerlink" href="#delphivcl.CustomForm.SnapBuffer" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies distance for screen snap.
+If ScreenSnap is true, SnapBuffer determines the maximum number of pixels that be between the form edge and the screen edge before the form snaps to the screen edge.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.CustomForm.TaskbarHandler">
+<span class="sig-name descname"><span class="pre">TaskbarHandler</span></span><a class="headerlink" href="#delphivcl.CustomForm.TaskbarHandler" title="Link to this definition">¶</a></dt>
+<dd><p>Embarcadero Technologies does not currently have any additional information.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>TaskbarHandler</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.CustomForm.Top">
+<span class="sig-name descname"><span class="pre">Top</span></span><a class="headerlink" href="#delphivcl.CustomForm.Top" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the Y coordinate of the upper-left corner of a control, relative to its parent or containing control in pixels.
+Vcl.Forms.TCustomForm.Top inherits from Vcl.Controls.TControl.Top. All content below this line refers to Vcl.Controls.TControl.Top.
+Specifies the Y coordinate of the upper-left corner of a control, relative to its parent or containing control in pixels.
+Use Top to locate the top of the control or reposition the control to a different Y coordinate. The Top property, like the Left property, is the position of the control relative to its container. Thus, if a control is contained in a TPanel, the Left and Top properties are relative to the panel. If the control is contained directly by the form, it is relative to the form. For forms, the value of the Top property is relative to the screen in pixels.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.CustomForm.UpdateDesignerCaption">
+<span class="sig-name descname"><span class="pre">UpdateDesignerCaption</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">AVisible</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">AUpdateFrame</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#delphivcl.CustomForm.UpdateDesignerCaption" title="Link to this definition">¶</a></dt>
+<dd><p>Embarcadero Technologies does not currently have any additional information.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.CustomForm.VertScrollBar">
+<span class="sig-name descname"><span class="pre">VertScrollBar</span></span><a class="headerlink" href="#delphivcl.CustomForm.VertScrollBar" title="Link to this definition">¶</a></dt>
+<dd><p>ControlScrollBar:</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.CustomForm.WantChildKey">
+<span class="sig-name descname"><span class="pre">WantChildKey</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Child</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="delphivcl.Control.html#delphivcl.Control" title="delphivcl.Control"><span class="pre">Control</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">Message</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Message</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#delphivcl.CustomForm.WantChildKey" title="Link to this definition">¶</a></dt>
+<dd><p>Indicates whether the form processes keyboard input for a control it owns.
+WantChildKey is called by any control that the form owns when the control receives keyboard input. If WantChildKey returns true, the control performs no further processing in response to the keyboard input, instead deferring to its parent form to respond to the keystroke. In its default implementation, WantChildKey always returns false; it is overridden in TActiveForm to implement certain ActiveX functionality.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.CustomForm.WindowState">
+<span class="sig-name descname"><span class="pre">WindowState</span></span><a class="headerlink" href="#delphivcl.CustomForm.WindowState" title="Link to this definition">¶</a></dt>
+<dd><p>Represents how the form appears on the screen.
+Set WindowState to minimize, maximize, or restore the form window. Read WindowState to determine whether the form is minimized, maximized, or in a normal state.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>WindowState</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.CustomForm.set_PopupParent">
+<span class="sig-name descname"><span class="pre">set_PopupParent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#delphivcl.CustomForm" title="delphivcl.CustomForm"><span class="pre">CustomForm</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#delphivcl.CustomForm.set_PopupParent" title="Link to this definition">¶</a></dt>
+<dd><p>Embarcadero Technologies does not currently have any additional information.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="delphivcl.CustomStatusBar.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">CustomStatusBar</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="delphivcl.CustomEdit.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">CustomEdit</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2020-2023, Embarcadero Python Dev Team
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">CustomForm</a><ul>
+<li><a class="reference internal" href="#delphivcl.CustomForm"><code class="docutils literal notranslate"><span class="pre">CustomForm</span></code></a><ul>
+<li><a class="reference internal" href="#delphivcl.CustomForm.Action"><code class="docutils literal notranslate"><span class="pre">CustomForm.Action</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomForm.Active"><code class="docutils literal notranslate"><span class="pre">CustomForm.Active</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomForm.ActiveControl"><code class="docutils literal notranslate"><span class="pre">CustomForm.ActiveControl</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomForm.ActiveOleControl"><code class="docutils literal notranslate"><span class="pre">CustomForm.ActiveOleControl</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomForm.AfterConstruction"><code class="docutils literal notranslate"><span class="pre">CustomForm.AfterConstruction()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomForm.BeforeDestruction"><code class="docutils literal notranslate"><span class="pre">CustomForm.BeforeDestruction()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomForm.BorderStyle"><code class="docutils literal notranslate"><span class="pre">CustomForm.BorderStyle</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomForm.Canvas"><code class="docutils literal notranslate"><span class="pre">CustomForm.Canvas</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomForm.Caption"><code class="docutils literal notranslate"><span class="pre">CustomForm.Caption</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomForm.Close"><code class="docutils literal notranslate"><span class="pre">CustomForm.Close()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomForm.CloseQuery"><code class="docutils literal notranslate"><span class="pre">CustomForm.CloseQuery()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomForm.Color"><code class="docutils literal notranslate"><span class="pre">CustomForm.Color</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomForm.CustomTitleBar"><code class="docutils literal notranslate"><span class="pre">CustomForm.CustomTitleBar</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomForm.DefaultHandler"><code class="docutils literal notranslate"><span class="pre">CustomForm.DefaultHandler()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomForm.DefocusControl"><code class="docutils literal notranslate"><span class="pre">CustomForm.DefocusControl()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomForm.Designer"><code class="docutils literal notranslate"><span class="pre">CustomForm.Designer</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomForm.DisableAutoRange"><code class="docutils literal notranslate"><span class="pre">CustomForm.DisableAutoRange()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomForm.Dock"><code class="docutils literal notranslate"><span class="pre">CustomForm.Dock()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomForm.DropTarget"><code class="docutils literal notranslate"><span class="pre">CustomForm.DropTarget</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomForm.EnableAutoRange"><code class="docutils literal notranslate"><span class="pre">CustomForm.EnableAutoRange()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomForm.EnableImmersiveDarkMode"><code class="docutils literal notranslate"><span class="pre">CustomForm.EnableImmersiveDarkMode()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomForm.FocusControl"><code class="docutils literal notranslate"><span class="pre">CustomForm.FocusControl()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomForm.Font"><code class="docutils literal notranslate"><span class="pre">CustomForm.Font</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomForm.FormState"><code class="docutils literal notranslate"><span class="pre">CustomForm.FormState</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomForm.GetChildren"><code class="docutils literal notranslate"><span class="pre">CustomForm.GetChildren()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomForm.GetFormImage"><code class="docutils literal notranslate"><span class="pre">CustomForm.GetFormImage()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomForm.GlassFrame"><code class="docutils literal notranslate"><span class="pre">CustomForm.GlassFrame</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomForm.HelpFile"><code class="docutils literal notranslate"><span class="pre">CustomForm.HelpFile</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomForm.Hide"><code class="docutils literal notranslate"><span class="pre">CustomForm.Hide()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomForm.HorzScrollBar"><code class="docutils literal notranslate"><span class="pre">CustomForm.HorzScrollBar</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomForm.IsShortCut"><code class="docutils literal notranslate"><span class="pre">CustomForm.IsShortCut()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomForm.KeyPreview"><code class="docutils literal notranslate"><span class="pre">CustomForm.KeyPreview</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomForm.Left"><code class="docutils literal notranslate"><span class="pre">CustomForm.Left</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomForm.LoadProps"><code class="docutils literal notranslate"><span class="pre">CustomForm.LoadProps()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomForm.MakeFullyVisible"><code class="docutils literal notranslate"><span class="pre">CustomForm.MakeFullyVisible()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomForm.Menu"><code class="docutils literal notranslate"><span class="pre">CustomForm.Menu</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomForm.ModalResult"><code class="docutils literal notranslate"><span class="pre">CustomForm.ModalResult</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomForm.Monitor"><code class="docutils literal notranslate"><span class="pre">CustomForm.Monitor</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomForm.MouseWheelHandler"><code class="docutils literal notranslate"><span class="pre">CustomForm.MouseWheelHandler()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomForm.OleFormObject"><code class="docutils literal notranslate"><span class="pre">CustomForm.OleFormObject</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomForm.OnAlignInsertBefore"><code class="docutils literal notranslate"><span class="pre">CustomForm.OnAlignInsertBefore</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomForm.OnAlignPosition"><code class="docutils literal notranslate"><span class="pre">CustomForm.OnAlignPosition</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomForm.PopupMode"><code class="docutils literal notranslate"><span class="pre">CustomForm.PopupMode</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomForm.PopupParent"><code class="docutils literal notranslate"><span class="pre">CustomForm.PopupParent</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomForm.Print"><code class="docutils literal notranslate"><span class="pre">CustomForm.Print()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomForm.RecreateAsPopup"><code class="docutils literal notranslate"><span class="pre">CustomForm.RecreateAsPopup()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomForm.Release"><code class="docutils literal notranslate"><span class="pre">CustomForm.Release()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomForm.RoundedCorners"><code class="docutils literal notranslate"><span class="pre">CustomForm.RoundedCorners</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomForm.ScaleForCurrentDPI"><code class="docutils literal notranslate"><span class="pre">CustomForm.ScaleForCurrentDPI()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomForm.ScaleForPPI"><code class="docutils literal notranslate"><span class="pre">CustomForm.ScaleForPPI()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomForm.Scaled"><code class="docutils literal notranslate"><span class="pre">CustomForm.Scaled</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomForm.ScreenSnap"><code class="docutils literal notranslate"><span class="pre">CustomForm.ScreenSnap</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomForm.ScrollInView"><code class="docutils literal notranslate"><span class="pre">CustomForm.ScrollInView()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomForm.SendCancelMode"><code class="docutils literal notranslate"><span class="pre">CustomForm.SendCancelMode()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomForm.SetFocus"><code class="docutils literal notranslate"><span class="pre">CustomForm.SetFocus()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomForm.SetFocusedControl"><code class="docutils literal notranslate"><span class="pre">CustomForm.SetFocusedControl()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomForm.Show"><code class="docutils literal notranslate"><span class="pre">CustomForm.Show()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomForm.ShowModal"><code class="docutils literal notranslate"><span class="pre">CustomForm.ShowModal()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomForm.SnapBuffer"><code class="docutils literal notranslate"><span class="pre">CustomForm.SnapBuffer</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomForm.TaskbarHandler"><code class="docutils literal notranslate"><span class="pre">CustomForm.TaskbarHandler</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomForm.Top"><code class="docutils literal notranslate"><span class="pre">CustomForm.Top</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomForm.UpdateDesignerCaption"><code class="docutils literal notranslate"><span class="pre">CustomForm.UpdateDesignerCaption()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomForm.VertScrollBar"><code class="docutils literal notranslate"><span class="pre">CustomForm.VertScrollBar</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomForm.WantChildKey"><code class="docutils literal notranslate"><span class="pre">CustomForm.WantChildKey()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomForm.WindowState"><code class="docutils literal notranslate"><span class="pre">CustomForm.WindowState</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomForm.set_PopupParent"><code class="docutils literal notranslate"><span class="pre">CustomForm.set_PopupParent()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script src="../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/scripts/furo.js?v=5fa4622c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/responsiveSvg.js?v=f1528c9d"></script>
+    </body>
+</html>

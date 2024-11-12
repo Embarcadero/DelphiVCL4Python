@@ -1,0 +1,148 @@
+﻿ToggleSwitch
+============
+
+Qualified name: ``delphivcl.ToggleSwitch``
+
+.. currentmodule:: delphivcl
+
+.. autoclass:: ToggleSwitch
+   :show-inheritance:
+   :members:
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+      
+      ~ToggleSwitch.BringToFront
+      ~ToggleSwitch.ClientToScreen
+      ~ToggleSwitch.Hide
+      ~ToggleSwitch.Invalidate
+      ~ToggleSwitch.Repaint
+      ~ToggleSwitch.ScreenToClient
+      ~ToggleSwitch.SendToBack
+      ~ToggleSwitch.SetBounds
+      ~ToggleSwitch.Show
+      ~ToggleSwitch.Update
+
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+     
+     ~ToggleSwitch.Action
+     ~ToggleSwitch.Align
+     ~ToggleSwitch.AlignDisabled
+     ~ToggleSwitch.AlignWithMargins
+     ~ToggleSwitch.Alignment
+     ~ToggleSwitch.Anchors
+     ~ToggleSwitch.AutoSize
+     ~ToggleSwitch.BiDiMode
+     ~ToggleSwitch.BoundsRect
+     ~ToggleSwitch.Brush
+     ~ToggleSwitch.ClassName
+     ~ToggleSwitch.ClientHeight
+     ~ToggleSwitch.ClientOrigin
+     ~ToggleSwitch.ClientRect
+     ~ToggleSwitch.ClientWidth
+     ~ToggleSwitch.Color
+     ~ToggleSwitch.ComObject
+     ~ToggleSwitch.ComponentCount
+     ~ToggleSwitch.ComponentIndex
+     ~ToggleSwitch.ComponentState
+     ~ToggleSwitch.ComponentStyle
+     ~ToggleSwitch.Components
+     ~ToggleSwitch.Constraints
+     ~ToggleSwitch.ControlCount
+     ~ToggleSwitch.ControlState
+     ~ToggleSwitch.ControlStyle
+     ~ToggleSwitch.Controls
+     ~ToggleSwitch.CurrentPPI
+     ~ToggleSwitch.Cursor
+     ~ToggleSwitch.CustomHint
+     ~ToggleSwitch.DesignInfo
+     ~ToggleSwitch.DisabledColor
+     ~ToggleSwitch.DockClientCount
+     ~ToggleSwitch.DockClients
+     ~ToggleSwitch.DockManager
+     ~ToggleSwitch.DockOrientation
+     ~ToggleSwitch.DockSite
+     ~ToggleSwitch.DoubleBuffered
+     ~ToggleSwitch.DoubleBufferedMode
+     ~ToggleSwitch.DragCursor
+     ~ToggleSwitch.DragKind
+     ~ToggleSwitch.DragMode
+     ~ToggleSwitch.Enabled
+     ~ToggleSwitch.ExplicitHeight
+     ~ToggleSwitch.ExplicitLeft
+     ~ToggleSwitch.ExplicitTop
+     ~ToggleSwitch.ExplicitWidth
+     ~ToggleSwitch.Floating
+     ~ToggleSwitch.FloatingDockSiteClass
+     ~ToggleSwitch.Focused
+     ~ToggleSwitch.Font
+     ~ToggleSwitch.FrameColor
+     ~ToggleSwitch.Handle
+     ~ToggleSwitch.HandleAllocated
+     ~ToggleSwitch.Height
+     ~ToggleSwitch.HelpContext
+     ~ToggleSwitch.HelpKeyword
+     ~ToggleSwitch.HelpType
+     ~ToggleSwitch.Hint
+     ~ToggleSwitch.HostDockSite
+     ~ToggleSwitch.IsDrawingLocked
+     ~ToggleSwitch.LRDockWidth
+     ~ToggleSwitch.Left
+     ~ToggleSwitch.Margins
+     ~ToggleSwitch.MouseInClient
+     ~ToggleSwitch.Name
+     ~ToggleSwitch.Observers
+     ~ToggleSwitch.OnDragDrop
+     ~ToggleSwitch.OnDragOver
+     ~ToggleSwitch.OnEndDock
+     ~ToggleSwitch.OnEndDrag
+     ~ToggleSwitch.OnMouseActivate
+     ~ToggleSwitch.OnStartDock
+     ~ToggleSwitch.OnStartDrag
+     ~ToggleSwitch.Owner
+     ~ToggleSwitch.Padding
+     ~ToggleSwitch.Parent
+     ~ToggleSwitch.ParentBiDiMode
+     ~ToggleSwitch.ParentColor
+     ~ToggleSwitch.ParentCtl3D
+     ~ToggleSwitch.ParentCustomHint
+     ~ToggleSwitch.ParentDoubleBuffered
+     ~ToggleSwitch.ParentFont
+     ~ToggleSwitch.ParentShowHint
+     ~ToggleSwitch.ParentWindow
+     ~ToggleSwitch.PixelsPerInch
+     ~ToggleSwitch.PopupMenu
+     ~ToggleSwitch.ReadOnly
+     ~ToggleSwitch.RedrawDisabled
+     ~ToggleSwitch.ScaleFactor
+     ~ToggleSwitch.ShowHint
+     ~ToggleSwitch.ShowStateCaption
+     ~ToggleSwitch.Showing
+     ~ToggleSwitch.State
+     ~ToggleSwitch.StateCaptions
+     ~ToggleSwitch.StyleElements
+     ~ToggleSwitch.StyleName
+     ~ToggleSwitch.SwitchHeight
+     ~ToggleSwitch.SwitchWidth
+     ~ToggleSwitch.TBDockHeight
+     ~ToggleSwitch.TabOrder
+     ~ToggleSwitch.TabStop
+     ~ToggleSwitch.Tag
+     ~ToggleSwitch.ThumbColor
+     ~ToggleSwitch.ThumbWidth
+     ~ToggleSwitch.Top
+     ~ToggleSwitch.Touch
+     ~ToggleSwitch.UndockHeight
+     ~ToggleSwitch.UndockWidth
+     ~ToggleSwitch.UseDockManager
+     ~ToggleSwitch.VCLComObject
+     ~ToggleSwitch.Visible
+     ~ToggleSwitch.VisibleDockClientCount
+     ~ToggleSwitch.Width
+   

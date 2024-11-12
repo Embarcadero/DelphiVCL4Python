@@ -1,0 +1,57 @@
+﻿FileOpenDialog
+==============
+
+Qualified name: ``delphivcl.FileOpenDialog``
+
+.. currentmodule:: delphivcl
+
+.. autoclass:: FileOpenDialog
+   :show-inheritance:
+   :members:
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+      
+      ~FileOpenDialog.Execute
+
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+     
+     ~FileOpenDialog.ClassName
+     ~FileOpenDialog.ClientGuid
+     ~FileOpenDialog.ComObject
+     ~FileOpenDialog.ComponentCount
+     ~FileOpenDialog.ComponentIndex
+     ~FileOpenDialog.ComponentState
+     ~FileOpenDialog.ComponentStyle
+     ~FileOpenDialog.Components
+     ~FileOpenDialog.DefaultExtension
+     ~FileOpenDialog.DefaultFolder
+     ~FileOpenDialog.DesignInfo
+     ~FileOpenDialog.Dialog
+     ~FileOpenDialog.FavoriteLinks
+     ~FileOpenDialog.FileName
+     ~FileOpenDialog.FileNameLabel
+     ~FileOpenDialog.FileTypeIndex
+     ~FileOpenDialog.FileTypes
+     ~FileOpenDialog.Files
+     ~FileOpenDialog.Handle
+     ~FileOpenDialog.Name
+     ~FileOpenDialog.Observers
+     ~FileOpenDialog.OkButtonLabel
+     ~FileOpenDialog.OnFileOkClick
+     ~FileOpenDialog.OnFolderChanging
+     ~FileOpenDialog.OnShareViolation
+     ~FileOpenDialog.Options
+     ~FileOpenDialog.Owner
+     ~FileOpenDialog.ShellItem
+     ~FileOpenDialog.ShellItems
+     ~FileOpenDialog.Tag
+     ~FileOpenDialog.Title
+     ~FileOpenDialog.VCLComObject
+   

@@ -1,0 +1,1875 @@
+<!doctype html>
+<html class="no-js" lang="en" data-content_root="../">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="MediaPlayer" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://github.com/Embarcadero/reference/delphivcl.MediaPlayer.html" />
+<meta property="og:site_name" content="DelphiVCL | Documentation" />
+<meta property="og:description" content="Qualified name: delphivcl.MediaPlayer" />
+<meta property="og:image" content="https://github.com/Embarcadero/DelphiVCL4Python/blob/main/images/DelphiVCL4Python(256px).png" />
+<meta property="og:image:alt" content="DelphiVCL | Documentation" />
+<meta name="description" content="Qualified name: delphivcl.MediaPlayer" />
+<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="CustomToggleSwitch" href="delphivcl.CustomToggleSwitch.html" /><link rel="prev" title="ActionList" href="delphivcl.ActionList.html" />
+
+    <link rel="shortcut icon" href="../_static/favicon.ico"/><!-- Generated with Sphinx 8.1.3 and Furo 2024.08.06 -->
+        <title>MediaPlayer - DelphiVCL Documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=354aac6f" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=4ae1632d" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?v=302659d7" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=93c9b8cc" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  --color-content-foreground: #000000;
+  --color-background-primary: #ffffff;
+  --color-background-border: #ffffff;
+  --color-sidebar-background: #f8f9fb;
+  --color-brand-content: #1c00e3;
+  --color-brand-primary: #192bd0;
+  --color-link: #c93434;
+  --color-link--hover: #5b0000;
+  --color-inline-code-background: #f6f6f6;;
+  --color-foreground-secondary: #000;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  --color-content-foreground: #ffffffd9;
+  --color-background-primary: #131416;
+  --color-background-border: #303335;
+  --color-sidebar-background: #1a1c1e;
+  --color-brand-content: #2196f3;
+  --color-brand-primary: #007fff;
+  --color-link: #51ba86;
+  --color-link--hover: #9cefc6;
+  --color-inline-code-background: #262626;
+  --color-foreground-secondary: #ffffffd9;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  --color-content-foreground: #ffffffd9;
+  --color-background-primary: #131416;
+  --color-background-border: #303335;
+  --color-sidebar-background: #1a1c1e;
+  --color-brand-content: #2196f3;
+  --color-brand-primary: #007fff;
+  --color-link: #51ba86;
+  --color-link--hover: #9cefc6;
+  --color-inline-code-background: #262626;
+  --color-foreground-secondary: #ffffffd9;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-with-moon" viewBox="0 0 24 24">
+    <title>Auto light/dark, in light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path style="opacity: 50%" d="M 5.411 14.504 C 5.471 14.504 5.532 14.504 5.591 14.504 C 3.639 16.319 4.383 19.569 6.931 20.352 C 7.693 20.586 8.512 20.551 9.25 20.252 C 8.023 23.207 4.056 23.725 2.11 21.184 C 0.166 18.642 1.702 14.949 4.874 14.536 C 5.051 14.512 5.231 14.5 5.411 14.5 L 5.411 14.504 Z"/>
+      <line x1="14.5" y1="3.25" x2="14.5" y2="1.25"/>
+      <line x1="14.5" y1="15.85" x2="14.5" y2="17.85"/>
+      <line x1="10.044" y1="5.094" x2="8.63" y2="3.68"/>
+      <line x1="19" y1="14.05" x2="20.414" y2="15.464"/>
+      <line x1="8.2" y1="9.55" x2="6.2" y2="9.55"/>
+      <line x1="20.8" y1="9.55" x2="22.8" y2="9.55"/>
+      <line x1="10.044" y1="14.006" x2="8.63" y2="15.42"/>
+      <line x1="19" y1="5.05" x2="20.414" y2="3.636"/>
+      <circle cx="14.5" cy="9.55" r="3.6"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon-with-sun" viewBox="0 0 24 24">
+    <title>Auto light/dark, in dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path d="M 8.282 7.007 C 8.385 7.007 8.494 7.007 8.595 7.007 C 5.18 10.184 6.481 15.869 10.942 17.24 C 12.275 17.648 13.706 17.589 15 17.066 C 12.851 22.236 5.91 23.143 2.505 18.696 C -0.897 14.249 1.791 7.786 7.342 7.063 C 7.652 7.021 7.965 7 8.282 7 L 8.282 7.007 Z"/>
+      <line style="opacity: 50%" x1="18" y1="3.705" x2="18" y2="2.5"/>
+      <line style="opacity: 50%" x1="18" y1="11.295" x2="18" y2="12.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="4.816" x2="14.464" y2="3.964"/>
+      <line style="opacity: 50%" x1="20.711" y1="10.212" x2="21.563" y2="11.063"/>
+      <line style="opacity: 50%" x1="14.205" y1="7.5" x2="13.001" y2="7.5"/>
+      <line style="opacity: 50%" x1="21.795" y1="7.5" x2="23" y2="7.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="10.184" x2="14.464" y2="11.036"/>
+      <line style="opacity: 50%" x1="20.711" y1="4.789" x2="21.563" y2="3.937"/>
+      <circle style="opacity: 50%" cx="18" cy="7.5" r="2.169"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-pencil" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-pencil-code">
+      <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+      <path d="M13.5 6.5l4 4" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+  <symbol id="svg-eye" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-eye-code">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+      <path
+        d="M11.11 17.958c-3.209 -.307 -5.91 -2.293 -8.11 -5.958c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6c-.21 .352 -.427 .688 -.647 1.008" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+<a class="skip-to-content muted-link" href="#furo-main-content">Skip to content</a>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../index.html"><div class="brand">DelphiVCL Documentation</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+          <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../index.html">
+  
+  <div class="sidebar-logo-container">
+    <img class="sidebar-logo only-light" src="../_static/DelphiVCL4Python-sidebar.svg" alt="Light Logo"/>
+    <img class="sidebar-logo only-dark" src="../_static/DelphiVCL4Python-sidebar-dark.svg" alt="Dark Logo"/>
+  </div>
+  
+  <span class="sidebar-brand-text">DelphiVCL Documentation</span>
+  
+</a><form class="sidebar-search-container" method="get" action="../search.html" role="search">
+  <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../tutorials_guides.html">Tutorials &amp; Guides</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of Tutorials &amp; Guides</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../quickstart.html">Quickstart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples.html">Example Gallery</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq.html">Frequently Asked Questions</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current has-children"><a class="reference internal" href="../reference.html">Reference Manual</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle navigation of Reference Manual</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l2 current has-children"><a class="reference internal" href="../reference_index/delphivcl_classes.html">DelphiVCL</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle navigation of DelphiVCL</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Object.html">Object</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.StyleManager.html">StyleManager</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Stream.html">Stream</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Monitor.html">Monitor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomStyleServices.html">CustomStyleServices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Persistent.html">Persistent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Strings.html">Strings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Picture.html">Picture</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Collection.html">Collection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Canvas.html">Canvas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Graphic.html">Graphic</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Bitmap.html">Bitmap</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Icon.html">Icon</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Metafile.html">Metafile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Component.html">Component</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Timer.html">Timer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.OpenDialog.html">OpenDialog</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.MenuItem.html">MenuItem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Menu.html">Menu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.FileOpenDialog.html">FileOpenDialog</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ContainedActionList.html">ContainedActionList</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Control.html">Control</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomBindingsList.html">CustomBindingsList</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BasicBindComponent.html">BasicBindComponent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BasicAction.html">BasicAction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BaseBindScopeComponent.html">BaseBindScopeComponent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BaseLinkingBindSource.html">BaseLinkingBindSource</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ContainedAction.html">ContainedAction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BindingsList.html">BindingsList</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BoundLabel.html">BoundLabel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomControl.html">CustomControl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Label.html">Label</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.WinControl.html">WinControl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomActionList.html">CustomActionList</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.MainMenu.html">MainMenu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.PopupMenu.html">PopupMenu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.SaveDialog.html">SaveDialog</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ActionList.html">ActionList</a></li>
+<li class="toctree-l3 current current-page"><a class="current reference internal" href="#">MediaPlayer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomToggleSwitch.html">CustomToggleSwitch</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomActivityIndicator.html">CustomActivityIndicator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomAction.html">CustomAction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Action.html">Action</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BaseObjectBindSource.html">BaseObjectBindSource</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomPrototypeBindSource.html">CustomPrototypeBindSource</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ActivityIndicator.html">ActivityIndicator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ToggleSwitch.html">ToggleSwitch</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.PrototypeBindSource.html">PrototypeBindSource</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ContainedBindComponent.html">ContainedBindComponent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BindComponentDelegate.html">BindComponentDelegate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.LinkPropertyToFieldDelegate.html">LinkPropertyToFieldDelegate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.LinkControlDelegate.html">LinkControlDelegate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomLinkPropertyToField.html">CustomLinkPropertyToField</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.LinkControlToFieldDelegate.html">LinkControlToFieldDelegate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.LinkPropertyToField.html">LinkPropertyToField</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomLinkControlToField.html">CustomLinkControlToField</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomLinkListControlToField.html">CustomLinkListControlToField</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.LinkControlToField.html">LinkControlToField</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.LinkListControlToField.html">LinkListControlToField</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BitBtn.html">BitBtn</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Button.html">Button</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CheckBox.html">CheckBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ColorBox.html">ColorBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ComboBox.html">ComboBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ControlBar.html">ControlBar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomGrid.html">CustomGrid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomEdit.html">CustomEdit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomForm.html">CustomForm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomStatusBar.html">CustomStatusBar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomTabControl.html">CustomTabControl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.DateTimePicker.html">DateTimePicker</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.GroupBox.html">GroupBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Header.html">Header</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.LabeledEdit.html">LabeledEdit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ListBox.html">ListBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Notebook.html">Notebook</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Page.html">Page</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.PageControl.html">PageControl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Panel.html">Panel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.RadioButton.html">RadioButton</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.RadioGroup.html">RadioGroup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ScrollBar.html">ScrollBar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.SpinButton.html">SpinButton</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.StaticText.html">StaticText</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.TabSheet.html">TabSheet</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ToolBar.html">ToolBar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.TrackBar.html">TrackBar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomDrawGrid.html">CustomDrawGrid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomMemo.html">CustomMemo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomNumberBox.html">CustomNumberBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Edit.html">Edit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.SpinEdit.html">SpinEdit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Form.html">Form</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.StatusBar.html">StatusBar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.TabControl.html">TabControl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.DrawGrid.html">DrawGrid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Memo.html">Memo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.NumberBox.html">NumberBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.StringGrid.html">StringGrid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomMemoryStream.html">CustomMemoryStream</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.HandleStream.html">HandleStream</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.MemoryStream.html">MemoryStream</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ResourceStream.html">ResourceStream</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.FileStream.html">FileStream</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BytesStream.html">BytesStream</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BufferedFileStream.html">BufferedFileStream</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.StringStream.html">StringStream</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../changelog.html">Changelog</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle navigation of Changelog</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../changelog/0.1.40-changelog.html">v0.1.40</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../changelog/1.0.0-changelog.html">v1.0.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../changelog/1.0.1-changelog.html">v1.0.1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../changelog/1.0.2-changelog.html">v1.0.2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../changelog/1.0.3-changelog.html">v1.0.3</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing.html">Contributing</a></li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+              <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role="main" id="furo-main-content">
+          <section id="mediaplayer">
+<h1>MediaPlayer<a class="headerlink" href="#mediaplayer" title="Link to this heading">¶</a></h1>
+<p>Qualified name: <code class="docutils literal notranslate"><span class="pre">delphivcl.MediaPlayer</span></code></p>
+<dl class="py class">
+<dt class="sig sig-object py" id="delphivcl.MediaPlayer">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MediaPlayer</span></span><a class="headerlink" href="#delphivcl.MediaPlayer" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="delphivcl.CustomControl.html#delphivcl.CustomControl" title="delphivcl.CustomControl"><code class="xref py py-class docutils literal notranslate"><span class="pre">CustomControl</span></code></a></p>
+<p>TMediaPlayer controls devices that provide a Media Control Interface (MCI) driver.
+The TMediaPlayer component includes a set of buttons (Play, Stop, Eject, and so on) that control a multimedia device such as a CD-ROM drive, MIDI sequencer, or VCR. A multimedia device may be hardware or software.
+The media player component contains of multiple buttons. These buttons can be clicked with the mouse, but are not separate objects or button components.</p>
+<p>Button</p>
+<p>Value</p>
+<p>Action</p>
+<p>Play</p>
+<p>btPlay</p>
+<p>Plays the media player</p>
+<p>Pause</p>
+<p>btPause</p>
+<p>Pauses playing or recording. If already paused when clicked, resumes playing or recording.</p>
+<p>Stop</p>
+<p>btStop</p>
+<p>Stops playing or recording</p>
+<p>Next</p>
+<p>btNext</p>
+<p>Skips to the next track, or to the end if the medium doesn’t use tracks</p>
+<p>Prev</p>
+<p>btPrev</p>
+<p>Skips to the previous track, or to the beginning if the medium doesn’t use tracks</p>
+<p>Step</p>
+<p>btStep</p>
+<p>Moves forward a number of frames</p>
+<p>Back</p>
+<p>btBack</p>
+<p>Moves backward a number of frames</p>
+<p>Record</p>
+<p>btRecord</p>
+<p>Starts recording</p>
+<p>Eject</p>
+<p>btEject</p>
+<p>Ejects the medium</p>
+<p>The multimedia device is played, paused, stopped, and so on when the user clicks the corresponding button on the TMediaPlayer component. The device can also be controlled by the control methods that correspond to the buttons (Play, Pause, Stop, Next, Previous, Step, Back, StartRecording, and Eject).
+The type of multimedia device (such as dtWaveAudio or dtVideodisc) is specified by the DeviceType property. If the device stores its media in a file, the name of the media file is specified by the FileName property. If DeviceType is dtAutoSelect, the media player attempts to determine the type of device from the extension of the file specified by FileName.
+To have the media player attempt to open the device specified by DeviceType automatically when the media player component is created at runtime, set the AutoOpen property to true.</p>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.MediaPlayer.Back" title="delphivcl.MediaPlayer.Back"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Back</span></code></a></p></td>
+<td><p>Steps backward a number of frames (determined by the value of the Frames property) in the currently loaded medium.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.MediaPlayer.BringToFront" title="delphivcl.MediaPlayer.BringToFront"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BringToFront</span></code></a></p></td>
+<td><p>Puts the control in front of all other controls in its parent control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.MediaPlayer.ClientToScreen" title="delphivcl.MediaPlayer.ClientToScreen"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ClientToScreen</span></code></a></p></td>
+<td><p>Translates a given point from client area coordinates to global screen coordinates.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.MediaPlayer.Close" title="delphivcl.MediaPlayer.Close"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Close</span></code></a></p></td>
+<td><p>Closes the open multimedia device.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.MediaPlayer.Eject" title="delphivcl.MediaPlayer.Eject"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Eject</span></code></a></p></td>
+<td><p>Releases the loaded medium from the open multimedia device.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.MediaPlayer.Hide" title="delphivcl.MediaPlayer.Hide"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Hide</span></code></a></p></td>
+<td><p>Hides the wrapped Control</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.MediaPlayer.Invalidate" title="delphivcl.MediaPlayer.Invalidate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Invalidate</span></code></a></p></td>
+<td><p>Completely repaint control.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.MediaPlayer.Next" title="delphivcl.MediaPlayer.Next"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Next</span></code></a></p></td>
+<td><p>Moves to the beginning of the next track of the currently loaded medium.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.MediaPlayer.Open" title="delphivcl.MediaPlayer.Open"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Open</span></code></a></p></td>
+<td><p>Opens a multimedia device.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.MediaPlayer.Pause" title="delphivcl.MediaPlayer.Pause"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Pause</span></code></a></p></td>
+<td><p>Toggles the open multimedia device on or off.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.MediaPlayer.PauseOnly" title="delphivcl.MediaPlayer.PauseOnly"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PauseOnly</span></code></a></p></td>
+<td><p>Pauses the open multimedia device.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.MediaPlayer.Play" title="delphivcl.MediaPlayer.Play"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Play</span></code></a></p></td>
+<td><p>Plays the media loaded in the open multimedia device.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.MediaPlayer.Previous" title="delphivcl.MediaPlayer.Previous"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Previous</span></code></a></p></td>
+<td><p>Sets the current position to the beginning of the previous track if the position was at the beginning of a track when Previous was called.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.MediaPlayer.Repaint" title="delphivcl.MediaPlayer.Repaint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Repaint</span></code></a></p></td>
+<td><p>Forces the control to repaint its image on the screen.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.MediaPlayer.Resume" title="delphivcl.MediaPlayer.Resume"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Resume</span></code></a></p></td>
+<td><p>Resumes playing or recording the currently paused multimedia device.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.MediaPlayer.Rewind" title="delphivcl.MediaPlayer.Rewind"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Rewind</span></code></a></p></td>
+<td><p>Sets the current position to the beginning of the the medium, which is stored in the Start property.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.MediaPlayer.Save" title="delphivcl.MediaPlayer.Save"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Save</span></code></a></p></td>
+<td><p>Saves the currently loaded medium to the file specified in the FileName property.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.MediaPlayer.ScreenToClient" title="delphivcl.MediaPlayer.ScreenToClient"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ScreenToClient</span></code></a></p></td>
+<td><p>Converts the screen coordinates of a specified point on the screen to client coordinates.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.MediaPlayer.SendToBack" title="delphivcl.MediaPlayer.SendToBack"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SendToBack</span></code></a></p></td>
+<td><p>Puts a windowed control behind all other windowed controls, or puts a non-windowed control behind all other non-windowed controls.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.MediaPlayer.SetBounds" title="delphivcl.MediaPlayer.SetBounds"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SetBounds</span></code></a></p></td>
+<td><p>Sets the Left, Top, Width, and Height properties all at once.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.MediaPlayer.Show" title="delphivcl.MediaPlayer.Show"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Show</span></code></a></p></td>
+<td><p>Shows the wrapped Control</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.MediaPlayer.StartRecording" title="delphivcl.MediaPlayer.StartRecording"><code class="xref py py-obj docutils literal notranslate"><span class="pre">StartRecording</span></code></a></p></td>
+<td><p>Begins recording from the current Position or from the position specified in StartPos.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.MediaPlayer.Step" title="delphivcl.MediaPlayer.Step"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Step</span></code></a></p></td>
+<td><p>Moves forward a number of frames (determined by the Frames property) in the currently loaded medium.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.MediaPlayer.Stop" title="delphivcl.MediaPlayer.Stop"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Stop</span></code></a></p></td>
+<td><p>Halts playing or recording.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.MediaPlayer.Update" title="delphivcl.MediaPlayer.Update"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Update</span></code></a></p></td>
+<td><p>Processes any pending paint messages immediately.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="rubric">Attributes</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Action</span></code></p></td>
+<td><p>Specifies the action associated with the control.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.MediaPlayer.Align" title="delphivcl.MediaPlayer.Align"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Align</span></code></a></p></td>
+<td><p>Determines how the control aligns within its container (parent control).</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">AlignDisabled</span></code></p></td>
+<td><p>Indicates child control realignment disabled.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">AlignWithMargins</span></code></p></td>
+<td><p>Specifies whether a control should be constrained by margins.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.MediaPlayer.Anchors" title="delphivcl.MediaPlayer.Anchors"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Anchors</span></code></a></p></td>
+<td><p>Specifies how the control is anchored to its parent.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.MediaPlayer.AutoEnable" title="delphivcl.MediaPlayer.AutoEnable"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AutoEnable</span></code></a></p></td>
+<td><p>Determines whether the media player automatically enables and disables individual buttons in the component.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.MediaPlayer.AutoOpen" title="delphivcl.MediaPlayer.AutoOpen"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AutoOpen</span></code></a></p></td>
+<td><p>Determines if the media player is opened automatically when the application is run.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.MediaPlayer.AutoRewind" title="delphivcl.MediaPlayer.AutoRewind"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AutoRewind</span></code></a></p></td>
+<td><p>Determines if the media player control rewinds before playing or recording.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">BiDiMode</span></code></p></td>
+<td><p>Specifies the bidirectional mode for the control.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">BoundsRect</span></code></p></td>
+<td><p>Specifies the bounding rectangle of the control, expressed in the coordinate system of the parent control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Brush</span></code></p></td>
+<td><p>Determines the color and pattern used for painting the background of the control.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.MediaPlayer.Capabilities" title="delphivcl.MediaPlayer.Capabilities"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Capabilities</span></code></a></p></td>
+<td><p>Determines the capabilities of the open multimedia device.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ClassName</span></code></p></td>
+<td><p>Returns the TObject.ClassName</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ClientHeight</span></code></p></td>
+<td><p>Specifies the height of the control's client area in pixels.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ClientOrigin</span></code></p></td>
+<td><p>Specifies the screen coordinates (in pixels) of the upper-left corner of a control's client area.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ClientRect</span></code></p></td>
+<td><p>Specifies the size of a control's client area in pixels.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ClientWidth</span></code></p></td>
+<td><p>Specifies the horizontal size of the control's client area in pixels.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.MediaPlayer.ColoredButtons" title="delphivcl.MediaPlayer.ColoredButtons"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ColoredButtons</span></code></a></p></td>
+<td><p>Determines which buttons on the media player control have color.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ComObject</span></code></p></td>
+<td><p>Specifies the interface reference implemented by the component.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ComponentCount</span></code></p></td>
+<td><p>Returns the owned component count</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ComponentIndex</span></code></p></td>
+<td><p>Indicates the position of the component in its owner's Components property array.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ComponentState</span></code></p></td>
+<td><p>Describes the current state of the component, indicating when a component needs to avoid certain actions.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ComponentStyle</span></code></p></td>
+<td><p>Governs the behavior of the component.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Components</span></code></p></td>
+<td><p>Returns an iterator over the owned components</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.MediaPlayer.Constraints" title="delphivcl.MediaPlayer.Constraints"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Constraints</span></code></a></p></td>
+<td><p>Specifies the size constraints for the control.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ControlCount</span></code></p></td>
+<td><p>Returns the count of contained controls</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ControlState</span></code></p></td>
+<td><p>Specifies the current state of a control at run time.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ControlStyle</span></code></p></td>
+<td><p>Determines style characteristics of the control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Controls</span></code></p></td>
+<td><p>Returns an iterator over contained controls</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">CurrentPPI</span></code></p></td>
+<td><p>Embarcadero Technologies does not currently have any additional information.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cursor</span></code></p></td>
+<td><p>Specifies the image used to represent the mouse pointer when it passes into the region covered by the control.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">CustomHint</span></code></p></td>
+<td><p>CustomHint is a custom hint for the control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">DesignInfo</span></code></p></td>
+<td><p>Contains information used by the Form designer.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.MediaPlayer.DeviceID" title="delphivcl.MediaPlayer.DeviceID"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DeviceID</span></code></a></p></td>
+<td><p>Specifies the device ID for the currently open multimedia device.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.MediaPlayer.DeviceType" title="delphivcl.MediaPlayer.DeviceType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DeviceType</span></code></a></p></td>
+<td><p>Specifies a multimedia device type to open with the media player.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.MediaPlayer.Display" title="delphivcl.MediaPlayer.Display"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Display</span></code></a></p></td>
+<td><p>Specifies the display window for a multimedia device that uses a window for output.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.MediaPlayer.DisplayRect" title="delphivcl.MediaPlayer.DisplayRect"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DisplayRect</span></code></a></p></td>
+<td><p>Specifies a rectangular area in the control specified by the Display property that is used to display output from a multimedia device.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">DockClientCount</span></code></p></td>
+<td><p>Specifies the number of controls that are docked on the windowed control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">DockClients</span></code></p></td>
+<td><p>Control:</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">DockManager</span></code></p></td>
+<td><p>Specifies the control's docking manager interface.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">DockOrientation</span></code></p></td>
+<td><p>DockOrientation specifies how the control is docked relative to other controls docked in the same parent.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">DockSite</span></code></p></td>
+<td><p>Specifies whether the control can be the target of drag-and-dock operations.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.MediaPlayer.DoubleBuffered" title="delphivcl.MediaPlayer.DoubleBuffered"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DoubleBuffered</span></code></a></p></td>
+<td><p>Determines whether the control's image is rendered directly to the window or painted to an in-memory bitmap first.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.MediaPlayer.DoubleBufferedMode" title="delphivcl.MediaPlayer.DoubleBufferedMode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DoubleBufferedMode</span></code></a></p></td>
+<td><p>DoubleBufferedMode:</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.MediaPlayer.Enabled" title="delphivcl.MediaPlayer.Enabled"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Enabled</span></code></a></p></td>
+<td><p>Controls whether the control responds to mouse, keyboard, and timer events.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.MediaPlayer.EnabledButtons" title="delphivcl.MediaPlayer.EnabledButtons"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EnabledButtons</span></code></a></p></td>
+<td><p>Determines which buttons on the media player are usable.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.MediaPlayer.EndPos" title="delphivcl.MediaPlayer.EndPos"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EndPos</span></code></a></p></td>
+<td><p>Specifies the position within the currently loaded medium at which to stop playing or recording.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.MediaPlayer.Error" title="delphivcl.MediaPlayer.Error"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Error</span></code></a></p></td>
+<td><p>Specifies the MCI error code returned by the media control method.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.MediaPlayer.ErrorMessage" title="delphivcl.MediaPlayer.ErrorMessage"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ErrorMessage</span></code></a></p></td>
+<td><p>Describes the error code stored in the Error property.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ExplicitHeight</span></code></p></td>
+<td><p>Specifies the explicit vertical size of the control in pixels.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ExplicitLeft</span></code></p></td>
+<td><p>Specifies the explicit horizontal pixel coordinate of the left edge of a component relative to its parent.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ExplicitTop</span></code></p></td>
+<td><p>Specifies the explicit vertical pixel coordinate of the top edge of a component relative to its parent.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ExplicitWidth</span></code></p></td>
+<td><p>Specifies the explicit horizontal size of the control in pixels.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.MediaPlayer.FileName" title="delphivcl.MediaPlayer.FileName"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FileName</span></code></a></p></td>
+<td><p>Specifies the opened or saved media file.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Floating</span></code></p></td>
+<td><p>Specifies whether the control is floating.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">FloatingDockSiteClass</span></code></p></td>
+<td><p>Specifies the class of the temporary control that hosts the control when it is floating.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Focused</span></code></p></td>
+<td><p>Determines whether the control has input focus.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.MediaPlayer.Frames" title="delphivcl.MediaPlayer.Frames"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Frames</span></code></a></p></td>
+<td><p>Specifies the number of frames moved forward or backward.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Handle</span></code></p></td>
+<td><p>Provides access to the underlying Windows screen object for the control.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">HandleAllocated</span></code></p></td>
+<td><p>Reports whether a screen object handle exists for the control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Height</span></code></p></td>
+<td><p>Specifies the vertical size of the control in pixels.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">HelpContext</span></code></p></td>
+<td><p>The HelpContext property contains the numeric context ID that identifies the Help topic for the control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">HelpKeyword</span></code></p></td>
+<td><p>The HelpKeyword property contains the keyword string that identifies the Help topic for the control.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">HelpType</span></code></p></td>
+<td><p>Specifies whether the control's context-sensitive Help topic is identified by a context ID or by keyword.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Hint</span></code></p></td>
+<td><p>Hint contains the text string that appears when the user moves the mouse over the control.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">HostDockSite</span></code></p></td>
+<td><p>Specifies the control in which the control is docked.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">IsDrawingLocked</span></code></p></td>
+<td><p>IsDrawingLocked property returns True when redrawing for this control is locked.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">LRDockWidth</span></code></p></td>
+<td><p>Specifies the width of the control when it is docked horizontally.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Left</span></code></p></td>
+<td><p>Specifies the horizontal coordinate of the left edge of a component relative to its parent.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.MediaPlayer.Length" title="delphivcl.MediaPlayer.Length"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Length</span></code></a></p></td>
+<td><p>Specifies the length of the medium in the open multimedia device.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Margins</span></code></p></td>
+<td><p>Specifies the margins of the control.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.MediaPlayer.Mode" title="delphivcl.MediaPlayer.Mode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Mode</span></code></a></p></td>
+<td><p>Indicates the state of the currently open multimedia device.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">MouseInClient</span></code></p></td>
+<td><p>Indicates whether the mouse pointer is currently in the client area of the control.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Name</span></code></p></td>
+<td><p>Specifies the name of the component as referenced in code.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.MediaPlayer.Notify" title="delphivcl.MediaPlayer.Notify"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Notify</span></code></a></p></td>
+<td><p>Determines whether an OnNotify event is generated.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.MediaPlayer.NotifyValue" title="delphivcl.MediaPlayer.NotifyValue"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NotifyValue</span></code></a></p></td>
+<td><p>Indicates the result of the last media control method that requested a notification.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Observers</span></code></p></td>
+<td><p>Indicates the TObservers object added to the TComponent.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Owner</span></code></p></td>
+<td><p>Returns the Component Owner</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Padding</span></code></p></td>
+<td><p>Specifies the padding of a control.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.MediaPlayer.Parent" title="delphivcl.MediaPlayer.Parent"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Parent</span></code></a></p></td>
+<td><p>Returns/Sets the Control Parent</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ParentCustomHint</span></code></p></td>
+<td><p>Specifies where a control looks for its custom hint.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.MediaPlayer.ParentDoubleBuffered" title="delphivcl.MediaPlayer.ParentDoubleBuffered"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ParentDoubleBuffered</span></code></a></p></td>
+<td><p>ParentDoubleBuffered defers the DoubleBuffered property of this component to the value of the parent's DoubleBuffered property.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.MediaPlayer.ParentShowHint" title="delphivcl.MediaPlayer.ParentShowHint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ParentShowHint</span></code></a></p></td>
+<td><p>Specifies where a control looks to find out if its Help Hint should be shown.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ParentWindow</span></code></p></td>
+<td><p>Reference to parent's underlying control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">PixelsPerInch</span></code></p></td>
+<td><p>Embarcadero Technologies does not currently have any additional information.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.MediaPlayer.PopupMenu" title="delphivcl.MediaPlayer.PopupMenu"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PopupMenu</span></code></a></p></td>
+<td><p>Specifies the pop-up menu associated with the control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.MediaPlayer.Position" title="delphivcl.MediaPlayer.Position"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Position</span></code></a></p></td>
+<td><p>Specifies the current position within the currently loaded medium.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">RedrawDisabled</span></code></p></td>
+<td><p>RedrawDisabled property returns True when redrawing for this control is locked.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ScaleFactor</span></code></p></td>
+<td><p>Embarcadero Technologies does not currently have any additional information.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.MediaPlayer.Shareable" title="delphivcl.MediaPlayer.Shareable"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Shareable</span></code></a></p></td>
+<td><p>Determines whether more than one application can share a multimedia device.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.MediaPlayer.ShowHint" title="delphivcl.MediaPlayer.ShowHint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ShowHint</span></code></a></p></td>
+<td><p>ShowHint specifies whether to show the Help Hint when the mouse pointer moves over the control.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Showing</span></code></p></td>
+<td><p>Indicates whether the control is showing on the screen.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.MediaPlayer.Start" title="delphivcl.MediaPlayer.Start"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Start</span></code></a></p></td>
+<td><p>Specifies the starting position within the currently loaded medium.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.MediaPlayer.StartPos" title="delphivcl.MediaPlayer.StartPos"><code class="xref py py-obj docutils literal notranslate"><span class="pre">StartPos</span></code></a></p></td>
+<td><p>Specifies the position within the currently loaded medium from which to begin playing or recording.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">StyleElements</span></code></p></td>
+<td><p>Specifies the style elements that are used by the control.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.MediaPlayer.StyleName" title="delphivcl.MediaPlayer.StyleName"><code class="xref py py-obj docutils literal notranslate"><span class="pre">StyleName</span></code></a></p></td>
+<td><p>Embarcadero Technologies does not currently have any additional information.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">TBDockHeight</span></code></p></td>
+<td><p>Specifies the height of the control when it is docked vertically.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.MediaPlayer.TabOrder" title="delphivcl.MediaPlayer.TabOrder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TabOrder</span></code></a></p></td>
+<td><p>Indicates the position of the control in its parent's tab order.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.MediaPlayer.TabStop" title="delphivcl.MediaPlayer.TabStop"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TabStop</span></code></a></p></td>
+<td><p>Determines whether the user can tab to a control.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Tag</span></code></p></td>
+<td><p>Stores a NativeInt integral value as a part of a component.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.MediaPlayer.TimeFormat" title="delphivcl.MediaPlayer.TimeFormat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TimeFormat</span></code></a></p></td>
+<td><p>Determines the format used to specify position information.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Top</span></code></p></td>
+<td><p>Specifies the Y coordinate of the upper-left corner of a control, relative to its parent or containing control in pixels.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Touch</span></code></p></td>
+<td><p>Specifies the touch manager component associated with the control.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.MediaPlayer.TrackLength" title="delphivcl.MediaPlayer.TrackLength"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TrackLength</span></code></a></p></td>
+<td><p>int:</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.MediaPlayer.TrackPosition" title="delphivcl.MediaPlayer.TrackPosition"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TrackPosition</span></code></a></p></td>
+<td><p>int:</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.MediaPlayer.Tracks" title="delphivcl.MediaPlayer.Tracks"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Tracks</span></code></a></p></td>
+<td><p>Specifies the number of playable tracks on the open multimedia device.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">UndockHeight</span></code></p></td>
+<td><p>Specifies the height of the control when it is floating.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">UndockWidth</span></code></p></td>
+<td><p>Specifies the width of the control when it is floating.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">UseDockManager</span></code></p></td>
+<td><p>Specifies whether the docking manager is used in drag-and-dock operations.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">VCLComObject</span></code></p></td>
+<td><p>Represents information used internally by components that support COM.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.MediaPlayer.Visible" title="delphivcl.MediaPlayer.Visible"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Visible</span></code></a></p></td>
+<td><p>Specifies whether the component appears onscreen.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.MediaPlayer.VisibleButtons" title="delphivcl.MediaPlayer.VisibleButtons"><code class="xref py py-obj docutils literal notranslate"><span class="pre">VisibleButtons</span></code></a></p></td>
+<td><p>Indicates which of the buttons on the media player are visible.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">VisibleDockClientCount</span></code></p></td>
+<td><p>Specifies the number of visible controls that are docked on the windowed control.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.MediaPlayer.Wait" title="delphivcl.MediaPlayer.Wait"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Wait</span></code></a></p></td>
+<td><p>Determines whether a media control method returns control to the application only after it has been completed.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Width</span></code></p></td>
+<td><p>Specifies the horizontal size of the control or form in pixels.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.MediaPlayer.Align">
+<span class="sig-name descname"><span class="pre">Align</span></span><a class="headerlink" href="#delphivcl.MediaPlayer.Align" title="Link to this definition">¶</a></dt>
+<dd><p>Determines how the control aligns within its container (parent control).
+Use Align to align a control to the top, bottom, left, or right of a form or panel and have it remain there even if the size of the form, panel, or component that contains the control changes. When the parent is resized, an aligned control also resizes so that it continues to span the top, bottom, left, or right edge of the parent.
+For example, to use a panel component with various controls on it as a tool palette, change the panel’s Align value to alLeft. The value of alLeft for the Align property of the panel guarantees that the tool palette remains on the left side of the form and always equals the client height of the form.
+The default value of Align is alNone, which means a control remains where it is positioned on a form or panel.</p>
+<p>Tip: If Align is set to alClient, the control fills the entire client area so that it is impossible to select the parent form by clicking it. In this case, select the parent by selecting the control on the form and pressing ESC, or by using the Object Inspector.
+Any number of child components within a single parent can have the same Align value, in which case they stack up along the edge of the parent. The child controls stack up in z-order. To adjust the order in which the controls stack up, drag the controls into their desired positions.</p>
+<p>Note: To cause a control to maintain a specified relationship with an edge of its parent, but not necessarily lie along one edge of the parent, use the Anchors property instead.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Align</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.MediaPlayer.Anchors">
+<span class="sig-name descname"><span class="pre">Anchors</span></span><a class="headerlink" href="#delphivcl.MediaPlayer.Anchors" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies how the control is anchored to its parent.
+Use Anchors to ensure that a control maintains its current position relative to an edge of its parent, even if the parent is resized. When its parent is resized, the control holds its position relative to the edges to which it is anchored.
+If a control is anchored to opposite edges of its parent, the control stretches when its parent is resized. For example, if a control has its Anchors property set to [akLeft, akRight], the control stretches when the width of its parent changes.
+Anchors is enforced only when the parent is resized. Thus, for example, if a control is anchored to opposite edges of a form at design time and the form is created in a maximized state, the control is not stretched because the form is not resized after the control is created.</p>
+<p>Note: If a control should maintain contact with three edges of its parent (hugging one side of the parent and stretching the length of that side), use the Align property instead. Unlike Anchors, Align allows controls to adjust to changes in the size of other aligned sibling controls as well as changes to the parent’s size.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Anchors</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.MediaPlayer.AutoEnable">
+<span class="sig-name descname"><span class="pre">AutoEnable</span></span><a class="headerlink" href="#delphivcl.MediaPlayer.AutoEnable" title="Link to this definition">¶</a></dt>
+<dd><p>Determines whether the media player automatically enables and disables individual buttons in the component.
+Use AutoEnable to automatically enable or disable the control buttons on the media player. If AutoEnable is true, the media player automatically enables or disables its control buttons. The media player determines which buttons to enable or disable by the current mode specified in the Mode property, and the current multimedia device type specified in the DeviceType property.
+AutoEnable overrides the EnabledButtons property. The buttons enabled or disabled automatically by the media player supersede any buttons enabled or disabled with EnabledButtons.
+If AutoEnable is false, the media player does not enable or disable buttons. The buttons must enabled or disabled with the EnabledButtons property.
+The following table shows whether buttons are automatically enabled or disabled for each device mode:</p>
+<p>Button</p>
+<p>Play</p>
+<p>Record</p>
+<p>Pause</p>
+<p>Stop</p>
+<p>Not Open</p>
+<p>Back</p>
+<p>Enabled</p>
+<p>Enabled</p>
+<p>Enabled</p>
+<p>Enabled</p>
+<p>Disabled</p>
+<p>Eject</p>
+<p>Enabled</p>
+<p>Enabled</p>
+<p>Enabled</p>
+<p>Enabled</p>
+<p>Disabled</p>
+<p>Next</p>
+<p>Enabled</p>
+<p>Enabled</p>
+<p>Enabled</p>
+<p>Enabled</p>
+<p>Disabled</p>
+<p>Pause</p>
+<p>Enabled</p>
+<p>Enabled</p>
+<p>Enabled</p>
+<p>Disabled</p>
+<p>Disabled</p>
+<p>Play</p>
+<p>Disabled</p>
+<p>Disabled</p>
+<p>Enabled</p>
+<p>Enabled</p>
+<p>Disabled</p>
+<p>Prev</p>
+<p>Enabled</p>
+<p>Enabled</p>
+<p>Enabled</p>
+<p>Enabled</p>
+<p>Disabled</p>
+<p>Record</p>
+<p>Disabled</p>
+<p>Disabled</p>
+<p>Enabled</p>
+<p>Enabled</p>
+<p>Disabled</p>
+<p>Step</p>
+<p>Enabled</p>
+<p>Enabled</p>
+<p>Enabled</p>
+<p>Enabled</p>
+<p>Disabled</p>
+<p>Stop</p>
+<p>Enabled</p>
+<p>Enabled</p>
+<p>Disabled</p>
+<p>Disabled</p>
+<p>Disabled</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.MediaPlayer.AutoOpen">
+<span class="sig-name descname"><span class="pre">AutoOpen</span></span><a class="headerlink" href="#delphivcl.MediaPlayer.AutoOpen" title="Link to this definition">¶</a></dt>
+<dd><p>Determines if the media player is opened automatically when the application is run.
+Use AutoOpen to have the media player automatically open at runtime.
+If AutoOpen is true, the media player attempts to open the multimedia device specified by the DeviceType property (or FileName if DeviceType is dtAutoSelect) when the form containing the media player component is created at runtime.
+If AutoOpen is false, the device must be opened with a call to the Open method.
+If an error occurs when opening the device, an exception of type EMCIDeviceError exception is raised that contains the error message. Upon completion, a numerical error code is stored in the Error property, and the corresponding error message is stored in the ErrorMessage property.
+The Wait property determines whether control is returned to the application before opening the multimedia device. The Notify property determines whether opening the device generates an OnNotify event.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.MediaPlayer.AutoRewind">
+<span class="sig-name descname"><span class="pre">AutoRewind</span></span><a class="headerlink" href="#delphivcl.MediaPlayer.AutoRewind" title="Link to this definition">¶</a></dt>
+<dd><p>Determines if the media player control rewinds before playing or recording.
+If AutoRewind is true and the current position is at the end of the medium, Play or StartRecording moves the current position to the beginning of the medium before playing or recording. If AutoRewind is false, the user must click the Prev button or write code to call Previous to move to the beginning.
+If values have been assigned to StartPos or EndPos or if the multimedia device uses tracks, AutoRewind has no effect on playing or recording. When calling Play or StartRecording, the current position remains at the end of the medium.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.MediaPlayer.Back">
+<span class="sig-name descname"><span class="pre">Back</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.MediaPlayer.Back" title="Link to this definition">¶</a></dt>
+<dd><p>Steps backward a number of frames (determined by the value of the Frames property) in the currently loaded medium.
+Back is called when the Back button on the media player control is clicked at runtime.
+Upon completion, Back stores a numerical error code in the Error property and the corresponding error message in the ErrorMessage property.
+The Wait property determines whether control is returned to the application before the Back method has been completed. The Notify property determines whether Back generates an OnNotify event.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.MediaPlayer.BringToFront">
+<span class="sig-name descname"><span class="pre">BringToFront</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.MediaPlayer.BringToFront" title="Link to this definition">¶</a></dt>
+<dd><p>Puts the control in front of all other controls in its parent control.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.MediaPlayer.Capabilities">
+<span class="sig-name descname"><span class="pre">Capabilities</span></span><a class="headerlink" href="#delphivcl.MediaPlayer.Capabilities" title="Link to this definition">¶</a></dt>
+<dd><p>Determines the capabilities of the open multimedia device.
+The various capabilities specified in Capabilities are determined when the device is opened with the Open method.</p>
+<p>Note:  Currently, there is no way to check whether a device can step forward or backward. Capabilities includes mpCanStep only if the device type (specified in the DeviceType property) is Animation, AVI Video, Digital Video, Overlay, or VCR.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>MPDevCapsSet</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.MediaPlayer.ClientToScreen">
+<span class="sig-name descname"><span class="pre">ClientToScreen</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.MediaPlayer.ClientToScreen" title="Link to this definition">¶</a></dt>
+<dd><p>Translates a given point from client area coordinates to global screen coordinates.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.MediaPlayer.Close">
+<span class="sig-name descname"><span class="pre">Close</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.MediaPlayer.Close" title="Link to this definition">¶</a></dt>
+<dd><p>Closes the open multimedia device.
+Upon completion, Close stores a numerical error code in the Error property, and the corresponding error message in the ErrorMessage property.
+The Wait property determines whether control is returned to the application before the Close method is completed. The Notify property determines whether Close generates an OnNotify event.
+Close is called automatically when the application is terminated.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.MediaPlayer.ColoredButtons">
+<span class="sig-name descname"><span class="pre">ColoredButtons</span></span><a class="headerlink" href="#delphivcl.MediaPlayer.ColoredButtons" title="Link to this definition">¶</a></dt>
+<dd><p>Determines which buttons on the media player control have color.
+ColoredButtons controls which buttons on the media player are colored.
+If a button is not colored with ColoredButtons, it appears in black-and-white when visible. All media player control buttons are colored by default.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ButtonSet</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.MediaPlayer.Constraints">
+<span class="sig-name descname"><span class="pre">Constraints</span></span><a class="headerlink" href="#delphivcl.MediaPlayer.Constraints" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the size constraints for the control.
+Use Constraints to specify the minimum and maximum width and height of the control. When Constraints contains maximum or minimum values, the control cannot be resized to violate those constraints.</p>
+<p>Note: Constraints apply to the height of the form. However, the height of the form depends on how large Windows makes the title bar. For example, Windows XP uses much larger title bars than other windowing systems. To work around this, note the ClientHeight when you design your form and set the constraints in the FormCreate event. In the following example, ClientHeight is represented by x: Constraints.MinHeight�:= x + Height - ClientHeight.
+Warning: Do not set up constraints that conflict with the value of the Align or Anchors property. When these properties conflict, the response of the control to resize attempts is not well-defined.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>SizeConstraints</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.MediaPlayer.DeviceID">
+<span class="sig-name descname"><span class="pre">DeviceID</span></span><a class="headerlink" href="#delphivcl.MediaPlayer.DeviceID" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the device ID for the currently open multimedia device.
+The value of DeviceID is determined when a device is opened with the Open method. If no device is open, DeviceID is 0.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.MediaPlayer.DeviceType">
+<span class="sig-name descname"><span class="pre">DeviceType</span></span><a class="headerlink" href="#delphivcl.MediaPlayer.DeviceType" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies a multimedia device type to open with the media player.
+DeviceType specifies a multimedia device type to open with the Open method. The default is dtAutoSelect.
+If DeviceType is dtAutoSelect, the device type is determined by the file extension specified in the FileName property. If no device type is associated with the extension, the correct device type must be explicitly specified by setting DeviceType to a value other than dtAutoSelect.
+A multimedia device is typically associated with an appropriate file name extension when the device is installed. Associations are specified in the registry or SYSTEM.INI file. See the documentation for the specific device for instructions about how to associate file name extensions with the device.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>MPDeviceTypes</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.MediaPlayer.Display">
+<span class="sig-name descname"><span class="pre">Display</span></span><a class="headerlink" href="#delphivcl.MediaPlayer.Display" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the display window for a multimedia device that uses a window for output.
+To use Display, assign the name of a windowed control such as a form or panel to Display to display output in that control.
+The default value of Display is nil (Delphi) or NULL (C++), meaning that the device creates its own window to display output. Also, by freeing the control assigned to Display after the device has been opened, video output will be in its own default window.
+Examples of multimedia devices that use a window to display output are Animation, AVI Video, Digital Video, Overlay, and VCR.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="delphivcl.WinControl.html#delphivcl.WinControl" title="delphivcl.WinControl">WinControl</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.MediaPlayer.DisplayRect">
+<span class="sig-name descname"><span class="pre">DisplayRect</span></span><a class="headerlink" href="#delphivcl.MediaPlayer.DisplayRect" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies a rectangular area in the control specified by the Display property that is used to display output from a multimedia device.
+To display output in a specific rectangle area on a form assign a TRect record to DisplayRect. The Rect function can be used to create a TRect record.
+Media that use a rectangle to display output usually perform best if the default DisplayRect size is used. To set DisplayRect to the default size, position the rectangle in the upper left corner and use 0, 0 for the lower right corner.
+DisplayRect is ignored if Display is nil (Delphi) or NULL (C++).
+Examples of multimedia devices that use a window to display output are Animation, AVI Video, Digital Video, Overlay, and VCR.</p>
+<p>Note: DisplayRect can be set only after the media device is opened.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Rect</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.MediaPlayer.DoubleBuffered">
+<span class="sig-name descname"><span class="pre">DoubleBuffered</span></span><a class="headerlink" href="#delphivcl.MediaPlayer.DoubleBuffered" title="Link to this definition">¶</a></dt>
+<dd><p>Determines whether the control’s image is rendered directly to the window or painted to an in-memory bitmap first.
+When DoubleBuffered is false, the windowed control paints itself directly to the window. When DoubleBuffered is true, the windowed control paints itself to an in-memory bitmap that is then used to paint the window. Double buffering reduces the amount of flicker when the control repaints, but is more memory intensive.
+When a windowed control is a dock site and has an associated dock manager, it must be double-buffered.</p>
+<p>Note:  Some controls, such as TRichEdit, can’t paint themselves into a bitmap. For such controls, DoubleBuffered must be set to false.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.MediaPlayer.DoubleBufferedMode">
+<span class="sig-name descname"><span class="pre">DoubleBufferedMode</span></span><a class="headerlink" href="#delphivcl.MediaPlayer.DoubleBufferedMode" title="Link to this definition">¶</a></dt>
+<dd><p>DoubleBufferedMode:</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.MediaPlayer.Eject">
+<span class="sig-name descname"><span class="pre">Eject</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.MediaPlayer.Eject" title="Link to this definition">¶</a></dt>
+<dd><p>Releases the loaded medium from the open multimedia device.
+Eject is called when the Eject button on the media player control is clicked at runtime. It ejects the loaded medium from the open multimedia device.
+Upon completion, Eject stores a numerical error code in the Error property, and the corresponding error message in the ErrorMessage property.
+The Wait property determines whether control is returned to the application before the Eject method has been completed. The Notify property determines whether Eject generates an OnNotify event.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.MediaPlayer.Enabled">
+<span class="sig-name descname"><span class="pre">Enabled</span></span><a class="headerlink" href="#delphivcl.MediaPlayer.Enabled" title="Link to this definition">¶</a></dt>
+<dd><p>Controls whether the control responds to mouse, keyboard, and timer events.
+Use Enabled to change the availability of the control to the user. To disable a control, set Enabled to False. Some disabled controls appear dimmed (for example: buttons, check boxes, labels), while others (container controls) simply lose their functionality without changing their appearance. If Enabled is set to False, the control ignores mouse, keyboard, and timer events.
+To re-enable a control, set Enabled to True.</p>
+<p>Note: This property applies to all TControl descendants.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.MediaPlayer.EnabledButtons">
+<span class="sig-name descname"><span class="pre">EnabledButtons</span></span><a class="headerlink" href="#delphivcl.MediaPlayer.EnabledButtons" title="Link to this definition">¶</a></dt>
+<dd><p>Determines which buttons on the media player are usable.
+EnabledButtons controls which buttons on the media player are enabled and usable.
+An enabled button is colored and usable. A disabled button is dimmed and not usable. If a button is not enabled with EnabledButtons, it is disabled. By default, all buttons are enabled.
+If the AutoEnable property is true, AutoEnable supersedes EnabledButtons. The buttons automatically enabled or disabled by the media player override any buttons enabled or disabled with the EnabledButtons property.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ButtonSet</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.MediaPlayer.EndPos">
+<span class="sig-name descname"><span class="pre">EndPos</span></span><a class="headerlink" href="#delphivcl.MediaPlayer.EndPos" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the position within the currently loaded medium at which to stop playing or recording.
+EndPos is specified using the current time format, which is specified in the TimeFormat property.
+The EndPos property affects only the next Play or StartRecording method called after setting EndPos. Reset EndPos to affect any subsequent calls to Play or StartRecording.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.MediaPlayer.Error">
+<span class="sig-name descname"><span class="pre">Error</span></span><a class="headerlink" href="#delphivcl.MediaPlayer.Error" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the MCI error code returned by the media control method.
+Error specifies the MCI error code returned by the most recent media control method (Back, Close, Eject, Next, Open, Pause, PauseOnly, Play, Previous, StartRecording, Resume, Rewind, Step, or Stop). The ErrorMessage property describes the Error.
+The error code returned by media control methods are the same error code returned by the mciSendCommand function. The message describing the error code is stored in the ErrorMessage property.
+The value of Error is zero if the most recent media control method didn’t cause an error. If a method results in an error, a value other than zero is stored in Error. If the error occurs during the opening of the device, an EMCIDeviceError exception occurs.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.MediaPlayer.ErrorMessage">
+<span class="sig-name descname"><span class="pre">ErrorMessage</span></span><a class="headerlink" href="#delphivcl.MediaPlayer.ErrorMessage" title="Link to this definition">¶</a></dt>
+<dd><p>Describes the error code stored in the Error property.
+ErrorMessage specifies the error message that describes the error code returned from the most recent media control method (Back, Close, Eject, Next, Open, Pause, PauseOnly, Play, Previous, StartRecording, Resume, Rewind, Step, or Stop).
+The error code described by the message is stored in the Error property.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.MediaPlayer.FileName">
+<span class="sig-name descname"><span class="pre">FileName</span></span><a class="headerlink" href="#delphivcl.MediaPlayer.FileName" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the opened or saved media file.
+FileName specifies the media file to be opened by the Open method, or the file to save by the Save method.
+At design time, use a file open dialog box to specify the FileName property by clicking the ellipsis button (…) in the Object Inspector.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.MediaPlayer.Frames">
+<span class="sig-name descname"><span class="pre">Frames</span></span><a class="headerlink" href="#delphivcl.MediaPlayer.Frames" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the number of frames moved forward or backward.
+Frames specifies the number of frames the Step method steps forward or the Back method steps backward. Frames defaults to ten percent of the length of the currently loaded medium, which is specified by the Length property.
+The definition of a frame varies by multimedia device. For display media, a frame is one still image.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.MediaPlayer.Hide">
+<span class="sig-name descname"><span class="pre">Hide</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.MediaPlayer.Hide" title="Link to this definition">¶</a></dt>
+<dd><p>Hides the wrapped Control</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.MediaPlayer.Invalidate">
+<span class="sig-name descname"><span class="pre">Invalidate</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.MediaPlayer.Invalidate" title="Link to this definition">¶</a></dt>
+<dd><p>Completely repaint control.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.MediaPlayer.Length">
+<span class="sig-name descname"><span class="pre">Length</span></span><a class="headerlink" href="#delphivcl.MediaPlayer.Length" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the length of the medium in the open multimedia device.
+Length is specified using the current time format, which is specified by the TimeFormat property.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.MediaPlayer.Mode">
+<span class="sig-name descname"><span class="pre">Mode</span></span><a class="headerlink" href="#delphivcl.MediaPlayer.Mode" title="Link to this definition">¶</a></dt>
+<dd><p>Indicates the state of the currently open multimedia device.
+Mode specifies the current state or mode of the currently open multimedia device.
+The TMPModes type defines the modes for a multimedia device used with a TMediaPlayer.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>MPModes</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.MediaPlayer.Next">
+<span class="sig-name descname"><span class="pre">Next</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.MediaPlayer.Next" title="Link to this definition">¶</a></dt>
+<dd><p>Moves to the beginning of the next track of the currently loaded medium.
+If the current position is at the last track when Next is called, Next makes the current position the beginning of the last track. If the multimedia device doesn’t use tracks, Next goes to the end of the medium. Next is called when the Next button on the media player control is clicked at runtime.
+Upon completion, Next stores a numerical error code in the Error property, and the corresponding error message in the ErrorMessage property.
+The Wait property determines whether control is returned to the application before the Next method has completed. The Notify property determines whether Next generates an OnNotify event.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.MediaPlayer.Notify">
+<span class="sig-name descname"><span class="pre">Notify</span></span><a class="headerlink" href="#delphivcl.MediaPlayer.Notify" title="Link to this definition">¶</a></dt>
+<dd><p>Determines whether an OnNotify event is generated.
+Notify determines whether the next call to a media control method (Back, Close, Eject, Next, Open, Pause, PauseOnly, Play, Previous, StartRecording, Resume, Rewind, Step, or Stop) generates an OnNotify event when the method has completed.
+If Notify is true, the next media control method generates OnNotify event upon completion and stores the notification message in the NotifyValue property. If Notify is false, the method does not generate an OnNotify event and NotifyValue remains unchanged.
+Notify affects only the next call to a media control method. After an OnNotify event, Notify must be reset to affect any subsequent media control methods.
+By default, Play and StartRecording function as if Notify is true. Set Notify to false before calling Play or StartRecording to prevent an OnNotify event from being generated when playing or recording has finished. By default, all other media control methods function as if Notify is false.</p>
+<p>Tip:  Set Notify to true if the next media control is expected to take a long time, so the application is notified when the media control method has completed. If Notify is set to true, it is recommended to set Wait to false so that control returns to the application before the media control method is finished.
+Note:  When trying to resume a device that doesn’t support Resume, the device is resumed as if the Play method was called. If Notify was assigned true before calling Resume (or any other media control method), Notify doesn’t affect the call to Resume. Resume does not generate an OnNotify event upon completion, and NotifyValue remains unchanged.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.MediaPlayer.NotifyValue">
+<span class="sig-name descname"><span class="pre">NotifyValue</span></span><a class="headerlink" href="#delphivcl.MediaPlayer.NotifyValue" title="Link to this definition">¶</a></dt>
+<dd><p>Indicates the result of the last media control method that requested a notification.
+NotifyValue reports the result of the last media control method (Back, Close, Eject, Next, Open, Pause, PauseOnly, Play, Previous, StartRecording, Resume, Rewind, Step, or Stop) that requested a notification.
+To request notification, set Notify to true before calling a media control method.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>MPNotifyValues</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.MediaPlayer.Open">
+<span class="sig-name descname"><span class="pre">Open</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.MediaPlayer.Open" title="Link to this definition">¶</a></dt>
+<dd><p>Opens a multimedia device.
+Use Open to open a multimedia device. The multimedia device type must be specified in the DeviceType property before a device can be opened.
+Upon completion, Open stores a numerical error code in the Error property, and the corresponding error message in the ErrorMessage property.
+The Wait property determines whether control is returned to the application before the Open method is completed. The Notify property determines whether Open generates an OnNotify event.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.MediaPlayer.Parent">
+<span class="sig-name descname"><span class="pre">Parent</span></span><a class="headerlink" href="#delphivcl.MediaPlayer.Parent" title="Link to this definition">¶</a></dt>
+<dd><p>Returns/Sets the Control Parent</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.MediaPlayer.ParentDoubleBuffered">
+<span class="sig-name descname"><span class="pre">ParentDoubleBuffered</span></span><a class="headerlink" href="#delphivcl.MediaPlayer.ParentDoubleBuffered" title="Link to this definition">¶</a></dt>
+<dd><p>ParentDoubleBuffered defers the DoubleBuffered property of this component to the value of the parent’s DoubleBuffered property.
+ParentDoubleBuffered is a boolean indicating that the DoubleBuffered property of this component is overridden by the value of the parent’s DoubleBuffered property.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.MediaPlayer.ParentShowHint">
+<span class="sig-name descname"><span class="pre">ParentShowHint</span></span><a class="headerlink" href="#delphivcl.MediaPlayer.ParentShowHint" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies where a control looks to find out if its Help Hint should be shown.
+Use ParentShowHint to ensure that all the controls on a form either uniformly show their Help Hints or uniformly do not show them.
+If ParentShowHint is True, the control uses the ShowHint property value of its parent. If ParentShowHint is False, the control uses the value of its own ShowHint property.
+To provide Help Hints only for selected controls on a form, set the ShowHint property for those controls that should have Help Hints to True, and ParentShowHint becomes False automatically.</p>
+<p>Note:  Enable or disable all Help Hints for the entire application using the ShowHint property of the application object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.MediaPlayer.Pause">
+<span class="sig-name descname"><span class="pre">Pause</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.MediaPlayer.Pause" title="Link to this definition">¶</a></dt>
+<dd><p>Toggles the open multimedia device on or off.
+If the device is already paused when Pause is called, the device resumes playing or recording by calling the Resume method. Pause is called when the Pause button on the media player control is clicked at runtime.
+Upon completion, Pause stores a numerical error code in the Error property and the corresponding error message in the ErrorMessage property.
+The Wait property determines whether control is returned to the application before the Pause method has completed. The Notify property determines whether Pause generates an OnNotify event.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.MediaPlayer.PauseOnly">
+<span class="sig-name descname"><span class="pre">PauseOnly</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.MediaPlayer.PauseOnly" title="Link to this definition">¶</a></dt>
+<dd><p>Pauses the open multimedia device.
+If the device is already paused when PauseOnly is called, the device will remain paused.
+Upon completion, PauseOnly stores a numerical error code in the Error property and the corresponding error message in the ErrorMessage property.
+The Wait property determines whether control is returned to the application before the PauseOnly method has completed. The Notify property determines whether PauseOnly generates an OnNotify event.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.MediaPlayer.Play">
+<span class="sig-name descname"><span class="pre">Play</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.MediaPlayer.Play" title="Link to this definition">¶</a></dt>
+<dd><p>Plays the media loaded in the open multimedia device.
+Play is called when the Play button on the media player control is clicked at runtime.
+Upon completion, Play stores a numerical error code in the Error property and the corresponding error message in the ErrorMessage property.
+The Wait property determines whether control is returned to the application before the Play method has completed. The Notify property determines whether Play generates an OnNotify event.
+If the StartPos property is set, playing starts at the position specified in StartPos. Otherwise, playing starts at the current position, specified in the Position property. Similarly, if the EndPos property is set, playing stops at the position specified in EndPos. Otherwise, playing stops at the end of the medium.
+Whether the medium (specified in the Position property) is rewound before playing starts depends on the AutoRewind property.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.MediaPlayer.PopupMenu">
+<span class="sig-name descname"><span class="pre">PopupMenu</span></span><a class="headerlink" href="#delphivcl.MediaPlayer.PopupMenu" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the pop-up menu associated with the control.
+Assign a value to PopupMenu to make a pop-up menu appear when the user selects the control and clicks the right mouse button. If the TPopupMenu’s AutoPopup property is True, the pop-up menu appears automatically. If the menu’s AutoPopup property is False, display the menu with a call to its Popup method from the control’s OnContextPopup event handler.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="delphivcl.PopupMenu.html#delphivcl.PopupMenu" title="delphivcl.PopupMenu">PopupMenu</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.MediaPlayer.Position">
+<span class="sig-name descname"><span class="pre">Position</span></span><a class="headerlink" href="#delphivcl.MediaPlayer.Position" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the current position within the currently loaded medium.
+The value of Position is specified according to the current time format, which is specified in the TimeFormat property.
+Position defaults to the beginning of the medium. If the medium supports multiple tracks, Position defaults to the beginning of the first track.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.MediaPlayer.Previous">
+<span class="sig-name descname"><span class="pre">Previous</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.MediaPlayer.Previous" title="Link to this definition">¶</a></dt>
+<dd><p>Sets the current position to the beginning of the previous track if the position was at the beginning of a track when Previous was called.
+If the position is at the first track or somewhere other than the beginning of a track when Previous was called, Previous sets the current position to the beginning of the current track. If the device doesn’t use tracks, Previous sets the current position to the beginning of the medium, which is specified in the Start property. Previous is called when the Previous button on the media player control is clicked at runtime.
+Upon completion, Previous stores a numerical error code in the Error property and the corresponding error message in the ErrorMessage property.
+The Wait property determines whether control is returned to the application before the Previous method has completed. The Notify property determines whether Previous generates an OnNotify event.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.MediaPlayer.Repaint">
+<span class="sig-name descname"><span class="pre">Repaint</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.MediaPlayer.Repaint" title="Link to this definition">¶</a></dt>
+<dd><p>Forces the control to repaint its image on the screen.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.MediaPlayer.Resume">
+<span class="sig-name descname"><span class="pre">Resume</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.MediaPlayer.Resume" title="Link to this definition">¶</a></dt>
+<dd><p>Resumes playing or recording the currently paused multimedia device.
+Resume is called when the Pause button on the media player control is clicked at runtime, when the device is paused.
+Upon completion, Resume stores a numerical error code in the Error property, and the corresponding error message in the ErrorMessage property.
+The Wait property determines whether control is returned to the application before the Resume method has completed. The Notify property determines whether Resume generates an OnNotify event.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.MediaPlayer.Rewind">
+<span class="sig-name descname"><span class="pre">Rewind</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.MediaPlayer.Rewind" title="Link to this definition">¶</a></dt>
+<dd><p>Sets the current position to the beginning of the the medium, which is stored in the Start property.
+Upon completion, Rewind stores a numerical error code in the Error property, and the corresponding error message in the ErrorMessage property.
+The Wait property determines whether control is returned to the application before the Rewind method has completed. The Notify property determines whether Rewind generates an OnNotify event.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.MediaPlayer.Save">
+<span class="sig-name descname"><span class="pre">Save</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.MediaPlayer.Save" title="Link to this definition">¶</a></dt>
+<dd><p>Saves the currently loaded medium to the file specified in the FileName property.
+Save is ignored for devices that don’t use media stored in files (videodiscs, for example).
+Upon completion, Save stores a numerical error code in the Error property, and the corresponding error message in the ErrorMessage property.
+The Wait property determines whether control is returned to the application before the Save method has completed. The Notify property determines whether Save generates an OnNotify event.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.MediaPlayer.ScreenToClient">
+<span class="sig-name descname"><span class="pre">ScreenToClient</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.MediaPlayer.ScreenToClient" title="Link to this definition">¶</a></dt>
+<dd><p>Converts the screen coordinates of a specified point on the screen to client coordinates.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.MediaPlayer.SendToBack">
+<span class="sig-name descname"><span class="pre">SendToBack</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.MediaPlayer.SendToBack" title="Link to this definition">¶</a></dt>
+<dd><p>Puts a windowed control behind all other windowed controls, or puts a non-windowed control behind all other non-windowed controls.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.MediaPlayer.SetBounds">
+<span class="sig-name descname"><span class="pre">SetBounds</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Left</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Top</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Width</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Height</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.MediaPlayer.SetBounds" title="Link to this definition">¶</a></dt>
+<dd><p>Sets the Left, Top, Width, and Height properties all at once.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.MediaPlayer.Shareable">
+<span class="sig-name descname"><span class="pre">Shareable</span></span><a class="headerlink" href="#delphivcl.MediaPlayer.Shareable" title="Link to this definition">¶</a></dt>
+<dd><p>Determines whether more than one application can share a multimedia device.
+If Shareable is false, no other components or applications can access the device. If Shareable is true, more than one component or application can access the device. Shareable defaults to false.
+Be sure to set Shareable before opening a device.
+Some devices are not shareable. If Shareable is set to true for a device that isn’t shareable, the Open method fails and the error code is returned to the Error property.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.MediaPlayer.Show">
+<span class="sig-name descname"><span class="pre">Show</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.MediaPlayer.Show" title="Link to this definition">¶</a></dt>
+<dd><p>Shows the wrapped Control</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.MediaPlayer.ShowHint">
+<span class="sig-name descname"><span class="pre">ShowHint</span></span><a class="headerlink" href="#delphivcl.MediaPlayer.ShowHint" title="Link to this definition">¶</a></dt>
+<dd><p>ShowHint specifies whether to show the Help Hint when the mouse pointer moves over the control.
+ShowHint determines whether the Help Hint appears for the control. The Help Hint is the value of the TControl.Hint property. The Help Hint appears in a box just beneath the control when the mouse pointer moves over the control.
+To enable Help Hints for a particular control, two conditions must be satisfied:</p>
+<p>The application’s ShowHint property must be True.
+Either the control’s own ShowHint property must be True, or the control’s ParentShowHint property must be True and its parent’s ShowHint property must be True.
+For example, imagine a check box within a group box. If the ShowHint property of the group box is True and the ParentShowHint property of the check box is True, but the ShowHint property of the check box is False, the check box still displays its Help Hint.
+Changing the ShowHint value automatically sets the ParentShowHint property to False.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.MediaPlayer.Start">
+<span class="sig-name descname"><span class="pre">Start</span></span><a class="headerlink" href="#delphivcl.MediaPlayer.Start" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the starting position within the currently loaded medium.
+Start is the beginning of the medium for devices that don’t use tracks, or the beginning of the first track for devices that use tracks. Start is defined when a multimedia device is opened with the Open method. Start is specified according to the current time format, which is stored in the TimeFormat property. Start is read-only at runtime and is unavailable at design time.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.MediaPlayer.StartPos">
+<span class="sig-name descname"><span class="pre">StartPos</span></span><a class="headerlink" href="#delphivcl.MediaPlayer.StartPos" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the position within the currently loaded medium from which to begin playing or recording.
+StartPos is specified using the current time format, which is specified in the TimeFormat property.
+The StartPos property affects only the next Play or StartRecording method called after setting StartPos. Reset must be set to StartPos to affect any subsequent calls to Play or StartRecording.
+StartPos does not affect the current position of the medium (specified in the Position property) until the next Play or StartRecording method is called.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.MediaPlayer.StartRecording">
+<span class="sig-name descname"><span class="pre">StartRecording</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.MediaPlayer.StartRecording" title="Link to this definition">¶</a></dt>
+<dd><p>Begins recording from the current Position or from the position specified in StartPos.
+StartRecording is called when the Record button on the media player control is clicked at runtime.
+Upon completion, StartRecording stores a numerical error code in the Error property and the corresponding error message in the ErrorMessage property.
+The Wait property determines whether control is returned to the application before the StartRecording method has completed. The Notify property determines whether StartRecording generates an OnNotify event.
+By default, the Notify property becomes true, and the Wait property becomes false upon completion of the StartRecording method. However, if these properties have been set to specific values prior to calling StartRecording, they remain unchanged.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.MediaPlayer.Step">
+<span class="sig-name descname"><span class="pre">Step</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.MediaPlayer.Step" title="Link to this definition">¶</a></dt>
+<dd><p>Moves forward a number of frames (determined by the Frames property) in the currently loaded medium.
+Step is called when the Step button on the media player control is clicked at runtime.
+Upon completion, Step stores a numerical error code in the Error property and the corresponding error message in the ErrorMessage property.
+The Wait property determines whether control is returned to the application before the Step method has completed. The Notify property determines whether Step generates an OnNotify event.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.MediaPlayer.Stop">
+<span class="sig-name descname"><span class="pre">Stop</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.MediaPlayer.Stop" title="Link to this definition">¶</a></dt>
+<dd><p>Halts playing or recording.
+Stop is called when the Stop button on the media player control is clicked at runtime.
+Upon completion, Stop stores a numerical error code in the Error property, and the corresponding error message in the ErrorMessage property.
+The Wait property determines whether control is returned to the application before the Stop method has completed. The Notify property determines whether Stop generates an OnNotify event.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.MediaPlayer.StyleName">
+<span class="sig-name descname"><span class="pre">StyleName</span></span><a class="headerlink" href="#delphivcl.MediaPlayer.StyleName" title="Link to this definition">¶</a></dt>
+<dd><p>Embarcadero Technologies does not currently have any additional information.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.MediaPlayer.TabOrder">
+<span class="sig-name descname"><span class="pre">TabOrder</span></span><a class="headerlink" href="#delphivcl.MediaPlayer.TabOrder" title="Link to this definition">¶</a></dt>
+<dd><p>Indicates the position of the control in its parent’s tab order.
+TabOrder is the order in which child windows are visited when the user presses the Tab key. The control with the TabOrder value of 0 is the control that has the focus when the form first appears.
+Initially, the tab order is always the order in which the controls were added to the form. The first control added to the form has a TabOrder value of 0, the second is 1, the third is 2, and so on. Change this by changing the TabOrder property.
+Each control has a unique tab-order value within its parent. If you change the TabOrder property value of one control to be the same as the value of a second control, the TabOrder value for all the other controls changes. For example, suppose a control is sixth in the tab order. If you change the control’s TabOrder property value to 3 (making the control fourth in the tab order), the control that was originally fourth in the tab order now becomes fifth, and the control that was fifth becomes sixth.
+Assigning TabOrder a value greater than the number of controls contained in the parent control moves the control to the end of the tab order. The control does not take on the assigned value of TabOrder, but instead is given the number that assures the control is the last in the tab order.</p>
+<p>Note: TabOrder is meaningful only if the TabStop property is True and if the control has a parent. (The TabOrder property of a form is not used unless the form is the child of another form.) A control with a TabOrder of -1 has no parent, and therefore cannot be reached by pressing the Tab key. To remove a parented control from the Tab order, set its TabStop property to False.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.MediaPlayer.TabStop">
+<span class="sig-name descname"><span class="pre">TabStop</span></span><a class="headerlink" href="#delphivcl.MediaPlayer.TabStop" title="Link to this definition">¶</a></dt>
+<dd><p>Determines whether the user can tab to a control.
+Use the TabStop to allow or disallow access to the control using the Tab key.
+If TabStop is True, the control is in the tab order. If TabStop is False, the control is not in the tab order and the user cannot press the TAB key to move to the control.</p>
+<p>Note: TabStop is not meaningful for a form unless the form assigns another form to be its parent.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.MediaPlayer.TimeFormat">
+<span class="sig-name descname"><span class="pre">TimeFormat</span></span><a class="headerlink" href="#delphivcl.MediaPlayer.TimeFormat" title="Link to this definition">¶</a></dt>
+<dd><p>Determines the format used to specify position information.
+TimeFormat determines how the StartPos, Length, Position, Start, and EndPos properties are interpreted. For example, if Position is 180 and TimeFormat is tfMilliseconds, the current position is 180 milliseconds into the medium. If Position is 180 and TimeFormat is tfMSF, the current position is 180 minutes into the medium.
+Not all formats are supported by every device. When trying to set an unsupported format, the assignment is ignored.
+The current timing information is always passed in a 4-byte integer. In some formats, the timing information returned is not really one integer, but single bytes of information packed in the long integer.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>MPTimeFormats</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.MediaPlayer.TrackLength">
+<span class="sig-name descname"><span class="pre">TrackLength</span></span><a class="headerlink" href="#delphivcl.MediaPlayer.TrackLength" title="Link to this definition">¶</a></dt>
+<dd><p>int:</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.MediaPlayer.TrackPosition">
+<span class="sig-name descname"><span class="pre">TrackPosition</span></span><a class="headerlink" href="#delphivcl.MediaPlayer.TrackPosition" title="Link to this definition">¶</a></dt>
+<dd><p>int:</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.MediaPlayer.Tracks">
+<span class="sig-name descname"><span class="pre">Tracks</span></span><a class="headerlink" href="#delphivcl.MediaPlayer.Tracks" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the number of playable tracks on the open multimedia device.
+Tracks indicates how many of playable tracks are available on the open multimedia device.
+Tracks is undefined for devices that don’t use tracks.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.MediaPlayer.Update">
+<span class="sig-name descname"><span class="pre">Update</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.MediaPlayer.Update" title="Link to this definition">¶</a></dt>
+<dd><p>Processes any pending paint messages immediately.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.MediaPlayer.Visible">
+<span class="sig-name descname"><span class="pre">Visible</span></span><a class="headerlink" href="#delphivcl.MediaPlayer.Visible" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies whether the component appears onscreen.
+Use the Visible property to control the visibility of the control at run time. If Visible is True, the control appears. If Visible is False, the control is not visible.
+Calling the Show method sets the control’s Visible property to True. Calling the Hide method sets it to False.
+For TCustomForm descendants, the Show and ShowModal methods set Visible to True and bring the form to the front of all open windows.
+For TTabSheet descendants, Visible does not control the visibility of the control at run time. For more information, see the description of the TabVisible property.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.MediaPlayer.VisibleButtons">
+<span class="sig-name descname"><span class="pre">VisibleButtons</span></span><a class="headerlink" href="#delphivcl.MediaPlayer.VisibleButtons" title="Link to this definition">¶</a></dt>
+<dd><p>Indicates which of the buttons on the media player are visible.
+VisibleButtons determines which buttons on the media player that are visible. If a button is not made visible with VisibleButtons, it does not appear on the media player control. By default, all buttons are visible when a media player component is added to a form.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ButtonSet</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.MediaPlayer.Wait">
+<span class="sig-name descname"><span class="pre">Wait</span></span><a class="headerlink" href="#delphivcl.MediaPlayer.Wait" title="Link to this definition">¶</a></dt>
+<dd><p>Determines whether a media control method returns control to the application only after it has been completed.
+Wait determines whether a media control method (Back, Close, Eject, Next, Open, Pause, PauseOnly, Play, Previous, StartRecording, Resume, Rewind, Step, or Stop) returns control to the application only after it has been completed.
+Wait is unavailable at design time.
+If Wait is true, the media player component waits until the next media control method has completed before returning control to the application. If Wait is false, the application won’t wait for the next media control method to finish before continuing.
+Wait affects only the next media control method called after setting Wait. Wait must be reset to affect any subsequent call to a media control method.
+By default, Play and StartRecording function as if Wait is false. Wait must be set to true before calling Play or StartRecording to prevent control from returning to the application before playing or recording has finished. By default, all other media control methods function as if Wait is true.</p>
+<p>Note: Wait is usually set to false only if the next media control is expected to take a long time, so that the application can execute other code before the media control method has completed. If Wait is set to false, you should set Notify to true so the application is notified when the media control method completes.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="delphivcl.CustomToggleSwitch.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">CustomToggleSwitch</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="delphivcl.ActionList.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">ActionList</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2020-2023, Embarcadero Python Dev Team
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">MediaPlayer</a><ul>
+<li><a class="reference internal" href="#delphivcl.MediaPlayer"><code class="docutils literal notranslate"><span class="pre">MediaPlayer</span></code></a><ul>
+<li><a class="reference internal" href="#delphivcl.MediaPlayer.Align"><code class="docutils literal notranslate"><span class="pre">MediaPlayer.Align</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MediaPlayer.Anchors"><code class="docutils literal notranslate"><span class="pre">MediaPlayer.Anchors</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MediaPlayer.AutoEnable"><code class="docutils literal notranslate"><span class="pre">MediaPlayer.AutoEnable</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MediaPlayer.AutoOpen"><code class="docutils literal notranslate"><span class="pre">MediaPlayer.AutoOpen</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MediaPlayer.AutoRewind"><code class="docutils literal notranslate"><span class="pre">MediaPlayer.AutoRewind</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MediaPlayer.Back"><code class="docutils literal notranslate"><span class="pre">MediaPlayer.Back()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MediaPlayer.BringToFront"><code class="docutils literal notranslate"><span class="pre">MediaPlayer.BringToFront()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MediaPlayer.Capabilities"><code class="docutils literal notranslate"><span class="pre">MediaPlayer.Capabilities</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MediaPlayer.ClientToScreen"><code class="docutils literal notranslate"><span class="pre">MediaPlayer.ClientToScreen()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MediaPlayer.Close"><code class="docutils literal notranslate"><span class="pre">MediaPlayer.Close()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MediaPlayer.ColoredButtons"><code class="docutils literal notranslate"><span class="pre">MediaPlayer.ColoredButtons</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MediaPlayer.Constraints"><code class="docutils literal notranslate"><span class="pre">MediaPlayer.Constraints</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MediaPlayer.DeviceID"><code class="docutils literal notranslate"><span class="pre">MediaPlayer.DeviceID</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MediaPlayer.DeviceType"><code class="docutils literal notranslate"><span class="pre">MediaPlayer.DeviceType</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MediaPlayer.Display"><code class="docutils literal notranslate"><span class="pre">MediaPlayer.Display</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MediaPlayer.DisplayRect"><code class="docutils literal notranslate"><span class="pre">MediaPlayer.DisplayRect</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MediaPlayer.DoubleBuffered"><code class="docutils literal notranslate"><span class="pre">MediaPlayer.DoubleBuffered</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MediaPlayer.DoubleBufferedMode"><code class="docutils literal notranslate"><span class="pre">MediaPlayer.DoubleBufferedMode</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MediaPlayer.Eject"><code class="docutils literal notranslate"><span class="pre">MediaPlayer.Eject()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MediaPlayer.Enabled"><code class="docutils literal notranslate"><span class="pre">MediaPlayer.Enabled</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MediaPlayer.EnabledButtons"><code class="docutils literal notranslate"><span class="pre">MediaPlayer.EnabledButtons</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MediaPlayer.EndPos"><code class="docutils literal notranslate"><span class="pre">MediaPlayer.EndPos</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MediaPlayer.Error"><code class="docutils literal notranslate"><span class="pre">MediaPlayer.Error</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MediaPlayer.ErrorMessage"><code class="docutils literal notranslate"><span class="pre">MediaPlayer.ErrorMessage</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MediaPlayer.FileName"><code class="docutils literal notranslate"><span class="pre">MediaPlayer.FileName</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MediaPlayer.Frames"><code class="docutils literal notranslate"><span class="pre">MediaPlayer.Frames</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MediaPlayer.Hide"><code class="docutils literal notranslate"><span class="pre">MediaPlayer.Hide()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MediaPlayer.Invalidate"><code class="docutils literal notranslate"><span class="pre">MediaPlayer.Invalidate()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MediaPlayer.Length"><code class="docutils literal notranslate"><span class="pre">MediaPlayer.Length</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MediaPlayer.Mode"><code class="docutils literal notranslate"><span class="pre">MediaPlayer.Mode</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MediaPlayer.Next"><code class="docutils literal notranslate"><span class="pre">MediaPlayer.Next()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MediaPlayer.Notify"><code class="docutils literal notranslate"><span class="pre">MediaPlayer.Notify</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MediaPlayer.NotifyValue"><code class="docutils literal notranslate"><span class="pre">MediaPlayer.NotifyValue</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MediaPlayer.Open"><code class="docutils literal notranslate"><span class="pre">MediaPlayer.Open()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MediaPlayer.Parent"><code class="docutils literal notranslate"><span class="pre">MediaPlayer.Parent</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MediaPlayer.ParentDoubleBuffered"><code class="docutils literal notranslate"><span class="pre">MediaPlayer.ParentDoubleBuffered</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MediaPlayer.ParentShowHint"><code class="docutils literal notranslate"><span class="pre">MediaPlayer.ParentShowHint</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MediaPlayer.Pause"><code class="docutils literal notranslate"><span class="pre">MediaPlayer.Pause()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MediaPlayer.PauseOnly"><code class="docutils literal notranslate"><span class="pre">MediaPlayer.PauseOnly()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MediaPlayer.Play"><code class="docutils literal notranslate"><span class="pre">MediaPlayer.Play()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MediaPlayer.PopupMenu"><code class="docutils literal notranslate"><span class="pre">MediaPlayer.PopupMenu</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MediaPlayer.Position"><code class="docutils literal notranslate"><span class="pre">MediaPlayer.Position</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MediaPlayer.Previous"><code class="docutils literal notranslate"><span class="pre">MediaPlayer.Previous()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MediaPlayer.Repaint"><code class="docutils literal notranslate"><span class="pre">MediaPlayer.Repaint()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MediaPlayer.Resume"><code class="docutils literal notranslate"><span class="pre">MediaPlayer.Resume()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MediaPlayer.Rewind"><code class="docutils literal notranslate"><span class="pre">MediaPlayer.Rewind()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MediaPlayer.Save"><code class="docutils literal notranslate"><span class="pre">MediaPlayer.Save()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MediaPlayer.ScreenToClient"><code class="docutils literal notranslate"><span class="pre">MediaPlayer.ScreenToClient()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MediaPlayer.SendToBack"><code class="docutils literal notranslate"><span class="pre">MediaPlayer.SendToBack()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MediaPlayer.SetBounds"><code class="docutils literal notranslate"><span class="pre">MediaPlayer.SetBounds()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MediaPlayer.Shareable"><code class="docutils literal notranslate"><span class="pre">MediaPlayer.Shareable</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MediaPlayer.Show"><code class="docutils literal notranslate"><span class="pre">MediaPlayer.Show()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MediaPlayer.ShowHint"><code class="docutils literal notranslate"><span class="pre">MediaPlayer.ShowHint</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MediaPlayer.Start"><code class="docutils literal notranslate"><span class="pre">MediaPlayer.Start</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MediaPlayer.StartPos"><code class="docutils literal notranslate"><span class="pre">MediaPlayer.StartPos</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MediaPlayer.StartRecording"><code class="docutils literal notranslate"><span class="pre">MediaPlayer.StartRecording()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MediaPlayer.Step"><code class="docutils literal notranslate"><span class="pre">MediaPlayer.Step()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MediaPlayer.Stop"><code class="docutils literal notranslate"><span class="pre">MediaPlayer.Stop()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MediaPlayer.StyleName"><code class="docutils literal notranslate"><span class="pre">MediaPlayer.StyleName</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MediaPlayer.TabOrder"><code class="docutils literal notranslate"><span class="pre">MediaPlayer.TabOrder</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MediaPlayer.TabStop"><code class="docutils literal notranslate"><span class="pre">MediaPlayer.TabStop</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MediaPlayer.TimeFormat"><code class="docutils literal notranslate"><span class="pre">MediaPlayer.TimeFormat</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MediaPlayer.TrackLength"><code class="docutils literal notranslate"><span class="pre">MediaPlayer.TrackLength</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MediaPlayer.TrackPosition"><code class="docutils literal notranslate"><span class="pre">MediaPlayer.TrackPosition</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MediaPlayer.Tracks"><code class="docutils literal notranslate"><span class="pre">MediaPlayer.Tracks</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MediaPlayer.Update"><code class="docutils literal notranslate"><span class="pre">MediaPlayer.Update()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MediaPlayer.Visible"><code class="docutils literal notranslate"><span class="pre">MediaPlayer.Visible</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MediaPlayer.VisibleButtons"><code class="docutils literal notranslate"><span class="pre">MediaPlayer.VisibleButtons</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MediaPlayer.Wait"><code class="docutils literal notranslate"><span class="pre">MediaPlayer.Wait</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script src="../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/scripts/furo.js?v=5fa4622c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/responsiveSvg.js?v=f1528c9d"></script>
+    </body>
+</html>

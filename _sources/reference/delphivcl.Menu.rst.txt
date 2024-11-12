@@ -1,0 +1,59 @@
+﻿Menu
+====
+
+Qualified name: ``delphivcl.Menu``
+
+.. currentmodule:: delphivcl
+
+.. autoclass:: Menu
+   :show-inheritance:
+   :members:
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+      
+      ~Menu.BindMethodsToEvents
+      ~Menu.CreateMenuItem
+      ~Menu.DispatchCommand
+      ~Menu.DispatchPopup
+      ~Menu.FindItem
+      ~Menu.GetChildren
+      ~Menu.GetHelpContext
+      ~Menu.GetParentComponent
+      ~Menu.HasParent
+      ~Menu.IsRightToLeft
+      ~Menu.IsShortCut
+      ~Menu.ParentBiDiModeChanged
+      ~Menu.ProcessMenuChar
+
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+     
+     ~Menu.AutoHotkeys
+     ~Menu.AutoLineReduction
+     ~Menu.BiDiMode
+     ~Menu.ClassName
+     ~Menu.ComObject
+     ~Menu.ComponentCount
+     ~Menu.ComponentIndex
+     ~Menu.ComponentState
+     ~Menu.ComponentStyle
+     ~Menu.Components
+     ~Menu.DesignInfo
+     ~Menu.Handle
+     ~Menu.Images
+     ~Menu.Items
+     ~Menu.Name
+     ~Menu.Observers
+     ~Menu.Owner
+     ~Menu.OwnerDraw
+     ~Menu.ParentBiDiMode
+     ~Menu.Tag
+     ~Menu.VCLComObject
+     ~Menu.WindowHandle
+   

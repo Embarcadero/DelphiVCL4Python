@@ -1,0 +1,49 @@
+﻿Graphic
+=======
+
+Qualified name: ``delphivcl.Graphic``
+
+.. currentmodule:: delphivcl
+
+.. autoclass:: Graphic
+   :show-inheritance:
+   :members:
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+      
+      ~Graphic.AfterConstruction
+      ~Graphic.CanLoadFromStream
+      ~Graphic.DisableScaledDrawer
+      ~Graphic.EnableScaledDrawer
+      ~Graphic.Equals
+      ~Graphic.LoadFromClipboardFormat
+      ~Graphic.LoadFromFile
+      ~Graphic.LoadFromStream
+      ~Graphic.QueryInterface
+      ~Graphic.SaveToClipboardFormat
+      ~Graphic.SaveToFile
+      ~Graphic.SaveToStream
+      ~Graphic.SetSize
+      ~Graphic.UpdateScaledDrawer
+
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+     
+     ~Graphic.ClassName
+     ~Graphic.Empty
+     ~Graphic.Height
+     ~Graphic.IsAnimating
+     ~Graphic.Modified
+     ~Graphic.Palette
+     ~Graphic.PaletteModified
+     ~Graphic.ScaledDrawer
+     ~Graphic.SupportsPartialTransparency
+     ~Graphic.Transparent
+     ~Graphic.Width
+   

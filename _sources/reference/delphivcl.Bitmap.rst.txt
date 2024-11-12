@@ -1,0 +1,64 @@
+﻿Bitmap
+======
+
+Qualified name: ``delphivcl.Bitmap``
+
+.. currentmodule:: delphivcl
+
+.. autoclass:: Bitmap
+   :show-inheritance:
+   :members:
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+      
+      ~Bitmap.Assign
+      ~Bitmap.CanLoadFromStream
+      ~Bitmap.Dormant
+      ~Bitmap.FreeImage
+      ~Bitmap.HandleNeeded
+      ~Bitmap.LoadFromClipboardFormat
+      ~Bitmap.LoadFromResourceID
+      ~Bitmap.LoadFromResourceName
+      ~Bitmap.LoadFromStream
+      ~Bitmap.Mask
+      ~Bitmap.ReleaseHandle
+      ~Bitmap.ReleaseMaskHandle
+      ~Bitmap.ReleasePalette
+      ~Bitmap.SaveToClipboardFormat
+      ~Bitmap.SaveToStream
+      ~Bitmap.SetSize
+
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+     
+     ~Bitmap.AlphaFormat
+     ~Bitmap.Canvas
+     ~Bitmap.ClassName
+     ~Bitmap.Empty
+     ~Bitmap.Handle
+     ~Bitmap.HandleAllocated
+     ~Bitmap.HandleType
+     ~Bitmap.Height
+     ~Bitmap.IgnorePalette
+     ~Bitmap.IsAnimating
+     ~Bitmap.IsBottomTop
+     ~Bitmap.MaskHandle
+     ~Bitmap.Modified
+     ~Bitmap.Monochrome
+     ~Bitmap.Palette
+     ~Bitmap.PaletteModified
+     ~Bitmap.PixelFormat
+     ~Bitmap.ScaledDrawer
+     ~Bitmap.ScanLine
+     ~Bitmap.SupportsPartialTransparency
+     ~Bitmap.Transparent
+     ~Bitmap.TransparentColor
+     ~Bitmap.TransparentMode
+     ~Bitmap.Width
+   

@@ -1,0 +1,51 @@
+﻿Icon
+====
+
+Qualified name: ``delphivcl.Icon``
+
+.. currentmodule:: delphivcl
+
+.. autoclass:: Icon
+   :show-inheritance:
+   :members:
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+      
+      ~Icon.Assign
+      ~Icon.AssignTo
+      ~Icon.CanLoadFromStream
+      ~Icon.LoadFromClipboardFormat
+      ~Icon.LoadFromResourceID
+      ~Icon.LoadFromResourceName
+      ~Icon.LoadFromStream
+      ~Icon.ReleaseHandle
+      ~Icon.SaveToClipboardFormat
+      ~Icon.SaveToStream
+      ~Icon.SetSize
+
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+     
+     ~Icon.ClassName
+     ~Icon.Empty
+     ~Icon.Handle
+     ~Icon.HandleAllocated
+     ~Icon.Height
+     ~Icon.IconImage
+     ~Icon.ImageCount
+     ~Icon.Images
+     ~Icon.IsAnimating
+     ~Icon.Modified
+     ~Icon.Palette
+     ~Icon.PaletteModified
+     ~Icon.ScaledDrawer
+     ~Icon.SupportsPartialTransparency
+     ~Icon.Transparent
+     ~Icon.Width
+   

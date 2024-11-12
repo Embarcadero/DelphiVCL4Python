@@ -1,0 +1,91 @@
+﻿MenuItem
+========
+
+Qualified name: ``delphivcl.MenuItem``
+
+.. currentmodule:: delphivcl
+
+.. autoclass:: MenuItem
+   :show-inheritance:
+   :members:
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+      
+      ~MenuItem.Add
+      ~MenuItem.BindMethodsToEvents
+      ~MenuItem.Clear
+      ~MenuItem.Click
+      ~MenuItem.Delete
+      ~MenuItem.Find
+      ~MenuItem.GetChildren
+      ~MenuItem.GetEnumerator
+      ~MenuItem.GetImageList
+      ~MenuItem.GetParentComponent
+      ~MenuItem.GetParentMenu
+      ~MenuItem.HandleAllocated
+      ~MenuItem.HasParent
+      ~MenuItem.IndexOf
+      ~MenuItem.InitiateAction
+      ~MenuItem.Insert
+      ~MenuItem.InsertNewLineAfter
+      ~MenuItem.InsertNewLineBefore
+      ~MenuItem.IsLine
+      ~MenuItem.NewBottomLine
+      ~MenuItem.NewTopLine
+      ~MenuItem.Remove
+      ~MenuItem.RethinkHotkeys
+      ~MenuItem.RethinkLines
+      ~MenuItem.SetParentComponent
+
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+     
+     ~MenuItem.Action
+     ~MenuItem.AutoCheck
+     ~MenuItem.AutoHotkeys
+     ~MenuItem.AutoLineReduction
+     ~MenuItem.Bitmap
+     ~MenuItem.Break
+     ~MenuItem.Caption
+     ~MenuItem.Checked
+     ~MenuItem.ClassName
+     ~MenuItem.ComObject
+     ~MenuItem.Command
+     ~MenuItem.ComponentCount
+     ~MenuItem.ComponentIndex
+     ~MenuItem.ComponentState
+     ~MenuItem.ComponentStyle
+     ~MenuItem.Components
+     ~MenuItem.Count
+     ~MenuItem.Default
+     ~MenuItem.DesignInfo
+     ~MenuItem.Enabled
+     ~MenuItem.GroupIndex
+     ~MenuItem.Handle
+     ~MenuItem.HelpContext
+     ~MenuItem.Hint
+     ~MenuItem.ImageIndex
+     ~MenuItem.ImageName
+     ~MenuItem.Items
+     ~MenuItem.MenuHandle
+     ~MenuItem.MenuIndex
+     ~MenuItem.Name
+     ~MenuItem.Observers
+     ~MenuItem.OnAdvancedDrawItem
+     ~MenuItem.OnDrawItem
+     ~MenuItem.OnMeasureItem
+     ~MenuItem.Owner
+     ~MenuItem.Parent
+     ~MenuItem.RadioItem
+     ~MenuItem.ShortCut
+     ~MenuItem.SubMenuImages
+     ~MenuItem.Tag
+     ~MenuItem.VCLComObject
+     ~MenuItem.Visible
+   

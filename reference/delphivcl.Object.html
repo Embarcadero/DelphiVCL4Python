@@ -1,0 +1,1020 @@
+<!doctype html>
+<html class="no-js" lang="en" data-content_root="../">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="Object" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://github.com/Embarcadero/reference/delphivcl.Object.html" />
+<meta property="og:site_name" content="DelphiVCL | Documentation" />
+<meta property="og:description" content="Qualified name: delphivcl.Object" />
+<meta property="og:image" content="https://github.com/Embarcadero/DelphiVCL4Python/blob/main/images/DelphiVCL4Python(256px).png" />
+<meta property="og:image:alt" content="DelphiVCL | Documentation" />
+<meta name="description" content="Qualified name: delphivcl.Object" />
+<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="StyleManager" href="delphivcl.StyleManager.html" /><link rel="prev" title="DelphiVCL" href="../reference_index/delphivcl_classes.html" />
+
+    <link rel="shortcut icon" href="../_static/favicon.ico"/><!-- Generated with Sphinx 8.1.3 and Furo 2024.08.06 -->
+        <title>Object - DelphiVCL Documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=354aac6f" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=4ae1632d" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?v=302659d7" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=93c9b8cc" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  --color-content-foreground: #000000;
+  --color-background-primary: #ffffff;
+  --color-background-border: #ffffff;
+  --color-sidebar-background: #f8f9fb;
+  --color-brand-content: #1c00e3;
+  --color-brand-primary: #192bd0;
+  --color-link: #c93434;
+  --color-link--hover: #5b0000;
+  --color-inline-code-background: #f6f6f6;;
+  --color-foreground-secondary: #000;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  --color-content-foreground: #ffffffd9;
+  --color-background-primary: #131416;
+  --color-background-border: #303335;
+  --color-sidebar-background: #1a1c1e;
+  --color-brand-content: #2196f3;
+  --color-brand-primary: #007fff;
+  --color-link: #51ba86;
+  --color-link--hover: #9cefc6;
+  --color-inline-code-background: #262626;
+  --color-foreground-secondary: #ffffffd9;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  --color-content-foreground: #ffffffd9;
+  --color-background-primary: #131416;
+  --color-background-border: #303335;
+  --color-sidebar-background: #1a1c1e;
+  --color-brand-content: #2196f3;
+  --color-brand-primary: #007fff;
+  --color-link: #51ba86;
+  --color-link--hover: #9cefc6;
+  --color-inline-code-background: #262626;
+  --color-foreground-secondary: #ffffffd9;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-with-moon" viewBox="0 0 24 24">
+    <title>Auto light/dark, in light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path style="opacity: 50%" d="M 5.411 14.504 C 5.471 14.504 5.532 14.504 5.591 14.504 C 3.639 16.319 4.383 19.569 6.931 20.352 C 7.693 20.586 8.512 20.551 9.25 20.252 C 8.023 23.207 4.056 23.725 2.11 21.184 C 0.166 18.642 1.702 14.949 4.874 14.536 C 5.051 14.512 5.231 14.5 5.411 14.5 L 5.411 14.504 Z"/>
+      <line x1="14.5" y1="3.25" x2="14.5" y2="1.25"/>
+      <line x1="14.5" y1="15.85" x2="14.5" y2="17.85"/>
+      <line x1="10.044" y1="5.094" x2="8.63" y2="3.68"/>
+      <line x1="19" y1="14.05" x2="20.414" y2="15.464"/>
+      <line x1="8.2" y1="9.55" x2="6.2" y2="9.55"/>
+      <line x1="20.8" y1="9.55" x2="22.8" y2="9.55"/>
+      <line x1="10.044" y1="14.006" x2="8.63" y2="15.42"/>
+      <line x1="19" y1="5.05" x2="20.414" y2="3.636"/>
+      <circle cx="14.5" cy="9.55" r="3.6"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon-with-sun" viewBox="0 0 24 24">
+    <title>Auto light/dark, in dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path d="M 8.282 7.007 C 8.385 7.007 8.494 7.007 8.595 7.007 C 5.18 10.184 6.481 15.869 10.942 17.24 C 12.275 17.648 13.706 17.589 15 17.066 C 12.851 22.236 5.91 23.143 2.505 18.696 C -0.897 14.249 1.791 7.786 7.342 7.063 C 7.652 7.021 7.965 7 8.282 7 L 8.282 7.007 Z"/>
+      <line style="opacity: 50%" x1="18" y1="3.705" x2="18" y2="2.5"/>
+      <line style="opacity: 50%" x1="18" y1="11.295" x2="18" y2="12.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="4.816" x2="14.464" y2="3.964"/>
+      <line style="opacity: 50%" x1="20.711" y1="10.212" x2="21.563" y2="11.063"/>
+      <line style="opacity: 50%" x1="14.205" y1="7.5" x2="13.001" y2="7.5"/>
+      <line style="opacity: 50%" x1="21.795" y1="7.5" x2="23" y2="7.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="10.184" x2="14.464" y2="11.036"/>
+      <line style="opacity: 50%" x1="20.711" y1="4.789" x2="21.563" y2="3.937"/>
+      <circle style="opacity: 50%" cx="18" cy="7.5" r="2.169"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-pencil" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-pencil-code">
+      <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+      <path d="M13.5 6.5l4 4" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+  <symbol id="svg-eye" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-eye-code">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+      <path
+        d="M11.11 17.958c-3.209 -.307 -5.91 -2.293 -8.11 -5.958c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6c-.21 .352 -.427 .688 -.647 1.008" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+<a class="skip-to-content muted-link" href="#furo-main-content">Skip to content</a>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../index.html"><div class="brand">DelphiVCL Documentation</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+          <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../index.html">
+  
+  <div class="sidebar-logo-container">
+    <img class="sidebar-logo only-light" src="../_static/DelphiVCL4Python-sidebar.svg" alt="Light Logo"/>
+    <img class="sidebar-logo only-dark" src="../_static/DelphiVCL4Python-sidebar-dark.svg" alt="Dark Logo"/>
+  </div>
+  
+  <span class="sidebar-brand-text">DelphiVCL Documentation</span>
+  
+</a><form class="sidebar-search-container" method="get" action="../search.html" role="search">
+  <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../tutorials_guides.html">Tutorials &amp; Guides</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of Tutorials &amp; Guides</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../quickstart.html">Quickstart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples.html">Example Gallery</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq.html">Frequently Asked Questions</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current has-children"><a class="reference internal" href="../reference.html">Reference Manual</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle navigation of Reference Manual</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l2 current has-children"><a class="reference internal" href="../reference_index/delphivcl_classes.html">DelphiVCL</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle navigation of DelphiVCL</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l3 current current-page"><a class="current reference internal" href="#">Object</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.StyleManager.html">StyleManager</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Stream.html">Stream</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Monitor.html">Monitor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomStyleServices.html">CustomStyleServices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Persistent.html">Persistent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Strings.html">Strings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Picture.html">Picture</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Collection.html">Collection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Canvas.html">Canvas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Graphic.html">Graphic</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Bitmap.html">Bitmap</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Icon.html">Icon</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Metafile.html">Metafile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Component.html">Component</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Timer.html">Timer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.OpenDialog.html">OpenDialog</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.MenuItem.html">MenuItem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Menu.html">Menu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.FileOpenDialog.html">FileOpenDialog</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ContainedActionList.html">ContainedActionList</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Control.html">Control</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomBindingsList.html">CustomBindingsList</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BasicBindComponent.html">BasicBindComponent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BasicAction.html">BasicAction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BaseBindScopeComponent.html">BaseBindScopeComponent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BaseLinkingBindSource.html">BaseLinkingBindSource</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ContainedAction.html">ContainedAction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BindingsList.html">BindingsList</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BoundLabel.html">BoundLabel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomControl.html">CustomControl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Label.html">Label</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.WinControl.html">WinControl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomActionList.html">CustomActionList</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.MainMenu.html">MainMenu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.PopupMenu.html">PopupMenu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.SaveDialog.html">SaveDialog</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ActionList.html">ActionList</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.MediaPlayer.html">MediaPlayer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomToggleSwitch.html">CustomToggleSwitch</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomActivityIndicator.html">CustomActivityIndicator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomAction.html">CustomAction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Action.html">Action</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BaseObjectBindSource.html">BaseObjectBindSource</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomPrototypeBindSource.html">CustomPrototypeBindSource</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ActivityIndicator.html">ActivityIndicator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ToggleSwitch.html">ToggleSwitch</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.PrototypeBindSource.html">PrototypeBindSource</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ContainedBindComponent.html">ContainedBindComponent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BindComponentDelegate.html">BindComponentDelegate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.LinkPropertyToFieldDelegate.html">LinkPropertyToFieldDelegate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.LinkControlDelegate.html">LinkControlDelegate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomLinkPropertyToField.html">CustomLinkPropertyToField</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.LinkControlToFieldDelegate.html">LinkControlToFieldDelegate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.LinkPropertyToField.html">LinkPropertyToField</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomLinkControlToField.html">CustomLinkControlToField</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomLinkListControlToField.html">CustomLinkListControlToField</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.LinkControlToField.html">LinkControlToField</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.LinkListControlToField.html">LinkListControlToField</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BitBtn.html">BitBtn</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Button.html">Button</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CheckBox.html">CheckBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ColorBox.html">ColorBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ComboBox.html">ComboBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ControlBar.html">ControlBar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomGrid.html">CustomGrid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomEdit.html">CustomEdit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomForm.html">CustomForm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomStatusBar.html">CustomStatusBar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomTabControl.html">CustomTabControl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.DateTimePicker.html">DateTimePicker</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.GroupBox.html">GroupBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Header.html">Header</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.LabeledEdit.html">LabeledEdit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ListBox.html">ListBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Notebook.html">Notebook</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Page.html">Page</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.PageControl.html">PageControl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Panel.html">Panel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.RadioButton.html">RadioButton</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.RadioGroup.html">RadioGroup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ScrollBar.html">ScrollBar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.SpinButton.html">SpinButton</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.StaticText.html">StaticText</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.TabSheet.html">TabSheet</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ToolBar.html">ToolBar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.TrackBar.html">TrackBar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomDrawGrid.html">CustomDrawGrid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomMemo.html">CustomMemo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomNumberBox.html">CustomNumberBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Edit.html">Edit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.SpinEdit.html">SpinEdit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Form.html">Form</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.StatusBar.html">StatusBar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.TabControl.html">TabControl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.DrawGrid.html">DrawGrid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Memo.html">Memo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.NumberBox.html">NumberBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.StringGrid.html">StringGrid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomMemoryStream.html">CustomMemoryStream</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.HandleStream.html">HandleStream</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.MemoryStream.html">MemoryStream</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ResourceStream.html">ResourceStream</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.FileStream.html">FileStream</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BytesStream.html">BytesStream</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BufferedFileStream.html">BufferedFileStream</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.StringStream.html">StringStream</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../changelog.html">Changelog</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle navigation of Changelog</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../changelog/0.1.40-changelog.html">v0.1.40</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../changelog/1.0.0-changelog.html">v1.0.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../changelog/1.0.1-changelog.html">v1.0.1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../changelog/1.0.2-changelog.html">v1.0.2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../changelog/1.0.3-changelog.html">v1.0.3</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing.html">Contributing</a></li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+              <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role="main" id="furo-main-content">
+          <section id="object">
+<h1>Object<a class="headerlink" href="#object" title="Link to this heading">¶</a></h1>
+<p>Qualified name: <code class="docutils literal notranslate"><span class="pre">delphivcl.Object</span></code></p>
+<dl class="py class">
+<dt class="sig sig-object py" id="delphivcl.Object">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Object</span></span><a class="headerlink" href="#delphivcl.Object" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>TObject is the ultimate ancestor of all objects and components.
+TObject encapsulates fundamental behavior common to objects by introducing methods that:</p>
+<p>Create, maintain, and destroy instances of the object by allocating, initializing, and freeing required memory.
+Respond when object instances are created or destroyed.
+Return class-type and instance information on an object and runtime type information (RTTI) about its published properties.
+Support message handling.
+Support interfaces implemented by the object.
+Use TObject as an immediate base class when declaring simple objects that do not need to persist (are not saved and reloaded) and that do not need to be assigned to other objects.
+Much of the capability of objects is established by methods that TObject introduces. Many of these methods are used internally by IDEs and are not intended for users to call directly. Others are overridden in descendant objects that have more complex behavior.
+Although TObject is the based object of a component framework, not all objects are components. All component classes descend from TComponent.</p>
+<p>Note: TObject is never directly instantiated. Although it does not use programming language features that prevent instantiation, TObject is an abstract class.</p>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.Object.AfterConstruction" title="delphivcl.Object.AfterConstruction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AfterConstruction</span></code></a></p></td>
+<td><p>Responds after the last constructor has executed.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.Object.BeforeDestruction" title="delphivcl.Object.BeforeDestruction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BeforeDestruction</span></code></a></p></td>
+<td><p>Responds before the first destructor executes.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.Object.CPP_ABI_1" title="delphivcl.Object.CPP_ABI_1"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CPP_ABI_1</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.Object.CPP_ABI_2" title="delphivcl.Object.CPP_ABI_2"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CPP_ABI_2</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.Object.CPP_ABI_3" title="delphivcl.Object.CPP_ABI_3"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CPP_ABI_3</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.Object.ClassInfo" title="delphivcl.Object.ClassInfo"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ClassInfo</span></code></a></p></td>
+<td><p>Returns a pointer to the run-time type information (RTTI) table for the object type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.Object.ClassNameIs" title="delphivcl.Object.ClassNameIs"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ClassNameIs</span></code></a></p></td>
+<td><p>Determines whether an object is of a specific type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.Object.ClassParent" title="delphivcl.Object.ClassParent"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ClassParent</span></code></a></p></td>
+<td><p>Returns the type of the immediate ancestor of a class.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.Object.ClassType" title="delphivcl.Object.ClassType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ClassType</span></code></a></p></td>
+<td><p>Returns the class reference for the object's class.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.Object.CleanupInstance" title="delphivcl.Object.CleanupInstance"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CleanupInstance</span></code></a></p></td>
+<td><p>Performs finalization on long strings, variants, and interface variables within a class.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.Object.DefaultHandler" title="delphivcl.Object.DefaultHandler"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DefaultHandler</span></code></a></p></td>
+<td><p>Provides the interface for a method that processes message records.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.Object.Dispatch" title="delphivcl.Object.Dispatch"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Dispatch</span></code></a></p></td>
+<td><p>Calls message-handling methods for the object, based on the contents of the Message parameter.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.Object.DisposeOf" title="delphivcl.Object.DisposeOf"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DisposeOf</span></code></a></p></td>
+<td><p>DisposeOf forces the execution of the destructor code in an object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.Object.Equals" title="delphivcl.Object.Equals"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Equals</span></code></a></p></td>
+<td><p>Checks whether the current instance and the Obj parameter are equal.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.Object.FieldAddress" title="delphivcl.Object.FieldAddress"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FieldAddress</span></code></a></p></td>
+<td><p>Returns the address of a published object field.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.Object.Free" title="delphivcl.Object.Free"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Free</span></code></a></p></td>
+<td><p>Frees the Wrapped Delphi Object</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.Object.FreeInstance" title="delphivcl.Object.FreeInstance"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FreeInstance</span></code></a></p></td>
+<td><p>Deallocates memory allocated by a previous call to the NewInstance method.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.Object.GetHashCode" title="delphivcl.Object.GetHashCode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GetHashCode</span></code></a></p></td>
+<td><p>Returns an integer containing the hash code.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.Object.GetInterface" title="delphivcl.Object.GetInterface"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GetInterface</span></code></a></p></td>
+<td><p>Retrieves a specified interface.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.Object.GetInterfaceEntry" title="delphivcl.Object.GetInterfaceEntry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GetInterfaceEntry</span></code></a></p></td>
+<td><p>Returns the entry for a specific interface implemented in a class.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.Object.GetInterfaceTable" title="delphivcl.Object.GetInterfaceTable"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GetInterfaceTable</span></code></a></p></td>
+<td><p>Returns a pointer to a structure containing all of the interfaces implemented by a given class.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.Object.InheritsFrom" title="delphivcl.Object.InheritsFrom"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InheritsFrom</span></code></a></p></td>
+<td><p>Returns True if Delphi Object is or inherits from ClassName</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.Object.InitInstance" title="delphivcl.Object.InitInstance"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InitInstance</span></code></a></p></td>
+<td><p>Initializes a newly allocated object instance to all zeros and initializes the instance's virtual method table pointer.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.Object.InstanceSize" title="delphivcl.Object.InstanceSize"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InstanceSize</span></code></a></p></td>
+<td><p>Returns the size in bytes of each instance of the object type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.Object.MethodAddress" title="delphivcl.Object.MethodAddress"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MethodAddress</span></code></a></p></td>
+<td><p>Returns the address of a class method by name.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.Object.MethodName" title="delphivcl.Object.MethodName"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MethodName</span></code></a></p></td>
+<td><p>Returns the name of a class method by address.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.Object.NewInstance" title="delphivcl.Object.NewInstance"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NewInstance</span></code></a></p></td>
+<td><p>Allocates memory for an instance of an object type and returns a pointer to that new instance.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.Object.QualifiedClassName" title="delphivcl.Object.QualifiedClassName"><code class="xref py py-obj docutils literal notranslate"><span class="pre">QualifiedClassName</span></code></a></p></td>
+<td><p>Returns the qualified name of the class.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.Object.SafeCallException" title="delphivcl.Object.SafeCallException"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SafeCallException</span></code></a></p></td>
+<td><p>Handles exceptions in methods declared using the safecall calling convention.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.Object.SetProps" title="delphivcl.Object.SetProps"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SetProps</span></code></a></p></td>
+<td><p>Sets several properties in one call</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.Object.ToList" title="delphivcl.Object.ToList"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ToList</span></code></a></p></td>
+<td><p>If the object is a container (TStrings, TComponent...), it returns the content of the sequence as a Python list object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.Object.ToString" title="delphivcl.Object.ToString"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ToString</span></code></a></p></td>
+<td><p>Returns a string containing the class name.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.Object.ToTuple" title="delphivcl.Object.ToTuple"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ToTuple</span></code></a></p></td>
+<td><p>If the object is a container (TStrings, TComponent...), it returns the content of the sequence as a Python tuple object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.Object.UnitName" title="delphivcl.Object.UnitName"><code class="xref py py-obj docutils literal notranslate"><span class="pre">UnitName</span></code></a></p></td>
+<td><p>Returns the name of the unit where the class is defined.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.Object.UnitScope" title="delphivcl.Object.UnitScope"><code class="xref py py-obj docutils literal notranslate"><span class="pre">UnitScope</span></code></a></p></td>
+<td><p>Returns the class's unit scope.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="rubric">Attributes</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.Object.ClassName" title="delphivcl.Object.ClassName"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ClassName</span></code></a></p></td>
+<td><p>Returns the TObject.ClassName</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Object.AfterConstruction">
+<span class="sig-name descname"><span class="pre">AfterConstruction</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.Object.AfterConstruction" title="Link to this definition">¶</a></dt>
+<dd><p>Responds after the last constructor has executed.
+AfterConstruction is called automatically after the object’s last constructor has executed. Do not call it explicitly in your applications.
+The AfterConstruction method implemented in TObject does nothing. Override this method when creating a class that performs an action after the object is created. For example, TCustomForm overrides AfterConstruction to generate an OnCreate event.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Object.BeforeDestruction">
+<span class="sig-name descname"><span class="pre">BeforeDestruction</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.Object.BeforeDestruction" title="Link to this definition">¶</a></dt>
+<dd><p>Responds before the first destructor executes.
+BeforeDestruction is called automatically before the object’s first destructor executes. Do not call it explicitly in your applications.
+The BeforeDestruction method implemented in TObject does nothing. Override this method when creating a class that performs an action before the object is destroyed. For example, TCustomForm overrides BeforeDestruction to generate an OnDestroy event.</p>
+<p>Note: BeforeDestruction is not called when the object is destroyed before it is fully constructed. That is, if the object’s constructor raises an exception, the destructor is called to dispose of the object, but BeforeDestruction is not called.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Object.CPP_ABI_1">
+<span class="sig-name descname"><span class="pre">CPP_ABI_1</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.Object.CPP_ABI_1" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Object.CPP_ABI_2">
+<span class="sig-name descname"><span class="pre">CPP_ABI_2</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.Object.CPP_ABI_2" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Object.CPP_ABI_3">
+<span class="sig-name descname"><span class="pre">CPP_ABI_3</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.Object.CPP_ABI_3" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Object.ClassInfo">
+<span class="sig-name descname"><span class="pre">ClassInfo</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.Object.ClassInfo" title="Link to this definition">¶</a></dt>
+<dd><p>Returns a pointer to the run-time type information (RTTI) table for the object type.
+ClassInfo provides access to the RTTI table for a given object type.
+Some classes do not provide run-time type information. For these classes, ClassInfo returns nil (Delphi) or NULL (C++). All classes descended from TPersistent do provide run-time type information.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.Object.ClassName">
+<span class="sig-name descname"><span class="pre">ClassName</span></span><a class="headerlink" href="#delphivcl.Object.ClassName" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the TObject.ClassName</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Object.ClassNameIs">
+<span class="sig-name descname"><span class="pre">ClassNameIs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#delphivcl.Object.ClassNameIs" title="Link to this definition">¶</a></dt>
+<dd><p>Determines whether an object is of a specific type.
+ClassNameIs determines whether an object instance or class reference has a class name that matches a specified string. This is useful to query objects across modules or shared libraries.</p>
+<p>Note: In C++ code, call ClassNameIs as a method to compare an object’s class name. Use the global static function to compare the class name from a metaclass object.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Object.ClassParent">
+<span class="sig-name descname"><span class="pre">ClassParent</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.Object.ClassParent" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the type of the immediate ancestor of a class.
+ClassParent returns the name of the parent class for an object instance or class reference. For TObject, ClassParent returns nil (Delphi) or NULL (C++).
+Avoid using ClassParent in application code.</p>
+<p>Note: In Delphi code, use the is or as operators instead of ClassParent.
+Note: In C++ code, use a dynamic cast or the InheritsFrom method instead of ClassParent.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Object.ClassType">
+<span class="sig-name descname"><span class="pre">ClassType</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.Object.ClassType" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the class reference for the object’s class.</p>
+<p>Note: ClassType dynamically determines the type of an object and returns its class reference, or metaclass.
+Avoid using ClassType in application code.</p>
+<p>Note: In Delphi code, use the is or as operators instead of ClassType.
+Note: In C++ code, use a dynamic cast or the InheritsFrom method instead of ClassType.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Object.CleanupInstance">
+<span class="sig-name descname"><span class="pre">CleanupInstance</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.Object.CleanupInstance" title="Link to this definition">¶</a></dt>
+<dd><p>Performs finalization on long strings, variants, and interface variables within a class.
+Do not call CleanupInstance directly. CleanupInstance is called automatically when the object instance is destroyed.
+CleanupInstance releases all long strings and variants. It sets long strings to empty and variants to Unassigned.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Object.DefaultHandler">
+<span class="sig-name descname"><span class="pre">DefaultHandler</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Message</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#delphivcl.Object.DefaultHandler" title="Link to this definition">¶</a></dt>
+<dd><p>Provides the interface for a method that processes message records.
+DefaultHandler is called by Dispatch when it cannot find a method for a particular message. DefaultHandler provides message handling for all messages for which an object does not have specific handlers. Descendant classes that process messages override DefaultHandler according to the types of messages they handle.</p>
+<p>Note:  In a Delphi message-handling method, calling inherited results in a call to the ancestor’s DefaultHandler method only if that ancestor does not specify a message method for the particular message being handled. Otherwise, calling inherited results in a call to the specific handler for that type of message.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Object.Dispatch">
+<span class="sig-name descname"><span class="pre">Dispatch</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Message</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#delphivcl.Object.Dispatch" title="Link to this definition">¶</a></dt>
+<dd><p>Calls message-handling methods for the object, based on the contents of the Message parameter.
+Call Dispatch to automatically pass messages to the appropriate message handler.
+Dispatch determines whether a message is in the list of message handlers declared for the object. If the object does not handle the message, Dispatch then examines the message-handler list of the ancestor class, and continues checking ancestors until it either finds a specific handler or runs out of ancestors, in which case it calls DefaultHandler.
+The only assumption Dispatch makes about the data in Message is that the first two bytes contain a message ID�that is, an integer that determines which message handler Dispatch calls. Although any kind of data can be passed to Dispatch, most TObject descendants expect a message record such as TMessage or a specific data structure type.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Object.DisposeOf">
+<span class="sig-name descname"><span class="pre">DisposeOf</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.Object.DisposeOf" title="Link to this definition">¶</a></dt>
+<dd><p>DisposeOf forces the execution of the destructor code in an object.
+It was an artifact from previous versions when the Delphi Mobile compilers supported Automatic Reference Counting. In current versions of Delphi, DisposeOf is used as a wrapper that invokes TObject.Free.</p>
+<dl>
+<dt>type</dt><dd><p>TMySimpleClass = class
+private</p>
+<blockquote>
+<div><p>stringMember: String;
+constructor Create(const Text: String);
+destructor Destroy;</p>
+</div></blockquote>
+<p>end;</p>
+</dd>
+</dl>
+<p>constructor TMySimpleClass.Create(const Text: String);
+begin</p>
+<blockquote>
+<div><p>stringMember := Text;</p>
+</div></blockquote>
+<p>end;</p>
+<p>destructor TMySimpleClass.Destroy;
+begin</p>
+<blockquote>
+<div><p>// this will be executed on calling the DisposeOf method.</p>
+</div></blockquote>
+<p>end;</p>
+<dl>
+<dt>var</dt><dd><p>myObject: TMySimpleClass;</p>
+</dd>
+<dt>begin</dt><dd><p>myObject := TMySimpleClass.Create(‘This is a code snippet indicating the usage of the DisposeOf method’);
+try</p>
+<blockquote>
+<div><p>// Use ‘myObject’ here</p>
+</div></blockquote>
+<dl class="simple">
+<dt>finally</dt><dd><p>myObject.DisposeOf;</p>
+</dd>
+</dl>
+<p>end;</p>
+</dd>
+</dl>
+<p>end.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Object.Equals">
+<span class="sig-name descname"><span class="pre">Equals</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Obj</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#delphivcl.Object" title="delphivcl.Object"><span class="pre">Object</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#delphivcl.Object.Equals" title="Link to this definition">¶</a></dt>
+<dd><p>Checks whether the current instance and the Obj parameter are equal.
+The function has one Obj parameter of the TObject type.
+By default, the Equals method shows whether the addresses corresponding to the current object and the Obj object are identical. The method returns a boolean value that represents the equality between the two addresses.</p>
+<p>Note: Equals is supposed to be overridden in user-derived classes, to provide consumer objects with an equality determining function.
+For example, in the FMX.Types.TBounds class, Equals also returns True if the Rect properties of the current object and of the Obj object are equal. In the FMX.StdActns.TBaseValueRange class, Equals also returns True if all the properties of the current object and of the Obj object are equal.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Object.FieldAddress">
+<span class="sig-name descname"><span class="pre">FieldAddress</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Pointer</span></span></span><a class="headerlink" href="#delphivcl.Object.FieldAddress" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the address of a published object field.
+FieldAddress is used internally by the component streaming system to access a specified published field of an object. FieldAddress returns a pointer to the field, if it exists. If the object has no published field by that name, FieldAddress returns nil (Delphi) or NULL (C++).
+Programs should access and manipulate fields by using properties instead of FieldAddress.
+Returns the address of a published object field.
+FieldAddress is used internally by the component streaming system to access a specified published field of an object. FieldAddress returns a pointer to the field, if it exists. If the object has no published field by that name, FieldAddress returns nil (Delphi) or NULL (C++).
+Programs should access and manipulate fields by using properties instead of FieldAddress.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Object.Free">
+<span class="sig-name descname"><span class="pre">Free</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.Object.Free" title="Link to this definition">¶</a></dt>
+<dd><p>Frees the Wrapped Delphi Object</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Object.FreeInstance">
+<span class="sig-name descname"><span class="pre">FreeInstance</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.Object.FreeInstance" title="Link to this definition">¶</a></dt>
+<dd><p>Deallocates memory allocated by a previous call to the NewInstance method.
+All destructors call FreeInstance automatically to deallocate memory that was allocated by overriding NewInstance.
+Do not call FreeInstance directly. FreeInstance should be overridden if NewInstance was overridden to change the way the object’s instance data was allocated.
+Like NewInstance, FreeInstance uses the value returned from InstanceSize to deallocate the object’s memory.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Object.GetHashCode">
+<span class="sig-name descname"><span class="pre">GetHashCode</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.Object.GetHashCode" title="Link to this definition">¶</a></dt>
+<dd><p>Returns an integer containing the hash code.
+By default, calling GetHashCode on an object returns an integer representing the virtual address at which the object is stored.</p>
+<p>Notes:
+GetHashCode is supposed to be overridden in user-derived classes, to provide consumer objects with an integer hash code representation.
+The sign of the hash code depends on the address of the particular object instance. Negative hash code can appear for object instances that reside at higher memory locations.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Object.GetInterface">
+<span class="sig-name descname"><span class="pre">GetInterface</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">IID</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">GUID</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Obj</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#delphivcl.Object.GetInterface" title="Link to this definition">¶</a></dt>
+<dd><p>Retrieves a specified interface.
+GetInterface retrieves the interface designated by a GUID or type name. The basic implementation of GetInterface uses the GUID specified in the IID parameter. If the specified interface is supported by the class, it is returned in the Obj parameter, and GetInterface has a return value of True. Otherwise, Obj contains nil (Delphi) or NULL (C++), and GetInterface returns False.</p>
+<p>Note:  In Delphi code, IID can be an interface name. The compiler automatically translates this name into the corresponding GUID.
+Note:  In C++ code, use the templated version of GetInterface to obtain an interface from a DelphiInterface object.
+GetInterface is equivalent to the as operator (Delphi) and dynamic casts (C++), except that GetInterface does not raise an exception if the interface is not supported.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Object.GetInterfaceEntry">
+<span class="sig-name descname"><span class="pre">GetInterfaceEntry</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">IID</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">GUID</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">PInterfaceEntry</span></span></span><a class="headerlink" href="#delphivcl.Object.GetInterfaceEntry" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the entry for a specific interface implemented in a class.
+GetInterfaceEntry returns the class entry for the interface specified by the IID parameter.</p>
+<p>Note:  In Delphi Code, IID can be an interface name. The compiler replaces this name with the actual GUID.
+Note:  COM objects can use GetInterfaceEntry to automate dispatch calls to a dual-IDispatch interface.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Object.GetInterfaceTable">
+<span class="sig-name descname"><span class="pre">GetInterfaceTable</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.Object.GetInterfaceTable" title="Link to this definition">¶</a></dt>
+<dd><p>Returns a pointer to a structure containing all of the interfaces implemented by a given class.
+GetInterfaceTable returns the interface entries for the class. This list contains only interfaces implemented by this class, not its ancestors. To find the ancestor list, iteratively call ClassParent and then call GetInterfaceTable on the value it returns. To find the entry for a specific interface, use the GetInterfaceEntry method instead.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Object.InheritsFrom">
+<span class="sig-name descname"><span class="pre">InheritsFrom</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ClassName</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.Object.InheritsFrom" title="Link to this definition">¶</a></dt>
+<dd><p>Returns True if Delphi Object is or inherits from ClassName</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Object.InitInstance">
+<span class="sig-name descname"><span class="pre">InitInstance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Instance</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Pointer</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#delphivcl.Object" title="delphivcl.Object"><span class="pre">Object</span></a></span></span><a class="headerlink" href="#delphivcl.Object.InitInstance" title="Link to this definition">¶</a></dt>
+<dd><p>Initializes a newly allocated object instance to all zeros and initializes the instance’s virtual method table pointer.
+You should not call InitInstance directly. InitInstance is called by NewInstance when an object is created. When overriding NewInstance, be sure to call InitInstance as the last statement.
+InitInstance is not virtual, so you cannot override it. Instead, initialize any data for an object in the constructor.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Object.InstanceSize">
+<span class="sig-name descname"><span class="pre">InstanceSize</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.Object.InstanceSize" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the size in bytes of each instance of the object type.
+InstanceSize indicates how many bytes of memory are required for a class’s instance data. InstanceSize is called from methods that allocate and deallocate memory. InstanceSize is not a virtual method, so it cannot be overridden. InstanceSize should be called only when implementing a custom version of NewInstance.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Object.MethodAddress">
+<span class="sig-name descname"><span class="pre">MethodAddress</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Pointer</span></span></span><a class="headerlink" href="#delphivcl.Object.MethodAddress" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the address of a class method by name.</p>
+<p>Note: You can use MethodAddress for published methods only.
+There are situations when it is useful to invoke an object method without hard coding the method name in advance. Call MethodAddress to dynamically retrieve the address of such a method by specifying the method Name as a string.
+An easy way to invoke the method is to define a procedure or function data type, such as:</p>
+<p>type TProc = procedure of object;</p>
+<p>Assign the object name and the MethodAddress method to a TMethod variable, such as:</p>
+<p>MethodVar.Data�:= Pointer(ObjectInstanceName);
+MethodVar.Code�:= ObjectInstanceName.MethodAddress(‘MethodNameString’);</p>
+<p>Pass this in a call to a variable of the procedure or function type:</p>
+<p>Proc�:= TProc(MethodVar);
+Proc;
+Returns the address of a class method by name.</p>
+<p>Note: You can use MethodAddress for published methods only.
+There are situations when it is useful to invoke an object method without hard coding the method name in advance. Call MethodAddress to dynamically retrieve the address of such a method by specifying the method Name as a string.
+An easy way to invoke the method is to define a procedure or function data type, such as:</p>
+<p>type TProc = procedure of object;</p>
+<p>Assign the object name and the MethodAddress method to a TMethod variable, such as:</p>
+<p>MethodVar.Data�:= Pointer(ObjectInstanceName);
+MethodVar.Code�:= ObjectInstanceName.MethodAddress(‘MethodNameString’);</p>
+<p>Pass this in a call to a variable of the procedure or function type:</p>
+<p>Proc�:= TProc(MethodVar);
+Proc;</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Object.MethodName">
+<span class="sig-name descname"><span class="pre">MethodName</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Address</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Pointer</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#delphivcl.Object.MethodName" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the name of a class method by address.
+There are situations when it is useful to invoke an object method without hard coding the method name in advance. Call MethodAddress to dynamically retrieve the address of such a method by specifying the method name as a string.
+MethodName is the opposite of this process–by supplying an Address method, the name of the method is returned as a string.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Object.NewInstance">
+<span class="sig-name descname"><span class="pre">NewInstance</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.Object.NewInstance" title="Link to this definition">¶</a></dt>
+<dd><p>Allocates memory for an instance of an object type and returns a pointer to that new instance.
+All constructors call NewInstance automatically. NewInstance calls InstanceSize to determine how much memory containing a particular instance to allocate from the heap. Do not call NewInstance directly.
+Override NewInstance only for special memory allocation requirements. For example, when allocating a large number of identical objects that all need to be in memory at the same time, you can allocate a single block of memory for the entire group, then override NewInstance to use part of that larger block for each instance.
+If you override NewInstance to allocate memory, you may need to override FreeInstance to deallocate the memory.</p>
+<p>Note:  By default, NewInstance calls InitInstance.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Object.QualifiedClassName">
+<span class="sig-name descname"><span class="pre">QualifiedClassName</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.Object.QualifiedClassName" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the qualified name of the class.
+QualifiedClassName returns the class’s unit scope concatenated with the class name. Example:</p>
+<dl class="simple">
+<dt>uses</dt><dd><p>SysUtils, SyncObjs;</p>
+</dd>
+<dt>begin</dt><dd><p>Writeln(TEvent.QualifiedClassName); // displays System.SyncObjs.TEvent</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Object.SafeCallException">
+<span class="sig-name descname"><span class="pre">SafeCallException</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ExceptObject</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#delphivcl.Object" title="delphivcl.Object"><span class="pre">Object</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">ExceptAddr</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Pointer</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#delphivcl.Object.SafeCallException" title="Link to this definition">¶</a></dt>
+<dd><p>Handles exceptions in methods declared using the safecall calling convention.
+SafeCallException handles exceptions in methods that use the safecall calling convention. Some classes that implement interfaces override this method to handle possible errors.
+As implemented in TObject, SafeCallException simply returns E_UNEXPECTED. This is the appropriate response for classes that do no support interfaces.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Object.SetProps">
+<span class="sig-name descname"><span class="pre">SetProps</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">prop1=val1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prop2=val2...</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.Object.SetProps" title="Link to this definition">¶</a></dt>
+<dd><p>Sets several properties in one call</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Object.ToList">
+<span class="sig-name descname"><span class="pre">ToList</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.Object.ToList" title="Link to this definition">¶</a></dt>
+<dd><p>If the object is a container (TStrings, TComponent…), it returns the content of the sequence as a Python list object.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Object.ToString">
+<span class="sig-name descname"><span class="pre">ToString</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.Object.ToString" title="Link to this definition">¶</a></dt>
+<dd><p>Returns a string containing the class name.
+By default, the ToString returns a string containing the class name of the instance that is being called.
+For example, calling ToString on a TButton instance returns a string containing “TButton”.</p>
+<p>Note: ToString is intended to be overridden in user-derived classes, to provide consumer objects with a string representation.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Object.ToTuple">
+<span class="sig-name descname"><span class="pre">ToTuple</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.Object.ToTuple" title="Link to this definition">¶</a></dt>
+<dd><p>If the object is a container (TStrings, TComponent…), it returns the content of the sequence as a Python tuple object.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Object.UnitName">
+<span class="sig-name descname"><span class="pre">UnitName</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.Object.UnitName" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the name of the unit where the class is defined.
+UnitName can be used to obtain the unit where a specific class is defined. For example, calling UnitName on TButton returns the Vcl.StdCtrls string.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Object.UnitScope">
+<span class="sig-name descname"><span class="pre">UnitScope</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.Object.UnitScope" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the class’s unit scope.
+The class’s unit scope is currently equivalent with the class’s unit name.</p>
+<dl class="simple">
+<dt>uses</dt><dd><p>SysUtils, SyncObjs;</p>
+</dd>
+<dt>begin</dt><dd><p>Writeln(TEvent.UnitScope); // displays System.SyncObjs
+// …</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="delphivcl.StyleManager.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">StyleManager</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="../reference_index/delphivcl_classes.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">DelphiVCL</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2020-2023, Embarcadero Python Dev Team
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Object</a><ul>
+<li><a class="reference internal" href="#delphivcl.Object"><code class="docutils literal notranslate"><span class="pre">Object</span></code></a><ul>
+<li><a class="reference internal" href="#delphivcl.Object.AfterConstruction"><code class="docutils literal notranslate"><span class="pre">Object.AfterConstruction()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Object.BeforeDestruction"><code class="docutils literal notranslate"><span class="pre">Object.BeforeDestruction()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Object.CPP_ABI_1"><code class="docutils literal notranslate"><span class="pre">Object.CPP_ABI_1()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Object.CPP_ABI_2"><code class="docutils literal notranslate"><span class="pre">Object.CPP_ABI_2()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Object.CPP_ABI_3"><code class="docutils literal notranslate"><span class="pre">Object.CPP_ABI_3()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Object.ClassInfo"><code class="docutils literal notranslate"><span class="pre">Object.ClassInfo()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Object.ClassName"><code class="docutils literal notranslate"><span class="pre">Object.ClassName</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Object.ClassNameIs"><code class="docutils literal notranslate"><span class="pre">Object.ClassNameIs()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Object.ClassParent"><code class="docutils literal notranslate"><span class="pre">Object.ClassParent()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Object.ClassType"><code class="docutils literal notranslate"><span class="pre">Object.ClassType()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Object.CleanupInstance"><code class="docutils literal notranslate"><span class="pre">Object.CleanupInstance()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Object.DefaultHandler"><code class="docutils literal notranslate"><span class="pre">Object.DefaultHandler()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Object.Dispatch"><code class="docutils literal notranslate"><span class="pre">Object.Dispatch()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Object.DisposeOf"><code class="docutils literal notranslate"><span class="pre">Object.DisposeOf()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Object.Equals"><code class="docutils literal notranslate"><span class="pre">Object.Equals()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Object.FieldAddress"><code class="docutils literal notranslate"><span class="pre">Object.FieldAddress()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Object.Free"><code class="docutils literal notranslate"><span class="pre">Object.Free()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Object.FreeInstance"><code class="docutils literal notranslate"><span class="pre">Object.FreeInstance()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Object.GetHashCode"><code class="docutils literal notranslate"><span class="pre">Object.GetHashCode()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Object.GetInterface"><code class="docutils literal notranslate"><span class="pre">Object.GetInterface()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Object.GetInterfaceEntry"><code class="docutils literal notranslate"><span class="pre">Object.GetInterfaceEntry()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Object.GetInterfaceTable"><code class="docutils literal notranslate"><span class="pre">Object.GetInterfaceTable()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Object.InheritsFrom"><code class="docutils literal notranslate"><span class="pre">Object.InheritsFrom()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Object.InitInstance"><code class="docutils literal notranslate"><span class="pre">Object.InitInstance()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Object.InstanceSize"><code class="docutils literal notranslate"><span class="pre">Object.InstanceSize()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Object.MethodAddress"><code class="docutils literal notranslate"><span class="pre">Object.MethodAddress()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Object.MethodName"><code class="docutils literal notranslate"><span class="pre">Object.MethodName()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Object.NewInstance"><code class="docutils literal notranslate"><span class="pre">Object.NewInstance()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Object.QualifiedClassName"><code class="docutils literal notranslate"><span class="pre">Object.QualifiedClassName()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Object.SafeCallException"><code class="docutils literal notranslate"><span class="pre">Object.SafeCallException()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Object.SetProps"><code class="docutils literal notranslate"><span class="pre">Object.SetProps()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Object.ToList"><code class="docutils literal notranslate"><span class="pre">Object.ToList()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Object.ToString"><code class="docutils literal notranslate"><span class="pre">Object.ToString()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Object.ToTuple"><code class="docutils literal notranslate"><span class="pre">Object.ToTuple()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Object.UnitName"><code class="docutils literal notranslate"><span class="pre">Object.UnitName()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Object.UnitScope"><code class="docutils literal notranslate"><span class="pre">Object.UnitScope()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script src="../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/scripts/furo.js?v=5fa4622c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/responsiveSvg.js?v=f1528c9d"></script>
+    </body>
+</html>

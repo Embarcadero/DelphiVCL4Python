@@ -1,0 +1,24 @@
+*******
+v1.0.2
+*******
+
+:Date: March 15, 2023
+
+Contributors
+============
+
+
+* Lucas M Belo
+
+
+The patches included in this release have been reviewed by
+the following contributors.
+
+* Lucas M Belo
+* Priyatham
+
+Enhancements
+------------
+
+* Bytes manipulation with streams (`#68 <https://github.com/Embarcadero/DelphiFMX4Python/issues/68>`_).
+* Including the TLinkLabel wrapper (`#44 <https://github.com/Embarcadero/DelphiVCL4Python/issues/44>`_).

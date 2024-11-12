@@ -1,0 +1,1592 @@
+<!doctype html>
+<html class="no-js" lang="en" data-content_root="../">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="PageControl" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://github.com/Embarcadero/reference/delphivcl.PageControl.html" />
+<meta property="og:site_name" content="DelphiVCL | Documentation" />
+<meta property="og:description" content="Qualified name: delphivcl.PageControl" />
+<meta property="og:image" content="https://github.com/Embarcadero/DelphiVCL4Python/blob/main/images/DelphiVCL4Python(256px).png" />
+<meta property="og:image:alt" content="DelphiVCL | Documentation" />
+<meta name="description" content="Qualified name: delphivcl.PageControl" />
+<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="Panel" href="delphivcl.Panel.html" /><link rel="prev" title="Page" href="delphivcl.Page.html" />
+
+    <link rel="shortcut icon" href="../_static/favicon.ico"/><!-- Generated with Sphinx 8.1.3 and Furo 2024.08.06 -->
+        <title>PageControl - DelphiVCL Documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=354aac6f" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=4ae1632d" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?v=302659d7" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=93c9b8cc" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  --color-content-foreground: #000000;
+  --color-background-primary: #ffffff;
+  --color-background-border: #ffffff;
+  --color-sidebar-background: #f8f9fb;
+  --color-brand-content: #1c00e3;
+  --color-brand-primary: #192bd0;
+  --color-link: #c93434;
+  --color-link--hover: #5b0000;
+  --color-inline-code-background: #f6f6f6;;
+  --color-foreground-secondary: #000;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  --color-content-foreground: #ffffffd9;
+  --color-background-primary: #131416;
+  --color-background-border: #303335;
+  --color-sidebar-background: #1a1c1e;
+  --color-brand-content: #2196f3;
+  --color-brand-primary: #007fff;
+  --color-link: #51ba86;
+  --color-link--hover: #9cefc6;
+  --color-inline-code-background: #262626;
+  --color-foreground-secondary: #ffffffd9;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  --color-content-foreground: #ffffffd9;
+  --color-background-primary: #131416;
+  --color-background-border: #303335;
+  --color-sidebar-background: #1a1c1e;
+  --color-brand-content: #2196f3;
+  --color-brand-primary: #007fff;
+  --color-link: #51ba86;
+  --color-link--hover: #9cefc6;
+  --color-inline-code-background: #262626;
+  --color-foreground-secondary: #ffffffd9;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-with-moon" viewBox="0 0 24 24">
+    <title>Auto light/dark, in light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path style="opacity: 50%" d="M 5.411 14.504 C 5.471 14.504 5.532 14.504 5.591 14.504 C 3.639 16.319 4.383 19.569 6.931 20.352 C 7.693 20.586 8.512 20.551 9.25 20.252 C 8.023 23.207 4.056 23.725 2.11 21.184 C 0.166 18.642 1.702 14.949 4.874 14.536 C 5.051 14.512 5.231 14.5 5.411 14.5 L 5.411 14.504 Z"/>
+      <line x1="14.5" y1="3.25" x2="14.5" y2="1.25"/>
+      <line x1="14.5" y1="15.85" x2="14.5" y2="17.85"/>
+      <line x1="10.044" y1="5.094" x2="8.63" y2="3.68"/>
+      <line x1="19" y1="14.05" x2="20.414" y2="15.464"/>
+      <line x1="8.2" y1="9.55" x2="6.2" y2="9.55"/>
+      <line x1="20.8" y1="9.55" x2="22.8" y2="9.55"/>
+      <line x1="10.044" y1="14.006" x2="8.63" y2="15.42"/>
+      <line x1="19" y1="5.05" x2="20.414" y2="3.636"/>
+      <circle cx="14.5" cy="9.55" r="3.6"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon-with-sun" viewBox="0 0 24 24">
+    <title>Auto light/dark, in dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path d="M 8.282 7.007 C 8.385 7.007 8.494 7.007 8.595 7.007 C 5.18 10.184 6.481 15.869 10.942 17.24 C 12.275 17.648 13.706 17.589 15 17.066 C 12.851 22.236 5.91 23.143 2.505 18.696 C -0.897 14.249 1.791 7.786 7.342 7.063 C 7.652 7.021 7.965 7 8.282 7 L 8.282 7.007 Z"/>
+      <line style="opacity: 50%" x1="18" y1="3.705" x2="18" y2="2.5"/>
+      <line style="opacity: 50%" x1="18" y1="11.295" x2="18" y2="12.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="4.816" x2="14.464" y2="3.964"/>
+      <line style="opacity: 50%" x1="20.711" y1="10.212" x2="21.563" y2="11.063"/>
+      <line style="opacity: 50%" x1="14.205" y1="7.5" x2="13.001" y2="7.5"/>
+      <line style="opacity: 50%" x1="21.795" y1="7.5" x2="23" y2="7.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="10.184" x2="14.464" y2="11.036"/>
+      <line style="opacity: 50%" x1="20.711" y1="4.789" x2="21.563" y2="3.937"/>
+      <circle style="opacity: 50%" cx="18" cy="7.5" r="2.169"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-pencil" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-pencil-code">
+      <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+      <path d="M13.5 6.5l4 4" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+  <symbol id="svg-eye" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-eye-code">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+      <path
+        d="M11.11 17.958c-3.209 -.307 -5.91 -2.293 -8.11 -5.958c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6c-.21 .352 -.427 .688 -.647 1.008" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+<a class="skip-to-content muted-link" href="#furo-main-content">Skip to content</a>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../index.html"><div class="brand">DelphiVCL Documentation</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+          <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../index.html">
+  
+  <div class="sidebar-logo-container">
+    <img class="sidebar-logo only-light" src="../_static/DelphiVCL4Python-sidebar.svg" alt="Light Logo"/>
+    <img class="sidebar-logo only-dark" src="../_static/DelphiVCL4Python-sidebar-dark.svg" alt="Dark Logo"/>
+  </div>
+  
+  <span class="sidebar-brand-text">DelphiVCL Documentation</span>
+  
+</a><form class="sidebar-search-container" method="get" action="../search.html" role="search">
+  <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../tutorials_guides.html">Tutorials &amp; Guides</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of Tutorials &amp; Guides</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../quickstart.html">Quickstart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples.html">Example Gallery</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq.html">Frequently Asked Questions</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current has-children"><a class="reference internal" href="../reference.html">Reference Manual</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle navigation of Reference Manual</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l2 current has-children"><a class="reference internal" href="../reference_index/delphivcl_classes.html">DelphiVCL</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle navigation of DelphiVCL</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Object.html">Object</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.StyleManager.html">StyleManager</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Stream.html">Stream</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Monitor.html">Monitor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomStyleServices.html">CustomStyleServices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Persistent.html">Persistent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Strings.html">Strings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Picture.html">Picture</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Collection.html">Collection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Canvas.html">Canvas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Graphic.html">Graphic</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Bitmap.html">Bitmap</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Icon.html">Icon</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Metafile.html">Metafile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Component.html">Component</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Timer.html">Timer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.OpenDialog.html">OpenDialog</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.MenuItem.html">MenuItem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Menu.html">Menu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.FileOpenDialog.html">FileOpenDialog</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ContainedActionList.html">ContainedActionList</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Control.html">Control</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomBindingsList.html">CustomBindingsList</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BasicBindComponent.html">BasicBindComponent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BasicAction.html">BasicAction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BaseBindScopeComponent.html">BaseBindScopeComponent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BaseLinkingBindSource.html">BaseLinkingBindSource</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ContainedAction.html">ContainedAction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BindingsList.html">BindingsList</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BoundLabel.html">BoundLabel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomControl.html">CustomControl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Label.html">Label</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.WinControl.html">WinControl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomActionList.html">CustomActionList</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.MainMenu.html">MainMenu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.PopupMenu.html">PopupMenu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.SaveDialog.html">SaveDialog</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ActionList.html">ActionList</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.MediaPlayer.html">MediaPlayer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomToggleSwitch.html">CustomToggleSwitch</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomActivityIndicator.html">CustomActivityIndicator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomAction.html">CustomAction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Action.html">Action</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BaseObjectBindSource.html">BaseObjectBindSource</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomPrototypeBindSource.html">CustomPrototypeBindSource</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ActivityIndicator.html">ActivityIndicator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ToggleSwitch.html">ToggleSwitch</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.PrototypeBindSource.html">PrototypeBindSource</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ContainedBindComponent.html">ContainedBindComponent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BindComponentDelegate.html">BindComponentDelegate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.LinkPropertyToFieldDelegate.html">LinkPropertyToFieldDelegate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.LinkControlDelegate.html">LinkControlDelegate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomLinkPropertyToField.html">CustomLinkPropertyToField</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.LinkControlToFieldDelegate.html">LinkControlToFieldDelegate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.LinkPropertyToField.html">LinkPropertyToField</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomLinkControlToField.html">CustomLinkControlToField</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomLinkListControlToField.html">CustomLinkListControlToField</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.LinkControlToField.html">LinkControlToField</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.LinkListControlToField.html">LinkListControlToField</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BitBtn.html">BitBtn</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Button.html">Button</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CheckBox.html">CheckBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ColorBox.html">ColorBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ComboBox.html">ComboBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ControlBar.html">ControlBar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomGrid.html">CustomGrid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomEdit.html">CustomEdit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomForm.html">CustomForm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomStatusBar.html">CustomStatusBar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomTabControl.html">CustomTabControl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.DateTimePicker.html">DateTimePicker</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.GroupBox.html">GroupBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Header.html">Header</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.LabeledEdit.html">LabeledEdit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ListBox.html">ListBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Notebook.html">Notebook</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Page.html">Page</a></li>
+<li class="toctree-l3 current current-page"><a class="current reference internal" href="#">PageControl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Panel.html">Panel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.RadioButton.html">RadioButton</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.RadioGroup.html">RadioGroup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ScrollBar.html">ScrollBar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.SpinButton.html">SpinButton</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.StaticText.html">StaticText</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.TabSheet.html">TabSheet</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ToolBar.html">ToolBar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.TrackBar.html">TrackBar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomDrawGrid.html">CustomDrawGrid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomMemo.html">CustomMemo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomNumberBox.html">CustomNumberBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Edit.html">Edit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.SpinEdit.html">SpinEdit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Form.html">Form</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.StatusBar.html">StatusBar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.TabControl.html">TabControl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.DrawGrid.html">DrawGrid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Memo.html">Memo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.NumberBox.html">NumberBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.StringGrid.html">StringGrid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomMemoryStream.html">CustomMemoryStream</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.HandleStream.html">HandleStream</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.MemoryStream.html">MemoryStream</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ResourceStream.html">ResourceStream</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.FileStream.html">FileStream</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BytesStream.html">BytesStream</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BufferedFileStream.html">BufferedFileStream</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.StringStream.html">StringStream</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../changelog.html">Changelog</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle navigation of Changelog</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../changelog/0.1.40-changelog.html">v0.1.40</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../changelog/1.0.0-changelog.html">v1.0.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../changelog/1.0.1-changelog.html">v1.0.1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../changelog/1.0.2-changelog.html">v1.0.2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../changelog/1.0.3-changelog.html">v1.0.3</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing.html">Contributing</a></li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+              <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role="main" id="furo-main-content">
+          <section id="pagecontrol">
+<h1>PageControl<a class="headerlink" href="#pagecontrol" title="Link to this heading">¶</a></h1>
+<p>Qualified name: <code class="docutils literal notranslate"><span class="pre">delphivcl.PageControl</span></code></p>
+<dl class="py class">
+<dt class="sig sig-object py" id="delphivcl.PageControl">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">PageControl</span></span><a class="headerlink" href="#delphivcl.PageControl" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="delphivcl.WinControl.html#delphivcl.WinControl" title="delphivcl.WinControl"><code class="xref py py-class docutils literal notranslate"><span class="pre">WinControl</span></code></a></p>
+<p>TPageControl is a set of pages used to make a multiple page dialog box.
+Use TPageControl to create a multiple page dialog or tabbed notebook. TPageControl displays multiple overlapping pages that are TTabSheet objects. The user selects a page by clicking the page’s tab that appears at the top of the control. To add a new page to a TPageControl object at design time, right-click the TPageControl object and choose New Page.
+You can define an accelerator key to a page of the TPageControl. To define the accelerator key use the Caption property of the TTabSheet control.
+To create a tabbed control that uses only a single body portion (page), use TTabControl instead.</p>
+<p>Note:  When using one of the page controls, if you want to restrict a user from switching to a tab, you cannot set TTabSheet.Enabled to false to accomplish that restriction. Instead, use the OnChanging event to prevent the user from selecting a tab.</p>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.PageControl.FindNextPage" title="delphivcl.PageControl.FindNextPage"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FindNextPage</span></code></a></p></td>
+<td><p>Returns the next page in the page control before or after a specified page.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.PageControl.GetChildren" title="delphivcl.PageControl.GetChildren"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GetChildren</span></code></a></p></td>
+<td><p>Calls a specified procedure for every page in the page control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.PageControl.GetHitTestInfoAt" title="delphivcl.PageControl.GetHitTestInfoAt"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GetHitTestInfoAt</span></code></a></p></td>
+<td><p>Returns information about the location of a point relative to the client area of the tab control.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.PageControl.IndexOfTabAt" title="delphivcl.PageControl.IndexOfTabAt"><code class="xref py py-obj docutils literal notranslate"><span class="pre">IndexOfTabAt</span></code></a></p></td>
+<td><p>Indicates the index of the tab at a specified point.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.PageControl.ScrollTabs" title="delphivcl.PageControl.ScrollTabs"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ScrollTabs</span></code></a></p></td>
+<td><p>Scrolls the tabs that are visible when the tab control is not multi-line.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.PageControl.SelectNextPage" title="delphivcl.PageControl.SelectNextPage"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SelectNextPage</span></code></a></p></td>
+<td><p>Changes the ActivePage to the first visible page that is before or after the currently active page.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.PageControl.TabRect" title="delphivcl.PageControl.TabRect"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TabRect</span></code></a></p></td>
+<td><p>Returns the bounding rectangle for a specified tab.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="rubric">Attributes</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Action</span></code></p></td>
+<td><p>Specifies the action associated with the control.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.PageControl.ActivePage" title="delphivcl.PageControl.ActivePage"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ActivePage</span></code></a></p></td>
+<td><p>Specifies the page currently displayed by the page control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.PageControl.ActivePageIndex" title="delphivcl.PageControl.ActivePageIndex"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ActivePageIndex</span></code></a></p></td>
+<td><p>Specifies the page currently displayed by the page control.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.PageControl.Align" title="delphivcl.PageControl.Align"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Align</span></code></a></p></td>
+<td><p>Determines how the control aligns within its container (parent control).</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">AlignDisabled</span></code></p></td>
+<td><p>Indicates child control realignment disabled.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">AlignWithMargins</span></code></p></td>
+<td><p>Specifies whether a control should be constrained by margins.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.PageControl.Anchors" title="delphivcl.PageControl.Anchors"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Anchors</span></code></a></p></td>
+<td><p>Specifies how the control is anchored to its parent.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.PageControl.BiDiMode" title="delphivcl.PageControl.BiDiMode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BiDiMode</span></code></a></p></td>
+<td><p>Specifies the bidirectional mode for the control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">BoundsRect</span></code></p></td>
+<td><p>Specifies the bounding rectangle of the control, expressed in the coordinate system of the parent control.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Brush</span></code></p></td>
+<td><p>Determines the color and pattern used for painting the background of the control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.PageControl.Canvas" title="delphivcl.PageControl.Canvas"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Canvas</span></code></a></p></td>
+<td><p>Gives access to the tab control canvas.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ClassName</span></code></p></td>
+<td><p>Returns the TObject.ClassName</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ClientHeight</span></code></p></td>
+<td><p>Specifies the height of the control's client area in pixels.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ClientOrigin</span></code></p></td>
+<td><p>Specifies the screen coordinates (in pixels) of the upper-left corner of a control's client area.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ClientRect</span></code></p></td>
+<td><p>Specifies the size of a control's client area in pixels.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ClientWidth</span></code></p></td>
+<td><p>Specifies the horizontal size of the control's client area in pixels.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ComObject</span></code></p></td>
+<td><p>Specifies the interface reference implemented by the component.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ComponentCount</span></code></p></td>
+<td><p>Returns the owned component count</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ComponentIndex</span></code></p></td>
+<td><p>Indicates the position of the component in its owner's Components property array.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ComponentState</span></code></p></td>
+<td><p>Describes the current state of the component, indicating when a component needs to avoid certain actions.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ComponentStyle</span></code></p></td>
+<td><p>Governs the behavior of the component.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Components</span></code></p></td>
+<td><p>Returns an iterator over the owned components</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.PageControl.Constraints" title="delphivcl.PageControl.Constraints"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Constraints</span></code></a></p></td>
+<td><p>Specifies the size constraints for the control.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ControlCount</span></code></p></td>
+<td><p>Returns the count of contained controls</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ControlState</span></code></p></td>
+<td><p>Specifies the current state of a control at run time.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ControlStyle</span></code></p></td>
+<td><p>Determines style characteristics of the control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Controls</span></code></p></td>
+<td><p>Returns an iterator over contained controls</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">CurrentPPI</span></code></p></td>
+<td><p>Embarcadero Technologies does not currently have any additional information.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cursor</span></code></p></td>
+<td><p>Specifies the image used to represent the mouse pointer when it passes into the region covered by the control.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">CustomHint</span></code></p></td>
+<td><p>CustomHint is a custom hint for the control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">DesignInfo</span></code></p></td>
+<td><p>Contains information used by the Form designer.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">DockClientCount</span></code></p></td>
+<td><p>Specifies the number of controls that are docked on the windowed control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">DockClients</span></code></p></td>
+<td><p>Control:</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">DockManager</span></code></p></td>
+<td><p>Specifies the control's docking manager interface.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">DockOrientation</span></code></p></td>
+<td><p>DockOrientation specifies how the control is docked relative to other controls docked in the same parent.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.PageControl.DockSite" title="delphivcl.PageControl.DockSite"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DockSite</span></code></a></p></td>
+<td><p>Specifies whether the control can be the target of drag-and-dock operations.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.PageControl.DoubleBuffered" title="delphivcl.PageControl.DoubleBuffered"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DoubleBuffered</span></code></a></p></td>
+<td><p>Determines whether the control's image is rendered directly to the window or painted to an in-memory bitmap first.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.PageControl.DoubleBufferedMode" title="delphivcl.PageControl.DoubleBufferedMode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DoubleBufferedMode</span></code></a></p></td>
+<td><p>DoubleBufferedMode:</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.PageControl.DragCursor" title="delphivcl.PageControl.DragCursor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DragCursor</span></code></a></p></td>
+<td><p>Specifies the image used to represent the mouse pointer when the control is being dragged.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.PageControl.DragKind" title="delphivcl.PageControl.DragKind"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DragKind</span></code></a></p></td>
+<td><p>Specifies whether the control is being dragged normally or for docking.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.PageControl.DragMode" title="delphivcl.PageControl.DragMode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DragMode</span></code></a></p></td>
+<td><p>Specifies how the control initiates drag-and-drop or drag-and-dock operations.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.PageControl.Enabled" title="delphivcl.PageControl.Enabled"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Enabled</span></code></a></p></td>
+<td><p>Controls whether the control responds to mouse, keyboard, and timer events.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ExplicitHeight</span></code></p></td>
+<td><p>Specifies the explicit vertical size of the control in pixels.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ExplicitLeft</span></code></p></td>
+<td><p>Specifies the explicit horizontal pixel coordinate of the left edge of a component relative to its parent.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ExplicitTop</span></code></p></td>
+<td><p>Specifies the explicit vertical pixel coordinate of the top edge of a component relative to its parent.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ExplicitWidth</span></code></p></td>
+<td><p>Specifies the explicit horizontal size of the control in pixels.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Floating</span></code></p></td>
+<td><p>Specifies whether the control is floating.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">FloatingDockSiteClass</span></code></p></td>
+<td><p>Specifies the class of the temporary control that hosts the control when it is floating.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Focused</span></code></p></td>
+<td><p>Determines whether the control has input focus.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.PageControl.Font" title="delphivcl.PageControl.Font"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Font</span></code></a></p></td>
+<td><p>Specifies the attributes of text written on or in the control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Handle</span></code></p></td>
+<td><p>Provides access to the underlying Windows screen object for the control.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">HandleAllocated</span></code></p></td>
+<td><p>Reports whether a screen object handle exists for the control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Height</span></code></p></td>
+<td><p>Specifies the vertical size of the control in pixels.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">HelpContext</span></code></p></td>
+<td><p>The HelpContext property contains the numeric context ID that identifies the Help topic for the control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">HelpKeyword</span></code></p></td>
+<td><p>The HelpKeyword property contains the keyword string that identifies the Help topic for the control.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">HelpType</span></code></p></td>
+<td><p>Specifies whether the control's context-sensitive Help topic is identified by a context ID or by keyword.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Hint</span></code></p></td>
+<td><p>Hint contains the text string that appears when the user moves the mouse over the control.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">HostDockSite</span></code></p></td>
+<td><p>Specifies the control in which the control is docked.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.PageControl.HotTrack" title="delphivcl.PageControl.HotTrack"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HotTrack</span></code></a></p></td>
+<td><p>Determines whether labels on the tab under the mouse are automatically highlighted.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.PageControl.Images" title="delphivcl.PageControl.Images"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Images</span></code></a></p></td>
+<td><p>Specifies the images drawn in tabs.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">IsDrawingLocked</span></code></p></td>
+<td><p>IsDrawingLocked property returns True when redrawing for this control is locked.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">LRDockWidth</span></code></p></td>
+<td><p>Specifies the width of the control when it is docked horizontally.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Left</span></code></p></td>
+<td><p>Specifies the horizontal coordinate of the left edge of a component relative to its parent.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Margins</span></code></p></td>
+<td><p>Specifies the margins of the control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">MouseInClient</span></code></p></td>
+<td><p>Indicates whether the mouse pointer is currently in the client area of the control.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.PageControl.MultiLine" title="delphivcl.PageControl.MultiLine"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MultiLine</span></code></a></p></td>
+<td><p>Determines whether the tabs can appear on more than one row.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Name</span></code></p></td>
+<td><p>Specifies the name of the component as referenced in code.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Observers</span></code></p></td>
+<td><p>Indicates the TObservers object added to the TComponent.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.PageControl.OnDockDrop" title="delphivcl.PageControl.OnDockDrop"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OnDockDrop</span></code></a></p></td>
+<td><p>Callable[[Object, DragDockObject, int, int], None]:</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.PageControl.OnDockOver" title="delphivcl.PageControl.OnDockOver"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OnDockOver</span></code></a></p></td>
+<td><p>Callable[[Object, DragDockObject, int, int, DragState, bool], None]:</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.PageControl.OnDragDrop" title="delphivcl.PageControl.OnDragDrop"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OnDragDrop</span></code></a></p></td>
+<td><p>Callable[[Object, Object, int, int], None]:</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.PageControl.OnDragOver" title="delphivcl.PageControl.OnDragOver"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OnDragOver</span></code></a></p></td>
+<td><p>Callable[[Object, Object, int, int, DragState, bool], None]:</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.PageControl.OnDrawTab" title="delphivcl.PageControl.OnDrawTab"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OnDrawTab</span></code></a></p></td>
+<td><p>Callable[[CustomTabControl, int, Rect, bool], None]:</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.PageControl.OnEndDock" title="delphivcl.PageControl.OnEndDock"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OnEndDock</span></code></a></p></td>
+<td><p>Callable[[Object, Object, int, int], None]:</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.PageControl.OnEndDrag" title="delphivcl.PageControl.OnEndDrag"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OnEndDrag</span></code></a></p></td>
+<td><p>Callable[[Object, Object, int, int], None]:</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.PageControl.OnGesture" title="delphivcl.PageControl.OnGesture"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OnGesture</span></code></a></p></td>
+<td><p>Callable[[Object, GestureEventInfo, bool], None]:</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.PageControl.OnGetImageIndex" title="delphivcl.PageControl.OnGetImageIndex"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OnGetImageIndex</span></code></a></p></td>
+<td><p>Callable[[Object, int, int], None]:</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.PageControl.OnGetSiteInfo" title="delphivcl.PageControl.OnGetSiteInfo"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OnGetSiteInfo</span></code></a></p></td>
+<td><p>Callable[[Object, Control, Rect, Point, bool], None]:</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.PageControl.OnMouseActivate" title="delphivcl.PageControl.OnMouseActivate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OnMouseActivate</span></code></a></p></td>
+<td><p>Callable[[Object, MouseButton, ShiftState, int, int, int, MouseActivate], None]:</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.PageControl.OnStartDock" title="delphivcl.PageControl.OnStartDock"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OnStartDock</span></code></a></p></td>
+<td><p>Callable[[Object, DragDockObject], None]:</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.PageControl.OnStartDrag" title="delphivcl.PageControl.OnStartDrag"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OnStartDrag</span></code></a></p></td>
+<td><p>Callable[[Object, DragObject], None]:</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.PageControl.OnUnDock" title="delphivcl.PageControl.OnUnDock"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OnUnDock</span></code></a></p></td>
+<td><p>Callable[[Object, Control, WinControl, bool], None]:</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Owner</span></code></p></td>
+<td><p>Returns the Component Owner</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.PageControl.OwnerDraw" title="delphivcl.PageControl.OwnerDraw"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OwnerDraw</span></code></a></p></td>
+<td><p>Specifies whether the tab control handles its own painting.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Padding</span></code></p></td>
+<td><p>Specifies the padding of a control.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.PageControl.PageCount" title="delphivcl.PageControl.PageCount"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PageCount</span></code></a></p></td>
+<td><p>Indicates the number of pages in the TPageControl object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.PageControl.Pages" title="delphivcl.PageControl.Pages"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Pages</span></code></a></p></td>
+<td><p>Lists all the pages in the TPageControl.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Parent</span></code></p></td>
+<td><p>Returns/Sets the Control Parent</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.PageControl.ParentBiDiMode" title="delphivcl.PageControl.ParentBiDiMode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ParentBiDiMode</span></code></a></p></td>
+<td><p>Specifies whether the control uses its parent's BiDiMode.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ParentCustomHint</span></code></p></td>
+<td><p>Specifies where a control looks for its custom hint.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.PageControl.ParentDoubleBuffered" title="delphivcl.PageControl.ParentDoubleBuffered"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ParentDoubleBuffered</span></code></a></p></td>
+<td><p>ParentDoubleBuffered defers the DoubleBuffered property of this component to the value of the parent's DoubleBuffered property.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.PageControl.ParentFont" title="delphivcl.PageControl.ParentFont"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ParentFont</span></code></a></p></td>
+<td><p>Specifies where a control looks for its font information.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.PageControl.ParentShowHint" title="delphivcl.PageControl.ParentShowHint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ParentShowHint</span></code></a></p></td>
+<td><p>Specifies where a control looks to find out if its Help Hint should be shown.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ParentWindow</span></code></p></td>
+<td><p>Reference to parent's underlying control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">PixelsPerInch</span></code></p></td>
+<td><p>Embarcadero Technologies does not currently have any additional information.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.PageControl.PopupMenu" title="delphivcl.PageControl.PopupMenu"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PopupMenu</span></code></a></p></td>
+<td><p>Specifies the pop-up menu associated with the control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.PageControl.RaggedRight" title="delphivcl.PageControl.RaggedRight"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RaggedRight</span></code></a></p></td>
+<td><p>Specifies whether rows of tabs stretch to fill the width of the control.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">RedrawDisabled</span></code></p></td>
+<td><p>RedrawDisabled property returns True when redrawing for this control is locked.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">RowCount</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ScaleFactor</span></code></p></td>
+<td><p>Embarcadero Technologies does not currently have any additional information.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.PageControl.ScrollOpposite" title="delphivcl.PageControl.ScrollOpposite"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ScrollOpposite</span></code></a></p></td>
+<td><p>Determines how the rows of tabs are scrolled in a multi-line tab control.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.PageControl.ShowHint" title="delphivcl.PageControl.ShowHint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ShowHint</span></code></a></p></td>
+<td><p>ShowHint specifies whether to show the Help Hint when the mouse pointer moves over the control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Showing</span></code></p></td>
+<td><p>Indicates whether the control is showing on the screen.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.PageControl.Style" title="delphivcl.PageControl.Style"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Style</span></code></a></p></td>
+<td><p>Specifies the style of the tab control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.PageControl.StyleElements" title="delphivcl.PageControl.StyleElements"><code class="xref py py-obj docutils literal notranslate"><span class="pre">StyleElements</span></code></a></p></td>
+<td><p>Specifies the style elements that are used by the control.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.PageControl.StyleName" title="delphivcl.PageControl.StyleName"><code class="xref py py-obj docutils literal notranslate"><span class="pre">StyleName</span></code></a></p></td>
+<td><p>Embarcadero Technologies does not currently have any additional information.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">TBDockHeight</span></code></p></td>
+<td><p>Specifies the height of the control when it is docked vertically.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.PageControl.TabHeight" title="delphivcl.PageControl.TabHeight"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TabHeight</span></code></a></p></td>
+<td><p>Specifies the height, in pixels, of the tabs in the tab control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.PageControl.TabIndex" title="delphivcl.PageControl.TabIndex"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TabIndex</span></code></a></p></td>
+<td><p>Identifies the selected tab on a tab control.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.PageControl.TabOrder" title="delphivcl.PageControl.TabOrder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TabOrder</span></code></a></p></td>
+<td><p>Indicates the position of the control in its parent's tab order.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.PageControl.TabPosition" title="delphivcl.PageControl.TabPosition"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TabPosition</span></code></a></p></td>
+<td><p>Determines whether tabs appear at the top or bottom.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.PageControl.TabStop" title="delphivcl.PageControl.TabStop"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TabStop</span></code></a></p></td>
+<td><p>Determines whether the user can tab to a control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.PageControl.TabWidth" title="delphivcl.PageControl.TabWidth"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TabWidth</span></code></a></p></td>
+<td><p>Specifies the horizontal size, in pixels, of the tabs in the tab control.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Tag</span></code></p></td>
+<td><p>Stores a NativeInt integral value as a part of a component.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Top</span></code></p></td>
+<td><p>Specifies the Y coordinate of the upper-left corner of a control, relative to its parent or containing control in pixels.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.PageControl.Touch" title="delphivcl.PageControl.Touch"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Touch</span></code></a></p></td>
+<td><p>Specifies the touch manager component associated with the control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">UndockHeight</span></code></p></td>
+<td><p>Specifies the height of the control when it is floating.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">UndockWidth</span></code></p></td>
+<td><p>Specifies the width of the control when it is floating.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">UseDockManager</span></code></p></td>
+<td><p>Specifies whether the docking manager is used in drag-and-dock operations.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">VCLComObject</span></code></p></td>
+<td><p>Represents information used internally by components that support COM.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.PageControl.Visible" title="delphivcl.PageControl.Visible"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Visible</span></code></a></p></td>
+<td><p>Specifies whether the component appears onscreen.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">VisibleDockClientCount</span></code></p></td>
+<td><p>Specifies the number of visible controls that are docked on the windowed control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Width</span></code></p></td>
+<td><p>Specifies the horizontal size of the control or form in pixels.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.PageControl.ActivePage">
+<span class="sig-name descname"><span class="pre">ActivePage</span></span><a class="headerlink" href="#delphivcl.PageControl.ActivePage" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the page currently displayed by the page control.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.PageControl.ActivePageIndex">
+<span class="sig-name descname"><span class="pre">ActivePageIndex</span></span><a class="headerlink" href="#delphivcl.PageControl.ActivePageIndex" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the page currently displayed by the page control.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.PageControl.Align">
+<span class="sig-name descname"><span class="pre">Align</span></span><a class="headerlink" href="#delphivcl.PageControl.Align" title="Link to this definition">¶</a></dt>
+<dd><p>Determines how the control aligns within its container (parent control).
+Use Align to align a control to the top, bottom, left, or right of a form or panel and have it remain there even if the size of the form, panel, or component that contains the control changes. When the parent is resized, an aligned control also resizes so that it continues to span the top, bottom, left, or right edge of the parent.
+For example, to use a panel component with various controls on it as a tool palette, change the panel’s Align value to alLeft. The value of alLeft for the Align property of the panel guarantees that the tool palette remains on the left side of the form and always equals the client height of the form.
+The default value of Align is alNone, which means a control remains where it is positioned on a form or panel.</p>
+<p>Tip: If Align is set to alClient, the control fills the entire client area so that it is impossible to select the parent form by clicking it. In this case, select the parent by selecting the control on the form and pressing ESC, or by using the Object Inspector.
+Any number of child components within a single parent can have the same Align value, in which case they stack up along the edge of the parent. The child controls stack up in z-order. To adjust the order in which the controls stack up, drag the controls into their desired positions.</p>
+<p>Note: To cause a control to maintain a specified relationship with an edge of its parent, but not necessarily lie along one edge of the parent, use the Anchors property instead.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Align</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.PageControl.Anchors">
+<span class="sig-name descname"><span class="pre">Anchors</span></span><a class="headerlink" href="#delphivcl.PageControl.Anchors" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies how the control is anchored to its parent.
+Use Anchors to ensure that a control maintains its current position relative to an edge of its parent, even if the parent is resized. When its parent is resized, the control holds its position relative to the edges to which it is anchored.
+If a control is anchored to opposite edges of its parent, the control stretches when its parent is resized. For example, if a control has its Anchors property set to [akLeft, akRight], the control stretches when the width of its parent changes.
+Anchors is enforced only when the parent is resized. Thus, for example, if a control is anchored to opposite edges of a form at design time and the form is created in a maximized state, the control is not stretched because the form is not resized after the control is created.</p>
+<p>Note: If a control should maintain contact with three edges of its parent (hugging one side of the parent and stretching the length of that side), use the Align property instead. Unlike Anchors, Align allows controls to adjust to changes in the size of other aligned sibling controls as well as changes to the parent’s size.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Anchors</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.PageControl.BiDiMode">
+<span class="sig-name descname"><span class="pre">BiDiMode</span></span><a class="headerlink" href="#delphivcl.PageControl.BiDiMode" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the bidirectional mode for the control.
+Use BiDiMode to enable the control to adjust its appearance and behavior automatically when the application runs in a locale that reads from right to left instead of left to right. The bidirectional mode controls the reading order for the text, the placement of the vertical scroll bar, and whether the alignment is changed.
+Alignment does not change for controls that are known to contain number, date, time, or currency values. For example, with data-aware controls, the alignment does not change for the following field types: ftSmallint, ftInteger, ftWord, ftFloat, ftCurrency, ftBCD, ftDate, ftTime, ftDateTime, ftAutoInc.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>BiDiMode</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.PageControl.Canvas">
+<span class="sig-name descname"><span class="pre">Canvas</span></span><a class="headerlink" href="#delphivcl.PageControl.Canvas" title="Link to this definition">¶</a></dt>
+<dd><p>Gives access to the tab control canvas.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.PageControl.Constraints">
+<span class="sig-name descname"><span class="pre">Constraints</span></span><a class="headerlink" href="#delphivcl.PageControl.Constraints" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the size constraints for the control.
+Use Constraints to specify the minimum and maximum width and height of the control. When Constraints contains maximum or minimum values, the control cannot be resized to violate those constraints.</p>
+<p>Note: Constraints apply to the height of the form. However, the height of the form depends on how large Windows makes the title bar. For example, Windows XP uses much larger title bars than other windowing systems. To work around this, note the ClientHeight when you design your form and set the constraints in the FormCreate event. In the following example, ClientHeight is represented by x: Constraints.MinHeight�:= x + Height - ClientHeight.
+Warning: Do not set up constraints that conflict with the value of the Align or Anchors property. When these properties conflict, the response of the control to resize attempts is not well-defined.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>SizeConstraints</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.PageControl.DockSite">
+<span class="sig-name descname"><span class="pre">DockSite</span></span><a class="headerlink" href="#delphivcl.PageControl.DockSite" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies whether the control can be the target of drag-and-dock operations.
+Set DockSite to true to allow other controls to be docked to this windowed control.</p>
+<p>Code Examples
+Docking (Delphi)
+Docking (C++)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.PageControl.DoubleBuffered">
+<span class="sig-name descname"><span class="pre">DoubleBuffered</span></span><a class="headerlink" href="#delphivcl.PageControl.DoubleBuffered" title="Link to this definition">¶</a></dt>
+<dd><p>Determines whether the control’s image is rendered directly to the window or painted to an in-memory bitmap first.
+When DoubleBuffered is false, the windowed control paints itself directly to the window. When DoubleBuffered is true, the windowed control paints itself to an in-memory bitmap that is then used to paint the window. Double buffering reduces the amount of flicker when the control repaints, but is more memory intensive.
+When a windowed control is a dock site and has an associated dock manager, it must be double-buffered.</p>
+<p>Note:  Some controls, such as TRichEdit, can’t paint themselves into a bitmap. For such controls, DoubleBuffered must be set to false.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.PageControl.DoubleBufferedMode">
+<span class="sig-name descname"><span class="pre">DoubleBufferedMode</span></span><a class="headerlink" href="#delphivcl.PageControl.DoubleBufferedMode" title="Link to this definition">¶</a></dt>
+<dd><p>DoubleBufferedMode:</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.PageControl.DragCursor">
+<span class="sig-name descname"><span class="pre">DragCursor</span></span><a class="headerlink" href="#delphivcl.PageControl.DragCursor" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the image used to represent the mouse pointer when the control is being dragged.
+Use the DragCursor property to change the cursor image presented when the control is being dragged.</p>
+<p>Note: To make a custom cursor available for the DragCursor property, see the Cursor property.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.PageControl.DragKind">
+<span class="sig-name descname"><span class="pre">DragKind</span></span><a class="headerlink" href="#delphivcl.PageControl.DragKind" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies whether the control is being dragged normally or for docking.
+Use DragKind to get or set whether the control participates in drag-and-drop operations or drag-and-dock operations.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>DragKind</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.PageControl.DragMode">
+<span class="sig-name descname"><span class="pre">DragMode</span></span><a class="headerlink" href="#delphivcl.PageControl.DragMode" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies how the control initiates drag-and-drop or drag-and-dock operations.
+Use DragMode to control when the user can drag the control. Disable the drag-and-drop or drag-and-dock capability at run time by setting the DragMode property value to dmManual. Enable automatic dragging by setting DragMode to dmAutomatic. For more information about dmManual and dmAutomatic, see TDragMode.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>DragMode</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.PageControl.Enabled">
+<span class="sig-name descname"><span class="pre">Enabled</span></span><a class="headerlink" href="#delphivcl.PageControl.Enabled" title="Link to this definition">¶</a></dt>
+<dd><p>Controls whether the control responds to mouse, keyboard, and timer events.
+Use Enabled to change the availability of the control to the user. To disable a control, set Enabled to False. Some disabled controls appear dimmed (for example: buttons, check boxes, labels), while others (container controls) simply lose their functionality without changing their appearance. If Enabled is set to False, the control ignores mouse, keyboard, and timer events.
+To re-enable a control, set Enabled to True.</p>
+<p>Note: This property applies to all TControl descendants.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.PageControl.FindNextPage">
+<span class="sig-name descname"><span class="pre">FindNextPage</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.PageControl.FindNextPage" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the next page in the page control before or after a specified page.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.PageControl.Font">
+<span class="sig-name descname"><span class="pre">Font</span></span><a class="headerlink" href="#delphivcl.PageControl.Font" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the attributes of text written on or in the control.
+To change to a new font, specify a new TFont object. To modify a font, change the value of the Charset, Color, Height, Name , Pitch, Size, or Style of the TFont object.</p>
+<p>Note: Changing the font color of the Caption is not supported for some controls (such as TButton). In most cases, there is an alternate control you can use whose Font property will change the color of the caption or text (such as TBitBtn or TSpeedButton).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Font</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.PageControl.GetChildren">
+<span class="sig-name descname"><span class="pre">GetChildren</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Proc</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="delphivcl.Component.html#delphivcl.Component" title="delphivcl.Component"><span class="pre">Component</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">None</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Root</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="delphivcl.Component.html#delphivcl.Component" title="delphivcl.Component"><span class="pre">Component</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#delphivcl.PageControl.GetChildren" title="Link to this definition">¶</a></dt>
+<dd><p>Calls a specified procedure for every page in the page control.
+Call GetChildren to execute a callback for every page in the page control. The Proc parameter is the callback. The Root parameter is ignored by TPageControl.
+GetChildren is intended primarily for the streaming system that loads and saves components.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.PageControl.GetHitTestInfoAt">
+<span class="sig-name descname"><span class="pre">GetHitTestInfoAt</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.PageControl.GetHitTestInfoAt" title="Link to this definition">¶</a></dt>
+<dd><p>Returns information about the location of a point relative to the client area of the tab control.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.PageControl.HotTrack">
+<span class="sig-name descname"><span class="pre">HotTrack</span></span><a class="headerlink" href="#delphivcl.PageControl.HotTrack" title="Link to this definition">¶</a></dt>
+<dd><p>Determines whether labels on the tab under the mouse are automatically highlighted.
+Set HotTrack to true to provide visual feedback to the user about which tab would be selected if the mouse button is clicked. HotTrack is especially useful when the tab control contains multiple rows of tabs.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.PageControl.Images">
+<span class="sig-name descname"><span class="pre">Images</span></span><a class="headerlink" href="#delphivcl.PageControl.Images" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the images drawn in tabs.
+Images specifies the images that are drawn in tabs. For disabled tabs, grayed versions of the images are used.
+In the implementation of TCustomTabControl, the order of images in image list properties directly corresponds to the associated tabs in the control. In the descendant class, TPageControl, this behavior is replaced by support for individual  TTabSheet objects, each with an ImageIndex property. In any case, the application programmer can define customized image displays by defining an OnGetImageIndex event handler.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>CustomImageList</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.PageControl.IndexOfTabAt">
+<span class="sig-name descname"><span class="pre">IndexOfTabAt</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.PageControl.IndexOfTabAt" title="Link to this definition">¶</a></dt>
+<dd><p>Indicates the index of the tab at a specified point.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.PageControl.MultiLine">
+<span class="sig-name descname"><span class="pre">MultiLine</span></span><a class="headerlink" href="#delphivcl.PageControl.MultiLine" title="Link to this definition">¶</a></dt>
+<dd><p>Determines whether the tabs can appear on more than one row.
+Use MultiLine to determine how the tabs are displayed. If MultiLine is true, the tabs are displayed on more than one row when the number of tabs exceeds the number that fits across the top of the tab control. How many rows is determined by how many tabs are in the tab control. If MultiLine is false, the tabs are displayed on one row only, and the user must scroll the displayed scroll arrows to view all the tabs.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.PageControl.OnDockDrop">
+<span class="sig-name descname"><span class="pre">OnDockDrop</span></span><a class="headerlink" href="#delphivcl.PageControl.OnDockDrop" title="Link to this definition">¶</a></dt>
+<dd><p>Callable[[Object, DragDockObject, int, int], None]:</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.PageControl.OnDockOver">
+<span class="sig-name descname"><span class="pre">OnDockOver</span></span><a class="headerlink" href="#delphivcl.PageControl.OnDockOver" title="Link to this definition">¶</a></dt>
+<dd><p>Callable[[Object, DragDockObject, int, int, DragState, bool], None]:</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.PageControl.OnDragDrop">
+<span class="sig-name descname"><span class="pre">OnDragDrop</span></span><a class="headerlink" href="#delphivcl.PageControl.OnDragDrop" title="Link to this definition">¶</a></dt>
+<dd><p>Callable[[Object, Object, int, int], None]:</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.PageControl.OnDragOver">
+<span class="sig-name descname"><span class="pre">OnDragOver</span></span><a class="headerlink" href="#delphivcl.PageControl.OnDragOver" title="Link to this definition">¶</a></dt>
+<dd><p>Callable[[Object, Object, int, int, DragState, bool], None]:</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.PageControl.OnDrawTab">
+<span class="sig-name descname"><span class="pre">OnDrawTab</span></span><a class="headerlink" href="#delphivcl.PageControl.OnDrawTab" title="Link to this definition">¶</a></dt>
+<dd><p>Callable[[CustomTabControl, int, Rect, bool], None]:</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.PageControl.OnEndDock">
+<span class="sig-name descname"><span class="pre">OnEndDock</span></span><a class="headerlink" href="#delphivcl.PageControl.OnEndDock" title="Link to this definition">¶</a></dt>
+<dd><p>Callable[[Object, Object, int, int], None]:</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.PageControl.OnEndDrag">
+<span class="sig-name descname"><span class="pre">OnEndDrag</span></span><a class="headerlink" href="#delphivcl.PageControl.OnEndDrag" title="Link to this definition">¶</a></dt>
+<dd><p>Callable[[Object, Object, int, int], None]:</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.PageControl.OnGesture">
+<span class="sig-name descname"><span class="pre">OnGesture</span></span><a class="headerlink" href="#delphivcl.PageControl.OnGesture" title="Link to this definition">¶</a></dt>
+<dd><p>Callable[[Object, GestureEventInfo, bool], None]:</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.PageControl.OnGetImageIndex">
+<span class="sig-name descname"><span class="pre">OnGetImageIndex</span></span><a class="headerlink" href="#delphivcl.PageControl.OnGetImageIndex" title="Link to this definition">¶</a></dt>
+<dd><p>Callable[[Object, int, int], None]:</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.PageControl.OnGetSiteInfo">
+<span class="sig-name descname"><span class="pre">OnGetSiteInfo</span></span><a class="headerlink" href="#delphivcl.PageControl.OnGetSiteInfo" title="Link to this definition">¶</a></dt>
+<dd><p>Callable[[Object, Control, Rect, Point, bool], None]:</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.PageControl.OnMouseActivate">
+<span class="sig-name descname"><span class="pre">OnMouseActivate</span></span><a class="headerlink" href="#delphivcl.PageControl.OnMouseActivate" title="Link to this definition">¶</a></dt>
+<dd><p>Callable[[Object, MouseButton, ShiftState, int, int, int, MouseActivate], None]:</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.PageControl.OnStartDock">
+<span class="sig-name descname"><span class="pre">OnStartDock</span></span><a class="headerlink" href="#delphivcl.PageControl.OnStartDock" title="Link to this definition">¶</a></dt>
+<dd><p>Callable[[Object, DragDockObject], None]:</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.PageControl.OnStartDrag">
+<span class="sig-name descname"><span class="pre">OnStartDrag</span></span><a class="headerlink" href="#delphivcl.PageControl.OnStartDrag" title="Link to this definition">¶</a></dt>
+<dd><p>Callable[[Object, DragObject], None]:</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.PageControl.OnUnDock">
+<span class="sig-name descname"><span class="pre">OnUnDock</span></span><a class="headerlink" href="#delphivcl.PageControl.OnUnDock" title="Link to this definition">¶</a></dt>
+<dd><p>Callable[[Object, Control, WinControl, bool], None]:</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.PageControl.OwnerDraw">
+<span class="sig-name descname"><span class="pre">OwnerDraw</span></span><a class="headerlink" href="#delphivcl.PageControl.OwnerDraw" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies whether the tab control handles its own painting.
+Set OwnerDraw to true to override any default painting behavior.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.PageControl.PageCount">
+<span class="sig-name descname"><span class="pre">PageCount</span></span><a class="headerlink" href="#delphivcl.PageControl.PageCount" title="Link to this definition">¶</a></dt>
+<dd><p>Indicates the number of pages in the TPageControl object.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.PageControl.Pages">
+<span class="sig-name descname"><span class="pre">Pages</span></span><a class="headerlink" href="#delphivcl.PageControl.Pages" title="Link to this definition">¶</a></dt>
+<dd><p>Lists all the pages in the TPageControl.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.PageControl.ParentBiDiMode">
+<span class="sig-name descname"><span class="pre">ParentBiDiMode</span></span><a class="headerlink" href="#delphivcl.PageControl.ParentBiDiMode" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies whether the control uses its parent’s BiDiMode.
+Use ParentBiDiMode to get or set whether the control uses its parent’s BiDiMode. When ParentBiDiMode is true, the control’s BiDiMode property is always equal to that of its parent. If ParentBiDiMode is false, the control uses its own BiDiMode property.
+Set ParentBiDiMode to true for all controls in a form to ensure that the entire user interface adjusts to Middle Eastern locales in a uniform manner.
+When the value of the control’s BiDiMode property changes, ParentBiDiMode becomes false automatically.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.PageControl.ParentDoubleBuffered">
+<span class="sig-name descname"><span class="pre">ParentDoubleBuffered</span></span><a class="headerlink" href="#delphivcl.PageControl.ParentDoubleBuffered" title="Link to this definition">¶</a></dt>
+<dd><p>ParentDoubleBuffered defers the DoubleBuffered property of this component to the value of the parent’s DoubleBuffered property.
+ParentDoubleBuffered is a boolean indicating that the DoubleBuffered property of this component is overridden by the value of the parent’s DoubleBuffered property.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.PageControl.ParentFont">
+<span class="sig-name descname"><span class="pre">ParentFont</span></span><a class="headerlink" href="#delphivcl.PageControl.ParentFont" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies where a control looks for its font information.
+To have a control use the same font as its parent control, set ParentFont to true. If ParentFont is false, the control uses its own Font property. Many controls default ParentFont to true so that all the controls in a form or other container present a uniform appearance. When the value of a control’s Font property changes, ParentFont becomes false automatically.
+When ParentFont is true for a form, the form uses the default font. Currently, the default font is Tahoma 8 pt.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.PageControl.ParentShowHint">
+<span class="sig-name descname"><span class="pre">ParentShowHint</span></span><a class="headerlink" href="#delphivcl.PageControl.ParentShowHint" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies where a control looks to find out if its Help Hint should be shown.
+Use ParentShowHint to ensure that all the controls on a form either uniformly show their Help Hints or uniformly do not show them.
+If ParentShowHint is True, the control uses the ShowHint property value of its parent. If ParentShowHint is False, the control uses the value of its own ShowHint property.
+To provide Help Hints only for selected controls on a form, set the ShowHint property for those controls that should have Help Hints to True, and ParentShowHint becomes False automatically.</p>
+<p>Note:  Enable or disable all Help Hints for the entire application using the ShowHint property of the application object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.PageControl.PopupMenu">
+<span class="sig-name descname"><span class="pre">PopupMenu</span></span><a class="headerlink" href="#delphivcl.PageControl.PopupMenu" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the pop-up menu associated with the control.
+Assign a value to PopupMenu to make a pop-up menu appear when the user selects the control and clicks the right mouse button. If the TPopupMenu’s AutoPopup property is True, the pop-up menu appears automatically. If the menu’s AutoPopup property is False, display the menu with a call to its Popup method from the control’s OnContextPopup event handler.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="delphivcl.PopupMenu.html#delphivcl.PopupMenu" title="delphivcl.PopupMenu">PopupMenu</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.PageControl.RaggedRight">
+<span class="sig-name descname"><span class="pre">RaggedRight</span></span><a class="headerlink" href="#delphivcl.PageControl.RaggedRight" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies whether rows of tabs stretch to fill the width of the control.
+Use RaggedRight to get or set whether rows of tabs stretch to fill the width of the control.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.PageControl.ScrollOpposite">
+<span class="sig-name descname"><span class="pre">ScrollOpposite</span></span><a class="headerlink" href="#delphivcl.PageControl.ScrollOpposite" title="Link to this definition">¶</a></dt>
+<dd><p>Determines how the rows of tabs are scrolled in a multi-line tab control.
+Set ScrollOpposite to determine where previous rows of tabs in a multi-line tab control move when the user selects a tab in another row. When ScrollOpposite is true, previous rows of tabs are moved to the bottom of the tab control if TabPosition is tpTop, or to the top if TabPosition is tpBottom. When ScrollOpposite is false, previous rows of tabs are moved to the back of all other rows of tabs.
+For example, in a tab control with three rows of tabs at the top, if the user selects a tab in the second row, ScrollOpposite determines where the first row moves. If ScrollOpposite is true, the second row now appears at the front (bottom) row on top of the tab control, followed by the third row behind (above) it. The first row moves to the bottom of the tab control. If ScrollOpposite is false, the first row moves to the back (top), so that the tab control displays the second row in front (at the bottom of the tab region), followed by the third row (now in the middle), followed by the first row.</p>
+<p>Note:  Setting ScrollOpposite to true automatically sets the MultiLine property to true.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.PageControl.ScrollTabs">
+<span class="sig-name descname"><span class="pre">ScrollTabs</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.PageControl.ScrollTabs" title="Link to this definition">¶</a></dt>
+<dd><p>Scrolls the tabs that are visible when the tab control is not multi-line.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.PageControl.SelectNextPage">
+<span class="sig-name descname"><span class="pre">SelectNextPage</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.PageControl.SelectNextPage" title="Link to this definition">¶</a></dt>
+<dd><p>Changes the ActivePage to the first visible page that is before or after the currently active page.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.PageControl.ShowHint">
+<span class="sig-name descname"><span class="pre">ShowHint</span></span><a class="headerlink" href="#delphivcl.PageControl.ShowHint" title="Link to this definition">¶</a></dt>
+<dd><p>ShowHint specifies whether to show the Help Hint when the mouse pointer moves over the control.
+ShowHint determines whether the Help Hint appears for the control. The Help Hint is the value of the TControl.Hint property. The Help Hint appears in a box just beneath the control when the mouse pointer moves over the control.
+To enable Help Hints for a particular control, two conditions must be satisfied:</p>
+<p>The application’s ShowHint property must be True.
+Either the control’s own ShowHint property must be True, or the control’s ParentShowHint property must be True and its parent’s ShowHint property must be True.
+For example, imagine a check box within a group box. If the ShowHint property of the group box is True and the ParentShowHint property of the check box is True, but the ShowHint property of the check box is False, the check box still displays its Help Hint.
+Changing the ShowHint value automatically sets the ParentShowHint property to False.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.PageControl.Style">
+<span class="sig-name descname"><span class="pre">Style</span></span><a class="headerlink" href="#delphivcl.PageControl.Style" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the style of the tab control.
+Use Style to determine the appearance of the tabs. These can appear as notebook tabs or as buttons.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>TabStyle</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.PageControl.StyleElements">
+<span class="sig-name descname"><span class="pre">StyleElements</span></span><a class="headerlink" href="#delphivcl.PageControl.StyleElements" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the style elements that are used by the control.
+Use StyleElements to customize the style of the control. If a custom style is enabled, you can enable or disable style elements in the control.
+StyleElements is a set of values that specify which elements of the current style are to be applied to this control. By default, all the elements of the style are enabled.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>StyleElements</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.PageControl.StyleName">
+<span class="sig-name descname"><span class="pre">StyleName</span></span><a class="headerlink" href="#delphivcl.PageControl.StyleName" title="Link to this definition">¶</a></dt>
+<dd><p>Embarcadero Technologies does not currently have any additional information.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.PageControl.TabHeight">
+<span class="sig-name descname"><span class="pre">TabHeight</span></span><a class="headerlink" href="#delphivcl.PageControl.TabHeight" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the height, in pixels, of the tabs in the tab control.
+Set TabHeight to control the height of the tabs that appear above the client region of the tab control. The TabHeight property is the vertical size in pixels of the individual tabs. If TabHeight is set to 0, the tabs automatically size themselves to fit their text.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.PageControl.TabIndex">
+<span class="sig-name descname"><span class="pre">TabIndex</span></span><a class="headerlink" href="#delphivcl.PageControl.TabIndex" title="Link to this definition">¶</a></dt>
+<dd><p>Identifies the selected tab on a tab control.
+Read TabIndex to determine which tab was selected by the user. TabIndex is the index of the tab in the list of labels maintained by the Tabs property. The first (leftmost) tab has a TabIndex of 0, the next has 1, and so on. If no tabs are selected, TabIndex has a value of -1.
+Set TabIndex to programmatically change the selected tab in the tab control.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.PageControl.TabOrder">
+<span class="sig-name descname"><span class="pre">TabOrder</span></span><a class="headerlink" href="#delphivcl.PageControl.TabOrder" title="Link to this definition">¶</a></dt>
+<dd><p>Indicates the position of the control in its parent’s tab order.
+TabOrder is the order in which child windows are visited when the user presses the Tab key. The control with the TabOrder value of 0 is the control that has the focus when the form first appears.
+Initially, the tab order is always the order in which the controls were added to the form. The first control added to the form has a TabOrder value of 0, the second is 1, the third is 2, and so on. Change this by changing the TabOrder property.
+Each control has a unique tab-order value within its parent. If you change the TabOrder property value of one control to be the same as the value of a second control, the TabOrder value for all the other controls changes. For example, suppose a control is sixth in the tab order. If you change the control’s TabOrder property value to 3 (making the control fourth in the tab order), the control that was originally fourth in the tab order now becomes fifth, and the control that was fifth becomes sixth.
+Assigning TabOrder a value greater than the number of controls contained in the parent control moves the control to the end of the tab order. The control does not take on the assigned value of TabOrder, but instead is given the number that assures the control is the last in the tab order.</p>
+<p>Note: TabOrder is meaningful only if the TabStop property is True and if the control has a parent. (The TabOrder property of a form is not used unless the form is the child of another form.) A control with a TabOrder of -1 has no parent, and therefore cannot be reached by pressing the Tab key. To remove a parented control from the Tab order, set its TabStop property to False.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.PageControl.TabPosition">
+<span class="sig-name descname"><span class="pre">TabPosition</span></span><a class="headerlink" href="#delphivcl.PageControl.TabPosition" title="Link to this definition">¶</a></dt>
+<dd><p>Determines whether tabs appear at the top or bottom.
+Set TabPosition to tpTop to display the tabs at the top of the tab control. Set TabPosition to tpBottom to display the tabs at the bottom. If the ScrollOpposite property is True, tabs can appear at both top and bottom, with the row containing the current tab and all subsequent rows on the side indicated by TabPosition.
+Due to a limitation in the windows common control, if TabPosition is tpLeft or tpRight, Font must be a True Type font. Otherwise, tab text may paint incorrectly.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>TabPosition</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.PageControl.TabRect">
+<span class="sig-name descname"><span class="pre">TabRect</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.PageControl.TabRect" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the bounding rectangle for a specified tab.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.PageControl.TabStop">
+<span class="sig-name descname"><span class="pre">TabStop</span></span><a class="headerlink" href="#delphivcl.PageControl.TabStop" title="Link to this definition">¶</a></dt>
+<dd><p>Determines whether the user can tab to a control.
+Use the TabStop to allow or disallow access to the control using the Tab key.
+If TabStop is True, the control is in the tab order. If TabStop is False, the control is not in the tab order and the user cannot press the TAB key to move to the control.</p>
+<p>Note: TabStop is not meaningful for a form unless the form assigns another form to be its parent.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.PageControl.TabWidth">
+<span class="sig-name descname"><span class="pre">TabWidth</span></span><a class="headerlink" href="#delphivcl.PageControl.TabWidth" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the horizontal size, in pixels, of the tabs in the tab control.
+TabWidth specifies a fixed width for all tabs. If TabWidth is 0, then each tab is automatically made wide enough to show its caption.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.PageControl.Touch">
+<span class="sig-name descname"><span class="pre">Touch</span></span><a class="headerlink" href="#delphivcl.PageControl.Touch" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the touch manager component associated with the control.
+Use the Touch property to access gesturing options associated with a control. Touch specifies a class of type TTouchManager.
+Touch is used to:</p>
+<p>Associate a TGestureManager.
+(TGestureManager manages all the gestures that can be used by the control.)
+Select the standard, interactive, or custom gestures to associate with the control.
+(You can also connect each gesture to an action; see Assigning Actions to Gestures.)
+Specify a set of options for interactive or tablet gestures.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>TouchManager</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.PageControl.Visible">
+<span class="sig-name descname"><span class="pre">Visible</span></span><a class="headerlink" href="#delphivcl.PageControl.Visible" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies whether the component appears onscreen.
+Use the Visible property to control the visibility of the control at run time. If Visible is True, the control appears. If Visible is False, the control is not visible.
+Calling the Show method sets the control’s Visible property to True. Calling the Hide method sets it to False.
+For TCustomForm descendants, the Show and ShowModal methods set Visible to True and bring the form to the front of all open windows.
+For TTabSheet descendants, Visible does not control the visibility of the control at run time. For more information, see the description of the TabVisible property.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="delphivcl.Panel.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Panel</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="delphivcl.Page.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Page</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2020-2023, Embarcadero Python Dev Team
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">PageControl</a><ul>
+<li><a class="reference internal" href="#delphivcl.PageControl"><code class="docutils literal notranslate"><span class="pre">PageControl</span></code></a><ul>
+<li><a class="reference internal" href="#delphivcl.PageControl.ActivePage"><code class="docutils literal notranslate"><span class="pre">PageControl.ActivePage</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.PageControl.ActivePageIndex"><code class="docutils literal notranslate"><span class="pre">PageControl.ActivePageIndex</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.PageControl.Align"><code class="docutils literal notranslate"><span class="pre">PageControl.Align</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.PageControl.Anchors"><code class="docutils literal notranslate"><span class="pre">PageControl.Anchors</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.PageControl.BiDiMode"><code class="docutils literal notranslate"><span class="pre">PageControl.BiDiMode</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.PageControl.Canvas"><code class="docutils literal notranslate"><span class="pre">PageControl.Canvas</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.PageControl.Constraints"><code class="docutils literal notranslate"><span class="pre">PageControl.Constraints</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.PageControl.DockSite"><code class="docutils literal notranslate"><span class="pre">PageControl.DockSite</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.PageControl.DoubleBuffered"><code class="docutils literal notranslate"><span class="pre">PageControl.DoubleBuffered</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.PageControl.DoubleBufferedMode"><code class="docutils literal notranslate"><span class="pre">PageControl.DoubleBufferedMode</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.PageControl.DragCursor"><code class="docutils literal notranslate"><span class="pre">PageControl.DragCursor</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.PageControl.DragKind"><code class="docutils literal notranslate"><span class="pre">PageControl.DragKind</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.PageControl.DragMode"><code class="docutils literal notranslate"><span class="pre">PageControl.DragMode</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.PageControl.Enabled"><code class="docutils literal notranslate"><span class="pre">PageControl.Enabled</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.PageControl.FindNextPage"><code class="docutils literal notranslate"><span class="pre">PageControl.FindNextPage()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.PageControl.Font"><code class="docutils literal notranslate"><span class="pre">PageControl.Font</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.PageControl.GetChildren"><code class="docutils literal notranslate"><span class="pre">PageControl.GetChildren()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.PageControl.GetHitTestInfoAt"><code class="docutils literal notranslate"><span class="pre">PageControl.GetHitTestInfoAt()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.PageControl.HotTrack"><code class="docutils literal notranslate"><span class="pre">PageControl.HotTrack</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.PageControl.Images"><code class="docutils literal notranslate"><span class="pre">PageControl.Images</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.PageControl.IndexOfTabAt"><code class="docutils literal notranslate"><span class="pre">PageControl.IndexOfTabAt()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.PageControl.MultiLine"><code class="docutils literal notranslate"><span class="pre">PageControl.MultiLine</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.PageControl.OnDockDrop"><code class="docutils literal notranslate"><span class="pre">PageControl.OnDockDrop</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.PageControl.OnDockOver"><code class="docutils literal notranslate"><span class="pre">PageControl.OnDockOver</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.PageControl.OnDragDrop"><code class="docutils literal notranslate"><span class="pre">PageControl.OnDragDrop</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.PageControl.OnDragOver"><code class="docutils literal notranslate"><span class="pre">PageControl.OnDragOver</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.PageControl.OnDrawTab"><code class="docutils literal notranslate"><span class="pre">PageControl.OnDrawTab</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.PageControl.OnEndDock"><code class="docutils literal notranslate"><span class="pre">PageControl.OnEndDock</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.PageControl.OnEndDrag"><code class="docutils literal notranslate"><span class="pre">PageControl.OnEndDrag</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.PageControl.OnGesture"><code class="docutils literal notranslate"><span class="pre">PageControl.OnGesture</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.PageControl.OnGetImageIndex"><code class="docutils literal notranslate"><span class="pre">PageControl.OnGetImageIndex</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.PageControl.OnGetSiteInfo"><code class="docutils literal notranslate"><span class="pre">PageControl.OnGetSiteInfo</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.PageControl.OnMouseActivate"><code class="docutils literal notranslate"><span class="pre">PageControl.OnMouseActivate</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.PageControl.OnStartDock"><code class="docutils literal notranslate"><span class="pre">PageControl.OnStartDock</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.PageControl.OnStartDrag"><code class="docutils literal notranslate"><span class="pre">PageControl.OnStartDrag</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.PageControl.OnUnDock"><code class="docutils literal notranslate"><span class="pre">PageControl.OnUnDock</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.PageControl.OwnerDraw"><code class="docutils literal notranslate"><span class="pre">PageControl.OwnerDraw</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.PageControl.PageCount"><code class="docutils literal notranslate"><span class="pre">PageControl.PageCount</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.PageControl.Pages"><code class="docutils literal notranslate"><span class="pre">PageControl.Pages</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.PageControl.ParentBiDiMode"><code class="docutils literal notranslate"><span class="pre">PageControl.ParentBiDiMode</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.PageControl.ParentDoubleBuffered"><code class="docutils literal notranslate"><span class="pre">PageControl.ParentDoubleBuffered</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.PageControl.ParentFont"><code class="docutils literal notranslate"><span class="pre">PageControl.ParentFont</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.PageControl.ParentShowHint"><code class="docutils literal notranslate"><span class="pre">PageControl.ParentShowHint</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.PageControl.PopupMenu"><code class="docutils literal notranslate"><span class="pre">PageControl.PopupMenu</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.PageControl.RaggedRight"><code class="docutils literal notranslate"><span class="pre">PageControl.RaggedRight</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.PageControl.ScrollOpposite"><code class="docutils literal notranslate"><span class="pre">PageControl.ScrollOpposite</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.PageControl.ScrollTabs"><code class="docutils literal notranslate"><span class="pre">PageControl.ScrollTabs()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.PageControl.SelectNextPage"><code class="docutils literal notranslate"><span class="pre">PageControl.SelectNextPage()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.PageControl.ShowHint"><code class="docutils literal notranslate"><span class="pre">PageControl.ShowHint</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.PageControl.Style"><code class="docutils literal notranslate"><span class="pre">PageControl.Style</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.PageControl.StyleElements"><code class="docutils literal notranslate"><span class="pre">PageControl.StyleElements</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.PageControl.StyleName"><code class="docutils literal notranslate"><span class="pre">PageControl.StyleName</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.PageControl.TabHeight"><code class="docutils literal notranslate"><span class="pre">PageControl.TabHeight</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.PageControl.TabIndex"><code class="docutils literal notranslate"><span class="pre">PageControl.TabIndex</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.PageControl.TabOrder"><code class="docutils literal notranslate"><span class="pre">PageControl.TabOrder</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.PageControl.TabPosition"><code class="docutils literal notranslate"><span class="pre">PageControl.TabPosition</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.PageControl.TabRect"><code class="docutils literal notranslate"><span class="pre">PageControl.TabRect()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.PageControl.TabStop"><code class="docutils literal notranslate"><span class="pre">PageControl.TabStop</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.PageControl.TabWidth"><code class="docutils literal notranslate"><span class="pre">PageControl.TabWidth</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.PageControl.Touch"><code class="docutils literal notranslate"><span class="pre">PageControl.Touch</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.PageControl.Visible"><code class="docutils literal notranslate"><span class="pre">PageControl.Visible</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script src="../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/scripts/furo.js?v=5fa4622c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/responsiveSvg.js?v=f1528c9d"></script>
+    </body>
+</html>

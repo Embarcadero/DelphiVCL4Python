@@ -1,0 +1,40 @@
+﻿HandleStream
+============
+
+Qualified name: ``delphivcl.HandleStream``
+
+.. currentmodule:: delphivcl
+
+.. autoclass:: HandleStream
+   :show-inheritance:
+   :members:
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+      
+      ~HandleStream.Read
+      ~HandleStream.ReadBytes
+      ~HandleStream.ReadFloat
+      ~HandleStream.ReadInt
+      ~HandleStream.ReadString
+      ~HandleStream.Seek
+      ~HandleStream.Write
+      ~HandleStream.WriteBytes
+      ~HandleStream.WriteFloat
+      ~HandleStream.WriteInt
+      ~HandleStream.WriteString
+
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+     
+     ~HandleStream.Capabilities
+     ~HandleStream.ClassName
+     ~HandleStream.Handle
+     ~HandleStream.Position
+     ~HandleStream.Size
+   

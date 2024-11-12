@@ -1,0 +1,128 @@
+﻿CustomDrawGrid
+==============
+
+Qualified name: ``delphivcl.CustomDrawGrid``
+
+.. currentmodule:: delphivcl
+
+.. autoclass:: CustomDrawGrid
+   :show-inheritance:
+   :members:
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+      
+      ~CustomDrawGrid.CanFocus
+      ~CustomDrawGrid.CellRect
+      ~CustomDrawGrid.MouseToCell
+      ~CustomDrawGrid.SetFocus
+
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+     
+     ~CustomDrawGrid.Action
+     ~CustomDrawGrid.Align
+     ~CustomDrawGrid.AlignDisabled
+     ~CustomDrawGrid.AlignWithMargins
+     ~CustomDrawGrid.Anchors
+     ~CustomDrawGrid.BiDiMode
+     ~CustomDrawGrid.BoundsRect
+     ~CustomDrawGrid.Brush
+     ~CustomDrawGrid.Canvas
+     ~CustomDrawGrid.CellAlignments
+     ~CustomDrawGrid.ClassName
+     ~CustomDrawGrid.ClientHeight
+     ~CustomDrawGrid.ClientOrigin
+     ~CustomDrawGrid.ClientRect
+     ~CustomDrawGrid.ClientWidth
+     ~CustomDrawGrid.Col
+     ~CustomDrawGrid.ColAlignments
+     ~CustomDrawGrid.ColWidths
+     ~CustomDrawGrid.ComObject
+     ~CustomDrawGrid.ComponentCount
+     ~CustomDrawGrid.ComponentIndex
+     ~CustomDrawGrid.ComponentState
+     ~CustomDrawGrid.ComponentStyle
+     ~CustomDrawGrid.Components
+     ~CustomDrawGrid.Constraints
+     ~CustomDrawGrid.ControlCount
+     ~CustomDrawGrid.ControlState
+     ~CustomDrawGrid.ControlStyle
+     ~CustomDrawGrid.Controls
+     ~CustomDrawGrid.CurrentPPI
+     ~CustomDrawGrid.Cursor
+     ~CustomDrawGrid.CustomHint
+     ~CustomDrawGrid.DesignInfo
+     ~CustomDrawGrid.DockClientCount
+     ~CustomDrawGrid.DockClients
+     ~CustomDrawGrid.DockManager
+     ~CustomDrawGrid.DockOrientation
+     ~CustomDrawGrid.DockSite
+     ~CustomDrawGrid.DoubleBuffered
+     ~CustomDrawGrid.DoubleBufferedMode
+     ~CustomDrawGrid.DrawingStyle
+     ~CustomDrawGrid.EditorMode
+     ~CustomDrawGrid.Enabled
+     ~CustomDrawGrid.ExplicitHeight
+     ~CustomDrawGrid.ExplicitLeft
+     ~CustomDrawGrid.ExplicitTop
+     ~CustomDrawGrid.ExplicitWidth
+     ~CustomDrawGrid.Floating
+     ~CustomDrawGrid.FloatingDockSiteClass
+     ~CustomDrawGrid.Focused
+     ~CustomDrawGrid.GridHeight
+     ~CustomDrawGrid.GridWidth
+     ~CustomDrawGrid.Handle
+     ~CustomDrawGrid.HandleAllocated
+     ~CustomDrawGrid.Height
+     ~CustomDrawGrid.HelpContext
+     ~CustomDrawGrid.HelpKeyword
+     ~CustomDrawGrid.HelpType
+     ~CustomDrawGrid.Hint
+     ~CustomDrawGrid.HostDockSite
+     ~CustomDrawGrid.IsDrawingLocked
+     ~CustomDrawGrid.IsUpdating
+     ~CustomDrawGrid.LRDockWidth
+     ~CustomDrawGrid.Left
+     ~CustomDrawGrid.LeftCol
+     ~CustomDrawGrid.Margins
+     ~CustomDrawGrid.MouseInClient
+     ~CustomDrawGrid.Name
+     ~CustomDrawGrid.Observers
+     ~CustomDrawGrid.Owner
+     ~CustomDrawGrid.Padding
+     ~CustomDrawGrid.Parent
+     ~CustomDrawGrid.ParentCustomHint
+     ~CustomDrawGrid.ParentDoubleBuffered
+     ~CustomDrawGrid.ParentWindow
+     ~CustomDrawGrid.PixelsPerInch
+     ~CustomDrawGrid.RedrawDisabled
+     ~CustomDrawGrid.Row
+     ~CustomDrawGrid.RowHeights
+     ~CustomDrawGrid.ScaleFactor
+     ~CustomDrawGrid.Selection
+     ~CustomDrawGrid.ShowHint
+     ~CustomDrawGrid.Showing
+     ~CustomDrawGrid.StyleElements
+     ~CustomDrawGrid.StyleName
+     ~CustomDrawGrid.TBDockHeight
+     ~CustomDrawGrid.TabOrder
+     ~CustomDrawGrid.TabStop
+     ~CustomDrawGrid.TabStops
+     ~CustomDrawGrid.Tag
+     ~CustomDrawGrid.Top
+     ~CustomDrawGrid.TopRow
+     ~CustomDrawGrid.Touch
+     ~CustomDrawGrid.UndockHeight
+     ~CustomDrawGrid.UndockWidth
+     ~CustomDrawGrid.UseDockManager
+     ~CustomDrawGrid.VCLComObject
+     ~CustomDrawGrid.Visible
+     ~CustomDrawGrid.VisibleDockClientCount
+     ~CustomDrawGrid.Width
+   

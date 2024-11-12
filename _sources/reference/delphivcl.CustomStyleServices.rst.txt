@@ -1,0 +1,62 @@
+﻿CustomStyleServices
+===================
+
+Qualified name: ``delphivcl.CustomStyleServices``
+
+.. currentmodule:: delphivcl
+
+.. autoclass:: CustomStyleServices
+   :show-inheritance:
+   :members:
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+      
+      ~CustomStyleServices.ApplyThemeChange
+      ~CustomStyleServices.ColorToRGB
+      ~CustomStyleServices.ContentRect
+      ~CustomStyleServices.DrawEdge
+      ~CustomStyleServices.DrawElement
+      ~CustomStyleServices.DrawIcon
+      ~CustomStyleServices.DrawParentBackground
+      ~CustomStyleServices.DrawText
+      ~CustomStyleServices.GetElementColor
+      ~CustomStyleServices.GetElementContentRect
+      ~CustomStyleServices.GetElementDetails
+      ~CustomStyleServices.GetElementMargins
+      ~CustomStyleServices.GetElementRegion
+      ~CustomStyleServices.GetElementSize
+      ~CustomStyleServices.GetStyleColor
+      ~CustomStyleServices.GetStyleFontColor
+      ~CustomStyleServices.GetSystemColor
+      ~CustomStyleServices.GetTextExtent
+      ~CustomStyleServices.HasElementFixedPosition
+      ~CustomStyleServices.HasTransparentParts
+      ~CustomStyleServices.IsValidStyle
+      ~CustomStyleServices.LoadFromFile
+      ~CustomStyleServices.LoadFromStream
+      ~CustomStyleServices.PaintBorder
+      ~CustomStyleServices.SaveToFile
+      ~CustomStyleServices.SaveToStream
+      ~CustomStyleServices.ThemesAvailable
+      ~CustomStyleServices.ThemesEnabled
+      ~CustomStyleServices.UpdateThemes
+
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+     
+     ~CustomStyleServices.Available
+     ~CustomStyleServices.ClassName
+     ~CustomStyleServices.DesigningState
+     ~CustomStyleServices.Enabled
+     ~CustomStyleServices.Flags
+     ~CustomStyleServices.IsSystemStyle
+     ~CustomStyleServices.Name
+     ~CustomStyleServices.Theme
+     ~CustomStyleServices.ThemeForDPI
+   

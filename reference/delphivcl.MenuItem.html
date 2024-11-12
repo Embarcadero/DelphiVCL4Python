@@ -1,0 +1,1361 @@
+<!doctype html>
+<html class="no-js" lang="en" data-content_root="../">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="MenuItem" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://github.com/Embarcadero/reference/delphivcl.MenuItem.html" />
+<meta property="og:site_name" content="DelphiVCL | Documentation" />
+<meta property="og:description" content="Qualified name: delphivcl.MenuItem" />
+<meta property="og:image" content="https://github.com/Embarcadero/DelphiVCL4Python/blob/main/images/DelphiVCL4Python(256px).png" />
+<meta property="og:image:alt" content="DelphiVCL | Documentation" />
+<meta name="description" content="Qualified name: delphivcl.MenuItem" />
+<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="Menu" href="delphivcl.Menu.html" /><link rel="prev" title="OpenDialog" href="delphivcl.OpenDialog.html" />
+
+    <link rel="shortcut icon" href="../_static/favicon.ico"/><!-- Generated with Sphinx 8.1.3 and Furo 2024.08.06 -->
+        <title>MenuItem - DelphiVCL Documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=354aac6f" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=4ae1632d" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?v=302659d7" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=93c9b8cc" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  --color-content-foreground: #000000;
+  --color-background-primary: #ffffff;
+  --color-background-border: #ffffff;
+  --color-sidebar-background: #f8f9fb;
+  --color-brand-content: #1c00e3;
+  --color-brand-primary: #192bd0;
+  --color-link: #c93434;
+  --color-link--hover: #5b0000;
+  --color-inline-code-background: #f6f6f6;;
+  --color-foreground-secondary: #000;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  --color-content-foreground: #ffffffd9;
+  --color-background-primary: #131416;
+  --color-background-border: #303335;
+  --color-sidebar-background: #1a1c1e;
+  --color-brand-content: #2196f3;
+  --color-brand-primary: #007fff;
+  --color-link: #51ba86;
+  --color-link--hover: #9cefc6;
+  --color-inline-code-background: #262626;
+  --color-foreground-secondary: #ffffffd9;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  --color-content-foreground: #ffffffd9;
+  --color-background-primary: #131416;
+  --color-background-border: #303335;
+  --color-sidebar-background: #1a1c1e;
+  --color-brand-content: #2196f3;
+  --color-brand-primary: #007fff;
+  --color-link: #51ba86;
+  --color-link--hover: #9cefc6;
+  --color-inline-code-background: #262626;
+  --color-foreground-secondary: #ffffffd9;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-with-moon" viewBox="0 0 24 24">
+    <title>Auto light/dark, in light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path style="opacity: 50%" d="M 5.411 14.504 C 5.471 14.504 5.532 14.504 5.591 14.504 C 3.639 16.319 4.383 19.569 6.931 20.352 C 7.693 20.586 8.512 20.551 9.25 20.252 C 8.023 23.207 4.056 23.725 2.11 21.184 C 0.166 18.642 1.702 14.949 4.874 14.536 C 5.051 14.512 5.231 14.5 5.411 14.5 L 5.411 14.504 Z"/>
+      <line x1="14.5" y1="3.25" x2="14.5" y2="1.25"/>
+      <line x1="14.5" y1="15.85" x2="14.5" y2="17.85"/>
+      <line x1="10.044" y1="5.094" x2="8.63" y2="3.68"/>
+      <line x1="19" y1="14.05" x2="20.414" y2="15.464"/>
+      <line x1="8.2" y1="9.55" x2="6.2" y2="9.55"/>
+      <line x1="20.8" y1="9.55" x2="22.8" y2="9.55"/>
+      <line x1="10.044" y1="14.006" x2="8.63" y2="15.42"/>
+      <line x1="19" y1="5.05" x2="20.414" y2="3.636"/>
+      <circle cx="14.5" cy="9.55" r="3.6"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon-with-sun" viewBox="0 0 24 24">
+    <title>Auto light/dark, in dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path d="M 8.282 7.007 C 8.385 7.007 8.494 7.007 8.595 7.007 C 5.18 10.184 6.481 15.869 10.942 17.24 C 12.275 17.648 13.706 17.589 15 17.066 C 12.851 22.236 5.91 23.143 2.505 18.696 C -0.897 14.249 1.791 7.786 7.342 7.063 C 7.652 7.021 7.965 7 8.282 7 L 8.282 7.007 Z"/>
+      <line style="opacity: 50%" x1="18" y1="3.705" x2="18" y2="2.5"/>
+      <line style="opacity: 50%" x1="18" y1="11.295" x2="18" y2="12.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="4.816" x2="14.464" y2="3.964"/>
+      <line style="opacity: 50%" x1="20.711" y1="10.212" x2="21.563" y2="11.063"/>
+      <line style="opacity: 50%" x1="14.205" y1="7.5" x2="13.001" y2="7.5"/>
+      <line style="opacity: 50%" x1="21.795" y1="7.5" x2="23" y2="7.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="10.184" x2="14.464" y2="11.036"/>
+      <line style="opacity: 50%" x1="20.711" y1="4.789" x2="21.563" y2="3.937"/>
+      <circle style="opacity: 50%" cx="18" cy="7.5" r="2.169"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-pencil" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-pencil-code">
+      <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+      <path d="M13.5 6.5l4 4" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+  <symbol id="svg-eye" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-eye-code">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+      <path
+        d="M11.11 17.958c-3.209 -.307 -5.91 -2.293 -8.11 -5.958c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6c-.21 .352 -.427 .688 -.647 1.008" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+<a class="skip-to-content muted-link" href="#furo-main-content">Skip to content</a>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../index.html"><div class="brand">DelphiVCL Documentation</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+          <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../index.html">
+  
+  <div class="sidebar-logo-container">
+    <img class="sidebar-logo only-light" src="../_static/DelphiVCL4Python-sidebar.svg" alt="Light Logo"/>
+    <img class="sidebar-logo only-dark" src="../_static/DelphiVCL4Python-sidebar-dark.svg" alt="Dark Logo"/>
+  </div>
+  
+  <span class="sidebar-brand-text">DelphiVCL Documentation</span>
+  
+</a><form class="sidebar-search-container" method="get" action="../search.html" role="search">
+  <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../tutorials_guides.html">Tutorials &amp; Guides</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of Tutorials &amp; Guides</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../quickstart.html">Quickstart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples.html">Example Gallery</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq.html">Frequently Asked Questions</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current has-children"><a class="reference internal" href="../reference.html">Reference Manual</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle navigation of Reference Manual</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l2 current has-children"><a class="reference internal" href="../reference_index/delphivcl_classes.html">DelphiVCL</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle navigation of DelphiVCL</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Object.html">Object</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.StyleManager.html">StyleManager</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Stream.html">Stream</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Monitor.html">Monitor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomStyleServices.html">CustomStyleServices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Persistent.html">Persistent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Strings.html">Strings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Picture.html">Picture</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Collection.html">Collection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Canvas.html">Canvas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Graphic.html">Graphic</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Bitmap.html">Bitmap</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Icon.html">Icon</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Metafile.html">Metafile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Component.html">Component</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Timer.html">Timer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.OpenDialog.html">OpenDialog</a></li>
+<li class="toctree-l3 current current-page"><a class="current reference internal" href="#">MenuItem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Menu.html">Menu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.FileOpenDialog.html">FileOpenDialog</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ContainedActionList.html">ContainedActionList</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Control.html">Control</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomBindingsList.html">CustomBindingsList</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BasicBindComponent.html">BasicBindComponent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BasicAction.html">BasicAction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BaseBindScopeComponent.html">BaseBindScopeComponent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BaseLinkingBindSource.html">BaseLinkingBindSource</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ContainedAction.html">ContainedAction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BindingsList.html">BindingsList</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BoundLabel.html">BoundLabel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomControl.html">CustomControl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Label.html">Label</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.WinControl.html">WinControl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomActionList.html">CustomActionList</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.MainMenu.html">MainMenu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.PopupMenu.html">PopupMenu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.SaveDialog.html">SaveDialog</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ActionList.html">ActionList</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.MediaPlayer.html">MediaPlayer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomToggleSwitch.html">CustomToggleSwitch</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomActivityIndicator.html">CustomActivityIndicator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomAction.html">CustomAction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Action.html">Action</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BaseObjectBindSource.html">BaseObjectBindSource</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomPrototypeBindSource.html">CustomPrototypeBindSource</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ActivityIndicator.html">ActivityIndicator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ToggleSwitch.html">ToggleSwitch</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.PrototypeBindSource.html">PrototypeBindSource</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ContainedBindComponent.html">ContainedBindComponent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BindComponentDelegate.html">BindComponentDelegate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.LinkPropertyToFieldDelegate.html">LinkPropertyToFieldDelegate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.LinkControlDelegate.html">LinkControlDelegate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomLinkPropertyToField.html">CustomLinkPropertyToField</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.LinkControlToFieldDelegate.html">LinkControlToFieldDelegate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.LinkPropertyToField.html">LinkPropertyToField</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomLinkControlToField.html">CustomLinkControlToField</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomLinkListControlToField.html">CustomLinkListControlToField</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.LinkControlToField.html">LinkControlToField</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.LinkListControlToField.html">LinkListControlToField</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BitBtn.html">BitBtn</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Button.html">Button</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CheckBox.html">CheckBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ColorBox.html">ColorBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ComboBox.html">ComboBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ControlBar.html">ControlBar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomGrid.html">CustomGrid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomEdit.html">CustomEdit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomForm.html">CustomForm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomStatusBar.html">CustomStatusBar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomTabControl.html">CustomTabControl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.DateTimePicker.html">DateTimePicker</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.GroupBox.html">GroupBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Header.html">Header</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.LabeledEdit.html">LabeledEdit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ListBox.html">ListBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Notebook.html">Notebook</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Page.html">Page</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.PageControl.html">PageControl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Panel.html">Panel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.RadioButton.html">RadioButton</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.RadioGroup.html">RadioGroup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ScrollBar.html">ScrollBar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.SpinButton.html">SpinButton</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.StaticText.html">StaticText</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.TabSheet.html">TabSheet</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ToolBar.html">ToolBar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.TrackBar.html">TrackBar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomDrawGrid.html">CustomDrawGrid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomMemo.html">CustomMemo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomNumberBox.html">CustomNumberBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Edit.html">Edit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.SpinEdit.html">SpinEdit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Form.html">Form</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.StatusBar.html">StatusBar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.TabControl.html">TabControl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.DrawGrid.html">DrawGrid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Memo.html">Memo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.NumberBox.html">NumberBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.StringGrid.html">StringGrid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomMemoryStream.html">CustomMemoryStream</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.HandleStream.html">HandleStream</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.MemoryStream.html">MemoryStream</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ResourceStream.html">ResourceStream</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.FileStream.html">FileStream</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BytesStream.html">BytesStream</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BufferedFileStream.html">BufferedFileStream</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.StringStream.html">StringStream</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../changelog.html">Changelog</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle navigation of Changelog</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../changelog/0.1.40-changelog.html">v0.1.40</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../changelog/1.0.0-changelog.html">v1.0.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../changelog/1.0.1-changelog.html">v1.0.1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../changelog/1.0.2-changelog.html">v1.0.2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../changelog/1.0.3-changelog.html">v1.0.3</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing.html">Contributing</a></li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+              <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role="main" id="furo-main-content">
+          <section id="menuitem">
+<h1>MenuItem<a class="headerlink" href="#menuitem" title="Link to this heading">¶</a></h1>
+<p>Qualified name: <code class="docutils literal notranslate"><span class="pre">delphivcl.MenuItem</span></code></p>
+<dl class="py class">
+<dt class="sig sig-object py" id="delphivcl.MenuItem">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MenuItem</span></span><a class="headerlink" href="#delphivcl.MenuItem" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="delphivcl.Component.html#delphivcl.Component" title="delphivcl.Component"><code class="xref py py-class docutils literal notranslate"><span class="pre">Component</span></code></a></p>
+<p>TMenuItem describes the properties of an item in a menu.
+Use TMenuItem to specify the appearance and behavior of an item in a menu. Each TMainMenu or TPopupMenu component can contain multiple menu items. When a menu is defined at design time, the Menu Designer automatically creates menu item objects for each command on the menu.
+The Caption property can be used to define an accelerator key to the menu item of a TMainMenu.</p>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.MenuItem.Add" title="delphivcl.MenuItem.Add"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Add</span></code></a></p></td>
+<td><p>Adds one or more menu items to the end of the Items property array.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.MenuItem.BindMethodsToEvents" title="delphivcl.MenuItem.BindMethodsToEvents"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BindMethodsToEvents</span></code></a></p></td>
+<td><p>Connects methods to component events if they are named using the following pattern: Prefix_ComponentName_EventName.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.MenuItem.Clear" title="delphivcl.MenuItem.Clear"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Clear</span></code></a></p></td>
+<td><p>Removes and frees all menu items listed in the Items property.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.MenuItem.Click" title="delphivcl.MenuItem.Click"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Click</span></code></a></p></td>
+<td><p>Simulates a mouse click.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.MenuItem.Delete" title="delphivcl.MenuItem.Delete"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Delete</span></code></a></p></td>
+<td><p>Removes a menu item from the Items property array.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.MenuItem.Find" title="delphivcl.MenuItem.Find"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Find</span></code></a></p></td>
+<td><p>Locates a menu item in the Items property array given its caption.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.MenuItem.GetChildren" title="delphivcl.MenuItem.GetChildren"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GetChildren</span></code></a></p></td>
+<td><p>Enumerates all child components.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.MenuItem.GetEnumerator" title="delphivcl.MenuItem.GetEnumerator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GetEnumerator</span></code></a></p></td>
+<td><p>Returns a TComponent enumerator.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.MenuItem.GetImageList" title="delphivcl.MenuItem.GetImageList"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GetImageList</span></code></a></p></td>
+<td><p>Returns the Image list that supplies an image for the menu item.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.MenuItem.GetParentComponent" title="delphivcl.MenuItem.GetParentComponent"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GetParentComponent</span></code></a></p></td>
+<td><p>Returns the parent of a component.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.MenuItem.GetParentMenu" title="delphivcl.MenuItem.GetParentMenu"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GetParentMenu</span></code></a></p></td>
+<td><p>Returns the main menu of which the menu item is part.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.MenuItem.HandleAllocated" title="delphivcl.MenuItem.HandleAllocated"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HandleAllocated</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.MenuItem.HasParent" title="delphivcl.MenuItem.HasParent"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HasParent</span></code></a></p></td>
+<td><p>Indicates whether the component has a parent to handle its filing.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.MenuItem.IndexOf" title="delphivcl.MenuItem.IndexOf"><code class="xref py py-obj docutils literal notranslate"><span class="pre">IndexOf</span></code></a></p></td>
+<td><p>Returns the position of a menu item within the Items array.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.MenuItem.InitiateAction" title="delphivcl.MenuItem.InitiateAction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InitiateAction</span></code></a></p></td>
+<td><p>Calls the action link's Update method if the menu item is associated with an action link.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.MenuItem.Insert" title="delphivcl.MenuItem.Insert"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Insert</span></code></a></p></td>
+<td><p>Inserts a menu item into a specified position in the Items array.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.MenuItem.InsertNewLineAfter" title="delphivcl.MenuItem.InsertNewLineAfter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InsertNewLineAfter</span></code></a></p></td>
+<td><p>Inserts a separator bar after a specified item from the Items property array.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.MenuItem.InsertNewLineBefore" title="delphivcl.MenuItem.InsertNewLineBefore"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InsertNewLineBefore</span></code></a></p></td>
+<td><p>Inserts a separator bar before a specified item from the Items property array.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.MenuItem.IsLine" title="delphivcl.MenuItem.IsLine"><code class="xref py py-obj docutils literal notranslate"><span class="pre">IsLine</span></code></a></p></td>
+<td><p>Indicates whether the menu item represents a separator bar.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.MenuItem.NewBottomLine" title="delphivcl.MenuItem.NewBottomLine"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NewBottomLine</span></code></a></p></td>
+<td><p>Inserts a separator bar at the end of the Items property array.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.MenuItem.NewTopLine" title="delphivcl.MenuItem.NewTopLine"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NewTopLine</span></code></a></p></td>
+<td><p>Inserts a separator bar at the beginning of the Items property array.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.MenuItem.Remove" title="delphivcl.MenuItem.Remove"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Remove</span></code></a></p></td>
+<td><p>Removes a menu item from the Items property array Call Remove to remove a menu item and all its submenus from a menu.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.MenuItem.RethinkHotkeys" title="delphivcl.MenuItem.RethinkHotkeys"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RethinkHotkeys</span></code></a></p></td>
+<td><p>Adjusts the captions of subitems so that every item has an accelerator and there are no duplicate accelerator keys.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.MenuItem.RethinkLines" title="delphivcl.MenuItem.RethinkLines"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RethinkLines</span></code></a></p></td>
+<td><p>Removes superfluous separator lines from the Items property array.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.MenuItem.SetParentComponent" title="delphivcl.MenuItem.SetParentComponent"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SetParentComponent</span></code></a></p></td>
+<td><p>Sets the parent component.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="rubric">Attributes</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.MenuItem.Action" title="delphivcl.MenuItem.Action"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Action</span></code></a></p></td>
+<td><p>Designates the action associated with the menu item.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.MenuItem.AutoCheck" title="delphivcl.MenuItem.AutoCheck"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AutoCheck</span></code></a></p></td>
+<td><p>Indicates whether the menu item's checked state toggles automatically when the item is clicked.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.MenuItem.AutoHotkeys" title="delphivcl.MenuItem.AutoHotkeys"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AutoHotkeys</span></code></a></p></td>
+<td><p>Determines whether the accelerator keys for submenu items can be reset automatically.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.MenuItem.AutoLineReduction" title="delphivcl.MenuItem.AutoLineReduction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AutoLineReduction</span></code></a></p></td>
+<td><p>Determines whether redundant separator bars are automatically removed from the submenu.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.MenuItem.Bitmap" title="delphivcl.MenuItem.Bitmap"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Bitmap</span></code></a></p></td>
+<td><p>Designates a bitmap that is drawn for the menu item.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.MenuItem.Break" title="delphivcl.MenuItem.Break"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Break</span></code></a></p></td>
+<td><p>Determines whether the menu item starts a new column in the menu.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.MenuItem.Caption" title="delphivcl.MenuItem.Caption"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Caption</span></code></a></p></td>
+<td><p>Specifies the text of the menu item.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.MenuItem.Checked" title="delphivcl.MenuItem.Checked"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Checked</span></code></a></p></td>
+<td><p>Specifies whether a check mark should appear beside the Caption.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ClassName</span></code></p></td>
+<td><p>Returns the TObject.ClassName</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ComObject</span></code></p></td>
+<td><p>Specifies the interface reference implemented by the component.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.MenuItem.Command" title="delphivcl.MenuItem.Command"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Command</span></code></a></p></td>
+<td><p>Specifies the Windows Command ID associated with the menu item.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.MenuItem.ComponentCount" title="delphivcl.MenuItem.ComponentCount"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ComponentCount</span></code></a></p></td>
+<td><p>Returns the owned component count</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ComponentIndex</span></code></p></td>
+<td><p>Indicates the position of the component in its owner's Components property array.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ComponentState</span></code></p></td>
+<td><p>Describes the current state of the component, indicating when a component needs to avoid certain actions.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ComponentStyle</span></code></p></td>
+<td><p>Governs the behavior of the component.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.MenuItem.Components" title="delphivcl.MenuItem.Components"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Components</span></code></a></p></td>
+<td><p>Returns an iterator over the owned components</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.MenuItem.Count" title="delphivcl.MenuItem.Count"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Count</span></code></a></p></td>
+<td><p>Indicates the number of subitems of the menu item.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.MenuItem.Default" title="delphivcl.MenuItem.Default"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Default</span></code></a></p></td>
+<td><p>Specifies whether the menu item is invoked when the parent item is double clicked.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">DesignInfo</span></code></p></td>
+<td><p>Contains information used by the Form designer.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.MenuItem.Enabled" title="delphivcl.MenuItem.Enabled"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Enabled</span></code></a></p></td>
+<td><p>Specifies whether the menu item is enabled.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.MenuItem.GroupIndex" title="delphivcl.MenuItem.GroupIndex"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GroupIndex</span></code></a></p></td>
+<td><p>Identifies the logical group to which the menu item belongs.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.MenuItem.Handle" title="delphivcl.MenuItem.Handle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Handle</span></code></a></p></td>
+<td><p>Indicates the Windows menu handle of the drop-down menu associated with the menu item.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.MenuItem.HelpContext" title="delphivcl.MenuItem.HelpContext"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HelpContext</span></code></a></p></td>
+<td><p>Specifies the help context ID associated with the menu item.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.MenuItem.Hint" title="delphivcl.MenuItem.Hint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Hint</span></code></a></p></td>
+<td><p>Specifies the text string that can appear when the user moves the mouse pointer over a menu item.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.MenuItem.ImageIndex" title="delphivcl.MenuItem.ImageIndex"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ImageIndex</span></code></a></p></td>
+<td><p>Indicates which image maintained by the parent menu appears next to the menu item.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.MenuItem.ImageName" title="delphivcl.MenuItem.ImageName"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ImageName</span></code></a></p></td>
+<td><p>Displays the name of linked items from the Image Collection.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.MenuItem.Items" title="delphivcl.MenuItem.Items"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Items</span></code></a></p></td>
+<td><p>MenuItem:</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.MenuItem.MenuHandle" title="delphivcl.MenuItem.MenuHandle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MenuHandle</span></code></a></p></td>
+<td><p>int:</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.MenuItem.MenuIndex" title="delphivcl.MenuItem.MenuIndex"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MenuIndex</span></code></a></p></td>
+<td><p>Indicates the index of the menu item within its parent menu.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Name</span></code></p></td>
+<td><p>Specifies the name of the component as referenced in code.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Observers</span></code></p></td>
+<td><p>Indicates the TObservers object added to the TComponent.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.MenuItem.OnAdvancedDrawItem" title="delphivcl.MenuItem.OnAdvancedDrawItem"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OnAdvancedDrawItem</span></code></a></p></td>
+<td><p>Callable[[Object, Canvas, Rect, OwnerDrawState], None]:</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.MenuItem.OnDrawItem" title="delphivcl.MenuItem.OnDrawItem"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OnDrawItem</span></code></a></p></td>
+<td><p>Callable[[Object, Canvas, Rect, bool], None]:</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.MenuItem.OnMeasureItem" title="delphivcl.MenuItem.OnMeasureItem"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OnMeasureItem</span></code></a></p></td>
+<td><p>Callable[[Object, Canvas, int, int], None]:</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.MenuItem.Owner" title="delphivcl.MenuItem.Owner"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Owner</span></code></a></p></td>
+<td><p>Returns the Component Owner</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.MenuItem.Parent" title="delphivcl.MenuItem.Parent"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Parent</span></code></a></p></td>
+<td><p>Identifies the parent menu item of this menu item.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.MenuItem.RadioItem" title="delphivcl.MenuItem.RadioItem"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RadioItem</span></code></a></p></td>
+<td><p>Specifies whether the menu item is mutually exclusive with other menu items in its group.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.MenuItem.ShortCut" title="delphivcl.MenuItem.ShortCut"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ShortCut</span></code></a></p></td>
+<td><p>Shortcut that opens the menu item.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.MenuItem.SubMenuImages" title="delphivcl.MenuItem.SubMenuImages"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SubMenuImages</span></code></a></p></td>
+<td><p>Lists the images that can appear beside individual items in a submenu of this menu item.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Tag</span></code></p></td>
+<td><p>Stores a NativeInt integral value as a part of a component.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">VCLComObject</span></code></p></td>
+<td><p>Represents information used internally by components that support COM.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.MenuItem.Visible" title="delphivcl.MenuItem.Visible"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Visible</span></code></a></p></td>
+<td><p>Specifies whether the menu item appears in the menu.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.MenuItem.Action">
+<span class="sig-name descname"><span class="pre">Action</span></span><a class="headerlink" href="#delphivcl.MenuItem.Action" title="Link to this definition">¶</a></dt>
+<dd><p>Designates the action associated with the menu item.
+Action designates the action object that is associated with the menu item. Actions can be associated with a menu item by using the action list editor at design-time. Actions are a way of centralizing user responses to commands.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="delphivcl.BasicAction.html#delphivcl.BasicAction" title="delphivcl.BasicAction">BasicAction</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.MenuItem.Add">
+<span class="sig-name descname"><span class="pre">Add</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Item</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#delphivcl.MenuItem" title="delphivcl.MenuItem"><span class="pre">MenuItem</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#delphivcl.MenuItem.Add" title="Link to this definition">¶</a></dt>
+<dd><p>Adds one or more menu items to the end of the Items property array.
+Use Add to add new menu items to the dropdown menu for this menu item. If this menu item is the value of the Items property of a main menu or pop-up menu, Add adds the items to the end of the menu.
+Specify a single new menu item to add as the value of the Item parameter, or an array of new menu items as the value of the AItems parameter. AItems_Size is the index of the last item in the AItems array (one less than the number of items).
+Adds one or more menu items to the end of the Items property array.
+Use Add to add new menu items to the dropdown menu for this menu item. If this menu item is the value of the Items property of a main menu or pop-up menu, Add adds the items to the end of the menu.
+Specify a single new menu item to add as the value of the Item parameter, or an array of new menu items as the value of the AItems parameter. AItems_Size is the index of the last item in the AItems array (one less than the number of items).</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.MenuItem.AutoCheck">
+<span class="sig-name descname"><span class="pre">AutoCheck</span></span><a class="headerlink" href="#delphivcl.MenuItem.AutoCheck" title="Link to this definition">¶</a></dt>
+<dd><p>Indicates whether the menu item’s checked state toggles automatically when the item is clicked.
+When AutoCheck is true, then every time the menu item is clicked, the value of the Checked property toggles automatically before the OnClick event occurs. When AutoCheck is false, the application must explicitly set the value of the Checked property (for example, in an OnClick event handler).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.MenuItem.AutoHotkeys">
+<span class="sig-name descname"><span class="pre">AutoHotkeys</span></span><a class="headerlink" href="#delphivcl.MenuItem.AutoHotkeys" title="Link to this definition">¶</a></dt>
+<dd><p>Determines whether the accelerator keys for submenu items can be reset automatically.
+Set AutoHotkeys to indicate whether the accelerator keys for the items in the Items property can be reset if necessary to ensure that every menu item has an accelerator key and no two items have the same accelerator key. This ensures that menu items added dynamically at runtime can have accelerator keys that do not introduce conflicts. TMenuItem tries to preserve all existing accelerator key mappings when adjusting the accelerator keys, but may be forced to change some in order to ensure that every item has a unique accelerator.
+Before the menu is displayed, it checks and adjusts the accelerator key mappings if AutoHotkeys is maAutomatic or if AutoHotkeys is maParent and the parent menu item adjusts accelerator key mappings. Otherwise, the menu does not alter the items listed in the Items property, but may adjust the accelerator keys for submenus, depending on the AutoHotkeys property of the menu item that is the parent of the submenu.</p>
+<p>Note:  When AutoHotkeys disallows automatic adjustment of accelerator keys, an application can still adjust the menu items by calling the RethinkHotkeys method. AutoHotkeys merely controls whether this adjustment occurs automatically.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>MenuItemAutoFlag</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.MenuItem.AutoLineReduction">
+<span class="sig-name descname"><span class="pre">AutoLineReduction</span></span><a class="headerlink" href="#delphivcl.MenuItem.AutoLineReduction" title="Link to this definition">¶</a></dt>
+<dd><p>Determines whether redundant separator bars are automatically removed from the submenu.
+Set AutoLineReduction to indicate whether the menu item should automatically ensure that the submenu defined by its Items property does not start or end with a separator bar and that two separator bars do not appear next to each other. This ensures that menus built dynamically at run time do not have separator bars in undesired positions.
+Before the menu is displayed, the menu item removes superfluous separator bars if AutoLineReduction is maAutomatic or AutoLineReduction is maParent and the parent menu item removes superfluous separator bars. Otherwise, the menu item does not remove separators from the Items property, but may remove superfluous separators from submenus, depending on the AutoLineReduction property of the menu item that is the parent of the submenu.</p>
+<p>Note: When AutoLineReduction disallows automatic removal of separator bars, an application can still remove superfluous separators by calling the RethinkLines method. AutoLineReduction merely controls whether this adjustment occurs automatically.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>MenuItemAutoFlag</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.MenuItem.BindMethodsToEvents">
+<span class="sig-name descname"><span class="pre">BindMethodsToEvents</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">prefix</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.MenuItem.BindMethodsToEvents" title="Link to this definition">¶</a></dt>
+<dd><p>Connects methods to component events if they are named using the following pattern: Prefix_ComponentName_EventName.
+Example: def handle_button1_OnClick(Sender): pass
+The function returns a list of tuples. Each tuple contains the name of the component, the name of the event and the method object assigned to the event.
+Note that the prefix parameter is optional and will default to “<a href="#id1"><span class="problematic" id="id2">handle_</span></a>”.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.MenuItem.Bitmap">
+<span class="sig-name descname"><span class="pre">Bitmap</span></span><a class="headerlink" href="#delphivcl.MenuItem.Bitmap" title="Link to this definition">¶</a></dt>
+<dd><p>Designates a bitmap that is drawn for the menu item.
+Use Bitmap to provide a custom image that appears next to the caption in the menu item. On owner-draw menus, Bitmap can be used from an OnDrawItem event handler to represent the entire menu item or a portion of the menu item.</p>
+<p>Note:  If the ImageIndex property is set and the parent menu has a non-nil (Delphi) or NULL (C++) Images property, the image identified by ImageIndex is used instead of Bitmap.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="delphivcl.Bitmap.html#delphivcl.Bitmap" title="delphivcl.Bitmap">Bitmap</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.MenuItem.Break">
+<span class="sig-name descname"><span class="pre">Break</span></span><a class="headerlink" href="#delphivcl.MenuItem.Break" title="Link to this definition">¶</a></dt>
+<dd><p>Determines whether the menu item starts a new column in the menu.
+Set Break to break a long menu into columns at the item described by this menu item. The value of Break indicates whether the menu is broken into columns, and if so, whether a bar appears between the columns of the parent menu.
+The default is mbNone (no breaking into columns).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>MenuBreak</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.MenuItem.Caption">
+<span class="sig-name descname"><span class="pre">Caption</span></span><a class="headerlink" href="#delphivcl.MenuItem.Caption" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the text of the menu item.
+Set Caption to the string the user sees for this item in the menu. To underline a character in a string, include an ampersand (&amp;) before the character. This type of character is called an accelerator character. If Caption includes an accelerator character, the user can select the menu item by pressing Alt while typing the underlined character.</p>
+<p>Tip:  To automatically assign or adjust the accelerator characters in menu item captions, use the RethinkHotkeys method.
+Use the Caption property to identify the menu item as a line that separates the menu into parts. Specify a hyphen character (-) as the value of Caption for the menu item to indicate that the menu item is a separator. To separate the menu into multiple columns, use the Break property instead.</p>
+<p>Note:  This property is not stored with the menu item if it is supplied by a TAction object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.MenuItem.Checked">
+<span class="sig-name descname"><span class="pre">Checked</span></span><a class="headerlink" href="#delphivcl.MenuItem.Checked" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies whether a check mark should appear beside the Caption.
+Use Checked to allow a menu item to work like a check box. If Checked is true, the menu item appears checked. If Checked is false, the menu item remains unchecked.</p>
+<p>Note:  This property is not stored with the menu item if it is supplied by a TAction object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.MenuItem.Clear">
+<span class="sig-name descname"><span class="pre">Clear</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.MenuItem.Clear" title="Link to this definition">¶</a></dt>
+<dd><p>Removes and frees all menu items listed in the Items property.
+Use Clear to free all the items listed in the Items property array.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.MenuItem.Click">
+<span class="sig-name descname"><span class="pre">Click</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.MenuItem.Click" title="Link to this definition">¶</a></dt>
+<dd><p>Simulates a mouse click.
+Click generates an OnClick event, as if the user had clicked the menu item. Unlike a real mouse click, Click does not generate a WM_COMMAND message to the window associated with the menu.
+Component writers can override click to provide a different response when the user selects the menu item.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.MenuItem.Command">
+<span class="sig-name descname"><span class="pre">Command</span></span><a class="headerlink" href="#delphivcl.MenuItem.Command" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the Windows Command ID associated with the menu item.
+Use Command in an application that directly handles WM_COMMAND messages. When the user selects the menu item, Windows sends a WM_COMMAND to the window associated with the menu. The ItemID of the message contains the value of the Command property of the menu item that was selected.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.MenuItem.ComponentCount">
+<span class="sig-name descname"><span class="pre">ComponentCount</span></span><a class="headerlink" href="#delphivcl.MenuItem.ComponentCount" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the owned component count</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.MenuItem.Components">
+<span class="sig-name descname"><span class="pre">Components</span></span><a class="headerlink" href="#delphivcl.MenuItem.Components" title="Link to this definition">¶</a></dt>
+<dd><p>Returns an iterator over the owned components</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.MenuItem.Count">
+<span class="sig-name descname"><span class="pre">Count</span></span><a class="headerlink" href="#delphivcl.MenuItem.Count" title="Link to this definition">¶</a></dt>
+<dd><p>Indicates the number of subitems of the menu item.
+Read Count to determine the number of subitems listed in the Items property array. When the user clicks on a menu item that has subitems, a dropdown menu appears which displays those subitems. Each subitem can, in turn, contain additional subitems. The Count property counts only the immediate subitems of the menu item.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.MenuItem.Default">
+<span class="sig-name descname"><span class="pre">Default</span></span><a class="headerlink" href="#delphivcl.MenuItem.Default" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies whether the menu item is invoked when the parent item is double clicked.
+Set Default to specify whether a menu item is the default item in a submenu. Default menu items are executed when the parent item is double-clicked, allowing users to avoid navigating the submenus that contain them.
+The default item appears in boldface. A submenu can have only one default item. If the Items list of the parent menu item already contains a default menu item, setting the Default property to true sets the Default property of the previous default item to false.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.MenuItem.Delete">
+<span class="sig-name descname"><span class="pre">Delete</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Index</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#delphivcl.MenuItem.Delete" title="Link to this definition">¶</a></dt>
+<dd><p>Removes a menu item from the Items property array.
+Call Delete to remove a menu item and all its submenus from a menu. The Index parameter is the index of the item to be deleted, where 0 specifies the first item in the menu, 1 specifies the second item, and so on.
+Delete does not free the removed item’s memory. To remove an item from the menu and free its memory, call the Free method in the item you want to remove.
+To temporarily hide a menu item, without deleting it, use the Visible property.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.MenuItem.Enabled">
+<span class="sig-name descname"><span class="pre">Enabled</span></span><a class="headerlink" href="#delphivcl.MenuItem.Enabled" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies whether the menu item is enabled.
+Use Enabled to enable or disable a menu item. If Enabled is true, the Click method is called when the user selects the item with the mouse. If Enabled is false, the menu item appears dimmed and the user cannot select it. However, calling the Click method works even when Enabled is false.</p>
+<p>Note:  This property is not stored with the menu item if it is supplied by a TAction object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.MenuItem.Find">
+<span class="sig-name descname"><span class="pre">Find</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ACaption</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#delphivcl.MenuItem" title="delphivcl.MenuItem"><span class="pre">MenuItem</span></a></span></span><a class="headerlink" href="#delphivcl.MenuItem.Find" title="Link to this definition">¶</a></dt>
+<dd><p>Locates a menu item in the Items property array given its caption.
+Use Find to locate the menu item in the Items property array with the caption specified by the ACaption parameter. Find ignores accelerator characters when comparing item captions to the ACaption parameter.
+Find returns the first menu item in the Items property array with the specified caption. If no item is found, Find returns nil (Delphi) or NULL (C++).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.MenuItem.GetChildren">
+<span class="sig-name descname"><span class="pre">GetChildren</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Proc</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="delphivcl.Component.html#delphivcl.Component" title="delphivcl.Component"><span class="pre">Component</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">None</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Root</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="delphivcl.Component.html#delphivcl.Component" title="delphivcl.Component"><span class="pre">Component</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#delphivcl.MenuItem.GetChildren" title="Link to this definition">¶</a></dt>
+<dd><p>Enumerates all child components.
+Vcl.Menus.TMenuItem.GetChildren inherits from System.Classes.TComponent.GetChildren. All content below this line refers to System.Classes.TComponent.GetChildren.
+Enumerates all child components.
+GetChildren is used internally in the component streaming system. It is not necessary to call it directly.
+GetChildren expects a TGetChildProc routine that receives all enumerated components.
+Root represents the owner of the components that will be enumerated.
+This method does nothing in TComponent and is expected to be overridden in descendants.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.MenuItem.GetEnumerator">
+<span class="sig-name descname"><span class="pre">GetEnumerator</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.MenuItem.GetEnumerator" title="Link to this definition">¶</a></dt>
+<dd><p>Returns a TComponent enumerator.
+Vcl.Menus.TMenuItem.GetEnumerator inherits from System.Classes.TComponent.GetEnumerator. All content below this line refers to System.Classes.TComponent.GetEnumerator.
+Returns a TComponent enumerator.
+GetEnumerator returns a TComponentEnumerator reference, which enumerates the components contained within a specified containing component.
+To process all these subcomponents, call the TComponentEnumerator GetCurrent method within a While MoveNext do loop.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.MenuItem.GetImageList">
+<span class="sig-name descname"><span class="pre">GetImageList</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.MenuItem.GetImageList" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the Image list that supplies an image for the menu item.
+Use GetImageList to access the list of images that contains the image for this menu item. The ImageIndex property identifies a specific image from the list that GetImageList returns.
+GetImageList first checks the Parent of this menu item for a SubMenuImages property. If the parent menu item does not maintain a list of images, it checks that menu item’s parent, and so on until reaching a top-level menu item (a menu item where Parent is not set). If none of the parent menu items has a SubMenuImages property, GetImageList checks the top-level menu for an Images property.
+GetImageList returns the first image list it finds. If it doesn’t find an image list, GetImageList returns nil (Delphi) or NULL (C++).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.MenuItem.GetParentComponent">
+<span class="sig-name descname"><span class="pre">GetParentComponent</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.MenuItem.GetParentComponent" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the parent of a component.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.MenuItem.GetParentMenu">
+<span class="sig-name descname"><span class="pre">GetParentMenu</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.MenuItem.GetParentMenu" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the main menu of which the menu item is part.
+GetParentMenu returns the menu that contains the menu item.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.MenuItem.GroupIndex">
+<span class="sig-name descname"><span class="pre">GroupIndex</span></span><a class="headerlink" href="#delphivcl.MenuItem.GroupIndex" title="Link to this definition">¶</a></dt>
+<dd><p>Identifies the logical group to which the menu item belongs.
+Use GroupIndex to control how menus are merged. In applications that contain multiple forms, items from the menus of secondary forms can be merged into the application’s main menu as those forms become active. MDI applications always merge the menus of child windows with the main menu of the parent window.
+By default, all menu items in a menu bar (main menu) have the same GroupIndex value. To use GroupIndex to merge menus, set the GroupIndex value of each successive menu item to a value equal to or greater than that of the previous menu item.
+When a menu item in a menu bar that is merged into the application’s main menu has the same GroupIndex value as a menu item in the main menu, the menu item in the application’s main menu is replaced by the corresponding menu item. If multiple menu items in the application’s main menu have the same GroupIndex value, they can be replaced only by separate menu items from the other form’s menu that also have repeated GroupIndex values. Thus, the first main menu item with a given value is replaced by the first item in the second form with that value, the second item in the main form is replaced by the second item in the second form, and so on.
+When a menu item in a menu bar that is merged into the application’s main menu has a GroupIndex that falls between the GroupIndex values of two adjacent items on the application’s main menu, that menu item is inserted between the two adjacent items. If the item’s GroupIndex value is greater than all other GroupIndex values in the application’s main menu, the item appears at the end of the main menu. If the GroupIndex value is less than all other GroupIndex values in the application’s main menu, the menu item appears at the beginning of the main menu bar.
+When an object created by an OLE 2.0 server application is activated, the server can try to merge its menus with the menus of the container application. The GroupIndex property is used to replace up to three main menu items with items from the server, in the manner described above. The server application uses the following predefined GroupIndex values to locate menu items to replace:</p>
+<p>Group</p>
+<p>Index</p>
+<p>Description</p>
+<p>Edit</p>
+<p>1</p>
+<p>Server menu items for editing the active OLE object</p>
+<p>View</p>
+<p>3</p>
+<p>Server menu items for modifying the view of the OLE object.</p>
+<p>Help</p>
+<p>5</p>
+<p>Server menu items for accessing the server’s online Help.</p>
+<p>Note:  See the documentation for the OLE server for information about whether it attempts menu merge during in-place activation.
+GroupIndex can also be used to define groups of menu items that act like radio buttons. To allow menu items to behave like radio buttons, set the RadioItem property to all menu items in the group to true, and assign each menu item the same value of GroupIndex. Checking any menu item in the group will then uncheck the others.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.MenuItem.Handle">
+<span class="sig-name descname"><span class="pre">Handle</span></span><a class="headerlink" href="#delphivcl.MenuItem.Handle" title="Link to this definition">¶</a></dt>
+<dd><p>Indicates the Windows menu handle of the drop-down menu associated with the menu item.
+Use Handle when calling a Windows API function that requires a menu handle. Handle is only valid if the Count property is greater than 0.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.MenuItem.HandleAllocated">
+<span class="sig-name descname"><span class="pre">HandleAllocated</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Boolean</span></span></span><a class="headerlink" href="#delphivcl.MenuItem.HandleAllocated" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.MenuItem.HasParent">
+<span class="sig-name descname"><span class="pre">HasParent</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.MenuItem.HasParent" title="Link to this definition">¶</a></dt>
+<dd><p>Indicates whether the component has a parent to handle its filing.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.MenuItem.HelpContext">
+<span class="sig-name descname"><span class="pre">HelpContext</span></span><a class="headerlink" href="#delphivcl.MenuItem.HelpContext" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the help context ID associated with the menu item.
+Use HelpContext to associate the menu item with a screen in the Help system of the application. Each screen in the Help system should have a unique context ID. When a menu item is selected using the keyboard, pressing F1 displays a Help screen. Which Help screen appears depends on the value of the HelpContext property.</p>
+<p>Note:  This property is not stored with the menu item if it is supplied by a TAction object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.MenuItem.Hint">
+<span class="sig-name descname"><span class="pre">Hint</span></span><a class="headerlink" href="#delphivcl.MenuItem.Hint" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the text string that can appear when the user moves the mouse pointer over a menu item.
+Set Hint to a string that provides more information about the meaning of the menu item than the Caption. The hint text appears in the Status Bar when the user pauses with the mouse over the menu item if Help Hints are enabled (that is, if the Form’s and the Application’s ShowHint properties are True). It is also available for the code in the application’s OnHint event handler.
+The value of Hint can specify both a short value for the Help Hint window and a longer string to be used by the OnHint event handler. To provide both a short and a long hint, set Hint to the short string, followed by a vertical bar (|), followed by the long string.</p>
+<p>Note: This property is not stored with the menu item if it is supplied by a TAction object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.MenuItem.ImageIndex">
+<span class="sig-name descname"><span class="pre">ImageIndex</span></span><a class="headerlink" href="#delphivcl.MenuItem.ImageIndex" title="Link to this definition">¶</a></dt>
+<dd><p>Indicates which image maintained by the parent menu appears next to the menu item.
+Set ImageIndex to designate an image that should appear next to the caption when the menu item is drawn. On top-level menu items, ImageIndex specifies a zero-offset index into the Images property of the parent menu (TMenu or TPopupMenu). On submenu items, ImageIndex is the zero-offset index into the parent item’s SubMenuImages property.
+If the parent menu or item does not maintain a list of images, use the Bitmap property to provide an image for a single menu item. However, any image specified by ImageIndex takes precedence over the Bitmap property. Bitmap is only used when ImageIndex has a negative value or the parent’s Images or SubMenuImages property is nil (Delphi) or NULL (C++).</p>
+<p>Note:  This property is not stored with the menu item if it is supplied by a TAction object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.MenuItem.ImageName">
+<span class="sig-name descname"><span class="pre">ImageName</span></span><a class="headerlink" href="#delphivcl.MenuItem.ImageName" title="Link to this definition">¶</a></dt>
+<dd><p>Displays the name of linked items from the Image Collection.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.MenuItem.IndexOf">
+<span class="sig-name descname"><span class="pre">IndexOf</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Item</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#delphivcl.MenuItem" title="delphivcl.MenuItem"><span class="pre">MenuItem</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#delphivcl.MenuItem.IndexOf" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the position of a menu item within the Items array.
+Call IndexOf to locate a menu item in the submenu headed by this menu item. IndexOf returns 0 for the first menu item, 1 for the second menu item, and so on. If the menu item is not in the submenu, IndexOf returns -1.</p>
+<p>Note: IndexOf may not correspond to the position of the item in the menu the user sees if the menu includes some items that are not visible.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.MenuItem.InitiateAction">
+<span class="sig-name descname"><span class="pre">InitiateAction</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.MenuItem.InitiateAction" title="Link to this definition">¶</a></dt>
+<dd><p>Calls the action link’s Update method if the menu item is associated with an action link.
+InitiateAction calls the action link, if there is one for the menu item, to update the association between the action and the menu item.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.MenuItem.Insert">
+<span class="sig-name descname"><span class="pre">Insert</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Index</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Item</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#delphivcl.MenuItem" title="delphivcl.MenuItem"><span class="pre">MenuItem</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#delphivcl.MenuItem.Insert" title="Link to this definition">¶</a></dt>
+<dd><p>Inserts a menu item into a specified position in the Items array.
+Use Insert to insert a new menu item to the dropdown menu for this menu item. If this menu item is the value of the Items property of a main menu or pop-up menu, Insert inserts an item into that menu. Specify the new menu item to add as the value of the Item parameter, and the position in the Items array as the value of the Index parameter.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.MenuItem.InsertNewLineAfter">
+<span class="sig-name descname"><span class="pre">InsertNewLineAfter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">AItem</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#delphivcl.MenuItem" title="delphivcl.MenuItem"><span class="pre">MenuItem</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#delphivcl.MenuItem.InsertNewLineAfter" title="Link to this definition">¶</a></dt>
+<dd><p>Inserts a separator bar after a specified item from the Items property array.
+Use InsertNewLineAfter to insert a separator bar after the menu item specified by AItem. If AItem is not an item in the Items property array, InsertNewLineAfter raises an exception.
+InsertNewLineAfter returns the index of the newly inserted separator item in the Items property array.</p>
+<p>Tip:  When inserting separator bars at runtime, it is a good idea to set AutoLineReduction to true so that superfluous separators can be automatically removed.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.MenuItem.InsertNewLineBefore">
+<span class="sig-name descname"><span class="pre">InsertNewLineBefore</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">AItem</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#delphivcl.MenuItem" title="delphivcl.MenuItem"><span class="pre">MenuItem</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#delphivcl.MenuItem.InsertNewLineBefore" title="Link to this definition">¶</a></dt>
+<dd><p>Inserts a separator bar before a specified item from the Items property array.
+Use InsertNewLineBefore to insert a separator bar before the menu item specified by AItem. If AItem is not an item in the Items property array, InsertNewLineBefore raises an exception.
+InsertNewLineBefore returns the index of the newly inserted separator item in the Items property array.</p>
+<p>Tip:  When inserting separator bars at runtime, it is a good idea to set AutoLineReduction to true so that superfluous separators can be automatically removed.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.MenuItem.IsLine">
+<span class="sig-name descname"><span class="pre">IsLine</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.MenuItem.IsLine" title="Link to this definition">¶</a></dt>
+<dd><p>Indicates whether the menu item represents a separator bar.
+Call IsLine to determine whether the menu item is a separator bar. IsLine checks the Caption of the menu item and returns true if the value of Caption is ‘-’. Menu items with this Caption appear as separator bars.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.MenuItem.Items">
+<span class="sig-name descname"><span class="pre">Items</span></span><a class="headerlink" href="#delphivcl.MenuItem.Items" title="Link to this definition">¶</a></dt>
+<dd><p>MenuItem:</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.MenuItem.MenuHandle">
+<span class="sig-name descname"><span class="pre">MenuHandle</span></span><a class="headerlink" href="#delphivcl.MenuItem.MenuHandle" title="Link to this definition">¶</a></dt>
+<dd><p>int:</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.MenuItem.MenuIndex">
+<span class="sig-name descname"><span class="pre">MenuIndex</span></span><a class="headerlink" href="#delphivcl.MenuItem.MenuIndex" title="Link to this definition">¶</a></dt>
+<dd><p>Indicates the index of the menu item within its parent menu.
+Use MenuIndex to locate the menu item in the Items property of its parent menu item. Changing this value moves the menu item within its menu.</p>
+<p>Note: MenuIndex may not correspond to the position of the item in the menu the user sees. The menu can include items that are not visible.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.MenuItem.NewBottomLine">
+<span class="sig-name descname"><span class="pre">NewBottomLine</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.MenuItem.NewBottomLine" title="Link to this definition">¶</a></dt>
+<dd><p>Inserts a separator bar at the end of the Items property array.
+Use NewBottomLine to insert a separator bar at the end of the items property array. This is useful when building up submenus dynamically at runtime.
+NewBottomLine returns the index of the newly inserted separator item in the Items property array.</p>
+<p>Tip:  When inserting separator bars at runtime, it is a good idea to set AutoLineReduction to true so that superfluous separators can be automatically removed.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.MenuItem.NewTopLine">
+<span class="sig-name descname"><span class="pre">NewTopLine</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.MenuItem.NewTopLine" title="Link to this definition">¶</a></dt>
+<dd><p>Inserts a separator bar at the beginning of the Items property array.
+Use NewTopLine to insert a separator bar at the beginning of the items property array. This is useful when building up submenus dynamically at runtime.
+NewTopLine returns the index of the newly inserted separator item in the Items property array.</p>
+<p>Tip:  When inserting separator bars at runtime, it is a good idea to set AutoLineReduction to true so that superfluous separators can be automatically removed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.MenuItem.OnAdvancedDrawItem">
+<span class="sig-name descname"><span class="pre">OnAdvancedDrawItem</span></span><a class="headerlink" href="#delphivcl.MenuItem.OnAdvancedDrawItem" title="Link to this definition">¶</a></dt>
+<dd><p>Callable[[Object, Canvas, Rect, OwnerDrawState], None]:</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.MenuItem.OnDrawItem">
+<span class="sig-name descname"><span class="pre">OnDrawItem</span></span><a class="headerlink" href="#delphivcl.MenuItem.OnDrawItem" title="Link to this definition">¶</a></dt>
+<dd><p>Callable[[Object, Canvas, Rect, bool], None]:</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.MenuItem.OnMeasureItem">
+<span class="sig-name descname"><span class="pre">OnMeasureItem</span></span><a class="headerlink" href="#delphivcl.MenuItem.OnMeasureItem" title="Link to this definition">¶</a></dt>
+<dd><p>Callable[[Object, Canvas, int, int], None]:</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.MenuItem.Owner">
+<span class="sig-name descname"><span class="pre">Owner</span></span><a class="headerlink" href="#delphivcl.MenuItem.Owner" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the Component Owner</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.MenuItem.Parent">
+<span class="sig-name descname"><span class="pre">Parent</span></span><a class="headerlink" href="#delphivcl.MenuItem.Parent" title="Link to this definition">¶</a></dt>
+<dd><p>Identifies the parent menu item of this menu item.
+Read Parent to determine the menu item that represents the dropdown menu that contains this menu item. If the menu item is a top level menu item in a main menu or pop-up menu, Parent is the value of that menu’s Items property.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="#delphivcl.MenuItem" title="delphivcl.MenuItem">MenuItem</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.MenuItem.RadioItem">
+<span class="sig-name descname"><span class="pre">RadioItem</span></span><a class="headerlink" href="#delphivcl.MenuItem.RadioItem" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies whether the menu item is mutually exclusive with other menu items in its group.
+Use RadioItem to make the menu item behave like a radio button with a group of other menu items. The group of menu items is the set of all menu items in a pop-up or drop-down menu that have the same value of GroupIndex. When RadioItem is true, only one menu item in the group that contains the menu item can be checked at a time. The single selected menu item in the group is indicated by a round dot next to the Caption.</p>
+<p>Note: RadioItem does not automatically select the item when the user clicks it at runtime: you must still explicitly set the Checked property to true in response to the OnClick event. RadioItem simply changes the appearance of the Checked state (from a check mark to a round dot) and automatically unchecks other menu items in the same group when you set the Checked property to true.
+RadioItem does not work for the top-level items in a main menu.</p>
+<p>Note:  Under Windows NT 3.51, the round dot indicator only appears if the “new shell” has been installed.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.MenuItem.Remove">
+<span class="sig-name descname"><span class="pre">Remove</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Item</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#delphivcl.MenuItem" title="delphivcl.MenuItem"><span class="pre">MenuItem</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#delphivcl.MenuItem.Remove" title="Link to this definition">¶</a></dt>
+<dd><p>Removes a menu item from the Items property array
+Call Remove to remove a menu item and all its submenus from a menu. The Item parameter is the item to be removed. If Item is not a menu item in the Items array, Remove raises an exception.
+Remove does not free the item’s memory. To remove an item from the menu and free its memory, call the Free method in the item you want to remove.
+To temporarily hide a menu item, without deleting it, use the Visible property.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.MenuItem.RethinkHotkeys">
+<span class="sig-name descname"><span class="pre">RethinkHotkeys</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.MenuItem.RethinkHotkeys" title="Link to this definition">¶</a></dt>
+<dd><p>Adjusts the captions of subitems so that every item has an accelerator and there are no duplicate accelerator keys.
+Call RethinkHotkeys to adjust the accelerator keys for the items in the Items property and in any submenu of those items. RethinkHotkeys checks for items that do not have an accelerator key or that have duplicate accelerator keys. It then replaces any duplicate accelerators with unique characters and adds accelerator keys to items that don’t have them. RethinkHotkeys gives first priority to existing accelerator key mappings, but may change them if necessary to ensure uniqueness.
+RethinkHotkeys lets a menu adjust the accelerator keys when the AutoHotkeys property is false. For any menu or submenu that has AutoHotkeys set to true, this adjustment occurs automatically.
+RethinkHotkeys returns true if RethinkHotkeys changed the Caption property of any menu items, false otherwise.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.MenuItem.RethinkLines">
+<span class="sig-name descname"><span class="pre">RethinkLines</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.MenuItem.RethinkLines" title="Link to this definition">¶</a></dt>
+<dd><p>Removes superfluous separator lines from the Items property array.
+Call RethinkLines to remove superfluous separators from the items in the Items property and in any submenu of those items. RethinkLines removes separators that appear at the very beginning or end of a submenu and separators that immediately follow another separator.
+RethinkLines lets a menu remove superfluous separators when the AutoLineReduction property is false. For any menu or submenu that has AutoLineReduction set to true, this adjustment occurs automatically.
+RethinkLines returns true if RethinkLines removed any menu items, false otherwise.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.MenuItem.SetParentComponent">
+<span class="sig-name descname"><span class="pre">SetParentComponent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="delphivcl.Component.html#delphivcl.Component" title="delphivcl.Component"><span class="pre">Component</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#delphivcl.MenuItem.SetParentComponent" title="Link to this definition">¶</a></dt>
+<dd><p>Sets the parent component.
+Vcl.Menus.TMenuItem.SetParentComponent inherits from System.Classes.TComponent.SetParentComponent. All content below this line refers to System.Classes.TComponent.SetParentComponent.
+Sets the parent component.
+SetParentComponent is used internally in the component streaming system. It is not necessary to call it directly.
+Derived classes override this method to implement proper handling for parenting.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.MenuItem.ShortCut">
+<span class="sig-name descname"><span class="pre">ShortCut</span></span><a class="headerlink" href="#delphivcl.MenuItem.ShortCut" title="Link to this definition">¶</a></dt>
+<dd><p>Shortcut that opens the menu item.
+The string representation of this shortcut appears to the right of the menu item in the menu.</p>
+<p>Note: ShortCut is not stored with the menu item if it is supplied by an action.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.MenuItem.SubMenuImages">
+<span class="sig-name descname"><span class="pre">SubMenuImages</span></span><a class="headerlink" href="#delphivcl.MenuItem.SubMenuImages" title="Link to this definition">¶</a></dt>
+<dd><p>Lists the images that can appear beside individual items in a submenu of this menu item.
+Use SubMenuImages to supply a set of images that can appear beside items listed in the Items property. Individual menu items set their ImageIndex property to indicate which image in the list appears to the left of the menu item caption.</p>
+<p>Tip:  If the application uses action lists, this property can be the value of the command list’s Images property. This way, menu items and buttons that do the same thing can display the same image.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>CustomImageList</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.MenuItem.Visible">
+<span class="sig-name descname"><span class="pre">Visible</span></span><a class="headerlink" href="#delphivcl.MenuItem.Visible" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies whether the menu item appears in the menu.
+Use Visible to prevent the user from seeing an item in the menu. For example, remove menu items that do not apply to the current component of a pop-up menu in an OnPopup event handler.
+If Visible is true, the menu item appears. If Visible is false, the menu item is hidden.</p>
+<p>Note:  This property is not stored with the menu item if it is supplied by a TAction object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="delphivcl.Menu.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Menu</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="delphivcl.OpenDialog.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">OpenDialog</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2020-2023, Embarcadero Python Dev Team
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">MenuItem</a><ul>
+<li><a class="reference internal" href="#delphivcl.MenuItem"><code class="docutils literal notranslate"><span class="pre">MenuItem</span></code></a><ul>
+<li><a class="reference internal" href="#delphivcl.MenuItem.Action"><code class="docutils literal notranslate"><span class="pre">MenuItem.Action</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MenuItem.Add"><code class="docutils literal notranslate"><span class="pre">MenuItem.Add()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MenuItem.AutoCheck"><code class="docutils literal notranslate"><span class="pre">MenuItem.AutoCheck</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MenuItem.AutoHotkeys"><code class="docutils literal notranslate"><span class="pre">MenuItem.AutoHotkeys</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MenuItem.AutoLineReduction"><code class="docutils literal notranslate"><span class="pre">MenuItem.AutoLineReduction</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MenuItem.BindMethodsToEvents"><code class="docutils literal notranslate"><span class="pre">MenuItem.BindMethodsToEvents()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MenuItem.Bitmap"><code class="docutils literal notranslate"><span class="pre">MenuItem.Bitmap</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MenuItem.Break"><code class="docutils literal notranslate"><span class="pre">MenuItem.Break</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MenuItem.Caption"><code class="docutils literal notranslate"><span class="pre">MenuItem.Caption</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MenuItem.Checked"><code class="docutils literal notranslate"><span class="pre">MenuItem.Checked</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MenuItem.Clear"><code class="docutils literal notranslate"><span class="pre">MenuItem.Clear()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MenuItem.Click"><code class="docutils literal notranslate"><span class="pre">MenuItem.Click()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MenuItem.Command"><code class="docutils literal notranslate"><span class="pre">MenuItem.Command</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MenuItem.ComponentCount"><code class="docutils literal notranslate"><span class="pre">MenuItem.ComponentCount</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MenuItem.Components"><code class="docutils literal notranslate"><span class="pre">MenuItem.Components</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MenuItem.Count"><code class="docutils literal notranslate"><span class="pre">MenuItem.Count</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MenuItem.Default"><code class="docutils literal notranslate"><span class="pre">MenuItem.Default</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MenuItem.Delete"><code class="docutils literal notranslate"><span class="pre">MenuItem.Delete()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MenuItem.Enabled"><code class="docutils literal notranslate"><span class="pre">MenuItem.Enabled</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MenuItem.Find"><code class="docutils literal notranslate"><span class="pre">MenuItem.Find()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MenuItem.GetChildren"><code class="docutils literal notranslate"><span class="pre">MenuItem.GetChildren()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MenuItem.GetEnumerator"><code class="docutils literal notranslate"><span class="pre">MenuItem.GetEnumerator()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MenuItem.GetImageList"><code class="docutils literal notranslate"><span class="pre">MenuItem.GetImageList()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MenuItem.GetParentComponent"><code class="docutils literal notranslate"><span class="pre">MenuItem.GetParentComponent()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MenuItem.GetParentMenu"><code class="docutils literal notranslate"><span class="pre">MenuItem.GetParentMenu()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MenuItem.GroupIndex"><code class="docutils literal notranslate"><span class="pre">MenuItem.GroupIndex</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MenuItem.Handle"><code class="docutils literal notranslate"><span class="pre">MenuItem.Handle</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MenuItem.HandleAllocated"><code class="docutils literal notranslate"><span class="pre">MenuItem.HandleAllocated()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MenuItem.HasParent"><code class="docutils literal notranslate"><span class="pre">MenuItem.HasParent()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MenuItem.HelpContext"><code class="docutils literal notranslate"><span class="pre">MenuItem.HelpContext</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MenuItem.Hint"><code class="docutils literal notranslate"><span class="pre">MenuItem.Hint</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MenuItem.ImageIndex"><code class="docutils literal notranslate"><span class="pre">MenuItem.ImageIndex</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MenuItem.ImageName"><code class="docutils literal notranslate"><span class="pre">MenuItem.ImageName</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MenuItem.IndexOf"><code class="docutils literal notranslate"><span class="pre">MenuItem.IndexOf()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MenuItem.InitiateAction"><code class="docutils literal notranslate"><span class="pre">MenuItem.InitiateAction()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MenuItem.Insert"><code class="docutils literal notranslate"><span class="pre">MenuItem.Insert()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MenuItem.InsertNewLineAfter"><code class="docutils literal notranslate"><span class="pre">MenuItem.InsertNewLineAfter()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MenuItem.InsertNewLineBefore"><code class="docutils literal notranslate"><span class="pre">MenuItem.InsertNewLineBefore()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MenuItem.IsLine"><code class="docutils literal notranslate"><span class="pre">MenuItem.IsLine()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MenuItem.Items"><code class="docutils literal notranslate"><span class="pre">MenuItem.Items</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MenuItem.MenuHandle"><code class="docutils literal notranslate"><span class="pre">MenuItem.MenuHandle</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MenuItem.MenuIndex"><code class="docutils literal notranslate"><span class="pre">MenuItem.MenuIndex</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MenuItem.NewBottomLine"><code class="docutils literal notranslate"><span class="pre">MenuItem.NewBottomLine()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MenuItem.NewTopLine"><code class="docutils literal notranslate"><span class="pre">MenuItem.NewTopLine()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MenuItem.OnAdvancedDrawItem"><code class="docutils literal notranslate"><span class="pre">MenuItem.OnAdvancedDrawItem</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MenuItem.OnDrawItem"><code class="docutils literal notranslate"><span class="pre">MenuItem.OnDrawItem</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MenuItem.OnMeasureItem"><code class="docutils literal notranslate"><span class="pre">MenuItem.OnMeasureItem</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MenuItem.Owner"><code class="docutils literal notranslate"><span class="pre">MenuItem.Owner</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MenuItem.Parent"><code class="docutils literal notranslate"><span class="pre">MenuItem.Parent</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MenuItem.RadioItem"><code class="docutils literal notranslate"><span class="pre">MenuItem.RadioItem</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MenuItem.Remove"><code class="docutils literal notranslate"><span class="pre">MenuItem.Remove()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MenuItem.RethinkHotkeys"><code class="docutils literal notranslate"><span class="pre">MenuItem.RethinkHotkeys()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MenuItem.RethinkLines"><code class="docutils literal notranslate"><span class="pre">MenuItem.RethinkLines()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MenuItem.SetParentComponent"><code class="docutils literal notranslate"><span class="pre">MenuItem.SetParentComponent()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MenuItem.ShortCut"><code class="docutils literal notranslate"><span class="pre">MenuItem.ShortCut</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MenuItem.SubMenuImages"><code class="docutils literal notranslate"><span class="pre">MenuItem.SubMenuImages</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.MenuItem.Visible"><code class="docutils literal notranslate"><span class="pre">MenuItem.Visible</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script src="../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/scripts/furo.js?v=5fa4622c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/responsiveSvg.js?v=f1528c9d"></script>
+    </body>
+</html>

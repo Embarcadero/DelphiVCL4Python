@@ -1,0 +1,1753 @@
+<!doctype html>
+<html class="no-js" lang="en" data-content_root="../">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="Stream" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://github.com/Embarcadero/reference/delphivcl.Stream.html" />
+<meta property="og:site_name" content="DelphiVCL | Documentation" />
+<meta property="og:description" content="Qualified name: delphivcl.Stream" />
+<meta property="og:image" content="https://github.com/Embarcadero/DelphiVCL4Python/blob/main/images/DelphiVCL4Python(256px).png" />
+<meta property="og:image:alt" content="DelphiVCL | Documentation" />
+<meta name="description" content="Qualified name: delphivcl.Stream" />
+<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="Monitor" href="delphivcl.Monitor.html" /><link rel="prev" title="StyleManager" href="delphivcl.StyleManager.html" />
+
+    <link rel="shortcut icon" href="../_static/favicon.ico"/><!-- Generated with Sphinx 8.1.3 and Furo 2024.08.06 -->
+        <title>Stream - DelphiVCL Documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=354aac6f" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=4ae1632d" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?v=302659d7" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=93c9b8cc" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  --color-content-foreground: #000000;
+  --color-background-primary: #ffffff;
+  --color-background-border: #ffffff;
+  --color-sidebar-background: #f8f9fb;
+  --color-brand-content: #1c00e3;
+  --color-brand-primary: #192bd0;
+  --color-link: #c93434;
+  --color-link--hover: #5b0000;
+  --color-inline-code-background: #f6f6f6;;
+  --color-foreground-secondary: #000;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  --color-content-foreground: #ffffffd9;
+  --color-background-primary: #131416;
+  --color-background-border: #303335;
+  --color-sidebar-background: #1a1c1e;
+  --color-brand-content: #2196f3;
+  --color-brand-primary: #007fff;
+  --color-link: #51ba86;
+  --color-link--hover: #9cefc6;
+  --color-inline-code-background: #262626;
+  --color-foreground-secondary: #ffffffd9;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  --color-content-foreground: #ffffffd9;
+  --color-background-primary: #131416;
+  --color-background-border: #303335;
+  --color-sidebar-background: #1a1c1e;
+  --color-brand-content: #2196f3;
+  --color-brand-primary: #007fff;
+  --color-link: #51ba86;
+  --color-link--hover: #9cefc6;
+  --color-inline-code-background: #262626;
+  --color-foreground-secondary: #ffffffd9;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-with-moon" viewBox="0 0 24 24">
+    <title>Auto light/dark, in light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path style="opacity: 50%" d="M 5.411 14.504 C 5.471 14.504 5.532 14.504 5.591 14.504 C 3.639 16.319 4.383 19.569 6.931 20.352 C 7.693 20.586 8.512 20.551 9.25 20.252 C 8.023 23.207 4.056 23.725 2.11 21.184 C 0.166 18.642 1.702 14.949 4.874 14.536 C 5.051 14.512 5.231 14.5 5.411 14.5 L 5.411 14.504 Z"/>
+      <line x1="14.5" y1="3.25" x2="14.5" y2="1.25"/>
+      <line x1="14.5" y1="15.85" x2="14.5" y2="17.85"/>
+      <line x1="10.044" y1="5.094" x2="8.63" y2="3.68"/>
+      <line x1="19" y1="14.05" x2="20.414" y2="15.464"/>
+      <line x1="8.2" y1="9.55" x2="6.2" y2="9.55"/>
+      <line x1="20.8" y1="9.55" x2="22.8" y2="9.55"/>
+      <line x1="10.044" y1="14.006" x2="8.63" y2="15.42"/>
+      <line x1="19" y1="5.05" x2="20.414" y2="3.636"/>
+      <circle cx="14.5" cy="9.55" r="3.6"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon-with-sun" viewBox="0 0 24 24">
+    <title>Auto light/dark, in dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path d="M 8.282 7.007 C 8.385 7.007 8.494 7.007 8.595 7.007 C 5.18 10.184 6.481 15.869 10.942 17.24 C 12.275 17.648 13.706 17.589 15 17.066 C 12.851 22.236 5.91 23.143 2.505 18.696 C -0.897 14.249 1.791 7.786 7.342 7.063 C 7.652 7.021 7.965 7 8.282 7 L 8.282 7.007 Z"/>
+      <line style="opacity: 50%" x1="18" y1="3.705" x2="18" y2="2.5"/>
+      <line style="opacity: 50%" x1="18" y1="11.295" x2="18" y2="12.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="4.816" x2="14.464" y2="3.964"/>
+      <line style="opacity: 50%" x1="20.711" y1="10.212" x2="21.563" y2="11.063"/>
+      <line style="opacity: 50%" x1="14.205" y1="7.5" x2="13.001" y2="7.5"/>
+      <line style="opacity: 50%" x1="21.795" y1="7.5" x2="23" y2="7.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="10.184" x2="14.464" y2="11.036"/>
+      <line style="opacity: 50%" x1="20.711" y1="4.789" x2="21.563" y2="3.937"/>
+      <circle style="opacity: 50%" cx="18" cy="7.5" r="2.169"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-pencil" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-pencil-code">
+      <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+      <path d="M13.5 6.5l4 4" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+  <symbol id="svg-eye" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-eye-code">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+      <path
+        d="M11.11 17.958c-3.209 -.307 -5.91 -2.293 -8.11 -5.958c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6c-.21 .352 -.427 .688 -.647 1.008" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+<a class="skip-to-content muted-link" href="#furo-main-content">Skip to content</a>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../index.html"><div class="brand">DelphiVCL Documentation</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+          <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../index.html">
+  
+  <div class="sidebar-logo-container">
+    <img class="sidebar-logo only-light" src="../_static/DelphiVCL4Python-sidebar.svg" alt="Light Logo"/>
+    <img class="sidebar-logo only-dark" src="../_static/DelphiVCL4Python-sidebar-dark.svg" alt="Dark Logo"/>
+  </div>
+  
+  <span class="sidebar-brand-text">DelphiVCL Documentation</span>
+  
+</a><form class="sidebar-search-container" method="get" action="../search.html" role="search">
+  <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../tutorials_guides.html">Tutorials &amp; Guides</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of Tutorials &amp; Guides</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../quickstart.html">Quickstart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples.html">Example Gallery</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq.html">Frequently Asked Questions</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current has-children"><a class="reference internal" href="../reference.html">Reference Manual</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle navigation of Reference Manual</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l2 current has-children"><a class="reference internal" href="../reference_index/delphivcl_classes.html">DelphiVCL</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle navigation of DelphiVCL</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Object.html">Object</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.StyleManager.html">StyleManager</a></li>
+<li class="toctree-l3 current current-page"><a class="current reference internal" href="#">Stream</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Monitor.html">Monitor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomStyleServices.html">CustomStyleServices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Persistent.html">Persistent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Strings.html">Strings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Picture.html">Picture</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Collection.html">Collection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Canvas.html">Canvas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Graphic.html">Graphic</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Bitmap.html">Bitmap</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Icon.html">Icon</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Metafile.html">Metafile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Component.html">Component</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Timer.html">Timer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.OpenDialog.html">OpenDialog</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.MenuItem.html">MenuItem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Menu.html">Menu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.FileOpenDialog.html">FileOpenDialog</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ContainedActionList.html">ContainedActionList</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Control.html">Control</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomBindingsList.html">CustomBindingsList</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BasicBindComponent.html">BasicBindComponent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BasicAction.html">BasicAction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BaseBindScopeComponent.html">BaseBindScopeComponent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BaseLinkingBindSource.html">BaseLinkingBindSource</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ContainedAction.html">ContainedAction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BindingsList.html">BindingsList</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BoundLabel.html">BoundLabel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomControl.html">CustomControl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Label.html">Label</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.WinControl.html">WinControl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomActionList.html">CustomActionList</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.MainMenu.html">MainMenu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.PopupMenu.html">PopupMenu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.SaveDialog.html">SaveDialog</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ActionList.html">ActionList</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.MediaPlayer.html">MediaPlayer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomToggleSwitch.html">CustomToggleSwitch</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomActivityIndicator.html">CustomActivityIndicator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomAction.html">CustomAction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Action.html">Action</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BaseObjectBindSource.html">BaseObjectBindSource</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomPrototypeBindSource.html">CustomPrototypeBindSource</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ActivityIndicator.html">ActivityIndicator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ToggleSwitch.html">ToggleSwitch</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.PrototypeBindSource.html">PrototypeBindSource</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ContainedBindComponent.html">ContainedBindComponent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BindComponentDelegate.html">BindComponentDelegate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.LinkPropertyToFieldDelegate.html">LinkPropertyToFieldDelegate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.LinkControlDelegate.html">LinkControlDelegate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomLinkPropertyToField.html">CustomLinkPropertyToField</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.LinkControlToFieldDelegate.html">LinkControlToFieldDelegate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.LinkPropertyToField.html">LinkPropertyToField</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomLinkControlToField.html">CustomLinkControlToField</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomLinkListControlToField.html">CustomLinkListControlToField</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.LinkControlToField.html">LinkControlToField</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.LinkListControlToField.html">LinkListControlToField</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BitBtn.html">BitBtn</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Button.html">Button</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CheckBox.html">CheckBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ColorBox.html">ColorBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ComboBox.html">ComboBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ControlBar.html">ControlBar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomGrid.html">CustomGrid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomEdit.html">CustomEdit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomForm.html">CustomForm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomStatusBar.html">CustomStatusBar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomTabControl.html">CustomTabControl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.DateTimePicker.html">DateTimePicker</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.GroupBox.html">GroupBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Header.html">Header</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.LabeledEdit.html">LabeledEdit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ListBox.html">ListBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Notebook.html">Notebook</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Page.html">Page</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.PageControl.html">PageControl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Panel.html">Panel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.RadioButton.html">RadioButton</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.RadioGroup.html">RadioGroup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ScrollBar.html">ScrollBar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.SpinButton.html">SpinButton</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.StaticText.html">StaticText</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.TabSheet.html">TabSheet</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ToolBar.html">ToolBar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.TrackBar.html">TrackBar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomDrawGrid.html">CustomDrawGrid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomMemo.html">CustomMemo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomNumberBox.html">CustomNumberBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Edit.html">Edit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.SpinEdit.html">SpinEdit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Form.html">Form</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.StatusBar.html">StatusBar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.TabControl.html">TabControl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.DrawGrid.html">DrawGrid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Memo.html">Memo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.NumberBox.html">NumberBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.StringGrid.html">StringGrid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomMemoryStream.html">CustomMemoryStream</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.HandleStream.html">HandleStream</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.MemoryStream.html">MemoryStream</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ResourceStream.html">ResourceStream</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.FileStream.html">FileStream</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BytesStream.html">BytesStream</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BufferedFileStream.html">BufferedFileStream</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.StringStream.html">StringStream</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../changelog.html">Changelog</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle navigation of Changelog</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../changelog/0.1.40-changelog.html">v0.1.40</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../changelog/1.0.0-changelog.html">v1.0.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../changelog/1.0.1-changelog.html">v1.0.1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../changelog/1.0.2-changelog.html">v1.0.2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../changelog/1.0.3-changelog.html">v1.0.3</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing.html">Contributing</a></li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+              <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role="main" id="furo-main-content">
+          <section id="stream">
+<h1>Stream<a class="headerlink" href="#stream" title="Link to this heading">¶</a></h1>
+<p>Qualified name: <code class="docutils literal notranslate"><span class="pre">delphivcl.Stream</span></code></p>
+<dl class="py class">
+<dt class="sig sig-object py" id="delphivcl.Stream">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Stream</span></span><a class="headerlink" href="#delphivcl.Stream" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="delphivcl.Object.html#delphivcl.Object" title="delphivcl.Object"><code class="xref py py-class docutils literal notranslate"><span class="pre">Object</span></code></a></p>
+<p>TStream is the base class type for stream objects that can read from or write to various kinds of storage media, such as disk files, dynamic memory, and so on.
+Use specialized stream objects to read from, write to, or copy information stored in a particular medium. Each descendant of TStream implements methods for transferring information to and from a particular storage medium, such as a disk file, dynamic memory, and so on. In addition to methods for reading, writing, and copying bytes to and from the stream, stream objects permit applications to seek to an arbitrary position in the stream. Properties of TStream provide information about the stream, such as its size and the current position in the stream.
+TStream also introduces methods that work in conjunction with components and filers for loading and saving components in simple and inherited forms. These methods are called automatically by global routines that initiate component streaming. They can also be called directly to initiate the streaming process. Note, however, that component streaming always involves two additional objects:</p>
+<p>A component object that is passed as a parameter to the stream’s methods.
+A filer object that is automatically created by the stream, and associated with the stream.
+Descendant stream objects, such as memory and file streams used for component streaming, are created automatically by the global functions ReadComponentRes and WriteComponentRes. For streaming other kinds of information, choose a descendent class according to the specific data and storage needs. These include:</p>
+<p>TFileStream – for working with files.
+TStringStream – for manipulating in-memory strings.
+TMemoryStream – for working with a memory buffer.
+TWinSocketStream – for reading and writing over a socket connection.
+TOleStream – for using a COM interface to read and write.</p>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.Stream.CopyFrom" title="delphivcl.Stream.CopyFrom"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CopyFrom</span></code></a></p></td>
+<td><p>Copies a specified number of bytes from one stream to another.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.Stream.FixupResourceHeader" title="delphivcl.Stream.FixupResourceHeader"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FixupResourceHeader</span></code></a></p></td>
+<td><p>Patches the resource header for a resource that has been written to the stream.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.Stream.Read" title="delphivcl.Stream.Read"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Read</span></code></a></p></td>
+<td><p>Methods responsible for reading  up to Count bytes of data  from the stream into Buffer.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.Stream.Read64" title="delphivcl.Stream.Read64"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Read64</span></code></a></p></td>
+<td><p>Embarcadero Technologies does not currently have any additional information.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.Stream.ReadBuffer" title="delphivcl.Stream.ReadBuffer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ReadBuffer</span></code></a></p></td>
+<td><p>Reads Count bytes from the stream into Buffer.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.Stream.ReadBufferData" title="delphivcl.Stream.ReadBufferData"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ReadBufferData</span></code></a></p></td>
+<td><p>Methods responsible for reading fixed Count or SizeOf(Buffer) number of bytes from the stream into Buffer.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.Stream.ReadBytes" title="delphivcl.Stream.ReadBytes"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ReadBytes</span></code></a></p></td>
+<td><p>Read content as bytes.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.Stream.ReadComponent" title="delphivcl.Stream.ReadComponent"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ReadComponent</span></code></a></p></td>
+<td><p>Initiates streaming of components and their properties.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.Stream.ReadComponentRes" title="delphivcl.Stream.ReadComponentRes"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ReadComponentRes</span></code></a></p></td>
+<td><p>Reads components and their properties from a stream in a resource file format.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.Stream.ReadData" title="delphivcl.Stream.ReadData"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ReadData</span></code></a></p></td>
+<td><p>Methods responsible for reading up to Count but not more than SizeOf(Buffer) bytes from the stream into Buffer.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.Stream.ReadFloat" title="delphivcl.Stream.ReadFloat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ReadFloat</span></code></a></p></td>
+<td><p>Read content as float.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.Stream.ReadInt" title="delphivcl.Stream.ReadInt"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ReadInt</span></code></a></p></td>
+<td><p>Read content as integer.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.Stream.ReadResHeader" title="delphivcl.Stream.ReadResHeader"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ReadResHeader</span></code></a></p></td>
+<td><p>Reads a resource-file header from the stream.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.Stream.ReadString" title="delphivcl.Stream.ReadString"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ReadString</span></code></a></p></td>
+<td><p>Read content as string.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.Stream.Seek" title="delphivcl.Stream.Seek"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Seek</span></code></a></p></td>
+<td><p>Moves to a specified position in the streamed resource.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.Stream.Seek32" title="delphivcl.Stream.Seek32"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Seek32</span></code></a></p></td>
+<td><p>Embarcadero Technologies does not currently have any additional information.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.Stream.Write" title="delphivcl.Stream.Write"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Write</span></code></a></p></td>
+<td><p>Methods responsible for writing up to Count bytes from Buffer to the stream.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.Stream.Write64" title="delphivcl.Stream.Write64"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Write64</span></code></a></p></td>
+<td><p>Embarcadero Technologies does not currently have any additional information.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.Stream.WriteBuffer" title="delphivcl.Stream.WriteBuffer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WriteBuffer</span></code></a></p></td>
+<td><p>Writes Count bytes from Buffer onto the stream.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.Stream.WriteBufferData" title="delphivcl.Stream.WriteBufferData"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WriteBufferData</span></code></a></p></td>
+<td><p>Writes up to 4 four or Count bytes from Buffer onto the stream.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.Stream.WriteBytes" title="delphivcl.Stream.WriteBytes"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WriteBytes</span></code></a></p></td>
+<td><p>Write content as bytes.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.Stream.WriteComponent" title="delphivcl.Stream.WriteComponent"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WriteComponent</span></code></a></p></td>
+<td><p>Initiates the writing of components and their properties to a stream.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.Stream.WriteComponentRes" title="delphivcl.Stream.WriteComponentRes"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WriteComponentRes</span></code></a></p></td>
+<td><p>Writes components and their properties to a stream from a resource file format.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.Stream.WriteData" title="delphivcl.Stream.WriteData"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WriteData</span></code></a></p></td>
+<td><p>Methods responsible for writing up to Count bytes from Buffer to the stream.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.Stream.WriteDescendent" title="delphivcl.Stream.WriteDescendent"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WriteDescendent</span></code></a></p></td>
+<td><p>Streams components and their properties in inherited forms.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.Stream.WriteDescendentRes" title="delphivcl.Stream.WriteDescendentRes"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WriteDescendentRes</span></code></a></p></td>
+<td><p>Streams components and their properties in inherited forms.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.Stream.WriteFloat" title="delphivcl.Stream.WriteFloat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WriteFloat</span></code></a></p></td>
+<td><p>Write content as float.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.Stream.WriteInt" title="delphivcl.Stream.WriteInt"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WriteInt</span></code></a></p></td>
+<td><p>Write content as integer.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.Stream.WriteResourceHeader" title="delphivcl.Stream.WriteResourceHeader"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WriteResourceHeader</span></code></a></p></td>
+<td><p>Writes a resource-file header to the stream.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.Stream.WriteString" title="delphivcl.Stream.WriteString"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WriteString</span></code></a></p></td>
+<td><p>Write content as string.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="rubric">Attributes</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.Stream.Capabilities" title="delphivcl.Stream.Capabilities"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Capabilities</span></code></a></p></td>
+<td><p>StreamCapabilities:</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.Stream.ClassName" title="delphivcl.Stream.ClassName"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ClassName</span></code></a></p></td>
+<td><p>Returns the TObject.ClassName</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.Stream.Position" title="delphivcl.Stream.Position"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Position</span></code></a></p></td>
+<td><p>Indicates the current offset into the stream for reading and writing.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.Stream.Size" title="delphivcl.Stream.Size"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Size</span></code></a></p></td>
+<td><p>Indicates the size in bytes of the stream.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.Stream.Capabilities">
+<span class="sig-name descname"><span class="pre">Capabilities</span></span><a class="headerlink" href="#delphivcl.Stream.Capabilities" title="Link to this definition">¶</a></dt>
+<dd><p>StreamCapabilities:</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.Stream.ClassName">
+<span class="sig-name descname"><span class="pre">ClassName</span></span><a class="headerlink" href="#delphivcl.Stream.ClassName" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the TObject.ClassName</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Stream.CopyFrom">
+<span class="sig-name descname"><span class="pre">CopyFrom</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Source</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#delphivcl.Stream" title="delphivcl.Stream"><span class="pre">Stream</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">Count</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">BufferSize</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#delphivcl.Stream.CopyFrom" title="Link to this definition">¶</a></dt>
+<dd><p>Copies a specified number of bytes from one stream to another.
+Use CopyFrom to copy data from one stream to a different one. Using CopyFrom eliminates the need to create, read into, write from, and free a buffer when copying data.
+CopyFrom copies Count bytes from the stream specified by Source into the stream. It then moves the current position by Count bytes and returns the number of bytes copied.
+If Count is 0, CopyFrom sets Source position to 0 before reading and then copies the entire contents of Source into the stream. If Count is greater than or less than 0, CopyFrom reads from the current position in Source.
+Because the CopyFrom method uses ReadBuffer and WriteBuffer to do the effective copying, if the Count is greater than the SourceStream size, ReadBuffer throws an exception stating that a stream read error has occured.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Stream.FixupResourceHeader">
+<span class="sig-name descname"><span class="pre">FixupResourceHeader</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">FixupInfo</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#delphivcl.Stream.FixupResourceHeader" title="Link to this definition">¶</a></dt>
+<dd><p>Patches the resource header for a resource that has been written to the stream.
+Do not call FixupResourceHeader� it is used internally. The WriteDescendentRes method calls FixupResourceHeader after writing a component to the stream. This method then uses the current position to determine the size of the resource just written and adjust the resource header accordingly.
+The FixupInfo parameter is the value returned by WriteResourceHeader when it writes the resource header (before WriteDescendentRes streams out the component.)</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.Stream.Position">
+<span class="sig-name descname"><span class="pre">Position</span></span><a class="headerlink" href="#delphivcl.Stream.Position" title="Link to this definition">¶</a></dt>
+<dd><p>Indicates the current offset into the stream for reading and writing.
+Use Position to obtain the current position of the stream. This is the number of bytes from the beginning of the streamed data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Stream.Read">
+<span class="sig-name descname"><span class="pre">Read</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Buffer</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Count</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#delphivcl.Stream.Read" title="Link to this definition">¶</a></dt>
+<dd><p>Methods responsible for reading  up to Count bytes of data  from the stream into Buffer.
+Descendant stream classes can define its own Read methods that read data from its particular storage medium (such as memory or a disk file) into a Buffer buffer.
+Read is used in cases where the number of bytes to read from the stream is not necessarily fixed.
+Read attempts to read, into Buffer, up to Count bytes from the stream, starting at the current position, and then advances the current position in the stream by the number of bytes actually transferred. Read returns the number of bytes actually read, which may be less than Count.
+Offset specifies a zero-based position in Buffer from which to write the first byte into Buffer.
+All the other data-reading methods of a stream (ReadBuffer, ReadData) call Read to do their actual reading.
+Methods responsible for reading  up to Count bytes of data  from the stream into Buffer.
+Descendant stream classes can define its own Read methods that read data from its particular storage medium (such as memory or a disk file) into a Buffer buffer.
+Read is used in cases where the number of bytes to read from the stream is not necessarily fixed.
+Read attempts to read, into Buffer, up to Count bytes from the stream, starting at the current position, and then advances the current position in the stream by the number of bytes actually transferred. Read returns the number of bytes actually read, which may be less than Count.
+Offset specifies a zero-based position in Buffer from which to write the first byte into Buffer.
+All the other data-reading methods of a stream (ReadBuffer, ReadData) call Read to do their actual reading.
+Methods responsible for reading  up to Count bytes of data  from the stream into Buffer.
+Descendant stream classes can define its own Read methods that read data from its particular storage medium (such as memory or a disk file) into a Buffer buffer.
+Read is used in cases where the number of bytes to read from the stream is not necessarily fixed.
+Read attempts to read, into Buffer, up to Count bytes from the stream, starting at the current position, and then advances the current position in the stream by the number of bytes actually transferred. Read returns the number of bytes actually read, which may be less than Count.
+Offset specifies a zero-based position in Buffer from which to write the first byte into Buffer.
+All the other data-reading methods of a stream (ReadBuffer, ReadData) call Read to do their actual reading.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Stream.Read64">
+<span class="sig-name descname"><span class="pre">Read64</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Buffer</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Offset</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Count</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#delphivcl.Stream.Read64" title="Link to this definition">¶</a></dt>
+<dd><p>Embarcadero Technologies does not currently have any additional information.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Stream.ReadBuffer">
+<span class="sig-name descname"><span class="pre">ReadBuffer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Buffer</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Count</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#delphivcl.Stream.ReadBuffer" title="Link to this definition">¶</a></dt>
+<dd><p>Reads Count bytes from the stream into Buffer.
+Use ReadBuffer to read Count bytes from the stream into a Buffer buffer in cases where the number of bytes to read is known and fixed, for example when reading in structures. ReadBuffer is used internally for loading from a stream and copying from a stream.
+Read attempts to read exactly Count bytes from the stream, starting at the current position, and then advances the current position in the stream by the number of bytes actually transferred.
+Offset specifies a zero-based position in Buffer from which to write the first byte into Buffer.
+ReadBuffer calls Read to do the actual reading. If Count bytes cannot be read from the stream, an EReadError exception is raised.
+Reads Count bytes from the stream into Buffer.
+Use ReadBuffer to read Count bytes from the stream into a Buffer buffer in cases where the number of bytes to read is known and fixed, for example when reading in structures. ReadBuffer is used internally for loading from a stream and copying from a stream.
+Read attempts to read exactly Count bytes from the stream, starting at the current position, and then advances the current position in the stream by the number of bytes actually transferred.
+Offset specifies a zero-based position in Buffer from which to write the first byte into Buffer.
+ReadBuffer calls Read to do the actual reading. If Count bytes cannot be read from the stream, an EReadError exception is raised.
+Reads Count bytes from the stream into Buffer.
+Use ReadBuffer to read Count bytes from the stream into a Buffer buffer in cases where the number of bytes to read is known and fixed, for example when reading in structures. ReadBuffer is used internally for loading from a stream and copying from a stream.
+Read attempts to read exactly Count bytes from the stream, starting at the current position, and then advances the current position in the stream by the number of bytes actually transferred.
+Offset specifies a zero-based position in Buffer from which to write the first byte into Buffer.
+ReadBuffer calls Read to do the actual reading. If Count bytes cannot be read from the stream, an EReadError exception is raised.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Stream.ReadBufferData">
+<span class="sig-name descname"><span class="pre">ReadBufferData</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Buffer</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#delphivcl.Stream.ReadBufferData" title="Link to this definition">¶</a></dt>
+<dd><p>Methods responsible for reading fixed Count or SizeOf(Buffer) number of bytes from the stream into Buffer.
+Use ReadBufferData to read exactly the fixed Count or SizeOf(Buffer) number of bytes from the stream into a typed Buffer. ReadBufferData raises an EReadError exception if ReadBufferData cannot read exactly the specified number of bytes.
+ReadBufferData works using the following algorithms:</p>
+<p>When ReadBufferData does not have the Count parameter, then ReadBufferData tries to read the SizeOf(Buffer) number of bytes, then advances the current position in the stream by the number of bytes transferred. If the number of bytes transferred is not  = SizeOf(Buffer), then ReadBufferData raises an EReadError exception.
+When ReadBufferData has the Count parameter, then ReadBufferData calls ReadData to read the Count bytes. If a reported number of transferred bytes is not equal to Count, then ReadBufferData raises an EReadError exception.
+ReadBufferData calls ReadData to do the actual reading.
+Methods responsible for reading fixed Count or SizeOf(Buffer) number of bytes from the stream into Buffer.
+Use ReadBufferData to read exactly the fixed Count or SizeOf(Buffer) number of bytes from the stream into a typed Buffer. ReadBufferData raises an EReadError exception if ReadBufferData cannot read exactly the specified number of bytes.
+ReadBufferData works using the following algorithms:</p>
+<p>When ReadBufferData does not have the Count parameter, then ReadBufferData tries to read the SizeOf(Buffer) number of bytes, then advances the current position in the stream by the number of bytes transferred. If the number of bytes transferred is not  = SizeOf(Buffer), then ReadBufferData raises an EReadError exception.
+When ReadBufferData has the Count parameter, then ReadBufferData calls ReadData to read the Count bytes. If a reported number of transferred bytes is not equal to Count, then ReadBufferData raises an EReadError exception.
+ReadBufferData calls ReadData to do the actual reading.
+Methods responsible for reading fixed Count or SizeOf(Buffer) number of bytes from the stream into Buffer.
+Use ReadBufferData to read exactly the fixed Count or SizeOf(Buffer) number of bytes from the stream into a typed Buffer. ReadBufferData raises an EReadError exception if ReadBufferData cannot read exactly the specified number of bytes.
+ReadBufferData works using the following algorithms:</p>
+<p>When ReadBufferData does not have the Count parameter, then ReadBufferData tries to read the SizeOf(Buffer) number of bytes, then advances the current position in the stream by the number of bytes transferred. If the number of bytes transferred is not  = SizeOf(Buffer), then ReadBufferData raises an EReadError exception.
+When ReadBufferData has the Count parameter, then ReadBufferData calls ReadData to read the Count bytes. If a reported number of transferred bytes is not equal to Count, then ReadBufferData raises an EReadError exception.
+ReadBufferData calls ReadData to do the actual reading.
+Methods responsible for reading fixed Count or SizeOf(Buffer) number of bytes from the stream into Buffer.
+Use ReadBufferData to read exactly the fixed Count or SizeOf(Buffer) number of bytes from the stream into a typed Buffer. ReadBufferData raises an EReadError exception if ReadBufferData cannot read exactly the specified number of bytes.
+ReadBufferData works using the following algorithms:</p>
+<p>When ReadBufferData does not have the Count parameter, then ReadBufferData tries to read the SizeOf(Buffer) number of bytes, then advances the current position in the stream by the number of bytes transferred. If the number of bytes transferred is not  = SizeOf(Buffer), then ReadBufferData raises an EReadError exception.
+When ReadBufferData has the Count parameter, then ReadBufferData calls ReadData to read the Count bytes. If a reported number of transferred bytes is not equal to Count, then ReadBufferData raises an EReadError exception.
+ReadBufferData calls ReadData to do the actual reading.
+Methods responsible for reading fixed Count or SizeOf(Buffer) number of bytes from the stream into Buffer.
+Use ReadBufferData to read exactly the fixed Count or SizeOf(Buffer) number of bytes from the stream into a typed Buffer. ReadBufferData raises an EReadError exception if ReadBufferData cannot read exactly the specified number of bytes.
+ReadBufferData works using the following algorithms:</p>
+<p>When ReadBufferData does not have the Count parameter, then ReadBufferData tries to read the SizeOf(Buffer) number of bytes, then advances the current position in the stream by the number of bytes transferred. If the number of bytes transferred is not  = SizeOf(Buffer), then ReadBufferData raises an EReadError exception.
+When ReadBufferData has the Count parameter, then ReadBufferData calls ReadData to read the Count bytes. If a reported number of transferred bytes is not equal to Count, then ReadBufferData raises an EReadError exception.
+ReadBufferData calls ReadData to do the actual reading.
+Methods responsible for reading fixed Count or SizeOf(Buffer) number of bytes from the stream into Buffer.
+Use ReadBufferData to read exactly the fixed Count or SizeOf(Buffer) number of bytes from the stream into a typed Buffer. ReadBufferData raises an EReadError exception if ReadBufferData cannot read exactly the specified number of bytes.
+ReadBufferData works using the following algorithms:</p>
+<p>When ReadBufferData does not have the Count parameter, then ReadBufferData tries to read the SizeOf(Buffer) number of bytes, then advances the current position in the stream by the number of bytes transferred. If the number of bytes transferred is not  = SizeOf(Buffer), then ReadBufferData raises an EReadError exception.
+When ReadBufferData has the Count parameter, then ReadBufferData calls ReadData to read the Count bytes. If a reported number of transferred bytes is not equal to Count, then ReadBufferData raises an EReadError exception.
+ReadBufferData calls ReadData to do the actual reading.
+Methods responsible for reading fixed Count or SizeOf(Buffer) number of bytes from the stream into Buffer.
+Use ReadBufferData to read exactly the fixed Count or SizeOf(Buffer) number of bytes from the stream into a typed Buffer. ReadBufferData raises an EReadError exception if ReadBufferData cannot read exactly the specified number of bytes.
+ReadBufferData works using the following algorithms:</p>
+<p>When ReadBufferData does not have the Count parameter, then ReadBufferData tries to read the SizeOf(Buffer) number of bytes, then advances the current position in the stream by the number of bytes transferred. If the number of bytes transferred is not  = SizeOf(Buffer), then ReadBufferData raises an EReadError exception.
+When ReadBufferData has the Count parameter, then ReadBufferData calls ReadData to read the Count bytes. If a reported number of transferred bytes is not equal to Count, then ReadBufferData raises an EReadError exception.
+ReadBufferData calls ReadData to do the actual reading.
+Methods responsible for reading fixed Count or SizeOf(Buffer) number of bytes from the stream into Buffer.
+Use ReadBufferData to read exactly the fixed Count or SizeOf(Buffer) number of bytes from the stream into a typed Buffer. ReadBufferData raises an EReadError exception if ReadBufferData cannot read exactly the specified number of bytes.
+ReadBufferData works using the following algorithms:</p>
+<p>When ReadBufferData does not have the Count parameter, then ReadBufferData tries to read the SizeOf(Buffer) number of bytes, then advances the current position in the stream by the number of bytes transferred. If the number of bytes transferred is not  = SizeOf(Buffer), then ReadBufferData raises an EReadError exception.
+When ReadBufferData has the Count parameter, then ReadBufferData calls ReadData to read the Count bytes. If a reported number of transferred bytes is not equal to Count, then ReadBufferData raises an EReadError exception.
+ReadBufferData calls ReadData to do the actual reading.
+Methods responsible for reading fixed Count or SizeOf(Buffer) number of bytes from the stream into Buffer.
+Use ReadBufferData to read exactly the fixed Count or SizeOf(Buffer) number of bytes from the stream into a typed Buffer. ReadBufferData raises an EReadError exception if ReadBufferData cannot read exactly the specified number of bytes.
+ReadBufferData works using the following algorithms:</p>
+<p>When ReadBufferData does not have the Count parameter, then ReadBufferData tries to read the SizeOf(Buffer) number of bytes, then advances the current position in the stream by the number of bytes transferred. If the number of bytes transferred is not  = SizeOf(Buffer), then ReadBufferData raises an EReadError exception.
+When ReadBufferData has the Count parameter, then ReadBufferData calls ReadData to read the Count bytes. If a reported number of transferred bytes is not equal to Count, then ReadBufferData raises an EReadError exception.
+ReadBufferData calls ReadData to do the actual reading.
+Methods responsible for reading fixed Count or SizeOf(Buffer) number of bytes from the stream into Buffer.
+Use ReadBufferData to read exactly the fixed Count or SizeOf(Buffer) number of bytes from the stream into a typed Buffer. ReadBufferData raises an EReadError exception if ReadBufferData cannot read exactly the specified number of bytes.
+ReadBufferData works using the following algorithms:</p>
+<p>When ReadBufferData does not have the Count parameter, then ReadBufferData tries to read the SizeOf(Buffer) number of bytes, then advances the current position in the stream by the number of bytes transferred. If the number of bytes transferred is not  = SizeOf(Buffer), then ReadBufferData raises an EReadError exception.
+When ReadBufferData has the Count parameter, then ReadBufferData calls ReadData to read the Count bytes. If a reported number of transferred bytes is not equal to Count, then ReadBufferData raises an EReadError exception.
+ReadBufferData calls ReadData to do the actual reading.
+Methods responsible for reading fixed Count or SizeOf(Buffer) number of bytes from the stream into Buffer.
+Use ReadBufferData to read exactly the fixed Count or SizeOf(Buffer) number of bytes from the stream into a typed Buffer. ReadBufferData raises an EReadError exception if ReadBufferData cannot read exactly the specified number of bytes.
+ReadBufferData works using the following algorithms:</p>
+<p>When ReadBufferData does not have the Count parameter, then ReadBufferData tries to read the SizeOf(Buffer) number of bytes, then advances the current position in the stream by the number of bytes transferred. If the number of bytes transferred is not  = SizeOf(Buffer), then ReadBufferData raises an EReadError exception.
+When ReadBufferData has the Count parameter, then ReadBufferData calls ReadData to read the Count bytes. If a reported number of transferred bytes is not equal to Count, then ReadBufferData raises an EReadError exception.
+ReadBufferData calls ReadData to do the actual reading.
+Methods responsible for reading fixed Count or SizeOf(Buffer) number of bytes from the stream into Buffer.
+Use ReadBufferData to read exactly the fixed Count or SizeOf(Buffer) number of bytes from the stream into a typed Buffer. ReadBufferData raises an EReadError exception if ReadBufferData cannot read exactly the specified number of bytes.
+ReadBufferData works using the following algorithms:</p>
+<p>When ReadBufferData does not have the Count parameter, then ReadBufferData tries to read the SizeOf(Buffer) number of bytes, then advances the current position in the stream by the number of bytes transferred. If the number of bytes transferred is not  = SizeOf(Buffer), then ReadBufferData raises an EReadError exception.
+When ReadBufferData has the Count parameter, then ReadBufferData calls ReadData to read the Count bytes. If a reported number of transferred bytes is not equal to Count, then ReadBufferData raises an EReadError exception.
+ReadBufferData calls ReadData to do the actual reading.
+Methods responsible for reading fixed Count or SizeOf(Buffer) number of bytes from the stream into Buffer.
+Use ReadBufferData to read exactly the fixed Count or SizeOf(Buffer) number of bytes from the stream into a typed Buffer. ReadBufferData raises an EReadError exception if ReadBufferData cannot read exactly the specified number of bytes.
+ReadBufferData works using the following algorithms:</p>
+<p>When ReadBufferData does not have the Count parameter, then ReadBufferData tries to read the SizeOf(Buffer) number of bytes, then advances the current position in the stream by the number of bytes transferred. If the number of bytes transferred is not  = SizeOf(Buffer), then ReadBufferData raises an EReadError exception.
+When ReadBufferData has the Count parameter, then ReadBufferData calls ReadData to read the Count bytes. If a reported number of transferred bytes is not equal to Count, then ReadBufferData raises an EReadError exception.
+ReadBufferData calls ReadData to do the actual reading.
+Methods responsible for reading fixed Count or SizeOf(Buffer) number of bytes from the stream into Buffer.
+Use ReadBufferData to read exactly the fixed Count or SizeOf(Buffer) number of bytes from the stream into a typed Buffer. ReadBufferData raises an EReadError exception if ReadBufferData cannot read exactly the specified number of bytes.
+ReadBufferData works using the following algorithms:</p>
+<p>When ReadBufferData does not have the Count parameter, then ReadBufferData tries to read the SizeOf(Buffer) number of bytes, then advances the current position in the stream by the number of bytes transferred. If the number of bytes transferred is not  = SizeOf(Buffer), then ReadBufferData raises an EReadError exception.
+When ReadBufferData has the Count parameter, then ReadBufferData calls ReadData to read the Count bytes. If a reported number of transferred bytes is not equal to Count, then ReadBufferData raises an EReadError exception.
+ReadBufferData calls ReadData to do the actual reading.
+Methods responsible for reading fixed Count or SizeOf(Buffer) number of bytes from the stream into Buffer.
+Use ReadBufferData to read exactly the fixed Count or SizeOf(Buffer) number of bytes from the stream into a typed Buffer. ReadBufferData raises an EReadError exception if ReadBufferData cannot read exactly the specified number of bytes.
+ReadBufferData works using the following algorithms:</p>
+<p>When ReadBufferData does not have the Count parameter, then ReadBufferData tries to read the SizeOf(Buffer) number of bytes, then advances the current position in the stream by the number of bytes transferred. If the number of bytes transferred is not  = SizeOf(Buffer), then ReadBufferData raises an EReadError exception.
+When ReadBufferData has the Count parameter, then ReadBufferData calls ReadData to read the Count bytes. If a reported number of transferred bytes is not equal to Count, then ReadBufferData raises an EReadError exception.
+ReadBufferData calls ReadData to do the actual reading.
+Methods responsible for reading fixed Count or SizeOf(Buffer) number of bytes from the stream into Buffer.
+Use ReadBufferData to read exactly the fixed Count or SizeOf(Buffer) number of bytes from the stream into a typed Buffer. ReadBufferData raises an EReadError exception if ReadBufferData cannot read exactly the specified number of bytes.
+ReadBufferData works using the following algorithms:</p>
+<p>When ReadBufferData does not have the Count parameter, then ReadBufferData tries to read the SizeOf(Buffer) number of bytes, then advances the current position in the stream by the number of bytes transferred. If the number of bytes transferred is not  = SizeOf(Buffer), then ReadBufferData raises an EReadError exception.
+When ReadBufferData has the Count parameter, then ReadBufferData calls ReadData to read the Count bytes. If a reported number of transferred bytes is not equal to Count, then ReadBufferData raises an EReadError exception.
+ReadBufferData calls ReadData to do the actual reading.
+Methods responsible for reading fixed Count or SizeOf(Buffer) number of bytes from the stream into Buffer.
+Use ReadBufferData to read exactly the fixed Count or SizeOf(Buffer) number of bytes from the stream into a typed Buffer. ReadBufferData raises an EReadError exception if ReadBufferData cannot read exactly the specified number of bytes.
+ReadBufferData works using the following algorithms:</p>
+<p>When ReadBufferData does not have the Count parameter, then ReadBufferData tries to read the SizeOf(Buffer) number of bytes, then advances the current position in the stream by the number of bytes transferred. If the number of bytes transferred is not  = SizeOf(Buffer), then ReadBufferData raises an EReadError exception.
+When ReadBufferData has the Count parameter, then ReadBufferData calls ReadData to read the Count bytes. If a reported number of transferred bytes is not equal to Count, then ReadBufferData raises an EReadError exception.
+ReadBufferData calls ReadData to do the actual reading.
+Methods responsible for reading fixed Count or SizeOf(Buffer) number of bytes from the stream into Buffer.
+Use ReadBufferData to read exactly the fixed Count or SizeOf(Buffer) number of bytes from the stream into a typed Buffer. ReadBufferData raises an EReadError exception if ReadBufferData cannot read exactly the specified number of bytes.
+ReadBufferData works using the following algorithms:</p>
+<p>When ReadBufferData does not have the Count parameter, then ReadBufferData tries to read the SizeOf(Buffer) number of bytes, then advances the current position in the stream by the number of bytes transferred. If the number of bytes transferred is not  = SizeOf(Buffer), then ReadBufferData raises an EReadError exception.
+When ReadBufferData has the Count parameter, then ReadBufferData calls ReadData to read the Count bytes. If a reported number of transferred bytes is not equal to Count, then ReadBufferData raises an EReadError exception.
+ReadBufferData calls ReadData to do the actual reading.
+Methods responsible for reading fixed Count or SizeOf(Buffer) number of bytes from the stream into Buffer.
+Use ReadBufferData to read exactly the fixed Count or SizeOf(Buffer) number of bytes from the stream into a typed Buffer. ReadBufferData raises an EReadError exception if ReadBufferData cannot read exactly the specified number of bytes.
+ReadBufferData works using the following algorithms:</p>
+<p>When ReadBufferData does not have the Count parameter, then ReadBufferData tries to read the SizeOf(Buffer) number of bytes, then advances the current position in the stream by the number of bytes transferred. If the number of bytes transferred is not  = SizeOf(Buffer), then ReadBufferData raises an EReadError exception.
+When ReadBufferData has the Count parameter, then ReadBufferData calls ReadData to read the Count bytes. If a reported number of transferred bytes is not equal to Count, then ReadBufferData raises an EReadError exception.
+ReadBufferData calls ReadData to do the actual reading.
+Methods responsible for reading fixed Count or SizeOf(Buffer) number of bytes from the stream into Buffer.
+Use ReadBufferData to read exactly the fixed Count or SizeOf(Buffer) number of bytes from the stream into a typed Buffer. ReadBufferData raises an EReadError exception if ReadBufferData cannot read exactly the specified number of bytes.
+ReadBufferData works using the following algorithms:</p>
+<p>When ReadBufferData does not have the Count parameter, then ReadBufferData tries to read the SizeOf(Buffer) number of bytes, then advances the current position in the stream by the number of bytes transferred. If the number of bytes transferred is not  = SizeOf(Buffer), then ReadBufferData raises an EReadError exception.
+When ReadBufferData has the Count parameter, then ReadBufferData calls ReadData to read the Count bytes. If a reported number of transferred bytes is not equal to Count, then ReadBufferData raises an EReadError exception.
+ReadBufferData calls ReadData to do the actual reading.
+Methods responsible for reading fixed Count or SizeOf(Buffer) number of bytes from the stream into Buffer.
+Use ReadBufferData to read exactly the fixed Count or SizeOf(Buffer) number of bytes from the stream into a typed Buffer. ReadBufferData raises an EReadError exception if ReadBufferData cannot read exactly the specified number of bytes.
+ReadBufferData works using the following algorithms:</p>
+<p>When ReadBufferData does not have the Count parameter, then ReadBufferData tries to read the SizeOf(Buffer) number of bytes, then advances the current position in the stream by the number of bytes transferred. If the number of bytes transferred is not  = SizeOf(Buffer), then ReadBufferData raises an EReadError exception.
+When ReadBufferData has the Count parameter, then ReadBufferData calls ReadData to read the Count bytes. If a reported number of transferred bytes is not equal to Count, then ReadBufferData raises an EReadError exception.
+ReadBufferData calls ReadData to do the actual reading.
+Methods responsible for reading fixed Count or SizeOf(Buffer) number of bytes from the stream into Buffer.
+Use ReadBufferData to read exactly the fixed Count or SizeOf(Buffer) number of bytes from the stream into a typed Buffer. ReadBufferData raises an EReadError exception if ReadBufferData cannot read exactly the specified number of bytes.
+ReadBufferData works using the following algorithms:</p>
+<p>When ReadBufferData does not have the Count parameter, then ReadBufferData tries to read the SizeOf(Buffer) number of bytes, then advances the current position in the stream by the number of bytes transferred. If the number of bytes transferred is not  = SizeOf(Buffer), then ReadBufferData raises an EReadError exception.
+When ReadBufferData has the Count parameter, then ReadBufferData calls ReadData to read the Count bytes. If a reported number of transferred bytes is not equal to Count, then ReadBufferData raises an EReadError exception.
+ReadBufferData calls ReadData to do the actual reading.
+Methods responsible for reading fixed Count or SizeOf(Buffer) number of bytes from the stream into Buffer.
+Use ReadBufferData to read exactly the fixed Count or SizeOf(Buffer) number of bytes from the stream into a typed Buffer. ReadBufferData raises an EReadError exception if ReadBufferData cannot read exactly the specified number of bytes.
+ReadBufferData works using the following algorithms:</p>
+<p>When ReadBufferData does not have the Count parameter, then ReadBufferData tries to read the SizeOf(Buffer) number of bytes, then advances the current position in the stream by the number of bytes transferred. If the number of bytes transferred is not  = SizeOf(Buffer), then ReadBufferData raises an EReadError exception.
+When ReadBufferData has the Count parameter, then ReadBufferData calls ReadData to read the Count bytes. If a reported number of transferred bytes is not equal to Count, then ReadBufferData raises an EReadError exception.
+ReadBufferData calls ReadData to do the actual reading.
+Methods responsible for reading fixed Count or SizeOf(Buffer) number of bytes from the stream into Buffer.
+Use ReadBufferData to read exactly the fixed Count or SizeOf(Buffer) number of bytes from the stream into a typed Buffer. ReadBufferData raises an EReadError exception if ReadBufferData cannot read exactly the specified number of bytes.
+ReadBufferData works using the following algorithms:</p>
+<p>When ReadBufferData does not have the Count parameter, then ReadBufferData tries to read the SizeOf(Buffer) number of bytes, then advances the current position in the stream by the number of bytes transferred. If the number of bytes transferred is not  = SizeOf(Buffer), then ReadBufferData raises an EReadError exception.
+When ReadBufferData has the Count parameter, then ReadBufferData calls ReadData to read the Count bytes. If a reported number of transferred bytes is not equal to Count, then ReadBufferData raises an EReadError exception.
+ReadBufferData calls ReadData to do the actual reading.
+Methods responsible for reading fixed Count or SizeOf(Buffer) number of bytes from the stream into Buffer.
+Use ReadBufferData to read exactly the fixed Count or SizeOf(Buffer) number of bytes from the stream into a typed Buffer. ReadBufferData raises an EReadError exception if ReadBufferData cannot read exactly the specified number of bytes.
+ReadBufferData works using the following algorithms:</p>
+<p>When ReadBufferData does not have the Count parameter, then ReadBufferData tries to read the SizeOf(Buffer) number of bytes, then advances the current position in the stream by the number of bytes transferred. If the number of bytes transferred is not  = SizeOf(Buffer), then ReadBufferData raises an EReadError exception.
+When ReadBufferData has the Count parameter, then ReadBufferData calls ReadData to read the Count bytes. If a reported number of transferred bytes is not equal to Count, then ReadBufferData raises an EReadError exception.
+ReadBufferData calls ReadData to do the actual reading.
+Methods responsible for reading fixed Count or SizeOf(Buffer) number of bytes from the stream into Buffer.
+Use ReadBufferData to read exactly the fixed Count or SizeOf(Buffer) number of bytes from the stream into a typed Buffer. ReadBufferData raises an EReadError exception if ReadBufferData cannot read exactly the specified number of bytes.
+ReadBufferData works using the following algorithms:</p>
+<p>When ReadBufferData does not have the Count parameter, then ReadBufferData tries to read the SizeOf(Buffer) number of bytes, then advances the current position in the stream by the number of bytes transferred. If the number of bytes transferred is not  = SizeOf(Buffer), then ReadBufferData raises an EReadError exception.
+When ReadBufferData has the Count parameter, then ReadBufferData calls ReadData to read the Count bytes. If a reported number of transferred bytes is not equal to Count, then ReadBufferData raises an EReadError exception.
+ReadBufferData calls ReadData to do the actual reading.
+Methods responsible for reading fixed Count or SizeOf(Buffer) number of bytes from the stream into Buffer.
+Use ReadBufferData to read exactly the fixed Count or SizeOf(Buffer) number of bytes from the stream into a typed Buffer. ReadBufferData raises an EReadError exception if ReadBufferData cannot read exactly the specified number of bytes.
+ReadBufferData works using the following algorithms:</p>
+<p>When ReadBufferData does not have the Count parameter, then ReadBufferData tries to read the SizeOf(Buffer) number of bytes, then advances the current position in the stream by the number of bytes transferred. If the number of bytes transferred is not  = SizeOf(Buffer), then ReadBufferData raises an EReadError exception.
+When ReadBufferData has the Count parameter, then ReadBufferData calls ReadData to read the Count bytes. If a reported number of transferred bytes is not equal to Count, then ReadBufferData raises an EReadError exception.
+ReadBufferData calls ReadData to do the actual reading.
+Methods responsible for reading fixed Count or SizeOf(Buffer) number of bytes from the stream into Buffer.
+Use ReadBufferData to read exactly the fixed Count or SizeOf(Buffer) number of bytes from the stream into a typed Buffer. ReadBufferData raises an EReadError exception if ReadBufferData cannot read exactly the specified number of bytes.
+ReadBufferData works using the following algorithms:</p>
+<p>When ReadBufferData does not have the Count parameter, then ReadBufferData tries to read the SizeOf(Buffer) number of bytes, then advances the current position in the stream by the number of bytes transferred. If the number of bytes transferred is not  = SizeOf(Buffer), then ReadBufferData raises an EReadError exception.
+When ReadBufferData has the Count parameter, then ReadBufferData calls ReadData to read the Count bytes. If a reported number of transferred bytes is not equal to Count, then ReadBufferData raises an EReadError exception.
+ReadBufferData calls ReadData to do the actual reading.
+Methods responsible for reading fixed Count or SizeOf(Buffer) number of bytes from the stream into Buffer.
+Use ReadBufferData to read exactly the fixed Count or SizeOf(Buffer) number of bytes from the stream into a typed Buffer. ReadBufferData raises an EReadError exception if ReadBufferData cannot read exactly the specified number of bytes.
+ReadBufferData works using the following algorithms:</p>
+<p>When ReadBufferData does not have the Count parameter, then ReadBufferData tries to read the SizeOf(Buffer) number of bytes, then advances the current position in the stream by the number of bytes transferred. If the number of bytes transferred is not  = SizeOf(Buffer), then ReadBufferData raises an EReadError exception.
+When ReadBufferData has the Count parameter, then ReadBufferData calls ReadData to read the Count bytes. If a reported number of transferred bytes is not equal to Count, then ReadBufferData raises an EReadError exception.
+ReadBufferData calls ReadData to do the actual reading.
+Methods responsible for reading fixed Count or SizeOf(Buffer) number of bytes from the stream into Buffer.
+Use ReadBufferData to read exactly the fixed Count or SizeOf(Buffer) number of bytes from the stream into a typed Buffer. ReadBufferData raises an EReadError exception if ReadBufferData cannot read exactly the specified number of bytes.
+ReadBufferData works using the following algorithms:</p>
+<p>When ReadBufferData does not have the Count parameter, then ReadBufferData tries to read the SizeOf(Buffer) number of bytes, then advances the current position in the stream by the number of bytes transferred. If the number of bytes transferred is not  = SizeOf(Buffer), then ReadBufferData raises an EReadError exception.
+When ReadBufferData has the Count parameter, then ReadBufferData calls ReadData to read the Count bytes. If a reported number of transferred bytes is not equal to Count, then ReadBufferData raises an EReadError exception.
+ReadBufferData calls ReadData to do the actual reading.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Stream.ReadBytes">
+<span class="sig-name descname"><span class="pre">ReadBytes</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.Stream.ReadBytes" title="Link to this definition">¶</a></dt>
+<dd><p>Read content as bytes.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Stream.ReadComponent">
+<span class="sig-name descname"><span class="pre">ReadComponent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Instance</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="delphivcl.Component.html#delphivcl.Component" title="delphivcl.Component"><span class="pre">Component</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="delphivcl.Component.html#delphivcl.Component" title="delphivcl.Component"><span class="pre">Component</span></a></span></span><a class="headerlink" href="#delphivcl.Stream.ReadComponent" title="Link to this definition">¶</a></dt>
+<dd><p>Initiates streaming of components and their properties.
+ReadComponent is called indirectly by the global routine ReadComponentRes, by the ReadComponentRes method, or it can be called directly to initiate component streaming.
+ReadComponent reads data values from the stream and assigns them to Instance’s properties. It then constructs a reader object and calls the reader’s ReadRootComponent method to read the Instance’s property values and construct child objects defined in the stream as children of Instance. ReadComponent returns the component.
+If Instance is nil (Delphi) or NULL (C++), ReadComponent constructs a component based on the type information in the stream and returns the newly-constructed component.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Stream.ReadComponentRes">
+<span class="sig-name descname"><span class="pre">ReadComponentRes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Instance</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="delphivcl.Component.html#delphivcl.Component" title="delphivcl.Component"><span class="pre">Component</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="delphivcl.Component.html#delphivcl.Component" title="delphivcl.Component"><span class="pre">Component</span></a></span></span><a class="headerlink" href="#delphivcl.Stream.ReadComponentRes" title="Link to this definition">¶</a></dt>
+<dd><p>Reads components and their properties from a stream in a resource file format.
+ReadComponentRes is called automatically by the global routine ReadComponentResFile. It can also be called directly if the current position of the stream points to a component written using the WriteComponentRes method.
+ReadComponentResFile creates a file stream object, which then calls its ReadComponentRes method.
+ReadComponentRes first calls the ReadResHeader method to read a resource header from the stream. If the stream does not contain a resource header at the current position, ReadResHeader will raise an EInvalidImage exception. ReadComponentRes then calls ReadComponent to read the properties that must be set on Instance.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Stream.ReadData">
+<span class="sig-name descname"><span class="pre">ReadData</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Buffer</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Pointer</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Count</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#delphivcl.Stream.ReadData" title="Link to this definition">¶</a></dt>
+<dd><p>Methods responsible for reading up to Count but not more than SizeOf(Buffer) bytes from the stream into Buffer.
+ReadData is used in cases, where the number of bytes to read from the stream is not necessarily fixed.
+ReadData works using the following algorithms:</p>
+<p>When ReadData does not have the Count parameter, then ReadData tries to read the SizeOf(Buffer) number of bytes, then advances the current position in the stream by the number of bytes transferred. ReadData returns the number of bytes read.
+When ReadData has the Count parameter, then:
+If Count  &gt; SizeOf(Buffer), then ReadData tries to read the SizeOf(Buffer) number of bytes. ReadData advances the current position in the stream by Count number of bytes. ReadData returns Count.
+If Count  &lt;= SizeOf(Buffer), then ReadData tries to read up to the Count number of bytes from the stream. ReadData advances the current position in the stream by the number of bytes transferred. ReadData returns the number of bytes read.
+ReadData methods call Read to do their actual reading.
+Methods responsible for reading up to Count but not more than SizeOf(Buffer) bytes from the stream into Buffer.
+ReadData is used in cases, where the number of bytes to read from the stream is not necessarily fixed.
+ReadData works using the following algorithms:</p>
+<p>When ReadData does not have the Count parameter, then ReadData tries to read the SizeOf(Buffer) number of bytes, then advances the current position in the stream by the number of bytes transferred. ReadData returns the number of bytes read.
+When ReadData has the Count parameter, then:
+If Count  &gt; SizeOf(Buffer), then ReadData tries to read the SizeOf(Buffer) number of bytes. ReadData advances the current position in the stream by Count number of bytes. ReadData returns Count.
+If Count  &lt;= SizeOf(Buffer), then ReadData tries to read up to the Count number of bytes from the stream. ReadData advances the current position in the stream by the number of bytes transferred. ReadData returns the number of bytes read.
+ReadData methods call Read to do their actual reading.
+Methods responsible for reading up to Count but not more than SizeOf(Buffer) bytes from the stream into Buffer.
+ReadData is used in cases, where the number of bytes to read from the stream is not necessarily fixed.
+ReadData works using the following algorithms:</p>
+<p>When ReadData does not have the Count parameter, then ReadData tries to read the SizeOf(Buffer) number of bytes, then advances the current position in the stream by the number of bytes transferred. ReadData returns the number of bytes read.
+When ReadData has the Count parameter, then:
+If Count  &gt; SizeOf(Buffer), then ReadData tries to read the SizeOf(Buffer) number of bytes. ReadData advances the current position in the stream by Count number of bytes. ReadData returns Count.
+If Count  &lt;= SizeOf(Buffer), then ReadData tries to read up to the Count number of bytes from the stream. ReadData advances the current position in the stream by the number of bytes transferred. ReadData returns the number of bytes read.
+ReadData methods call Read to do their actual reading.
+Methods responsible for reading up to Count but not more than SizeOf(Buffer) bytes from the stream into Buffer.
+ReadData is used in cases, where the number of bytes to read from the stream is not necessarily fixed.
+ReadData works using the following algorithms:</p>
+<p>When ReadData does not have the Count parameter, then ReadData tries to read the SizeOf(Buffer) number of bytes, then advances the current position in the stream by the number of bytes transferred. ReadData returns the number of bytes read.
+When ReadData has the Count parameter, then:
+If Count  &gt; SizeOf(Buffer), then ReadData tries to read the SizeOf(Buffer) number of bytes. ReadData advances the current position in the stream by Count number of bytes. ReadData returns Count.
+If Count  &lt;= SizeOf(Buffer), then ReadData tries to read up to the Count number of bytes from the stream. ReadData advances the current position in the stream by the number of bytes transferred. ReadData returns the number of bytes read.
+ReadData methods call Read to do their actual reading.
+Methods responsible for reading up to Count but not more than SizeOf(Buffer) bytes from the stream into Buffer.
+ReadData is used in cases, where the number of bytes to read from the stream is not necessarily fixed.
+ReadData works using the following algorithms:</p>
+<p>When ReadData does not have the Count parameter, then ReadData tries to read the SizeOf(Buffer) number of bytes, then advances the current position in the stream by the number of bytes transferred. ReadData returns the number of bytes read.
+When ReadData has the Count parameter, then:
+If Count  &gt; SizeOf(Buffer), then ReadData tries to read the SizeOf(Buffer) number of bytes. ReadData advances the current position in the stream by Count number of bytes. ReadData returns Count.
+If Count  &lt;= SizeOf(Buffer), then ReadData tries to read up to the Count number of bytes from the stream. ReadData advances the current position in the stream by the number of bytes transferred. ReadData returns the number of bytes read.
+ReadData methods call Read to do their actual reading.
+Methods responsible for reading up to Count but not more than SizeOf(Buffer) bytes from the stream into Buffer.
+ReadData is used in cases, where the number of bytes to read from the stream is not necessarily fixed.
+ReadData works using the following algorithms:</p>
+<p>When ReadData does not have the Count parameter, then ReadData tries to read the SizeOf(Buffer) number of bytes, then advances the current position in the stream by the number of bytes transferred. ReadData returns the number of bytes read.
+When ReadData has the Count parameter, then:
+If Count  &gt; SizeOf(Buffer), then ReadData tries to read the SizeOf(Buffer) number of bytes. ReadData advances the current position in the stream by Count number of bytes. ReadData returns Count.
+If Count  &lt;= SizeOf(Buffer), then ReadData tries to read up to the Count number of bytes from the stream. ReadData advances the current position in the stream by the number of bytes transferred. ReadData returns the number of bytes read.
+ReadData methods call Read to do their actual reading.
+Methods responsible for reading up to Count but not more than SizeOf(Buffer) bytes from the stream into Buffer.
+ReadData is used in cases, where the number of bytes to read from the stream is not necessarily fixed.
+ReadData works using the following algorithms:</p>
+<p>When ReadData does not have the Count parameter, then ReadData tries to read the SizeOf(Buffer) number of bytes, then advances the current position in the stream by the number of bytes transferred. ReadData returns the number of bytes read.
+When ReadData has the Count parameter, then:
+If Count  &gt; SizeOf(Buffer), then ReadData tries to read the SizeOf(Buffer) number of bytes. ReadData advances the current position in the stream by Count number of bytes. ReadData returns Count.
+If Count  &lt;= SizeOf(Buffer), then ReadData tries to read up to the Count number of bytes from the stream. ReadData advances the current position in the stream by the number of bytes transferred. ReadData returns the number of bytes read.
+ReadData methods call Read to do their actual reading.
+Methods responsible for reading up to Count but not more than SizeOf(Buffer) bytes from the stream into Buffer.
+ReadData is used in cases, where the number of bytes to read from the stream is not necessarily fixed.
+ReadData works using the following algorithms:</p>
+<p>When ReadData does not have the Count parameter, then ReadData tries to read the SizeOf(Buffer) number of bytes, then advances the current position in the stream by the number of bytes transferred. ReadData returns the number of bytes read.
+When ReadData has the Count parameter, then:
+If Count  &gt; SizeOf(Buffer), then ReadData tries to read the SizeOf(Buffer) number of bytes. ReadData advances the current position in the stream by Count number of bytes. ReadData returns Count.
+If Count  &lt;= SizeOf(Buffer), then ReadData tries to read up to the Count number of bytes from the stream. ReadData advances the current position in the stream by the number of bytes transferred. ReadData returns the number of bytes read.
+ReadData methods call Read to do their actual reading.
+Methods responsible for reading up to Count but not more than SizeOf(Buffer) bytes from the stream into Buffer.
+ReadData is used in cases, where the number of bytes to read from the stream is not necessarily fixed.
+ReadData works using the following algorithms:</p>
+<p>When ReadData does not have the Count parameter, then ReadData tries to read the SizeOf(Buffer) number of bytes, then advances the current position in the stream by the number of bytes transferred. ReadData returns the number of bytes read.
+When ReadData has the Count parameter, then:
+If Count  &gt; SizeOf(Buffer), then ReadData tries to read the SizeOf(Buffer) number of bytes. ReadData advances the current position in the stream by Count number of bytes. ReadData returns Count.
+If Count  &lt;= SizeOf(Buffer), then ReadData tries to read up to the Count number of bytes from the stream. ReadData advances the current position in the stream by the number of bytes transferred. ReadData returns the number of bytes read.
+ReadData methods call Read to do their actual reading.
+Methods responsible for reading up to Count but not more than SizeOf(Buffer) bytes from the stream into Buffer.
+ReadData is used in cases, where the number of bytes to read from the stream is not necessarily fixed.
+ReadData works using the following algorithms:</p>
+<p>When ReadData does not have the Count parameter, then ReadData tries to read the SizeOf(Buffer) number of bytes, then advances the current position in the stream by the number of bytes transferred. ReadData returns the number of bytes read.
+When ReadData has the Count parameter, then:
+If Count  &gt; SizeOf(Buffer), then ReadData tries to read the SizeOf(Buffer) number of bytes. ReadData advances the current position in the stream by Count number of bytes. ReadData returns Count.
+If Count  &lt;= SizeOf(Buffer), then ReadData tries to read up to the Count number of bytes from the stream. ReadData advances the current position in the stream by the number of bytes transferred. ReadData returns the number of bytes read.
+ReadData methods call Read to do their actual reading.
+Methods responsible for reading up to Count but not more than SizeOf(Buffer) bytes from the stream into Buffer.
+ReadData is used in cases, where the number of bytes to read from the stream is not necessarily fixed.
+ReadData works using the following algorithms:</p>
+<p>When ReadData does not have the Count parameter, then ReadData tries to read the SizeOf(Buffer) number of bytes, then advances the current position in the stream by the number of bytes transferred. ReadData returns the number of bytes read.
+When ReadData has the Count parameter, then:
+If Count  &gt; SizeOf(Buffer), then ReadData tries to read the SizeOf(Buffer) number of bytes. ReadData advances the current position in the stream by Count number of bytes. ReadData returns Count.
+If Count  &lt;= SizeOf(Buffer), then ReadData tries to read up to the Count number of bytes from the stream. ReadData advances the current position in the stream by the number of bytes transferred. ReadData returns the number of bytes read.
+ReadData methods call Read to do their actual reading.
+Methods responsible for reading up to Count but not more than SizeOf(Buffer) bytes from the stream into Buffer.
+ReadData is used in cases, where the number of bytes to read from the stream is not necessarily fixed.
+ReadData works using the following algorithms:</p>
+<p>When ReadData does not have the Count parameter, then ReadData tries to read the SizeOf(Buffer) number of bytes, then advances the current position in the stream by the number of bytes transferred. ReadData returns the number of bytes read.
+When ReadData has the Count parameter, then:
+If Count  &gt; SizeOf(Buffer), then ReadData tries to read the SizeOf(Buffer) number of bytes. ReadData advances the current position in the stream by Count number of bytes. ReadData returns Count.
+If Count  &lt;= SizeOf(Buffer), then ReadData tries to read up to the Count number of bytes from the stream. ReadData advances the current position in the stream by the number of bytes transferred. ReadData returns the number of bytes read.
+ReadData methods call Read to do their actual reading.
+Methods responsible for reading up to Count but not more than SizeOf(Buffer) bytes from the stream into Buffer.
+ReadData is used in cases, where the number of bytes to read from the stream is not necessarily fixed.
+ReadData works using the following algorithms:</p>
+<p>When ReadData does not have the Count parameter, then ReadData tries to read the SizeOf(Buffer) number of bytes, then advances the current position in the stream by the number of bytes transferred. ReadData returns the number of bytes read.
+When ReadData has the Count parameter, then:
+If Count  &gt; SizeOf(Buffer), then ReadData tries to read the SizeOf(Buffer) number of bytes. ReadData advances the current position in the stream by Count number of bytes. ReadData returns Count.
+If Count  &lt;= SizeOf(Buffer), then ReadData tries to read up to the Count number of bytes from the stream. ReadData advances the current position in the stream by the number of bytes transferred. ReadData returns the number of bytes read.
+ReadData methods call Read to do their actual reading.
+Methods responsible for reading up to Count but not more than SizeOf(Buffer) bytes from the stream into Buffer.
+ReadData is used in cases, where the number of bytes to read from the stream is not necessarily fixed.
+ReadData works using the following algorithms:</p>
+<p>When ReadData does not have the Count parameter, then ReadData tries to read the SizeOf(Buffer) number of bytes, then advances the current position in the stream by the number of bytes transferred. ReadData returns the number of bytes read.
+When ReadData has the Count parameter, then:
+If Count  &gt; SizeOf(Buffer), then ReadData tries to read the SizeOf(Buffer) number of bytes. ReadData advances the current position in the stream by Count number of bytes. ReadData returns Count.
+If Count  &lt;= SizeOf(Buffer), then ReadData tries to read up to the Count number of bytes from the stream. ReadData advances the current position in the stream by the number of bytes transferred. ReadData returns the number of bytes read.
+ReadData methods call Read to do their actual reading.
+Methods responsible for reading up to Count but not more than SizeOf(Buffer) bytes from the stream into Buffer.
+ReadData is used in cases, where the number of bytes to read from the stream is not necessarily fixed.
+ReadData works using the following algorithms:</p>
+<p>When ReadData does not have the Count parameter, then ReadData tries to read the SizeOf(Buffer) number of bytes, then advances the current position in the stream by the number of bytes transferred. ReadData returns the number of bytes read.
+When ReadData has the Count parameter, then:
+If Count  &gt; SizeOf(Buffer), then ReadData tries to read the SizeOf(Buffer) number of bytes. ReadData advances the current position in the stream by Count number of bytes. ReadData returns Count.
+If Count  &lt;= SizeOf(Buffer), then ReadData tries to read up to the Count number of bytes from the stream. ReadData advances the current position in the stream by the number of bytes transferred. ReadData returns the number of bytes read.
+ReadData methods call Read to do their actual reading.
+Methods responsible for reading up to Count but not more than SizeOf(Buffer) bytes from the stream into Buffer.
+ReadData is used in cases, where the number of bytes to read from the stream is not necessarily fixed.
+ReadData works using the following algorithms:</p>
+<p>When ReadData does not have the Count parameter, then ReadData tries to read the SizeOf(Buffer) number of bytes, then advances the current position in the stream by the number of bytes transferred. ReadData returns the number of bytes read.
+When ReadData has the Count parameter, then:
+If Count  &gt; SizeOf(Buffer), then ReadData tries to read the SizeOf(Buffer) number of bytes. ReadData advances the current position in the stream by Count number of bytes. ReadData returns Count.
+If Count  &lt;= SizeOf(Buffer), then ReadData tries to read up to the Count number of bytes from the stream. ReadData advances the current position in the stream by the number of bytes transferred. ReadData returns the number of bytes read.
+ReadData methods call Read to do their actual reading.
+Methods responsible for reading up to Count but not more than SizeOf(Buffer) bytes from the stream into Buffer.
+ReadData is used in cases, where the number of bytes to read from the stream is not necessarily fixed.
+ReadData works using the following algorithms:</p>
+<p>When ReadData does not have the Count parameter, then ReadData tries to read the SizeOf(Buffer) number of bytes, then advances the current position in the stream by the number of bytes transferred. ReadData returns the number of bytes read.
+When ReadData has the Count parameter, then:
+If Count  &gt; SizeOf(Buffer), then ReadData tries to read the SizeOf(Buffer) number of bytes. ReadData advances the current position in the stream by Count number of bytes. ReadData returns Count.
+If Count  &lt;= SizeOf(Buffer), then ReadData tries to read up to the Count number of bytes from the stream. ReadData advances the current position in the stream by the number of bytes transferred. ReadData returns the number of bytes read.
+ReadData methods call Read to do their actual reading.
+Methods responsible for reading up to Count but not more than SizeOf(Buffer) bytes from the stream into Buffer.
+ReadData is used in cases, where the number of bytes to read from the stream is not necessarily fixed.
+ReadData works using the following algorithms:</p>
+<p>When ReadData does not have the Count parameter, then ReadData tries to read the SizeOf(Buffer) number of bytes, then advances the current position in the stream by the number of bytes transferred. ReadData returns the number of bytes read.
+When ReadData has the Count parameter, then:
+If Count  &gt; SizeOf(Buffer), then ReadData tries to read the SizeOf(Buffer) number of bytes. ReadData advances the current position in the stream by Count number of bytes. ReadData returns Count.
+If Count  &lt;= SizeOf(Buffer), then ReadData tries to read up to the Count number of bytes from the stream. ReadData advances the current position in the stream by the number of bytes transferred. ReadData returns the number of bytes read.
+ReadData methods call Read to do their actual reading.
+Methods responsible for reading up to Count but not more than SizeOf(Buffer) bytes from the stream into Buffer.
+ReadData is used in cases, where the number of bytes to read from the stream is not necessarily fixed.
+ReadData works using the following algorithms:</p>
+<p>When ReadData does not have the Count parameter, then ReadData tries to read the SizeOf(Buffer) number of bytes, then advances the current position in the stream by the number of bytes transferred. ReadData returns the number of bytes read.
+When ReadData has the Count parameter, then:
+If Count  &gt; SizeOf(Buffer), then ReadData tries to read the SizeOf(Buffer) number of bytes. ReadData advances the current position in the stream by Count number of bytes. ReadData returns Count.
+If Count  &lt;= SizeOf(Buffer), then ReadData tries to read up to the Count number of bytes from the stream. ReadData advances the current position in the stream by the number of bytes transferred. ReadData returns the number of bytes read.
+ReadData methods call Read to do their actual reading.
+Methods responsible for reading up to Count but not more than SizeOf(Buffer) bytes from the stream into Buffer.
+ReadData is used in cases, where the number of bytes to read from the stream is not necessarily fixed.
+ReadData works using the following algorithms:</p>
+<p>When ReadData does not have the Count parameter, then ReadData tries to read the SizeOf(Buffer) number of bytes, then advances the current position in the stream by the number of bytes transferred. ReadData returns the number of bytes read.
+When ReadData has the Count parameter, then:
+If Count  &gt; SizeOf(Buffer), then ReadData tries to read the SizeOf(Buffer) number of bytes. ReadData advances the current position in the stream by Count number of bytes. ReadData returns Count.
+If Count  &lt;= SizeOf(Buffer), then ReadData tries to read up to the Count number of bytes from the stream. ReadData advances the current position in the stream by the number of bytes transferred. ReadData returns the number of bytes read.
+ReadData methods call Read to do their actual reading.
+Methods responsible for reading up to Count but not more than SizeOf(Buffer) bytes from the stream into Buffer.
+ReadData is used in cases, where the number of bytes to read from the stream is not necessarily fixed.
+ReadData works using the following algorithms:</p>
+<p>When ReadData does not have the Count parameter, then ReadData tries to read the SizeOf(Buffer) number of bytes, then advances the current position in the stream by the number of bytes transferred. ReadData returns the number of bytes read.
+When ReadData has the Count parameter, then:
+If Count  &gt; SizeOf(Buffer), then ReadData tries to read the SizeOf(Buffer) number of bytes. ReadData advances the current position in the stream by Count number of bytes. ReadData returns Count.
+If Count  &lt;= SizeOf(Buffer), then ReadData tries to read up to the Count number of bytes from the stream. ReadData advances the current position in the stream by the number of bytes transferred. ReadData returns the number of bytes read.
+ReadData methods call Read to do their actual reading.
+Methods responsible for reading up to Count but not more than SizeOf(Buffer) bytes from the stream into Buffer.
+ReadData is used in cases, where the number of bytes to read from the stream is not necessarily fixed.
+ReadData works using the following algorithms:</p>
+<p>When ReadData does not have the Count parameter, then ReadData tries to read the SizeOf(Buffer) number of bytes, then advances the current position in the stream by the number of bytes transferred. ReadData returns the number of bytes read.
+When ReadData has the Count parameter, then:
+If Count  &gt; SizeOf(Buffer), then ReadData tries to read the SizeOf(Buffer) number of bytes. ReadData advances the current position in the stream by Count number of bytes. ReadData returns Count.
+If Count  &lt;= SizeOf(Buffer), then ReadData tries to read up to the Count number of bytes from the stream. ReadData advances the current position in the stream by the number of bytes transferred. ReadData returns the number of bytes read.
+ReadData methods call Read to do their actual reading.
+Methods responsible for reading up to Count but not more than SizeOf(Buffer) bytes from the stream into Buffer.
+ReadData is used in cases, where the number of bytes to read from the stream is not necessarily fixed.
+ReadData works using the following algorithms:</p>
+<p>When ReadData does not have the Count parameter, then ReadData tries to read the SizeOf(Buffer) number of bytes, then advances the current position in the stream by the number of bytes transferred. ReadData returns the number of bytes read.
+When ReadData has the Count parameter, then:
+If Count  &gt; SizeOf(Buffer), then ReadData tries to read the SizeOf(Buffer) number of bytes. ReadData advances the current position in the stream by Count number of bytes. ReadData returns Count.
+If Count  &lt;= SizeOf(Buffer), then ReadData tries to read up to the Count number of bytes from the stream. ReadData advances the current position in the stream by the number of bytes transferred. ReadData returns the number of bytes read.
+ReadData methods call Read to do their actual reading.
+Methods responsible for reading up to Count but not more than SizeOf(Buffer) bytes from the stream into Buffer.
+ReadData is used in cases, where the number of bytes to read from the stream is not necessarily fixed.
+ReadData works using the following algorithms:</p>
+<p>When ReadData does not have the Count parameter, then ReadData tries to read the SizeOf(Buffer) number of bytes, then advances the current position in the stream by the number of bytes transferred. ReadData returns the number of bytes read.
+When ReadData has the Count parameter, then:
+If Count  &gt; SizeOf(Buffer), then ReadData tries to read the SizeOf(Buffer) number of bytes. ReadData advances the current position in the stream by Count number of bytes. ReadData returns Count.
+If Count  &lt;= SizeOf(Buffer), then ReadData tries to read up to the Count number of bytes from the stream. ReadData advances the current position in the stream by the number of bytes transferred. ReadData returns the number of bytes read.
+ReadData methods call Read to do their actual reading.
+Methods responsible for reading up to Count but not more than SizeOf(Buffer) bytes from the stream into Buffer.
+ReadData is used in cases, where the number of bytes to read from the stream is not necessarily fixed.
+ReadData works using the following algorithms:</p>
+<p>When ReadData does not have the Count parameter, then ReadData tries to read the SizeOf(Buffer) number of bytes, then advances the current position in the stream by the number of bytes transferred. ReadData returns the number of bytes read.
+When ReadData has the Count parameter, then:
+If Count  &gt; SizeOf(Buffer), then ReadData tries to read the SizeOf(Buffer) number of bytes. ReadData advances the current position in the stream by Count number of bytes. ReadData returns Count.
+If Count  &lt;= SizeOf(Buffer), then ReadData tries to read up to the Count number of bytes from the stream. ReadData advances the current position in the stream by the number of bytes transferred. ReadData returns the number of bytes read.
+ReadData methods call Read to do their actual reading.
+Methods responsible for reading up to Count but not more than SizeOf(Buffer) bytes from the stream into Buffer.
+ReadData is used in cases, where the number of bytes to read from the stream is not necessarily fixed.
+ReadData works using the following algorithms:</p>
+<p>When ReadData does not have the Count parameter, then ReadData tries to read the SizeOf(Buffer) number of bytes, then advances the current position in the stream by the number of bytes transferred. ReadData returns the number of bytes read.
+When ReadData has the Count parameter, then:
+If Count  &gt; SizeOf(Buffer), then ReadData tries to read the SizeOf(Buffer) number of bytes. ReadData advances the current position in the stream by Count number of bytes. ReadData returns Count.
+If Count  &lt;= SizeOf(Buffer), then ReadData tries to read up to the Count number of bytes from the stream. ReadData advances the current position in the stream by the number of bytes transferred. ReadData returns the number of bytes read.
+ReadData methods call Read to do their actual reading.
+Methods responsible for reading up to Count but not more than SizeOf(Buffer) bytes from the stream into Buffer.
+ReadData is used in cases, where the number of bytes to read from the stream is not necessarily fixed.
+ReadData works using the following algorithms:</p>
+<p>When ReadData does not have the Count parameter, then ReadData tries to read the SizeOf(Buffer) number of bytes, then advances the current position in the stream by the number of bytes transferred. ReadData returns the number of bytes read.
+When ReadData has the Count parameter, then:
+If Count  &gt; SizeOf(Buffer), then ReadData tries to read the SizeOf(Buffer) number of bytes. ReadData advances the current position in the stream by Count number of bytes. ReadData returns Count.
+If Count  &lt;= SizeOf(Buffer), then ReadData tries to read up to the Count number of bytes from the stream. ReadData advances the current position in the stream by the number of bytes transferred. ReadData returns the number of bytes read.
+ReadData methods call Read to do their actual reading.
+Methods responsible for reading up to Count but not more than SizeOf(Buffer) bytes from the stream into Buffer.
+ReadData is used in cases, where the number of bytes to read from the stream is not necessarily fixed.
+ReadData works using the following algorithms:</p>
+<p>When ReadData does not have the Count parameter, then ReadData tries to read the SizeOf(Buffer) number of bytes, then advances the current position in the stream by the number of bytes transferred. ReadData returns the number of bytes read.
+When ReadData has the Count parameter, then:
+If Count  &gt; SizeOf(Buffer), then ReadData tries to read the SizeOf(Buffer) number of bytes. ReadData advances the current position in the stream by Count number of bytes. ReadData returns Count.
+If Count  &lt;= SizeOf(Buffer), then ReadData tries to read up to the Count number of bytes from the stream. ReadData advances the current position in the stream by the number of bytes transferred. ReadData returns the number of bytes read.
+ReadData methods call Read to do their actual reading.
+Methods responsible for reading up to Count but not more than SizeOf(Buffer) bytes from the stream into Buffer.
+ReadData is used in cases, where the number of bytes to read from the stream is not necessarily fixed.
+ReadData works using the following algorithms:</p>
+<p>When ReadData does not have the Count parameter, then ReadData tries to read the SizeOf(Buffer) number of bytes, then advances the current position in the stream by the number of bytes transferred. ReadData returns the number of bytes read.
+When ReadData has the Count parameter, then:
+If Count  &gt; SizeOf(Buffer), then ReadData tries to read the SizeOf(Buffer) number of bytes. ReadData advances the current position in the stream by Count number of bytes. ReadData returns Count.
+If Count  &lt;= SizeOf(Buffer), then ReadData tries to read up to the Count number of bytes from the stream. ReadData advances the current position in the stream by the number of bytes transferred. ReadData returns the number of bytes read.
+ReadData methods call Read to do their actual reading.
+Methods responsible for reading up to Count but not more than SizeOf(Buffer) bytes from the stream into Buffer.
+ReadData is used in cases, where the number of bytes to read from the stream is not necessarily fixed.
+ReadData works using the following algorithms:</p>
+<p>When ReadData does not have the Count parameter, then ReadData tries to read the SizeOf(Buffer) number of bytes, then advances the current position in the stream by the number of bytes transferred. ReadData returns the number of bytes read.
+When ReadData has the Count parameter, then:
+If Count  &gt; SizeOf(Buffer), then ReadData tries to read the SizeOf(Buffer) number of bytes. ReadData advances the current position in the stream by Count number of bytes. ReadData returns Count.
+If Count  &lt;= SizeOf(Buffer), then ReadData tries to read up to the Count number of bytes from the stream. ReadData advances the current position in the stream by the number of bytes transferred. ReadData returns the number of bytes read.
+ReadData methods call Read to do their actual reading.
+Methods responsible for reading up to Count but not more than SizeOf(Buffer) bytes from the stream into Buffer.
+ReadData is used in cases, where the number of bytes to read from the stream is not necessarily fixed.
+ReadData works using the following algorithms:</p>
+<p>When ReadData does not have the Count parameter, then ReadData tries to read the SizeOf(Buffer) number of bytes, then advances the current position in the stream by the number of bytes transferred. ReadData returns the number of bytes read.
+When ReadData has the Count parameter, then:
+If Count  &gt; SizeOf(Buffer), then ReadData tries to read the SizeOf(Buffer) number of bytes. ReadData advances the current position in the stream by Count number of bytes. ReadData returns Count.
+If Count  &lt;= SizeOf(Buffer), then ReadData tries to read up to the Count number of bytes from the stream. ReadData advances the current position in the stream by the number of bytes transferred. ReadData returns the number of bytes read.
+ReadData methods call Read to do their actual reading.
+Methods responsible for reading up to Count but not more than SizeOf(Buffer) bytes from the stream into Buffer.
+ReadData is used in cases, where the number of bytes to read from the stream is not necessarily fixed.
+ReadData works using the following algorithms:</p>
+<p>When ReadData does not have the Count parameter, then ReadData tries to read the SizeOf(Buffer) number of bytes, then advances the current position in the stream by the number of bytes transferred. ReadData returns the number of bytes read.
+When ReadData has the Count parameter, then:
+If Count  &gt; SizeOf(Buffer), then ReadData tries to read the SizeOf(Buffer) number of bytes. ReadData advances the current position in the stream by Count number of bytes. ReadData returns Count.
+If Count  &lt;= SizeOf(Buffer), then ReadData tries to read up to the Count number of bytes from the stream. ReadData advances the current position in the stream by the number of bytes transferred. ReadData returns the number of bytes read.
+ReadData methods call Read to do their actual reading.
+Methods responsible for reading up to Count but not more than SizeOf(Buffer) bytes from the stream into Buffer.
+ReadData is used in cases, where the number of bytes to read from the stream is not necessarily fixed.
+ReadData works using the following algorithms:</p>
+<p>When ReadData does not have the Count parameter, then ReadData tries to read the SizeOf(Buffer) number of bytes, then advances the current position in the stream by the number of bytes transferred. ReadData returns the number of bytes read.
+When ReadData has the Count parameter, then:
+If Count  &gt; SizeOf(Buffer), then ReadData tries to read the SizeOf(Buffer) number of bytes. ReadData advances the current position in the stream by Count number of bytes. ReadData returns Count.
+If Count  &lt;= SizeOf(Buffer), then ReadData tries to read up to the Count number of bytes from the stream. ReadData advances the current position in the stream by the number of bytes transferred. ReadData returns the number of bytes read.
+ReadData methods call Read to do their actual reading.
+Methods responsible for reading up to Count but not more than SizeOf(Buffer) bytes from the stream into Buffer.
+ReadData is used in cases, where the number of bytes to read from the stream is not necessarily fixed.
+ReadData works using the following algorithms:</p>
+<p>When ReadData does not have the Count parameter, then ReadData tries to read the SizeOf(Buffer) number of bytes, then advances the current position in the stream by the number of bytes transferred. ReadData returns the number of bytes read.
+When ReadData has the Count parameter, then:
+If Count  &gt; SizeOf(Buffer), then ReadData tries to read the SizeOf(Buffer) number of bytes. ReadData advances the current position in the stream by Count number of bytes. ReadData returns Count.
+If Count  &lt;= SizeOf(Buffer), then ReadData tries to read up to the Count number of bytes from the stream. ReadData advances the current position in the stream by the number of bytes transferred. ReadData returns the number of bytes read.
+ReadData methods call Read to do their actual reading.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Stream.ReadFloat">
+<span class="sig-name descname"><span class="pre">ReadFloat</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.Stream.ReadFloat" title="Link to this definition">¶</a></dt>
+<dd><p>Read content as float.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Stream.ReadInt">
+<span class="sig-name descname"><span class="pre">ReadInt</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.Stream.ReadInt" title="Link to this definition">¶</a></dt>
+<dd><p>Read content as integer.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Stream.ReadResHeader">
+<span class="sig-name descname"><span class="pre">ReadResHeader</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.Stream.ReadResHeader" title="Link to this definition">¶</a></dt>
+<dd><p>Reads a resource-file header from the stream.
+Do not call ReadResHeader directly. It is called automatically by ReadComponentRes before reading a component from a resource file.
+After reading the resource-file header, ReadResHeader moves the current position of the stream to just beyond the header. If the stream does not contain a valid resource-file header, ReadResHeader raises an EInvalidImage exception.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Stream.ReadString">
+<span class="sig-name descname"><span class="pre">ReadString</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.Stream.ReadString" title="Link to this definition">¶</a></dt>
+<dd><p>Read content as string.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Stream.Seek">
+<span class="sig-name descname"><span class="pre">Seek</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Offset</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Origin</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#delphivcl.Stream.Seek" title="Link to this definition">¶</a></dt>
+<dd><p>Moves to a specified position in the streamed resource.
+Call Seek to move the current position of the stream in its particular storage medium (such as memory or a disk file).
+The Origin parameter indicates how to interpret the Offset parameter. Origin should be one of the following values:</p>
+<p>Value</p>
+<p>Meaning</p>
+<p>soBeginning</p>
+<p>Offset is from the beginning of the resource. Seek moves to the position Offset. Offset must be &gt;= 0.</p>
+<p>soCurrent</p>
+<p>Offset is from the current position in the resource. Seek moves to Position + Offset.</p>
+<p>soEnd</p>
+<p>Offset is from the end of the resource. Offset must be &lt;= 0 to indicate a number of bytes before the end of the file.</p>
+<p>Seek returns the new value of the Position property.
+Seek is called by the Position and Size properties.</p>
+<p>Note: As implemented in TStream, the two versions (the 32-bit or 64-bit syntax) call each other. Descendent stream classes must override at least one of these versions, and the override must not call the inherited default implementation.
+Moves to a specified position in the streamed resource.
+Call Seek to move the current position of the stream in its particular storage medium (such as memory or a disk file).
+The Origin parameter indicates how to interpret the Offset parameter. Origin should be one of the following values:</p>
+<p>Value</p>
+<p>Meaning</p>
+<p>soBeginning</p>
+<p>Offset is from the beginning of the resource. Seek moves to the position Offset. Offset must be &gt;= 0.</p>
+<p>soCurrent</p>
+<p>Offset is from the current position in the resource. Seek moves to Position + Offset.</p>
+<p>soEnd</p>
+<p>Offset is from the end of the resource. Offset must be &lt;= 0 to indicate a number of bytes before the end of the file.</p>
+<p>Seek returns the new value of the Position property.
+Seek is called by the Position and Size properties.</p>
+<p>Note: As implemented in TStream, the two versions (the 32-bit or 64-bit syntax) call each other. Descendent stream classes must override at least one of these versions, and the override must not call the inherited default implementation.
+Moves to a specified position in the streamed resource.
+Call Seek to move the current position of the stream in its particular storage medium (such as memory or a disk file).
+The Origin parameter indicates how to interpret the Offset parameter. Origin should be one of the following values:</p>
+<p>Value</p>
+<p>Meaning</p>
+<p>soBeginning</p>
+<p>Offset is from the beginning of the resource. Seek moves to the position Offset. Offset must be &gt;= 0.</p>
+<p>soCurrent</p>
+<p>Offset is from the current position in the resource. Seek moves to Position + Offset.</p>
+<p>soEnd</p>
+<p>Offset is from the end of the resource. Offset must be &lt;= 0 to indicate a number of bytes before the end of the file.</p>
+<p>Seek returns the new value of the Position property.
+Seek is called by the Position and Size properties.</p>
+<p>Note: As implemented in TStream, the two versions (the 32-bit or 64-bit syntax) call each other. Descendent stream classes must override at least one of these versions, and the override must not call the inherited default implementation.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Stream.Seek32">
+<span class="sig-name descname"><span class="pre">Seek32</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Offset</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Origin</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SeekOrigin</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#delphivcl.Stream.Seek32" title="Link to this definition">¶</a></dt>
+<dd><p>Embarcadero Technologies does not currently have any additional information.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.Stream.Size">
+<span class="sig-name descname"><span class="pre">Size</span></span><a class="headerlink" href="#delphivcl.Stream.Size" title="Link to this definition">¶</a></dt>
+<dd><p>Indicates the size in bytes of the stream.
+Use Size to find the size of the stream. Size is used internally in routines that read and write to and from the stream. Setting the Size property of TStream does nothing. However, descendants of TStream can override this property to allow applications to change the size of the resource accessed using the stream.
+The Size property typically indicates the size of the stream in bytes.  But  a descendent of TStream can use -1 to indicate an unknown size.  When the size is unknown, use the return value from TStream.Read to determine end of the stream.</p>
+<p>Example of Stream Size using DataSnap and DBX
+When you are reading a DataSnap stream in blocks, the actual TStream descendant that is used to read the stream is  TDBXStreamReaderStream.  TDBXStreamReaderStream overrides methods of TStream such as the method System.Classes.TStream.GetSize, which is the reader for the property Size.
+DBX connections support reading streams in block. The default block size is 32K. Streams can be passed from the client to the server, or from the server to the client. When the receiver is reading the stream (whether the receiver is the client or the server), the stream is passed from the sender to the receiver in blocks. When the stream is large enough to require multiple block readings, the Size property of the receiver’s stream will be -1, which indicates that the size of the stream is unknown. As the receiver reads the stream, DataSnap makes a request to the sender for the next block, as needed. To read the stream, the client calls the Read() method until the return value is less than the value requested.
+The following code shows how to read a stream to the end, by checking the return value from Read():</p>
+<dl>
+<dt>var</dt><dd><p>LBuffer: TArray&lt;Byte&gt;;
+LReadCount: Integer;</p>
+</dd>
+<dt>begin</dt><dd><p>SetLength(LBuffer, 1024*10); // 10K buffer for this example.  The buffer size can be larger or smaller.
+repeat</p>
+<blockquote>
+<div><p>LReadCount := AStream.Read(LBuffer[0], Length(LBuffer));
+if LReadCount &gt; 0 then
+begin</p>
+<blockquote>
+<div><p>// Process buffer</p>
+</div></blockquote>
+<p>end;</p>
+</div></blockquote>
+<p>until LReadCount &lt; Length(LBuffer);</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Stream.Write">
+<span class="sig-name descname"><span class="pre">Write</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Buffer</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Count</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#delphivcl.Stream.Write" title="Link to this definition">¶</a></dt>
+<dd><p>Methods responsible for writing up to Count bytes from Buffer to the stream.
+Write attempts to write up to Count bytes from the Buffer to the current position in the stream, and returns the number of bytes written.
+After writing to the stream, Write advances the current position by the number of bytes written.
+Offset specifies a zero-based position in Buffer of the first byte to write.
+All other data-writing methods of a stream (WriteBuffer, WriteData) call Write to do their actual writing.
+Each descendent stream object defines a Write method that writes data to its particular storage medium (such as memory or a disk file).
+Methods responsible for writing up to Count bytes from Buffer to the stream.
+Write attempts to write up to Count bytes from the Buffer to the current position in the stream, and returns the number of bytes written.
+After writing to the stream, Write advances the current position by the number of bytes written.
+Offset specifies a zero-based position in Buffer of the first byte to write.
+All other data-writing methods of a stream (WriteBuffer, WriteData) call Write to do their actual writing.
+Each descendent stream object defines a Write method that writes data to its particular storage medium (such as memory or a disk file).
+Methods responsible for writing up to Count bytes from Buffer to the stream.
+Write attempts to write up to Count bytes from the Buffer to the current position in the stream, and returns the number of bytes written.
+After writing to the stream, Write advances the current position by the number of bytes written.
+Offset specifies a zero-based position in Buffer of the first byte to write.
+All other data-writing methods of a stream (WriteBuffer, WriteData) call Write to do their actual writing.
+Each descendent stream object defines a Write method that writes data to its particular storage medium (such as memory or a disk file).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Stream.Write64">
+<span class="sig-name descname"><span class="pre">Write64</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Buffer</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Offset</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Count</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#delphivcl.Stream.Write64" title="Link to this definition">¶</a></dt>
+<dd><p>Embarcadero Technologies does not currently have any additional information.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Stream.WriteBuffer">
+<span class="sig-name descname"><span class="pre">WriteBuffer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Buffer</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Count</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#delphivcl.Stream.WriteBuffer" title="Link to this definition">¶</a></dt>
+<dd><p>Writes Count bytes from Buffer onto the stream.
+WriteBuffer attempts to write Count  bytes from the Buffer to the current position in the stream, then WriteBuffer advances the current position by Count. If the stream fails to write all the requested bytes, an EWriteError exception is raised.
+Offset specifies a zero-based position in Buffer of the first byte to write.
+Use WriteBuffer to save data to a stream. WriteBuffer is used in cases, where the number of bytes to write is known and required, for example when writing in structures. Use WriteBuffer for standard file I/O streaming.
+WriteBuffer is used internally for writing to a stream. It is used by other objects, such as strings and lists, for writing strings stored in a buffer.
+WriteBuffer calls Write to handle the actual writing.
+Writes Count bytes from Buffer onto the stream.
+WriteBuffer attempts to write Count  bytes from the Buffer to the current position in the stream, then WriteBuffer advances the current position by Count. If the stream fails to write all the requested bytes, an EWriteError exception is raised.
+Offset specifies a zero-based position in Buffer of the first byte to write.
+Use WriteBuffer to save data to a stream. WriteBuffer is used in cases, where the number of bytes to write is known and required, for example when writing in structures. Use WriteBuffer for standard file I/O streaming.
+WriteBuffer is used internally for writing to a stream. It is used by other objects, such as strings and lists, for writing strings stored in a buffer.
+WriteBuffer calls Write to handle the actual writing.
+Writes Count bytes from Buffer onto the stream.
+WriteBuffer attempts to write Count  bytes from the Buffer to the current position in the stream, then WriteBuffer advances the current position by Count. If the stream fails to write all the requested bytes, an EWriteError exception is raised.
+Offset specifies a zero-based position in Buffer of the first byte to write.
+Use WriteBuffer to save data to a stream. WriteBuffer is used in cases, where the number of bytes to write is known and required, for example when writing in structures. Use WriteBuffer for standard file I/O streaming.
+WriteBuffer is used internally for writing to a stream. It is used by other objects, such as strings and lists, for writing strings stored in a buffer.
+WriteBuffer calls Write to handle the actual writing.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Stream.WriteBufferData">
+<span class="sig-name descname"><span class="pre">WriteBufferData</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Buffer</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Count</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#delphivcl.Stream.WriteBufferData" title="Link to this definition">¶</a></dt>
+<dd><p>Writes up to 4 four or Count bytes from Buffer onto the stream.
+WriteBufferData works using the following algorithms:</p>
+<p>If Count  &lt;= 4, then WriteBufferData tries to write up to Count bytes to the stream starting at the current position and advances the current position in the stream by the number of bytes transferred.
+If Count  &gt; 4, then WriteBufferData tries to write up to 4 four bytes to the stream, starting at the current position, and then advances the current position in the stream until Count number of bytes from the initial position that was before the starting of WriteBufferData execution.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Stream.WriteBytes">
+<span class="sig-name descname"><span class="pre">WriteBytes</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.Stream.WriteBytes" title="Link to this definition">¶</a></dt>
+<dd><p>Write content as bytes.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Stream.WriteComponent">
+<span class="sig-name descname"><span class="pre">WriteComponent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Instance</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="delphivcl.Component.html#delphivcl.Component" title="delphivcl.Component"><span class="pre">Component</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#delphivcl.Stream.WriteComponent" title="Link to this definition">¶</a></dt>
+<dd><p>Initiates the writing of components and their properties to a stream.
+WriteComponent is used internally in the component streaming system, but can also be called directly when writing components to memory streams or database blobs.
+WriteComponent constructs a writer object and calls its WriteRootComponent method to write the component specified by Instance, and its owned objects, to the stream.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Stream.WriteComponentRes">
+<span class="sig-name descname"><span class="pre">WriteComponentRes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ResName</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Instance</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="delphivcl.Component.html#delphivcl.Component" title="delphivcl.Component"><span class="pre">Component</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#delphivcl.Stream.WriteComponentRes" title="Link to this definition">¶</a></dt>
+<dd><p>Writes components and their properties to a stream from a resource file format.
+WriteComponentRes is used internally in the streaming system, but can also be called directly when sending data to other applications on disk. WriteComponentRes is used for streaming components that need data, such as a bitmap or icon to be stored in a resource-file format.
+WriteComponentRes calls WriteDescendentRes, passing in nil (Delphi) or NULL (C++) as the Ancestor. Therefore, WriteDescendentRes initiates the remainder of the streaming process for a component that, in this case, is not a descendant.
+To read a component written with WriteComponentRes, call the ReadComponentRes method.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Stream.WriteData">
+<span class="sig-name descname"><span class="pre">WriteData</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Buffer</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Count</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#delphivcl.Stream.WriteData" title="Link to this definition">¶</a></dt>
+<dd><p>Methods responsible for writing up to Count bytes from Buffer to the stream.
+WriteData is used in cases, where the number of bytes to write to the stream is not necessarily fixed.
+WriteData works using the following algorithms:</p>
+<p>When WriteData does not have the Count parameter, then WriteData tries to write the SizeOf(Buffer) number of bytes. WriteData advances the current position in the stream by the number of bytes transferred. WriteData returns the number of bytes written.
+When WriteData has the Count parameter, then:
+If Count  &gt; SizeOf(Buffer), then WriteData tries to write the SizeOf(Buffer) number of bytes. WriteData advances the current position in the stream by the Count number of bytes.
+If Count  &lt;= SizeOf(Buffer), then WriteData tries to write up to the Count number of bytes to the stream and then advances the current position in the stream by the number of bytes transferred. WriteData returns the number of bytes written, which may be less than Count.
+WriteData methods call Write to do their actual writing.
+Methods responsible for writing up to Count bytes from Buffer to the stream.
+WriteData is used in cases, where the number of bytes to write to the stream is not necessarily fixed.
+WriteData works using the following algorithms:</p>
+<p>When WriteData does not have the Count parameter, then WriteData tries to write the SizeOf(Buffer) number of bytes. WriteData advances the current position in the stream by the number of bytes transferred. WriteData returns the number of bytes written.
+When WriteData has the Count parameter, then:
+If Count  &gt; SizeOf(Buffer), then WriteData tries to write the SizeOf(Buffer) number of bytes. WriteData advances the current position in the stream by the Count number of bytes.
+If Count  &lt;= SizeOf(Buffer), then WriteData tries to write up to the Count number of bytes to the stream and then advances the current position in the stream by the number of bytes transferred. WriteData returns the number of bytes written, which may be less than Count.
+WriteData methods call Write to do their actual writing.
+Methods responsible for writing up to Count bytes from Buffer to the stream.
+WriteData is used in cases, where the number of bytes to write to the stream is not necessarily fixed.
+WriteData works using the following algorithms:</p>
+<p>When WriteData does not have the Count parameter, then WriteData tries to write the SizeOf(Buffer) number of bytes. WriteData advances the current position in the stream by the number of bytes transferred. WriteData returns the number of bytes written.
+When WriteData has the Count parameter, then:
+If Count  &gt; SizeOf(Buffer), then WriteData tries to write the SizeOf(Buffer) number of bytes. WriteData advances the current position in the stream by the Count number of bytes.
+If Count  &lt;= SizeOf(Buffer), then WriteData tries to write up to the Count number of bytes to the stream and then advances the current position in the stream by the number of bytes transferred. WriteData returns the number of bytes written, which may be less than Count.
+WriteData methods call Write to do their actual writing.
+Methods responsible for writing up to Count bytes from Buffer to the stream.
+WriteData is used in cases, where the number of bytes to write to the stream is not necessarily fixed.
+WriteData works using the following algorithms:</p>
+<p>When WriteData does not have the Count parameter, then WriteData tries to write the SizeOf(Buffer) number of bytes. WriteData advances the current position in the stream by the number of bytes transferred. WriteData returns the number of bytes written.
+When WriteData has the Count parameter, then:
+If Count  &gt; SizeOf(Buffer), then WriteData tries to write the SizeOf(Buffer) number of bytes. WriteData advances the current position in the stream by the Count number of bytes.
+If Count  &lt;= SizeOf(Buffer), then WriteData tries to write up to the Count number of bytes to the stream and then advances the current position in the stream by the number of bytes transferred. WriteData returns the number of bytes written, which may be less than Count.
+WriteData methods call Write to do their actual writing.
+Methods responsible for writing up to Count bytes from Buffer to the stream.
+WriteData is used in cases, where the number of bytes to write to the stream is not necessarily fixed.
+WriteData works using the following algorithms:</p>
+<p>When WriteData does not have the Count parameter, then WriteData tries to write the SizeOf(Buffer) number of bytes. WriteData advances the current position in the stream by the number of bytes transferred. WriteData returns the number of bytes written.
+When WriteData has the Count parameter, then:
+If Count  &gt; SizeOf(Buffer), then WriteData tries to write the SizeOf(Buffer) number of bytes. WriteData advances the current position in the stream by the Count number of bytes.
+If Count  &lt;= SizeOf(Buffer), then WriteData tries to write up to the Count number of bytes to the stream and then advances the current position in the stream by the number of bytes transferred. WriteData returns the number of bytes written, which may be less than Count.
+WriteData methods call Write to do their actual writing.
+Methods responsible for writing up to Count bytes from Buffer to the stream.
+WriteData is used in cases, where the number of bytes to write to the stream is not necessarily fixed.
+WriteData works using the following algorithms:</p>
+<p>When WriteData does not have the Count parameter, then WriteData tries to write the SizeOf(Buffer) number of bytes. WriteData advances the current position in the stream by the number of bytes transferred. WriteData returns the number of bytes written.
+When WriteData has the Count parameter, then:
+If Count  &gt; SizeOf(Buffer), then WriteData tries to write the SizeOf(Buffer) number of bytes. WriteData advances the current position in the stream by the Count number of bytes.
+If Count  &lt;= SizeOf(Buffer), then WriteData tries to write up to the Count number of bytes to the stream and then advances the current position in the stream by the number of bytes transferred. WriteData returns the number of bytes written, which may be less than Count.
+WriteData methods call Write to do their actual writing.
+Methods responsible for writing up to Count bytes from Buffer to the stream.
+WriteData is used in cases, where the number of bytes to write to the stream is not necessarily fixed.
+WriteData works using the following algorithms:</p>
+<p>When WriteData does not have the Count parameter, then WriteData tries to write the SizeOf(Buffer) number of bytes. WriteData advances the current position in the stream by the number of bytes transferred. WriteData returns the number of bytes written.
+When WriteData has the Count parameter, then:
+If Count  &gt; SizeOf(Buffer), then WriteData tries to write the SizeOf(Buffer) number of bytes. WriteData advances the current position in the stream by the Count number of bytes.
+If Count  &lt;= SizeOf(Buffer), then WriteData tries to write up to the Count number of bytes to the stream and then advances the current position in the stream by the number of bytes transferred. WriteData returns the number of bytes written, which may be less than Count.
+WriteData methods call Write to do their actual writing.
+Methods responsible for writing up to Count bytes from Buffer to the stream.
+WriteData is used in cases, where the number of bytes to write to the stream is not necessarily fixed.
+WriteData works using the following algorithms:</p>
+<p>When WriteData does not have the Count parameter, then WriteData tries to write the SizeOf(Buffer) number of bytes. WriteData advances the current position in the stream by the number of bytes transferred. WriteData returns the number of bytes written.
+When WriteData has the Count parameter, then:
+If Count  &gt; SizeOf(Buffer), then WriteData tries to write the SizeOf(Buffer) number of bytes. WriteData advances the current position in the stream by the Count number of bytes.
+If Count  &lt;= SizeOf(Buffer), then WriteData tries to write up to the Count number of bytes to the stream and then advances the current position in the stream by the number of bytes transferred. WriteData returns the number of bytes written, which may be less than Count.
+WriteData methods call Write to do their actual writing.
+Methods responsible for writing up to Count bytes from Buffer to the stream.
+WriteData is used in cases, where the number of bytes to write to the stream is not necessarily fixed.
+WriteData works using the following algorithms:</p>
+<p>When WriteData does not have the Count parameter, then WriteData tries to write the SizeOf(Buffer) number of bytes. WriteData advances the current position in the stream by the number of bytes transferred. WriteData returns the number of bytes written.
+When WriteData has the Count parameter, then:
+If Count  &gt; SizeOf(Buffer), then WriteData tries to write the SizeOf(Buffer) number of bytes. WriteData advances the current position in the stream by the Count number of bytes.
+If Count  &lt;= SizeOf(Buffer), then WriteData tries to write up to the Count number of bytes to the stream and then advances the current position in the stream by the number of bytes transferred. WriteData returns the number of bytes written, which may be less than Count.
+WriteData methods call Write to do their actual writing.
+Methods responsible for writing up to Count bytes from Buffer to the stream.
+WriteData is used in cases, where the number of bytes to write to the stream is not necessarily fixed.
+WriteData works using the following algorithms:</p>
+<p>When WriteData does not have the Count parameter, then WriteData tries to write the SizeOf(Buffer) number of bytes. WriteData advances the current position in the stream by the number of bytes transferred. WriteData returns the number of bytes written.
+When WriteData has the Count parameter, then:
+If Count  &gt; SizeOf(Buffer), then WriteData tries to write the SizeOf(Buffer) number of bytes. WriteData advances the current position in the stream by the Count number of bytes.
+If Count  &lt;= SizeOf(Buffer), then WriteData tries to write up to the Count number of bytes to the stream and then advances the current position in the stream by the number of bytes transferred. WriteData returns the number of bytes written, which may be less than Count.
+WriteData methods call Write to do their actual writing.
+Methods responsible for writing up to Count bytes from Buffer to the stream.
+WriteData is used in cases, where the number of bytes to write to the stream is not necessarily fixed.
+WriteData works using the following algorithms:</p>
+<p>When WriteData does not have the Count parameter, then WriteData tries to write the SizeOf(Buffer) number of bytes. WriteData advances the current position in the stream by the number of bytes transferred. WriteData returns the number of bytes written.
+When WriteData has the Count parameter, then:
+If Count  &gt; SizeOf(Buffer), then WriteData tries to write the SizeOf(Buffer) number of bytes. WriteData advances the current position in the stream by the Count number of bytes.
+If Count  &lt;= SizeOf(Buffer), then WriteData tries to write up to the Count number of bytes to the stream and then advances the current position in the stream by the number of bytes transferred. WriteData returns the number of bytes written, which may be less than Count.
+WriteData methods call Write to do their actual writing.
+Methods responsible for writing up to Count bytes from Buffer to the stream.
+WriteData is used in cases, where the number of bytes to write to the stream is not necessarily fixed.
+WriteData works using the following algorithms:</p>
+<p>When WriteData does not have the Count parameter, then WriteData tries to write the SizeOf(Buffer) number of bytes. WriteData advances the current position in the stream by the number of bytes transferred. WriteData returns the number of bytes written.
+When WriteData has the Count parameter, then:
+If Count  &gt; SizeOf(Buffer), then WriteData tries to write the SizeOf(Buffer) number of bytes. WriteData advances the current position in the stream by the Count number of bytes.
+If Count  &lt;= SizeOf(Buffer), then WriteData tries to write up to the Count number of bytes to the stream and then advances the current position in the stream by the number of bytes transferred. WriteData returns the number of bytes written, which may be less than Count.
+WriteData methods call Write to do their actual writing.
+Methods responsible for writing up to Count bytes from Buffer to the stream.
+WriteData is used in cases, where the number of bytes to write to the stream is not necessarily fixed.
+WriteData works using the following algorithms:</p>
+<p>When WriteData does not have the Count parameter, then WriteData tries to write the SizeOf(Buffer) number of bytes. WriteData advances the current position in the stream by the number of bytes transferred. WriteData returns the number of bytes written.
+When WriteData has the Count parameter, then:
+If Count  &gt; SizeOf(Buffer), then WriteData tries to write the SizeOf(Buffer) number of bytes. WriteData advances the current position in the stream by the Count number of bytes.
+If Count  &lt;= SizeOf(Buffer), then WriteData tries to write up to the Count number of bytes to the stream and then advances the current position in the stream by the number of bytes transferred. WriteData returns the number of bytes written, which may be less than Count.
+WriteData methods call Write to do their actual writing.
+Methods responsible for writing up to Count bytes from Buffer to the stream.
+WriteData is used in cases, where the number of bytes to write to the stream is not necessarily fixed.
+WriteData works using the following algorithms:</p>
+<p>When WriteData does not have the Count parameter, then WriteData tries to write the SizeOf(Buffer) number of bytes. WriteData advances the current position in the stream by the number of bytes transferred. WriteData returns the number of bytes written.
+When WriteData has the Count parameter, then:
+If Count  &gt; SizeOf(Buffer), then WriteData tries to write the SizeOf(Buffer) number of bytes. WriteData advances the current position in the stream by the Count number of bytes.
+If Count  &lt;= SizeOf(Buffer), then WriteData tries to write up to the Count number of bytes to the stream and then advances the current position in the stream by the number of bytes transferred. WriteData returns the number of bytes written, which may be less than Count.
+WriteData methods call Write to do their actual writing.
+Methods responsible for writing up to Count bytes from Buffer to the stream.
+WriteData is used in cases, where the number of bytes to write to the stream is not necessarily fixed.
+WriteData works using the following algorithms:</p>
+<p>When WriteData does not have the Count parameter, then WriteData tries to write the SizeOf(Buffer) number of bytes. WriteData advances the current position in the stream by the number of bytes transferred. WriteData returns the number of bytes written.
+When WriteData has the Count parameter, then:
+If Count  &gt; SizeOf(Buffer), then WriteData tries to write the SizeOf(Buffer) number of bytes. WriteData advances the current position in the stream by the Count number of bytes.
+If Count  &lt;= SizeOf(Buffer), then WriteData tries to write up to the Count number of bytes to the stream and then advances the current position in the stream by the number of bytes transferred. WriteData returns the number of bytes written, which may be less than Count.
+WriteData methods call Write to do their actual writing.
+Methods responsible for writing up to Count bytes from Buffer to the stream.
+WriteData is used in cases, where the number of bytes to write to the stream is not necessarily fixed.
+WriteData works using the following algorithms:</p>
+<p>When WriteData does not have the Count parameter, then WriteData tries to write the SizeOf(Buffer) number of bytes. WriteData advances the current position in the stream by the number of bytes transferred. WriteData returns the number of bytes written.
+When WriteData has the Count parameter, then:
+If Count  &gt; SizeOf(Buffer), then WriteData tries to write the SizeOf(Buffer) number of bytes. WriteData advances the current position in the stream by the Count number of bytes.
+If Count  &lt;= SizeOf(Buffer), then WriteData tries to write up to the Count number of bytes to the stream and then advances the current position in the stream by the number of bytes transferred. WriteData returns the number of bytes written, which may be less than Count.
+WriteData methods call Write to do their actual writing.
+Methods responsible for writing up to Count bytes from Buffer to the stream.
+WriteData is used in cases, where the number of bytes to write to the stream is not necessarily fixed.
+WriteData works using the following algorithms:</p>
+<p>When WriteData does not have the Count parameter, then WriteData tries to write the SizeOf(Buffer) number of bytes. WriteData advances the current position in the stream by the number of bytes transferred. WriteData returns the number of bytes written.
+When WriteData has the Count parameter, then:
+If Count  &gt; SizeOf(Buffer), then WriteData tries to write the SizeOf(Buffer) number of bytes. WriteData advances the current position in the stream by the Count number of bytes.
+If Count  &lt;= SizeOf(Buffer), then WriteData tries to write up to the Count number of bytes to the stream and then advances the current position in the stream by the number of bytes transferred. WriteData returns the number of bytes written, which may be less than Count.
+WriteData methods call Write to do their actual writing.
+Methods responsible for writing up to Count bytes from Buffer to the stream.
+WriteData is used in cases, where the number of bytes to write to the stream is not necessarily fixed.
+WriteData works using the following algorithms:</p>
+<p>When WriteData does not have the Count parameter, then WriteData tries to write the SizeOf(Buffer) number of bytes. WriteData advances the current position in the stream by the number of bytes transferred. WriteData returns the number of bytes written.
+When WriteData has the Count parameter, then:
+If Count  &gt; SizeOf(Buffer), then WriteData tries to write the SizeOf(Buffer) number of bytes. WriteData advances the current position in the stream by the Count number of bytes.
+If Count  &lt;= SizeOf(Buffer), then WriteData tries to write up to the Count number of bytes to the stream and then advances the current position in the stream by the number of bytes transferred. WriteData returns the number of bytes written, which may be less than Count.
+WriteData methods call Write to do their actual writing.
+Methods responsible for writing up to Count bytes from Buffer to the stream.
+WriteData is used in cases, where the number of bytes to write to the stream is not necessarily fixed.
+WriteData works using the following algorithms:</p>
+<p>When WriteData does not have the Count parameter, then WriteData tries to write the SizeOf(Buffer) number of bytes. WriteData advances the current position in the stream by the number of bytes transferred. WriteData returns the number of bytes written.
+When WriteData has the Count parameter, then:
+If Count  &gt; SizeOf(Buffer), then WriteData tries to write the SizeOf(Buffer) number of bytes. WriteData advances the current position in the stream by the Count number of bytes.
+If Count  &lt;= SizeOf(Buffer), then WriteData tries to write up to the Count number of bytes to the stream and then advances the current position in the stream by the number of bytes transferred. WriteData returns the number of bytes written, which may be less than Count.
+WriteData methods call Write to do their actual writing.
+Methods responsible for writing up to Count bytes from Buffer to the stream.
+WriteData is used in cases, where the number of bytes to write to the stream is not necessarily fixed.
+WriteData works using the following algorithms:</p>
+<p>When WriteData does not have the Count parameter, then WriteData tries to write the SizeOf(Buffer) number of bytes. WriteData advances the current position in the stream by the number of bytes transferred. WriteData returns the number of bytes written.
+When WriteData has the Count parameter, then:
+If Count  &gt; SizeOf(Buffer), then WriteData tries to write the SizeOf(Buffer) number of bytes. WriteData advances the current position in the stream by the Count number of bytes.
+If Count  &lt;= SizeOf(Buffer), then WriteData tries to write up to the Count number of bytes to the stream and then advances the current position in the stream by the number of bytes transferred. WriteData returns the number of bytes written, which may be less than Count.
+WriteData methods call Write to do their actual writing.
+Methods responsible for writing up to Count bytes from Buffer to the stream.
+WriteData is used in cases, where the number of bytes to write to the stream is not necessarily fixed.
+WriteData works using the following algorithms:</p>
+<p>When WriteData does not have the Count parameter, then WriteData tries to write the SizeOf(Buffer) number of bytes. WriteData advances the current position in the stream by the number of bytes transferred. WriteData returns the number of bytes written.
+When WriteData has the Count parameter, then:
+If Count  &gt; SizeOf(Buffer), then WriteData tries to write the SizeOf(Buffer) number of bytes. WriteData advances the current position in the stream by the Count number of bytes.
+If Count  &lt;= SizeOf(Buffer), then WriteData tries to write up to the Count number of bytes to the stream and then advances the current position in the stream by the number of bytes transferred. WriteData returns the number of bytes written, which may be less than Count.
+WriteData methods call Write to do their actual writing.
+Methods responsible for writing up to Count bytes from Buffer to the stream.
+WriteData is used in cases, where the number of bytes to write to the stream is not necessarily fixed.
+WriteData works using the following algorithms:</p>
+<p>When WriteData does not have the Count parameter, then WriteData tries to write the SizeOf(Buffer) number of bytes. WriteData advances the current position in the stream by the number of bytes transferred. WriteData returns the number of bytes written.
+When WriteData has the Count parameter, then:
+If Count  &gt; SizeOf(Buffer), then WriteData tries to write the SizeOf(Buffer) number of bytes. WriteData advances the current position in the stream by the Count number of bytes.
+If Count  &lt;= SizeOf(Buffer), then WriteData tries to write up to the Count number of bytes to the stream and then advances the current position in the stream by the number of bytes transferred. WriteData returns the number of bytes written, which may be less than Count.
+WriteData methods call Write to do their actual writing.
+Methods responsible for writing up to Count bytes from Buffer to the stream.
+WriteData is used in cases, where the number of bytes to write to the stream is not necessarily fixed.
+WriteData works using the following algorithms:</p>
+<p>When WriteData does not have the Count parameter, then WriteData tries to write the SizeOf(Buffer) number of bytes. WriteData advances the current position in the stream by the number of bytes transferred. WriteData returns the number of bytes written.
+When WriteData has the Count parameter, then:
+If Count  &gt; SizeOf(Buffer), then WriteData tries to write the SizeOf(Buffer) number of bytes. WriteData advances the current position in the stream by the Count number of bytes.
+If Count  &lt;= SizeOf(Buffer), then WriteData tries to write up to the Count number of bytes to the stream and then advances the current position in the stream by the number of bytes transferred. WriteData returns the number of bytes written, which may be less than Count.
+WriteData methods call Write to do their actual writing.
+Methods responsible for writing up to Count bytes from Buffer to the stream.
+WriteData is used in cases, where the number of bytes to write to the stream is not necessarily fixed.
+WriteData works using the following algorithms:</p>
+<p>When WriteData does not have the Count parameter, then WriteData tries to write the SizeOf(Buffer) number of bytes. WriteData advances the current position in the stream by the number of bytes transferred. WriteData returns the number of bytes written.
+When WriteData has the Count parameter, then:
+If Count  &gt; SizeOf(Buffer), then WriteData tries to write the SizeOf(Buffer) number of bytes. WriteData advances the current position in the stream by the Count number of bytes.
+If Count  &lt;= SizeOf(Buffer), then WriteData tries to write up to the Count number of bytes to the stream and then advances the current position in the stream by the number of bytes transferred. WriteData returns the number of bytes written, which may be less than Count.
+WriteData methods call Write to do their actual writing.
+Methods responsible for writing up to Count bytes from Buffer to the stream.
+WriteData is used in cases, where the number of bytes to write to the stream is not necessarily fixed.
+WriteData works using the following algorithms:</p>
+<p>When WriteData does not have the Count parameter, then WriteData tries to write the SizeOf(Buffer) number of bytes. WriteData advances the current position in the stream by the number of bytes transferred. WriteData returns the number of bytes written.
+When WriteData has the Count parameter, then:
+If Count  &gt; SizeOf(Buffer), then WriteData tries to write the SizeOf(Buffer) number of bytes. WriteData advances the current position in the stream by the Count number of bytes.
+If Count  &lt;= SizeOf(Buffer), then WriteData tries to write up to the Count number of bytes to the stream and then advances the current position in the stream by the number of bytes transferred. WriteData returns the number of bytes written, which may be less than Count.
+WriteData methods call Write to do their actual writing.
+Methods responsible for writing up to Count bytes from Buffer to the stream.
+WriteData is used in cases, where the number of bytes to write to the stream is not necessarily fixed.
+WriteData works using the following algorithms:</p>
+<p>When WriteData does not have the Count parameter, then WriteData tries to write the SizeOf(Buffer) number of bytes. WriteData advances the current position in the stream by the number of bytes transferred. WriteData returns the number of bytes written.
+When WriteData has the Count parameter, then:
+If Count  &gt; SizeOf(Buffer), then WriteData tries to write the SizeOf(Buffer) number of bytes. WriteData advances the current position in the stream by the Count number of bytes.
+If Count  &lt;= SizeOf(Buffer), then WriteData tries to write up to the Count number of bytes to the stream and then advances the current position in the stream by the number of bytes transferred. WriteData returns the number of bytes written, which may be less than Count.
+WriteData methods call Write to do their actual writing.
+Methods responsible for writing up to Count bytes from Buffer to the stream.
+WriteData is used in cases, where the number of bytes to write to the stream is not necessarily fixed.
+WriteData works using the following algorithms:</p>
+<p>When WriteData does not have the Count parameter, then WriteData tries to write the SizeOf(Buffer) number of bytes. WriteData advances the current position in the stream by the number of bytes transferred. WriteData returns the number of bytes written.
+When WriteData has the Count parameter, then:
+If Count  &gt; SizeOf(Buffer), then WriteData tries to write the SizeOf(Buffer) number of bytes. WriteData advances the current position in the stream by the Count number of bytes.
+If Count  &lt;= SizeOf(Buffer), then WriteData tries to write up to the Count number of bytes to the stream and then advances the current position in the stream by the number of bytes transferred. WriteData returns the number of bytes written, which may be less than Count.
+WriteData methods call Write to do their actual writing.
+Methods responsible for writing up to Count bytes from Buffer to the stream.
+WriteData is used in cases, where the number of bytes to write to the stream is not necessarily fixed.
+WriteData works using the following algorithms:</p>
+<p>When WriteData does not have the Count parameter, then WriteData tries to write the SizeOf(Buffer) number of bytes. WriteData advances the current position in the stream by the number of bytes transferred. WriteData returns the number of bytes written.
+When WriteData has the Count parameter, then:
+If Count  &gt; SizeOf(Buffer), then WriteData tries to write the SizeOf(Buffer) number of bytes. WriteData advances the current position in the stream by the Count number of bytes.
+If Count  &lt;= SizeOf(Buffer), then WriteData tries to write up to the Count number of bytes to the stream and then advances the current position in the stream by the number of bytes transferred. WriteData returns the number of bytes written, which may be less than Count.
+WriteData methods call Write to do their actual writing.
+Methods responsible for writing up to Count bytes from Buffer to the stream.
+WriteData is used in cases, where the number of bytes to write to the stream is not necessarily fixed.
+WriteData works using the following algorithms:</p>
+<p>When WriteData does not have the Count parameter, then WriteData tries to write the SizeOf(Buffer) number of bytes. WriteData advances the current position in the stream by the number of bytes transferred. WriteData returns the number of bytes written.
+When WriteData has the Count parameter, then:
+If Count  &gt; SizeOf(Buffer), then WriteData tries to write the SizeOf(Buffer) number of bytes. WriteData advances the current position in the stream by the Count number of bytes.
+If Count  &lt;= SizeOf(Buffer), then WriteData tries to write up to the Count number of bytes to the stream and then advances the current position in the stream by the number of bytes transferred. WriteData returns the number of bytes written, which may be less than Count.
+WriteData methods call Write to do their actual writing.
+Methods responsible for writing up to Count bytes from Buffer to the stream.
+WriteData is used in cases, where the number of bytes to write to the stream is not necessarily fixed.
+WriteData works using the following algorithms:</p>
+<p>When WriteData does not have the Count parameter, then WriteData tries to write the SizeOf(Buffer) number of bytes. WriteData advances the current position in the stream by the number of bytes transferred. WriteData returns the number of bytes written.
+When WriteData has the Count parameter, then:
+If Count  &gt; SizeOf(Buffer), then WriteData tries to write the SizeOf(Buffer) number of bytes. WriteData advances the current position in the stream by the Count number of bytes.
+If Count  &lt;= SizeOf(Buffer), then WriteData tries to write up to the Count number of bytes to the stream and then advances the current position in the stream by the number of bytes transferred. WriteData returns the number of bytes written, which may be less than Count.
+WriteData methods call Write to do their actual writing.
+Methods responsible for writing up to Count bytes from Buffer to the stream.
+WriteData is used in cases, where the number of bytes to write to the stream is not necessarily fixed.
+WriteData works using the following algorithms:</p>
+<p>When WriteData does not have the Count parameter, then WriteData tries to write the SizeOf(Buffer) number of bytes. WriteData advances the current position in the stream by the number of bytes transferred. WriteData returns the number of bytes written.
+When WriteData has the Count parameter, then:
+If Count  &gt; SizeOf(Buffer), then WriteData tries to write the SizeOf(Buffer) number of bytes. WriteData advances the current position in the stream by the Count number of bytes.
+If Count  &lt;= SizeOf(Buffer), then WriteData tries to write up to the Count number of bytes to the stream and then advances the current position in the stream by the number of bytes transferred. WriteData returns the number of bytes written, which may be less than Count.
+WriteData methods call Write to do their actual writing.
+Methods responsible for writing up to Count bytes from Buffer to the stream.
+WriteData is used in cases, where the number of bytes to write to the stream is not necessarily fixed.
+WriteData works using the following algorithms:</p>
+<p>When WriteData does not have the Count parameter, then WriteData tries to write the SizeOf(Buffer) number of bytes. WriteData advances the current position in the stream by the number of bytes transferred. WriteData returns the number of bytes written.
+When WriteData has the Count parameter, then:
+If Count  &gt; SizeOf(Buffer), then WriteData tries to write the SizeOf(Buffer) number of bytes. WriteData advances the current position in the stream by the Count number of bytes.
+If Count  &lt;= SizeOf(Buffer), then WriteData tries to write up to the Count number of bytes to the stream and then advances the current position in the stream by the number of bytes transferred. WriteData returns the number of bytes written, which may be less than Count.
+WriteData methods call Write to do their actual writing.
+Methods responsible for writing up to Count bytes from Buffer to the stream.
+WriteData is used in cases, where the number of bytes to write to the stream is not necessarily fixed.
+WriteData works using the following algorithms:</p>
+<p>When WriteData does not have the Count parameter, then WriteData tries to write the SizeOf(Buffer) number of bytes. WriteData advances the current position in the stream by the number of bytes transferred. WriteData returns the number of bytes written.
+When WriteData has the Count parameter, then:
+If Count  &gt; SizeOf(Buffer), then WriteData tries to write the SizeOf(Buffer) number of bytes. WriteData advances the current position in the stream by the Count number of bytes.
+If Count  &lt;= SizeOf(Buffer), then WriteData tries to write up to the Count number of bytes to the stream and then advances the current position in the stream by the number of bytes transferred. WriteData returns the number of bytes written, which may be less than Count.
+WriteData methods call Write to do their actual writing.
+Methods responsible for writing up to Count bytes from Buffer to the stream.
+WriteData is used in cases, where the number of bytes to write to the stream is not necessarily fixed.
+WriteData works using the following algorithms:</p>
+<p>When WriteData does not have the Count parameter, then WriteData tries to write the SizeOf(Buffer) number of bytes. WriteData advances the current position in the stream by the number of bytes transferred. WriteData returns the number of bytes written.
+When WriteData has the Count parameter, then:
+If Count  &gt; SizeOf(Buffer), then WriteData tries to write the SizeOf(Buffer) number of bytes. WriteData advances the current position in the stream by the Count number of bytes.
+If Count  &lt;= SizeOf(Buffer), then WriteData tries to write up to the Count number of bytes to the stream and then advances the current position in the stream by the number of bytes transferred. WriteData returns the number of bytes written, which may be less than Count.
+WriteData methods call Write to do their actual writing.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Stream.WriteDescendent">
+<span class="sig-name descname"><span class="pre">WriteDescendent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Instance</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="delphivcl.Component.html#delphivcl.Component" title="delphivcl.Component"><span class="pre">Component</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">Ancestor</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="delphivcl.Component.html#delphivcl.Component" title="delphivcl.Component"><span class="pre">Component</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#delphivcl.Stream.WriteDescendent" title="Link to this definition">¶</a></dt>
+<dd><p>Streams components and their properties in inherited forms.
+Do not call WriteDescendent directly. WriteDescendent is called automatically by WriteComponent.
+WriteDescendent constructs a writer object, then calls the writer object’s WriteDescendent method to write the component passed in Instance to the stream. Instance is either an inherited form descended from Ancestor or nil (Delphi) or NULL (C++). However, WriteDescendent is never used to write owned components, only to initiate streaming on the root component.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Stream.WriteDescendentRes">
+<span class="sig-name descname"><span class="pre">WriteDescendentRes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ResName</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Instance</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="delphivcl.Component.html#delphivcl.Component" title="delphivcl.Component"><span class="pre">Component</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">Ancestor</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="delphivcl.Component.html#delphivcl.Component" title="delphivcl.Component"><span class="pre">Component</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#delphivcl.Stream.WriteDescendentRes" title="Link to this definition">¶</a></dt>
+<dd><p>Streams components and their properties in inherited forms.
+Do not call WriteDescendentRes directly. WriteDescendentRes is called automatically by WriteComponentRes.
+WriteDescendentRes writes a resource-file header to the stream, using the resource name passed in ResName as the name of the resource. It then calls WriteDescendent to write Instance to the stream as a descendant of Ancestor.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Stream.WriteFloat">
+<span class="sig-name descname"><span class="pre">WriteFloat</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.Stream.WriteFloat" title="Link to this definition">¶</a></dt>
+<dd><p>Write content as float.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Stream.WriteInt">
+<span class="sig-name descname"><span class="pre">WriteInt</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.Stream.WriteInt" title="Link to this definition">¶</a></dt>
+<dd><p>Write content as integer.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Stream.WriteResourceHeader">
+<span class="sig-name descname"><span class="pre">WriteResourceHeader</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ResName</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">FixupInfo</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#delphivcl.Stream.WriteResourceHeader" title="Link to this definition">¶</a></dt>
+<dd><p>Writes a resource-file header to the stream.
+Do not call WriteResourceHeader; it is used internally. The WriteDescendentRes method calls WriteResourceHeader before writing a component to the stream. This method writes the resource-file header, using the value passed as ResName for the name of the resource. It returns a position in FixupInfo that must be used to adjust the header after the size of the resource is known. WriteDescendentRes calls FixupResourceHeader with the value returned as FixupInfo after streaming out the component.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Stream.WriteString">
+<span class="sig-name descname"><span class="pre">WriteString</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.Stream.WriteString" title="Link to this definition">¶</a></dt>
+<dd><p>Write content as string.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="delphivcl.Monitor.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Monitor</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="delphivcl.StyleManager.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">StyleManager</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2020-2023, Embarcadero Python Dev Team
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Stream</a><ul>
+<li><a class="reference internal" href="#delphivcl.Stream"><code class="docutils literal notranslate"><span class="pre">Stream</span></code></a><ul>
+<li><a class="reference internal" href="#delphivcl.Stream.Capabilities"><code class="docutils literal notranslate"><span class="pre">Stream.Capabilities</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Stream.ClassName"><code class="docutils literal notranslate"><span class="pre">Stream.ClassName</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Stream.CopyFrom"><code class="docutils literal notranslate"><span class="pre">Stream.CopyFrom()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Stream.FixupResourceHeader"><code class="docutils literal notranslate"><span class="pre">Stream.FixupResourceHeader()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Stream.Position"><code class="docutils literal notranslate"><span class="pre">Stream.Position</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Stream.Read"><code class="docutils literal notranslate"><span class="pre">Stream.Read()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Stream.Read64"><code class="docutils literal notranslate"><span class="pre">Stream.Read64()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Stream.ReadBuffer"><code class="docutils literal notranslate"><span class="pre">Stream.ReadBuffer()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Stream.ReadBufferData"><code class="docutils literal notranslate"><span class="pre">Stream.ReadBufferData()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Stream.ReadBytes"><code class="docutils literal notranslate"><span class="pre">Stream.ReadBytes()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Stream.ReadComponent"><code class="docutils literal notranslate"><span class="pre">Stream.ReadComponent()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Stream.ReadComponentRes"><code class="docutils literal notranslate"><span class="pre">Stream.ReadComponentRes()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Stream.ReadData"><code class="docutils literal notranslate"><span class="pre">Stream.ReadData()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Stream.ReadFloat"><code class="docutils literal notranslate"><span class="pre">Stream.ReadFloat()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Stream.ReadInt"><code class="docutils literal notranslate"><span class="pre">Stream.ReadInt()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Stream.ReadResHeader"><code class="docutils literal notranslate"><span class="pre">Stream.ReadResHeader()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Stream.ReadString"><code class="docutils literal notranslate"><span class="pre">Stream.ReadString()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Stream.Seek"><code class="docutils literal notranslate"><span class="pre">Stream.Seek()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Stream.Seek32"><code class="docutils literal notranslate"><span class="pre">Stream.Seek32()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Stream.Size"><code class="docutils literal notranslate"><span class="pre">Stream.Size</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Stream.Write"><code class="docutils literal notranslate"><span class="pre">Stream.Write()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Stream.Write64"><code class="docutils literal notranslate"><span class="pre">Stream.Write64()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Stream.WriteBuffer"><code class="docutils literal notranslate"><span class="pre">Stream.WriteBuffer()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Stream.WriteBufferData"><code class="docutils literal notranslate"><span class="pre">Stream.WriteBufferData()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Stream.WriteBytes"><code class="docutils literal notranslate"><span class="pre">Stream.WriteBytes()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Stream.WriteComponent"><code class="docutils literal notranslate"><span class="pre">Stream.WriteComponent()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Stream.WriteComponentRes"><code class="docutils literal notranslate"><span class="pre">Stream.WriteComponentRes()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Stream.WriteData"><code class="docutils literal notranslate"><span class="pre">Stream.WriteData()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Stream.WriteDescendent"><code class="docutils literal notranslate"><span class="pre">Stream.WriteDescendent()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Stream.WriteDescendentRes"><code class="docutils literal notranslate"><span class="pre">Stream.WriteDescendentRes()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Stream.WriteFloat"><code class="docutils literal notranslate"><span class="pre">Stream.WriteFloat()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Stream.WriteInt"><code class="docutils literal notranslate"><span class="pre">Stream.WriteInt()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Stream.WriteResourceHeader"><code class="docutils literal notranslate"><span class="pre">Stream.WriteResourceHeader()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Stream.WriteString"><code class="docutils literal notranslate"><span class="pre">Stream.WriteString()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script src="../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/scripts/furo.js?v=5fa4622c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/responsiveSvg.js?v=f1528c9d"></script>
+    </body>
+</html>

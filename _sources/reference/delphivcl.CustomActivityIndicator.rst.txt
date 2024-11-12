@@ -1,0 +1,121 @@
+﻿CustomActivityIndicator
+=======================
+
+Qualified name: ``delphivcl.CustomActivityIndicator``
+
+.. currentmodule:: delphivcl
+
+.. autoclass:: CustomActivityIndicator
+   :show-inheritance:
+   :members:
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+      
+      ~CustomActivityIndicator.BringToFront
+      ~CustomActivityIndicator.ClientToScreen
+      ~CustomActivityIndicator.Hide
+      ~CustomActivityIndicator.Invalidate
+      ~CustomActivityIndicator.Repaint
+      ~CustomActivityIndicator.ScreenToClient
+      ~CustomActivityIndicator.SendToBack
+      ~CustomActivityIndicator.SetBounds
+      ~CustomActivityIndicator.Show
+      ~CustomActivityIndicator.StartAnimation
+      ~CustomActivityIndicator.StopAnimation
+      ~CustomActivityIndicator.Update
+
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+     
+     ~CustomActivityIndicator.Action
+     ~CustomActivityIndicator.Align
+     ~CustomActivityIndicator.AlignDisabled
+     ~CustomActivityIndicator.AlignWithMargins
+     ~CustomActivityIndicator.Anchors
+     ~CustomActivityIndicator.BiDiMode
+     ~CustomActivityIndicator.BoundsRect
+     ~CustomActivityIndicator.Brush
+     ~CustomActivityIndicator.ClassName
+     ~CustomActivityIndicator.ClientHeight
+     ~CustomActivityIndicator.ClientOrigin
+     ~CustomActivityIndicator.ClientRect
+     ~CustomActivityIndicator.ClientWidth
+     ~CustomActivityIndicator.ComObject
+     ~CustomActivityIndicator.ComponentCount
+     ~CustomActivityIndicator.ComponentIndex
+     ~CustomActivityIndicator.ComponentState
+     ~CustomActivityIndicator.ComponentStyle
+     ~CustomActivityIndicator.Components
+     ~CustomActivityIndicator.Constraints
+     ~CustomActivityIndicator.ControlCount
+     ~CustomActivityIndicator.ControlState
+     ~CustomActivityIndicator.ControlStyle
+     ~CustomActivityIndicator.Controls
+     ~CustomActivityIndicator.CurrentPPI
+     ~CustomActivityIndicator.Cursor
+     ~CustomActivityIndicator.CustomHint
+     ~CustomActivityIndicator.DesignInfo
+     ~CustomActivityIndicator.DockClientCount
+     ~CustomActivityIndicator.DockClients
+     ~CustomActivityIndicator.DockManager
+     ~CustomActivityIndicator.DockOrientation
+     ~CustomActivityIndicator.DockSite
+     ~CustomActivityIndicator.DoubleBuffered
+     ~CustomActivityIndicator.DoubleBufferedMode
+     ~CustomActivityIndicator.Enabled
+     ~CustomActivityIndicator.ExplicitHeight
+     ~CustomActivityIndicator.ExplicitLeft
+     ~CustomActivityIndicator.ExplicitTop
+     ~CustomActivityIndicator.ExplicitWidth
+     ~CustomActivityIndicator.Floating
+     ~CustomActivityIndicator.FloatingDockSiteClass
+     ~CustomActivityIndicator.Focused
+     ~CustomActivityIndicator.Handle
+     ~CustomActivityIndicator.HandleAllocated
+     ~CustomActivityIndicator.Height
+     ~CustomActivityIndicator.HelpContext
+     ~CustomActivityIndicator.HelpKeyword
+     ~CustomActivityIndicator.HelpType
+     ~CustomActivityIndicator.Hint
+     ~CustomActivityIndicator.HostDockSite
+     ~CustomActivityIndicator.IsDrawingLocked
+     ~CustomActivityIndicator.LRDockWidth
+     ~CustomActivityIndicator.Left
+     ~CustomActivityIndicator.Margins
+     ~CustomActivityIndicator.MouseInClient
+     ~CustomActivityIndicator.Name
+     ~CustomActivityIndicator.Observers
+     ~CustomActivityIndicator.Owner
+     ~CustomActivityIndicator.Padding
+     ~CustomActivityIndicator.Parent
+     ~CustomActivityIndicator.ParentCustomHint
+     ~CustomActivityIndicator.ParentDoubleBuffered
+     ~CustomActivityIndicator.ParentWindow
+     ~CustomActivityIndicator.PixelsPerInch
+     ~CustomActivityIndicator.RedrawDisabled
+     ~CustomActivityIndicator.ScaleFactor
+     ~CustomActivityIndicator.ShowHint
+     ~CustomActivityIndicator.Showing
+     ~CustomActivityIndicator.StyleElements
+     ~CustomActivityIndicator.StyleName
+     ~CustomActivityIndicator.TBDockHeight
+     ~CustomActivityIndicator.TabOrder
+     ~CustomActivityIndicator.TabStop
+     ~CustomActivityIndicator.Tag
+     ~CustomActivityIndicator.Timer
+     ~CustomActivityIndicator.Top
+     ~CustomActivityIndicator.Touch
+     ~CustomActivityIndicator.UndockHeight
+     ~CustomActivityIndicator.UndockWidth
+     ~CustomActivityIndicator.UseDockManager
+     ~CustomActivityIndicator.VCLComObject
+     ~CustomActivityIndicator.Visible
+     ~CustomActivityIndicator.VisibleDockClientCount
+     ~CustomActivityIndicator.Width
+   

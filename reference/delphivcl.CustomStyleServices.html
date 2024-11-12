@@ -1,0 +1,990 @@
+<!doctype html>
+<html class="no-js" lang="en" data-content_root="../">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="CustomStyleServices" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://github.com/Embarcadero/reference/delphivcl.CustomStyleServices.html" />
+<meta property="og:site_name" content="DelphiVCL | Documentation" />
+<meta property="og:description" content="Qualified name: delphivcl.CustomStyleServices" />
+<meta property="og:image" content="https://github.com/Embarcadero/DelphiVCL4Python/blob/main/images/DelphiVCL4Python(256px).png" />
+<meta property="og:image:alt" content="DelphiVCL | Documentation" />
+<meta name="description" content="Qualified name: delphivcl.CustomStyleServices" />
+<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="Persistent" href="delphivcl.Persistent.html" /><link rel="prev" title="Monitor" href="delphivcl.Monitor.html" />
+
+    <link rel="shortcut icon" href="../_static/favicon.ico"/><!-- Generated with Sphinx 8.1.3 and Furo 2024.08.06 -->
+        <title>CustomStyleServices - DelphiVCL Documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=354aac6f" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=4ae1632d" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?v=302659d7" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=93c9b8cc" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  --color-content-foreground: #000000;
+  --color-background-primary: #ffffff;
+  --color-background-border: #ffffff;
+  --color-sidebar-background: #f8f9fb;
+  --color-brand-content: #1c00e3;
+  --color-brand-primary: #192bd0;
+  --color-link: #c93434;
+  --color-link--hover: #5b0000;
+  --color-inline-code-background: #f6f6f6;;
+  --color-foreground-secondary: #000;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  --color-content-foreground: #ffffffd9;
+  --color-background-primary: #131416;
+  --color-background-border: #303335;
+  --color-sidebar-background: #1a1c1e;
+  --color-brand-content: #2196f3;
+  --color-brand-primary: #007fff;
+  --color-link: #51ba86;
+  --color-link--hover: #9cefc6;
+  --color-inline-code-background: #262626;
+  --color-foreground-secondary: #ffffffd9;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  --color-content-foreground: #ffffffd9;
+  --color-background-primary: #131416;
+  --color-background-border: #303335;
+  --color-sidebar-background: #1a1c1e;
+  --color-brand-content: #2196f3;
+  --color-brand-primary: #007fff;
+  --color-link: #51ba86;
+  --color-link--hover: #9cefc6;
+  --color-inline-code-background: #262626;
+  --color-foreground-secondary: #ffffffd9;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-with-moon" viewBox="0 0 24 24">
+    <title>Auto light/dark, in light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path style="opacity: 50%" d="M 5.411 14.504 C 5.471 14.504 5.532 14.504 5.591 14.504 C 3.639 16.319 4.383 19.569 6.931 20.352 C 7.693 20.586 8.512 20.551 9.25 20.252 C 8.023 23.207 4.056 23.725 2.11 21.184 C 0.166 18.642 1.702 14.949 4.874 14.536 C 5.051 14.512 5.231 14.5 5.411 14.5 L 5.411 14.504 Z"/>
+      <line x1="14.5" y1="3.25" x2="14.5" y2="1.25"/>
+      <line x1="14.5" y1="15.85" x2="14.5" y2="17.85"/>
+      <line x1="10.044" y1="5.094" x2="8.63" y2="3.68"/>
+      <line x1="19" y1="14.05" x2="20.414" y2="15.464"/>
+      <line x1="8.2" y1="9.55" x2="6.2" y2="9.55"/>
+      <line x1="20.8" y1="9.55" x2="22.8" y2="9.55"/>
+      <line x1="10.044" y1="14.006" x2="8.63" y2="15.42"/>
+      <line x1="19" y1="5.05" x2="20.414" y2="3.636"/>
+      <circle cx="14.5" cy="9.55" r="3.6"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon-with-sun" viewBox="0 0 24 24">
+    <title>Auto light/dark, in dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path d="M 8.282 7.007 C 8.385 7.007 8.494 7.007 8.595 7.007 C 5.18 10.184 6.481 15.869 10.942 17.24 C 12.275 17.648 13.706 17.589 15 17.066 C 12.851 22.236 5.91 23.143 2.505 18.696 C -0.897 14.249 1.791 7.786 7.342 7.063 C 7.652 7.021 7.965 7 8.282 7 L 8.282 7.007 Z"/>
+      <line style="opacity: 50%" x1="18" y1="3.705" x2="18" y2="2.5"/>
+      <line style="opacity: 50%" x1="18" y1="11.295" x2="18" y2="12.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="4.816" x2="14.464" y2="3.964"/>
+      <line style="opacity: 50%" x1="20.711" y1="10.212" x2="21.563" y2="11.063"/>
+      <line style="opacity: 50%" x1="14.205" y1="7.5" x2="13.001" y2="7.5"/>
+      <line style="opacity: 50%" x1="21.795" y1="7.5" x2="23" y2="7.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="10.184" x2="14.464" y2="11.036"/>
+      <line style="opacity: 50%" x1="20.711" y1="4.789" x2="21.563" y2="3.937"/>
+      <circle style="opacity: 50%" cx="18" cy="7.5" r="2.169"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-pencil" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-pencil-code">
+      <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+      <path d="M13.5 6.5l4 4" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+  <symbol id="svg-eye" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-eye-code">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+      <path
+        d="M11.11 17.958c-3.209 -.307 -5.91 -2.293 -8.11 -5.958c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6c-.21 .352 -.427 .688 -.647 1.008" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+<a class="skip-to-content muted-link" href="#furo-main-content">Skip to content</a>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../index.html"><div class="brand">DelphiVCL Documentation</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+          <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../index.html">
+  
+  <div class="sidebar-logo-container">
+    <img class="sidebar-logo only-light" src="../_static/DelphiVCL4Python-sidebar.svg" alt="Light Logo"/>
+    <img class="sidebar-logo only-dark" src="../_static/DelphiVCL4Python-sidebar-dark.svg" alt="Dark Logo"/>
+  </div>
+  
+  <span class="sidebar-brand-text">DelphiVCL Documentation</span>
+  
+</a><form class="sidebar-search-container" method="get" action="../search.html" role="search">
+  <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../tutorials_guides.html">Tutorials &amp; Guides</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of Tutorials &amp; Guides</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../quickstart.html">Quickstart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples.html">Example Gallery</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq.html">Frequently Asked Questions</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current has-children"><a class="reference internal" href="../reference.html">Reference Manual</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle navigation of Reference Manual</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l2 current has-children"><a class="reference internal" href="../reference_index/delphivcl_classes.html">DelphiVCL</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle navigation of DelphiVCL</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Object.html">Object</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.StyleManager.html">StyleManager</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Stream.html">Stream</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Monitor.html">Monitor</a></li>
+<li class="toctree-l3 current current-page"><a class="current reference internal" href="#">CustomStyleServices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Persistent.html">Persistent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Strings.html">Strings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Picture.html">Picture</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Collection.html">Collection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Canvas.html">Canvas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Graphic.html">Graphic</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Bitmap.html">Bitmap</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Icon.html">Icon</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Metafile.html">Metafile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Component.html">Component</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Timer.html">Timer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.OpenDialog.html">OpenDialog</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.MenuItem.html">MenuItem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Menu.html">Menu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.FileOpenDialog.html">FileOpenDialog</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ContainedActionList.html">ContainedActionList</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Control.html">Control</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomBindingsList.html">CustomBindingsList</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BasicBindComponent.html">BasicBindComponent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BasicAction.html">BasicAction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BaseBindScopeComponent.html">BaseBindScopeComponent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BaseLinkingBindSource.html">BaseLinkingBindSource</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ContainedAction.html">ContainedAction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BindingsList.html">BindingsList</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BoundLabel.html">BoundLabel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomControl.html">CustomControl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Label.html">Label</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.WinControl.html">WinControl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomActionList.html">CustomActionList</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.MainMenu.html">MainMenu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.PopupMenu.html">PopupMenu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.SaveDialog.html">SaveDialog</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ActionList.html">ActionList</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.MediaPlayer.html">MediaPlayer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomToggleSwitch.html">CustomToggleSwitch</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomActivityIndicator.html">CustomActivityIndicator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomAction.html">CustomAction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Action.html">Action</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BaseObjectBindSource.html">BaseObjectBindSource</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomPrototypeBindSource.html">CustomPrototypeBindSource</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ActivityIndicator.html">ActivityIndicator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ToggleSwitch.html">ToggleSwitch</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.PrototypeBindSource.html">PrototypeBindSource</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ContainedBindComponent.html">ContainedBindComponent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BindComponentDelegate.html">BindComponentDelegate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.LinkPropertyToFieldDelegate.html">LinkPropertyToFieldDelegate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.LinkControlDelegate.html">LinkControlDelegate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomLinkPropertyToField.html">CustomLinkPropertyToField</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.LinkControlToFieldDelegate.html">LinkControlToFieldDelegate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.LinkPropertyToField.html">LinkPropertyToField</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomLinkControlToField.html">CustomLinkControlToField</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomLinkListControlToField.html">CustomLinkListControlToField</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.LinkControlToField.html">LinkControlToField</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.LinkListControlToField.html">LinkListControlToField</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BitBtn.html">BitBtn</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Button.html">Button</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CheckBox.html">CheckBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ColorBox.html">ColorBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ComboBox.html">ComboBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ControlBar.html">ControlBar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomGrid.html">CustomGrid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomEdit.html">CustomEdit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomForm.html">CustomForm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomStatusBar.html">CustomStatusBar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomTabControl.html">CustomTabControl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.DateTimePicker.html">DateTimePicker</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.GroupBox.html">GroupBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Header.html">Header</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.LabeledEdit.html">LabeledEdit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ListBox.html">ListBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Notebook.html">Notebook</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Page.html">Page</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.PageControl.html">PageControl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Panel.html">Panel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.RadioButton.html">RadioButton</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.RadioGroup.html">RadioGroup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ScrollBar.html">ScrollBar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.SpinButton.html">SpinButton</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.StaticText.html">StaticText</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.TabSheet.html">TabSheet</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ToolBar.html">ToolBar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.TrackBar.html">TrackBar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomDrawGrid.html">CustomDrawGrid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomMemo.html">CustomMemo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomNumberBox.html">CustomNumberBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Edit.html">Edit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.SpinEdit.html">SpinEdit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Form.html">Form</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.StatusBar.html">StatusBar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.TabControl.html">TabControl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.DrawGrid.html">DrawGrid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Memo.html">Memo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.NumberBox.html">NumberBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.StringGrid.html">StringGrid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomMemoryStream.html">CustomMemoryStream</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.HandleStream.html">HandleStream</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.MemoryStream.html">MemoryStream</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ResourceStream.html">ResourceStream</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.FileStream.html">FileStream</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BytesStream.html">BytesStream</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BufferedFileStream.html">BufferedFileStream</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.StringStream.html">StringStream</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../changelog.html">Changelog</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle navigation of Changelog</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../changelog/0.1.40-changelog.html">v0.1.40</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../changelog/1.0.0-changelog.html">v1.0.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../changelog/1.0.1-changelog.html">v1.0.1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../changelog/1.0.2-changelog.html">v1.0.2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../changelog/1.0.3-changelog.html">v1.0.3</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing.html">Contributing</a></li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+              <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role="main" id="furo-main-content">
+          <section id="customstyleservices">
+<h1>CustomStyleServices<a class="headerlink" href="#customstyleservices" title="Link to this heading">¶</a></h1>
+<p>Qualified name: <code class="docutils literal notranslate"><span class="pre">delphivcl.CustomStyleServices</span></code></p>
+<dl class="py class">
+<dt class="sig sig-object py" id="delphivcl.CustomStyleServices">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">CustomStyleServices</span></span><a class="headerlink" href="#delphivcl.CustomStyleServices" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="delphivcl.Object.html#delphivcl.Object" title="delphivcl.Object"><code class="xref py py-class docutils literal notranslate"><span class="pre">Object</span></code></a></p>
+<p>TCustomStyleServices is a class that provides access to style functionality.
+Use the methods and properties of TCustomStyleServices to get information about a style or to perform painting of custom controls.
+Do not instantiate TCustomStyleServices; instead, call the StyleServices function to access the methods and properties of TCustomStyleServices.</p>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.CustomStyleServices.ApplyThemeChange" title="delphivcl.CustomStyleServices.ApplyThemeChange"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ApplyThemeChange</span></code></a></p></td>
+<td><p>Resets the application theme.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.CustomStyleServices.ColorToRGB" title="delphivcl.CustomStyleServices.ColorToRGB"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ColorToRGB</span></code></a></p></td>
+<td><p>Gets the color reference for a specified TColor.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.CustomStyleServices.ContentRect" title="delphivcl.CustomStyleServices.ContentRect"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ContentRect</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.CustomStyleServices.DrawEdge" title="delphivcl.CustomStyleServices.DrawEdge"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DrawEdge</span></code></a></p></td>
+<td><p>Draws the edge or edges of the rectangle that contains the element in the current style.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.CustomStyleServices.DrawElement" title="delphivcl.CustomStyleServices.DrawElement"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DrawElement</span></code></a></p></td>
+<td><p>Draws the specified element.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.CustomStyleServices.DrawIcon" title="delphivcl.CustomStyleServices.DrawIcon"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DrawIcon</span></code></a></p></td>
+<td><p>Draws an icon over the given element.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.CustomStyleServices.DrawParentBackground" title="delphivcl.CustomStyleServices.DrawParentBackground"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DrawParentBackground</span></code></a></p></td>
+<td><p>Draws the background of the given user interface element's parent.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.CustomStyleServices.DrawText" title="delphivcl.CustomStyleServices.DrawText"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DrawText</span></code></a></p></td>
+<td><p>Draws text over an element, using the current style.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.CustomStyleServices.GetElementColor" title="delphivcl.CustomStyleServices.GetElementColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GetElementColor</span></code></a></p></td>
+<td><p>Determines the color of the element specified by Details.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.CustomStyleServices.GetElementContentRect" title="delphivcl.CustomStyleServices.GetElementContentRect"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GetElementContentRect</span></code></a></p></td>
+<td><p>Gets the background rectangle of the content area of the element.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.CustomStyleServices.GetElementDetails" title="delphivcl.CustomStyleServices.GetElementDetails"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GetElementDetails</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.CustomStyleServices.GetElementMargins" title="delphivcl.CustomStyleServices.GetElementMargins"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GetElementMargins</span></code></a></p></td>
+<td><p>Determines the margins of the element in the current style.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.CustomStyleServices.GetElementRegion" title="delphivcl.CustomStyleServices.GetElementRegion"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GetElementRegion</span></code></a></p></td>
+<td><p>Determines the region of the element in the current style.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.CustomStyleServices.GetElementSize" title="delphivcl.CustomStyleServices.GetElementSize"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GetElementSize</span></code></a></p></td>
+<td><p>Determines the size for the specified part of a control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.CustomStyleServices.GetStyleColor" title="delphivcl.CustomStyleServices.GetStyleColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GetStyleColor</span></code></a></p></td>
+<td><p>Returns the color defined in the style for the element specified by Color.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.CustomStyleServices.GetStyleFontColor" title="delphivcl.CustomStyleServices.GetStyleFontColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GetStyleFontColor</span></code></a></p></td>
+<td><p>Returns the font color for the element specified by Font.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.CustomStyleServices.GetSystemColor" title="delphivcl.CustomStyleServices.GetSystemColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GetSystemColor</span></code></a></p></td>
+<td><p>Returns the system color defined in the current style.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.CustomStyleServices.GetTextExtent" title="delphivcl.CustomStyleServices.GetTextExtent"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GetTextExtent</span></code></a></p></td>
+<td><p>Returns the rectangle that contains the given text, drawn in the current style.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.CustomStyleServices.HasElementFixedPosition" title="delphivcl.CustomStyleServices.HasElementFixedPosition"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HasElementFixedPosition</span></code></a></p></td>
+<td><p>Embarcadero Technologies does not currently have any additional information.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.CustomStyleServices.HasTransparentParts" title="delphivcl.CustomStyleServices.HasTransparentParts"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HasTransparentParts</span></code></a></p></td>
+<td><p>Determines whether the given element has transparent parts.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.CustomStyleServices.IsValidStyle" title="delphivcl.CustomStyleServices.IsValidStyle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">IsValidStyle</span></code></a></p></td>
+<td><p>Checks whether the provided style is a valid style.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.CustomStyleServices.LoadFromFile" title="delphivcl.CustomStyleServices.LoadFromFile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LoadFromFile</span></code></a></p></td>
+<td><p>Loads a style from the specified file.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.CustomStyleServices.LoadFromStream" title="delphivcl.CustomStyleServices.LoadFromStream"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LoadFromStream</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.CustomStyleServices.PaintBorder" title="delphivcl.CustomStyleServices.PaintBorder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PaintBorder</span></code></a></p></td>
+<td><p>Draws the border of a control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.CustomStyleServices.SaveToFile" title="delphivcl.CustomStyleServices.SaveToFile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SaveToFile</span></code></a></p></td>
+<td><p>Saves the current style settings to the specified file.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.CustomStyleServices.SaveToStream" title="delphivcl.CustomStyleServices.SaveToStream"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SaveToStream</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.CustomStyleServices.ThemesAvailable" title="delphivcl.CustomStyleServices.ThemesAvailable"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ThemesAvailable</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.CustomStyleServices.ThemesEnabled" title="delphivcl.CustomStyleServices.ThemesEnabled"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ThemesEnabled</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.CustomStyleServices.UpdateThemes" title="delphivcl.CustomStyleServices.UpdateThemes"><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateThemes</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="rubric">Attributes</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.CustomStyleServices.Available" title="delphivcl.CustomStyleServices.Available"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Available</span></code></a></p></td>
+<td><p>Determines whether the operating system supports styles.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.CustomStyleServices.ClassName" title="delphivcl.CustomStyleServices.ClassName"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ClassName</span></code></a></p></td>
+<td><p>Returns the TObject.ClassName</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.CustomStyleServices.DesigningState" title="delphivcl.CustomStyleServices.DesigningState"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DesigningState</span></code></a></p></td>
+<td><p>Embarcadero Technologies does not currently have any additional information.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.CustomStyleServices.Enabled" title="delphivcl.CustomStyleServices.Enabled"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Enabled</span></code></a></p></td>
+<td><p>Determines whether styles are enabled for the current application.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.CustomStyleServices.Flags" title="delphivcl.CustomStyleServices.Flags"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Flags</span></code></a></p></td>
+<td><p>Returns the flags set for the current style.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.CustomStyleServices.IsSystemStyle" title="delphivcl.CustomStyleServices.IsSystemStyle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">IsSystemStyle</span></code></a></p></td>
+<td><p>Determines whether the current style is a system style.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.CustomStyleServices.Name" title="delphivcl.CustomStyleServices.Name"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Name</span></code></a></p></td>
+<td><p>Returns the name of the current style.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.CustomStyleServices.Theme" title="delphivcl.CustomStyleServices.Theme"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Theme</span></code></a></p></td>
+<td><p>int:</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.CustomStyleServices.ThemeForDPI" title="delphivcl.CustomStyleServices.ThemeForDPI"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ThemeForDPI</span></code></a></p></td>
+<td><p>int:</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.CustomStyleServices.ApplyThemeChange">
+<span class="sig-name descname"><span class="pre">ApplyThemeChange</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.CustomStyleServices.ApplyThemeChange" title="Link to this definition">¶</a></dt>
+<dd><p>Resets the application theme.
+ApplyThemeChange is called automatically by the TApplication object whenever the operating system theme is changed.</p>
+<p>Note: ApplyThemeChange is used internally by the VCL and should not be called manually by applications.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.CustomStyleServices.Available">
+<span class="sig-name descname"><span class="pre">Available</span></span><a class="headerlink" href="#delphivcl.CustomStyleServices.Available" title="Link to this definition">¶</a></dt>
+<dd><p>Determines whether the operating system supports styles.
+Use Available to check whether the operating system supports styles.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.CustomStyleServices.ClassName">
+<span class="sig-name descname"><span class="pre">ClassName</span></span><a class="headerlink" href="#delphivcl.CustomStyleServices.ClassName" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the TObject.ClassName</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.CustomStyleServices.ColorToRGB">
+<span class="sig-name descname"><span class="pre">ColorToRGB</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Color</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Details</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">PhemedElementDetails</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#delphivcl.CustomStyleServices.ColorToRGB" title="Link to this definition">¶</a></dt>
+<dd><p>Gets the color reference for a specified TColor.
+Use ColorToRGB to convert the Color parameter to its RGB representation.
+If Details is not nil, the function returns the system color that is defined for Color under the current style. For example, if Color is clBtnFace, the function returns the system color defined for the button face in the current style, as a TColorRef value.
+Gets the color reference for a specified TColor.
+Use ColorToRGB to convert the Color parameter to its RGB representation.
+If Details is not nil, the function returns the system color that is defined for Color under the current style. For example, if Color is clBtnFace, the function returns the system color defined for the button face in the current style, as a TColorRef value.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.CustomStyleServices.ContentRect">
+<span class="sig-name descname"><span class="pre">ContentRect</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">DC</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Details</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ThemedElementDetails</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">BoundingRect</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Rect</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Rect</span></span></span><a class="headerlink" href="#delphivcl.CustomStyleServices.ContentRect" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.CustomStyleServices.DesigningState">
+<span class="sig-name descname"><span class="pre">DesigningState</span></span><a class="headerlink" href="#delphivcl.CustomStyleServices.DesigningState" title="Link to this definition">¶</a></dt>
+<dd><p>Embarcadero Technologies does not currently have any additional information.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.CustomStyleServices.DrawEdge">
+<span class="sig-name descname"><span class="pre">DrawEdge</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">DC</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Details</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ThemedElementDetails</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">R</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Rect</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Edges</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Flags</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ContentRect</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">PRect</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#delphivcl.CustomStyleServices.DrawEdge" title="Link to this definition">¶</a></dt>
+<dd><p>Draws the edge or edges of the rectangle that contains the element in the current style.
+Call DrawEdge to draw one or more edges of the given element.
+Edge indicates the types of inner and outer edges and Flags specifies the types of borders.</p>
+<p>Note: The first overload of this method is deprecated; use the second overload instead.
+Draws the edge or edges of the rectangle that contains the element in the current style.
+Call DrawEdge to draw one or more edges of the given element.
+Edge indicates the types of inner and outer edges and Flags specifies the types of borders.</p>
+<p>Note: The first overload of this method is deprecated; use the second overload instead.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.CustomStyleServices.DrawElement">
+<span class="sig-name descname"><span class="pre">DrawElement</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">DC</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Details</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ThemedElementDetails</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">R</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Rect</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ClipRect</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Rect</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">DPI</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#delphivcl.CustomStyleServices.DrawElement" title="Link to this definition">¶</a></dt>
+<dd><p>Draws the specified element.
+Call DrawElement to draw the element specified by Details, using the current style.
+R is the rectangle where the element is drawn and ClipRect is a clipping rectangle.
+Draws the specified element.
+Call DrawElement to draw the element specified by Details, using the current style.
+R is the rectangle where the element is drawn and ClipRect is a clipping rectangle.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.CustomStyleServices.DrawIcon">
+<span class="sig-name descname"><span class="pre">DrawIcon</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">DC</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Details</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ThemedElementDetails</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">R</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Rect</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Images</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Index</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#delphivcl.CustomStyleServices.DrawIcon" title="Link to this definition">¶</a></dt>
+<dd><p>Draws an icon over the given element.
+Call DrawIcon to draw the image that resides at the Index index in the image list specified by Images. The icon is drawn in the rectangle specified by R, over the element indicated by Details.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.CustomStyleServices.DrawParentBackground">
+<span class="sig-name descname"><span class="pre">DrawParentBackground</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Window</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Target</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Details</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">PhemedElementDetails</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">OnlyIfTransparent</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Bounds</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Rect</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#delphivcl.CustomStyleServices.DrawParentBackground" title="Link to this definition">¶</a></dt>
+<dd><p>Draws the background of the given user interface element’s parent.
+Call DrawParentBackground to draw the background of a user interface element’s parent, using the current style.
+If OnlyIfTransparent is True, the drawing is performed only if the element is transparent in the current style. Bounds represents the area to be drawn.
+Draws the background of the given user interface element’s parent.
+Call DrawParentBackground to draw the background of a user interface element’s parent, using the current style.
+If OnlyIfTransparent is True, the drawing is performed only if the element is transparent in the current style. Bounds represents the area to be drawn.
+Draws the background of the given user interface element’s parent.
+Call DrawParentBackground to draw the background of a user interface element’s parent, using the current style.
+If OnlyIfTransparent is True, the drawing is performed only if the element is transparent in the current style. Bounds represents the area to be drawn.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.CustomStyleServices.DrawText">
+<span class="sig-name descname"><span class="pre">DrawText</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">DC</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Details</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ThemedElementDetails</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">S</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">R</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Rect</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Flags</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Flags2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">DPI</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#delphivcl.CustomStyleServices.DrawText" title="Link to this definition">¶</a></dt>
+<dd><p>Draws text over an element, using the current style.
+Call DrawText to draw the S string in the rectangle specified by R. The S string has the format and additional options indicated by the Flags and Options parameters. The drawing is performed with the settings of the current style.</p>
+<p>Note: The first overload of this function is deprecated. Use the following two overloads that use TTextFormat to specify the text formatting.
+Draws text over an element, using the current style.
+Call DrawText to draw the S string in the rectangle specified by R. The S string has the format and additional options indicated by the Flags and Options parameters. The drawing is performed with the settings of the current style.</p>
+<p>Note: The first overload of this function is deprecated. Use the following two overloads that use TTextFormat to specify the text formatting.
+Draws text over an element, using the current style.
+Call DrawText to draw the S string in the rectangle specified by R. The S string has the format and additional options indicated by the Flags and Options parameters. The drawing is performed with the settings of the current style.</p>
+<p>Note: The first overload of this function is deprecated. Use the following two overloads that use TTextFormat to specify the text formatting.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.CustomStyleServices.Enabled">
+<span class="sig-name descname"><span class="pre">Enabled</span></span><a class="headerlink" href="#delphivcl.CustomStyleServices.Enabled" title="Link to this definition">¶</a></dt>
+<dd><p>Determines whether styles are enabled for the current application.
+Use Enabled to check whether the current application has styles enabled.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.CustomStyleServices.Flags">
+<span class="sig-name descname"><span class="pre">Flags</span></span><a class="headerlink" href="#delphivcl.CustomStyleServices.Flags" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the flags set for the current style.
+Use Flags to obtain the flags that are set for the current style.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>CustomStyleServices.TStyleFlags</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.CustomStyleServices.GetElementColor">
+<span class="sig-name descname"><span class="pre">GetElementColor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Details</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ThemedElementDetails</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ElementColor</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ElementColor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Color</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#delphivcl.CustomStyleServices.GetElementColor" title="Link to this definition">¶</a></dt>
+<dd><p>Determines the color of the element specified by Details.
+GetElementColor determines the color value used for the property determined by ElementColor.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.CustomStyleServices.GetElementContentRect">
+<span class="sig-name descname"><span class="pre">GetElementContentRect</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">DC</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Details</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ThemedElementDetails</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">BoundingRect</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Rect</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ContentRect</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Rect</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#delphivcl.CustomStyleServices.GetElementContentRect" title="Link to this definition">¶</a></dt>
+<dd><p>Gets the background rectangle of the content area of the element.
+Call GetElementContentRect to retrieve the rectangle that contains the background area of a control, when styles are enabled.
+Details represents the user interface element from which the information is being retrieved.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.CustomStyleServices.GetElementDetails">
+<span class="sig-name descname"><span class="pre">GetElementDetails</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Detail</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ThemedButton</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">ThemedElementDetails</span></span></span><a class="headerlink" href="#delphivcl.CustomStyleServices.GetElementDetails" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.CustomStyleServices.GetElementMargins">
+<span class="sig-name descname"><span class="pre">GetElementMargins</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">DC</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Details</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ThemedElementDetails</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ElementMargin</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ElementMargin</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Margins</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">_MARGINS</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">DPI</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#delphivcl.CustomStyleServices.GetElementMargins" title="Link to this definition">¶</a></dt>
+<dd><p>Determines the margins of the element in the current style.
+Call GetElementMargins to retrieve the margins of the control specified by Details.
+Determines the margins of the element in the current style.
+Call GetElementMargins to retrieve the margins of the control specified by Details.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.CustomStyleServices.GetElementRegion">
+<span class="sig-name descname"><span class="pre">GetElementRegion</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Details</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ThemedElementDetails</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Rect</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Rect</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Region</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#delphivcl.CustomStyleServices.GetElementRegion" title="Link to this definition">¶</a></dt>
+<dd><p>Determines the region of the element in the current style.
+Call GetElementRegion to obtain the region of the element, bounded by the given rectangle.
+Determines the region of the element in the current style.
+Call GetElementRegion to obtain the region of the element, bounded by the given rectangle.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.CustomStyleServices.GetElementSize">
+<span class="sig-name descname"><span class="pre">GetElementSize</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">DC</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Details</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ThemedElementDetails</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ElementSize</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ElementSize</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Size</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">DPI</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#delphivcl.CustomStyleServices.GetElementSize" title="Link to this definition">¶</a></dt>
+<dd><p>Determines the size for the specified part of a control.
+Call GetElementSize to obtain the size of the rectangle that contains the part of the control specified by Details.
+ElementSize represents the type of size to be returned: minimum, actual, or stretch.
+Determines the size for the specified part of a control.
+Call GetElementSize to obtain the size of the rectangle that contains the part of the control specified by Details.
+ElementSize represents the type of size to be returned: minimum, actual, or stretch.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.CustomStyleServices.GetStyleColor">
+<span class="sig-name descname"><span class="pre">GetStyleColor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Color</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">StyleColor</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#delphivcl.CustomStyleServices.GetStyleColor" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the color defined in the style for the element specified by Color.
+Use GetStyleColor to obtain the color defined for a certain control.
+For example, if Color is scButtonPressed, GetStyleColor returns the color assigned for the button when it is pressed.
+The style colors give you access to the colors used for controls in the current style. There are two categories of style colors. The first category includes colors used for control parts that are rendered directly from an image. In this case, the style color offers you a way to access the color of that image and is purely informational. The second category includes the colors used for controls that are rendered from code at run time (Panel, ListBox, Grid, and so on).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.CustomStyleServices.GetStyleFontColor">
+<span class="sig-name descname"><span class="pre">GetStyleFontColor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Font</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">StyleFont</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#delphivcl.CustomStyleServices.GetStyleFontColor" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the font color for the element specified by Font.
+Call GetStyleFontColor to obtain the font color defined in the current style for a specific part and state of a control.
+For example, if Font is sfEditBoxDisabled, GetStyleFontColor returns the color of the text in an edit box, when the edit box is disabled.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.CustomStyleServices.GetSystemColor">
+<span class="sig-name descname"><span class="pre">GetSystemColor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Color</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#delphivcl.CustomStyleServices.GetSystemColor" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the system color defined in the current style.
+The current style has a set of colors defined for system color constants that resemble the style colors. For instance, you can call GetSystemColor with clBtnFace to obtain the styled color of a button face.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.CustomStyleServices.GetTextExtent">
+<span class="sig-name descname"><span class="pre">GetTextExtent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">DC</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Details</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ThemedElementDetails</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Flags</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">TextFormat</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ExtentRect</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Rect</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#delphivcl.CustomStyleServices.GetTextExtent" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the rectangle that contains the given text, drawn in the current style.
+Call GetTextExtent to obtain the rectangle required to draw the given text with the specified formatting in the current style.
+Returns the rectangle that contains the given text, drawn in the current style.
+Call GetTextExtent to obtain the rectangle required to draw the given text with the specified formatting in the current style.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.CustomStyleServices.HasElementFixedPosition">
+<span class="sig-name descname"><span class="pre">HasElementFixedPosition</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Details</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ThemedElementDetails</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#delphivcl.CustomStyleServices.HasElementFixedPosition" title="Link to this definition">¶</a></dt>
+<dd><p>Embarcadero Technologies does not currently have any additional information.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.CustomStyleServices.HasTransparentParts">
+<span class="sig-name descname"><span class="pre">HasTransparentParts</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Details</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ThemedElementDetails</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#delphivcl.CustomStyleServices.HasTransparentParts" title="Link to this definition">¶</a></dt>
+<dd><p>Determines whether the given element has transparent parts.
+Call HasTransparentParts to check whether the element specified by Details has transparent parts in the current style.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.CustomStyleServices.IsSystemStyle">
+<span class="sig-name descname"><span class="pre">IsSystemStyle</span></span><a class="headerlink" href="#delphivcl.CustomStyleServices.IsSystemStyle" title="Link to this definition">¶</a></dt>
+<dd><p>Determines whether the current style is a system style.
+IsSystemStyle returns True if the current style is a default operating system style, and False if it is a custom style.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.CustomStyleServices.IsValidStyle">
+<span class="sig-name descname"><span class="pre">IsValidStyle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Stream</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="delphivcl.Stream.html#delphivcl.Stream" title="delphivcl.Stream"><span class="pre">Stream</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#delphivcl.CustomStyleServices.IsValidStyle" title="Link to this definition">¶</a></dt>
+<dd><p>Checks whether the provided style is a valid style.
+Call IsValidStyle to verify whether the style specified by Stream is a valid style.
+Checks whether the provided style is a valid style.
+Call IsValidStyle to verify whether the style specified by Stream is a valid style.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.CustomStyleServices.LoadFromFile">
+<span class="sig-name descname"><span class="pre">LoadFromFile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">FileName</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#delphivcl.CustomStyleServices" title="delphivcl.CustomStyleServices"><span class="pre">CustomStyleServices</span></a></span></span><a class="headerlink" href="#delphivcl.CustomStyleServices.LoadFromFile" title="Link to this definition">¶</a></dt>
+<dd><p>Loads a style from the specified file.
+Call LoadFromFile to load a style from the specified file.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.CustomStyleServices.LoadFromStream">
+<span class="sig-name descname"><span class="pre">LoadFromStream</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Stream</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="delphivcl.Stream.html#delphivcl.Stream" title="delphivcl.Stream"><span class="pre">Stream</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#delphivcl.CustomStyleServices" title="delphivcl.CustomStyleServices"><span class="pre">CustomStyleServices</span></a></span></span><a class="headerlink" href="#delphivcl.CustomStyleServices.LoadFromStream" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.CustomStyleServices.Name">
+<span class="sig-name descname"><span class="pre">Name</span></span><a class="headerlink" href="#delphivcl.CustomStyleServices.Name" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the name of the current style.
+Use Name to obtain a string that represents the name of the current style. This is the same name you can use with StyleManager.SetStyle to activate the style.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.CustomStyleServices.PaintBorder">
+<span class="sig-name descname"><span class="pre">PaintBorder</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Control</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="delphivcl.WinControl.html#delphivcl.WinControl" title="delphivcl.WinControl"><span class="pre">WinControl</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">EraseLRCorner</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#delphivcl.CustomStyleServices.PaintBorder" title="Link to this definition">¶</a></dt>
+<dd><p>Draws the border of a control.
+Call PaintBorder to draw the border of a control using the current style.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.CustomStyleServices.SaveToFile">
+<span class="sig-name descname"><span class="pre">SaveToFile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">FileName</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#delphivcl.CustomStyleServices.SaveToFile" title="Link to this definition">¶</a></dt>
+<dd><p>Saves the current style settings to the specified file.
+Call SaveToFile to save the current style in the specified filename.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.CustomStyleServices.SaveToStream">
+<span class="sig-name descname"><span class="pre">SaveToStream</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Stream</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="delphivcl.Stream.html#delphivcl.Stream" title="delphivcl.Stream"><span class="pre">Stream</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#delphivcl.CustomStyleServices.SaveToStream" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.CustomStyleServices.Theme">
+<span class="sig-name descname"><span class="pre">Theme</span></span><a class="headerlink" href="#delphivcl.CustomStyleServices.Theme" title="Link to this definition">¶</a></dt>
+<dd><p>int:</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.CustomStyleServices.ThemeForDPI">
+<span class="sig-name descname"><span class="pre">ThemeForDPI</span></span><a class="headerlink" href="#delphivcl.CustomStyleServices.ThemeForDPI" title="Link to this definition">¶</a></dt>
+<dd><p>int:</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.CustomStyleServices.ThemesAvailable">
+<span class="sig-name descname"><span class="pre">ThemesAvailable</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Boolean</span></span></span><a class="headerlink" href="#delphivcl.CustomStyleServices.ThemesAvailable" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.CustomStyleServices.ThemesEnabled">
+<span class="sig-name descname"><span class="pre">ThemesEnabled</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Boolean</span></span></span><a class="headerlink" href="#delphivcl.CustomStyleServices.ThemesEnabled" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.CustomStyleServices.UpdateThemes">
+<span class="sig-name descname"><span class="pre">UpdateThemes</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.CustomStyleServices.UpdateThemes" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="delphivcl.Persistent.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Persistent</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="delphivcl.Monitor.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Monitor</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2020-2023, Embarcadero Python Dev Team
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">CustomStyleServices</a><ul>
+<li><a class="reference internal" href="#delphivcl.CustomStyleServices"><code class="docutils literal notranslate"><span class="pre">CustomStyleServices</span></code></a><ul>
+<li><a class="reference internal" href="#delphivcl.CustomStyleServices.ApplyThemeChange"><code class="docutils literal notranslate"><span class="pre">CustomStyleServices.ApplyThemeChange()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomStyleServices.Available"><code class="docutils literal notranslate"><span class="pre">CustomStyleServices.Available</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomStyleServices.ClassName"><code class="docutils literal notranslate"><span class="pre">CustomStyleServices.ClassName</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomStyleServices.ColorToRGB"><code class="docutils literal notranslate"><span class="pre">CustomStyleServices.ColorToRGB()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomStyleServices.ContentRect"><code class="docutils literal notranslate"><span class="pre">CustomStyleServices.ContentRect()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomStyleServices.DesigningState"><code class="docutils literal notranslate"><span class="pre">CustomStyleServices.DesigningState</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomStyleServices.DrawEdge"><code class="docutils literal notranslate"><span class="pre">CustomStyleServices.DrawEdge()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomStyleServices.DrawElement"><code class="docutils literal notranslate"><span class="pre">CustomStyleServices.DrawElement()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomStyleServices.DrawIcon"><code class="docutils literal notranslate"><span class="pre">CustomStyleServices.DrawIcon()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomStyleServices.DrawParentBackground"><code class="docutils literal notranslate"><span class="pre">CustomStyleServices.DrawParentBackground()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomStyleServices.DrawText"><code class="docutils literal notranslate"><span class="pre">CustomStyleServices.DrawText()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomStyleServices.Enabled"><code class="docutils literal notranslate"><span class="pre">CustomStyleServices.Enabled</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomStyleServices.Flags"><code class="docutils literal notranslate"><span class="pre">CustomStyleServices.Flags</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomStyleServices.GetElementColor"><code class="docutils literal notranslate"><span class="pre">CustomStyleServices.GetElementColor()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomStyleServices.GetElementContentRect"><code class="docutils literal notranslate"><span class="pre">CustomStyleServices.GetElementContentRect()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomStyleServices.GetElementDetails"><code class="docutils literal notranslate"><span class="pre">CustomStyleServices.GetElementDetails()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomStyleServices.GetElementMargins"><code class="docutils literal notranslate"><span class="pre">CustomStyleServices.GetElementMargins()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomStyleServices.GetElementRegion"><code class="docutils literal notranslate"><span class="pre">CustomStyleServices.GetElementRegion()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomStyleServices.GetElementSize"><code class="docutils literal notranslate"><span class="pre">CustomStyleServices.GetElementSize()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomStyleServices.GetStyleColor"><code class="docutils literal notranslate"><span class="pre">CustomStyleServices.GetStyleColor()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomStyleServices.GetStyleFontColor"><code class="docutils literal notranslate"><span class="pre">CustomStyleServices.GetStyleFontColor()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomStyleServices.GetSystemColor"><code class="docutils literal notranslate"><span class="pre">CustomStyleServices.GetSystemColor()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomStyleServices.GetTextExtent"><code class="docutils literal notranslate"><span class="pre">CustomStyleServices.GetTextExtent()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomStyleServices.HasElementFixedPosition"><code class="docutils literal notranslate"><span class="pre">CustomStyleServices.HasElementFixedPosition()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomStyleServices.HasTransparentParts"><code class="docutils literal notranslate"><span class="pre">CustomStyleServices.HasTransparentParts()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomStyleServices.IsSystemStyle"><code class="docutils literal notranslate"><span class="pre">CustomStyleServices.IsSystemStyle</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomStyleServices.IsValidStyle"><code class="docutils literal notranslate"><span class="pre">CustomStyleServices.IsValidStyle()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomStyleServices.LoadFromFile"><code class="docutils literal notranslate"><span class="pre">CustomStyleServices.LoadFromFile()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomStyleServices.LoadFromStream"><code class="docutils literal notranslate"><span class="pre">CustomStyleServices.LoadFromStream()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomStyleServices.Name"><code class="docutils literal notranslate"><span class="pre">CustomStyleServices.Name</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomStyleServices.PaintBorder"><code class="docutils literal notranslate"><span class="pre">CustomStyleServices.PaintBorder()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomStyleServices.SaveToFile"><code class="docutils literal notranslate"><span class="pre">CustomStyleServices.SaveToFile()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomStyleServices.SaveToStream"><code class="docutils literal notranslate"><span class="pre">CustomStyleServices.SaveToStream()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomStyleServices.Theme"><code class="docutils literal notranslate"><span class="pre">CustomStyleServices.Theme</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomStyleServices.ThemeForDPI"><code class="docutils literal notranslate"><span class="pre">CustomStyleServices.ThemeForDPI</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomStyleServices.ThemesAvailable"><code class="docutils literal notranslate"><span class="pre">CustomStyleServices.ThemesAvailable()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomStyleServices.ThemesEnabled"><code class="docutils literal notranslate"><span class="pre">CustomStyleServices.ThemesEnabled()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.CustomStyleServices.UpdateThemes"><code class="docutils literal notranslate"><span class="pre">CustomStyleServices.UpdateThemes()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script src="../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/scripts/furo.js?v=5fa4622c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/responsiveSvg.js?v=f1528c9d"></script>
+    </body>
+</html>

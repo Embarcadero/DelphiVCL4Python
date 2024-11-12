@@ -1,0 +1,1993 @@
+<!doctype html>
+<html class="no-js" lang="en" data-content_root="../">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="Control" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://github.com/Embarcadero/reference/delphivcl.Control.html" />
+<meta property="og:site_name" content="DelphiVCL | Documentation" />
+<meta property="og:description" content="Qualified name: delphivcl.Control" />
+<meta property="og:image" content="https://github.com/Embarcadero/DelphiVCL4Python/blob/main/images/DelphiVCL4Python(256px).png" />
+<meta property="og:image:alt" content="DelphiVCL | Documentation" />
+<meta name="description" content="Qualified name: delphivcl.Control" />
+<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="CustomBindingsList" href="delphivcl.CustomBindingsList.html" /><link rel="prev" title="ContainedActionList" href="delphivcl.ContainedActionList.html" />
+
+    <link rel="shortcut icon" href="../_static/favicon.ico"/><!-- Generated with Sphinx 8.1.3 and Furo 2024.08.06 -->
+        <title>Control - DelphiVCL Documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=354aac6f" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=4ae1632d" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?v=302659d7" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=93c9b8cc" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  --color-content-foreground: #000000;
+  --color-background-primary: #ffffff;
+  --color-background-border: #ffffff;
+  --color-sidebar-background: #f8f9fb;
+  --color-brand-content: #1c00e3;
+  --color-brand-primary: #192bd0;
+  --color-link: #c93434;
+  --color-link--hover: #5b0000;
+  --color-inline-code-background: #f6f6f6;;
+  --color-foreground-secondary: #000;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  --color-content-foreground: #ffffffd9;
+  --color-background-primary: #131416;
+  --color-background-border: #303335;
+  --color-sidebar-background: #1a1c1e;
+  --color-brand-content: #2196f3;
+  --color-brand-primary: #007fff;
+  --color-link: #51ba86;
+  --color-link--hover: #9cefc6;
+  --color-inline-code-background: #262626;
+  --color-foreground-secondary: #ffffffd9;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  --color-content-foreground: #ffffffd9;
+  --color-background-primary: #131416;
+  --color-background-border: #303335;
+  --color-sidebar-background: #1a1c1e;
+  --color-brand-content: #2196f3;
+  --color-brand-primary: #007fff;
+  --color-link: #51ba86;
+  --color-link--hover: #9cefc6;
+  --color-inline-code-background: #262626;
+  --color-foreground-secondary: #ffffffd9;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-with-moon" viewBox="0 0 24 24">
+    <title>Auto light/dark, in light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path style="opacity: 50%" d="M 5.411 14.504 C 5.471 14.504 5.532 14.504 5.591 14.504 C 3.639 16.319 4.383 19.569 6.931 20.352 C 7.693 20.586 8.512 20.551 9.25 20.252 C 8.023 23.207 4.056 23.725 2.11 21.184 C 0.166 18.642 1.702 14.949 4.874 14.536 C 5.051 14.512 5.231 14.5 5.411 14.5 L 5.411 14.504 Z"/>
+      <line x1="14.5" y1="3.25" x2="14.5" y2="1.25"/>
+      <line x1="14.5" y1="15.85" x2="14.5" y2="17.85"/>
+      <line x1="10.044" y1="5.094" x2="8.63" y2="3.68"/>
+      <line x1="19" y1="14.05" x2="20.414" y2="15.464"/>
+      <line x1="8.2" y1="9.55" x2="6.2" y2="9.55"/>
+      <line x1="20.8" y1="9.55" x2="22.8" y2="9.55"/>
+      <line x1="10.044" y1="14.006" x2="8.63" y2="15.42"/>
+      <line x1="19" y1="5.05" x2="20.414" y2="3.636"/>
+      <circle cx="14.5" cy="9.55" r="3.6"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon-with-sun" viewBox="0 0 24 24">
+    <title>Auto light/dark, in dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path d="M 8.282 7.007 C 8.385 7.007 8.494 7.007 8.595 7.007 C 5.18 10.184 6.481 15.869 10.942 17.24 C 12.275 17.648 13.706 17.589 15 17.066 C 12.851 22.236 5.91 23.143 2.505 18.696 C -0.897 14.249 1.791 7.786 7.342 7.063 C 7.652 7.021 7.965 7 8.282 7 L 8.282 7.007 Z"/>
+      <line style="opacity: 50%" x1="18" y1="3.705" x2="18" y2="2.5"/>
+      <line style="opacity: 50%" x1="18" y1="11.295" x2="18" y2="12.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="4.816" x2="14.464" y2="3.964"/>
+      <line style="opacity: 50%" x1="20.711" y1="10.212" x2="21.563" y2="11.063"/>
+      <line style="opacity: 50%" x1="14.205" y1="7.5" x2="13.001" y2="7.5"/>
+      <line style="opacity: 50%" x1="21.795" y1="7.5" x2="23" y2="7.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="10.184" x2="14.464" y2="11.036"/>
+      <line style="opacity: 50%" x1="20.711" y1="4.789" x2="21.563" y2="3.937"/>
+      <circle style="opacity: 50%" cx="18" cy="7.5" r="2.169"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-pencil" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-pencil-code">
+      <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+      <path d="M13.5 6.5l4 4" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+  <symbol id="svg-eye" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-eye-code">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+      <path
+        d="M11.11 17.958c-3.209 -.307 -5.91 -2.293 -8.11 -5.958c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6c-.21 .352 -.427 .688 -.647 1.008" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+<a class="skip-to-content muted-link" href="#furo-main-content">Skip to content</a>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../index.html"><div class="brand">DelphiVCL Documentation</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+          <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../index.html">
+  
+  <div class="sidebar-logo-container">
+    <img class="sidebar-logo only-light" src="../_static/DelphiVCL4Python-sidebar.svg" alt="Light Logo"/>
+    <img class="sidebar-logo only-dark" src="../_static/DelphiVCL4Python-sidebar-dark.svg" alt="Dark Logo"/>
+  </div>
+  
+  <span class="sidebar-brand-text">DelphiVCL Documentation</span>
+  
+</a><form class="sidebar-search-container" method="get" action="../search.html" role="search">
+  <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../tutorials_guides.html">Tutorials &amp; Guides</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of Tutorials &amp; Guides</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../quickstart.html">Quickstart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples.html">Example Gallery</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq.html">Frequently Asked Questions</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current has-children"><a class="reference internal" href="../reference.html">Reference Manual</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle navigation of Reference Manual</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l2 current has-children"><a class="reference internal" href="../reference_index/delphivcl_classes.html">DelphiVCL</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle navigation of DelphiVCL</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Object.html">Object</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.StyleManager.html">StyleManager</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Stream.html">Stream</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Monitor.html">Monitor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomStyleServices.html">CustomStyleServices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Persistent.html">Persistent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Strings.html">Strings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Picture.html">Picture</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Collection.html">Collection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Canvas.html">Canvas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Graphic.html">Graphic</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Bitmap.html">Bitmap</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Icon.html">Icon</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Metafile.html">Metafile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Component.html">Component</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Timer.html">Timer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.OpenDialog.html">OpenDialog</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.MenuItem.html">MenuItem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Menu.html">Menu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.FileOpenDialog.html">FileOpenDialog</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ContainedActionList.html">ContainedActionList</a></li>
+<li class="toctree-l3 current current-page"><a class="current reference internal" href="#">Control</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomBindingsList.html">CustomBindingsList</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BasicBindComponent.html">BasicBindComponent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BasicAction.html">BasicAction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BaseBindScopeComponent.html">BaseBindScopeComponent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BaseLinkingBindSource.html">BaseLinkingBindSource</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ContainedAction.html">ContainedAction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BindingsList.html">BindingsList</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BoundLabel.html">BoundLabel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomControl.html">CustomControl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Label.html">Label</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.WinControl.html">WinControl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomActionList.html">CustomActionList</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.MainMenu.html">MainMenu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.PopupMenu.html">PopupMenu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.SaveDialog.html">SaveDialog</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ActionList.html">ActionList</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.MediaPlayer.html">MediaPlayer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomToggleSwitch.html">CustomToggleSwitch</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomActivityIndicator.html">CustomActivityIndicator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomAction.html">CustomAction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Action.html">Action</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BaseObjectBindSource.html">BaseObjectBindSource</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomPrototypeBindSource.html">CustomPrototypeBindSource</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ActivityIndicator.html">ActivityIndicator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ToggleSwitch.html">ToggleSwitch</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.PrototypeBindSource.html">PrototypeBindSource</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ContainedBindComponent.html">ContainedBindComponent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BindComponentDelegate.html">BindComponentDelegate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.LinkPropertyToFieldDelegate.html">LinkPropertyToFieldDelegate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.LinkControlDelegate.html">LinkControlDelegate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomLinkPropertyToField.html">CustomLinkPropertyToField</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.LinkControlToFieldDelegate.html">LinkControlToFieldDelegate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.LinkPropertyToField.html">LinkPropertyToField</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomLinkControlToField.html">CustomLinkControlToField</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomLinkListControlToField.html">CustomLinkListControlToField</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.LinkControlToField.html">LinkControlToField</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.LinkListControlToField.html">LinkListControlToField</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BitBtn.html">BitBtn</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Button.html">Button</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CheckBox.html">CheckBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ColorBox.html">ColorBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ComboBox.html">ComboBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ControlBar.html">ControlBar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomGrid.html">CustomGrid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomEdit.html">CustomEdit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomForm.html">CustomForm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomStatusBar.html">CustomStatusBar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomTabControl.html">CustomTabControl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.DateTimePicker.html">DateTimePicker</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.GroupBox.html">GroupBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Header.html">Header</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.LabeledEdit.html">LabeledEdit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ListBox.html">ListBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Notebook.html">Notebook</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Page.html">Page</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.PageControl.html">PageControl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Panel.html">Panel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.RadioButton.html">RadioButton</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.RadioGroup.html">RadioGroup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ScrollBar.html">ScrollBar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.SpinButton.html">SpinButton</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.StaticText.html">StaticText</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.TabSheet.html">TabSheet</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ToolBar.html">ToolBar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.TrackBar.html">TrackBar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomDrawGrid.html">CustomDrawGrid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomMemo.html">CustomMemo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomNumberBox.html">CustomNumberBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Edit.html">Edit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.SpinEdit.html">SpinEdit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Form.html">Form</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.StatusBar.html">StatusBar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.TabControl.html">TabControl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.DrawGrid.html">DrawGrid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.Memo.html">Memo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.NumberBox.html">NumberBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.StringGrid.html">StringGrid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.CustomMemoryStream.html">CustomMemoryStream</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.HandleStream.html">HandleStream</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.MemoryStream.html">MemoryStream</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.ResourceStream.html">ResourceStream</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.FileStream.html">FileStream</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BytesStream.html">BytesStream</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.BufferedFileStream.html">BufferedFileStream</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphivcl.StringStream.html">StringStream</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../changelog.html">Changelog</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle navigation of Changelog</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../changelog/0.1.40-changelog.html">v0.1.40</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../changelog/1.0.0-changelog.html">v1.0.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../changelog/1.0.1-changelog.html">v1.0.1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../changelog/1.0.2-changelog.html">v1.0.2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../changelog/1.0.3-changelog.html">v1.0.3</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing.html">Contributing</a></li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+              <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role="main" id="furo-main-content">
+          <section id="control">
+<h1>Control<a class="headerlink" href="#control" title="Link to this heading">¶</a></h1>
+<p>Qualified name: <code class="docutils literal notranslate"><span class="pre">delphivcl.Control</span></code></p>
+<dl class="py class">
+<dt class="sig sig-object py" id="delphivcl.Control">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Control</span></span><a class="headerlink" href="#delphivcl.Control" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="delphivcl.Component.html#delphivcl.Component" title="delphivcl.Component"><code class="xref py py-class docutils literal notranslate"><span class="pre">Component</span></code></a></p>
+<p>TControl is the base class for all components that are visible at run time.
+Controls are visual components, meaning the user can see them and possibly interact with them at run time. All controls have properties, methods, and events that describe aspects of their appearance, such as the position of the control, the cursor or hint associated with the control, methods to paint or move the control, and events that respond to user actions.
+TControl has many protected properties and methods that are used or published by its descendants.</p>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.Control.BeginDrag" title="delphivcl.Control.BeginDrag"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BeginDrag</span></code></a></p></td>
+<td><p>Starts the dragging of a control.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.Control.BringToFront" title="delphivcl.Control.BringToFront"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BringToFront</span></code></a></p></td>
+<td><p>Puts the control in front of all other controls in its parent control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.Control.CheckNonMainThreadUsage" title="delphivcl.Control.CheckNonMainThreadUsage"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CheckNonMainThreadUsage</span></code></a></p></td>
+<td><p>Embarcadero Technologies does not currently have any additional information.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.Control.ClientToParent" title="delphivcl.Control.ClientToParent"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ClientToParent</span></code></a></p></td>
+<td><p>Translates client coordinates to parent coordinates.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.Control.ClientToScreen" title="delphivcl.Control.ClientToScreen"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ClientToScreen</span></code></a></p></td>
+<td><p>Translates a given point from client area coordinates to global screen coordinates.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.Control.DefaultHandler" title="delphivcl.Control.DefaultHandler"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DefaultHandler</span></code></a></p></td>
+<td><p>Provides message handling for all messages that do not have specific handlers.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.Control.Dock" title="delphivcl.Control.Dock"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Dock</span></code></a></p></td>
+<td><p>Used internally to dock the control.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.Control.DragDrop" title="delphivcl.Control.DragDrop"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DragDrop</span></code></a></p></td>
+<td><p>Is an OnDragDrop event dispatcher.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.Control.Dragging" title="delphivcl.Control.Dragging"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Dragging</span></code></a></p></td>
+<td><p>Indicates whether a control is being dragged.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.Control.DrawTextBiDiModeFlags" title="delphivcl.Control.DrawTextBiDiModeFlags"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DrawTextBiDiModeFlags</span></code></a></p></td>
+<td><p>Returns the text flags that reflect the current setting of the BiDiMode property.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.Control.DrawTextBiDiModeFlagsReadingOnly" title="delphivcl.Control.DrawTextBiDiModeFlagsReadingOnly"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DrawTextBiDiModeFlagsReadingOnly</span></code></a></p></td>
+<td><p>Returns the text flag to add that indicates whether the control's text should read from right to left.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.Control.EndDrag" title="delphivcl.Control.EndDrag"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EndDrag</span></code></a></p></td>
+<td><p>Stops a control from being dragged any further.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.Control.GetControlsAlignment" title="delphivcl.Control.GetControlsAlignment"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GetControlsAlignment</span></code></a></p></td>
+<td><p>Indicates how text is aligned within the control.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.Control.GetInternalStyleElements" title="delphivcl.Control.GetInternalStyleElements"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GetInternalStyleElements</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.Control.GetParentComponent" title="delphivcl.Control.GetParentComponent"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GetParentComponent</span></code></a></p></td>
+<td><p>Returns the parent of the control.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.Control.GetStyleName" title="delphivcl.Control.GetStyleName"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GetStyleName</span></code></a></p></td>
+<td><p>Embarcadero Technologies does not currently have any additional information.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.Control.GetSystemMetrics" title="delphivcl.Control.GetSystemMetrics"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GetSystemMetrics</span></code></a></p></td>
+<td><p>Embarcadero Technologies does not currently have any additional information.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.Control.GetTextBuf" title="delphivcl.Control.GetTextBuf"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GetTextBuf</span></code></a></p></td>
+<td><p>Retrieves the control's text, copies it into a buffer, and returns the number of characters copied.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.Control.GetTextLen" title="delphivcl.Control.GetTextLen"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GetTextLen</span></code></a></p></td>
+<td><p>Returns the length of the control's text.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.Control.HasParent" title="delphivcl.Control.HasParent"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HasParent</span></code></a></p></td>
+<td><p>Indicates whether the control has a parent.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.Control.Hide" title="delphivcl.Control.Hide"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Hide</span></code></a></p></td>
+<td><p>Hides the wrapped Control</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.Control.InitiateAction" title="delphivcl.Control.InitiateAction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InitiateAction</span></code></a></p></td>
+<td><p>Calls the action link's Update method if the control is associated with an action link.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.Control.Invalidate" title="delphivcl.Control.Invalidate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Invalidate</span></code></a></p></td>
+<td><p>Completely repaint control.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.Control.IsCustomStyleActive" title="delphivcl.Control.IsCustomStyleActive"><code class="xref py py-obj docutils literal notranslate"><span class="pre">IsCustomStyleActive</span></code></a></p></td>
+<td><p>Embarcadero Technologies does not currently have any additional information.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.Control.IsLightStyleColor" title="delphivcl.Control.IsLightStyleColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">IsLightStyleColor</span></code></a></p></td>
+<td><p>Embarcadero Technologies does not currently have any additional information.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.Control.IsRightToLeft" title="delphivcl.Control.IsRightToLeft"><code class="xref py py-obj docutils literal notranslate"><span class="pre">IsRightToLeft</span></code></a></p></td>
+<td><p>Indicates whether the control should be reversed right to left.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.Control.ManualDock" title="delphivcl.Control.ManualDock"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ManualDock</span></code></a></p></td>
+<td><p>Docks the control.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.Control.ManualFloat" title="delphivcl.Control.ManualFloat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ManualFloat</span></code></a></p></td>
+<td><p>Undocks the control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.Control.MouseWheelHandler" title="delphivcl.Control.MouseWheelHandler"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MouseWheelHandler</span></code></a></p></td>
+<td><p>Dispatches messages received from a mouse wheel.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.Control.ParentToClient" title="delphivcl.Control.ParentToClient"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ParentToClient</span></code></a></p></td>
+<td><p>Translate parent coordinates to client coordinates.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.Control.Perform" title="delphivcl.Control.Perform"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Perform</span></code></a></p></td>
+<td><p>Responds as if the control received a specified Windows message.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.Control.Refresh" title="delphivcl.Control.Refresh"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Refresh</span></code></a></p></td>
+<td><p>Repaints the control on the screen.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.Control.Repaint" title="delphivcl.Control.Repaint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Repaint</span></code></a></p></td>
+<td><p>Forces the control to repaint its image on the screen.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.Control.ReplaceDockedControl" title="delphivcl.Control.ReplaceDockedControl"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ReplaceDockedControl</span></code></a></p></td>
+<td><p>Docks the control in the place where another control is already docked.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.Control.ScaleForPPI" title="delphivcl.Control.ScaleForPPI"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ScaleForPPI</span></code></a></p></td>
+<td><p>Embarcadero Technologies does not currently have any additional information.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.Control.ScaleRectSize" title="delphivcl.Control.ScaleRectSize"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ScaleRectSize</span></code></a></p></td>
+<td><p>Embarcadero Technologies does not currently have any additional information.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.Control.ScaleValue" title="delphivcl.Control.ScaleValue"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ScaleValue</span></code></a></p></td>
+<td><p>The overloaded ScaleValue methods return a measure passed as parameter scaled by the current scale factor for the control (the value of the ScaleFactor read-only property).</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.Control.ScreenToClient" title="delphivcl.Control.ScreenToClient"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ScreenToClient</span></code></a></p></td>
+<td><p>Converts the screen coordinates of a specified point on the screen to client coordinates.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.Control.SendToBack" title="delphivcl.Control.SendToBack"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SendToBack</span></code></a></p></td>
+<td><p>Puts a windowed control behind all other windowed controls, or puts a non-windowed control behind all other non-windowed controls.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.Control.SetBounds" title="delphivcl.Control.SetBounds"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SetBounds</span></code></a></p></td>
+<td><p>Sets the Left, Top, Width, and Height properties all at once.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.Control.SetDesignVisible" title="delphivcl.Control.SetDesignVisible"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SetDesignVisible</span></code></a></p></td>
+<td><p>Makes a control visible at design time.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.Control.SetParentComponent" title="delphivcl.Control.SetParentComponent"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SetParentComponent</span></code></a></p></td>
+<td><p>Sets the parent for the control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.Control.SetTextBuf" title="delphivcl.Control.SetTextBuf"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SetTextBuf</span></code></a></p></td>
+<td><p>Sets the text of the control.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.Control.Show" title="delphivcl.Control.Show"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Show</span></code></a></p></td>
+<td><p>Shows the wrapped Control</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.Control.Update" title="delphivcl.Control.Update"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Update</span></code></a></p></td>
+<td><p>Processes any pending paint messages immediately.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.Control.UseRightToLeftAlignment" title="delphivcl.Control.UseRightToLeftAlignment"><code class="xref py py-obj docutils literal notranslate"><span class="pre">UseRightToLeftAlignment</span></code></a></p></td>
+<td><p>Specifies whether the control's alignment should be reversed right-to-left.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.Control.UseRightToLeftReading" title="delphivcl.Control.UseRightToLeftReading"><code class="xref py py-obj docutils literal notranslate"><span class="pre">UseRightToLeftReading</span></code></a></p></td>
+<td><p>Specifies whether the control is using a right-to-left reading order.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.Control.UseRightToLeftScrollBar" title="delphivcl.Control.UseRightToLeftScrollBar"><code class="xref py py-obj docutils literal notranslate"><span class="pre">UseRightToLeftScrollBar</span></code></a></p></td>
+<td><p>Specifies whether the vertical scroll bar appears on the left side of the control.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="rubric">Attributes</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.Control.Action" title="delphivcl.Control.Action"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Action</span></code></a></p></td>
+<td><p>Specifies the action associated with the control.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.Control.Align" title="delphivcl.Control.Align"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Align</span></code></a></p></td>
+<td><p>Determines how the control aligns within its container (parent control).</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.Control.AlignWithMargins" title="delphivcl.Control.AlignWithMargins"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AlignWithMargins</span></code></a></p></td>
+<td><p>Specifies whether a control should be constrained by margins.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.Control.Anchors" title="delphivcl.Control.Anchors"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Anchors</span></code></a></p></td>
+<td><p>Specifies how the control is anchored to its parent.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.Control.BiDiMode" title="delphivcl.Control.BiDiMode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BiDiMode</span></code></a></p></td>
+<td><p>Specifies the bidirectional mode for the control.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.Control.BoundsRect" title="delphivcl.Control.BoundsRect"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BoundsRect</span></code></a></p></td>
+<td><p>Specifies the bounding rectangle of the control, expressed in the coordinate system of the parent control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ClassName</span></code></p></td>
+<td><p>Returns the TObject.ClassName</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.Control.ClientHeight" title="delphivcl.Control.ClientHeight"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ClientHeight</span></code></a></p></td>
+<td><p>Specifies the height of the control's client area in pixels.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.Control.ClientOrigin" title="delphivcl.Control.ClientOrigin"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ClientOrigin</span></code></a></p></td>
+<td><p>Specifies the screen coordinates (in pixels) of the upper-left corner of a control's client area.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.Control.ClientRect" title="delphivcl.Control.ClientRect"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ClientRect</span></code></a></p></td>
+<td><p>Specifies the size of a control's client area in pixels.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.Control.ClientWidth" title="delphivcl.Control.ClientWidth"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ClientWidth</span></code></a></p></td>
+<td><p>Specifies the horizontal size of the control's client area in pixels.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ComObject</span></code></p></td>
+<td><p>Specifies the interface reference implemented by the component.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ComponentCount</span></code></p></td>
+<td><p>Returns the owned component count</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ComponentIndex</span></code></p></td>
+<td><p>Indicates the position of the component in its owner's Components property array.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ComponentState</span></code></p></td>
+<td><p>Describes the current state of the component, indicating when a component needs to avoid certain actions.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ComponentStyle</span></code></p></td>
+<td><p>Governs the behavior of the component.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Components</span></code></p></td>
+<td><p>Returns an iterator over the owned components</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.Control.Constraints" title="delphivcl.Control.Constraints"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Constraints</span></code></a></p></td>
+<td><p>Specifies the size constraints for the control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.Control.ControlState" title="delphivcl.Control.ControlState"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ControlState</span></code></a></p></td>
+<td><p>Specifies the current state of a control at run time.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.Control.ControlStyle" title="delphivcl.Control.ControlStyle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ControlStyle</span></code></a></p></td>
+<td><p>Determines style characteristics of the control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.Control.CurrentPPI" title="delphivcl.Control.CurrentPPI"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CurrentPPI</span></code></a></p></td>
+<td><p>Embarcadero Technologies does not currently have any additional information.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.Control.Cursor" title="delphivcl.Control.Cursor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cursor</span></code></a></p></td>
+<td><p>Specifies the image used to represent the mouse pointer when it passes into the region covered by the control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.Control.CustomHint" title="delphivcl.Control.CustomHint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CustomHint</span></code></a></p></td>
+<td><p>CustomHint is a custom hint for the control.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">DesignInfo</span></code></p></td>
+<td><p>Contains information used by the Form designer.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.Control.DockOrientation" title="delphivcl.Control.DockOrientation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DockOrientation</span></code></a></p></td>
+<td><p>DockOrientation specifies how the control is docked relative to other controls docked in the same parent.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.Control.Enabled" title="delphivcl.Control.Enabled"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Enabled</span></code></a></p></td>
+<td><p>Controls whether the control responds to mouse, keyboard, and timer events.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.Control.ExplicitHeight" title="delphivcl.Control.ExplicitHeight"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ExplicitHeight</span></code></a></p></td>
+<td><p>Specifies the explicit vertical size of the control in pixels.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.Control.ExplicitLeft" title="delphivcl.Control.ExplicitLeft"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ExplicitLeft</span></code></a></p></td>
+<td><p>Specifies the explicit horizontal pixel coordinate of the left edge of a component relative to its parent.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.Control.ExplicitTop" title="delphivcl.Control.ExplicitTop"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ExplicitTop</span></code></a></p></td>
+<td><p>Specifies the explicit vertical pixel coordinate of the top edge of a component relative to its parent.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.Control.ExplicitWidth" title="delphivcl.Control.ExplicitWidth"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ExplicitWidth</span></code></a></p></td>
+<td><p>Specifies the explicit horizontal size of the control in pixels.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.Control.Floating" title="delphivcl.Control.Floating"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Floating</span></code></a></p></td>
+<td><p>Specifies whether the control is floating.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.Control.FloatingDockSiteClass" title="delphivcl.Control.FloatingDockSiteClass"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FloatingDockSiteClass</span></code></a></p></td>
+<td><p>Specifies the class of the temporary control that hosts the control when it is floating.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.Control.Height" title="delphivcl.Control.Height"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Height</span></code></a></p></td>
+<td><p>Specifies the vertical size of the control in pixels.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.Control.HelpContext" title="delphivcl.Control.HelpContext"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HelpContext</span></code></a></p></td>
+<td><p>The HelpContext property contains the numeric context ID that identifies the Help topic for the control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.Control.HelpKeyword" title="delphivcl.Control.HelpKeyword"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HelpKeyword</span></code></a></p></td>
+<td><p>The HelpKeyword property contains the keyword string that identifies the Help topic for the control.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.Control.HelpType" title="delphivcl.Control.HelpType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HelpType</span></code></a></p></td>
+<td><p>Specifies whether the control's context-sensitive Help topic is identified by a context ID or by keyword.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.Control.Hint" title="delphivcl.Control.Hint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Hint</span></code></a></p></td>
+<td><p>Hint contains the text string that appears when the user moves the mouse over the control.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.Control.HostDockSite" title="delphivcl.Control.HostDockSite"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HostDockSite</span></code></a></p></td>
+<td><p>Specifies the control in which the control is docked.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.Control.LRDockWidth" title="delphivcl.Control.LRDockWidth"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LRDockWidth</span></code></a></p></td>
+<td><p>Specifies the width of the control when it is docked horizontally.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.Control.Left" title="delphivcl.Control.Left"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Left</span></code></a></p></td>
+<td><p>Specifies the horizontal coordinate of the left edge of a component relative to its parent.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.Control.Margins" title="delphivcl.Control.Margins"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Margins</span></code></a></p></td>
+<td><p>Specifies the margins of the control.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Name</span></code></p></td>
+<td><p>Specifies the name of the component as referenced in code.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Observers</span></code></p></td>
+<td><p>Indicates the TObservers object added to the TComponent.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Owner</span></code></p></td>
+<td><p>Returns the Component Owner</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.Control.Parent" title="delphivcl.Control.Parent"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Parent</span></code></a></p></td>
+<td><p>Returns/Sets the Control Parent</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.Control.ParentCustomHint" title="delphivcl.Control.ParentCustomHint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ParentCustomHint</span></code></a></p></td>
+<td><p>Specifies where a control looks for its custom hint.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.Control.ScaleFactor" title="delphivcl.Control.ScaleFactor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ScaleFactor</span></code></a></p></td>
+<td><p>Embarcadero Technologies does not currently have any additional information.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.Control.ShowHint" title="delphivcl.Control.ShowHint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ShowHint</span></code></a></p></td>
+<td><p>ShowHint specifies whether to show the Help Hint when the mouse pointer moves over the control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.Control.StyleElements" title="delphivcl.Control.StyleElements"><code class="xref py py-obj docutils literal notranslate"><span class="pre">StyleElements</span></code></a></p></td>
+<td><p>Specifies the style elements that are used by the control.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.Control.StyleName" title="delphivcl.Control.StyleName"><code class="xref py py-obj docutils literal notranslate"><span class="pre">StyleName</span></code></a></p></td>
+<td><p>Embarcadero Technologies does not currently have any additional information.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.Control.TBDockHeight" title="delphivcl.Control.TBDockHeight"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TBDockHeight</span></code></a></p></td>
+<td><p>Specifies the height of the control when it is docked vertically.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Tag</span></code></p></td>
+<td><p>Stores a NativeInt integral value as a part of a component.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.Control.Top" title="delphivcl.Control.Top"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Top</span></code></a></p></td>
+<td><p>Specifies the Y coordinate of the upper-left corner of a control, relative to its parent or containing control in pixels.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.Control.Touch" title="delphivcl.Control.Touch"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Touch</span></code></a></p></td>
+<td><p>Specifies the touch manager component associated with the control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.Control.UndockHeight" title="delphivcl.Control.UndockHeight"><code class="xref py py-obj docutils literal notranslate"><span class="pre">UndockHeight</span></code></a></p></td>
+<td><p>Specifies the height of the control when it is floating.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.Control.UndockWidth" title="delphivcl.Control.UndockWidth"><code class="xref py py-obj docutils literal notranslate"><span class="pre">UndockWidth</span></code></a></p></td>
+<td><p>Specifies the width of the control when it is floating.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">VCLComObject</span></code></p></td>
+<td><p>Represents information used internally by components that support COM.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphivcl.Control.Visible" title="delphivcl.Control.Visible"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Visible</span></code></a></p></td>
+<td><p>Specifies whether the component appears onscreen.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphivcl.Control.Width" title="delphivcl.Control.Width"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Width</span></code></a></p></td>
+<td><p>Specifies the horizontal size of the control or form in pixels.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.Control.Action">
+<span class="sig-name descname"><span class="pre">Action</span></span><a class="headerlink" href="#delphivcl.Control.Action" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the action associated with the control.
+Action is the action object that is associated with the control. Actions allow an application to centralize the response to user commands. When a control is associated with an action, the action determines the appropriate properties and events of the control (such as whether the control is enabled or how it responds to an OnClick event).
+To create actions at design time, place an action list component on a form or data module. Double-click the action list to bring up the action list editor. Add actions in the editor using its context menu. Once the actions have been added using the Action List editor, they appear in the drop-down list for the Action property in the Object Inspector.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="delphivcl.BasicAction.html#delphivcl.BasicAction" title="delphivcl.BasicAction">BasicAction</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.Control.Align">
+<span class="sig-name descname"><span class="pre">Align</span></span><a class="headerlink" href="#delphivcl.Control.Align" title="Link to this definition">¶</a></dt>
+<dd><p>Determines how the control aligns within its container (parent control).
+Use Align to align a control to the top, bottom, left, or right of a form or panel and have it remain there even if the size of the form, panel, or component that contains the control changes. When the parent is resized, an aligned control also resizes so that it continues to span the top, bottom, left, or right edge of the parent.
+For example, to use a panel component with various controls on it as a tool palette, change the panel’s Align value to alLeft. The value of alLeft for the Align property of the panel guarantees that the tool palette remains on the left side of the form and always equals the client height of the form.
+The default value of Align is alNone, which means a control remains where it is positioned on a form or panel.</p>
+<p>Tip: If Align is set to alClient, the control fills the entire client area so that it is impossible to select the parent form by clicking it. In this case, select the parent by selecting the control on the form and pressing ESC, or by using the Object Inspector.
+Any number of child components within a single parent can have the same Align value, in which case they stack up along the edge of the parent. The child controls stack up in z-order. To adjust the order in which the controls stack up, drag the controls into their desired positions.</p>
+<p>Note: To cause a control to maintain a specified relationship with an edge of its parent, but not necessarily lie along one edge of the parent, use the Anchors property instead.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Align</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.Control.AlignWithMargins">
+<span class="sig-name descname"><span class="pre">AlignWithMargins</span></span><a class="headerlink" href="#delphivcl.Control.AlignWithMargins" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies whether a control should be constrained by margins.
+If AlignWithMargins is true, use the Margins property of the control to govern the spacing relative to other controls that are aligned with this one. The controls are not allowed to be any closer than the spacing specified in Margins. This spacing is maintained as controls are moved when the parent control resizes.
+AlignWithMargins is true if the style csAlignWithMargins, a TControlStyle type, is in the control’s ControlStyle property, and false otherwise.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.Control.Anchors">
+<span class="sig-name descname"><span class="pre">Anchors</span></span><a class="headerlink" href="#delphivcl.Control.Anchors" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies how the control is anchored to its parent.
+Use Anchors to ensure that a control maintains its current position relative to an edge of its parent, even if the parent is resized. When its parent is resized, the control holds its position relative to the edges to which it is anchored.
+If a control is anchored to opposite edges of its parent, the control stretches when its parent is resized. For example, if a control has its Anchors property set to [akLeft, akRight], the control stretches when the width of its parent changes.
+Anchors is enforced only when the parent is resized. Thus, for example, if a control is anchored to opposite edges of a form at design time and the form is created in a maximized state, the control is not stretched because the form is not resized after the control is created.</p>
+<p>Note: If a control should maintain contact with three edges of its parent (hugging one side of the parent and stretching the length of that side), use the Align property instead. Unlike Anchors, Align allows controls to adjust to changes in the size of other aligned sibling controls as well as changes to the parent’s size.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Anchors</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Control.BeginDrag">
+<span class="sig-name descname"><span class="pre">BeginDrag</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Immediate</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Threshold</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#delphivcl.Control.BeginDrag" title="Link to this definition">¶</a></dt>
+<dd><p>Starts the dragging of a control.
+Call BeginDrag to start a drag operation. BeginDrag is called in application code only when the value of the control’s DragMode is dmManual. If DragMode is dmAutomatic, BeginDrag is called automatically.
+If the Immediate parameter is true, the mouse pointer changes to the value of the DragCursor property and dragging begins immediately. If Immediate is false, the mouse pointer does not change to the value of the DragCursor property and dragging does not begin until the user moves the mouse pointer the number of pixels specified by the Threshold parameter. If the caller passes a Threshold value less than 0 (such as the default value for this parameter), BeginDrag uses the DragThreshold property of the global Mouse variable.
+Setting Immediate to false allows the control to accept mouse clicks without beginning a drag-and-drop or drag-and-dock operation.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.Control.BiDiMode">
+<span class="sig-name descname"><span class="pre">BiDiMode</span></span><a class="headerlink" href="#delphivcl.Control.BiDiMode" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the bidirectional mode for the control.
+Use BiDiMode to enable the control to adjust its appearance and behavior automatically when the application runs in a locale that reads from right to left instead of left to right. The bidirectional mode controls the reading order for the text, the placement of the vertical scroll bar, and whether the alignment is changed.
+Alignment does not change for controls that are known to contain number, date, time, or currency values. For example, with data-aware controls, the alignment does not change for the following field types: ftSmallint, ftInteger, ftWord, ftFloat, ftCurrency, ftBCD, ftDate, ftTime, ftDateTime, ftAutoInc.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>BiDiMode</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.Control.BoundsRect">
+<span class="sig-name descname"><span class="pre">BoundsRect</span></span><a class="headerlink" href="#delphivcl.Control.BoundsRect" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the bounding rectangle of the control, expressed in the coordinate system of the parent control.
+Use BoundsRect as a quick way to obtain the pixel locations of all corners of the control all at once.
+For example, the statement</p>
+<p>R := Control.BoundsRect;</p>
+<p>R = Control-&gt;BoundsRect;</p>
+<p>corresponds to</p>
+<p>R.Left := Control.Left;
+R.Top := Control.Top;
+R.Right := Control.Left + Control.Width;
+R.Bottom := Control.Top + Control.Height;</p>
+<p>R.Left = Control-&gt;Left;
+R.Top = Control-&gt;Top;
+R.Right = Control-&gt;Left + Control-&gt;Width;
+R.Bottom = Control-&gt;Top + Control-&gt;Height;</p>
+<p>The origin of the pixel coordinate system is in the upper-left corner of the parent window.</p>
+<p>Note:  A point is considered within the control’s bounds rectangle if it lies on the left or top side but not if it lies on the right or bottom side. That is, to be inside the bounds rectangle, the x-coordinate must be greater than or equal to BoundsRect.Left and less than BoundsRect.Right, and the y-coordinate must be greater than or equal to BoundsRect.Top and less than BoundsRect.Bottom.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Rect</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Control.BringToFront">
+<span class="sig-name descname"><span class="pre">BringToFront</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.Control.BringToFront" title="Link to this definition">¶</a></dt>
+<dd><p>Puts the control in front of all other controls in its parent control.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Control.CheckNonMainThreadUsage">
+<span class="sig-name descname"><span class="pre">CheckNonMainThreadUsage</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.Control.CheckNonMainThreadUsage" title="Link to this definition">¶</a></dt>
+<dd><p>Embarcadero Technologies does not currently have any additional information.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.Control.ClientHeight">
+<span class="sig-name descname"><span class="pre">ClientHeight</span></span><a class="headerlink" href="#delphivcl.Control.ClientHeight" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the height of the control’s client area in pixels.
+Use ClientHeight to read or change the height of the control’s client area.
+For TControl, ClientHeight is the same as Height. Derived classes may implement a ClientHeight property that differs from Height. For example, the ClientHeight of a form is the value of the Height property minus the height of the title bar, resize border, and scroll bars.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.Control.ClientOrigin">
+<span class="sig-name descname"><span class="pre">ClientOrigin</span></span><a class="headerlink" href="#delphivcl.Control.ClientOrigin" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the screen coordinates (in pixels) of the upper-left corner of a control’s client area.
+Read ClientOrigin to locate the upper-left corner of the control’s client area. ClientOrigin returns X and Y coordinates as a TPoint type, where X specifies the horizontal coordinate of the point and Y specifies the vertical coordinate.
+The screen coordinates of a control that is descended from TControl and not TWinControl are the screen coordinates of the control’s parent added to its Left and Top properties. If the control doesn’t have a parent, an EInvalidOperation exception is raised when ClientOrigin is read.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Point</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.Control.ClientRect">
+<span class="sig-name descname"><span class="pre">ClientRect</span></span><a class="headerlink" href="#delphivcl.Control.ClientRect" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the size of a control’s client area in pixels.
+Read ClientRect to find out the size of the client area of a control. ClientRect returns a rectangle with its Top and Left fields set to zero, and its Bottom and Right fields set to the control’s Height and Width, respectively. ClientRect is equivalent to Rect(0, 0, ClientWidth, ClientHeight).
+A point is considered within the control’s client rectangle if it lies on the left or top side but not if it lies on the right or bottom side. That is, to be inside the client rectangle, the X-coordinate must be greater than or equal to ClientRect.Left and less than ClientRect.Right, and the Y-coordinate must be greater than or equal to ClientRect.Top and less than ClientRect.Bottom.</p>
+<p>Note: ClientRect is the size of the physical client area of the control, not its logical client area. If the control supports scrolling, the ClientRect is not the entire scrolling range, but only the region that is available at any given time.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Rect</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Control.ClientToParent">
+<span class="sig-name descname"><span class="pre">ClientToParent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Point</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Point</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">AParent</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="delphivcl.WinControl.html#delphivcl.WinControl" title="delphivcl.WinControl"><span class="pre">WinControl</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Point</span></span></span><a class="headerlink" href="#delphivcl.Control.ClientToParent" title="Link to this definition">¶</a></dt>
+<dd><p>Translates client coordinates to parent coordinates.
+ClientToParent translates Point from the current control’s coordinate system to AParent’s coordinate system. AParent must be a control that can be found by iterating up the chain of Parent properties. If AParent is nil (Delphi) or NULL (C++), the control’s immediate parent is used.
+An EInvalidOperation exception is thrown if AParent is not an ancestor control or the Parent property is nil (Delphi) or NULL (C++).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Control.ClientToScreen">
+<span class="sig-name descname"><span class="pre">ClientToScreen</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.Control.ClientToScreen" title="Link to this definition">¶</a></dt>
+<dd><p>Translates a given point from client area coordinates to global screen coordinates.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.Control.ClientWidth">
+<span class="sig-name descname"><span class="pre">ClientWidth</span></span><a class="headerlink" href="#delphivcl.Control.ClientWidth" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the horizontal size of the control’s client area in pixels.
+Use ClientWidth to read or change the width of the control’s client area. ClientWidth is equivalent to ClientRect.Right.
+For TControl, ClientWidth is the same as Width. Derived classes may implement a ClientWidth property that differs from Width. For example, the ClientWidth of a form is the value of the Width property minus the width of the resize border and scroll bars.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.Control.Constraints">
+<span class="sig-name descname"><span class="pre">Constraints</span></span><a class="headerlink" href="#delphivcl.Control.Constraints" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the size constraints for the control.
+Use Constraints to specify the minimum and maximum width and height of the control. When Constraints contains maximum or minimum values, the control cannot be resized to violate those constraints.</p>
+<p>Note: Constraints apply to the height of the form. However, the height of the form depends on how large Windows makes the title bar. For example, Windows XP uses much larger title bars than other windowing systems. To work around this, note the ClientHeight when you design your form and set the constraints in the FormCreate event. In the following example, ClientHeight is represented by x: Constraints.MinHeight�:= x + Height - ClientHeight.
+Warning: Do not set up constraints that conflict with the value of the Align or Anchors property. When these properties conflict, the response of the control to resize attempts is not well-defined.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>SizeConstraints</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.Control.ControlState">
+<span class="sig-name descname"><span class="pre">ControlState</span></span><a class="headerlink" href="#delphivcl.Control.ControlState" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the current state of a control at run time.
+Read ControlState to find out various conditions that affect the control such as whether it has been clicked or needs alignment. ControlState reflects transient conditions of an instance of the control, as opposed to attributes of the control class as a whole. ControlState consists of a set of flags drawn from the following values:</p>
+<p>Flag</p>
+<p>Meaning</p>
+<p>csLButtonDown</p>
+<p>The left mouse button was clicked and not yet released. This is set for all mouse-down events.</p>
+<p>csClicked</p>
+<p>The same as csLButtonDown, but only set if ControlStyle contains csClickEvents, meaning that mouse-down events are interpreted as clicks.</p>
+<p>csPalette</p>
+<p>The system palette has changed and the control or one of its descendants has not finished adjusting by realizing its palette.</p>
+<p>csReadingState</p>
+<p>The control is reading its state from a stream.</p>
+<p>csAlignmentNeeded</p>
+<p>The control needs to realign itself when alignment is re-enabled.</p>
+<p>csFocusing</p>
+<p>The application is processing messages intended to give the control focus. This does not guarantee the control will receive focus, but prevents recursive calls.</p>
+<p>csCreating</p>
+<p>The control and/or its owner and subcontrols are being created. This flag clears when all have finished creating.</p>
+<p>csPaintCopy</p>
+<p>The control is being replicated, meaning a copy of the control is being painted. The ControlStyle flag csReplicatable must be set for this state to occur.</p>
+<p>csCustomPaint</p>
+<p>The control is processing custom paint messages.</p>
+<p>csDestroyingHandle</p>
+<p>The control’s window is being destroyed.</p>
+<p>csDocking</p>
+<p>The control is being docked.</p>
+<p>The flags in ControlState are specific to controls, and augment the state flags in the ComponentState property.
+ControlState is primarily used by component writers in the implementation of components derived from TControl.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ControlState</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.Control.ControlStyle">
+<span class="sig-name descname"><span class="pre">ControlStyle</span></span><a class="headerlink" href="#delphivcl.Control.ControlStyle" title="Link to this definition">¶</a></dt>
+<dd><p>Determines style characteristics of the control.
+Use ControlStyle to determine various attributes of the control, such as whether the control can capture the mouse or has a fixed size. The ControlStyle property contains a set of style flags indicating these attributes. The following table lists the flags and their meanings:</p>
+<p>Flag</p>
+<p>Meaning</p>
+<p>csAcceptsControls</p>
+<p>The control becomes the parent of any controls dropped on it at design time.</p>
+<p>csCaptureMouse</p>
+<p>The control captures mouse events when it is clicked.</p>
+<p>csDesignInteractive</p>
+<p>The control maps right mouse button clicks at design time into left mouse button clicks to manipulate the control.</p>
+<p>csClickEvents</p>
+<p>The control can receive and respond to mouse clicks. Some controls may not inherit this attribute, for example, TButton.</p>
+<p>csFramed</p>
+<p>The control has a 3D frame.</p>
+<p>csSetCaption</p>
+<p>The control’s Caption should match the Name if it has not been explicitly set to something else.</p>
+<p>csOpaque</p>
+<p>The control completely fills its client rectangle.</p>
+<p>csDoubleClicks</p>
+<p>The control can receive and respond to double-click messages. Otherwise, map double-clicks into clicks.</p>
+<p>csFixedWidth</p>
+<p>The width of the control does not vary or scale.</p>
+<p>csFixedHeight</p>
+<p>The height of the control does not vary or scale.</p>
+<p>csNoDesignVisible</p>
+<p>The control is not visible at design time.</p>
+<p>csReplicatable</p>
+<p>The control can be copied using the PaintTo method to draw its image to an arbitrary canvas.</p>
+<p>csNoStdEvents</p>
+<p>Standard events such as mouse, key, and click events are ignored. This flag allows an application to run faster when there is no need to respond to these events.</p>
+<p>csDisplayDragImage</p>
+<p>If a control that has an associated drag image list is dragged across a control with this setting, then the image list is used to enhance the drag cursor while the cursor is over it. Otherwise, the drag cursor is used on its own.</p>
+<p>csReflector</p>
+<p>The control responds to Windows dialog messages, focus messages, or size change messages. Use this setting if the control can be used as an ActiveX control, so that it receives notification of these events.</p>
+<p>csActionClient</p>
+<p>The control is linked to an action object. This flag is set when the Action property is set, and cleared if the Action property is cleared.</p>
+<p>csMenuEvents</p>
+<p>The control responds to system menu commands.</p>
+<p>ControlStyle describes all controls instantiated from a given class. ControlStyle should not be modified at run time, except in the constructor. The ControlState property records transient conditions.
+The TControl constructor initializes ControlStyle to the set of csCaptureMouse, csClickEvents, csSetCaption, and csDoubleClicks.
+ControlStyle is primarily used by component writers when implementing components derived from TControl.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ControlStyle</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.Control.CurrentPPI">
+<span class="sig-name descname"><span class="pre">CurrentPPI</span></span><a class="headerlink" href="#delphivcl.Control.CurrentPPI" title="Link to this definition">¶</a></dt>
+<dd><p>Embarcadero Technologies does not currently have any additional information.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.Control.Cursor">
+<span class="sig-name descname"><span class="pre">Cursor</span></span><a class="headerlink" href="#delphivcl.Control.Cursor" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the image used to represent the mouse pointer when it passes into the region covered by the control.
+Change the value of Cursor to provide feedback to the user when the mouse pointer enters the control. The value of Cursor is the index of the cursor in the list of cursors maintained by the global variable, Screen. In addition to the built-in cursors provided by TScreen, applications can add custom cursors to the list.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.Control.CustomHint">
+<span class="sig-name descname"><span class="pre">CustomHint</span></span><a class="headerlink" href="#delphivcl.Control.CustomHint" title="Link to this definition">¶</a></dt>
+<dd><p>CustomHint is a custom hint for the control.
+CustomHint is a TCustomHint instance for a control to specify the appearance of the control’s hint.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>CustomHint</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Control.DefaultHandler">
+<span class="sig-name descname"><span class="pre">DefaultHandler</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Message</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#delphivcl.Control.DefaultHandler" title="Link to this definition">¶</a></dt>
+<dd><p>Provides message handling for all messages that do not have specific handlers.
+Override DefaultHandler to extend the default handling of messages. DefaultHandler is the final opportunity for component writers to handle messages to controls. The method referenced by WindowProc provides the first opportunity. Individual message methods such as Click provide additional opportunities.
+DefaultHandler handles the messages Windows sends to manage the control’s text: WM_GETTEXT, WM_SETTEXT, and WM_GETTEXTLENGTH.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Control.Dock">
+<span class="sig-name descname"><span class="pre">Dock</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">NewDockSite</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="delphivcl.WinControl.html#delphivcl.WinControl" title="delphivcl.WinControl"><span class="pre">WinControl</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">ARect</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Rect</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#delphivcl.Control.Dock" title="Link to this definition">¶</a></dt>
+<dd><p>Used internally to dock the control.
+Do not call Dock in applications. It is called automatically to implement many of the details of docking the control to a dock site.
+To dock the control programmatically, use ManualDock instead.
+The NewDockSite parameter specifies the docking site to which the control is being docked. The ARect parameter indicates the new dimensions of the control when it is docked to NewDockSite.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.Control.DockOrientation">
+<span class="sig-name descname"><span class="pre">DockOrientation</span></span><a class="headerlink" href="#delphivcl.Control.DockOrientation" title="Link to this definition">¶</a></dt>
+<dd><p>DockOrientation specifies how the control is docked relative to other controls docked in the same parent.
+Use DockOrientation to determine the position of the control relative to other controls docked to the same parent. Docking zones can be arranged from left to right or from top to bottom.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>DockOrientation</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Control.DragDrop">
+<span class="sig-name descname"><span class="pre">DragDrop</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Source</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="delphivcl.Object.html#delphivcl.Object" title="delphivcl.Object"><span class="pre">Object</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">X</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Y</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#delphivcl.Control.DragDrop" title="Link to this definition">¶</a></dt>
+<dd><p>Is an OnDragDrop event dispatcher.
+When creating a component that descends from TControl, override DragDrop to add additional code that executes before the OnDragDrop event handler is called.
+The Source parameter is the object that was dropped onto the control. The X and Y parameters are the mouse coordinates where the object was dropped.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Control.Dragging">
+<span class="sig-name descname"><span class="pre">Dragging</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.Control.Dragging" title="Link to this definition">¶</a></dt>
+<dd><p>Indicates whether a control is being dragged.
+Use Dragging to determine the drag state of the control. If Dragging returns true, the control is being dragged. If Dragging is false, the control is not being dragged.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Control.DrawTextBiDiModeFlags">
+<span class="sig-name descname"><span class="pre">DrawTextBiDiModeFlags</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Flags</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#delphivcl.Control.DrawTextBiDiModeFlags" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the text flags that reflect the current setting of the BiDiMode property.
+Call DrawTextBiDiModeFlags to obtain a value for the TextFlags property of a canvas when drawing the control’s text or caption. The return value can also be used with the Windows API DrawText function.
+Flags are the current text flags, unaltered by any bidirectional mode considerations.
+DrawTextBiDiModeFlags adds or removes the DT_RIGHT or DT_RTLREADING flags based on the values returned from the UseRightToLeftAlignment and UseRightToLeftReading methods.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Control.DrawTextBiDiModeFlagsReadingOnly">
+<span class="sig-name descname"><span class="pre">DrawTextBiDiModeFlagsReadingOnly</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.Control.DrawTextBiDiModeFlagsReadingOnly" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the text flag to add that indicates whether the control’s text should read from right to left.
+Call DrawTextBiDiModeFlagsReadingOnly to determine whether the DT_RTLREADING flag should be added when calling the Windows API DrawText or when assigning the TextFlags property of a canvas.
+DrawTextBiDiModeFlagsReadingOnly returns the DT_RTLREADING flag or 0, depending on the value returned from the UseRightToLeftReading method.
+To obtain the text flags that indicate the bidirectional alignment as well as text direction for the control, use DrawTextBiDiModeFlags instead.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.Control.Enabled">
+<span class="sig-name descname"><span class="pre">Enabled</span></span><a class="headerlink" href="#delphivcl.Control.Enabled" title="Link to this definition">¶</a></dt>
+<dd><p>Controls whether the control responds to mouse, keyboard, and timer events.
+Use Enabled to change the availability of the control to the user. To disable a control, set Enabled to False. Some disabled controls appear dimmed (for example: buttons, check boxes, labels), while others (container controls) simply lose their functionality without changing their appearance. If Enabled is set to False, the control ignores mouse, keyboard, and timer events.
+To re-enable a control, set Enabled to True.</p>
+<p>Note: This property applies to all TControl descendants.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Control.EndDrag">
+<span class="sig-name descname"><span class="pre">EndDrag</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Drop</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#delphivcl.Control.EndDrag" title="Link to this definition">¶</a></dt>
+<dd><p>Stops a control from being dragged any further.
+Use EndDrag to stop a dragging operation that began with a call to the BeginDrag method.
+If the Drop parameter is true, the control being dragged is dropped or docked. If the Drop parameter is false, the control is not dropped or docked and dragging is canceled.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.Control.ExplicitHeight">
+<span class="sig-name descname"><span class="pre">ExplicitHeight</span></span><a class="headerlink" href="#delphivcl.Control.ExplicitHeight" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the explicit vertical size of the control in pixels.
+ExplicitHeight is a read-only property used internally by Delphi. Use Height in applications to allow read and write access.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.Control.ExplicitLeft">
+<span class="sig-name descname"><span class="pre">ExplicitLeft</span></span><a class="headerlink" href="#delphivcl.Control.ExplicitLeft" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the explicit horizontal pixel coordinate of the left edge of a component relative to its parent.
+ExplicitLeft is a read-only property used internally by Delphi. Use Left in applications to allow read and write access.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.Control.ExplicitTop">
+<span class="sig-name descname"><span class="pre">ExplicitTop</span></span><a class="headerlink" href="#delphivcl.Control.ExplicitTop" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the explicit vertical pixel coordinate of the top edge of a component relative to its parent.
+ExplicitTop is a read-only property used internally by Delphi. Use Top in applications to allow read and write access.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.Control.ExplicitWidth">
+<span class="sig-name descname"><span class="pre">ExplicitWidth</span></span><a class="headerlink" href="#delphivcl.Control.ExplicitWidth" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the explicit horizontal size of the control in pixels.
+ExplicitWidth is a read-only property used internally by Delphi. Use Width in applications to allow read and write access.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.Control.Floating">
+<span class="sig-name descname"><span class="pre">Floating</span></span><a class="headerlink" href="#delphivcl.Control.Floating" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies whether the control is floating.
+Read Floating to determine whether a dockable control appears in a floating window, rather than docked to a parent control.</p>
+<p>Note:  Use Floating rather than the Parent property to determine whether a control is free-floating. Floating controls may have a non-nil (Delphi) or NULL (C++) parent if the FloatingDockSiteClass property specifies a floating window type.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.Control.FloatingDockSiteClass">
+<span class="sig-name descname"><span class="pre">FloatingDockSiteClass</span></span><a class="headerlink" href="#delphivcl.Control.FloatingDockSiteClass" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the class of the temporary control that hosts the control when it is floating.
+Use FloatingDockSiteClass to specify the class that houses the control when it is floating. This class must be a descendant of TWinControl. By default, it is TCustomDockForm. When the control is undocked, a temporary control of this type is created and the control is docked to that control. When the control is docked to another control, the temporary floating dock site is freed.
+If the control can float as a stand-alone window, FloatingDockSiteClass is nil (Delphi) or NULL (C++).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>WinControlClass</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Control.GetControlsAlignment">
+<span class="sig-name descname"><span class="pre">GetControlsAlignment</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.Control.GetControlsAlignment" title="Link to this definition">¶</a></dt>
+<dd><p>Indicates how text is aligned within the control.
+Use GetControlsAlignment to determine the alignment of the control. For controls that do not have an Alignment property, GetControlsAlignment returns taLeftJustify.</p>
+<p>Note: GetControlsAlignment returns the alignment of text before it is altered by the BiDiMode property. To check whether the alignment should be reversed to reflect the BiDiMode property, call UseRightToLeftAlignment.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Control.GetInternalStyleElements">
+<span class="sig-name descname"><span class="pre">GetInternalStyleElements</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">StyleElements</span></span></span><a class="headerlink" href="#delphivcl.Control.GetInternalStyleElements" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Control.GetParentComponent">
+<span class="sig-name descname"><span class="pre">GetParentComponent</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.Control.GetParentComponent" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the parent of the control.
+GetParentComponent is called by the streaming system that loads and saves VCL components. The component returned by GetParentComponent is responsible for loading and saving the control when it is streamed in or out. As implemented in TControl, GetParentComponent returns the value of the Parent property.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Control.GetStyleName">
+<span class="sig-name descname"><span class="pre">GetStyleName</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.Control.GetStyleName" title="Link to this definition">¶</a></dt>
+<dd><p>Embarcadero Technologies does not currently have any additional information.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Control.GetSystemMetrics">
+<span class="sig-name descname"><span class="pre">GetSystemMetrics</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nIndex</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#delphivcl.Control.GetSystemMetrics" title="Link to this definition">¶</a></dt>
+<dd><p>Embarcadero Technologies does not currently have any additional information.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Control.GetTextBuf">
+<span class="sig-name descname"><span class="pre">GetTextBuf</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Buffer</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">PWideChar</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">BufSize</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#delphivcl.Control.GetTextBuf" title="Link to this definition">¶</a></dt>
+<dd><p>Retrieves the control’s text, copies it into a buffer, and returns the number of characters copied.
+Call GetTextBuf to retrieve the text of a control into a fixed size buffer. The text copied is the value of the Text property. GetTextBuf returns the number of characters that were actually copied, which is either the length of the Text property, or BufSize - 1, whichever is smaller.
+To find out how many characters the buffer needs to hold the entire text, call the GetTextLen method before allocating a buffer for GetTextBuf.</p>
+<p>Note: GetTextBuf is available for compatibility with 16-bit code. Where backward compatibility is not an issue, use the Text property.
+Note:  To obtain the control’s text as an AnsiString, use the Text property instead.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Control.GetTextLen">
+<span class="sig-name descname"><span class="pre">GetTextLen</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.Control.GetTextLen" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the length of the control’s text.
+Call GetTextLen to find the length of the control’s text. This is the size needed for a text buffer to be used by the GetTextBuf method.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Control.HasParent">
+<span class="sig-name descname"><span class="pre">HasParent</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.Control.HasParent" title="Link to this definition">¶</a></dt>
+<dd><p>Indicates whether the control has a parent.
+HasParent indicates whether the Parent property has been assigned a value. This method is used by the streaming system to determine whether the control has a parent that is responsible for writing it to a stream. As implemented in TControl, HasParent returns true if the Parent property is not nil (Delphi) or NULL (C++), and false otherwise.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.Control.Height">
+<span class="sig-name descname"><span class="pre">Height</span></span><a class="headerlink" href="#delphivcl.Control.Height" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the vertical size of the control in pixels.
+Use the Height property to read or change the height of the control.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.Control.HelpContext">
+<span class="sig-name descname"><span class="pre">HelpContext</span></span><a class="headerlink" href="#delphivcl.Control.HelpContext" title="Link to this definition">¶</a></dt>
+<dd><p>The HelpContext property contains the numeric context ID that identifies the Help topic for the control.
+In case of a .chm help file, you must map symbolic Context IDs of Help topics to numeric topic ID values in the [MAP] section of your project (.hhp) file.
+To enable Context ID-based context-sensitive Help for a control, set Vcl.Controls.TControl.HelpType to htContext and set HelpContext to a numeric topic ID.
+A topic ID of 0 (default) means that no Help topic is provided for the control.
+To use the Help, insert in the uses clause of your application the Vcl.HtmlHelpViewer or another unit that provides an interface to the external Help viewer to use. For C++, you need to include the HTMLHelpViewer.hpp header file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.Control.HelpKeyword">
+<span class="sig-name descname"><span class="pre">HelpKeyword</span></span><a class="headerlink" href="#delphivcl.Control.HelpKeyword" title="Link to this definition">¶</a></dt>
+<dd><p>The HelpKeyword property contains the keyword string that identifies the Help topic for the control.
+To enable the keyword-based context-sensitive Help for a control, set Vcl.Controls.TControl.HelpType to htKeyword and set HelpKeyword to a keyword string.
+No keyword (zero-length string, the default) means that no Help topic is provided for the control.
+To use the Help, insert in the uses clause of your application the Vcl.HtmlHelpViewer or other unit that provides an interface to the external Help viewer to use. For C++, you need to include the HTMLHelpViewer.hpp header file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.Control.HelpType">
+<span class="sig-name descname"><span class="pre">HelpType</span></span><a class="headerlink" href="#delphivcl.Control.HelpType" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies whether the control’s context-sensitive Help topic is identified by a context ID or by keyword.
+Set HelpType to specify whether the control identifies its context-sensitive Help topic by a context ID or by keyword:</p>
+<p>When HelpType is htContext, the HelpContext property value identifies the control’s Help topic.
+When HelpType is htKeyword, the HelpKeyword property value identifies the control’s Help topic.
+To use the Help, insert in the uses clause of your application the Vcl.HtmlHelpViewer or another unit that provides an interface to the external Help viewer to use. For C++, you need to include the HTMLHelpViewer.hpp header file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>HelpType</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Control.Hide">
+<span class="sig-name descname"><span class="pre">Hide</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.Control.Hide" title="Link to this definition">¶</a></dt>
+<dd><p>Hides the wrapped Control</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.Control.Hint">
+<span class="sig-name descname"><span class="pre">Hint</span></span><a class="headerlink" href="#delphivcl.Control.Hint" title="Link to this definition">¶</a></dt>
+<dd><p>Hint contains the text string that appears when the user moves the mouse over the control.
+Use the Hint property to provide a string of Help text either as a Help Hint or as Help text on a particular location, such as a status bar.
+A Help Hint is a box containing Help text that appears for a control when the user moves the mouse pointer over the control and pauses momentarily.
+To set up Help Hints</p>
+<p>Specify the Hint property of each control for which a Help Hint should appear.
+Set the ShowHint property of each appropriate control to True, or set the ParentShowHint property of all controls to True and set the ShowHint property of the form to True.
+At run time, set the value of the application’s ShowHint property to True.
+To show the Hint on a status bar or another location, use the OnHint event handler of the application. The application’s OnHint event occurs when the mouse pointer moves over the control.
+Specify a hint to be used for both a Help Hint box and by an OnHint event handler by specifying values separated by a | (pipe) character.
+For example,</p>
+<p>Edit1.Hint := ‘Name|Enter Name in the edit box|1’;</p>
+<p>Edit1-&gt;Hint = “Name|Enter Name in the edit box|1”;</p>
+<p>Here:</p>
+<p>The Name part is the short hint and appears at the top of the Help Hint box.
+Enter full name in the edit box is the long hint and appears below the short hint. It can be extracted using the GetLongHint function for use in an OnHint event handler.
+1 is an optional image index in an image list in the Images property of the control and specifies the index of the image to appear in the hint.
+If Hint contains only one value, the entire string is used as a Help Hint and returned by the GetLongHint and GetShortHint functions. If a control has no Hint value specified, but its parent control does, the control uses the value of the parent control (as long as the control’s ShowHint property is True).</p>
+<p>Note: If the application’s ShowHint property is False, the Help Hint does not appear, but the OnHint event handler is still called.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.Control.HostDockSite">
+<span class="sig-name descname"><span class="pre">HostDockSite</span></span><a class="headerlink" href="#delphivcl.Control.HostDockSite" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the control in which the control is docked.
+Read HostDockSite to access the windowed control to which the control is docked. If the control is floating, HostDockSite is a temporary control of type FloatingDockSiteClass, or (if there is no floating dock site class) nil (Delphi) or NULL (C++).
+Most applications should use the ManualDock method rather than setting HostDockSite. Setting HostDockSite automatically undocks the control from its previous host (if any) and docks it to the specified control, but does not adjust the control’s position and alignment and bypasses the standard docking events.
+For dock clients, the value of HostDockSite is the same as the value of Parent. For controls that are not docking clients, HostDockSite is nil (Delphi) or NULL (C++), while Parent specifies the containing control.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="delphivcl.WinControl.html#delphivcl.WinControl" title="delphivcl.WinControl">WinControl</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Control.InitiateAction">
+<span class="sig-name descname"><span class="pre">InitiateAction</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.Control.InitiateAction" title="Link to this definition">¶</a></dt>
+<dd><p>Calls the action link’s Update method if the control is associated with an action link.
+When the application is idle, the library makes a series of calls to allow controls to update their associated actions so that they reflect the current properties of the controls. The first of these is to the InitiateAction method of the each form, followed by the InitiateAction methods of its visible menus and controls.
+InitiateAction calls the action’s update method indirectly (through its action link), which leads to a number of events, any of which may update the action and stop the update process:</p>
+<p>First, the action list that contains the action receives an OnUpdate event.
+If the action list does not handle the OnUpdate event, then the Application object receives an OnActionUpdate event.
+If the OnActionUpdate event handler does not update the action, the action itself receives an OnUpdate event.
+If that does not update the action, the active control’s UpdateAction method is called.
+Finally, if the action is still not updated, the active form’s UpdateAction method is called.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Control.Invalidate">
+<span class="sig-name descname"><span class="pre">Invalidate</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.Control.Invalidate" title="Link to this definition">¶</a></dt>
+<dd><p>Completely repaint control.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Control.IsCustomStyleActive">
+<span class="sig-name descname"><span class="pre">IsCustomStyleActive</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.Control.IsCustomStyleActive" title="Link to this definition">¶</a></dt>
+<dd><p>Embarcadero Technologies does not currently have any additional information.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Control.IsLightStyleColor">
+<span class="sig-name descname"><span class="pre">IsLightStyleColor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">AColor</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#delphivcl.Control.IsLightStyleColor" title="Link to this definition">¶</a></dt>
+<dd><p>Embarcadero Technologies does not currently have any additional information.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Control.IsRightToLeft">
+<span class="sig-name descname"><span class="pre">IsRightToLeft</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.Control.IsRightToLeft" title="Link to this definition">¶</a></dt>
+<dd><p>Indicates whether the control should be reversed right to left.
+Use IsRightToLeft to determine whether the control should be reversed in any way because it is running on a system with a Middle Eastern locale. IsRightToLeft is intended for component writers to ease the process of implementing the BiDiMode property.
+IsRightToLeft returns true if the application is running on a Middle East-enabled version of Windows and the BiDiMode property indicates that the control should make any adjustments.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.Control.LRDockWidth">
+<span class="sig-name descname"><span class="pre">LRDockWidth</span></span><a class="headerlink" href="#delphivcl.Control.LRDockWidth" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the width of the control when it is docked horizontally.
+Read LRDockWidth to get the width of the control from the last time it was docked horizontally. Set LRDockWidth to indicate the width the control should have the next time it is docked horizontally.
+LRDockWidth allows a control to “remember” its docked size even when its width changes because it is undocked or docked with a vertical orientation.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.Control.Left">
+<span class="sig-name descname"><span class="pre">Left</span></span><a class="headerlink" href="#delphivcl.Control.Left" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the horizontal coordinate of the left edge of a component relative to its parent.
+Use the Left property to determine where the left side of the control begins or to reposition the left side of the control.
+If the control is contained in another control, the Left and Top properties are relative to the parent control. If the control is contained directly by the form, the property values are relative to the form. For forms, the value of the Left property is relative to the screen in pixels.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Control.ManualDock">
+<span class="sig-name descname"><span class="pre">ManualDock</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">NewDockSite</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="delphivcl.WinControl.html#delphivcl.WinControl" title="delphivcl.WinControl"><span class="pre">WinControl</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">DropControl</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#delphivcl.Control" title="delphivcl.Control"><span class="pre">Control</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">ControlSide</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Align</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#delphivcl.Control.ManualDock" title="Link to this definition">¶</a></dt>
+<dd><p>Docks the control.
+Use ManualDock to dock the control programmatically. ManualDock undocks the control from its current dock site, then docks the control to its new dock site.
+NewDockSite is the control’s new dock site.
+DropControl is the control in the new dock site, if any, on which to drop the control. For example, when docking to a page control, DropControl would be a tab sheet.
+ControlSide specifies on which side of DropControl or NewDockSite (if DropControl is nil (Delphi) or NULL (C++)) the control should be docked. This value can be obtained by calling the dock site’s GetDockEdge method.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Control.ManualFloat">
+<span class="sig-name descname"><span class="pre">ManualFloat</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ScreenPos</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Rect</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#delphivcl.Control.ManualFloat" title="Link to this definition">¶</a></dt>
+<dd><p>Undocks the control.
+Use ManualFloat to undock the control programmatically.
+ScreenPos is the rectangle in which the control is displayed when it starts floating.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.Control.Margins">
+<span class="sig-name descname"><span class="pre">Margins</span></span><a class="headerlink" href="#delphivcl.Control.Margins" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the margins of the control.
+Use the Margins property to set the margins of the control.
+If AlignWithMargins is true, then the Margins property of the control governs the spacing relative to other controls that are aligned with this one. The controls are not allowed to be closer than the spacing specified in Margins.</p>
+<p>Note:  The Margins you set for the control have effect only when AlignWithMargins is set to true and Align is not set to alNone.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Margins</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Control.MouseWheelHandler">
+<span class="sig-name descname"><span class="pre">MouseWheelHandler</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Message</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Message</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#delphivcl.Control.MouseWheelHandler" title="Link to this definition">¶</a></dt>
+<dd><p>Dispatches messages received from a mouse wheel.
+The WndProc method calls MouseWheelHandler when it receives a mouse wheel message. MouseWheelHandler checks whether the windowed control is embedded in a form, and if so, calls the form’s MouseWheelHandler method. This allows the form to respond to mouse wheel messages before they are handled by individual controls. If the windowed control is not in a form, MouseWheelHandler passes the mouse wheel message to the Perform method, which generates an OnMouseWheel event, followed (if necessary) by an OnMouseWheelUp or OnMouseWheelDown event.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.Control.Parent">
+<span class="sig-name descname"><span class="pre">Parent</span></span><a class="headerlink" href="#delphivcl.Control.Parent" title="Link to this definition">¶</a></dt>
+<dd><p>Returns/Sets the Control Parent</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.Control.ParentCustomHint">
+<span class="sig-name descname"><span class="pre">ParentCustomHint</span></span><a class="headerlink" href="#delphivcl.Control.ParentCustomHint" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies where a control looks for its custom hint.
+To have a control use the same hint customization information as its parent control, set ParentCustomHint to true.
+If ParentCustomHint is false, the control uses its own CustomHint property.
+Set ParentCustomHint to true for all controls to ensure that all the controls on a form display their hint messages alike.
+When the value of a control’s CustomHint property changes, ParentCustomHint becomes false automatically.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Control.ParentToClient">
+<span class="sig-name descname"><span class="pre">ParentToClient</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Point</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Point</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">AParent</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="delphivcl.WinControl.html#delphivcl.WinControl" title="delphivcl.WinControl"><span class="pre">WinControl</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Point</span></span></span><a class="headerlink" href="#delphivcl.Control.ParentToClient" title="Link to this definition">¶</a></dt>
+<dd><p>Translate parent coordinates to client coordinates.
+ParentToClient translates Point from the AParent’s coordinate system to the current control’s coordinate system. AParent must be a control that can be found by iterating up the chain of Parent properties. If AParent is nil (Delphi) or NULL (C++), the control’s immediate parent is used.
+An EInvalidOperation exception is thrown if AParent is not an ancestor control or the Parent property is nil (Delphi) or NULL (C++).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Control.Perform">
+<span class="sig-name descname"><span class="pre">Perform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Msg</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">WParam</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">LParam</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#delphivcl.Control.Perform" title="Link to this definition">¶</a></dt>
+<dd><p>Responds as if the control received a specified Windows message.
+Call Perform to bypass the Windows message queue and send a message directly to the control’s window procedure.
+Perform fills a message record (of type TMessage) with the message ID passed in the Msg parameter, the message parameters passed in WParam and LParam, and a result field of zero. Perform then passes the message record to the WindowProc method for processing.
+Responds as if the control received a specified Windows message.
+Call Perform to bypass the Windows message queue and send a message directly to the control’s window procedure.
+Perform fills a message record (of type TMessage) with the message ID passed in the Msg parameter, the message parameters passed in WParam and LParam, and a result field of zero. Perform then passes the message record to the WindowProc method for processing.
+Responds as if the control received a specified Windows message.
+Call Perform to bypass the Windows message queue and send a message directly to the control’s window procedure.
+Perform fills a message record (of type TMessage) with the message ID passed in the Msg parameter, the message parameters passed in WParam and LParam, and a result field of zero. Perform then passes the message record to the WindowProc method for processing.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Control.Refresh">
+<span class="sig-name descname"><span class="pre">Refresh</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.Control.Refresh" title="Link to this definition">¶</a></dt>
+<dd><p>Repaints the control on the screen.
+Call the Refresh method to repaint the control immediately. Refresh calls the Repaint method. Use the Refresh and Repaint methods interchangeably.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Control.Repaint">
+<span class="sig-name descname"><span class="pre">Repaint</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.Control.Repaint" title="Link to this definition">¶</a></dt>
+<dd><p>Forces the control to repaint its image on the screen.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Control.ReplaceDockedControl">
+<span class="sig-name descname"><span class="pre">ReplaceDockedControl</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Control</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#delphivcl.Control" title="delphivcl.Control"><span class="pre">Control</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">NewDockSite</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="delphivcl.WinControl.html#delphivcl.WinControl" title="delphivcl.WinControl"><span class="pre">WinControl</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">DropControl</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#delphivcl.Control" title="delphivcl.Control"><span class="pre">Control</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">ControlSide</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Align</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#delphivcl.Control.ReplaceDockedControl" title="Link to this definition">¶</a></dt>
+<dd><p>Docks the control in the place where another control is already docked.
+Call ReplaceDockedControl to replace a control that is already docked while moving that control to another dock site.
+Control is the control whose place this control is taking.
+NewDockSite is the new dock site for the control that is replaced.
+DropControl is a control in the new dock site on which to drop the control that is replaced. For example, if NewDockSite were a page control, DropControl would be a tab sheet.
+ControlSide specifies on which side of DropControl or NewDockSite (if DropControl is nil (Delphi) or NULL (C++)) the replaced control should be docked. This value can be obtained by calling the dock site’s GetDockEdge method.
+ReplaceDockedControl does the same thing as calling the ManualDock method of the control specified by the Control parameter (using the values of NewDockSite, DropControl, and ControlSide) in addition to calling ManualDock for the control whose method this is, docking it in the current position of the Control parameter. However, calling ReplaceDockedControl is more efficient, and prevents unnecessary flicker.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.Control.ScaleFactor">
+<span class="sig-name descname"><span class="pre">ScaleFactor</span></span><a class="headerlink" href="#delphivcl.Control.ScaleFactor" title="Link to this definition">¶</a></dt>
+<dd><p>Embarcadero Technologies does not currently have any additional information.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Control.ScaleForPPI">
+<span class="sig-name descname"><span class="pre">ScaleForPPI</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">NewPPI</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#delphivcl.Control.ScaleForPPI" title="Link to this definition">¶</a></dt>
+<dd><p>Embarcadero Technologies does not currently have any additional information.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Control.ScaleRectSize">
+<span class="sig-name descname"><span class="pre">ScaleRectSize</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Rect</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Rect</span></span></span><a class="headerlink" href="#delphivcl.Control.ScaleRectSize" title="Link to this definition">¶</a></dt>
+<dd><p>Embarcadero Technologies does not currently have any additional information.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Control.ScaleValue">
+<span class="sig-name descname"><span class="pre">ScaleValue</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#delphivcl.Control.ScaleValue" title="Link to this definition">¶</a></dt>
+<dd><p>The overloaded ScaleValue methods return a measure passed as parameter scaled by the current scale factor for the control (the value of the ScaleFactor read-only property).
+The overloaded ScaleValue methods return a measure passed as parameter scaled by the current scale factor for the control (the value of the ScaleFactor read-only property).
+The overloaded ScaleValue methods return a measure passed as parameter scaled by the current scale factor for the control (the value of the ScaleFactor read-only property).
+The overloaded ScaleValue methods return a measure passed as parameter scaled by the current scale factor for the control (the value of the ScaleFactor read-only property).
+The overloaded ScaleValue methods return a measure passed as parameter scaled by the current scale factor for the control (the value of the ScaleFactor read-only property).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Control.ScreenToClient">
+<span class="sig-name descname"><span class="pre">ScreenToClient</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.Control.ScreenToClient" title="Link to this definition">¶</a></dt>
+<dd><p>Converts the screen coordinates of a specified point on the screen to client coordinates.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Control.SendToBack">
+<span class="sig-name descname"><span class="pre">SendToBack</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.Control.SendToBack" title="Link to this definition">¶</a></dt>
+<dd><p>Puts a windowed control behind all other windowed controls, or puts a non-windowed control behind all other non-windowed controls.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Control.SetBounds">
+<span class="sig-name descname"><span class="pre">SetBounds</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Left</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Top</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Width</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Height</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.Control.SetBounds" title="Link to this definition">¶</a></dt>
+<dd><p>Sets the Left, Top, Width, and Height properties all at once.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Control.SetDesignVisible">
+<span class="sig-name descname"><span class="pre">SetDesignVisible</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#delphivcl.Control.SetDesignVisible" title="Link to this definition">¶</a></dt>
+<dd><p>Makes a control visible at design time.
+SetDesignVisible is used internally by Delphi during form design.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Control.SetParentComponent">
+<span class="sig-name descname"><span class="pre">SetParentComponent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="delphivcl.Component.html#delphivcl.Component" title="delphivcl.Component"><span class="pre">Component</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#delphivcl.Control.SetParentComponent" title="Link to this definition">¶</a></dt>
+<dd><p>Sets the parent for the control.
+Do not call the SetParentComponent method. It is used by the streaming system that loads and saves VCL components. SetParentComponent makes the component specified by the Value parameter the parent of the control.
+SetParentComponent calls the SetParent method only if the component specified as the parent is a windowed control.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Control.SetTextBuf">
+<span class="sig-name descname"><span class="pre">SetTextBuf</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Buffer</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">PWideChar</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#delphivcl.Control.SetTextBuf" title="Link to this definition">¶</a></dt>
+<dd><p>Sets the text of the control.
+Call the SetTextBuf method to set the text of the control to the text in the specified buffer.
+The text is set to the text in the buffer pointed to by the Buffer parameter. Buffer must point to a null-terminated string. The SetTextBuf method sends the WM_SETTEXT and CM_TEXTCHANGED messages. Doing this in the tight execution of a function can result in the change not being seen until messages from the Windows message queue are processed after the function finishes executing. To interrupt a function’s execution and process messages, use the ProcessMessages method of the Application object.</p>
+<p>Note:  The SetTextBuf method is provided for backwards compatibility only. To set the text of a control now, assign a string value to the Text property.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Control.Show">
+<span class="sig-name descname"><span class="pre">Show</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.Control.Show" title="Link to this definition">¶</a></dt>
+<dd><p>Shows the wrapped Control</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.Control.ShowHint">
+<span class="sig-name descname"><span class="pre">ShowHint</span></span><a class="headerlink" href="#delphivcl.Control.ShowHint" title="Link to this definition">¶</a></dt>
+<dd><p>ShowHint specifies whether to show the Help Hint when the mouse pointer moves over the control.
+ShowHint determines whether the Help Hint appears for the control. The Help Hint is the value of the TControl.Hint property. The Help Hint appears in a box just beneath the control when the mouse pointer moves over the control.
+To enable Help Hints for a particular control, two conditions must be satisfied:</p>
+<p>The application’s ShowHint property must be True.
+Either the control’s own ShowHint property must be True, or the control’s ParentShowHint property must be True and its parent’s ShowHint property must be True.
+For example, imagine a check box within a group box. If the ShowHint property of the group box is True and the ParentShowHint property of the check box is True, but the ShowHint property of the check box is False, the check box still displays its Help Hint.
+Changing the ShowHint value automatically sets the ParentShowHint property to False.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.Control.StyleElements">
+<span class="sig-name descname"><span class="pre">StyleElements</span></span><a class="headerlink" href="#delphivcl.Control.StyleElements" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the style elements that are used by the control.
+Use StyleElements to customize the style of the control. If a custom style is enabled, you can enable or disable style elements in the control.
+StyleElements is a set of values that specify which elements of the current style are to be applied to this control. By default, all the elements of the style are enabled.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>StyleElements</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.Control.StyleName">
+<span class="sig-name descname"><span class="pre">StyleName</span></span><a class="headerlink" href="#delphivcl.Control.StyleName" title="Link to this definition">¶</a></dt>
+<dd><p>Embarcadero Technologies does not currently have any additional information.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.Control.TBDockHeight">
+<span class="sig-name descname"><span class="pre">TBDockHeight</span></span><a class="headerlink" href="#delphivcl.Control.TBDockHeight" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the height of the control when it is docked vertically.
+Read TBDockHeight to get the height of the control from the last time it was docked vertically. Set TBDockHeight to indicate the height the control should have the next time it is docked vertically.
+TBDockHeight allows a control to “remember” its docked size even when its height changes because it is undocked or docked with a horizontal orientation.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.Control.Top">
+<span class="sig-name descname"><span class="pre">Top</span></span><a class="headerlink" href="#delphivcl.Control.Top" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the Y coordinate of the upper-left corner of a control, relative to its parent or containing control in pixels.
+Use Top to locate the top of the control or reposition the control to a different Y coordinate. The Top property, like the Left property, is the position of the control relative to its container. Thus, if a control is contained in a TPanel, the Left and Top properties are relative to the panel. If the control is contained directly by the form, it is relative to the form. For forms, the value of the Top property is relative to the screen in pixels.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.Control.Touch">
+<span class="sig-name descname"><span class="pre">Touch</span></span><a class="headerlink" href="#delphivcl.Control.Touch" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the touch manager component associated with the control.
+Use the Touch property to access gesturing options associated with a control. Touch specifies a class of type TTouchManager.
+Touch is used to:</p>
+<p>Associate a TGestureManager.
+(TGestureManager manages all the gestures that can be used by the control.)
+Select the standard, interactive, or custom gestures to associate with the control.
+(You can also connect each gesture to an action; see Assigning Actions to Gestures.)
+Specify a set of options for interactive or tablet gestures.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>TouchManager</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.Control.UndockHeight">
+<span class="sig-name descname"><span class="pre">UndockHeight</span></span><a class="headerlink" href="#delphivcl.Control.UndockHeight" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the height of the control when it is floating.
+Read UndockHeight to get the height of the control from the last time it was floating. Set UndockHeight to indicate the height the control should have the next time it is undocked.
+UndockHeight allows a control to “remember” its floating size even when its height changes because it is docked.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.Control.UndockWidth">
+<span class="sig-name descname"><span class="pre">UndockWidth</span></span><a class="headerlink" href="#delphivcl.Control.UndockWidth" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the width of the control when it is floating.
+Read UndockWidth to get the width of the control from the last time it was floating. Set UndockWidth to indicate the width the control should have the next time it is undocked.
+UndockWidth allows a control to “remember” its floating size even when its width changes because it is docked.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Control.Update">
+<span class="sig-name descname"><span class="pre">Update</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.Control.Update" title="Link to this definition">¶</a></dt>
+<dd><p>Processes any pending paint messages immediately.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Control.UseRightToLeftAlignment">
+<span class="sig-name descname"><span class="pre">UseRightToLeftAlignment</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.Control.UseRightToLeftAlignment" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies whether the control’s alignment should be reversed right-to-left.
+Controls call UseRightToLeftAlignment when implementing the BiDiMode property. UseRightToLeftAlignment indicates whether the control’s alignment should be reversed right-to-left. This information can be used when painting the control or when responding to mouse events.
+UseRightToLeftAlignment returns True if the application is running on a system with a Middle Eastern locale and the BiDiMode property is bdRightToLeft. Otherwise, it returns False. Descendants override UseRightToLeftAlignment if alignment in Middle Eastern locales depends on other factors.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Control.UseRightToLeftReading">
+<span class="sig-name descname"><span class="pre">UseRightToLeftReading</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.Control.UseRightToLeftReading" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies whether the control is using a right-to-left reading order.
+Controls call UseRightToLeftReading when implementing the BiDiMode property. UseRightToLeftReading indicates whether the control’s text should read from right to left. This information can be used to determine which style flags to set for the control when it is created and which flags to set for drawing text.
+UseRightToLeftReading returns true if the application is running on a system with a Middle Eastern locale and the BiDiMode property is not bdLeftToRight. UseRightToLeftReading returns false otherwise.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphivcl.Control.UseRightToLeftScrollBar">
+<span class="sig-name descname"><span class="pre">UseRightToLeftScrollBar</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphivcl.Control.UseRightToLeftScrollBar" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies whether the vertical scroll bar appears on the left side of the control.
+Controls call UseRightToLeftScrollBar when implementing the BiDiMode property. UseRightToLeftScrollBar returns true when the vertical scroll bar appears on the left side of the control, and false when it appears on the right side.
+UseRightToLeftScrollBar returns true if the application is running on a system with a Middle Eastern locale and the BiDiMode property is bdRightToLeft or bdRightToLeftNoAlign.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.Control.Visible">
+<span class="sig-name descname"><span class="pre">Visible</span></span><a class="headerlink" href="#delphivcl.Control.Visible" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies whether the component appears onscreen.
+Use the Visible property to control the visibility of the control at run time. If Visible is True, the control appears. If Visible is False, the control is not visible.
+Calling the Show method sets the control’s Visible property to True. Calling the Hide method sets it to False.
+For TCustomForm descendants, the Show and ShowModal methods set Visible to True and bring the form to the front of all open windows.
+For TTabSheet descendants, Visible does not control the visibility of the control at run time. For more information, see the description of the TabVisible property.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphivcl.Control.Width">
+<span class="sig-name descname"><span class="pre">Width</span></span><a class="headerlink" href="#delphivcl.Control.Width" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the horizontal size of the control or form in pixels.
+Use the Width property to read or change the width of the control.</p>
+<p>Note:  For tab sheet controls, changing this property at run time has no effect.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="delphivcl.CustomBindingsList.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">CustomBindingsList</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="delphivcl.ContainedActionList.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">ContainedActionList</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2020-2023, Embarcadero Python Dev Team
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Control</a><ul>
+<li><a class="reference internal" href="#delphivcl.Control"><code class="docutils literal notranslate"><span class="pre">Control</span></code></a><ul>
+<li><a class="reference internal" href="#delphivcl.Control.Action"><code class="docutils literal notranslate"><span class="pre">Control.Action</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.Align"><code class="docutils literal notranslate"><span class="pre">Control.Align</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.AlignWithMargins"><code class="docutils literal notranslate"><span class="pre">Control.AlignWithMargins</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.Anchors"><code class="docutils literal notranslate"><span class="pre">Control.Anchors</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.BeginDrag"><code class="docutils literal notranslate"><span class="pre">Control.BeginDrag()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.BiDiMode"><code class="docutils literal notranslate"><span class="pre">Control.BiDiMode</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.BoundsRect"><code class="docutils literal notranslate"><span class="pre">Control.BoundsRect</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.BringToFront"><code class="docutils literal notranslate"><span class="pre">Control.BringToFront()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.CheckNonMainThreadUsage"><code class="docutils literal notranslate"><span class="pre">Control.CheckNonMainThreadUsage()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.ClientHeight"><code class="docutils literal notranslate"><span class="pre">Control.ClientHeight</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.ClientOrigin"><code class="docutils literal notranslate"><span class="pre">Control.ClientOrigin</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.ClientRect"><code class="docutils literal notranslate"><span class="pre">Control.ClientRect</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.ClientToParent"><code class="docutils literal notranslate"><span class="pre">Control.ClientToParent()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.ClientToScreen"><code class="docutils literal notranslate"><span class="pre">Control.ClientToScreen()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.ClientWidth"><code class="docutils literal notranslate"><span class="pre">Control.ClientWidth</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.Constraints"><code class="docutils literal notranslate"><span class="pre">Control.Constraints</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.ControlState"><code class="docutils literal notranslate"><span class="pre">Control.ControlState</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.ControlStyle"><code class="docutils literal notranslate"><span class="pre">Control.ControlStyle</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.CurrentPPI"><code class="docutils literal notranslate"><span class="pre">Control.CurrentPPI</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.Cursor"><code class="docutils literal notranslate"><span class="pre">Control.Cursor</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.CustomHint"><code class="docutils literal notranslate"><span class="pre">Control.CustomHint</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.DefaultHandler"><code class="docutils literal notranslate"><span class="pre">Control.DefaultHandler()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.Dock"><code class="docutils literal notranslate"><span class="pre">Control.Dock()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.DockOrientation"><code class="docutils literal notranslate"><span class="pre">Control.DockOrientation</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.DragDrop"><code class="docutils literal notranslate"><span class="pre">Control.DragDrop()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.Dragging"><code class="docutils literal notranslate"><span class="pre">Control.Dragging()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.DrawTextBiDiModeFlags"><code class="docutils literal notranslate"><span class="pre">Control.DrawTextBiDiModeFlags()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.DrawTextBiDiModeFlagsReadingOnly"><code class="docutils literal notranslate"><span class="pre">Control.DrawTextBiDiModeFlagsReadingOnly()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.Enabled"><code class="docutils literal notranslate"><span class="pre">Control.Enabled</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.EndDrag"><code class="docutils literal notranslate"><span class="pre">Control.EndDrag()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.ExplicitHeight"><code class="docutils literal notranslate"><span class="pre">Control.ExplicitHeight</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.ExplicitLeft"><code class="docutils literal notranslate"><span class="pre">Control.ExplicitLeft</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.ExplicitTop"><code class="docutils literal notranslate"><span class="pre">Control.ExplicitTop</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.ExplicitWidth"><code class="docutils literal notranslate"><span class="pre">Control.ExplicitWidth</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.Floating"><code class="docutils literal notranslate"><span class="pre">Control.Floating</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.FloatingDockSiteClass"><code class="docutils literal notranslate"><span class="pre">Control.FloatingDockSiteClass</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.GetControlsAlignment"><code class="docutils literal notranslate"><span class="pre">Control.GetControlsAlignment()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.GetInternalStyleElements"><code class="docutils literal notranslate"><span class="pre">Control.GetInternalStyleElements()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.GetParentComponent"><code class="docutils literal notranslate"><span class="pre">Control.GetParentComponent()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.GetStyleName"><code class="docutils literal notranslate"><span class="pre">Control.GetStyleName()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.GetSystemMetrics"><code class="docutils literal notranslate"><span class="pre">Control.GetSystemMetrics()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.GetTextBuf"><code class="docutils literal notranslate"><span class="pre">Control.GetTextBuf()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.GetTextLen"><code class="docutils literal notranslate"><span class="pre">Control.GetTextLen()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.HasParent"><code class="docutils literal notranslate"><span class="pre">Control.HasParent()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.Height"><code class="docutils literal notranslate"><span class="pre">Control.Height</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.HelpContext"><code class="docutils literal notranslate"><span class="pre">Control.HelpContext</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.HelpKeyword"><code class="docutils literal notranslate"><span class="pre">Control.HelpKeyword</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.HelpType"><code class="docutils literal notranslate"><span class="pre">Control.HelpType</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.Hide"><code class="docutils literal notranslate"><span class="pre">Control.Hide()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.Hint"><code class="docutils literal notranslate"><span class="pre">Control.Hint</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.HostDockSite"><code class="docutils literal notranslate"><span class="pre">Control.HostDockSite</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.InitiateAction"><code class="docutils literal notranslate"><span class="pre">Control.InitiateAction()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.Invalidate"><code class="docutils literal notranslate"><span class="pre">Control.Invalidate()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.IsCustomStyleActive"><code class="docutils literal notranslate"><span class="pre">Control.IsCustomStyleActive()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.IsLightStyleColor"><code class="docutils literal notranslate"><span class="pre">Control.IsLightStyleColor()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.IsRightToLeft"><code class="docutils literal notranslate"><span class="pre">Control.IsRightToLeft()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.LRDockWidth"><code class="docutils literal notranslate"><span class="pre">Control.LRDockWidth</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.Left"><code class="docutils literal notranslate"><span class="pre">Control.Left</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.ManualDock"><code class="docutils literal notranslate"><span class="pre">Control.ManualDock()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.ManualFloat"><code class="docutils literal notranslate"><span class="pre">Control.ManualFloat()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.Margins"><code class="docutils literal notranslate"><span class="pre">Control.Margins</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.MouseWheelHandler"><code class="docutils literal notranslate"><span class="pre">Control.MouseWheelHandler()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.Parent"><code class="docutils literal notranslate"><span class="pre">Control.Parent</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.ParentCustomHint"><code class="docutils literal notranslate"><span class="pre">Control.ParentCustomHint</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.ParentToClient"><code class="docutils literal notranslate"><span class="pre">Control.ParentToClient()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.Perform"><code class="docutils literal notranslate"><span class="pre">Control.Perform()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.Refresh"><code class="docutils literal notranslate"><span class="pre">Control.Refresh()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.Repaint"><code class="docutils literal notranslate"><span class="pre">Control.Repaint()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.ReplaceDockedControl"><code class="docutils literal notranslate"><span class="pre">Control.ReplaceDockedControl()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.ScaleFactor"><code class="docutils literal notranslate"><span class="pre">Control.ScaleFactor</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.ScaleForPPI"><code class="docutils literal notranslate"><span class="pre">Control.ScaleForPPI()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.ScaleRectSize"><code class="docutils literal notranslate"><span class="pre">Control.ScaleRectSize()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.ScaleValue"><code class="docutils literal notranslate"><span class="pre">Control.ScaleValue()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.ScreenToClient"><code class="docutils literal notranslate"><span class="pre">Control.ScreenToClient()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.SendToBack"><code class="docutils literal notranslate"><span class="pre">Control.SendToBack()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.SetBounds"><code class="docutils literal notranslate"><span class="pre">Control.SetBounds()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.SetDesignVisible"><code class="docutils literal notranslate"><span class="pre">Control.SetDesignVisible()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.SetParentComponent"><code class="docutils literal notranslate"><span class="pre">Control.SetParentComponent()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.SetTextBuf"><code class="docutils literal notranslate"><span class="pre">Control.SetTextBuf()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.Show"><code class="docutils literal notranslate"><span class="pre">Control.Show()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.ShowHint"><code class="docutils literal notranslate"><span class="pre">Control.ShowHint</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.StyleElements"><code class="docutils literal notranslate"><span class="pre">Control.StyleElements</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.StyleName"><code class="docutils literal notranslate"><span class="pre">Control.StyleName</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.TBDockHeight"><code class="docutils literal notranslate"><span class="pre">Control.TBDockHeight</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.Top"><code class="docutils literal notranslate"><span class="pre">Control.Top</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.Touch"><code class="docutils literal notranslate"><span class="pre">Control.Touch</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.UndockHeight"><code class="docutils literal notranslate"><span class="pre">Control.UndockHeight</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.UndockWidth"><code class="docutils literal notranslate"><span class="pre">Control.UndockWidth</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.Update"><code class="docutils literal notranslate"><span class="pre">Control.Update()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.UseRightToLeftAlignment"><code class="docutils literal notranslate"><span class="pre">Control.UseRightToLeftAlignment()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.UseRightToLeftReading"><code class="docutils literal notranslate"><span class="pre">Control.UseRightToLeftReading()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.UseRightToLeftScrollBar"><code class="docutils literal notranslate"><span class="pre">Control.UseRightToLeftScrollBar()</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.Visible"><code class="docutils literal notranslate"><span class="pre">Control.Visible</span></code></a></li>
+<li><a class="reference internal" href="#delphivcl.Control.Width"><code class="docutils literal notranslate"><span class="pre">Control.Width</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script src="../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/scripts/furo.js?v=5fa4622c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/responsiveSvg.js?v=f1528c9d"></script>
+    </body>
+</html>

@@ -1,0 +1,54 @@
+﻿OpenDialog
+==========
+
+Qualified name: ``delphivcl.OpenDialog``
+
+.. currentmodule:: delphivcl
+
+.. autoclass:: OpenDialog
+   :show-inheritance:
+   :members:
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+      
+      ~OpenDialog.DefaultHandler
+      ~OpenDialog.Execute
+
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+     
+     ~OpenDialog.ClassName
+     ~OpenDialog.ComObject
+     ~OpenDialog.ComponentCount
+     ~OpenDialog.ComponentIndex
+     ~OpenDialog.ComponentState
+     ~OpenDialog.ComponentStyle
+     ~OpenDialog.Components
+     ~OpenDialog.Ctl3D
+     ~OpenDialog.DefaultExt
+     ~OpenDialog.DesignInfo
+     ~OpenDialog.FileEditStyle
+     ~OpenDialog.FileName
+     ~OpenDialog.Files
+     ~OpenDialog.Filter
+     ~OpenDialog.FilterIndex
+     ~OpenDialog.Handle
+     ~OpenDialog.HelpContext
+     ~OpenDialog.HistoryList
+     ~OpenDialog.InitialDir
+     ~OpenDialog.Name
+     ~OpenDialog.Observers
+     ~OpenDialog.OnIncludeItem
+     ~OpenDialog.Options
+     ~OpenDialog.OptionsEx
+     ~OpenDialog.Owner
+     ~OpenDialog.Tag
+     ~OpenDialog.Title
+     ~OpenDialog.VCLComObject
+   

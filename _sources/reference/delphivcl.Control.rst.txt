@@ -1,0 +1,131 @@
+﻿Control
+=======
+
+Qualified name: ``delphivcl.Control``
+
+.. currentmodule:: delphivcl
+
+.. autoclass:: Control
+   :show-inheritance:
+   :members:
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+      
+      ~Control.BeginDrag
+      ~Control.BringToFront
+      ~Control.CheckNonMainThreadUsage
+      ~Control.ClientToParent
+      ~Control.ClientToScreen
+      ~Control.DefaultHandler
+      ~Control.Dock
+      ~Control.DragDrop
+      ~Control.Dragging
+      ~Control.DrawTextBiDiModeFlags
+      ~Control.DrawTextBiDiModeFlagsReadingOnly
+      ~Control.EndDrag
+      ~Control.GetControlsAlignment
+      ~Control.GetInternalStyleElements
+      ~Control.GetParentComponent
+      ~Control.GetStyleName
+      ~Control.GetSystemMetrics
+      ~Control.GetTextBuf
+      ~Control.GetTextLen
+      ~Control.HasParent
+      ~Control.Hide
+      ~Control.InitiateAction
+      ~Control.Invalidate
+      ~Control.IsCustomStyleActive
+      ~Control.IsLightStyleColor
+      ~Control.IsRightToLeft
+      ~Control.ManualDock
+      ~Control.ManualFloat
+      ~Control.MouseWheelHandler
+      ~Control.ParentToClient
+      ~Control.Perform
+      ~Control.Refresh
+      ~Control.Repaint
+      ~Control.ReplaceDockedControl
+      ~Control.ScaleForPPI
+      ~Control.ScaleRectSize
+      ~Control.ScaleValue
+      ~Control.ScreenToClient
+      ~Control.SendToBack
+      ~Control.SetBounds
+      ~Control.SetDesignVisible
+      ~Control.SetParentComponent
+      ~Control.SetTextBuf
+      ~Control.Show
+      ~Control.Update
+      ~Control.UseRightToLeftAlignment
+      ~Control.UseRightToLeftReading
+      ~Control.UseRightToLeftScrollBar
+
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+     
+     ~Control.Action
+     ~Control.Align
+     ~Control.AlignWithMargins
+     ~Control.Anchors
+     ~Control.BiDiMode
+     ~Control.BoundsRect
+     ~Control.ClassName
+     ~Control.ClientHeight
+     ~Control.ClientOrigin
+     ~Control.ClientRect
+     ~Control.ClientWidth
+     ~Control.ComObject
+     ~Control.ComponentCount
+     ~Control.ComponentIndex
+     ~Control.ComponentState
+     ~Control.ComponentStyle
+     ~Control.Components
+     ~Control.Constraints
+     ~Control.ControlState
+     ~Control.ControlStyle
+     ~Control.CurrentPPI
+     ~Control.Cursor
+     ~Control.CustomHint
+     ~Control.DesignInfo
+     ~Control.DockOrientation
+     ~Control.Enabled
+     ~Control.ExplicitHeight
+     ~Control.ExplicitLeft
+     ~Control.ExplicitTop
+     ~Control.ExplicitWidth
+     ~Control.Floating
+     ~Control.FloatingDockSiteClass
+     ~Control.Height
+     ~Control.HelpContext
+     ~Control.HelpKeyword
+     ~Control.HelpType
+     ~Control.Hint
+     ~Control.HostDockSite
+     ~Control.LRDockWidth
+     ~Control.Left
+     ~Control.Margins
+     ~Control.Name
+     ~Control.Observers
+     ~Control.Owner
+     ~Control.Parent
+     ~Control.ParentCustomHint
+     ~Control.ScaleFactor
+     ~Control.ShowHint
+     ~Control.StyleElements
+     ~Control.StyleName
+     ~Control.TBDockHeight
+     ~Control.Tag
+     ~Control.Top
+     ~Control.Touch
+     ~Control.UndockHeight
+     ~Control.UndockWidth
+     ~Control.VCLComObject
+     ~Control.Visible
+     ~Control.Width
+   

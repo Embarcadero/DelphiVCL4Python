@@ -1,0 +1,118 @@
+﻿CustomControl
+=============
+
+Qualified name: ``delphivcl.CustomControl``
+
+.. currentmodule:: delphivcl
+
+.. autoclass:: CustomControl
+   :show-inheritance:
+   :members:
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+      
+      ~CustomControl.BringToFront
+      ~CustomControl.ClientToScreen
+      ~CustomControl.Hide
+      ~CustomControl.Invalidate
+      ~CustomControl.Repaint
+      ~CustomControl.ScreenToClient
+      ~CustomControl.SendToBack
+      ~CustomControl.SetBounds
+      ~CustomControl.Show
+      ~CustomControl.Update
+
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+     
+     ~CustomControl.Action
+     ~CustomControl.Align
+     ~CustomControl.AlignDisabled
+     ~CustomControl.AlignWithMargins
+     ~CustomControl.Anchors
+     ~CustomControl.BiDiMode
+     ~CustomControl.BoundsRect
+     ~CustomControl.Brush
+     ~CustomControl.ClassName
+     ~CustomControl.ClientHeight
+     ~CustomControl.ClientOrigin
+     ~CustomControl.ClientRect
+     ~CustomControl.ClientWidth
+     ~CustomControl.ComObject
+     ~CustomControl.ComponentCount
+     ~CustomControl.ComponentIndex
+     ~CustomControl.ComponentState
+     ~CustomControl.ComponentStyle
+     ~CustomControl.Components
+     ~CustomControl.Constraints
+     ~CustomControl.ControlCount
+     ~CustomControl.ControlState
+     ~CustomControl.ControlStyle
+     ~CustomControl.Controls
+     ~CustomControl.CurrentPPI
+     ~CustomControl.Cursor
+     ~CustomControl.CustomHint
+     ~CustomControl.DesignInfo
+     ~CustomControl.DockClientCount
+     ~CustomControl.DockClients
+     ~CustomControl.DockManager
+     ~CustomControl.DockOrientation
+     ~CustomControl.DockSite
+     ~CustomControl.DoubleBuffered
+     ~CustomControl.DoubleBufferedMode
+     ~CustomControl.Enabled
+     ~CustomControl.ExplicitHeight
+     ~CustomControl.ExplicitLeft
+     ~CustomControl.ExplicitTop
+     ~CustomControl.ExplicitWidth
+     ~CustomControl.Floating
+     ~CustomControl.FloatingDockSiteClass
+     ~CustomControl.Focused
+     ~CustomControl.Handle
+     ~CustomControl.HandleAllocated
+     ~CustomControl.Height
+     ~CustomControl.HelpContext
+     ~CustomControl.HelpKeyword
+     ~CustomControl.HelpType
+     ~CustomControl.Hint
+     ~CustomControl.HostDockSite
+     ~CustomControl.IsDrawingLocked
+     ~CustomControl.LRDockWidth
+     ~CustomControl.Left
+     ~CustomControl.Margins
+     ~CustomControl.MouseInClient
+     ~CustomControl.Name
+     ~CustomControl.Observers
+     ~CustomControl.Owner
+     ~CustomControl.Padding
+     ~CustomControl.Parent
+     ~CustomControl.ParentCustomHint
+     ~CustomControl.ParentDoubleBuffered
+     ~CustomControl.ParentWindow
+     ~CustomControl.PixelsPerInch
+     ~CustomControl.RedrawDisabled
+     ~CustomControl.ScaleFactor
+     ~CustomControl.ShowHint
+     ~CustomControl.Showing
+     ~CustomControl.StyleElements
+     ~CustomControl.StyleName
+     ~CustomControl.TBDockHeight
+     ~CustomControl.TabOrder
+     ~CustomControl.TabStop
+     ~CustomControl.Tag
+     ~CustomControl.Top
+     ~CustomControl.Touch
+     ~CustomControl.UndockHeight
+     ~CustomControl.UndockWidth
+     ~CustomControl.UseDockManager
+     ~CustomControl.VCLComObject
+     ~CustomControl.Visible
+     ~CustomControl.VisibleDockClientCount
+     ~CustomControl.Width
+   

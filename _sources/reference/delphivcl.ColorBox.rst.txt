@@ -1,0 +1,163 @@
+﻿ColorBox
+========
+
+Qualified name: ``delphivcl.ColorBox``
+
+.. currentmodule:: delphivcl
+
+.. autoclass:: ColorBox
+   :show-inheritance:
+   :members:
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+      
+      ~ColorBox.AddItem
+      ~ColorBox.CanFocus
+      ~ColorBox.Clear
+      ~ColorBox.ClearSelection
+      ~ColorBox.CopySelection
+      ~ColorBox.DeleteSelected
+      ~ColorBox.GetCount
+      ~ColorBox.SelectAll
+      ~ColorBox.SetFocus
+
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+     
+     ~ColorBox.Action
+     ~ColorBox.Align
+     ~ColorBox.AlignDisabled
+     ~ColorBox.AlignWithMargins
+     ~ColorBox.Anchors
+     ~ColorBox.AutoCloseUp
+     ~ColorBox.AutoComplete
+     ~ColorBox.AutoCompleteDelay
+     ~ColorBox.AutoDropDown
+     ~ColorBox.AutoDropDownWidth
+     ~ColorBox.BevelEdges
+     ~ColorBox.BevelInner
+     ~ColorBox.BevelKind
+     ~ColorBox.BevelOuter
+     ~ColorBox.BiDiMode
+     ~ColorBox.BoundsRect
+     ~ColorBox.Brush
+     ~ColorBox.CanUndoSelText
+     ~ColorBox.Canvas
+     ~ColorBox.CharCase
+     ~ColorBox.ClassName
+     ~ColorBox.ClientHeight
+     ~ColorBox.ClientOrigin
+     ~ColorBox.ClientRect
+     ~ColorBox.ClientWidth
+     ~ColorBox.Color
+     ~ColorBox.ColorNames
+     ~ColorBox.Colors
+     ~ColorBox.ComObject
+     ~ColorBox.ComponentCount
+     ~ColorBox.ComponentIndex
+     ~ColorBox.ComponentState
+     ~ColorBox.ComponentStyle
+     ~ColorBox.Components
+     ~ColorBox.Constraints
+     ~ColorBox.ControlCount
+     ~ColorBox.ControlState
+     ~ColorBox.ControlStyle
+     ~ColorBox.Controls
+     ~ColorBox.Ctl3D
+     ~ColorBox.CurrentPPI
+     ~ColorBox.Cursor
+     ~ColorBox.CustomHint
+     ~ColorBox.DefaultColorColor
+     ~ColorBox.DesignInfo
+     ~ColorBox.DockClientCount
+     ~ColorBox.DockClients
+     ~ColorBox.DockManager
+     ~ColorBox.DockOrientation
+     ~ColorBox.DockSite
+     ~ColorBox.DoubleBuffered
+     ~ColorBox.DoubleBufferedMode
+     ~ColorBox.DropDownCount
+     ~ColorBox.DropDownWidth
+     ~ColorBox.DroppedDown
+     ~ColorBox.Enabled
+     ~ColorBox.ExplicitHeight
+     ~ColorBox.ExplicitLeft
+     ~ColorBox.ExplicitTop
+     ~ColorBox.ExplicitWidth
+     ~ColorBox.ExtendedUI
+     ~ColorBox.Floating
+     ~ColorBox.FloatingDockSiteClass
+     ~ColorBox.Focused
+     ~ColorBox.Font
+     ~ColorBox.Handle
+     ~ColorBox.HandleAllocated
+     ~ColorBox.Height
+     ~ColorBox.HelpContext
+     ~ColorBox.HelpKeyword
+     ~ColorBox.HelpType
+     ~ColorBox.Hint
+     ~ColorBox.HostDockSite
+     ~ColorBox.IsDrawingLocked
+     ~ColorBox.ItemHeight
+     ~ColorBox.ItemIndex
+     ~ColorBox.Items
+     ~ColorBox.LRDockWidth
+     ~ColorBox.Left
+     ~ColorBox.Margins
+     ~ColorBox.MouseInClient
+     ~ColorBox.Name
+     ~ColorBox.NoneColorColor
+     ~ColorBox.Observers
+     ~ColorBox.OnDragDrop
+     ~ColorBox.OnDragOver
+     ~ColorBox.OnEndDock
+     ~ColorBox.OnEndDrag
+     ~ColorBox.OnGesture
+     ~ColorBox.OnGetColors
+     ~ColorBox.OnStartDock
+     ~ColorBox.OnStartDrag
+     ~ColorBox.Owner
+     ~ColorBox.Padding
+     ~ColorBox.Parent
+     ~ColorBox.ParentBiDiMode
+     ~ColorBox.ParentColor
+     ~ColorBox.ParentCtl3D
+     ~ColorBox.ParentCustomHint
+     ~ColorBox.ParentDoubleBuffered
+     ~ColorBox.ParentFont
+     ~ColorBox.ParentShowHint
+     ~ColorBox.ParentWindow
+     ~ColorBox.PixelsPerInch
+     ~ColorBox.PopupMenu
+     ~ColorBox.RedrawDisabled
+     ~ColorBox.ScaleFactor
+     ~ColorBox.SelLength
+     ~ColorBox.SelStart
+     ~ColorBox.SelText
+     ~ColorBox.Selected
+     ~ColorBox.ShowHint
+     ~ColorBox.Showing
+     ~ColorBox.Style
+     ~ColorBox.StyleElements
+     ~ColorBox.StyleName
+     ~ColorBox.TBDockHeight
+     ~ColorBox.TabOrder
+     ~ColorBox.TabStop
+     ~ColorBox.Tag
+     ~ColorBox.TextHint
+     ~ColorBox.Top
+     ~ColorBox.Touch
+     ~ColorBox.UndockHeight
+     ~ColorBox.UndockWidth
+     ~ColorBox.UseDockManager
+     ~ColorBox.VCLComObject
+     ~ColorBox.Visible
+     ~ColorBox.VisibleDockClientCount
+     ~ColorBox.Width
+   

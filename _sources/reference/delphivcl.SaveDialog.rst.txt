@@ -1,0 +1,53 @@
+﻿SaveDialog
+==========
+
+Qualified name: ``delphivcl.SaveDialog``
+
+.. currentmodule:: delphivcl
+
+.. autoclass:: SaveDialog
+   :show-inheritance:
+   :members:
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+      
+      ~SaveDialog.Execute
+
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+     
+     ~SaveDialog.ClassName
+     ~SaveDialog.ComObject
+     ~SaveDialog.ComponentCount
+     ~SaveDialog.ComponentIndex
+     ~SaveDialog.ComponentState
+     ~SaveDialog.ComponentStyle
+     ~SaveDialog.Components
+     ~SaveDialog.Ctl3D
+     ~SaveDialog.DefaultExt
+     ~SaveDialog.DesignInfo
+     ~SaveDialog.FileEditStyle
+     ~SaveDialog.FileName
+     ~SaveDialog.Files
+     ~SaveDialog.Filter
+     ~SaveDialog.FilterIndex
+     ~SaveDialog.Handle
+     ~SaveDialog.HelpContext
+     ~SaveDialog.HistoryList
+     ~SaveDialog.InitialDir
+     ~SaveDialog.Name
+     ~SaveDialog.Observers
+     ~SaveDialog.OnIncludeItem
+     ~SaveDialog.Options
+     ~SaveDialog.OptionsEx
+     ~SaveDialog.Owner
+     ~SaveDialog.Tag
+     ~SaveDialog.Title
+     ~SaveDialog.VCLComObject
+   

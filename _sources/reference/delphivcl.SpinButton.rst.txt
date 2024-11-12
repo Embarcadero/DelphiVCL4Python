@@ -1,0 +1,129 @@
+﻿SpinButton
+==========
+
+Qualified name: ``delphivcl.SpinButton``
+
+.. currentmodule:: delphivcl
+
+.. autoclass:: SpinButton
+   :show-inheritance:
+   :members:
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+      
+      ~SpinButton.CanFocus
+      ~SpinButton.SetBounds
+      ~SpinButton.SetFocus
+
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+     
+     ~SpinButton.Action
+     ~SpinButton.Align
+     ~SpinButton.AlignDisabled
+     ~SpinButton.AlignWithMargins
+     ~SpinButton.Anchors
+     ~SpinButton.BiDiMode
+     ~SpinButton.BoundsRect
+     ~SpinButton.Brush
+     ~SpinButton.ClassName
+     ~SpinButton.ClientHeight
+     ~SpinButton.ClientOrigin
+     ~SpinButton.ClientRect
+     ~SpinButton.ClientWidth
+     ~SpinButton.ComObject
+     ~SpinButton.ComponentCount
+     ~SpinButton.ComponentIndex
+     ~SpinButton.ComponentState
+     ~SpinButton.ComponentStyle
+     ~SpinButton.Components
+     ~SpinButton.Constraints
+     ~SpinButton.ControlCount
+     ~SpinButton.ControlState
+     ~SpinButton.ControlStyle
+     ~SpinButton.Controls
+     ~SpinButton.Ctl3D
+     ~SpinButton.CurrentPPI
+     ~SpinButton.Cursor
+     ~SpinButton.CustomHint
+     ~SpinButton.DesignInfo
+     ~SpinButton.DockClientCount
+     ~SpinButton.DockClients
+     ~SpinButton.DockManager
+     ~SpinButton.DockOrientation
+     ~SpinButton.DockSite
+     ~SpinButton.DoubleBuffered
+     ~SpinButton.DoubleBufferedMode
+     ~SpinButton.DownGlyph
+     ~SpinButton.DownNumGlyphs
+     ~SpinButton.DragCursor
+     ~SpinButton.DragKind
+     ~SpinButton.DragMode
+     ~SpinButton.Enabled
+     ~SpinButton.ExplicitHeight
+     ~SpinButton.ExplicitLeft
+     ~SpinButton.ExplicitTop
+     ~SpinButton.ExplicitWidth
+     ~SpinButton.Floating
+     ~SpinButton.FloatingDockSiteClass
+     ~SpinButton.FocusControl
+     ~SpinButton.Focused
+     ~SpinButton.Handle
+     ~SpinButton.HandleAllocated
+     ~SpinButton.Height
+     ~SpinButton.HelpContext
+     ~SpinButton.HelpKeyword
+     ~SpinButton.HelpType
+     ~SpinButton.Hint
+     ~SpinButton.HostDockSite
+     ~SpinButton.IsDrawingLocked
+     ~SpinButton.LRDockWidth
+     ~SpinButton.Left
+     ~SpinButton.Margins
+     ~SpinButton.MouseInClient
+     ~SpinButton.Name
+     ~SpinButton.Observers
+     ~SpinButton.OnDragDrop
+     ~SpinButton.OnDragOver
+     ~SpinButton.OnEndDock
+     ~SpinButton.OnEndDrag
+     ~SpinButton.OnStartDock
+     ~SpinButton.OnStartDrag
+     ~SpinButton.Owner
+     ~SpinButton.Padding
+     ~SpinButton.Parent
+     ~SpinButton.ParentCtl3D
+     ~SpinButton.ParentCustomHint
+     ~SpinButton.ParentDoubleBuffered
+     ~SpinButton.ParentShowHint
+     ~SpinButton.ParentWindow
+     ~SpinButton.PixelsPerInch
+     ~SpinButton.PopupMenu
+     ~SpinButton.RedrawDisabled
+     ~SpinButton.ScaleFactor
+     ~SpinButton.ShowHint
+     ~SpinButton.Showing
+     ~SpinButton.StyleElements
+     ~SpinButton.StyleName
+     ~SpinButton.TBDockHeight
+     ~SpinButton.TabOrder
+     ~SpinButton.TabStop
+     ~SpinButton.Tag
+     ~SpinButton.Top
+     ~SpinButton.Touch
+     ~SpinButton.UndockHeight
+     ~SpinButton.UndockWidth
+     ~SpinButton.UpGlyph
+     ~SpinButton.UpNumGlyphs
+     ~SpinButton.UseDockManager
+     ~SpinButton.VCLComObject
+     ~SpinButton.Visible
+     ~SpinButton.VisibleDockClientCount
+     ~SpinButton.Width
+   

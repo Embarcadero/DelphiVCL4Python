@@ -1,0 +1,133 @@
+﻿CustomEdit
+==========
+
+Qualified name: ``delphivcl.CustomEdit``
+
+.. currentmodule:: delphivcl
+
+.. autoclass:: CustomEdit
+   :show-inheritance:
+   :members:
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+      
+      ~CustomEdit.CanFocus
+      ~CustomEdit.Clear
+      ~CustomEdit.ClearSelection
+      ~CustomEdit.ClearUndo
+      ~CustomEdit.CopyToClipboard
+      ~CustomEdit.CutToClipboard
+      ~CustomEdit.DefaultHandler
+      ~CustomEdit.GetControlsAlignment
+      ~CustomEdit.GetSelTextBuf
+      ~CustomEdit.PasteFromClipboard
+      ~CustomEdit.SelectAll
+      ~CustomEdit.SetFocus
+      ~CustomEdit.SetSelText
+      ~CustomEdit.SetSelTextBuf
+      ~CustomEdit.Undo
+
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+     
+     ~CustomEdit.Action
+     ~CustomEdit.Align
+     ~CustomEdit.AlignDisabled
+     ~CustomEdit.AlignWithMargins
+     ~CustomEdit.Alignment
+     ~CustomEdit.Anchors
+     ~CustomEdit.BiDiMode
+     ~CustomEdit.BoundsRect
+     ~CustomEdit.Brush
+     ~CustomEdit.CanUndo
+     ~CustomEdit.CanUndoSelText
+     ~CustomEdit.ClassName
+     ~CustomEdit.ClientHeight
+     ~CustomEdit.ClientOrigin
+     ~CustomEdit.ClientRect
+     ~CustomEdit.ClientWidth
+     ~CustomEdit.ComObject
+     ~CustomEdit.ComponentCount
+     ~CustomEdit.ComponentIndex
+     ~CustomEdit.ComponentState
+     ~CustomEdit.ComponentStyle
+     ~CustomEdit.Components
+     ~CustomEdit.Constraints
+     ~CustomEdit.ControlCount
+     ~CustomEdit.ControlState
+     ~CustomEdit.ControlStyle
+     ~CustomEdit.Controls
+     ~CustomEdit.CurrentPPI
+     ~CustomEdit.Cursor
+     ~CustomEdit.CustomHint
+     ~CustomEdit.DesignInfo
+     ~CustomEdit.DockClientCount
+     ~CustomEdit.DockClients
+     ~CustomEdit.DockManager
+     ~CustomEdit.DockOrientation
+     ~CustomEdit.DockSite
+     ~CustomEdit.DoubleBuffered
+     ~CustomEdit.DoubleBufferedMode
+     ~CustomEdit.Enabled
+     ~CustomEdit.ExplicitHeight
+     ~CustomEdit.ExplicitLeft
+     ~CustomEdit.ExplicitTop
+     ~CustomEdit.ExplicitWidth
+     ~CustomEdit.Floating
+     ~CustomEdit.FloatingDockSiteClass
+     ~CustomEdit.Focused
+     ~CustomEdit.Handle
+     ~CustomEdit.HandleAllocated
+     ~CustomEdit.Height
+     ~CustomEdit.HelpContext
+     ~CustomEdit.HelpKeyword
+     ~CustomEdit.HelpType
+     ~CustomEdit.Hint
+     ~CustomEdit.HostDockSite
+     ~CustomEdit.IsDrawingLocked
+     ~CustomEdit.LRDockWidth
+     ~CustomEdit.Left
+     ~CustomEdit.Margins
+     ~CustomEdit.Modified
+     ~CustomEdit.MouseInClient
+     ~CustomEdit.Name
+     ~CustomEdit.Observers
+     ~CustomEdit.Owner
+     ~CustomEdit.Padding
+     ~CustomEdit.Parent
+     ~CustomEdit.ParentCustomHint
+     ~CustomEdit.ParentDoubleBuffered
+     ~CustomEdit.ParentWindow
+     ~CustomEdit.PixelsPerInch
+     ~CustomEdit.ReadOnly
+     ~CustomEdit.RedrawDisabled
+     ~CustomEdit.ScaleFactor
+     ~CustomEdit.SelLength
+     ~CustomEdit.SelStart
+     ~CustomEdit.SelText
+     ~CustomEdit.ShowHint
+     ~CustomEdit.Showing
+     ~CustomEdit.StyleElements
+     ~CustomEdit.StyleName
+     ~CustomEdit.TBDockHeight
+     ~CustomEdit.TabOrder
+     ~CustomEdit.TabStop
+     ~CustomEdit.Tag
+     ~CustomEdit.Text
+     ~CustomEdit.TextHint
+     ~CustomEdit.Top
+     ~CustomEdit.Touch
+     ~CustomEdit.UndockHeight
+     ~CustomEdit.UndockWidth
+     ~CustomEdit.UseDockManager
+     ~CustomEdit.VCLComObject
+     ~CustomEdit.Visible
+     ~CustomEdit.VisibleDockClientCount
+     ~CustomEdit.Width
+   

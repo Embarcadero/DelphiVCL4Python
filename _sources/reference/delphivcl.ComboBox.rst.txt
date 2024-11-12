@@ -1,0 +1,167 @@
+﻿ComboBox
+========
+
+Qualified name: ``delphivcl.ComboBox``
+
+.. currentmodule:: delphivcl
+
+.. autoclass:: ComboBox
+   :show-inheritance:
+   :members:
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+      
+      ~ComboBox.AddItem
+      ~ComboBox.CanFocus
+      ~ComboBox.Clear
+      ~ComboBox.ClearSelection
+      ~ComboBox.CopySelection
+      ~ComboBox.DeleteSelected
+      ~ComboBox.GetCount
+      ~ComboBox.SelectAll
+      ~ComboBox.SetFocus
+
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+     
+     ~ComboBox.Action
+     ~ComboBox.Align
+     ~ComboBox.AlignDisabled
+     ~ComboBox.AlignWithMargins
+     ~ComboBox.Anchors
+     ~ComboBox.AutoCloseUp
+     ~ComboBox.AutoComplete
+     ~ComboBox.AutoCompleteDelay
+     ~ComboBox.AutoDropDown
+     ~ComboBox.AutoDropDownWidth
+     ~ComboBox.BevelEdges
+     ~ComboBox.BevelInner
+     ~ComboBox.BevelKind
+     ~ComboBox.BevelOuter
+     ~ComboBox.BiDiMode
+     ~ComboBox.BoundsRect
+     ~ComboBox.Brush
+     ~ComboBox.CanUndoSelText
+     ~ComboBox.Canvas
+     ~ComboBox.CharCase
+     ~ComboBox.ClassName
+     ~ComboBox.ClientHeight
+     ~ComboBox.ClientOrigin
+     ~ComboBox.ClientRect
+     ~ComboBox.ClientWidth
+     ~ComboBox.Color
+     ~ComboBox.ComObject
+     ~ComboBox.ComponentCount
+     ~ComboBox.ComponentIndex
+     ~ComboBox.ComponentState
+     ~ComboBox.ComponentStyle
+     ~ComboBox.Components
+     ~ComboBox.Constraints
+     ~ComboBox.ControlCount
+     ~ComboBox.ControlState
+     ~ComboBox.ControlStyle
+     ~ComboBox.Controls
+     ~ComboBox.Ctl3D
+     ~ComboBox.CurrentPPI
+     ~ComboBox.Cursor
+     ~ComboBox.CustomHint
+     ~ComboBox.DesignInfo
+     ~ComboBox.DockClientCount
+     ~ComboBox.DockClients
+     ~ComboBox.DockManager
+     ~ComboBox.DockOrientation
+     ~ComboBox.DockSite
+     ~ComboBox.DoubleBuffered
+     ~ComboBox.DoubleBufferedMode
+     ~ComboBox.DragCursor
+     ~ComboBox.DragKind
+     ~ComboBox.DragMode
+     ~ComboBox.DropDownCount
+     ~ComboBox.DropDownWidth
+     ~ComboBox.DroppedDown
+     ~ComboBox.Enabled
+     ~ComboBox.ExplicitHeight
+     ~ComboBox.ExplicitLeft
+     ~ComboBox.ExplicitTop
+     ~ComboBox.ExplicitWidth
+     ~ComboBox.ExtendedUI
+     ~ComboBox.Floating
+     ~ComboBox.FloatingDockSiteClass
+     ~ComboBox.Focused
+     ~ComboBox.Font
+     ~ComboBox.Handle
+     ~ComboBox.HandleAllocated
+     ~ComboBox.Height
+     ~ComboBox.HelpContext
+     ~ComboBox.HelpKeyword
+     ~ComboBox.HelpType
+     ~ComboBox.Hint
+     ~ComboBox.HostDockSite
+     ~ComboBox.ImeMode
+     ~ComboBox.ImeName
+     ~ComboBox.IsDrawingLocked
+     ~ComboBox.ItemHeight
+     ~ComboBox.ItemIndex
+     ~ComboBox.Items
+     ~ComboBox.LRDockWidth
+     ~ComboBox.Left
+     ~ComboBox.Margins
+     ~ComboBox.MaxLength
+     ~ComboBox.MouseInClient
+     ~ComboBox.Name
+     ~ComboBox.Observers
+     ~ComboBox.OnDragDrop
+     ~ComboBox.OnDragOver
+     ~ComboBox.OnDrawItem
+     ~ComboBox.OnEndDock
+     ~ComboBox.OnEndDrag
+     ~ComboBox.OnGesture
+     ~ComboBox.OnMeasureItem
+     ~ComboBox.OnStartDock
+     ~ComboBox.OnStartDrag
+     ~ComboBox.Owner
+     ~ComboBox.Padding
+     ~ComboBox.Parent
+     ~ComboBox.ParentBiDiMode
+     ~ComboBox.ParentColor
+     ~ComboBox.ParentCtl3D
+     ~ComboBox.ParentCustomHint
+     ~ComboBox.ParentDoubleBuffered
+     ~ComboBox.ParentFont
+     ~ComboBox.ParentShowHint
+     ~ComboBox.ParentWindow
+     ~ComboBox.PixelsPerInch
+     ~ComboBox.PopupMenu
+     ~ComboBox.RedrawDisabled
+     ~ComboBox.ScaleFactor
+     ~ComboBox.SelLength
+     ~ComboBox.SelStart
+     ~ComboBox.SelText
+     ~ComboBox.ShowHint
+     ~ComboBox.Showing
+     ~ComboBox.Sorted
+     ~ComboBox.Style
+     ~ComboBox.StyleElements
+     ~ComboBox.StyleName
+     ~ComboBox.TBDockHeight
+     ~ComboBox.TabOrder
+     ~ComboBox.TabStop
+     ~ComboBox.Tag
+     ~ComboBox.Text
+     ~ComboBox.TextHint
+     ~ComboBox.Top
+     ~ComboBox.Touch
+     ~ComboBox.UndockHeight
+     ~ComboBox.UndockWidth
+     ~ComboBox.UseDockManager
+     ~ComboBox.VCLComObject
+     ~ComboBox.Visible
+     ~ComboBox.VisibleDockClientCount
+     ~ComboBox.Width
+   

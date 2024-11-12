@@ -1,0 +1,38 @@
+﻿ResourceStream
+==============
+
+Qualified name: ``delphivcl.ResourceStream``
+
+.. currentmodule:: delphivcl
+
+.. autoclass:: ResourceStream
+   :show-inheritance:
+   :members:
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+      
+      ~ResourceStream.ReadBytes
+      ~ResourceStream.ReadFloat
+      ~ResourceStream.ReadInt
+      ~ResourceStream.ReadString
+      ~ResourceStream.Write
+      ~ResourceStream.WriteBytes
+      ~ResourceStream.WriteFloat
+      ~ResourceStream.WriteInt
+      ~ResourceStream.WriteString
+
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+     
+     ~ResourceStream.Capabilities
+     ~ResourceStream.ClassName
+     ~ResourceStream.Memory
+     ~ResourceStream.Position
+     ~ResourceStream.Size
+   
