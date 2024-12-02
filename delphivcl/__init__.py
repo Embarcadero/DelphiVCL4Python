@@ -56,3 +56,5 @@ def new_import():
 
 # Import the extension module
 package = new_import()
+
+import delphivclhack
