@@ -1,0 +1,170 @@
+﻿NumberBox
+=========
+
+Qualified name: ``delphivcl.NumberBox``
+
+.. currentmodule:: delphivcl
+
+.. autoclass:: NumberBox
+   :show-inheritance:
+   :members:
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+      
+      ~NumberBox.CanFocus
+      ~NumberBox.SetFocus
+
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+     
+     ~NumberBox.AcceptExpressions
+     ~NumberBox.Action
+     ~NumberBox.Align
+     ~NumberBox.AlignDisabled
+     ~NumberBox.AlignWithMargins
+     ~NumberBox.Alignment
+     ~NumberBox.Anchors
+     ~NumberBox.AutoSelect
+     ~NumberBox.AutoSize
+     ~NumberBox.BiDiMode
+     ~NumberBox.BorderStyle
+     ~NumberBox.BoundsRect
+     ~NumberBox.Brush
+     ~NumberBox.CanUndo
+     ~NumberBox.CanUndoSelText
+     ~NumberBox.CharCase
+     ~NumberBox.ClassName
+     ~NumberBox.ClientHeight
+     ~NumberBox.ClientOrigin
+     ~NumberBox.ClientRect
+     ~NumberBox.ClientWidth
+     ~NumberBox.Color
+     ~NumberBox.ComObject
+     ~NumberBox.ComponentCount
+     ~NumberBox.ComponentIndex
+     ~NumberBox.ComponentState
+     ~NumberBox.ComponentStyle
+     ~NumberBox.Components
+     ~NumberBox.Constraints
+     ~NumberBox.ControlCount
+     ~NumberBox.ControlState
+     ~NumberBox.ControlStyle
+     ~NumberBox.Controls
+     ~NumberBox.CurrencyFormat
+     ~NumberBox.CurrencyString
+     ~NumberBox.CurrentPPI
+     ~NumberBox.Cursor
+     ~NumberBox.CustomHint
+     ~NumberBox.Decimal
+     ~NumberBox.DesignInfo
+     ~NumberBox.DisplayFormat
+     ~NumberBox.DockClientCount
+     ~NumberBox.DockClients
+     ~NumberBox.DockManager
+     ~NumberBox.DockOrientation
+     ~NumberBox.DockSite
+     ~NumberBox.DoubleBuffered
+     ~NumberBox.DoubleBufferedMode
+     ~NumberBox.DragCursor
+     ~NumberBox.DragKind
+     ~NumberBox.DragMode
+     ~NumberBox.Enabled
+     ~NumberBox.ExplicitHeight
+     ~NumberBox.ExplicitLeft
+     ~NumberBox.ExplicitTop
+     ~NumberBox.ExplicitWidth
+     ~NumberBox.Floating
+     ~NumberBox.FloatingDockSiteClass
+     ~NumberBox.Focused
+     ~NumberBox.Font
+     ~NumberBox.Handle
+     ~NumberBox.HandleAllocated
+     ~NumberBox.Height
+     ~NumberBox.HelpContext
+     ~NumberBox.HelpKeyword
+     ~NumberBox.HelpType
+     ~NumberBox.HideSelection
+     ~NumberBox.Hint
+     ~NumberBox.HostDockSite
+     ~NumberBox.ImeMode
+     ~NumberBox.ImeName
+     ~NumberBox.IsDrawingLocked
+     ~NumberBox.LRDockWidth
+     ~NumberBox.LargeStep
+     ~NumberBox.Left
+     ~NumberBox.Margins
+     ~NumberBox.MaxLength
+     ~NumberBox.MaxValue
+     ~NumberBox.MinValue
+     ~NumberBox.Mode
+     ~NumberBox.Modified
+     ~NumberBox.MouseInClient
+     ~NumberBox.Name
+     ~NumberBox.NegativeValueColor
+     ~NumberBox.OEMConvert
+     ~NumberBox.Observers
+     ~NumberBox.OnDragDrop
+     ~NumberBox.OnDragOver
+     ~NumberBox.OnEndDock
+     ~NumberBox.OnEndDrag
+     ~NumberBox.OnGesture
+     ~NumberBox.OnMouseActivate
+     ~NumberBox.OnStartDock
+     ~NumberBox.OnStartDrag
+     ~NumberBox.OnValidateChar
+     ~NumberBox.Owner
+     ~NumberBox.Padding
+     ~NumberBox.Parent
+     ~NumberBox.ParentBiDiMode
+     ~NumberBox.ParentColor
+     ~NumberBox.ParentCtl3D
+     ~NumberBox.ParentCustomHint
+     ~NumberBox.ParentDoubleBuffered
+     ~NumberBox.ParentFont
+     ~NumberBox.ParentShowHint
+     ~NumberBox.ParentWindow
+     ~NumberBox.PixelsPerInch
+     ~NumberBox.PopupMenu
+     ~NumberBox.ReadOnly
+     ~NumberBox.RedrawDisabled
+     ~NumberBox.ScaleFactor
+     ~NumberBox.SelLength
+     ~NumberBox.SelStart
+     ~NumberBox.SelText
+     ~NumberBox.ShowHint
+     ~NumberBox.Showing
+     ~NumberBox.SmallStep
+     ~NumberBox.SpinButtonOptions
+     ~NumberBox.StyleElements
+     ~NumberBox.StyleName
+     ~NumberBox.TBDockHeight
+     ~NumberBox.TabOrder
+     ~NumberBox.TabStop
+     ~NumberBox.Tag
+     ~NumberBox.Text
+     ~NumberBox.TextHint
+     ~NumberBox.Top
+     ~NumberBox.Touch
+     ~NumberBox.UndockHeight
+     ~NumberBox.UndockWidth
+     ~NumberBox.UseDockManager
+     ~NumberBox.UseMouseWheel
+     ~NumberBox.UseNaNValue
+     ~NumberBox.UseUpDownKeys
+     ~NumberBox.VCLComObject
+     ~NumberBox.Value
+     ~NumberBox.ValueCurrency
+     ~NumberBox.ValueFloat
+     ~NumberBox.ValueInt
+     ~NumberBox.ValueInt64
+     ~NumberBox.Visible
+     ~NumberBox.VisibleDockClientCount
+     ~NumberBox.Width
+     ~NumberBox.Wrap
+   

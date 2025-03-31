@@ -1,0 +1,41 @@
+﻿CustomMemoryStream
+==================
+
+Qualified name: ``delphivcl.CustomMemoryStream``
+
+.. currentmodule:: delphivcl
+
+.. autoclass:: CustomMemoryStream
+   :show-inheritance:
+   :members:
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+      
+      ~CustomMemoryStream.Read
+      ~CustomMemoryStream.ReadBytes
+      ~CustomMemoryStream.ReadFloat
+      ~CustomMemoryStream.ReadInt
+      ~CustomMemoryStream.ReadString
+      ~CustomMemoryStream.SaveToFile
+      ~CustomMemoryStream.SaveToStream
+      ~CustomMemoryStream.Seek
+      ~CustomMemoryStream.WriteBytes
+      ~CustomMemoryStream.WriteFloat
+      ~CustomMemoryStream.WriteInt
+      ~CustomMemoryStream.WriteString
+
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+     
+     ~CustomMemoryStream.Capabilities
+     ~CustomMemoryStream.ClassName
+     ~CustomMemoryStream.Memory
+     ~CustomMemoryStream.Position
+     ~CustomMemoryStream.Size
+   

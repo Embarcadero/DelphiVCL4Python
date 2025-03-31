@@ -1,0 +1,42 @@
+﻿MemoryStream
+============
+
+Qualified name: ``delphivcl.MemoryStream``
+
+.. currentmodule:: delphivcl
+
+.. autoclass:: MemoryStream
+   :show-inheritance:
+   :members:
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+      
+      ~MemoryStream.Clear
+      ~MemoryStream.LoadFromFile
+      ~MemoryStream.LoadFromStream
+      ~MemoryStream.ReadBytes
+      ~MemoryStream.ReadFloat
+      ~MemoryStream.ReadInt
+      ~MemoryStream.ReadString
+      ~MemoryStream.SetSize
+      ~MemoryStream.Write
+      ~MemoryStream.WriteBytes
+      ~MemoryStream.WriteFloat
+      ~MemoryStream.WriteInt
+      ~MemoryStream.WriteString
+
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+     
+     ~MemoryStream.Capabilities
+     ~MemoryStream.ClassName
+     ~MemoryStream.Memory
+     ~MemoryStream.Position
+     ~MemoryStream.Size
+   

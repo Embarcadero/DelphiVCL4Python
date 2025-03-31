@@ -1,0 +1,141 @@
+﻿TrackBar
+========
+
+Qualified name: ``delphivcl.TrackBar``
+
+.. currentmodule:: delphivcl
+
+.. autoclass:: TrackBar
+   :show-inheritance:
+   :members:
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+      
+      ~TrackBar.CanFocus
+      ~TrackBar.SetFocus
+      ~TrackBar.SetTick
+
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+     
+     ~TrackBar.Action
+     ~TrackBar.Align
+     ~TrackBar.AlignDisabled
+     ~TrackBar.AlignWithMargins
+     ~TrackBar.Anchors
+     ~TrackBar.BiDiMode
+     ~TrackBar.BorderWidth
+     ~TrackBar.BoundsRect
+     ~TrackBar.Brush
+     ~TrackBar.ClassName
+     ~TrackBar.ClientHeight
+     ~TrackBar.ClientOrigin
+     ~TrackBar.ClientRect
+     ~TrackBar.ClientWidth
+     ~TrackBar.ComObject
+     ~TrackBar.ComponentCount
+     ~TrackBar.ComponentIndex
+     ~TrackBar.ComponentState
+     ~TrackBar.ComponentStyle
+     ~TrackBar.Components
+     ~TrackBar.Constraints
+     ~TrackBar.ControlCount
+     ~TrackBar.ControlState
+     ~TrackBar.ControlStyle
+     ~TrackBar.Controls
+     ~TrackBar.Ctl3D
+     ~TrackBar.CurrentPPI
+     ~TrackBar.Cursor
+     ~TrackBar.CustomHint
+     ~TrackBar.DesignInfo
+     ~TrackBar.DockClientCount
+     ~TrackBar.DockClients
+     ~TrackBar.DockManager
+     ~TrackBar.DockOrientation
+     ~TrackBar.DockSite
+     ~TrackBar.DoubleBuffered
+     ~TrackBar.DoubleBufferedMode
+     ~TrackBar.DragCursor
+     ~TrackBar.DragKind
+     ~TrackBar.DragMode
+     ~TrackBar.Enabled
+     ~TrackBar.ExplicitHeight
+     ~TrackBar.ExplicitLeft
+     ~TrackBar.ExplicitTop
+     ~TrackBar.ExplicitWidth
+     ~TrackBar.Floating
+     ~TrackBar.FloatingDockSiteClass
+     ~TrackBar.Focused
+     ~TrackBar.Frequency
+     ~TrackBar.Handle
+     ~TrackBar.HandleAllocated
+     ~TrackBar.Height
+     ~TrackBar.HelpContext
+     ~TrackBar.HelpKeyword
+     ~TrackBar.HelpType
+     ~TrackBar.Hint
+     ~TrackBar.HostDockSite
+     ~TrackBar.IsDrawingLocked
+     ~TrackBar.LRDockWidth
+     ~TrackBar.Left
+     ~TrackBar.LineSize
+     ~TrackBar.Margins
+     ~TrackBar.Max
+     ~TrackBar.Min
+     ~TrackBar.MouseInClient
+     ~TrackBar.Name
+     ~TrackBar.Observers
+     ~TrackBar.OnDragDrop
+     ~TrackBar.OnDragOver
+     ~TrackBar.OnEndDock
+     ~TrackBar.OnEndDrag
+     ~TrackBar.OnGesture
+     ~TrackBar.OnStartDock
+     ~TrackBar.OnStartDrag
+     ~TrackBar.Orientation
+     ~TrackBar.Owner
+     ~TrackBar.Padding
+     ~TrackBar.PageSize
+     ~TrackBar.Parent
+     ~TrackBar.ParentCtl3D
+     ~TrackBar.ParentCustomHint
+     ~TrackBar.ParentDoubleBuffered
+     ~TrackBar.ParentShowHint
+     ~TrackBar.ParentWindow
+     ~TrackBar.PixelsPerInch
+     ~TrackBar.PopupMenu
+     ~TrackBar.Position
+     ~TrackBar.PositionToolTip
+     ~TrackBar.RedrawDisabled
+     ~TrackBar.ScaleFactor
+     ~TrackBar.SelEnd
+     ~TrackBar.SelStart
+     ~TrackBar.ShowHint
+     ~TrackBar.ShowSelRange
+     ~TrackBar.Showing
+     ~TrackBar.SliderVisible
+     ~TrackBar.StyleElements
+     ~TrackBar.StyleName
+     ~TrackBar.TBDockHeight
+     ~TrackBar.TabOrder
+     ~TrackBar.TabStop
+     ~TrackBar.Tag
+     ~TrackBar.ThumbLength
+     ~TrackBar.TickMarks
+     ~TrackBar.TickStyle
+     ~TrackBar.Top
+     ~TrackBar.Touch
+     ~TrackBar.UndockHeight
+     ~TrackBar.UndockWidth
+     ~TrackBar.UseDockManager
+     ~TrackBar.VCLComObject
+     ~TrackBar.Visible
+     ~TrackBar.VisibleDockClientCount
+     ~TrackBar.Width
+   

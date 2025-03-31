@@ -1,0 +1,116 @@
+﻿CustomTabControl
+================
+
+Qualified name: ``delphivcl.CustomTabControl``
+
+.. currentmodule:: delphivcl
+
+.. autoclass:: CustomTabControl
+   :show-inheritance:
+   :members:
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+      
+      ~CustomTabControl.CanFocus
+      ~CustomTabControl.GetHitTestInfoAt
+      ~CustomTabControl.IndexOfTabAt
+      ~CustomTabControl.RowCount
+      ~CustomTabControl.ScrollTabs
+      ~CustomTabControl.SetFocus
+      ~CustomTabControl.TabRect
+
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+     
+     ~CustomTabControl.Action
+     ~CustomTabControl.Align
+     ~CustomTabControl.AlignDisabled
+     ~CustomTabControl.AlignWithMargins
+     ~CustomTabControl.Anchors
+     ~CustomTabControl.BiDiMode
+     ~CustomTabControl.BoundsRect
+     ~CustomTabControl.Brush
+     ~CustomTabControl.Canvas
+     ~CustomTabControl.ClassName
+     ~CustomTabControl.ClientHeight
+     ~CustomTabControl.ClientOrigin
+     ~CustomTabControl.ClientRect
+     ~CustomTabControl.ClientWidth
+     ~CustomTabControl.ComObject
+     ~CustomTabControl.ComponentCount
+     ~CustomTabControl.ComponentIndex
+     ~CustomTabControl.ComponentState
+     ~CustomTabControl.ComponentStyle
+     ~CustomTabControl.Components
+     ~CustomTabControl.Constraints
+     ~CustomTabControl.ControlCount
+     ~CustomTabControl.ControlState
+     ~CustomTabControl.ControlStyle
+     ~CustomTabControl.Controls
+     ~CustomTabControl.CurrentPPI
+     ~CustomTabControl.Cursor
+     ~CustomTabControl.CustomHint
+     ~CustomTabControl.DesignInfo
+     ~CustomTabControl.DockClientCount
+     ~CustomTabControl.DockClients
+     ~CustomTabControl.DockManager
+     ~CustomTabControl.DockOrientation
+     ~CustomTabControl.DockSite
+     ~CustomTabControl.DoubleBuffered
+     ~CustomTabControl.DoubleBufferedMode
+     ~CustomTabControl.Enabled
+     ~CustomTabControl.ExplicitHeight
+     ~CustomTabControl.ExplicitLeft
+     ~CustomTabControl.ExplicitTop
+     ~CustomTabControl.ExplicitWidth
+     ~CustomTabControl.Floating
+     ~CustomTabControl.FloatingDockSiteClass
+     ~CustomTabControl.Focused
+     ~CustomTabControl.Handle
+     ~CustomTabControl.HandleAllocated
+     ~CustomTabControl.Height
+     ~CustomTabControl.HelpContext
+     ~CustomTabControl.HelpKeyword
+     ~CustomTabControl.HelpType
+     ~CustomTabControl.Hint
+     ~CustomTabControl.HostDockSite
+     ~CustomTabControl.IsDrawingLocked
+     ~CustomTabControl.LRDockWidth
+     ~CustomTabControl.Left
+     ~CustomTabControl.Margins
+     ~CustomTabControl.MouseInClient
+     ~CustomTabControl.Name
+     ~CustomTabControl.Observers
+     ~CustomTabControl.Owner
+     ~CustomTabControl.Padding
+     ~CustomTabControl.Parent
+     ~CustomTabControl.ParentCustomHint
+     ~CustomTabControl.ParentDoubleBuffered
+     ~CustomTabControl.ParentWindow
+     ~CustomTabControl.PixelsPerInch
+     ~CustomTabControl.RedrawDisabled
+     ~CustomTabControl.ScaleFactor
+     ~CustomTabControl.ShowHint
+     ~CustomTabControl.Showing
+     ~CustomTabControl.StyleElements
+     ~CustomTabControl.StyleName
+     ~CustomTabControl.TBDockHeight
+     ~CustomTabControl.TabOrder
+     ~CustomTabControl.TabStop
+     ~CustomTabControl.Tag
+     ~CustomTabControl.Top
+     ~CustomTabControl.Touch
+     ~CustomTabControl.UndockHeight
+     ~CustomTabControl.UndockWidth
+     ~CustomTabControl.UseDockManager
+     ~CustomTabControl.VCLComObject
+     ~CustomTabControl.Visible
+     ~CustomTabControl.VisibleDockClientCount
+     ~CustomTabControl.Width
+   

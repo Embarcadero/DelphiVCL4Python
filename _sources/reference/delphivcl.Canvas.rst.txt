@@ -1,0 +1,72 @@
+﻿Canvas
+======
+
+Qualified name: ``delphivcl.Canvas``
+
+.. currentmodule:: delphivcl
+
+.. autoclass:: Canvas
+   :show-inheritance:
+   :members:
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+      
+      ~Canvas.AngleArc
+      ~Canvas.Arc
+      ~Canvas.ArcTo
+      ~Canvas.BrushCopy
+      ~Canvas.Chord
+      ~Canvas.CopyRect
+      ~Canvas.Draw
+      ~Canvas.DrawFocusRect
+      ~Canvas.Ellipse
+      ~Canvas.FillRect
+      ~Canvas.FloodFill
+      ~Canvas.FrameRect
+      ~Canvas.GetPixel
+      ~Canvas.LineTo
+      ~Canvas.Lock
+      ~Canvas.MoveTo
+      ~Canvas.Pie
+      ~Canvas.PolyBezier
+      ~Canvas.PolyBezierTo
+      ~Canvas.Polygon
+      ~Canvas.Polyline
+      ~Canvas.Rectangle
+      ~Canvas.Refresh
+      ~Canvas.RoundRect
+      ~Canvas.SetPixel
+      ~Canvas.StretchDraw
+      ~Canvas.TextExtent
+      ~Canvas.TextHeight
+      ~Canvas.TextOut
+      ~Canvas.TextRect
+      ~Canvas.TextWidth
+      ~Canvas.TryLock
+      ~Canvas.Unlock
+
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+     
+     ~Canvas.Brush
+     ~Canvas.CanvasOrientation
+     ~Canvas.ClassName
+     ~Canvas.ClipRect
+     ~Canvas.CopyMode
+     ~Canvas.Font
+     ~Canvas.Handle
+     ~Canvas.HandleAllocated
+     ~Canvas.LockCount
+     ~Canvas.OnChange
+     ~Canvas.OnChanging
+     ~Canvas.Pen
+     ~Canvas.PenPos
+     ~Canvas.Pixels
+     ~Canvas.TextFlags
+   

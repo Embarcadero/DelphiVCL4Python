@@ -1,0 +1,53 @@
+﻿Metafile
+========
+
+Qualified name: ``delphivcl.Metafile``
+
+.. currentmodule:: delphivcl
+
+.. autoclass:: Metafile
+   :show-inheritance:
+   :members:
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+      
+      ~Metafile.Assign
+      ~Metafile.CanLoadFromStream
+      ~Metafile.Clear
+      ~Metafile.LoadFromClipboardFormat
+      ~Metafile.LoadFromStream
+      ~Metafile.ReleaseHandle
+      ~Metafile.SaveToClipboardFormat
+      ~Metafile.SaveToFile
+      ~Metafile.SaveToStream
+      ~Metafile.SetSize
+
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+     
+     ~Metafile.ClassName
+     ~Metafile.CreatedBy
+     ~Metafile.Description
+     ~Metafile.Empty
+     ~Metafile.Enhanced
+     ~Metafile.Handle
+     ~Metafile.HandleAllocated
+     ~Metafile.Height
+     ~Metafile.Inch
+     ~Metafile.IsAnimating
+     ~Metafile.MMHeight
+     ~Metafile.MMWidth
+     ~Metafile.Modified
+     ~Metafile.Palette
+     ~Metafile.PaletteModified
+     ~Metafile.ScaledDrawer
+     ~Metafile.SupportsPartialTransparency
+     ~Metafile.Transparent
+     ~Metafile.Width
+   

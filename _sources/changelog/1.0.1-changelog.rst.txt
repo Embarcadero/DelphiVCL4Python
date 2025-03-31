@@ -1,0 +1,25 @@
+*******
+v1.0.1
+*******
+
+:Date: March 10, 2023
+
+Contributors
+============
+
+
+* Lucas M Belo
+
+
+The patches included in this release have been reviewed by
+the following contributors.
+
+* Lucas M Belo
+* Priyatham
+
+
+Fixed bugs
+----------
+
+Exposing missing builtin members for complete docs.
+

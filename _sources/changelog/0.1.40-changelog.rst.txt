@@ -1,0 +1,25 @@
+*******
+v0.1.40
+*******
+
+:Date: April 14, 2022
+
+Contributors
+============
+
+
+* Lucas M Belo
+
+
+The patches included in this release have been reviewed by
+the following contributors.
+
+* Lucas M Belo
+* Priyatham
+
+
+Fixed bugs
+----------
+
+TNumberBox was misbehaving for which a bugfix is patched.
+

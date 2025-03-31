@@ -1,0 +1,120 @@
+﻿CustomToggleSwitch
+==================
+
+Qualified name: ``delphivcl.CustomToggleSwitch``
+
+.. currentmodule:: delphivcl
+
+.. autoclass:: CustomToggleSwitch
+   :show-inheritance:
+   :members:
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+      
+      ~CustomToggleSwitch.BringToFront
+      ~CustomToggleSwitch.ClientToScreen
+      ~CustomToggleSwitch.GetControlsAlignment
+      ~CustomToggleSwitch.Hide
+      ~CustomToggleSwitch.Invalidate
+      ~CustomToggleSwitch.IsOn
+      ~CustomToggleSwitch.Repaint
+      ~CustomToggleSwitch.ScreenToClient
+      ~CustomToggleSwitch.SendToBack
+      ~CustomToggleSwitch.SetBounds
+      ~CustomToggleSwitch.Show
+      ~CustomToggleSwitch.Update
+
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+     
+     ~CustomToggleSwitch.Action
+     ~CustomToggleSwitch.Align
+     ~CustomToggleSwitch.AlignDisabled
+     ~CustomToggleSwitch.AlignWithMargins
+     ~CustomToggleSwitch.Anchors
+     ~CustomToggleSwitch.BiDiMode
+     ~CustomToggleSwitch.BoundsRect
+     ~CustomToggleSwitch.Brush
+     ~CustomToggleSwitch.ClassName
+     ~CustomToggleSwitch.ClientHeight
+     ~CustomToggleSwitch.ClientOrigin
+     ~CustomToggleSwitch.ClientRect
+     ~CustomToggleSwitch.ClientWidth
+     ~CustomToggleSwitch.ComObject
+     ~CustomToggleSwitch.ComponentCount
+     ~CustomToggleSwitch.ComponentIndex
+     ~CustomToggleSwitch.ComponentState
+     ~CustomToggleSwitch.ComponentStyle
+     ~CustomToggleSwitch.Components
+     ~CustomToggleSwitch.Constraints
+     ~CustomToggleSwitch.ControlCount
+     ~CustomToggleSwitch.ControlState
+     ~CustomToggleSwitch.ControlStyle
+     ~CustomToggleSwitch.Controls
+     ~CustomToggleSwitch.CurrentPPI
+     ~CustomToggleSwitch.Cursor
+     ~CustomToggleSwitch.CustomHint
+     ~CustomToggleSwitch.DesignInfo
+     ~CustomToggleSwitch.DockClientCount
+     ~CustomToggleSwitch.DockClients
+     ~CustomToggleSwitch.DockManager
+     ~CustomToggleSwitch.DockOrientation
+     ~CustomToggleSwitch.DockSite
+     ~CustomToggleSwitch.DoubleBuffered
+     ~CustomToggleSwitch.DoubleBufferedMode
+     ~CustomToggleSwitch.Enabled
+     ~CustomToggleSwitch.ExplicitHeight
+     ~CustomToggleSwitch.ExplicitLeft
+     ~CustomToggleSwitch.ExplicitTop
+     ~CustomToggleSwitch.ExplicitWidth
+     ~CustomToggleSwitch.Floating
+     ~CustomToggleSwitch.FloatingDockSiteClass
+     ~CustomToggleSwitch.Focused
+     ~CustomToggleSwitch.Handle
+     ~CustomToggleSwitch.HandleAllocated
+     ~CustomToggleSwitch.Height
+     ~CustomToggleSwitch.HelpContext
+     ~CustomToggleSwitch.HelpKeyword
+     ~CustomToggleSwitch.HelpType
+     ~CustomToggleSwitch.Hint
+     ~CustomToggleSwitch.HostDockSite
+     ~CustomToggleSwitch.IsDrawingLocked
+     ~CustomToggleSwitch.LRDockWidth
+     ~CustomToggleSwitch.Left
+     ~CustomToggleSwitch.Margins
+     ~CustomToggleSwitch.MouseInClient
+     ~CustomToggleSwitch.Name
+     ~CustomToggleSwitch.Observers
+     ~CustomToggleSwitch.Owner
+     ~CustomToggleSwitch.Padding
+     ~CustomToggleSwitch.Parent
+     ~CustomToggleSwitch.ParentCustomHint
+     ~CustomToggleSwitch.ParentDoubleBuffered
+     ~CustomToggleSwitch.ParentWindow
+     ~CustomToggleSwitch.PixelsPerInch
+     ~CustomToggleSwitch.RedrawDisabled
+     ~CustomToggleSwitch.ScaleFactor
+     ~CustomToggleSwitch.ShowHint
+     ~CustomToggleSwitch.Showing
+     ~CustomToggleSwitch.StyleElements
+     ~CustomToggleSwitch.StyleName
+     ~CustomToggleSwitch.TBDockHeight
+     ~CustomToggleSwitch.TabOrder
+     ~CustomToggleSwitch.TabStop
+     ~CustomToggleSwitch.Tag
+     ~CustomToggleSwitch.Top
+     ~CustomToggleSwitch.Touch
+     ~CustomToggleSwitch.UndockHeight
+     ~CustomToggleSwitch.UndockWidth
+     ~CustomToggleSwitch.UseDockManager
+     ~CustomToggleSwitch.VCLComObject
+     ~CustomToggleSwitch.Visible
+     ~CustomToggleSwitch.VisibleDockClientCount
+     ~CustomToggleSwitch.Width
+   

@@ -1,0 +1,56 @@
+﻿StyleManager
+============
+
+Qualified name: ``delphivcl.StyleManager``
+
+.. currentmodule:: delphivcl
+
+.. autoclass:: StyleManager
+   :show-inheritance:
+   :members:
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+      
+      ~StyleManager.CheckSysClassName
+      ~StyleManager.HandleMessage
+      ~StyleManager.Initialize
+      ~StyleManager.IsCustomStyleAvailable
+      ~StyleManager.IsSystemStyleDefault
+      ~StyleManager.IsValidStyle
+      ~StyleManager.LoadDesigningStyle
+      ~StyleManager.LoadDesigningStyles
+      ~StyleManager.LoadFromFile
+      ~StyleManager.LoadFromResource
+      ~StyleManager.Notification
+      ~StyleManager.RegisterStyle
+      ~StyleManager.RegisterStyleClass
+      ~StyleManager.RemoveDesigningStyle
+      ~StyleManager.ResetActiveDesigningStyle
+      ~StyleManager.ResetDesigningStyles
+      ~StyleManager.SetDesigningStyle
+      ~StyleManager.SetStyle
+      ~StyleManager.TryLoadFromResource
+      ~StyleManager.TrySetDesigningStyle
+      ~StyleManager.TrySetStyle
+      ~StyleManager.UnInitialize
+      ~StyleManager.UnRegisterStyle
+      ~StyleManager.UnRegisterStyleClass
+      ~StyleManager.UnRegisterStyleEngine
+
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+     
+     ~StyleManager.ActiveStyle
+     ~StyleManager.ClassName
+     ~StyleManager.DesignerStyle
+     ~StyleManager.DesignerStyleName
+     ~StyleManager.Style
+     ~StyleManager.StyleDescriptor
+     ~StyleManager.StyleNames
+   

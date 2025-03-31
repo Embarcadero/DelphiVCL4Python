@@ -1,0 +1,43 @@
+﻿Timer
+=====
+
+Qualified name: ``delphivcl.Timer``
+
+.. currentmodule:: delphivcl
+
+.. autoclass:: Timer
+   :show-inheritance:
+   :members:
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+      
+      ~Timer.BindMethodsToEvents
+      ~Timer.GetParentComponent
+      ~Timer.HasParent
+
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+     
+     ~Timer.ClassName
+     ~Timer.ComObject
+     ~Timer.ComponentCount
+     ~Timer.ComponentIndex
+     ~Timer.ComponentState
+     ~Timer.ComponentStyle
+     ~Timer.Components
+     ~Timer.DesignInfo
+     ~Timer.Enabled
+     ~Timer.Interval
+     ~Timer.Name
+     ~Timer.Observers
+     ~Timer.Owner
+     ~Timer.Tag
+     ~Timer.VCLComObject
+     ~Timer.WindowHandle
+   

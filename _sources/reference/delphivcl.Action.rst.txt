@@ -1,0 +1,61 @@
+﻿Action
+======
+
+Qualified name: ``delphivcl.Action``
+
+.. currentmodule:: delphivcl
+
+.. autoclass:: Action
+   :show-inheritance:
+   :members:
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+      
+      ~Action.Execute
+      ~Action.Update
+
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+     
+     ~Action.ActionComponent
+     ~Action.ActionList
+     ~Action.AutoCheck
+     ~Action.Caption
+     ~Action.Category
+     ~Action.Checked
+     ~Action.ClassName
+     ~Action.ComObject
+     ~Action.ComponentCount
+     ~Action.ComponentIndex
+     ~Action.ComponentState
+     ~Action.ComponentStyle
+     ~Action.Components
+     ~Action.DesignInfo
+     ~Action.DisableIfNoHandler
+     ~Action.Enabled
+     ~Action.GroupIndex
+     ~Action.HelpContext
+     ~Action.HelpKeyword
+     ~Action.HelpType
+     ~Action.Hint
+     ~Action.ImageIndex
+     ~Action.ImageName
+     ~Action.Images
+     ~Action.Index
+     ~Action.Name
+     ~Action.Observers
+     ~Action.OnHint
+     ~Action.Owner
+     ~Action.SecondaryShortCuts
+     ~Action.ShortCut
+     ~Action.StatusAction
+     ~Action.Tag
+     ~Action.VCLComObject
+     ~Action.Visible
+   

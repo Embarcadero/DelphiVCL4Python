@@ -1,0 +1,137 @@
+﻿CheckBox
+========
+
+Qualified name: ``delphivcl.CheckBox``
+
+.. currentmodule:: delphivcl
+
+.. autoclass:: CheckBox
+   :show-inheritance:
+   :members:
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+      
+      ~CheckBox.CanFocus
+      ~CheckBox.CanUseDoubleBuffering
+      ~CheckBox.GetControlsAlignment
+      ~CheckBox.SetFocus
+
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+     
+     ~CheckBox.Action
+     ~CheckBox.Align
+     ~CheckBox.AlignDisabled
+     ~CheckBox.AlignWithMargins
+     ~CheckBox.Alignment
+     ~CheckBox.AllowGrayed
+     ~CheckBox.Anchors
+     ~CheckBox.BiDiMode
+     ~CheckBox.BoundsRect
+     ~CheckBox.Brush
+     ~CheckBox.Caption
+     ~CheckBox.Checked
+     ~CheckBox.ClassName
+     ~CheckBox.ClientHeight
+     ~CheckBox.ClientOrigin
+     ~CheckBox.ClientRect
+     ~CheckBox.ClientWidth
+     ~CheckBox.Color
+     ~CheckBox.ComObject
+     ~CheckBox.ComponentCount
+     ~CheckBox.ComponentIndex
+     ~CheckBox.ComponentState
+     ~CheckBox.ComponentStyle
+     ~CheckBox.Components
+     ~CheckBox.Constraints
+     ~CheckBox.ControlCount
+     ~CheckBox.ControlState
+     ~CheckBox.ControlStyle
+     ~CheckBox.Controls
+     ~CheckBox.Ctl3D
+     ~CheckBox.CurrentPPI
+     ~CheckBox.Cursor
+     ~CheckBox.CustomHint
+     ~CheckBox.DesignInfo
+     ~CheckBox.DockClientCount
+     ~CheckBox.DockClients
+     ~CheckBox.DockManager
+     ~CheckBox.DockOrientation
+     ~CheckBox.DockSite
+     ~CheckBox.DoubleBuffered
+     ~CheckBox.DoubleBufferedMode
+     ~CheckBox.DragCursor
+     ~CheckBox.DragKind
+     ~CheckBox.DragMode
+     ~CheckBox.Enabled
+     ~CheckBox.ExplicitHeight
+     ~CheckBox.ExplicitLeft
+     ~CheckBox.ExplicitTop
+     ~CheckBox.ExplicitWidth
+     ~CheckBox.Floating
+     ~CheckBox.FloatingDockSiteClass
+     ~CheckBox.Focused
+     ~CheckBox.Font
+     ~CheckBox.Handle
+     ~CheckBox.HandleAllocated
+     ~CheckBox.Height
+     ~CheckBox.HelpContext
+     ~CheckBox.HelpKeyword
+     ~CheckBox.HelpType
+     ~CheckBox.Hint
+     ~CheckBox.HostDockSite
+     ~CheckBox.IsDrawingLocked
+     ~CheckBox.LRDockWidth
+     ~CheckBox.Left
+     ~CheckBox.Margins
+     ~CheckBox.MouseInClient
+     ~CheckBox.Name
+     ~CheckBox.Observers
+     ~CheckBox.OnDragDrop
+     ~CheckBox.OnDragOver
+     ~CheckBox.OnEndDock
+     ~CheckBox.OnEndDrag
+     ~CheckBox.OnMouseActivate
+     ~CheckBox.OnStartDock
+     ~CheckBox.OnStartDrag
+     ~CheckBox.Owner
+     ~CheckBox.Padding
+     ~CheckBox.Parent
+     ~CheckBox.ParentBiDiMode
+     ~CheckBox.ParentColor
+     ~CheckBox.ParentCtl3D
+     ~CheckBox.ParentCustomHint
+     ~CheckBox.ParentDoubleBuffered
+     ~CheckBox.ParentFont
+     ~CheckBox.ParentShowHint
+     ~CheckBox.ParentWindow
+     ~CheckBox.PixelsPerInch
+     ~CheckBox.PopupMenu
+     ~CheckBox.RedrawDisabled
+     ~CheckBox.ScaleFactor
+     ~CheckBox.ShowHint
+     ~CheckBox.Showing
+     ~CheckBox.State
+     ~CheckBox.StyleElements
+     ~CheckBox.StyleName
+     ~CheckBox.TBDockHeight
+     ~CheckBox.TabOrder
+     ~CheckBox.TabStop
+     ~CheckBox.Tag
+     ~CheckBox.Top
+     ~CheckBox.Touch
+     ~CheckBox.UndockHeight
+     ~CheckBox.UndockWidth
+     ~CheckBox.UseDockManager
+     ~CheckBox.VCLComObject
+     ~CheckBox.Visible
+     ~CheckBox.VisibleDockClientCount
+     ~CheckBox.Width
+     ~CheckBox.WordWrap
+   
