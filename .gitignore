@@ -2,3 +2,4 @@
 *.dcu
 *.local
 \__pycache__
+.idea
